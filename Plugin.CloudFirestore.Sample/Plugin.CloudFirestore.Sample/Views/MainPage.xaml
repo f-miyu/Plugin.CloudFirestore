@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pb="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+             x:Class="Plugin.CloudFirestore.Sample.Views.MainPage"
+             Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Command="{Binding AddCommand}" />
+    </ContentPage.ToolbarItems>
+    <ListView ItemsSource="{Binding TodoItems}" SelectionMode="None">
+        <ListView.Behaviors>
+            <pb:EventToCommandBehavior EventName="ItemTapped" Command="{Binding SelectItemCommand}" EventArgsParameterPath="Item" />
+        </ListView.Behaviors>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name.Value}" Detail="{Binding Notes.Value}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
