@@ -7,6 +7,8 @@ and [Xamarin.Firebase.Firestore](Xamarin.Firebase.Firestore).
 ## Setup
 Install Nuget package to each projects.
 
+[Plugin.CloudFirestore](https://www.nuget.org/packages/Plugin.CloudFirestore/) [![NuGet](https://img.shields.io/nuget/v/Plugin.CloudFirestore.svg?label=NuGet)](https://www.nuget.org/packages/Plugin.CloudFirestore/)
+
 ### iOS
 * Add GoogleService-Info.plist to iOS project. Select BundleResource as build action.
 * Initialize as follows in AppDelegate. 
