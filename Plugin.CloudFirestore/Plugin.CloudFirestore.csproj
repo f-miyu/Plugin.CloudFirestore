@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+    <DocumentationFile>bin\Release\netstandard2.0\Plugin.CloudFirestore.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+    <PackageReference Include="System.Reactive" Version="4.0.0" />
+  </ItemGroup>
+  <Import Project="..\Plugin.CloudFirestore.Shared\Plugin.CloudFirestore.Shared.projitems" Label="Shared" Condition="Exists('..\Plugin.CloudFirestore.Shared\Plugin.CloudFirestore.Shared.projitems')" />
+</Project>
