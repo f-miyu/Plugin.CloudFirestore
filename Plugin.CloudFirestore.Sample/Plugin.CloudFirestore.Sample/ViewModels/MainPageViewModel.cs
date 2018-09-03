@@ -35,7 +35,8 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             query.ObserveAddedChange()
                  .Select(change => (Object: change.Document.ToObject<TodoItem>(), Index: change.NewIndex))
                  .Select(t => (ViewModel: new TodoItemViewModel(t.Object), Index: t.Index))
-                 .Subscribe(t => TodoItems.InsertOnScheduler(t.Index, t.ViewModel));
+                 .Subscribe(t => TodoItems.InsertOnScheduler(t.Index, t.ViewModel))
+                 .AddTo(_disposables);
 
             query.ObserveModified()
                  .Select(document => document.ToObject<TodoItem>())

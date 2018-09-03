@@ -32,7 +32,7 @@ namespace Plugin.CloudFirestore.Sample.Extensions
                 {ViewModelBase.ParameterKey,  parameter}
             };
 
-            return navigationService.NavigateAsync<TViewModel>(parameters, useModalNavigation, animated);
+            return navigationService.NavigateAsync<TViewModel>(parameters, useModalNavigation, animated, wrapInNavigationPage, noHistory);
         }
     }
 }

@@ -7,7 +7,7 @@
     <ProjectGuid>{EAA1FAFD-5D9C-4F5E-A269-211835944DF2}</ProjectGuid>
     <Description>Cross platform plugin for Firebase Cloud Firestore</Description>
     <PackageId>Plugin.CloudFirestore</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>f-miyu</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
