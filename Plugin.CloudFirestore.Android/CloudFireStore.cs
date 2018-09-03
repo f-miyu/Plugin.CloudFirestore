@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
     {
         private static Firebase.FirebaseApp _app;
 
-        public static FirebaseFirestore Instance => FirebaseFirestore.GetInstance(_app);
+        internal static FirebaseFirestore Instance => FirebaseFirestore.GetInstance(_app);
 
         public static void Init()
         {
@@ -18,7 +18,7 @@ namespace Plugin.CloudFirestore
                 var baseOptions = Firebase.FirebaseOptions.FromResource(context);
                 var options = new Firebase.FirebaseOptions.Builder(baseOptions).SetProjectId(baseOptions.StorageBucket.Split('.')[0]).Build();
 
-                _app = Firebase.FirebaseApp.InitializeApp(context, options, "CloudFirestore");
+                _app = Firebase.FirebaseApp.InitializeApp(context, options, "Plugin.CloudFirestore");
             }
         }
     }

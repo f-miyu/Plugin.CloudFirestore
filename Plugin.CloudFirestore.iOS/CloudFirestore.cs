@@ -3,7 +3,7 @@ namespace Plugin.CloudFirestore
 {
     public static class CloudFirestore
     {
-        public static Firebase.CloudFirestore.Firestore Instance => Firebase.CloudFirestore.Firestore.SharedInstance;
+        internal static Firebase.CloudFirestore.Firestore Instance => Firebase.CloudFirestore.Firestore.SharedInstance;
 
         public static void Init()
         {
