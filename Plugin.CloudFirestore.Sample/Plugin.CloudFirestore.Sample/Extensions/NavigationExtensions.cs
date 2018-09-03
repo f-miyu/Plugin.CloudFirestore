@@ -2,6 +2,7 @@
 using Prism.Navigation;
 using System;
 using System.Threading.Tasks;
+using Plugin.CloudFirestore.Sample.ViewModels;
 
 namespace Plugin.CloudFirestore.Sample.Extensions
 {
@@ -22,6 +23,16 @@ namespace Plugin.CloudFirestore.Sample.Extensions
             }
 
             return navigationService.NavigateAsync(name, parameters, useModalNavigation, animated);
+        }
+
+        public static Task NavigateAsync<TViewModel, TParameter>(this INavigationService navigationService, TParameter parameter, bool? useModalNavigation = null, bool animated = true, bool wrapInNavigationPage = false, bool noHistory = false) where TViewModel : ViewModelBase<TParameter>
+        {
+            var parameters = new NavigationParameters
+            {
+                {ViewModelBase.ParameterKey,  parameter}
+            };
+
+            return navigationService.NavigateAsync<TViewModel>(parameters, useModalNavigation, animated);
         }
     }
 }

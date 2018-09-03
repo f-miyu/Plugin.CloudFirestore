@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using Firebase.CloudFirestore;
 using System.Reactive.Linq;
-using System.Reactive.Disposables;
 using System.Collections.Generic;
 using System.Linq;
 

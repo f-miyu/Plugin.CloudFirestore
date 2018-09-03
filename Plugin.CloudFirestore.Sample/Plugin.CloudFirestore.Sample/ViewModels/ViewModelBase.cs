@@ -7,8 +7,10 @@ using System.Text;
 
 namespace Plugin.CloudFirestore.Sample.ViewModels
 {
-    public class ViewModelBase : BindableBase, INavigationAware, IDestructible
+    public abstract class ViewModelBase : BindableBase, INavigationAware, IDestructible
     {
+        public static readonly string ParameterKey = "parameter";
+
         protected INavigationService NavigationService { get; private set; }
 
         private string _title;
@@ -18,7 +20,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public ViewModelBase(INavigationService navigationService)
+        protected ViewModelBase(INavigationService navigationService)
         {
             NavigationService = navigationService;
         }
@@ -40,7 +42,24 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 
         public virtual void Destroy()
         {
-
         }
+    }
+
+    public abstract class ViewModelBase<TParameer> : ViewModelBase
+    {
+        protected ViewModelBase(INavigationService navigationService) : base(navigationService)
+        {
+        }
+
+        public override void OnNavigatingTo(NavigationParameters parameters)
+        {
+            base.OnNavigatingTo(parameters);
+
+            var parameter = (TParameer)parameters[ParameterKey];
+
+            Prepare(parameter);
+        }
+
+        public abstract void Prepare(TParameer parameer);
     }
 }

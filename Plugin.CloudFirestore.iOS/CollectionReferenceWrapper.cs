@@ -6,7 +6,6 @@ using Foundation;
 using Firebase.CloudFirestore;
 using Plugin.CloudFirestore;
 using System.Reactive.Linq;
-using System.Reactive.Disposables;
 
 namespace Plugin.CloudFirestore
 {

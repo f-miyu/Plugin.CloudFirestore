@@ -7,6 +7,17 @@ namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreImplementation : ICloudFirestore
     {
+        public bool PersistenceEnabled
+        {
+            get => CloudFirestore.Instance.Settings.PersistenceEnabled;
+            set
+            {
+                var settings = new FirestoreSettings();
+                settings.PersistenceEnabled = value;
+                CloudFirestore.Instance.Settings = settings;
+            }
+        }
+
         public ICollectionReference GetCollection(string collectionPath)
         {
             var collectionReference = CloudFirestore.Instance.GetCollection(collectionPath);

@@ -6,6 +6,7 @@ namespace Plugin.CloudFirestore
 {
     public interface ICloudFirestore
     {
+        bool PersistenceEnabled { get; set; }
         ICollectionReference GetCollection(string collectionPath);
         IDocumentReference GetDocument(string documentPath);
         void RunTransaction<T>(TransactionHandler<T> handler, CompletionHandler<T> completionHandler);

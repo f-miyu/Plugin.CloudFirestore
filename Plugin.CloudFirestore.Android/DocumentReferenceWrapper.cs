@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Android.Runtime;
 using Firebase.Firestore;
 using System.Reactive.Linq;
-using System.Reactive.Disposables;
 using System.Collections.Generic;
 using System.Linq;
 

@@ -5,6 +5,8 @@ using Reactive.Bindings.Extensions;
 using Plugin.CloudFirestore.Sample.Models;
 using Prism.Services;
 using Prism.Navigation;
+using System.Threading;
+
 namespace Plugin.CloudFirestore.Sample.ViewModels
 {
     public class NewTodoItemPageViewModel : ViewModelBase
@@ -24,9 +26,9 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             Title = "New Todo Item";
 
             CreateCommand = new[] {
-                Name.Select(x => string.IsNullOrEmpty(x)),
-                Notes.Select(x => string.IsNullOrEmpty(x))
+                Name.Select(x => string.IsNullOrEmpty(x))
             }.CombineLatestValuesAreAllFalse()
+             .ObserveOn(SynchronizationContext.Current)
              .ToAsyncReactiveCommand();
 
             CreateCommand.Subscribe(async () =>
@@ -42,7 +44,10 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                                    .GetCollection(TodoItem.CollectionPath)
                                    .AddDocument(item, (error) =>
                                    {
-                                       System.Diagnostics.Debug.WriteLine(error);
+                                       if (error != null)
+                                       {
+                                           System.Diagnostics.Debug.WriteLine(error);
+                                       }
                                    });
 
                 await navigationService.GoBackAsync(useModalNavigation: true);

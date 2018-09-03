@@ -6,14 +6,14 @@ using Prism.Services;
 using Reactive.Bindings;
 using Reactive.Bindings.Extensions;
 using System.Net.Http.Headers;
+using System.Threading;
 
 namespace Plugin.CloudFirestore.Sample.ViewModels
 {
-    public class TodoItemDetailPageViewModel : ViewModelBase
+    public class TodoItemDetailPageViewModel : ViewModelBase<string>
     {
-        public static string NavigationParameterId = "id";
-
-        private ReactivePropertySlim<TodoItem> _todoItem = new ReactivePropertySlim<TodoItem>();
+        private ReactivePropertySlim<string> _id = new ReactivePropertySlim<string>(mode: ReactivePropertyMode.DistinctUntilChanged);
+        private ReactivePropertySlim<TodoItem> _todoItem = new ReactivePropertySlim<TodoItem>(mode: ReactivePropertyMode.DistinctUntilChanged);
 
         public ReactivePropertySlim<string> Name { get; set; } = new ReactivePropertySlim<string>();
         public ReactivePropertySlim<string> Notes { get; set; } = new ReactivePropertySlim<string>();
@@ -29,11 +29,23 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 
             Title = "Todo Item";
 
+            _id.Where(id => id != null)
+               .SelectMany(id => CrossCloudFirestore.Current.GetDocument($"{TodoItem.CollectionPath}/{id}").GetDocumentAsync())
+               .Where(document => document != null)
+               .Select(document => document.ToObject<TodoItem>())
+               .Where(todoItem => _todoItem != null)
+               .Subscribe(todoItem =>
+               {
+                   _todoItem.Value = todoItem;
+                   Name.Value = todoItem.Name;
+                   Notes.Value = todoItem.Notes;
+               }, ex => System.Diagnostics.Debug.WriteLine(ex));
+
             UpdateCommand = new[] {
                 _todoItem.Select(x => x == null),
-                Name.Select(x => string.IsNullOrEmpty(x)),
-                Notes.Select(x => string.IsNullOrEmpty(x))
+                Name.Select(x => string.IsNullOrEmpty(x))
             }.CombineLatestValuesAreAllFalse()
+             .ObserveOn(SynchronizationContext.Current)
              .ToAsyncReactiveCommand();
 
             UpdateCommand.Subscribe(async () =>
@@ -45,7 +57,10 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 CrossCloudFirestore.Current.GetDocument($"{TodoItem.CollectionPath}/{todoItem.Id}")
                                    .UpdateData(todoItem, (error) =>
                                    {
-                                       System.Diagnostics.Debug.WriteLine(error);
+                                       if (error != null)
+                                       {
+                                           System.Diagnostics.Debug.WriteLine(error);
+                                       }
                                    });
 
                 await navigationService.GoBackAsync();
@@ -54,6 +69,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             DeleteCommand = new[] {
                 _todoItem.Select(x => x == null)
             }.CombineLatestValuesAreAllFalse()
+             .ObserveOn(SynchronizationContext.Current)
              .ToAsyncReactiveCommand();
 
             DeleteCommand.Subscribe(async () =>
@@ -66,7 +82,10 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                                        .GetDocument($"{TodoItem.CollectionPath}/{_todoItem.Value.Id}")
                                        .DeleteDocument((error) =>
                                        {
-                                           System.Diagnostics.Debug.WriteLine(error);
+                                           if (error != null)
+                                           {
+                                               System.Diagnostics.Debug.WriteLine(error);
+                                           }
                                        });
 
                     await NavigationService.GoBackAsync();
@@ -74,30 +93,9 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             });
         }
 
-        public async override void OnNavigatedTo(NavigationParameters parameters)
+        public override void Prepare(string parameer)
         {
-            base.OnNavigatedTo(parameters);
-
-            if (parameters.GetNavigationMode() == NavigationMode.New)
-            {
-                try
-                {
-                    var id = (string)parameters[NavigationParameterId];
-
-                    var document = await CrossCloudFirestore.Current
-                                                            .GetDocument($"{TodoItem.CollectionPath}/{id}")
-                                                            .GetDocumentAsync();
-
-                    var todoItem = document.ToObject<TodoItem>();
-                    _todoItem.Value = todoItem;
-                    Name.Value = todoItem.Name;
-                    Notes.Value = todoItem.Notes;
-                }
-                catch (CloudFirestoreException e)
-                {
-                    System.Diagnostics.Debug.WriteLine(e);
-                }
-            }
+            _id.Value = parameer;
         }
     }
 }
