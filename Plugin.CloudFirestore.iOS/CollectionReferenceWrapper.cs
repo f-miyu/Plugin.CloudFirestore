@@ -162,7 +162,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new NSErrorException(error));
+                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
                 }
                 else
                 {

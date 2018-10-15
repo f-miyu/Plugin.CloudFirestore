@@ -20,7 +20,7 @@ namespace Plugin.CloudFirestore
 
             if (error != null)
             {
-                throw new NSErrorException(error);
+                throw new CloudFirestoreException(error.LocalizedDescription);
             }
 
             return new DocumentSnapshotWrapper(snapshot);
