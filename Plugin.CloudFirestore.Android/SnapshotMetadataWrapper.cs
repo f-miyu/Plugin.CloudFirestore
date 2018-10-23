@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
 
         public bool IsFromCache => SnapshotMetadata.IsFromCache;
 
-        public SnapshotMetadata SnapshotMetadata { get; }
+        private SnapshotMetadata SnapshotMetadata { get; }
 
         public SnapshotMetadataWrapper(SnapshotMetadata snapshotMetadata)
         {

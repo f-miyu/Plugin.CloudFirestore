@@ -6,7 +6,7 @@ namespace Plugin.CloudFirestore
 {
     public class TransactionWrapper : ITransaction
     {
-        public Transaction Transaction { get; }
+        private Transaction Transaction { get; }
 
         public TransactionWrapper(Transaction transaction)
         {
@@ -16,7 +16,7 @@ namespace Plugin.CloudFirestore
         public IDocumentSnapshot GetDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            var snapshot = Transaction.GetDocument(wrapper.DocumentReference, out var error);
+            var snapshot = Transaction.GetDocument((DocumentReference)wrapper, out var error);
 
             if (error != null)
             {
@@ -29,38 +29,38 @@ namespace Plugin.CloudFirestore
         public void SetData<T>(IDocumentReference document, T documentData) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            Transaction.SetData(documentData.ToNativeFieldValues(), wrapper.DocumentReference);
+            Transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, string[] mergeFields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            Transaction.SetData(documentData.ToNativeFieldValues(), wrapper.DocumentReference, mergeFields);
+            Transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, bool merge) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            Transaction.SetData(documentData.ToNativeFieldValues(), wrapper.DocumentReference, merge);
+            Transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
         }
 
         public void UpdateData<T>(IDocumentReference document, T fields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            Transaction.UpdateData(fields.ToNativeFieldValues(), wrapper.DocumentReference);
+            Transaction.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
         public void UpdateData<T>(IDocumentReference document, string field, T value, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
             var wrapper = (DocumentReferenceWrapper)document;
-            Transaction.UpdateData(fields, wrapper.DocumentReference);
+            Transaction.UpdateData(fields, (DocumentReference)wrapper);
         }
 
         public void DeleteDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            Transaction.DeleteDocument(wrapper.DocumentReference);
+            Transaction.DeleteDocument((DocumentReference)wrapper);
         }
     }
 }

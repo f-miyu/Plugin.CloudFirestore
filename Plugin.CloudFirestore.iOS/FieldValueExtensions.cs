@@ -6,6 +6,7 @@ using System.Collections;
 using System.IO;
 using Plugin.CloudFirestore.Attributes;
 using System.Reflection;
+using Firebase.CloudFirestore;
 
 namespace Plugin.CloudFirestore
 {
@@ -51,7 +52,7 @@ namespace Plugin.CloudFirestore
                 case GeoPoint geoPoint:
                     return new Firebase.CloudFirestore.GeoPoint(geoPoint.Latitude, geoPoint.Longitude);
                 case DocumentReferenceWrapper documentReference:
-                    return documentReference.DocumentReference;
+                    return (DocumentReference)documentReference;
                 case byte[] @byte:
                     return NSData.FromArray(@byte);
                 case Stream stream:
@@ -172,6 +173,11 @@ namespace Plugin.CloudFirestore
                         {
                             list = (IList)Activator.CreateInstance(type);
                         }
+                        else if (type.IsGenericType)
+                        {
+                            var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
+                            list = (IList)Activator.CreateInstance(listType);
+                        }
                         else
                         {
                             list = new List<object>();
@@ -195,6 +201,11 @@ namespace Plugin.CloudFirestore
                         if (type == typeof(object))
                         {
                             @object = new Dictionary<string, object>();
+                        }
+                        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
+                        {
+                            var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
+                            @object = Activator.CreateInstance(dictionaryType);
                         }
                         else
                         {

@@ -3,7 +3,7 @@ namespace Plugin.CloudFirestore
 {
     public class ListenerRegistrationWrapper : IListenerRegistration
     {
-        public Firebase.Firestore.IListenerRegistration ListenerRegistration { get; }
+        private Firebase.Firestore.IListenerRegistration ListenerRegistration { get; }
 
         public ListenerRegistrationWrapper(Firebase.Firestore.IListenerRegistration listenerRegistration)
         {

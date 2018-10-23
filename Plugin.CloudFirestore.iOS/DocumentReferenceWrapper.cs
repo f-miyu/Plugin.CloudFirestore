@@ -9,11 +9,16 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentReferenceWrapper : IDocumentReference
     {
-        public DocumentReference DocumentReference { get; }
+        private DocumentReference DocumentReference { get; }
 
         public DocumentReferenceWrapper(DocumentReference documentReference)
         {
             DocumentReference = documentReference;
+        }
+
+        public static explicit operator DocumentReference(DocumentReferenceWrapper wrapper)
+        {
+            return wrapper.DocumentReference;
         }
 
         public ICollectionReference GetCollection(string collectionPath)

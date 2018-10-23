@@ -6,7 +6,7 @@ namespace Plugin.CloudFirestore
 {
     public class WriteBatchWrapper : IWriteBatch
     {
-        public WriteBatch WriteBatch { get; }
+        private WriteBatch WriteBatch { get; }
 
         public WriteBatchWrapper(WriteBatch writeBatch)
         {
@@ -43,38 +43,38 @@ namespace Plugin.CloudFirestore
         public void SetData<T>(IDocumentReference document, T documentData) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.SetData(documentData.ToNativeFieldValues(), wrapper.DocumentReference);
+            WriteBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, string[] mergeFields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.SetData(documentData.ToNativeFieldValues(), wrapper.DocumentReference, mergeFields);
+            WriteBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, bool merge) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.SetData(documentData.ToNativeFieldValues(), wrapper.DocumentReference, merge);
+            WriteBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
         }
 
         public void UpdateData<T>(IDocumentReference document, T fields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.UpdateData(fields.ToNativeFieldValues(), wrapper.DocumentReference);
+            WriteBatch.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
         public void UpdateData<T>(IDocumentReference document, string field, T value, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.UpdateData(fields, wrapper.DocumentReference);
+            WriteBatch.UpdateData(fields, (DocumentReference)wrapper);
         }
 
         public void DeleteDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.DeleteDocument(wrapper.DocumentReference);
+            WriteBatch.DeleteDocument((DocumentReference)wrapper);
         }
     }
 }

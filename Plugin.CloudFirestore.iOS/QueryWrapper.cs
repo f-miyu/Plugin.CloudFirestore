@@ -10,7 +10,7 @@ namespace Plugin.CloudFirestore
 {
     public class QueryWrapper : IQuery
     {
-        public Query Query { get; }
+        private Query Query { get; }
 
         public QueryWrapper(Query query)
         {
@@ -62,7 +62,7 @@ namespace Plugin.CloudFirestore
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.StartingAt(wrapper.DocumentSnapshot);
+            var query = Query.StartingAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
@@ -75,7 +75,7 @@ namespace Plugin.CloudFirestore
         public IQuery StartAfter(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.StartingAfter(wrapper.DocumentSnapshot);
+            var query = Query.StartingAfter((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
@@ -88,7 +88,7 @@ namespace Plugin.CloudFirestore
         public IQuery EndAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.EndingAt(wrapper.DocumentSnapshot);
+            var query = Query.EndingAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
@@ -101,7 +101,7 @@ namespace Plugin.CloudFirestore
         public IQuery EndBefore(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.EndingBefore(wrapper.DocumentSnapshot);
+            var query = Query.EndingBefore((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 

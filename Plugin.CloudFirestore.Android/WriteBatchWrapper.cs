@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
 {
     public class WriteBatchWrapper : IWriteBatch
     {
-        public WriteBatch WriteBatch { get; }
+        private WriteBatch WriteBatch { get; }
 
         public WriteBatchWrapper(WriteBatch writeBatch)
         {
@@ -44,13 +44,13 @@ namespace Plugin.CloudFirestore
         public void SetData<T>(IDocumentReference document, T documentData) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Set(wrapper.DocumentReference, documentData.ToNativeFieldValues());
+            WriteBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues());
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, string[] mergeFields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Set(wrapper.DocumentReference, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
+            WriteBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, bool merge) where T : class
@@ -62,25 +62,25 @@ namespace Plugin.CloudFirestore
             }
 
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Set(wrapper.DocumentReference, documentData.ToNativeFieldValues(), SetOptions.Merge());
+            WriteBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.Merge());
         }
 
         public void UpdateData<T>(IDocumentReference document, T fields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Update(wrapper.DocumentReference, fields.ToNativeFieldValues());
+            WriteBatch.Update((DocumentReference)wrapper, fields.ToNativeFieldValues());
         }
 
         public void UpdateData<T>(IDocumentReference document, string field, T value, params object[] moreFieldsAndValues)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Update(wrapper.DocumentReference, field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            WriteBatch.Update((DocumentReference)wrapper, field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
         }
 
         public void DeleteDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Delete(wrapper.DocumentReference);
+            WriteBatch.Delete((DocumentReference)wrapper);
         }
     }
 }

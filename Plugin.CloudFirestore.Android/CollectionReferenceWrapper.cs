@@ -10,7 +10,7 @@ namespace Plugin.CloudFirestore
 {
     public class CollectionReferenceWrapper : ICollectionReference
     {
-        public CollectionReference CollectionReference { get; }
+        private CollectionReference CollectionReference { get; }
 
         public CollectionReferenceWrapper(CollectionReference collectionReference)
         {
@@ -64,7 +64,7 @@ namespace Plugin.CloudFirestore
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.StartAt(wrapper.DocumentSnapshot);
+            var query = CollectionReference.StartAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
@@ -77,7 +77,7 @@ namespace Plugin.CloudFirestore
         public IQuery StartAfter(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.StartAfter(wrapper.DocumentSnapshot);
+            var query = CollectionReference.StartAfter((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
@@ -90,7 +90,7 @@ namespace Plugin.CloudFirestore
         public IQuery EndAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.EndAt(wrapper.DocumentSnapshot);
+            var query = CollectionReference.EndAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
@@ -103,7 +103,7 @@ namespace Plugin.CloudFirestore
         public IQuery EndBefore(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.EndBefore(wrapper.DocumentSnapshot);
+            var query = CollectionReference.EndBefore((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 

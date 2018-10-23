@@ -25,7 +25,7 @@ namespace Plugin.CloudFirestore
         private IQuery _query;
         public IQuery Query => _query ?? (_query = new QueryWrapper(QuerySnapshot.Query));
 
-        public QuerySnapshot QuerySnapshot { get; }
+        private QuerySnapshot QuerySnapshot { get; }
 
         public QuerySnapshotWrapper(QuerySnapshot querySnapshot)
         {

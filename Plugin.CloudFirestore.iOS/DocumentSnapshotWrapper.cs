@@ -29,11 +29,16 @@ namespace Plugin.CloudFirestore
         private IDocumentReference _reference;
         public IDocumentReference Reference => _reference ?? (_reference = new DocumentReferenceWrapper(DocumentSnapshot.Reference));
 
-        public DocumentSnapshot DocumentSnapshot { get; }
+        private DocumentSnapshot DocumentSnapshot { get; }
 
         public DocumentSnapshotWrapper(DocumentSnapshot documentSnapshot)
         {
             DocumentSnapshot = documentSnapshot;
+        }
+
+        public static explicit operator DocumentSnapshot(DocumentSnapshotWrapper wrapper)
+        {
+            return wrapper.DocumentSnapshot;
         }
 
         public T ToObject<T>() where T : class

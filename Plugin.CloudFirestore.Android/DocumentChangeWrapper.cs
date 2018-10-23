@@ -34,7 +34,7 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public DocumentChange DocumentChange { get; }
+        private DocumentChange DocumentChange { get; }
 
         public DocumentChangeWrapper(DocumentChange documentChange)
         {
