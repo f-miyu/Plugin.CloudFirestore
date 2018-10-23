@@ -6,7 +6,6 @@ using System.Collections;
 using System.IO;
 using Plugin.CloudFirestore.Attributes;
 using System.Reflection;
-using Firebase.CloudFirestore;
 
 namespace Plugin.CloudFirestore
 {
@@ -52,7 +51,7 @@ namespace Plugin.CloudFirestore
                 case GeoPoint geoPoint:
                     return new Firebase.CloudFirestore.GeoPoint(geoPoint.Latitude, geoPoint.Longitude);
                 case DocumentReferenceWrapper documentReference:
-                    return (DocumentReference)documentReference;
+                    return (Firebase.CloudFirestore.DocumentReference)documentReference;
                 case byte[] @byte:
                     return NSData.FromArray(@byte);
                 case Stream stream:

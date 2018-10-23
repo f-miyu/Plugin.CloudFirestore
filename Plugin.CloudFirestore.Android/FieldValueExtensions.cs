@@ -6,7 +6,6 @@ using System.Linq;
 using System.Reflection;
 using Android.Runtime;
 using Plugin.CloudFirestore.Attributes;
-using Firebase.Firestore;
 
 namespace Plugin.CloudFirestore
 {
@@ -52,7 +51,7 @@ namespace Plugin.CloudFirestore
                 case GeoPoint geoPoint:
                     return new Firebase.Firestore.GeoPoint(geoPoint.Latitude, geoPoint.Longitude);
                 case DocumentReferenceWrapper documentReference:
-                    return (DocumentReference)documentReference;
+                    return (Firebase.Firestore.DocumentReference)documentReference;
                 case byte[] @byte:
                     return Firebase.Firestore.Blob.FromBytes(@byte);
                 case Stream stream:
