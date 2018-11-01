@@ -1,25 +1,29 @@
 ﻿using System;
 using Firebase.Firestore;
+using Android.Content;
 
 namespace Plugin.CloudFirestore
 {
     public static class CloudFirestore
     {
-        private static Firebase.FirebaseApp _app;
+        public static string DefaultAppName { get; set; }
 
-        internal static FirebaseFirestore Instance => FirebaseFirestore.GetInstance(_app);
+        private static bool _hasInitialized;
 
-        public static void Init()
+        public static void Init(Context context, string appName)
         {
-            if (_app == null)
+            if (!_hasInitialized)
             {
-                var context = Android.App.Application.Context;
+                _hasInitialized = true;
 
                 var baseOptions = Firebase.FirebaseOptions.FromResource(context);
                 var options = new Firebase.FirebaseOptions.Builder(baseOptions).SetProjectId(baseOptions.StorageBucket.Split('.')[0]).Build();
 
-                _app = Firebase.FirebaseApp.InitializeApp(context, options, "Plugin.CloudFirestore");
+                Firebase.FirebaseApp.InitializeApp(context, options, appName);
+
+                DefaultAppName = appName;
             }
         }
+
     }
 }

@@ -30,7 +30,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             Title = "Todo Item";
 
             _id.Where(id => id != null)
-               .SelectMany(id => CrossCloudFirestore.Current.GetDocument($"{TodoItem.CollectionPath}/{id}").GetDocumentAsync())
+               .SelectMany(id => CrossCloudFirestore.Current.Instance.GetDocument($"{TodoItem.CollectionPath}/{id}").GetDocumentAsync())
                .Where(document => document != null)
                .Select(document => document.ToObject<TodoItem>())
                .Where(todoItem => _todoItem != null)
@@ -54,7 +54,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 todoItem.Name = Name.Value;
                 todoItem.Notes = Notes.Value;
 
-                CrossCloudFirestore.Current.GetDocument($"{TodoItem.CollectionPath}/{todoItem.Id}")
+                CrossCloudFirestore.Current.Instance.GetDocument($"{TodoItem.CollectionPath}/{todoItem.Id}")
                                    .UpdateData(todoItem, (error) =>
                                    {
                                        if (error != null)
@@ -79,6 +79,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 if (ok)
                 {
                     CrossCloudFirestore.Current
+                                       .Instance
                                        .GetDocument($"{TodoItem.CollectionPath}/{_todoItem.Value.Id}")
                                        .DeleteDocument((error) =>
                                        {

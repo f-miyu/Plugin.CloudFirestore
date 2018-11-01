@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
@@ -14,5 +14,8 @@
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="IAuthService.cs" />
     </ItemGroup>
 </Project>

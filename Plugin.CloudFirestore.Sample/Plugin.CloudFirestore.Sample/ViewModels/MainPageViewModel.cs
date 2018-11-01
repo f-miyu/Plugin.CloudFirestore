@@ -29,6 +29,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             Title = "Todo List";
 
             var query = CrossCloudFirestore.Current
+                                           .Instance
                                            .GetCollection(TodoItem.CollectionPath)
                                            .OrderBy(nameof(TodoItem.CreatedAt), true);
 

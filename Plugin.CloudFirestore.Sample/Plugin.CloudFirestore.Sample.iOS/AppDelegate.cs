@@ -21,7 +21,7 @@ namespace Plugin.CloudFirestore.Sample.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            CloudFirestore.Init();
+            Firebase.Core.App.Configure();
 
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));

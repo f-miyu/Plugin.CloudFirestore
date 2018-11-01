@@ -16,7 +16,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 
             base.OnCreate(bundle);
 
-            CloudFirestore.Init();
+            CloudFirestore.Init(this, "Plugin.CloudFirestore.Sample");
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App(new AndroidInitializer()));

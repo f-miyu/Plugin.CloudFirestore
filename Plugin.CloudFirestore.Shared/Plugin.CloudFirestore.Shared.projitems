@@ -30,5 +30,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)IListenerRegistration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CloudFirestoreException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CrossCloudFirestore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IInstance.cs" />
   </ItemGroup>
 </Project>

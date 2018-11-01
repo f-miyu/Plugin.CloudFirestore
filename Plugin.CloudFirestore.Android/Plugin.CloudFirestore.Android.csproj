@@ -106,6 +106,7 @@
     <Compile Include="CloudFireStore.cs" />
     <Compile Include="ListenerRegistrationWrapper.cs" />
     <Compile Include="ExceptionHolder.cs" />
+    <Compile Include="InstanceWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

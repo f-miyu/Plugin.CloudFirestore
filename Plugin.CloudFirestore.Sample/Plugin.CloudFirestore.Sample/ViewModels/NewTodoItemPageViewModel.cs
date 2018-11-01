@@ -41,6 +41,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 };
 
                 CrossCloudFirestore.Current
+                                   .Instance
                                    .GetCollection(TodoItem.CollectionPath)
                                    .AddDocument(item, (error) =>
                                    {
