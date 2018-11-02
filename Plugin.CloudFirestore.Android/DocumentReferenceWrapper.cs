@@ -10,21 +10,21 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentReferenceWrapper : IDocumentReference
     {
-        private DocumentReference DocumentReference { get; }
+        private readonly DocumentReference _documentReference;
 
         public DocumentReferenceWrapper(DocumentReference documentReference)
         {
-            DocumentReference = documentReference;
+            _documentReference = documentReference;
         }
 
         public static explicit operator DocumentReference(DocumentReferenceWrapper wrapper)
         {
-            return wrapper.DocumentReference;
+            return wrapper._documentReference;
         }
 
         public ICollectionReference GetCollection(string collectionPath)
         {
-            var collectionReference = DocumentReference.Collection(collectionPath);
+            var collectionReference = _documentReference.Collection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
 
@@ -32,7 +32,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
-            DocumentReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 var snapshot = !task.IsSuccessful ? null : task.Result.JavaCast<DocumentSnapshot>();
                 handler?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
@@ -44,7 +44,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
-            DocumentReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -62,7 +62,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData<T>(T documentData, CompletionHandler handler) where T : class
         {
-            DocumentReference.Set(documentData.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -72,7 +72,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.Set(documentData.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -89,7 +89,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData<T>(T documentData, IEnumerable<string> mergeFields, CompletionHandler handler) where T : class
         {
-            DocumentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -99,7 +99,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -122,7 +122,7 @@ namespace Plugin.CloudFirestore
                 return;
             }
 
-            DocumentReference.Set(documentData.ToNativeFieldValues(), SetOptions.Merge()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.Merge()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -137,7 +137,7 @@ namespace Plugin.CloudFirestore
 
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.Set(documentData.ToNativeFieldValues(), SetOptions.Merge()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.Merge()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -154,7 +154,7 @@ namespace Plugin.CloudFirestore
 
         public void UpdateData<T>(T fields, CompletionHandler handler) where T : class
         {
-            DocumentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -164,7 +164,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -181,7 +181,7 @@ namespace Plugin.CloudFirestore
 
         public void UpdateData<T>(string field, T value, CompletionHandler handler, params object[] moreFieldsAndValues)
         {
-            DocumentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -191,7 +191,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
            {
                if (task.IsSuccessful)
                {
@@ -208,7 +208,7 @@ namespace Plugin.CloudFirestore
 
         public void DeleteDocument(CompletionHandler handler)
         {
-            DocumentReference.Delete().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Delete().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -218,7 +218,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.Delete().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Delete().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -235,7 +235,7 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(DocumentSnapshotHandler listener)
         {
-            var registration = DocumentReference.AddSnapshotListener(new EventHandlerListener<DocumentSnapshot>((value, error) =>
+            var registration = _documentReference.AddSnapshotListener(new EventHandlerListener<DocumentSnapshot>((value, error) =>
             {
                 listener?.Invoke(value == null ? null : new DocumentSnapshotWrapper(value),
                                  error == null ? null : ExceptionMapper.Map(error));
@@ -253,7 +253,7 @@ namespace Plugin.CloudFirestore
 
             var option = new DocumentListenOptions().IncludeMetadataChanges();
 
-            var registration = DocumentReference.AddSnapshotListener(option, new EventHandlerListener<DocumentSnapshot>((value, error) =>
+            var registration = _documentReference.AddSnapshotListener(option, new EventHandlerListener<DocumentSnapshot>((value, error) =>
             {
                 listener?.Invoke(value == null ? null : new DocumentSnapshotWrapper(value),
                                  error == null ? null : ExceptionMapper.Map(error));

@@ -10,16 +10,16 @@ namespace Plugin.CloudFirestore
 {
     public class CollectionReferenceWrapper : ICollectionReference
     {
-        private CollectionReference CollectionReference { get; }
+        private readonly CollectionReference _collectionReference;
 
         public CollectionReferenceWrapper(CollectionReference collectionReference)
         {
-            CollectionReference = collectionReference;
+            _collectionReference = collectionReference;
         }
 
         public IQuery LimitTo(int limit)
         {
-            var query = CollectionReference.Limit(limit);
+            var query = _collectionReference.Limit(limit);
             return new QueryWrapper(query);
         }
 
@@ -27,101 +27,101 @@ namespace Plugin.CloudFirestore
         {
             var direction = descending ? Query.Direction.Descending : Query.Direction.Ascending;
 
-            var query = CollectionReference.OrderBy(field, direction);
+            var query = _collectionReference.OrderBy(field, direction);
             return new QueryWrapper(query);
         }
 
         public IQuery WhereEqualsTo<T>(string field, T value)
         {
-            var query = CollectionReference.WhereEqualTo(field, value.ToNativeFieldValue());
+            var query = _collectionReference.WhereEqualTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereGreaterThan<T>(string field, T value)
         {
-            var query = CollectionReference.WhereGreaterThan(field, value.ToNativeFieldValue());
+            var query = _collectionReference.WhereGreaterThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereGreaterThanOrEqualsTo<T>(string field, T value)
         {
-            var query = CollectionReference.WhereGreaterThanOrEqualTo(field, value.ToNativeFieldValue());
+            var query = _collectionReference.WhereGreaterThanOrEqualTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereLessThan<T>(string field, T value)
         {
-            var query = CollectionReference.WhereLessThan(field, value.ToNativeFieldValue());
+            var query = _collectionReference.WhereLessThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereLessThanOrEqualsTo<T>(string field, T value)
         {
-            var query = CollectionReference.WhereLessThanOrEqualTo(field, value.ToNativeFieldValue());
+            var query = _collectionReference.WhereLessThanOrEqualTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.StartAt((DocumentSnapshot)wrapper);
+            var query = _collectionReference.StartAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery StartAt<T>(IEnumerable<T> fieldValues)
         {
-            var query = CollectionReference.StartAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.StartAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IQuery StartAfter(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.StartAfter((DocumentSnapshot)wrapper);
+            var query = _collectionReference.StartAfter((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery StartAfter<T>(IEnumerable<T> fieldValues)
         {
-            var query = CollectionReference.StartAfter(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.StartAfter(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IQuery EndAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.EndAt((DocumentSnapshot)wrapper);
+            var query = _collectionReference.EndAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery EndAt<T>(IEnumerable<T> fieldValues)
         {
-            var query = CollectionReference.EndAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.EndAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IQuery EndBefore(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = CollectionReference.EndBefore((DocumentSnapshot)wrapper);
+            var query = _collectionReference.EndBefore((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery EndBefore<T>(IEnumerable<T> fieldValues)
         {
-            var query = CollectionReference.EndBefore(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.EndBefore(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IDocumentReference GetDocument(string documentPath)
         {
-            var doccuntReference = CollectionReference.Document(documentPath);
+            var doccuntReference = _collectionReference.Document(documentPath);
             return new DocumentReferenceWrapper(doccuntReference);
         }
 
         public void GetDocuments(QuerySnapshotHandler handler)
         {
-            CollectionReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _collectionReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 var snapshot = !task.IsSuccessful ? null : task.Result.JavaCast<QuerySnapshot>();
                 handler?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
@@ -133,7 +133,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
-            CollectionReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _collectionReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -151,7 +151,7 @@ namespace Plugin.CloudFirestore
 
         public void AddDocument<T>(T data, CompletionHandler handler) where T : class
         {
-            CollectionReference.Add(data.ToNativeFieldValues())
+            _collectionReference.Add(data.ToNativeFieldValues())
                                 .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                                 {
                                     handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
@@ -162,7 +162,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            CollectionReference.Add(data.ToNativeFieldValues())
+            _collectionReference.Add(data.ToNativeFieldValues())
                                 .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                                 {
                                     if (task.IsSuccessful)
@@ -180,7 +180,7 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(QuerySnapshotHandler listener)
         {
-            var registration = CollectionReference.AddSnapshotListener(new EventHandlerListener<QuerySnapshot>((value, error) =>
+            var registration = _collectionReference.AddSnapshotListener(new EventHandlerListener<QuerySnapshot>((value, error) =>
             {
                 listener?.Invoke(value == null ? null : new QuerySnapshotWrapper(value),
                                  error == null ? null : ExceptionMapper.Map(error));
@@ -198,7 +198,7 @@ namespace Plugin.CloudFirestore
 
             var option = new QueryListenOptions().IncludeQueryMetadataChanges();
 
-            var registration = CollectionReference.AddSnapshotListener(option, new EventHandlerListener<QuerySnapshot>((value, error) =>
+            var registration = _collectionReference.AddSnapshotListener(option, new EventHandlerListener<QuerySnapshot>((value, error) =>
             {
                 listener?.Invoke(value == null ? null : new QuerySnapshotWrapper(value),
                                  error == null ? null : ExceptionMapper.Map(error));

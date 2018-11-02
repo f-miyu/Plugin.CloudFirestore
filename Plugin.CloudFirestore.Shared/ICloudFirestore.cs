@@ -6,7 +6,7 @@ namespace Plugin.CloudFirestore
 {
     public interface ICloudFirestore
     {
-        IInstance Instance { get; }
-        IInstance GetInstance(string appName);
+        IFirestore Instance { get; }
+        IFirestore GetInstance(string appName);
     }
 }

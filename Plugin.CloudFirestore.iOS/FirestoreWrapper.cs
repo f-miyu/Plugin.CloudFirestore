@@ -5,54 +5,41 @@ using Foundation;
 
 namespace Plugin.CloudFirestore
 {
-    public class InstanceWrapper : IInstance
+    public class FirestoreWrapper : IFirestore
     {
         public bool PersistenceEnabled
         {
-            get => _instance.Settings.PersistenceEnabled;
+            get => _firestore.Settings.PersistenceEnabled;
             set
             {
                 var settings = new FirestoreSettings();
                 settings.PersistenceEnabled = value;
-                _instance.Settings = settings;
+                _firestore.Settings = settings;
             }
         }
 
-        private readonly Firestore _instance;
+        private readonly Firestore _firestore;
 
-        public InstanceWrapper(string appName = null)
+        public FirestoreWrapper(Firestore firestore)
         {
-            if (!string.IsNullOrEmpty(appName))
-            {
-                var app = Firebase.Core.App.From(appName);
-                _instance = Firestore.Create(app);
-            }
-            else if (!string.IsNullOrEmpty(CloudFirestore.DefaultAppName))
-            {
-                var app = Firebase.Core.App.From(CloudFirestore.DefaultAppName);
-                _instance = Firestore.Create(app);
-            }
-            else
-            {
-                _instance = Firestore.SharedInstance;
-            }
+            _firestore = firestore;
         }
 
         public ICollectionReference GetCollection(string collectionPath)
         {
-            var collectionReference = _instance.GetCollection(collectionPath);
+            var collectionReference = _firestore.GetCollection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
 
         public IDocumentReference GetDocument(string documentPath)
         {
-            var documentReference = _instance.GetDocument(documentPath);
+            var documentReference = _firestore.GetDocument(documentPath);
             return new DocumentReferenceWrapper(documentReference);
         }
 
         public void RunTransaction<T>(TransactionHandler<T> handler, CompletionHandler<T> completionHandler)
         {
-            _instance.RunTransaction((Transaction transaction, ref NSError error) =>
+            _firestore.RunTransaction((Transaction transaction, ref NSError error) =>
             {
                 try
                 {
@@ -94,7 +81,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<T>();
 
-            _instance.RunTransaction((Transaction transaction, ref NSError error) =>
+            _firestore.RunTransaction((Transaction transaction, ref NSError error) =>
             {
                 try
                 {
@@ -140,7 +127,7 @@ namespace Plugin.CloudFirestore
 
         public void RunTransaction(TransactionHandler handler, CompletionHandler completionHandler)
         {
-            _instance.RunTransaction((Transaction transaction, ref NSError error) =>
+            _firestore.RunTransaction((Transaction transaction, ref NSError error) =>
             {
                 try
                 {
@@ -174,7 +161,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _instance.RunTransaction((Transaction transaction, ref NSError error) =>
+            _firestore.RunTransaction((Transaction transaction, ref NSError error) =>
             {
                 try
                 {
@@ -215,7 +202,7 @@ namespace Plugin.CloudFirestore
 
         public IWriteBatch CreateBatch()
         {
-            var writeBatch = _instance.CreateBatch();
+            var writeBatch = _firestore.CreateBatch();
             return new WriteBatchWrapper(writeBatch);
         }
     }

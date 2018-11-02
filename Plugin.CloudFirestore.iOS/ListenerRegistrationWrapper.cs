@@ -3,16 +3,16 @@ namespace Plugin.CloudFirestore
 {
     public class ListenerRegistrationWrapper : IListenerRegistration
     {
-        private Firebase.CloudFirestore.IListenerRegistration ListenerRegistration { get; }
+        private readonly Firebase.CloudFirestore.IListenerRegistration _listenerRegistration;
 
         public ListenerRegistrationWrapper(Firebase.CloudFirestore.IListenerRegistration listenerRegistration)
         {
-            ListenerRegistration = listenerRegistration;
+            _listenerRegistration = listenerRegistration;
         }
 
         public void Remove()
         {
-            ListenerRegistration.Remove();
+            _listenerRegistration.Remove();
         }
     }
 }

@@ -6,17 +6,17 @@ namespace Plugin.CloudFirestore
     public class DocumentChangeWrapper : IDocumentChange
     {
         private IDocumentSnapshot _document;
-        public IDocumentSnapshot Document => _document ?? (_document = new DocumentSnapshotWrapper(DocumentChange.Document));
+        public IDocumentSnapshot Document => _document ?? (_document = new DocumentSnapshotWrapper(_documentChange.Document));
 
-        public int NewIndex => DocumentChange.NewIndex;
+        public int NewIndex => _documentChange.NewIndex;
 
-        public int OldIndex => DocumentChange.OldIndex;
+        public int OldIndex => _documentChange.OldIndex;
 
         public DocumentChangeType Type
         {
             get
             {
-                var type = DocumentChange.GetType();
+                var type = _documentChange.GetType();
                 if (type == DocumentChange.Type.Added)
                 {
                     return DocumentChangeType.Added;
@@ -34,11 +34,11 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        private DocumentChange DocumentChange { get; }
+        private readonly DocumentChange _documentChange;
 
         public DocumentChangeWrapper(DocumentChange documentChange)
         {
-            DocumentChange = documentChange;
+            _documentChange = documentChange;
         }
     }
 }

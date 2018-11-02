@@ -106,7 +106,7 @@
     <Compile Include="CloudFireStore.cs" />
     <Compile Include="ListenerRegistrationWrapper.cs" />
     <Compile Include="JavaException.cs" />
-    <Compile Include="InstanceWrapper.cs" />
+    <Compile Include="FirestoreWrapper.cs" />
     <Compile Include="ExceptionMapper.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,17 +5,17 @@ namespace Plugin.CloudFirestore
     public class DocumentChangeWrapper : IDocumentChange
     {
         private IDocumentSnapshot _document;
-        public IDocumentSnapshot Document => _document ?? (_document = new DocumentSnapshotWrapper(DocumentChange.Document));
+        public IDocumentSnapshot Document => _document ?? (_document = new DocumentSnapshotWrapper(_documentChange.Document));
 
-        public int NewIndex => (int)DocumentChange.NewIndex;
+        public int NewIndex => (int)_documentChange.NewIndex;
 
-        public int OldIndex => (int)DocumentChange.OldIndex;
+        public int OldIndex => (int)_documentChange.OldIndex;
 
         public DocumentChangeType Type
         {
             get
             {
-                switch (DocumentChange.Type)
+                switch (_documentChange.Type)
                 {
                     case Firebase.CloudFirestore.DocumentChangeType.Added:
                         return DocumentChangeType.Added;
@@ -29,11 +29,11 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        private DocumentChange DocumentChange { get; }
+        private readonly DocumentChange _documentChange;
 
         public DocumentChangeWrapper(DocumentChange documentChange)
         {
-            DocumentChange = documentChange;
+            _documentChange = documentChange;
         }
     }
 }

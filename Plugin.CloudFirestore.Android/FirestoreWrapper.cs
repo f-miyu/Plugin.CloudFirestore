@@ -6,56 +6,43 @@ using Firebase;
 
 namespace Plugin.CloudFirestore
 {
-    public class InstanceWrapper : IInstance
+    public class FirestoreWrapper : IFirestore
     {
         public bool PersistenceEnabled
         {
-            get => _instance.FirestoreSettings.IsPersistenceEnabled;
+            get => _firestore.FirestoreSettings.IsPersistenceEnabled;
             set
             {
                 var settings = new FirebaseFirestoreSettings.Builder()
                                                             .SetPersistenceEnabled(value)
                                                             .Build();
 
-                _instance.FirestoreSettings = settings;
+                _firestore.FirestoreSettings = settings;
             }
         }
 
-        private readonly FirebaseFirestore _instance;
+        private readonly FirebaseFirestore _firestore;
 
-        public InstanceWrapper(string appName = null)
+        public FirestoreWrapper(FirebaseFirestore firestore)
         {
-            if (!string.IsNullOrEmpty(appName))
-            {
-                var app = FirebaseApp.GetInstance(appName);
-                _instance = FirebaseFirestore.GetInstance(app);
-            }
-            else if (!string.IsNullOrEmpty(CloudFirestore.DefaultAppName))
-            {
-                var app = FirebaseApp.GetInstance(CloudFirestore.DefaultAppName);
-                _instance = FirebaseFirestore.GetInstance(app);
-            }
-            else
-            {
-                _instance = FirebaseFirestore.Instance;
-            }
+            _firestore = firestore;
         }
 
         public ICollectionReference GetCollection(string collectionPath)
         {
-            var collectionReference = _instance.Collection(collectionPath);
+            var collectionReference = _firestore.Collection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
 
         public IDocumentReference GetDocument(string documentPath)
         {
-            var documentReference = _instance.Document(documentPath);
+            var documentReference = _firestore.Document(documentPath);
             return new DocumentReferenceWrapper(documentReference);
         }
 
         public void RunTransaction<T>(TransactionHandler<T> handler, CompletionHandler<T> completionHandler)
         {
-            _instance.RunTransaction(new UpdateFunction<T>(handler))
+            _firestore.RunTransaction(new UpdateFunction<T>(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
                          T result = default;
@@ -80,7 +67,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<T>();
 
-            _instance.RunTransaction(new UpdateFunction<T>(handler))
+            _firestore.RunTransaction(new UpdateFunction<T>(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
                          if (task.IsSuccessful)
@@ -106,7 +93,7 @@ namespace Plugin.CloudFirestore
 
         public void RunTransaction(TransactionHandler handler, CompletionHandler completionHandler)
         {
-            _instance.RunTransaction(new UpdateFunction(handler))
+            _firestore.RunTransaction(new UpdateFunction(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
                          Exception exception = null;
@@ -126,7 +113,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _instance.RunTransaction(new UpdateFunction(handler))
+            _firestore.RunTransaction(new UpdateFunction(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
                          if (task.IsSuccessful)
@@ -206,7 +193,7 @@ namespace Plugin.CloudFirestore
 
         public IWriteBatch CreateBatch()
         {
-            var writeBatch = _instance.Batch();
+            var writeBatch = _firestore.Batch();
             return new WriteBatchWrapper(writeBatch);
         }
     }

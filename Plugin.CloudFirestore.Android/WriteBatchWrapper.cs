@@ -7,16 +7,16 @@ namespace Plugin.CloudFirestore
 {
     public class WriteBatchWrapper : IWriteBatch
     {
-        private WriteBatch WriteBatch { get; }
+        private readonly WriteBatch _writeBatch;
 
         public WriteBatchWrapper(WriteBatch writeBatch)
         {
-            WriteBatch = writeBatch;
+            _writeBatch = writeBatch;
         }
 
         public void Commit(CompletionHandler handler)
         {
-            WriteBatch.Commit().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _writeBatch.Commit().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
@@ -26,7 +26,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            WriteBatch.Commit().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _writeBatch.Commit().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -44,13 +44,13 @@ namespace Plugin.CloudFirestore
         public void SetData<T>(IDocumentReference document, T documentData) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues());
+            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues());
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, string[] mergeFields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
+            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
         }
 
         public void SetData<T>(IDocumentReference document, T documentData, bool merge) where T : class
@@ -62,25 +62,25 @@ namespace Plugin.CloudFirestore
             }
 
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.Merge());
+            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.Merge());
         }
 
         public void UpdateData<T>(IDocumentReference document, T fields) where T : class
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Update((DocumentReference)wrapper, fields.ToNativeFieldValues());
+            _writeBatch.Update((DocumentReference)wrapper, fields.ToNativeFieldValues());
         }
 
         public void UpdateData<T>(IDocumentReference document, string field, T value, params object[] moreFieldsAndValues)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Update((DocumentReference)wrapper, field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            _writeBatch.Update((DocumentReference)wrapper, field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
         }
 
         public void DeleteDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
-            WriteBatch.Delete((DocumentReference)wrapper);
+            _writeBatch.Delete((DocumentReference)wrapper);
         }
     }
 }

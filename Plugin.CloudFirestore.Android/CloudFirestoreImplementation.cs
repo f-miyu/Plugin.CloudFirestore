@@ -1,17 +1,33 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Firebase.Firestore;
-using Android.Runtime;
+using Firebase;
 
 namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreImplementation : ICloudFirestore
     {
-        public IInstance Instance => new InstanceWrapper();
-
-        public IInstance GetInstance(string appName)
+        public IFirestore Instance
         {
-            return new InstanceWrapper(appName);
+            get
+            {
+                FirebaseFirestore firestore;
+                if (string.IsNullOrEmpty(CloudFirestore.DefaultAppName))
+                {
+                    firestore = FirebaseFirestore.Instance;
+                }
+                else
+                {
+                    var app = FirebaseApp.GetInstance(CloudFirestore.DefaultAppName);
+                    firestore = FirebaseFirestore.GetInstance(app);
+                }
+                return new FirestoreWrapper(firestore);
+            }
+        }
+
+        public IFirestore GetInstance(string appName)
+        {
+            var app = FirebaseApp.GetInstance(appName);
+            return new FirestoreWrapper(FirebaseFirestore.GetInstance(app));
         }
     }
 }

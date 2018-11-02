@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 namespace Plugin.CloudFirestore
 {
-    public interface IInstance
+    public interface IFirestore
     {
         bool PersistenceEnabled { get; set; }
         ICollectionReference GetCollection(string collectionPath);

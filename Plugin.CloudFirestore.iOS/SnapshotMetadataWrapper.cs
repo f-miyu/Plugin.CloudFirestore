@@ -5,15 +5,15 @@ namespace Plugin.CloudFirestore
 {
     public class SnapshotMetadataWrapper : ISnapshotMetadata
     {
-        public bool HasPendingWrites => SnapshotMetadata.HasPendingWrites;
+        public bool HasPendingWrites => _snapshotMetadata.HasPendingWrites;
 
-        public bool IsFromCache => SnapshotMetadata.IsFromCache;
+        public bool IsFromCache => _snapshotMetadata.IsFromCache;
 
-        private SnapshotMetadata SnapshotMetadata { get; }
+        private readonly SnapshotMetadata _snapshotMetadata;
 
         public SnapshotMetadataWrapper(SnapshotMetadata snapshotMetadata)
         {
-            SnapshotMetadata = snapshotMetadata;
+            _snapshotMetadata = snapshotMetadata;
         }
     }
 }

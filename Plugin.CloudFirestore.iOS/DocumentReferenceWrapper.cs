@@ -9,27 +9,27 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentReferenceWrapper : IDocumentReference
     {
-        private DocumentReference DocumentReference { get; }
+        private readonly DocumentReference _documentReference;
 
         public DocumentReferenceWrapper(DocumentReference documentReference)
         {
-            DocumentReference = documentReference;
+            _documentReference = documentReference;
         }
 
         public static explicit operator DocumentReference(DocumentReferenceWrapper wrapper)
         {
-            return wrapper.DocumentReference;
+            return wrapper._documentReference;
         }
 
         public ICollectionReference GetCollection(string collectionPath)
         {
-            var collectionReference = DocumentReference.GetCollection(collectionPath);
+            var collectionReference = _documentReference.GetCollection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
 
         public void GetDocument(DocumentSnapshotHandler handler)
         {
-            DocumentReference.GetDocument((snapshot, error) =>
+            _documentReference.GetDocument((snapshot, error) =>
             {
                 handler?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
                                 error == null ? null : ExceptionMapper.Map(error));
@@ -41,7 +41,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
-            DocumentReference.GetDocument((snapshot, error) =>
+            _documentReference.GetDocument((snapshot, error) =>
             {
                 if (error != null)
                 {
@@ -58,7 +58,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData<T>(T documentData, CompletionHandler handler) where T : class
         {
-            DocumentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -68,7 +68,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
             {
                 if (error != null)
                 {
@@ -85,7 +85,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData<T>(T documentData, IEnumerable<string> mergeFields, CompletionHandler handler) where T : class
         {
-            DocumentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -95,7 +95,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
             {
                 if (error != null)
                 {
@@ -112,7 +112,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData<T>(T documentData, bool merge, CompletionHandler handler) where T : class
         {
-            DocumentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -122,7 +122,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
             {
                 if (error != null)
                 {
@@ -139,7 +139,7 @@ namespace Plugin.CloudFirestore
 
         public void UpdateData<T>(T fields, CompletionHandler handler) where T : class
         {
-            DocumentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
+            _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -149,7 +149,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
+            _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
             {
                 if (error != null)
                 {
@@ -168,7 +168,7 @@ namespace Plugin.CloudFirestore
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
 
-            DocumentReference.UpdateData(fields, (error) =>
+            _documentReference.UpdateData(fields, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -180,7 +180,7 @@ namespace Plugin.CloudFirestore
 
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.UpdateData(fields, (error) =>
+            _documentReference.UpdateData(fields, (error) =>
             {
                 if (error != null)
                 {
@@ -197,7 +197,7 @@ namespace Plugin.CloudFirestore
 
         public void DeleteDocument(CompletionHandler handler)
         {
-            DocumentReference.DeleteDocument((error) =>
+            _documentReference.DeleteDocument((error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -207,7 +207,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            DocumentReference.DeleteDocument((error) =>
+            _documentReference.DeleteDocument((error) =>
             {
                 if (error != null)
                 {
@@ -224,7 +224,7 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(DocumentSnapshotHandler listener)
         {
-            var registration = DocumentReference.AddSnapshotListener((snapshot, error) =>
+            var registration = _documentReference.AddSnapshotListener((snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
                                  error == null ? null : ExceptionMapper.Map(error));
@@ -235,7 +235,7 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, DocumentSnapshotHandler listener)
         {
-            var registration = DocumentReference.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
+            var registration = _documentReference.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
                                  error == null ? null : ExceptionMapper.Map(error));

@@ -10,110 +10,110 @@ namespace Plugin.CloudFirestore
 {
     public class QueryWrapper : IQuery
     {
-        private Query Query { get; }
+        private readonly Query _query;
 
         public QueryWrapper(Query query)
         {
-            Query = query;
+            _query = query;
         }
 
         public IQuery LimitTo(int limit)
         {
-            var query = Query.LimitedTo(limit);
+            var query = _query.LimitedTo(limit);
             return new QueryWrapper(query);
         }
 
         public IQuery OrderBy(string field, bool descending)
         {
-            var query = Query.OrderedBy(field, descending);
+            var query = _query.OrderedBy(field, descending);
             return new QueryWrapper(query);
         }
 
         public IQuery WhereEqualsTo<T>(string field, T value)
         {
-            var query = Query.WhereEqualsTo(field, value.ToNativeFieldValue());
+            var query = _query.WhereEqualsTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereGreaterThan<T>(string field, T value)
         {
-            var query = Query.WhereGreaterThan(field, value.ToNativeFieldValue());
+            var query = _query.WhereGreaterThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereGreaterThanOrEqualsTo<T>(string field, T value)
         {
-            var query = Query.WhereGreaterThanOrEqualsTo(field, value.ToNativeFieldValue());
+            var query = _query.WhereGreaterThanOrEqualsTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereLessThan<T>(string field, T value)
         {
-            var query = Query.WhereLessThan(field, value.ToNativeFieldValue());
+            var query = _query.WhereLessThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery WhereLessThanOrEqualsTo<T>(string field, T value)
         {
-            var query = Query.WhereLessThanOrEqualsTo(field, value.ToNativeFieldValue());
+            var query = _query.WhereLessThanOrEqualsTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.StartingAt((DocumentSnapshot)wrapper);
+            var query = _query.StartingAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery StartAt<T>(IEnumerable<T> fieldValues)
         {
-            var query = Query.StartingAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _query.StartingAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IQuery StartAfter(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.StartingAfter((DocumentSnapshot)wrapper);
+            var query = _query.StartingAfter((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery StartAfter<T>(IEnumerable<T> fieldValues)
         {
-            var query = Query.StartingAfter(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _query.StartingAfter(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IQuery EndAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.EndingAt((DocumentSnapshot)wrapper);
+            var query = _query.EndingAt((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery EndAt<T>(IEnumerable<T> fieldValues)
         {
-            var query = Query.EndingAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _query.EndingAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public IQuery EndBefore(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
-            var query = Query.EndingBefore((DocumentSnapshot)wrapper);
+            var query = _query.EndingBefore((DocumentSnapshot)wrapper);
             return new QueryWrapper(query);
         }
 
         public IQuery EndBefore<T>(IEnumerable<T> fieldValues)
         {
-            var query = Query.EndingBefore(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _query.EndingBefore(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
         public void GetDocuments(QuerySnapshotHandler handler)
         {
-            Query.GetDocuments((snapshot, error) =>
+            _query.GetDocuments((snapshot, error) =>
             {
                 handler?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
                                 error == null ? null : ExceptionMapper.Map(error));
@@ -124,7 +124,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
-            Query.GetDocuments((snapshot, error) =>
+            _query.GetDocuments((snapshot, error) =>
             {
                 if (error != null)
                 {
@@ -141,7 +141,7 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(QuerySnapshotHandler listener)
         {
-            var registration = Query.AddSnapshotListener((snapshot, error) =>
+            var registration = _query.AddSnapshotListener((snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
                                  error == null ? null : ExceptionMapper.Map(error));
@@ -152,7 +152,7 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, QuerySnapshotHandler listener)
         {
-            var registration = Query.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
+            var registration = _query.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
                                  error == null ? null : ExceptionMapper.Map(error));

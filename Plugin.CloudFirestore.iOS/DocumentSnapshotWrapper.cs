@@ -13,37 +13,37 @@ namespace Plugin.CloudFirestore
             {
                 if (Exists && _data == null)
                 {
-                    _data = DocumentMapper.Map(DocumentSnapshot);
+                    _data = DocumentMapper.Map(_documentSnapshot);
                 }
                 return _data;
             }
         }
 
-        public string Id => DocumentSnapshot.Id;
+        public string Id => _documentSnapshot.Id;
 
-        public bool Exists => DocumentSnapshot.Exists;
+        public bool Exists => _documentSnapshot.Exists;
 
         private ISnapshotMetadata _metadata;
-        public ISnapshotMetadata Metadata => _metadata ?? (_metadata = new SnapshotMetadataWrapper(DocumentSnapshot.Metadata));
+        public ISnapshotMetadata Metadata => _metadata ?? (_metadata = new SnapshotMetadataWrapper(_documentSnapshot.Metadata));
 
         private IDocumentReference _reference;
-        public IDocumentReference Reference => _reference ?? (_reference = new DocumentReferenceWrapper(DocumentSnapshot.Reference));
+        public IDocumentReference Reference => _reference ?? (_reference = new DocumentReferenceWrapper(_documentSnapshot.Reference));
 
-        private DocumentSnapshot DocumentSnapshot { get; }
+        private readonly DocumentSnapshot _documentSnapshot;
 
         public DocumentSnapshotWrapper(DocumentSnapshot documentSnapshot)
         {
-            DocumentSnapshot = documentSnapshot;
+            _documentSnapshot = documentSnapshot;
         }
 
         public static explicit operator DocumentSnapshot(DocumentSnapshotWrapper wrapper)
         {
-            return wrapper.DocumentSnapshot;
+            return wrapper._documentSnapshot;
         }
 
         public T ToObject<T>() where T : class
         {
-            return DocumentMapper.Map<T>(DocumentSnapshot);
+            return DocumentMapper.Map<T>(_documentSnapshot);
         }
     }
 }

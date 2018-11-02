@@ -7,29 +7,29 @@ namespace Plugin.CloudFirestore
 {
     public class QuerySnapshotWrapper : IQuerySnapshot
     {
-        public int Count => QuerySnapshot.Size();
+        public int Count => _querySnapshot.Size();
 
         private IEnumerable<IDocumentChange> _documentChanges;
         public IEnumerable<IDocumentChange> DocumentChanges =>
-        _documentChanges ?? (_documentChanges = QuerySnapshot.DocumentChanges.Select(d => new DocumentChangeWrapper(d)));
+        _documentChanges ?? (_documentChanges = _querySnapshot.DocumentChanges.Select(d => new DocumentChangeWrapper(d)));
 
         private IEnumerable<IDocumentSnapshot> _documents;
         public IEnumerable<IDocumentSnapshot> Documents =>
-        _documents ?? (_documents = QuerySnapshot.Documents.Select(d => new DocumentSnapshotWrapper(d)));
+        _documents ?? (_documents = _querySnapshot.Documents.Select(d => new DocumentSnapshotWrapper(d)));
 
-        public bool IsEmpty => QuerySnapshot.IsEmpty;
+        public bool IsEmpty => _querySnapshot.IsEmpty;
 
         private ISnapshotMetadata _metadata;
-        public ISnapshotMetadata Metadata => _metadata ?? (_metadata = new SnapshotMetadataWrapper(QuerySnapshot.Metadata));
+        public ISnapshotMetadata Metadata => _metadata ?? (_metadata = new SnapshotMetadataWrapper(_querySnapshot.Metadata));
 
         private IQuery _query;
-        public IQuery Query => _query ?? (_query = new QueryWrapper(QuerySnapshot.Query));
+        public IQuery Query => _query ?? (_query = new QueryWrapper(_querySnapshot.Query));
 
-        private QuerySnapshot QuerySnapshot { get; }
+        private readonly QuerySnapshot _querySnapshot;
 
         public QuerySnapshotWrapper(QuerySnapshot querySnapshot)
         {
-            QuerySnapshot = querySnapshot;
+            _querySnapshot = querySnapshot;
         }
 
         public IEnumerable<T> ToObjects<T>() where T : class
