@@ -116,7 +116,7 @@ namespace Plugin.CloudFirestore
             Query.GetDocuments((snapshot, error) =>
             {
                 handler?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
-                                error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                                error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -128,7 +128,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -144,7 +144,7 @@ namespace Plugin.CloudFirestore
             var registration = Query.AddSnapshotListener((snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
-                                 error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                                 error == null ? null : ExceptionMapper.Map(error));
             });
 
             return new ListenerRegistrationWrapper(registration);
@@ -155,7 +155,7 @@ namespace Plugin.CloudFirestore
             var registration = Query.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
-                                 error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                                 error == null ? null : ExceptionMapper.Map(error));
             });
 
             return new ListenerRegistrationWrapper(registration);

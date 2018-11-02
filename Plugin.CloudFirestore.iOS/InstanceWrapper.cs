@@ -65,7 +65,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    error = new ExceptionHolder(e);
+                    error = new ExceptionError(e);
                 }
                 return null;
             },
@@ -76,7 +76,7 @@ namespace Plugin.CloudFirestore
 
                 if (error != null)
                 {
-                    exception = error is ExceptionHolder exceptionError ? exceptionError.Exception : new CloudFirestoreException(error.LocalizedDescription);
+                    exception = error is ExceptionError exceptionError ? exceptionError.Exception : ExceptionMapper.Map(error);
                 }
                 else
                 {
@@ -107,7 +107,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    error = new ExceptionHolder(e);
+                    error = new ExceptionError(e);
                 }
                 return null;
             },
@@ -115,13 +115,13 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    if (error is ExceptionHolder exceptionError)
+                    if (error is ExceptionError exceptionError)
                     {
                         tcs.SetException(exceptionError.Exception);
                     }
                     else
                     {
-                        tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                        tcs.SetException(ExceptionMapper.Map(error));
                     }
                 }
                 else
@@ -153,7 +153,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    error = new ExceptionHolder(e);
+                    error = new ExceptionError(e);
                 }
                 return null;
             },
@@ -163,7 +163,7 @@ namespace Plugin.CloudFirestore
 
                 if (error != null)
                 {
-                    exception = error is ExceptionHolder exceptionError ? exceptionError.Exception : new CloudFirestoreException(error.LocalizedDescription);
+                    exception = error is ExceptionError exceptionError ? exceptionError.Exception : ExceptionMapper.Map(error);
                 }
 
                 completionHandler?.Invoke(exception);
@@ -187,7 +187,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    error = new ExceptionHolder(e);
+                    error = new ExceptionError(e);
                 }
                 return null;
             },
@@ -195,13 +195,13 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    if (error is ExceptionHolder exceptionError)
+                    if (error is ExceptionError exceptionError)
                     {
                         tcs.SetException(exceptionError.Exception);
                     }
                     else
                     {
-                        tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                        tcs.SetException(ExceptionMapper.Map(error));
                     }
                 }
                 else

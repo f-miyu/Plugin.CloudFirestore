@@ -18,7 +18,7 @@ namespace Plugin.CloudFirestore
         {
             WriteBatch.Commit().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -34,7 +34,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 

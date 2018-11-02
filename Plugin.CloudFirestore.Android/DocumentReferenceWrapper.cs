@@ -36,7 +36,7 @@ namespace Plugin.CloudFirestore
             {
                 var snapshot = !task.IsSuccessful ? null : task.Result.JavaCast<DocumentSnapshot>();
                 handler?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
-                                task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                                task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -53,7 +53,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -64,7 +64,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.Set(documentData.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -80,7 +80,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -91,7 +91,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -107,7 +107,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -124,7 +124,7 @@ namespace Plugin.CloudFirestore
 
             DocumentReference.Set(documentData.ToNativeFieldValues(), SetOptions.Merge()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -145,7 +145,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -156,7 +156,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -172,7 +172,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -183,7 +183,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -199,7 +199,7 @@ namespace Plugin.CloudFirestore
                }
                else
                {
-                   tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                   tcs.SetException(ExceptionMapper.Map(task.Exception));
                }
            }));
 
@@ -210,7 +210,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.Delete().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
-                handler?.Invoke(task.IsSuccessful ? null : new CloudFirestoreException(task.Exception.Message));
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
@@ -226,7 +226,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                 }
             }));
 
@@ -238,7 +238,7 @@ namespace Plugin.CloudFirestore
             var registration = DocumentReference.AddSnapshotListener(new EventHandlerListener<DocumentSnapshot>((value, error) =>
             {
                 listener?.Invoke(value == null ? null : new DocumentSnapshotWrapper(value),
-                                 error == null ? null : new CloudFirestoreException(error.Message));
+                                 error == null ? null : ExceptionMapper.Map(error));
             }));
 
             return new ListenerRegistrationWrapper(registration);
@@ -256,7 +256,7 @@ namespace Plugin.CloudFirestore
             var registration = DocumentReference.AddSnapshotListener(option, new EventHandlerListener<DocumentSnapshot>((value, error) =>
             {
                 listener?.Invoke(value == null ? null : new DocumentSnapshotWrapper(value),
-                                 error == null ? null : new CloudFirestoreException(error.Message));
+                                 error == null ? null : ExceptionMapper.Map(error));
             }));
 
             return new ListenerRegistrationWrapper(registration);

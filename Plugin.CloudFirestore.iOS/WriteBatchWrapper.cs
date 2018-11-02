@@ -17,7 +17,7 @@ namespace Plugin.CloudFirestore
         {
             WriteBatch.Commit((error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -29,7 +29,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {

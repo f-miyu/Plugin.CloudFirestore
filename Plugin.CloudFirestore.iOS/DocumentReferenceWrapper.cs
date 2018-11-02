@@ -32,7 +32,7 @@ namespace Plugin.CloudFirestore
             DocumentReference.GetDocument((snapshot, error) =>
             {
                 handler?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
-                                error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                                error == null ? null : ExceptionMapper.Map(error));
 
             });
         }
@@ -45,7 +45,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -60,7 +60,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -72,7 +72,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -87,7 +87,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -99,7 +99,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -114,7 +114,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -126,7 +126,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -141,7 +141,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -153,7 +153,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -170,7 +170,7 @@ namespace Plugin.CloudFirestore
 
             DocumentReference.UpdateData(fields, (error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -184,7 +184,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -199,7 +199,7 @@ namespace Plugin.CloudFirestore
         {
             DocumentReference.DeleteDocument((error) =>
             {
-                handler?.Invoke(error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
@@ -211,7 +211,7 @@ namespace Plugin.CloudFirestore
             {
                 if (error != null)
                 {
-                    tcs.SetException(new CloudFirestoreException(error.LocalizedDescription));
+                    tcs.SetException(ExceptionMapper.Map(error));
                 }
                 else
                 {
@@ -227,7 +227,7 @@ namespace Plugin.CloudFirestore
             var registration = DocumentReference.AddSnapshotListener((snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
-                                 error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                                 error == null ? null : ExceptionMapper.Map(error));
             });
 
             return new ListenerRegistrationWrapper(registration);
@@ -238,7 +238,7 @@ namespace Plugin.CloudFirestore
             var registration = DocumentReference.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
             {
                 listener?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
-                                 error == null ? null : new CloudFirestoreException(error.LocalizedDescription));
+                                 error == null ? null : ExceptionMapper.Map(error));
             });
 
             return new ListenerRegistrationWrapper(registration);

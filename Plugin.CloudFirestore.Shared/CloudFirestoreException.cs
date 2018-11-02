@@ -3,12 +3,16 @@ namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreException : Exception
     {
-        public CloudFirestoreException()
+        public ErrorType ErrorType { get; }
+
+        public CloudFirestoreException(string message, ErrorType errorType) : base(message)
         {
+            ErrorType = errorType;
         }
 
-        public CloudFirestoreException(string message) : base(message)
+        public CloudFirestoreException(string message, ErrorType errorType, Exception innerException) : base(message, innerException)
         {
+            ErrorType = errorType;
         }
     }
 }

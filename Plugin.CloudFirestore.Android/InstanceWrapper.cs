@@ -67,9 +67,9 @@ namespace Plugin.CloudFirestore
                          }
                          else
                          {
-                             exception = task.Exception is ExceptionHolder wrappedException
-                                 ? wrappedException.Exception
-                                 : new CloudFirestoreException(task.Exception.Message);
+                             exception = task.Exception is JavaException javaException
+                                 ? javaException.Exception
+                                 : ExceptionMapper.Map(task.Exception);
                          }
 
                          completionHandler?.Invoke(result, exception);
@@ -90,13 +90,13 @@ namespace Plugin.CloudFirestore
                          }
                          else
                          {
-                             if (task.Exception is ExceptionHolder wrappedException)
+                             if (task.Exception is JavaException javaException)
                              {
-                                 tcs.SetException(wrappedException.Exception);
+                                 tcs.SetException(javaException.Exception);
                              }
                              else
                              {
-                                 tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                                 tcs.SetException(ExceptionMapper.Map(task.Exception));
                              }
                          }
                      }));
@@ -113,9 +113,9 @@ namespace Plugin.CloudFirestore
 
                          if (!task.IsSuccessful)
                          {
-                             exception = task.Exception is ExceptionHolder wrappedException
-                                 ? wrappedException.Exception
-                                 : new CloudFirestoreException(task.Exception.Message);
+                             exception = task.Exception is JavaException javaException
+                                 ? javaException.Exception
+                                 : ExceptionMapper.Map(task.Exception);
                          }
 
                          completionHandler?.Invoke(exception);
@@ -135,13 +135,13 @@ namespace Plugin.CloudFirestore
                          }
                          else
                          {
-                             if (task.Exception is ExceptionHolder wrappedException)
+                             if (task.Exception is JavaException nativeException)
                              {
-                                 tcs.SetException(wrappedException.Exception);
+                                 tcs.SetException(nativeException.Exception);
                              }
                              else
                              {
-                                 tcs.SetException(new CloudFirestoreException(task.Exception.Message));
+                                 tcs.SetException(ExceptionMapper.Map(task.Exception));
                              }
                          }
                      }));
@@ -171,7 +171,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (System.Exception e)
                 {
-                    throw new ExceptionHolder(e);
+                    throw new JavaException(e);
                 }
             }
         }
@@ -199,7 +199,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (System.Exception e)
                 {
-                    throw new ExceptionHolder(e);
+                    throw new JavaException(e);
                 }
             }
         }

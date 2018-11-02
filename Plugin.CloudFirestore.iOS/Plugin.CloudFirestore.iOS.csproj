@@ -72,9 +72,10 @@
     <Compile Include="CloudFirestore.cs" />
     <Compile Include="SnapshotMetadataWrapper.cs" />
     <Compile Include="ListenerRegistrationWrapper.cs" />
-    <Compile Include="ExceptionHolder.cs" />
+    <Compile Include="ExceptionError.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="InstanceWrapper.cs" />
+    <Compile Include="ExceptionMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

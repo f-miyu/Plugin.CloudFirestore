@@ -105,8 +105,9 @@
     <Compile Include="DocumentChangeWrapper.cs" />
     <Compile Include="CloudFireStore.cs" />
     <Compile Include="ListenerRegistrationWrapper.cs" />
-    <Compile Include="ExceptionHolder.cs" />
+    <Compile Include="JavaException.cs" />
     <Compile Include="InstanceWrapper.cs" />
+    <Compile Include="ExceptionMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

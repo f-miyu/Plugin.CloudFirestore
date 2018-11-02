@@ -20,7 +20,7 @@ namespace Plugin.CloudFirestore
 
             if (error != null)
             {
-                throw new CloudFirestoreException(error.LocalizedDescription);
+                throw ExceptionMapper.Map(error);
             }
 
             return new DocumentSnapshotWrapper(snapshot);

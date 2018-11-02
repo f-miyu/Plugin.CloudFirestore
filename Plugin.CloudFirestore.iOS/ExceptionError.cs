@@ -1,11 +1,12 @@
 ﻿using System;
+using Foundation;
 namespace Plugin.CloudFirestore
 {
-    public class ExceptionHolder : Java.Lang.Exception
+    public class ExceptionError : NSError
     {
         public Exception Exception { get; }
 
-        public ExceptionHolder(Exception exception)
+        public ExceptionError(Exception exception)
         {
             Exception = exception;
         }
