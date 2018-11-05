@@ -6,24 +6,21 @@ namespace Plugin.CloudFirestore
 {
     public static class CloudFirestore
     {
-        public static string DefaultAppName { get; set; }
+        public static readonly string DefaultAppName = "[FirebasePlugin]";
 
-        private static bool _hasInitialized;
-
-        public static void Init(Context context, string appName)
+        public static void Init(Context context)
         {
-            if (!_hasInitialized)
+            try
             {
-                _hasInitialized = true;
-
+                Firebase.FirebaseApp.GetInstance(DefaultAppName);
+            }
+            catch (Exception)
+            {
                 var baseOptions = Firebase.FirebaseOptions.FromResource(context);
                 var options = new Firebase.FirebaseOptions.Builder(baseOptions).SetProjectId(baseOptions.StorageBucket.Split('.')[0]).Build();
 
-                Firebase.FirebaseApp.InitializeApp(context, options, appName);
-
-                DefaultAppName = appName;
+                Firebase.FirebaseApp.InitializeApp(context, options, DefaultAppName);
             }
         }
-
     }
 }

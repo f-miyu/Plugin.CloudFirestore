@@ -69,7 +69,6 @@
     <Compile Include="TransactionWrapper.cs" />
     <Compile Include="ObjectHolder.cs" />
     <Compile Include="DocumentChangeWrapper.cs" />
-    <Compile Include="CloudFirestore.cs" />
     <Compile Include="SnapshotMetadataWrapper.cs" />
     <Compile Include="ListenerRegistrationWrapper.cs" />
     <Compile Include="ExceptionError.cs" />

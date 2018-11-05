@@ -7,23 +7,7 @@ namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreImplementation : ICloudFirestore
     {
-        public IFirestore Instance
-        {
-            get
-            {
-                Firestore firestore;
-                if (string.IsNullOrEmpty(CloudFirestore.DefaultAppName))
-                {
-                    firestore = Firestore.SharedInstance;
-                }
-                else
-                {
-                    var app = Firebase.Core.App.From(CloudFirestore.DefaultAppName);
-                    firestore = Firestore.Create(app);
-                }
-                return new FirestoreWrapper(firestore);
-            }
-        }
+        public IFirestore Instance => new FirestoreWrapper(Firestore.SharedInstance);
 
         public IFirestore GetInstance(string appName)
         {
