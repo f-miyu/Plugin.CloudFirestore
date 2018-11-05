@@ -184,6 +184,15 @@ CrossCloudFirestore.Current
                    });
 ```
 
+### Use Multiple Projects
+```C#
+var document = await CrossCloudFirestore.Current
+                                        .GetInstance("SecondAppName")
+                                        .GetCollection("yourcollection")
+                                        .GetDocument("yourdocument")
+                                        .GetDocumentAsync();
+```
+
 ## Data Mapping
 This library can map native data to .NET data and .NET data to native data.
 ```C#
