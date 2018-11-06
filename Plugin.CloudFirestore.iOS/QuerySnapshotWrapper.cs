@@ -9,21 +9,15 @@ namespace Plugin.CloudFirestore
     {
         public int Count => (int)_querySnapshot.Count;
 
-        private IEnumerable<IDocumentChange> _documentChanges;
-        public IEnumerable<IDocumentChange> DocumentChanges =>
-        _documentChanges ?? (_documentChanges = _querySnapshot.DocumentChanges.Select(d => new DocumentChangeWrapper(d)));
+        public IEnumerable<IDocumentChange> DocumentChanges => _querySnapshot.DocumentChanges.Select(d => new DocumentChangeWrapper(d));
 
-        private IEnumerable<IDocumentSnapshot> _documents;
-        public IEnumerable<IDocumentSnapshot> Documents =>
-        _documents ?? (_documents = _querySnapshot.Documents.Select(d => new DocumentSnapshotWrapper(d)));
+        public IEnumerable<IDocumentSnapshot> Documents => _querySnapshot.Documents.Select(d => new DocumentSnapshotWrapper(d));
 
         public bool IsEmpty => _querySnapshot.IsEmpty;
 
-        private ISnapshotMetadata _metadata;
-        public ISnapshotMetadata Metadata => _metadata ?? (_metadata = new SnapshotMetadataWrapper(_querySnapshot.Metadata));
+        public ISnapshotMetadata Metadata => new SnapshotMetadataWrapper(_querySnapshot.Metadata);
 
-        private IQuery _query;
-        public IQuery Query => _query ?? (_query = new QueryWrapper(_querySnapshot.Query));
+        public IQuery Query => new QueryWrapper(_querySnapshot.Query);
 
         private readonly QuerySnapshot _querySnapshot;
 

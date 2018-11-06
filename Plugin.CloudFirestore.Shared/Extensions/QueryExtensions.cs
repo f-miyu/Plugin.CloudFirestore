@@ -47,42 +47,21 @@ namespace Plugin.CloudFirestore.Extensions
             });
         }
 
-        public static IObservable<IDocumentSnapshot> ObserveAdded(this IQuery query)
-        {
-            return query.AsObservable()
-                        .Where(x => x != null)
-                        .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Added).Select(y => y.Document));
-        }
-
-        public static IObservable<IDocumentChange> ObserveAddedChange(this IQuery query)
+        public static IObservable<IDocumentChange> ObserveAdded(this IQuery query)
         {
             return query.AsObservable()
                         .Where(x => x != null)
                         .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Added));
         }
 
-        public static IObservable<IDocumentSnapshot> ObserveModified(this IQuery query)
-        {
-            return query.AsObservable()
-                        .Where(x => x != null)
-                        .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Modified).Select(y => y.Document));
-        }
-
-        public static IObservable<IDocumentChange> ObserveModifiedChange(this IQuery query)
+        public static IObservable<IDocumentChange> ObserveModified(this IQuery query)
         {
             return query.AsObservable()
                         .Where(x => x != null)
                         .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Modified));
         }
 
-        public static IObservable<IDocumentSnapshot> ObserveRemoved(this IQuery query)
-        {
-            return query.AsObservable()
-                        .Where(x => x != null)
-                        .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Removed).Select(y => y.Document));
-        }
-
-        public static IObservable<IDocumentChange> ObserveRemovedChange(this IQuery query)
+        public static IObservable<IDocumentChange> ObserveRemoved(this IQuery query)
         {
             return query.AsObservable()
                         .Where(x => x != null)

@@ -33,21 +33,21 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                                            .GetCollection(TodoItem.CollectionPath)
                                            .OrderBy(nameof(TodoItem.CreatedAt), true);
 
-            query.ObserveAddedChange()
+            query.ObserveAdded()
                  .Select(change => (Object: change.Document.ToObject<TodoItem>(), Index: change.NewIndex))
                  .Select(t => (ViewModel: new TodoItemViewModel(t.Object), Index: t.Index))
                  .Subscribe(t => TodoItems.InsertOnScheduler(t.Index, t.ViewModel))
                  .AddTo(_disposables);
 
             query.ObserveModified()
-                 .Select(document => document.ToObject<TodoItem>())
+                 .Select(change => change.Document.ToObject<TodoItem>())
                  .Select(todoItem => (TodoItem: todoItem, ViewModel: TodoItems.FirstOrDefault(x => x.Id == todoItem.Id)))
                  .Where(t => t.ViewModel != null)
                  .Subscribe(t => t.ViewModel.Update(t.TodoItem.Name, t.TodoItem.Notes))
                  .AddTo(_disposables);
 
             query.ObserveRemoved()
-                 .Select(document => TodoItems.FirstOrDefault(x => x.Id == document.Id))
+                 .Select(change => TodoItems.FirstOrDefault(x => x.Id == change.Document.Id))
                  .Where(viewModel => viewModel != null)
                  .Subscribe(viewModel => TodoItems.RemoveOnScheduler(viewModel))
                  .AddTo(_disposables);

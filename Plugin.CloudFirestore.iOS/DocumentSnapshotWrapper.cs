@@ -6,28 +6,15 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentSnapshotWrapper : IDocumentSnapshot
     {
-        private IDictionary<string, object> _data;
-        public IDictionary<string, object> Data
-        {
-            get
-            {
-                if (Exists && _data == null)
-                {
-                    _data = DocumentMapper.Map(_documentSnapshot);
-                }
-                return _data;
-            }
-        }
+        public IDictionary<string, object> Data => Exists ? DocumentMapper.Map(_documentSnapshot) : null;
 
         public string Id => _documentSnapshot.Id;
 
         public bool Exists => _documentSnapshot.Exists;
 
-        private ISnapshotMetadata _metadata;
-        public ISnapshotMetadata Metadata => _metadata ?? (_metadata = new SnapshotMetadataWrapper(_documentSnapshot.Metadata));
+        public ISnapshotMetadata Metadata => new SnapshotMetadataWrapper(_documentSnapshot.Metadata);
 
-        private IDocumentReference _reference;
-        public IDocumentReference Reference => _reference ?? (_reference = new DocumentReferenceWrapper(_documentSnapshot.Reference));
+        public IDocumentReference Reference => new DocumentReferenceWrapper(_documentSnapshot.Reference);
 
         private readonly DocumentSnapshot _documentSnapshot;
 

@@ -5,8 +5,7 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentChangeWrapper : IDocumentChange
     {
-        private IDocumentSnapshot _document;
-        public IDocumentSnapshot Document => _document ?? (_document = new DocumentSnapshotWrapper(_documentChange.Document));
+        public IDocumentSnapshot Document => new DocumentSnapshotWrapper(_documentChange.Document);
 
         public int NewIndex => _documentChange.NewIndex;
 
