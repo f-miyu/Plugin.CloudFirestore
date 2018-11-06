@@ -115,7 +115,7 @@ CrossCloudFirestore.Current.Instance.GetCollection("yourcollection")
                            .GetDocument("yourdocument")
                            .AddSnapshotListener((snapshot, error) =>
                            {
-                               //...
+                               ...
                            });
 
 CrossCloudFirestore.Current
@@ -151,16 +151,17 @@ CrossCloudFirestore.Current.Instance
                            .AsObservable()
                            .Subscribe(document =>
                            {
-                               //...
+                               ...
                            });
 // Added                        
 CrossCloudFirestore.Current
                    .Instance
                    .GetCollection("yourcollection")
                    .ObserveAdded()
-                   .Subscribe(document =>
+                   .Subscribe(documentChange =>
                    {
-                       //...
+                       var document = documentChange.Document
+                       ...
                    });
 
 // Modified  
@@ -168,9 +169,10 @@ CrossCloudFirestore.Current
                    .Instance
                    .GetCollection("yourcollection")
                    .ObserveModified()
-                   .Subscribe(document =>
+                   .Subscribe(documentChange =>
                    {
-                       //...
+                       var document = documentChange.Document
+                       ...
                    });
 
 // Removed 
@@ -178,9 +180,10 @@ CrossCloudFirestore.Current
                    .Instance
                    .GetCollection("yourcollection")
                    .ObserveRemoved()
-                   .Subscribe(document =>
+                   .Subscribe(documentChange =>
                    {
-                       //...
+                       var document = documentChange.Document
+                       ...
                    });
 ```
 
