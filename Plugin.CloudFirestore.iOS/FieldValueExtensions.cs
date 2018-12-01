@@ -153,6 +153,51 @@ namespace Plugin.CloudFirestore
                     {
                         type = type.GenericTypeArguments[0];
                     }
+
+                    if (type == typeof(bool))
+                    {
+                        return number.BoolValue;
+                    }
+                    if (type == typeof(byte))
+                    {
+                        return number.ByteValue;
+                    }
+                    if (type == typeof(double))
+                    {
+                        return number.DoubleValue;
+                    }
+                    if (type == typeof(float))
+                    {
+                        return number.FloatValue;
+                    }
+                    if (type == typeof(int))
+                    {
+                        return number.Int32Value;
+                    }
+                    if (type == typeof(long))
+                    {
+                        return number.Int64Value;
+                    }
+                    if (type == typeof(sbyte))
+                    {
+                        return number.SByteValue;
+                    }
+                    if (type == typeof(short))
+                    {
+                        return number.Int16Value;
+                    }
+                    if (type == typeof(uint))
+                    {
+                        return number.UInt32Value;
+                    }
+                    if (type == typeof(ulong))
+                    {
+                        return number.UInt64Value;
+                    }
+                    if (type == typeof(ushort))
+                    {
+                        return number.UInt16Value;
+                    }
                     return Convert.ChangeType(number.DoubleValue, type);
                 case NSString @string:
                     return @string.ToString();
