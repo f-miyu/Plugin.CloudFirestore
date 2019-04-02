@@ -10,6 +10,12 @@ namespace Plugin.CloudFirestore
 {
     public class CollectionReferenceWrapper : ICollectionReference
     {
+        public string Id => _collectionReference.Id;
+
+        public string Path => _collectionReference.Path;
+
+        public IDocumentReference Parent => _collectionReference.Parent == null ? null : new DocumentReferenceWrapper(_collectionReference.Parent);
+
         private readonly CollectionReference _collectionReference;
 
         public CollectionReferenceWrapper(CollectionReference collectionReference)

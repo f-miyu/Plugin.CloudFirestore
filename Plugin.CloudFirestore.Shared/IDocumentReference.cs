@@ -6,6 +6,9 @@ namespace Plugin.CloudFirestore
 {
     public interface IDocumentReference
     {
+        string Id { get; }
+        string Path { get; }
+        ICollectionReference Parent { get; }
         ICollectionReference GetCollection(string collectionPath);
         void GetDocument(DocumentSnapshotHandler handler);
         Task<IDocumentSnapshot> GetDocumentAsync();

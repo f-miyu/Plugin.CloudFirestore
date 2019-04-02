@@ -10,8 +10,7 @@ namespace Plugin.CloudFirestore
         {
             get
             {
-                var app = FirebaseApp.GetInstance(CloudFirestore.DefaultAppName);
-                return new FirestoreWrapper(FirebaseFirestore.GetInstance(app));
+                return new FirestoreWrapper(FirebaseFirestore.Instance);
             }
         }
 
