@@ -9,19 +9,19 @@ namespace Plugin.CloudFirestore
     {
         IQuery LimitTo(int limit);
         IQuery OrderBy(string field, bool descending);
-        IQuery WhereEqualsTo<T>(string field, T value);
-        IQuery WhereGreaterThan<T>(string field, T value);
-        IQuery WhereGreaterThanOrEqualsTo<T>(string field, T value);
-        IQuery WhereLessThan<T>(string field, T value);
-        IQuery WhereLessThanOrEqualsTo<T>(string field, T value);
+        IQuery WhereEqualsTo(string field, object value);
+        IQuery WhereGreaterThan(string field, object value);
+        IQuery WhereGreaterThanOrEqualsTo(string field, object value);
+        IQuery WhereLessThan(string field, object value);
+        IQuery WhereLessThanOrEqualsTo(string field, object value);
         IQuery StartAt(IDocumentSnapshot document);
-        IQuery StartAt<T>(IEnumerable<T> fieldValues);
+        IQuery StartAt(params object[] fieldValues);
         IQuery StartAfter(IDocumentSnapshot document);
-        IQuery StartAfter<T>(IEnumerable<T> fieldValues);
+        IQuery StartAfter(params object[] fieldValues);
         IQuery EndAt(IDocumentSnapshot document);
-        IQuery EndAt<T>(IEnumerable<T> fieldValues);
+        IQuery EndAt(params object[] fieldValues);
         IQuery EndBefore(IDocumentSnapshot document);
-        IQuery EndBefore<T>(IEnumerable<T> fieldValues);
+        IQuery EndBefore(params object[] fieldValues);
         void GetDocuments(QuerySnapshotHandler handler);
         Task<IQuerySnapshot> GetDocumentsAsync();
         IListenerRegistration AddSnapshotListener(QuerySnapshotHandler listener);

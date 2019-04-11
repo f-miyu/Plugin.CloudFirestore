@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
 {
     public static class FieldValueExtensions
     {
-        public static Java.Lang.Object ToNativeFieldValue<T>(this T fieldValue)
+        public static Java.Lang.Object ToNativeFieldValue(this object fieldValue)
         {
             if (fieldValue == null)
                 return null;
@@ -106,7 +106,7 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public static Dictionary<string, Java.Lang.Object> ToNativeFieldValues<T>(this T fieldValues)
+        public static Dictionary<string, Java.Lang.Object> ToNativeFieldValues(this object fieldValues)
         {
             if (fieldValues == null)
                 return null;

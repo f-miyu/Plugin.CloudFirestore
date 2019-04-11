@@ -36,31 +36,31 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereEqualsTo<T>(string field, T value)
+        public IQuery WhereEqualsTo(string field, object value)
         {
             var query = _collectionReference.WhereEqualsTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereGreaterThan<T>(string field, T value)
+        public IQuery WhereGreaterThan(string field, object value)
         {
             var query = _collectionReference.WhereGreaterThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereGreaterThanOrEqualsTo<T>(string field, T value)
+        public IQuery WhereGreaterThanOrEqualsTo(string field, object value)
         {
             var query = _collectionReference.WhereGreaterThanOrEqualsTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereLessThan<T>(string field, T value)
+        public IQuery WhereLessThan(string field, object value)
         {
             var query = _collectionReference.WhereLessThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereLessThanOrEqualsTo<T>(string field, T value)
+        public IQuery WhereLessThanOrEqualsTo(string field, object value)
         {
             var query = _collectionReference.WhereLessThanOrEqualsTo(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
@@ -73,7 +73,7 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
-        public IQuery StartAt<T>(IEnumerable<T> fieldValues)
+        public IQuery StartAt(params object[] fieldValues)
         {
             var query = _collectionReference.StartingAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
@@ -86,7 +86,7 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
-        public IQuery StartAfter<T>(IEnumerable<T> fieldValues)
+        public IQuery StartAfter(params object[] fieldValues)
         {
             var query = _collectionReference.StartingAfter(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
@@ -99,7 +99,7 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
-        public IQuery EndAt<T>(IEnumerable<T> fieldValues)
+        public IQuery EndAt(params object[] fieldValues)
         {
             var query = _collectionReference.EndingAt(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
@@ -112,7 +112,7 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
-        public IQuery EndBefore<T>(IEnumerable<T> fieldValues)
+        public IQuery EndBefore(params object[] fieldValues)
         {
             var query = _collectionReference.EndingBefore(fieldValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
@@ -152,7 +152,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void AddDocument<T>(T data, CompletionHandler handler) where T : class
+        public void AddDocument(object data, CompletionHandler handler)
         {
             _collectionReference.AddDocument(data.ToNativeFieldValues(), (error) =>
             {
@@ -160,7 +160,7 @@ namespace Plugin.CloudFirestore
             });
         }
 
-        public Task AddDocumentAsync<T>(T data) where T : class
+        public Task AddDocumentAsync(object data)
         {
             var tcs = new TaskCompletionSource<bool>();
 

@@ -40,31 +40,31 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(IDocumentReference document, T documentData) where T : class
+        public void SetData(IDocumentReference document, object documentData)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
-        public void SetData<T>(IDocumentReference document, T documentData, string[] mergeFields) where T : class
+        public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
         }
 
-        public void SetData<T>(IDocumentReference document, T documentData, bool merge) where T : class
+        public void SetData(IDocumentReference document, object documentData, bool merge)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
         }
 
-        public void UpdateData<T>(IDocumentReference document, T fields) where T : class
+        public void UpdateData(IDocumentReference document, object fields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
-        public void UpdateData<T>(IDocumentReference document, string field, T value, params object[] moreFieldsAndValues)
+        public void UpdateData(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
             var wrapper = (DocumentReferenceWrapper)document;

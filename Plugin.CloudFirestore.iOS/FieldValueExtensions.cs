@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
 {
     public static class FieldValueExtensions
     {
-        public static object ToNativeFieldValue<T>(this T fieldValue)
+        public static object ToNativeFieldValue(this object fieldValue)
         {
             if (fieldValue == null)
                 return new NSNull();
@@ -111,7 +111,7 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public static Dictionary<object, object> ToNativeFieldValues<T>(this T fieldValues)
+        public static Dictionary<object, object> ToNativeFieldValues(this object fieldValues)
         {
             if (fieldValues == null)
                 return null;

@@ -66,7 +66,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(T documentData, CompletionHandler handler) where T : class
+        public void SetData(object documentData, CompletionHandler handler)
         {
             _documentReference.Set(documentData.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
@@ -74,7 +74,7 @@ namespace Plugin.CloudFirestore
             }));
         }
 
-        public Task SetDataAsync<T>(T documentData) where T : class
+        public Task SetDataAsync(object documentData)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -93,19 +93,19 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(T documentData, IEnumerable<string> mergeFields, CompletionHandler handler) where T : class
+        public void SetData(object documentData, CompletionHandler handler, params string[] mergeFields)
         {
-            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields)).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
             }));
         }
 
-        public Task SetDataAsync<T>(T documentData, IEnumerable<string> mergeFields) where T : class
+        public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields.ToArray())).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields)).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -120,7 +120,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(T documentData, bool merge, CompletionHandler handler) where T : class
+        public void SetData(object documentData, bool merge, CompletionHandler handler)
         {
             if (!merge)
             {
@@ -134,7 +134,7 @@ namespace Plugin.CloudFirestore
             }));
         }
 
-        public Task SetDataAsync<T>(T documentData, bool merge) where T : class
+        public Task SetDataAsync(object documentData, bool merge)
         {
             if (!merge)
             {
@@ -158,7 +158,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void UpdateData<T>(T fields, CompletionHandler handler) where T : class
+        public void UpdateData(object fields, CompletionHandler handler)
         {
             _documentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
@@ -166,7 +166,7 @@ namespace Plugin.CloudFirestore
             }));
         }
 
-        public Task UpdateDataAsync<T>(T fields) where T : class
+        public Task UpdateDataAsync(object fields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -185,7 +185,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void UpdateData<T>(string field, T value, CompletionHandler handler, params object[] moreFieldsAndValues)
+        public void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
         {
             _documentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
@@ -193,7 +193,7 @@ namespace Plugin.CloudFirestore
             }));
         }
 
-        public Task UpdateDataAsync<T>(string field, T value, params object[] moreFieldsAndValues)
+        public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
         {
             var tcs = new TaskCompletionSource<bool>();
 

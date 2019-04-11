@@ -62,7 +62,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(T documentData, CompletionHandler handler) where T : class
+        public void SetData(object documentData, CompletionHandler handler)
         {
             _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
             {
@@ -70,7 +70,7 @@ namespace Plugin.CloudFirestore
             });
         }
 
-        public Task SetDataAsync<T>(T documentData) where T : class
+        public Task SetDataAsync(object documentData)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -89,15 +89,15 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(T documentData, IEnumerable<string> mergeFields, CompletionHandler handler) where T : class
+        public void SetData(object documentData, CompletionHandler handler, params string[] mergeFields)
         {
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
         }
 
-        public Task SetDataAsync<T>(T documentData, IEnumerable<string> mergeFields) where T : class
+        public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -116,7 +116,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void SetData<T>(T documentData, bool merge, CompletionHandler handler) where T : class
+        public void SetData(object documentData, bool merge, CompletionHandler handler)
         {
             _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
             {
@@ -124,7 +124,7 @@ namespace Plugin.CloudFirestore
             });
         }
 
-        public Task SetDataAsync<T>(T documentData, bool merge) where T : class
+        public Task SetDataAsync(object documentData, bool merge)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -143,7 +143,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void UpdateData<T>(T fields, CompletionHandler handler) where T : class
+        public void UpdateData(object fields, CompletionHandler handler)
         {
             _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
             {
@@ -151,7 +151,7 @@ namespace Plugin.CloudFirestore
             });
         }
 
-        public Task UpdateDataAsync<T>(T fields) where T : class
+        public Task UpdateDataAsync(object fields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -170,7 +170,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void UpdateData<T>(string field, T value, CompletionHandler handler, params object[] moreFieldsAndValues)
+        public void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
 
@@ -180,7 +180,7 @@ namespace Plugin.CloudFirestore
             });
         }
 
-        public Task UpdateDataAsync<T>(string field, T value, params object[] moreFieldsAndValues)
+        public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
 
