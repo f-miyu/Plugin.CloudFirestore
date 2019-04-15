@@ -6,6 +6,7 @@ using System.Collections;
 using System.IO;
 using Plugin.CloudFirestore.Attributes;
 using System.Reflection;
+using Firebase.CloudFirestore;
 
 namespace Plugin.CloudFirestore
 {
@@ -45,9 +46,15 @@ namespace Plugin.CloudFirestore
                 case string @string:
                     return new NSString(@string);
                 case DateTime dateTime:
-                    return NSDate.FromTimeIntervalSinceReferenceDate((dateTime - new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero)).TotalSeconds);
+                    {
+                        var ms = (long)(dateTime - new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero)).TotalMilliseconds;
+                        return new Timestamp(ms / 1000, (int)(ms % 1000 * 1000000));
+                    }
                 case DateTimeOffset dateTimeOffset:
-                    return NSDate.FromTimeIntervalSinceReferenceDate((dateTimeOffset - new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero)).TotalSeconds);
+                    {
+                        var ms = (long)(dateTimeOffset - new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero)).TotalMilliseconds;
+                        return new Timestamp(ms / 1000, (int)(ms % 1000 * 1000000));
+                    }
                 case GeoPoint geoPoint:
                     return new Firebase.CloudFirestore.GeoPoint(geoPoint.Latitude, geoPoint.Longitude);
                 case DocumentReferenceWrapper documentReference:
@@ -201,6 +208,15 @@ namespace Plugin.CloudFirestore
                     return Convert.ChangeType(number.DoubleValue, type);
                 case NSString @string:
                     return @string.ToString();
+                case Timestamp timestamp:
+                    {
+                        var dateTimeOffset = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(timestamp.Seconds * 1000 + timestamp.Nanoseconds / 1000000);
+                        if (type == typeof(DateTime) || type == typeof(DateTime?))
+                        {
+                            return dateTimeOffset.LocalDateTime;
+                        }
+                        return dateTimeOffset;
+                    }
                 case NSDate date:
                     {
                         var dateTimeOffset = new DateTimeOffset(2001, 1, 1, 0, 0, 0, TimeSpan.Zero).AddSeconds(date.SecondsSinceReferenceDate);
