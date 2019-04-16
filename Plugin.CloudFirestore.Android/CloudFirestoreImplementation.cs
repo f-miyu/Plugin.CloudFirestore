@@ -14,6 +14,8 @@ namespace Plugin.CloudFirestore
             }
         }
 
+        public IFieldValue FieldValue { get; } = new FieldValueWrapper();
+
         public IFirestore GetInstance(string appName)
         {
             var app = FirebaseApp.GetInstance(appName);

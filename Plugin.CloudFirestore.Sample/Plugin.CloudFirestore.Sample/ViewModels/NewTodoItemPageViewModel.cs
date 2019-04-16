@@ -37,7 +37,6 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 {
                     Name = Name.Value,
                     Notes = Notes.Value,
-                    CreatedAt = DateTime.Now
                 };
 
                 CrossCloudFirestore.Current

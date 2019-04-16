@@ -33,12 +33,14 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                .SelectMany(id => CrossCloudFirestore.Current.Instance.GetDocument($"{TodoItem.CollectionPath}/{id}").GetDocumentAsync())
                .Where(document => document != null)
                .Select(document => document.ToObject<TodoItem>())
-               .Where(todoItem => _todoItem != null)
                .Subscribe(todoItem =>
                {
-                   _todoItem.Value = todoItem;
-                   Name.Value = todoItem.Name;
-                   Notes.Value = todoItem.Notes;
+                   if (_todoItem != null)
+                   {
+                       _todoItem.Value = todoItem;
+                       Name.Value = todoItem.Name;
+                       Notes.Value = todoItem.Notes;
+                   }
                }, ex => System.Diagnostics.Debug.WriteLine(ex));
 
             UpdateCommand = new[] {

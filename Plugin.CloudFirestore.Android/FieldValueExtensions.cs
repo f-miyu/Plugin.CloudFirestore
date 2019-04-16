@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection;
 using Android.Runtime;
 using Plugin.CloudFirestore.Attributes;
+using Firebase.Firestore;
 
 namespace Plugin.CloudFirestore
 {
@@ -78,6 +79,8 @@ namespace Plugin.CloudFirestore
                         }
                         return javaDictionary;
                     }
+                case FieldValue firestoreFieldValue:
+                    return firestoreFieldValue;
                 default:
                     {
                         var type = fieldValue.GetType();
@@ -89,15 +92,10 @@ namespace Plugin.CloudFirestore
                         var properties = type.GetProperties();
                         foreach (var property in properties)
                         {
-                            var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-                            var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
-
-                            if (idAttribute == null && igonoredAttribute == null)
+                            var (key, @object) = GetKeyAndObject(fieldValue, property);
+                            if (key != null)
                             {
-                                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
-                                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
-
-                                javaDictionary.Add(key, property.GetValue(fieldValue).ToNativeFieldValue());
+                                javaDictionary.Add(key, @object);
                             }
                         }
 
@@ -111,9 +109,14 @@ namespace Plugin.CloudFirestore
             if (fieldValues == null)
                 return null;
 
-            if (fieldValues is IDictionary<string, object> dictionary)
+            if (fieldValues is IDictionary dictionary)
             {
-                return dictionary.ToDictionary(pair => pair.Key, pair => pair.Value.ToNativeFieldValue());
+                var resultDictionary = new Dictionary<string, Java.Lang.Object>();
+                foreach (var key in dictionary.Keys)
+                {
+                    resultDictionary.Add(key.ToString(), dictionary[key].ToNativeFieldValue());
+                }
+                return resultDictionary;
             }
 
             var properties = fieldValues.GetType().GetProperties();
@@ -121,19 +124,41 @@ namespace Plugin.CloudFirestore
 
             foreach (var property in properties)
             {
-                var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-                var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
-
-                if (idAttribute == null && igonoredAttribute == null)
+                var (key, @object) = GetKeyAndObject(fieldValues, property);
+                if (key != null)
                 {
-                    var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
-                    var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
-
-                    values.Add(key, property.GetValue(fieldValues).ToNativeFieldValue());
+                    values.Add(key, @object);
                 }
             }
 
             return values;
+        }
+
+        private static (string Key, Java.Lang.Object Object) GetKeyAndObject(object fieldValue, PropertyInfo property)
+        {
+            var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
+            var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
+
+            if (idAttribute == null && igonoredAttribute == null)
+            {
+                var value = property.GetValue(fieldValue);
+
+                var serverTimestampAttribute = (Attributes.ServerTimestampAttribute)Attribute.GetCustomAttribute(property, typeof(Attributes.ServerTimestampAttribute));
+                if (serverTimestampAttribute != null &&
+                    (!serverTimestampAttribute.PreventUpdate || value == null ||
+                    (value is DateTime dateTime && dateTime == default) ||
+                    (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default)))
+                {
+                    value = FieldValue.ServerTimestamp();
+                }
+
+                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
+                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
+
+                return (key, value.ToNativeFieldValue());
+            }
+
+            return (null, null);
         }
 
         public static object ToFieldValue(this Java.Lang.Object fieldValue, Type type)

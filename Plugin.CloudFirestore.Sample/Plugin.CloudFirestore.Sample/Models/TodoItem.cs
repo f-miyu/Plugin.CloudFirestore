@@ -13,6 +13,10 @@ namespace Plugin.CloudFirestore.Sample.Models
 
         public string Notes { get; set; }
 
+        [ServerTimestamp(PreventUpdate = true)]
         public DateTime CreatedAt { get; set; }
+
+        [ServerTimestamp]
+        public DateTime UpdatedAt { get; set; }
     }
 }
