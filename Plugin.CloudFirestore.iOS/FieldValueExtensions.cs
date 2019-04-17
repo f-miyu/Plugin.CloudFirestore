@@ -158,7 +158,7 @@ namespace Plugin.CloudFirestore
 
                 var serverTimestampAttribute = (Attributes.ServerTimestampAttribute)Attribute.GetCustomAttribute(property, typeof(Attributes.ServerTimestampAttribute));
                 if (serverTimestampAttribute != null &&
-                    (!serverTimestampAttribute.PreventUpdate || value == null ||
+                    (serverTimestampAttribute.CanReplace || value == null ||
                     (value is DateTime dateTime && dateTime == default) ||
                     (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default)))
                 {

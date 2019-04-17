@@ -4,6 +4,6 @@ namespace Plugin.CloudFirestore.Attributes
     [AttributeUsage(AttributeTargets.Property)]
     public class ServerTimestampAttribute : Attribute
     {
-        public bool PreventUpdate { get; set; }
+        public bool CanReplace { get; set; } = true;
     }
 }

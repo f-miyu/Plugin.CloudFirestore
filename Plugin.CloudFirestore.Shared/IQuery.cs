@@ -8,6 +8,7 @@ namespace Plugin.CloudFirestore
     public interface IQuery
     {
         IQuery LimitTo(int limit);
+        IQuery OrderBy(string field);
         IQuery OrderBy(string field, bool descending);
         IQuery WhereEqualsTo(string field, object value);
         IQuery WhereGreaterThan(string field, object value);
