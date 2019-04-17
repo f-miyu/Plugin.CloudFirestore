@@ -30,6 +30,12 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery OrderBy(string field)
+        {
+            var query = _collectionReference.OrderedBy(field);
+            return new QueryWrapper(query);
+        }
+
         public IQuery OrderBy(string field, bool descending)
         {
             var query = _collectionReference.OrderedBy(field, descending);
