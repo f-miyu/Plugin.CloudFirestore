@@ -97,11 +97,38 @@ namespace Plugin.CloudFirestore
             });
         }
 
+        public void SetData(object documentData, CompletionHandler handler, params FieldPath[] mergeFields)
+        {
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
+            {
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
+            });
+        }
+
         public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task SetDataAsync(object documentData, params FieldPath[] mergeFields)
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
             {
                 if (error != null)
                 {

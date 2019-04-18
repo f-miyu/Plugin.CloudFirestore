@@ -32,7 +32,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)CrossCloudFirestore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IFirestore.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ErrorType.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IFieldValue.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Attributes\ServerTimestampAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FieldPath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FieldValue.cs" />
   </ItemGroup>
 </Project>

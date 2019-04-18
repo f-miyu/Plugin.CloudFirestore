@@ -200,7 +200,8 @@
     <Compile Include="JavaException.cs" />
     <Compile Include="FirestoreWrapper.cs" />
     <Compile Include="ExceptionMapper.cs" />
-    <Compile Include="FieldValueWrapper.cs" />
+    <Compile Include="FieldValue.cs" />
+    <Compile Include="FieldPath.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

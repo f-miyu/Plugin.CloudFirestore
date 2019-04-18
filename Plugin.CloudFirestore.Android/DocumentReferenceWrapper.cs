@@ -101,11 +101,38 @@ namespace Plugin.CloudFirestore
             }));
         }
 
+        public void SetData(object documentData, CompletionHandler handler, params FieldPath[] mergeFields)
+        {
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative())))).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
+            }));
+        }
+
         public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields)).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public Task SetDataAsync(object documentData, params FieldPath[] mergeFields)
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative())))).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {

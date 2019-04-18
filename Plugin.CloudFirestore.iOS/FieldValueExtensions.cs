@@ -86,7 +86,7 @@ namespace Plugin.CloudFirestore
                         return ndictionary;
                     }
                 case FieldValue firestoreFieldValue:
-                    return firestoreFieldValue;
+                    return firestoreFieldValue.ToNative();
                 default:
                     {
                         var type = fieldValue.GetType();
@@ -152,9 +152,12 @@ namespace Plugin.CloudFirestore
             var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
             var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
 
+
             if (idAttribute == null && igonoredAttribute == null)
             {
                 var value = property.GetValue(fieldValue);
+                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
+                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
 
                 var serverTimestampAttribute = (Attributes.ServerTimestampAttribute)Attribute.GetCustomAttribute(property, typeof(Attributes.ServerTimestampAttribute));
                 if (serverTimestampAttribute != null &&
@@ -162,11 +165,8 @@ namespace Plugin.CloudFirestore
                     (value is DateTime dateTime && dateTime == default) ||
                     (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default)))
                 {
-                    value = FieldValue.ServerTimestamp;
+                    return (key, Firebase.CloudFirestore.FieldValue.ServerTimestamp);
                 }
-
-                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
-                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
 
                 return (key, value.ToNativeFieldValue());
             }

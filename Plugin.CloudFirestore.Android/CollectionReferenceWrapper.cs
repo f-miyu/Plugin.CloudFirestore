@@ -35,11 +35,25 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery OrderBy(FieldPath field)
+        {
+            var query = _collectionReference.OrderBy(field.ToNative());
+            return new QueryWrapper(query);
+        }
+
         public IQuery OrderBy(string field, bool descending)
         {
             var direction = descending ? Query.Direction.Descending : Query.Direction.Ascending;
 
             var query = _collectionReference.OrderBy(field, direction);
+            return new QueryWrapper(query);
+        }
+
+        public IQuery OrderBy(FieldPath field, bool descending)
+        {
+            var direction = descending ? Query.Direction.Descending : Query.Direction.Ascending;
+
+            var query = _collectionReference.OrderBy(field.ToNative(), direction);
             return new QueryWrapper(query);
         }
 
@@ -49,9 +63,21 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereEqualsTo(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereEqualTo(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
         public IQuery WhereGreaterThan(string field, object value)
         {
             var query = _collectionReference.WhereGreaterThan(field, value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereGreaterThan(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereGreaterThan(field.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
@@ -61,15 +87,33 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereGreaterThanOrEqualsTo(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereGreaterThanOrEqualTo(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
         public IQuery WhereLessThan(string field, object value)
         {
             var query = _collectionReference.WhereLessThan(field, value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereLessThan(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereLessThan(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
         public IQuery WhereLessThanOrEqualsTo(string field, object value)
         {
             var query = _collectionReference.WhereLessThanOrEqualTo(field, value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereLessThanOrEqualsTo(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereLessThanOrEqualTo(field.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 

@@ -16,8 +16,6 @@ namespace Plugin.CloudFirestore
 
         public IFirestore Instance => new FirestoreWrapper(Firestore.SharedInstance);
 
-        public IFieldValue FieldValue { get; } = new FieldValueWrapper();
-
         public IFirestore GetInstance(string appName)
         {
             var app = Firebase.Core.App.From(appName);

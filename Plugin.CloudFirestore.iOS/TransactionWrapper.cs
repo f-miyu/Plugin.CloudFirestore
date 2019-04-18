@@ -1,6 +1,7 @@
 ﻿using System;
 using Firebase.CloudFirestore;
 using Foundation;
+using System.Linq;
 
 namespace Plugin.CloudFirestore
 {
@@ -32,10 +33,16 @@ namespace Plugin.CloudFirestore
             _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
-        public void SetData(IDocumentReference document, object documentData, string[] mergeFields)
+        public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
+        }
+
+        public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
+        {
+            var wrapper = (DocumentReferenceWrapper)document;
+            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)

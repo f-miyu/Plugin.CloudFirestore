@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Firebase.Firestore;
 using System.Linq;
+using Android.Runtime;
 
 namespace Plugin.CloudFirestore
 {
@@ -47,10 +48,16 @@ namespace Plugin.CloudFirestore
             _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues());
         }
 
-        public void SetData(IDocumentReference document, object documentData, string[] mergeFields)
+        public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
+        }
+
+        public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
+        {
+            var wrapper = (DocumentReferenceWrapper)document;
+            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative()))));
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)

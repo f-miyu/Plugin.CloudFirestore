@@ -75,7 +75,8 @@
     <Compile Include="Field.cs" />
     <Compile Include="FirestoreWrapper.cs" />
     <Compile Include="ExceptionMapper.cs" />
-    <Compile Include="FieldValueWrapper.cs" />
+    <Compile Include="FieldPath.cs" />
+    <Compile Include="FieldValue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

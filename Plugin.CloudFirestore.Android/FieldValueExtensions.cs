@@ -6,7 +6,6 @@ using System.Linq;
 using System.Reflection;
 using Android.Runtime;
 using Plugin.CloudFirestore.Attributes;
-using Firebase.Firestore;
 
 namespace Plugin.CloudFirestore
 {
@@ -80,7 +79,7 @@ namespace Plugin.CloudFirestore
                         return javaDictionary;
                     }
                 case FieldValue firestoreFieldValue:
-                    return firestoreFieldValue;
+                    return firestoreFieldValue.ToNative();
                 default:
                     {
                         var type = fieldValue.GetType();
@@ -142,6 +141,8 @@ namespace Plugin.CloudFirestore
             if (idAttribute == null && igonoredAttribute == null)
             {
                 var value = property.GetValue(fieldValue);
+                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
+                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
 
                 var serverTimestampAttribute = (Attributes.ServerTimestampAttribute)Attribute.GetCustomAttribute(property, typeof(Attributes.ServerTimestampAttribute));
                 if (serverTimestampAttribute != null &&
@@ -149,11 +150,8 @@ namespace Plugin.CloudFirestore
                     (value is DateTime dateTime && dateTime == default) ||
                     (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default)))
                 {
-                    value = FieldValue.ServerTimestamp();
+                    return (key, Firebase.Firestore.FieldValue.ServerTimestamp());
                 }
-
-                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
-                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
 
                 return (key, value.ToNativeFieldValue());
             }

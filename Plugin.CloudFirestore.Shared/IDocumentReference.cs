@@ -15,7 +15,9 @@ namespace Plugin.CloudFirestore
         void SetData(object documentData, CompletionHandler handler);
         Task SetDataAsync(object documentData);
         void SetData(object documentData, CompletionHandler handler, params string[] mergeFields);
+        void SetData(object documentData, CompletionHandler handler, params FieldPath[] mergeFields);
         Task SetDataAsync(object documentData, params string[] mergeFields);
+        Task SetDataAsync(object documentData, params FieldPath[] mergeFields);
         void SetData(object documentData, bool merge, CompletionHandler handler);
         Task SetDataAsync(object documentData, bool merge);
         void UpdateData(object fields, CompletionHandler handler);
