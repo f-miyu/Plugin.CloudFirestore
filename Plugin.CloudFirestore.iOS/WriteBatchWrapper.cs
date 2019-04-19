@@ -78,6 +78,13 @@ namespace Plugin.CloudFirestore
             _writeBatch.UpdateData(fields, (DocumentReference)wrapper);
         }
 
+        public void UpdateData(IDocumentReference document, FieldPath field, object value, params object[] moreFieldsAndValues)
+        {
+            var fields = Field.CreateFields(field, value, moreFieldsAndValues);
+            var wrapper = (DocumentReferenceWrapper)document;
+            _writeBatch.UpdateData(fields, (DocumentReference)wrapper);
+        }
+
         public void DeleteDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;

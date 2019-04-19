@@ -207,7 +207,38 @@ namespace Plugin.CloudFirestore
             });
         }
 
+        public void UpdateData(FieldPath field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
+        {
+            var fields = Field.CreateFields(field, value, moreFieldsAndValues);
+
+            _documentReference.UpdateData(fields, (error) =>
+            {
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
+            });
+        }
+
         public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
+        {
+            var fields = Field.CreateFields(field, value, moreFieldsAndValues);
+
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.UpdateData(fields, (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
 

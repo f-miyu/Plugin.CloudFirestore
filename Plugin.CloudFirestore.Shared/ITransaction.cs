@@ -13,6 +13,7 @@ namespace Plugin.CloudFirestore
         void SetData(IDocumentReference document, object documentData, bool merge);
         void UpdateData(IDocumentReference document, object fields);
         void UpdateData(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues);
+        void UpdateData(IDocumentReference document, FieldPath field, object value, params object[] moreFieldsAndValues);
         void DeleteDocument(IDocumentReference document);
     }
 }

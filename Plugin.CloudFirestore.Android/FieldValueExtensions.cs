@@ -80,6 +80,8 @@ namespace Plugin.CloudFirestore
                     }
                 case FieldValue firestoreFieldValue:
                     return firestoreFieldValue.ToNative();
+                case FieldPath fieldPath:
+                    return fieldPath.ToNative();
                 default:
                     {
                         var type = fieldValue.GetType();

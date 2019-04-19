@@ -220,6 +220,14 @@ namespace Plugin.CloudFirestore
             }));
         }
 
+        public void UpdateData(FieldPath field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
+        {
+            _documentReference.Update(field.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
+            }));
+        }
+
         public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
         {
             var tcs = new TaskCompletionSource<bool>();
@@ -235,6 +243,25 @@ namespace Plugin.CloudFirestore
                    tcs.SetException(ExceptionMapper.Map(task.Exception));
                }
            }));
+
+            return tcs.Task;
+        }
+
+        public Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.Update(field.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
 
             return tcs.Task;
         }

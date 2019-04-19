@@ -23,7 +23,9 @@ namespace Plugin.CloudFirestore
         void UpdateData(object fields, CompletionHandler handler);
         Task UpdateDataAsync(object fields);
         void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues);
+        void UpdateData(FieldPath field, object value, CompletionHandler handler, params object[] moreFieldsAndValues);
         Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues);
+        Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues);
         void DeleteDocument(CompletionHandler handler);
         Task DeleteDocumentAsync();
         IListenerRegistration AddSnapshotListener(DocumentSnapshotHandler listener);

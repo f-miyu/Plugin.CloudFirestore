@@ -63,6 +63,12 @@ namespace Plugin.CloudFirestore
             _transaction.Update((DocumentReference)wrapper, field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
         }
 
+        public void UpdateData(IDocumentReference document, FieldPath field, object value, params object[] moreFieldsAndValues)
+        {
+            var wrapper = (DocumentReferenceWrapper)document;
+            _transaction.Update((DocumentReference)wrapper, field.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
+        }
+
         public void DeleteDocument(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
