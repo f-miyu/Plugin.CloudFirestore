@@ -17,9 +17,9 @@ namespace Plugin.CloudFirestore
             _query = query;
         }
 
-        public IQuery LimitTo(int limit)
+        public IQuery LimitTo(long limit)
         {
-            var query = _query.LimitedTo(limit);
+            var query = _query.LimitedTo((nint)limit);
             return new QueryWrapper(query);
         }
 
@@ -107,6 +107,18 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereArrayContains(string field, object value)
+        {
+            var query = _query.WhereArrayContains(field, value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContains(FieldPath field, object value)
+        {
+            var query = _query.WhereArrayContains(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
@@ -168,11 +180,39 @@ namespace Plugin.CloudFirestore
             });
         }
 
+        public void GetDocuments(Source source, QuerySnapshotHandler handler)
+        {
+            _query.GetDocuments(source.ToNative(), (snapshot, error) =>
+            {
+                handler?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
+                                error == null ? null : ExceptionMapper.Map(error));
+            });
+        }
+
         public Task<IQuerySnapshot> GetDocumentsAsync()
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
             _query.GetDocuments((snapshot, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(snapshot == null ? null : new QuerySnapshotWrapper(snapshot));
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task<IQuerySnapshot> GetDocumentsAsync(Source source)
+        {
+            var tcs = new TaskCompletionSource<IQuerySnapshot>();
+
+            _query.GetDocuments(source.ToNative(), (snapshot, error) =>
             {
                 if (error != null)
                 {

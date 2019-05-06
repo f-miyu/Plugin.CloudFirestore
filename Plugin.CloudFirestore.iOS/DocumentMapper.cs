@@ -8,9 +8,9 @@ using Plugin.CloudFirestore.Attributes;
 
 namespace Plugin.CloudFirestore
 {
-    public static class DocumentMapper
+    internal static class DocumentMapper
     {
-        public static IDictionary<string, object> Map(DocumentSnapshot source)
+        public static IDictionary<string, object> Map(DocumentSnapshot source, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
             if (source != null && source.Exists)
             {
@@ -26,18 +26,32 @@ namespace Plugin.CloudFirestore
             return null;
         }
 
-        public static T Map<T>(DocumentSnapshot source) where T : class
+        public static T Map<T>(DocumentSnapshot source, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
             if (source != null && source.Exists)
             {
                 NSDictionary<NSString, NSObject> data;
                 if (source is QueryDocumentSnapshot queryDocumentSnapshot)
                 {
-                    data = queryDocumentSnapshot.Data;
+                    if (serverTimestampBehavior == null)
+                    {
+                        data = queryDocumentSnapshot.Data;
+                    }
+                    else
+                    {
+                        data = queryDocumentSnapshot.GetData(serverTimestampBehavior.Value.ToNative());
+                    }
                 }
                 else
                 {
-                    data = source.Data;
+                    if (serverTimestampBehavior == null)
+                    {
+                        data = source.Data;
+                    }
+                    else
+                    {
+                        data = source.GetData(serverTimestampBehavior.Value.ToNative());
+                    }
                 }
 
                 var properties = typeof(T).GetProperties();
@@ -48,32 +62,29 @@ namespace Plugin.CloudFirestore
                 var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
 
                 var instance = Activator.CreateInstance<T>();
-                if (source != null)
+                foreach (var (key, value) in data)
                 {
-                    foreach (var (key, value) in data)
+                    try
                     {
-                        try
+                        PropertyInfo property;
+                        if (mappedProperties.ContainsKey(key.ToString()))
                         {
-                            PropertyInfo property;
-                            if (mappedProperties.ContainsKey(key.ToString()))
-                            {
-                                property = mappedProperties[key.ToString()];
-                            }
-                            else
-                            {
-                                property = typeof(T).GetProperty(key.ToString());
-                            }
+                            property = mappedProperties[key.ToString()];
+                        }
+                        else
+                        {
+                            property = typeof(T).GetProperty(key.ToString());
+                        }
 
-                            if (property != null && !igonoredProperties.Contains(property))
-                            {
-                                property.SetValue(instance, value.ToFieldValue(property.PropertyType));
-                            }
-                        }
-                        catch (Exception e)
+                        if (property != null && !igonoredProperties.Contains(property))
                         {
-                            System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
-                            throw;
+                            property.SetValue(instance, value.ToFieldValue(property.PropertyType));
                         }
+                    }
+                    catch (Exception e)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
+                        throw;
                     }
                 }
 
@@ -84,7 +95,7 @@ namespace Plugin.CloudFirestore
 
                 return instance;
             }
-            return null;
+            return default;
         }
     }
 }

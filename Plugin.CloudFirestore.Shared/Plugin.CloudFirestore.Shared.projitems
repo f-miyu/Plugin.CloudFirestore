@@ -35,5 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Attributes\ServerTimestampAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FieldPath.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)FieldValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerTimestampBehavior.cs" />
   </ItemGroup>
 </Project>

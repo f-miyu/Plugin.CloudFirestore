@@ -1,9 +1,9 @@
 ﻿using System;
 using Firebase.Firestore;
-using Android.Sax;
+
 namespace Plugin.CloudFirestore
 {
-    public static class ExceptionMapper
+    internal static class ExceptionMapper
     {
         public static Exception Map(Exception exception)
         {

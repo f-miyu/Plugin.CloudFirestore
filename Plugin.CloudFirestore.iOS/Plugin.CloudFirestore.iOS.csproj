@@ -77,6 +77,8 @@
     <Compile Include="ExceptionMapper.cs" />
     <Compile Include="FieldPath.cs" />
     <Compile Include="FieldValue.cs" />
+    <Compile Include="ServerTimestampBehaviorExtensions.cs" />
+    <Compile Include="SourceExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

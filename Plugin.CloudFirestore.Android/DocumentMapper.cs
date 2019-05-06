@@ -8,21 +8,40 @@ using System.Reflection;
 
 namespace Plugin.CloudFirestore
 {
-    public static class DocumentMapper
+    internal static class DocumentMapper
     {
-        public static IDictionary<string, object> Map(DocumentSnapshot source)
+        public static IDictionary<string, object> Map(DocumentSnapshot source, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
             if (source != null && source.Exists())
             {
-                return source.Data.ToDictionary(pair => pair.Key, pair => pair.Value.ToFieldValue(typeof(object)));
+                IDictionary<string, Java.Lang.Object> data;
+                if (serverTimestampBehavior == null)
+                {
+                    data = source.Data;
+                }
+                else
+                {
+                    data = source.GetData(serverTimestampBehavior.Value.ToNative());
+                }
+                return data.ToDictionary(pair => pair.Key, pair => pair.Value.ToFieldValue(typeof(object)));
             }
             return null;
         }
 
-        public static T Map<T>(DocumentSnapshot source) where T : class
+        public static T Map<T>(DocumentSnapshot source, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
             if (source != null && source.Exists())
             {
+                IDictionary<string, Java.Lang.Object> data;
+                if (serverTimestampBehavior == null)
+                {
+                    data = source.Data;
+                }
+                else
+                {
+                    data = source.GetData(serverTimestampBehavior.Value.ToNative());
+                }
+
                 var properties = typeof(T).GetProperties();
                 var idProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IdAttribute)) != null);
                 var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
@@ -31,32 +50,30 @@ namespace Plugin.CloudFirestore
                 var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
 
                 var instance = Activator.CreateInstance<T>();
-                if (source != null)
-                {
-                    foreach (var (key, value) in source.Data)
-                    {
-                        try
-                        {
-                            PropertyInfo property;
-                            if (mappedProperties.ContainsKey(key))
-                            {
-                                property = mappedProperties[key];
-                            }
-                            else
-                            {
-                                property = typeof(T).GetProperty(key);
-                            }
 
-                            if (property != null && !igonoredProperties.Contains(property))
-                            {
-                                property.SetValue(instance, value.ToFieldValue(property.PropertyType));
-                            }
-                        }
-                        catch (Exception e)
+                foreach (var (key, value) in data)
+                {
+                    try
+                    {
+                        PropertyInfo property;
+                        if (mappedProperties.ContainsKey(key))
                         {
-                            System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
-                            throw;
+                            property = mappedProperties[key];
                         }
+                        else
+                        {
+                            property = typeof(T).GetProperty(key);
+                        }
+
+                        if (property != null && !igonoredProperties.Contains(property))
+                        {
+                            property.SetValue(instance, value.ToFieldValue(property.PropertyType));
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
+                        throw;
                     }
                 }
 
@@ -67,7 +84,7 @@ namespace Plugin.CloudFirestore
 
                 return instance;
             }
-            return null;
+            return default;
         }
     }
 }

@@ -2,11 +2,11 @@
 using Android.Gms.Tasks;
 namespace Plugin.CloudFirestore
 {
-    public delegate void OnCompleteHandler(Task task);
+    internal delegate void OnCompleteHandler(Task task);
 
-    public class OnCompleteHandlerListener : Java.Lang.Object, IOnCompleteListener
+    internal class OnCompleteHandlerListener : Java.Lang.Object, IOnCompleteListener
     {
-        private OnCompleteHandler _handler;
+        private readonly OnCompleteHandler _handler;
 
         public OnCompleteHandlerListener(OnCompleteHandler handler)
         {

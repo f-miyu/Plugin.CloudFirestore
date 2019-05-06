@@ -3,7 +3,7 @@ using Foundation;
 using Firebase.CloudFirestore;
 namespace Plugin.CloudFirestore
 {
-    public static class ExceptionMapper
+    internal static class ExceptionMapper
     {
         public static Exception Map(NSErrorException exception)
         {

@@ -24,9 +24,9 @@ namespace Plugin.CloudFirestore
             _collectionReference = collectionReference;
         }
 
-        public IQuery LimitTo(int limit)
+        public IQuery LimitTo(long limit)
         {
-            var query = _collectionReference.LimitedTo(limit);
+            var query = _collectionReference.LimitedTo((nint)limit);
             return new QueryWrapper(query);
         }
 
@@ -114,6 +114,18 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereArrayContains(string field, object value)
+        {
+            var query = _collectionReference.WhereArrayContains(field, value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContains(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereArrayContains(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
@@ -166,6 +178,12 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IDocumentReference CreateDocument()
+        {
+            var doccuntReference = _collectionReference.CreateDocument();
+            return new DocumentReferenceWrapper(doccuntReference);
+        }
+
         public IDocumentReference GetDocument(string documentPath)
         {
             var doccuntReference = _collectionReference.GetDocument(documentPath);
@@ -181,11 +199,39 @@ namespace Plugin.CloudFirestore
             });
         }
 
+        public void GetDocuments(Source source, QuerySnapshotHandler handler)
+        {
+            _collectionReference.GetDocuments(source.ToNative(), (snapshot, error) =>
+            {
+                handler?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
+                                error == null ? null : ExceptionMapper.Map(error));
+            });
+        }
+
         public Task<IQuerySnapshot> GetDocumentsAsync()
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
             _collectionReference.GetDocuments((snapshot, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(snapshot == null ? null : new QuerySnapshotWrapper(snapshot));
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task<IQuerySnapshot> GetDocumentsAsync(Source source)
+        {
+            var tcs = new TaskCompletionSource<IQuerySnapshot>();
+
+            _collectionReference.GetDocuments(source.ToNative(), (snapshot, error) =>
             {
                 if (error != null)
                 {

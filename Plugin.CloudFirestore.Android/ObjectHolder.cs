@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Plugin.CloudFirestore
 {
-    public class ObjectHolder : Java.Lang.Object
+    internal class ObjectHolder : Java.Lang.Object
     {
         public object Object { get; }
 
@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
         }
     }
 
-    public class ObjectHolder<T> : Java.Lang.Object
+    internal class ObjectHolder<T> : Java.Lang.Object
     {
         public T Object { get; }
 

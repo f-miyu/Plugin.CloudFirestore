@@ -46,11 +46,43 @@ namespace Plugin.CloudFirestore
             }));
         }
 
+        public void GetDocument(Source source, DocumentSnapshotHandler handler)
+        {
+            var tcs = new TaskCompletionSource<IDocumentSnapshot>();
+
+            _documentReference.Get(source.ToNative()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                var snapshot = !task.IsSuccessful ? null : task.Result.JavaCast<DocumentSnapshot>();
+                handler?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
+                                task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
+            }));
+        }
+
         public Task<IDocumentSnapshot> GetDocumentAsync()
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
             _documentReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    var snapshot = task.Result.JavaCast<DocumentSnapshot>();
+                    tcs.SetResult(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot));
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public Task<IDocumentSnapshot> GetDocumentAsync(Source source)
+        {
+            var tcs = new TaskCompletionSource<IDocumentSnapshot>();
+
+            _documentReference.Get(source.ToNative()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -306,18 +338,11 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, DocumentSnapshotHandler listener)
         {
-            if (!includeMetadataChanges)
-            {
-                return AddSnapshotListener(listener);
-            }
-
-            var option = new DocumentListenOptions().IncludeMetadataChanges();
-
-            var registration = _documentReference.AddSnapshotListener(option, new EventHandlerListener<DocumentSnapshot>((value, error) =>
-            {
-                listener?.Invoke(value == null ? null : new DocumentSnapshotWrapper(value),
-                                 error == null ? null : ExceptionMapper.Map(error));
-            }));
+            var registration = _documentReference.AddSnapshotListener(includeMetadataChanges ? MetadataChanges.Include : MetadataChanges.Exclude, new EventHandlerListener<DocumentSnapshot>((value, error) =>
+           {
+               listener?.Invoke(value == null ? null : new DocumentSnapshotWrapper(value),
+                                error == null ? null : ExceptionMapper.Map(error));
+           }));
 
             return new ListenerRegistrationWrapper(registration);
         }

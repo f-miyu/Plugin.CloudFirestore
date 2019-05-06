@@ -28,9 +28,19 @@ namespace Plugin.CloudFirestore
             return wrapper._documentSnapshot;
         }
 
-        public T ToObject<T>() where T : class
+        public IDictionary<string, object> GetData(ServerTimestampBehavior serverTimestampBehavior)
+        {
+            return Exists ? DocumentMapper.Map(_documentSnapshot, serverTimestampBehavior) : null;
+        }
+
+        public T ToObject<T>()
         {
             return DocumentMapper.Map<T>(_documentSnapshot);
+        }
+
+        public T ToObject<T>(ServerTimestampBehavior serverTimestampBehavior)
+        {
+            return DocumentMapper.Map<T>(_documentSnapshot, serverTimestampBehavior);
         }
     }
 }

@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
 {
     public interface IQuery
     {
-        IQuery LimitTo(int limit);
+        IQuery LimitTo(long limit);
         IQuery OrderBy(string field);
         IQuery OrderBy(FieldPath field);
         IQuery OrderBy(string field, bool descending);
@@ -22,6 +22,8 @@ namespace Plugin.CloudFirestore
         IQuery WhereLessThan(FieldPath field, object value);
         IQuery WhereLessThanOrEqualsTo(string field, object value);
         IQuery WhereLessThanOrEqualsTo(FieldPath field, object value);
+        IQuery WhereArrayContains(string field, object value);
+        IQuery WhereArrayContains(FieldPath field, object value);
         IQuery StartAt(IDocumentSnapshot document);
         IQuery StartAt(params object[] fieldValues);
         IQuery StartAfter(IDocumentSnapshot document);
@@ -31,7 +33,9 @@ namespace Plugin.CloudFirestore
         IQuery EndBefore(IDocumentSnapshot document);
         IQuery EndBefore(params object[] fieldValues);
         void GetDocuments(QuerySnapshotHandler handler);
+        void GetDocuments(Source source, QuerySnapshotHandler handler);
         Task<IQuerySnapshot> GetDocumentsAsync();
+        Task<IQuerySnapshot> GetDocumentsAsync(Source source);
         IListenerRegistration AddSnapshotListener(QuerySnapshotHandler listener);
         IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, QuerySnapshotHandler listener);
     }

@@ -43,11 +43,40 @@ namespace Plugin.CloudFirestore
             });
         }
 
+        public void GetDocument(Source source, DocumentSnapshotHandler handler)
+        {
+            _documentReference.GetDocument(source.ToNative(), (snapshot, error) =>
+            {
+                handler?.Invoke(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot),
+                                error == null ? null : ExceptionMapper.Map(error));
+
+            });
+        }
+
         public Task<IDocumentSnapshot> GetDocumentAsync()
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
             _documentReference.GetDocument((snapshot, error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot));
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task<IDocumentSnapshot> GetDocumentAsync(Source source)
+        {
+            var tcs = new TaskCompletionSource<IDocumentSnapshot>();
+
+            _documentReference.GetDocument(source.ToNative(), (snapshot, error) =>
             {
                 if (error != null)
                 {

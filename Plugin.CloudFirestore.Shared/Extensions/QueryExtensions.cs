@@ -54,6 +54,13 @@ namespace Plugin.CloudFirestore.Extensions
                         .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Added));
         }
 
+        public static IObservable<IDocumentChange> ObserveAdded(this IQuery query, bool includeMetadataChanges)
+        {
+            return query.AsObservable(includeMetadataChanges)
+                        .Where(x => x != null)
+                        .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Added));
+        }
+
         public static IObservable<IDocumentChange> ObserveModified(this IQuery query)
         {
             return query.AsObservable()
@@ -61,9 +68,23 @@ namespace Plugin.CloudFirestore.Extensions
                         .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Modified));
         }
 
+        public static IObservable<IDocumentChange> ObserveModified(this IQuery query, bool includeMetadataChanges)
+        {
+            return query.AsObservable(includeMetadataChanges)
+                        .Where(x => x != null)
+                        .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Modified));
+        }
+
         public static IObservable<IDocumentChange> ObserveRemoved(this IQuery query)
         {
             return query.AsObservable()
+                        .Where(x => x != null)
+                        .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Removed));
+        }
+
+        public static IObservable<IDocumentChange> ObserveRemoved(this IQuery query, bool includeMetadataChanges)
+        {
+            return query.AsObservable(includeMetadataChanges)
                         .Where(x => x != null)
                         .SelectMany(x => x.DocumentChanges.Where(y => y.Type == DocumentChangeType.Removed));
         }

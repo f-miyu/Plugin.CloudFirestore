@@ -11,7 +11,9 @@ namespace Plugin.CloudFirestore
         ICollectionReference Parent { get; }
         ICollectionReference GetCollection(string collectionPath);
         void GetDocument(DocumentSnapshotHandler handler);
+        void GetDocument(Source source, DocumentSnapshotHandler handler);
         Task<IDocumentSnapshot> GetDocumentAsync();
+        Task<IDocumentSnapshot> GetDocumentAsync(Source source);
         void SetData(object documentData, CompletionHandler handler);
         Task SetDataAsync(object documentData);
         void SetData(object documentData, CompletionHandler handler, params string[] mergeFields);

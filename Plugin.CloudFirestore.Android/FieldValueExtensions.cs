@@ -9,7 +9,7 @@ using Plugin.CloudFirestore.Attributes;
 
 namespace Plugin.CloudFirestore
 {
-    public static class FieldValueExtensions
+    internal static class FieldValueExtensions
     {
         public static Java.Lang.Object ToNativeFieldValue(this object fieldValue)
         {

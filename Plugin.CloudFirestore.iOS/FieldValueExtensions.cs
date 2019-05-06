@@ -10,7 +10,7 @@ using Firebase.CloudFirestore;
 
 namespace Plugin.CloudFirestore
 {
-    public static class FieldValueExtensions
+    internal static class FieldValueExtensions
     {
         public static object ToNativeFieldValue(this object fieldValue)
         {

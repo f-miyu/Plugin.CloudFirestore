@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using Foundation;
 
 namespace Plugin.CloudFirestore
 {
@@ -12,6 +14,10 @@ namespace Plugin.CloudFirestore
                     return Firebase.CloudFirestore.FieldValue.Delete;
                 case FieldValueType.ServerTimestamp:
                     return Firebase.CloudFirestore.FieldValue.ServerTimestamp;
+                case FieldValueType.ArrayUnion:
+                    return Firebase.CloudFirestore.FieldValue.FromArrayUnion(_elements?.Select(x => x.ToNativeFieldValue() as NSObject).ToArray());
+                case FieldValueType.ArrayRemove:
+                    return Firebase.CloudFirestore.FieldValue.FromArrayRemove(_elements?.Select(x => x.ToNativeFieldValue() as NSObject).ToArray());
                 default:
                     throw new InvalidOperationException();
             }

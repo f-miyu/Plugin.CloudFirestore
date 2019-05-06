@@ -2,7 +2,7 @@
 using Foundation;
 namespace Plugin.CloudFirestore
 {
-    public class ObjectHolder : NSObject
+    internal class ObjectHolder : NSObject
     {
         public object Object { get; }
 
@@ -12,7 +12,7 @@ namespace Plugin.CloudFirestore
         }
     }
 
-    public class ObjectHolder<T> : NSObject
+    internal class ObjectHolder<T> : NSObject
     {
         public T Object { get; }
 

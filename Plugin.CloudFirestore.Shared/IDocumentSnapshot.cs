@@ -9,6 +9,8 @@ namespace Plugin.CloudFirestore
         bool Exists { get; }
         ISnapshotMetadata Metadata { get; }
         IDocumentReference Reference { get; }
-        T ToObject<T>() where T : class;
+        IDictionary<string, object> GetData(ServerTimestampBehavior serverTimestampBehavior);
+        T ToObject<T>();
+        T ToObject<T>(ServerTimestampBehavior serverTimestampBehavior);
     }
 }

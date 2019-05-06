@@ -23,7 +23,7 @@ namespace Plugin.CloudFirestore
             _collectionReference = collectionReference;
         }
 
-        public IQuery LimitTo(int limit)
+        public IQuery LimitTo(long limit)
         {
             var query = _collectionReference.Limit(limit);
             return new QueryWrapper(query);
@@ -117,6 +117,18 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereArrayContains(string field, object value)
+        {
+            var query = _collectionReference.WhereArrayContains(field, value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContains(FieldPath field, object value)
+        {
+            var query = _collectionReference.WhereArrayContains(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var wrapper = (DocumentSnapshotWrapper)document;
@@ -169,6 +181,12 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IDocumentReference CreateDocument()
+        {
+            var doccuntReference = _collectionReference.Document();
+            return new DocumentReferenceWrapper(doccuntReference);
+        }
+
         public IDocumentReference GetDocument(string documentPath)
         {
             var doccuntReference = _collectionReference.Document(documentPath);
@@ -185,11 +203,41 @@ namespace Plugin.CloudFirestore
             }));
         }
 
+        public void GetDocuments(Source source, QuerySnapshotHandler handler)
+        {
+            _collectionReference.Get(source.ToNative()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                var snapshot = !task.IsSuccessful ? null : task.Result.JavaCast<QuerySnapshot>();
+                handler?.Invoke(snapshot == null ? null : new QuerySnapshotWrapper(snapshot),
+                                task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
+            }));
+        }
+
         public Task<IQuerySnapshot> GetDocumentsAsync()
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
             _collectionReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    var snapshot = task.Result.JavaCast<QuerySnapshot>();
+                    tcs.SetResult(snapshot == null ? null : new QuerySnapshotWrapper(snapshot));
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public Task<IQuerySnapshot> GetDocumentsAsync(Source source)
+        {
+            var tcs = new TaskCompletionSource<IQuerySnapshot>();
+
+            _collectionReference.Get(source.ToNative()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {
@@ -247,18 +295,11 @@ namespace Plugin.CloudFirestore
 
         public IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, QuerySnapshotHandler listener)
         {
-            if (!includeMetadataChanges)
-            {
-                return AddSnapshotListener(listener);
-            }
-
-            var option = new QueryListenOptions().IncludeQueryMetadataChanges();
-
-            var registration = _collectionReference.AddSnapshotListener(option, new EventHandlerListener<QuerySnapshot>((value, error) =>
-            {
-                listener?.Invoke(value == null ? null : new QuerySnapshotWrapper(value),
-                                 error == null ? null : ExceptionMapper.Map(error));
-            }));
+            var registration = _collectionReference.AddSnapshotListener(includeMetadataChanges ? MetadataChanges.Include : MetadataChanges.Exclude, new EventHandlerListener<QuerySnapshot>((value, error) =>
+              {
+                  listener?.Invoke(value == null ? null : new QuerySnapshotWrapper(value),
+                                   error == null ? null : ExceptionMapper.Map(error));
+              }));
 
             return new ListenerRegistrationWrapper(registration);
         }

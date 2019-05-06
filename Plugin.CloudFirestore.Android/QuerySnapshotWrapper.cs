@@ -26,9 +26,14 @@ namespace Plugin.CloudFirestore
             _querySnapshot = querySnapshot;
         }
 
-        public IEnumerable<T> ToObjects<T>() where T : class
+        public IEnumerable<T> ToObjects<T>()
         {
             return Documents.Select(d => d.ToObject<T>());
+        }
+
+        public IEnumerable<T> ToObjects<T>(ServerTimestampBehavior serverTimestampBehavior)
+        {
+            return Documents.Select(d => d.ToObject<T>(serverTimestampBehavior));
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Plugin.CloudFirestore
         string Id { get; }
         string Path { get; }
         IDocumentReference Parent { get; }
+        IDocumentReference CreateDocument();
         IDocumentReference GetDocument(string documentPath);
         void AddDocument(object data, CompletionHandler handler);
         Task AddDocumentAsync(object data);

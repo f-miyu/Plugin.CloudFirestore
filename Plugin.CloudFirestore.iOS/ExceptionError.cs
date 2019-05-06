@@ -2,7 +2,7 @@
 using Foundation;
 namespace Plugin.CloudFirestore
 {
-    public class ExceptionError : NSError
+    internal class ExceptionError : NSError
     {
         public Exception Exception { get; }
 
