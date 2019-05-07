@@ -207,6 +207,7 @@
     <Compile Include="FieldPath.cs" />
     <Compile Include="SourceExtensions.cs" />
     <Compile Include="ServerTimestampBehaviorExtensions.cs" />
+    <Compile Include="FirestoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -188,13 +188,24 @@ namespace Plugin.CloudFirestore
                     return Convert.ChangeType((double)@double, type);
                 case Java.Lang.String @string:
                     return fieldValue.ToString();
-                case Java.Util.Date date:
-                    var dateTimeOffset = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(date.Time);
-                    if (type == typeof(DateTime) || type == typeof(DateTime?))
+                case Firebase.Timestamp timestamp:
                     {
-                        return dateTimeOffset.LocalDateTime;
+                        var dateTimeOffset = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(timestamp.Seconds * 1000 + timestamp.Nanoseconds / 1000000);
+                        if (type == typeof(DateTime) || type == typeof(DateTime?))
+                        {
+                            return dateTimeOffset.LocalDateTime;
+                        }
+                        return dateTimeOffset;
                     }
-                    return dateTimeOffset;
+                case Java.Util.Date date:
+                    {
+                        var dateTimeOffset = new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(date.Time);
+                        if (type == typeof(DateTime) || type == typeof(DateTime?))
+                        {
+                            return dateTimeOffset.LocalDateTime;
+                        }
+                        return dateTimeOffset;
+                    }
                 case JavaList javaList:
                     {
                         IList list;

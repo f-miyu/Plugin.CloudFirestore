@@ -8,17 +8,10 @@ namespace Plugin.CloudFirestore
 {
     public class FirestoreWrapper : IFirestore
     {
-        public bool PersistenceEnabled
+        public FirestoreSettings FirestoreSettings
         {
-            get => _firestore.FirestoreSettings.IsPersistenceEnabled;
-            set
-            {
-                var settings = new FirebaseFirestoreSettings.Builder()
-                                                            .SetPersistenceEnabled(value)
-                                                            .Build();
-
-                _firestore.FirestoreSettings = settings;
-            }
+            get => _firestore.FirestoreSettings == null ? null : new FirestoreSettings(_firestore.FirestoreSettings);
+            set => _firestore.FirestoreSettings = value.ToNative();
         }
 
         private readonly FirebaseFirestore _firestore;
@@ -195,6 +188,60 @@ namespace Plugin.CloudFirestore
         {
             var writeBatch = _firestore.Batch();
             return new WriteBatchWrapper(writeBatch);
+        }
+
+        public void EnableNetwork(CompletionHandler handler)
+        {
+            _firestore.EnableNetwork().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
+            }));
+        }
+
+        public Task EnableNetworkAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.EnableNetwork().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public void DisableNetwork(CompletionHandler handler)
+        {
+            _firestore.DisableNetwork().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
+            }));
+        }
+
+        public Task DisableNetworkAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.DisableNetwork().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
         }
     }
 }

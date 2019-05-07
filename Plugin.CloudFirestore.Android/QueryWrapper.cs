@@ -11,6 +11,8 @@ namespace Plugin.CloudFirestore
 {
     public class QueryWrapper : IQuery
     {
+        public IFirestore Firestore => _query.Firestore == null ? null : new FirestoreWrapper(_query.Firestore);
+
         private readonly Query _query;
 
         public QueryWrapper(Query query)

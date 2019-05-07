@@ -148,13 +148,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Plugin.CloudFirestore.iOS\Plugin.CloudFirestore.iOS.csproj">
-      <Project>{C8EED472-F0AD-425A-A549-AF74812AD6EE}</Project>
-      <Name>Plugin.CloudFirestore.iOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Plugin.CloudFirestore.Sample\Plugin.CloudFirestore.Sample.csproj">
       <Project>{0BCFBAB7-34C2-46DB-99A8-3373AEC75512}</Project>
       <Name>Plugin.CloudFirestore.Sample</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Plugin.CloudFirestore.iOS\Plugin.CloudFirestore.iOS.csproj">
+      <Project>{C8EED472-F0AD-425A-A549-AF74812AD6EE}</Project>
+      <Name>Plugin.CloudFirestore.iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

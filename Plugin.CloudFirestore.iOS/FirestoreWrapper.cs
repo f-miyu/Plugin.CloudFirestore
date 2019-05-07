@@ -7,15 +7,10 @@ namespace Plugin.CloudFirestore
 {
     public class FirestoreWrapper : IFirestore
     {
-        public bool PersistenceEnabled
+        public FirestoreSettings FirestoreSettings
         {
-            get => _firestore.Settings.PersistenceEnabled;
-            set
-            {
-                var settings = new FirestoreSettings();
-                settings.PersistenceEnabled = value;
-                _firestore.Settings = settings;
-            }
+            get => _firestore.Settings == null ? null : new FirestoreSettings(_firestore.Settings);
+            set => _firestore.Settings = value.ToNative();
         }
 
         private readonly Firestore _firestore;
@@ -204,6 +199,60 @@ namespace Plugin.CloudFirestore
         {
             var writeBatch = _firestore.CreateBatch();
             return new WriteBatchWrapper(writeBatch);
+        }
+
+        public void EnableNetwork(CompletionHandler handler)
+        {
+            _firestore.EnableNetwork((error) =>
+            {
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
+            });
+        }
+
+        public Task EnableNetworkAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.EnableNetwork((error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public void DisableNetwork(CompletionHandler handler)
+        {
+            _firestore.DisableNetwork((error) =>
+            {
+                handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
+            });
+        }
+
+        public Task DisableNetworkAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.DisableNetwork((error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
     }
 }

@@ -25,6 +25,11 @@ namespace Plugin.CloudFirestore.Sample
         {
             InitializeComponent();
 
+            CrossCloudFirestore.Current.Instance.FirestoreSettings = new FirestoreSettings
+            {
+                AreTimestampsInSnapshotsEnabled = true
+            };
+
             await NavigationService.NavigateAsync<MainPageViewModel>(wrapInNavigationPage: true);
         }
 

@@ -37,5 +37,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)FieldValue.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Source.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ServerTimestampBehavior.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FirestoreSettings.cs" />
   </ItemGroup>
 </Project>

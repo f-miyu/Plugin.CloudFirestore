@@ -79,6 +79,7 @@
     <Compile Include="FieldValue.cs" />
     <Compile Include="ServerTimestampBehaviorExtensions.cs" />
     <Compile Include="SourceExtensions.cs" />
+    <Compile Include="FirestoreSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

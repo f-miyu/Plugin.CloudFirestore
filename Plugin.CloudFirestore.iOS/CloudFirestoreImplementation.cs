@@ -7,13 +7,6 @@ namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreImplementation : ICloudFirestore
     {
-        public CloudFirestoreImplementation()
-        {
-            var settings = Firestore.SharedInstance.Settings;
-            settings.TimestampsInSnapshotsEnabled = true;
-            Firestore.SharedInstance.Settings = settings;
-        }
-
         public IFirestore Instance => new FirestoreWrapper(Firestore.SharedInstance);
 
         public IFirestore GetInstance(string appName)

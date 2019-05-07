@@ -9,6 +9,7 @@ namespace Plugin.CloudFirestore
         string Id { get; }
         string Path { get; }
         ICollectionReference Parent { get; }
+        IFirestore Firestore { get; }
         ICollectionReference GetCollection(string collectionPath);
         void GetDocument(DocumentSnapshotHandler handler);
         void GetDocument(Source source, DocumentSnapshotHandler handler);

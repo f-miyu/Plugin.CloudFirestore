@@ -13,6 +13,6 @@
         <Folder Include="Extensions\" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj" />
+      <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj" />
     </ItemGroup>
 </Project>
