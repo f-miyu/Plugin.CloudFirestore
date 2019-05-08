@@ -1,23 +1,17 @@
 ﻿using System;
 using Firebase.Firestore;
 using Firebase;
+using System.Collections.Concurrent;
 
 namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreImplementation : ICloudFirestore
     {
-        public IFirestore Instance
-        {
-            get
-            {
-                return new FirestoreWrapper(FirebaseFirestore.Instance);
-            }
-        }
+        public IFirestore Instance => FirestoreProvider.Firestore;
 
         public IFirestore GetInstance(string appName)
         {
-            var app = FirebaseApp.GetInstance(appName);
-            return new FirestoreWrapper(FirebaseFirestore.GetInstance(app));
+            return FirestoreProvider.GetFirestore(appName);
         }
     }
 }

@@ -208,6 +208,7 @@
     <Compile Include="SourceExtensions.cs" />
     <Compile Include="ServerTimestampBehaviorExtensions.cs" />
     <Compile Include="FirestoreSettings.cs" />
+    <Compile Include="FirestoreProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

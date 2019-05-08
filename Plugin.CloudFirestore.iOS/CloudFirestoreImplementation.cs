@@ -7,12 +7,11 @@ namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreImplementation : ICloudFirestore
     {
-        public IFirestore Instance => new FirestoreWrapper(Firestore.SharedInstance);
+        public IFirestore Instance => FirestoreProvider.Firestore;
 
         public IFirestore GetInstance(string appName)
         {
-            var app = Firebase.Core.App.From(appName);
-            return new FirestoreWrapper(Firestore.Create(app));
+            return FirestoreProvider.GetFirestore(appName);
         }
     }
 }

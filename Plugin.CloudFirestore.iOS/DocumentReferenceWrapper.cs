@@ -15,7 +15,7 @@ namespace Plugin.CloudFirestore
 
         public ICollectionReference Parent => _documentReference.Parent == null ? null : new CollectionReferenceWrapper(_documentReference.Parent);
 
-        public IFirestore Firestore => _documentReference.Firestore == null ? null : new FirestoreWrapper(_documentReference.Firestore);
+        public IFirestore Firestore => _documentReference.Firestore == null ? null : FirestoreProvider.GetFirestore(_documentReference.Firestore);
 
         private readonly DocumentReference _documentReference;
 
