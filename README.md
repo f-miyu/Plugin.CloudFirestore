@@ -18,9 +18,10 @@ Firebase.Core.App.Configure();
 
 ### Android
 * Add google-services.json to Android project. Select GoogleServicesJson as build action. (If you can't select GoogleServicesJson, reload this android project.)
-* Initialize as follows in MainActivity.
-```C#
-Plugin.CloudFirestore.CloudFirestore.Init(this);
+* TargetFrameworkVersion is v9.0 and AndroidEnableMultiDex is true in .csproj.
+```xml
+<TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+<AndroidEnableMultiDex>true</AndroidEnableMultiDex>
 ```
 
 ## Usage
@@ -34,7 +35,6 @@ var document = await CrossCloudFirestore.Current
 
 var yourModel = document.ToObject<YourModel>();
 
-
 var query = await CrossCloudFirestore.Current
                                      .Instance
                                      .GetCollection("yourcollection")
@@ -43,7 +43,60 @@ var query = await CrossCloudFirestore.Current
                                      .LimitTo(3)
                                      .GetDocumentsAsync();
 
-var yourModels = query.ToObjects<YourModel>();                                
+var yourModels = query.ToObjects<YourModel>();
+```
+
+### Filters
+#### WhereEqualsTo
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereEqualsTo("Value", 100)
+                                     .GetDocumentsAsync();                                
+```
+#### WhereGreaterThan
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereGreaterThan("Value", 100)
+                                     .GetDocumentsAsync();                                
+```
+#### WhereGreaterThanOrEqualsTo
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereGreaterThanOrEqualsTo("Value", 100)
+                                     .GetDocumentsAsync();                                
+```
+
+#### WhereLessThan
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereLessThan("Value", 100)
+                                     .GetDocumentsAsync();                                
+```
+
+#### WhereLessThanOrEqualsTo
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereLessThanOrEqualsTo("Value", 100)
+                                     .GetDocumentsAsync();                                
+```
+
+#### WhereArrayContains
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereArrayContains("Values", 100)
+                                     .GetDocumentsAsync();                                
 ```
 
 ### Add
@@ -59,7 +112,23 @@ await CrossCloudFirestore.Current
                          .Instance
                          .GetCollection("yourcollection")
                          .GetDocument("yourdocument")
-                         .UpdateDataAsync(new Dictionary<string, object> { ["Value"] = 20 });
+                         .UpdateDataAsync(new { Value = 10 });
+```
+
+### Set
+```C#
+await CrossCloudFirestore.Current
+                         .Instance
+                         .GetCollection("yourcollection")
+                         .GetDocument("yourdocument")
+                         .SetDataAsync(new { Value = 1 });
+
+// Create a document with auto-generated ID
+await CrossCloudFirestore.Current
+                         .Instance
+                         .GetCollection("yourcollection")
+                         .CreateDocument()
+                         .SetDataAsync(new { Value = 2 });
 ```
 
 ### Delete
@@ -187,6 +256,38 @@ CrossCloudFirestore.Current
                    });
 ```
 
+### FieldPath
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollection("yourcollection")
+                                     .WhereEqualsTo(FieldPath.DocumentId, "yourdocument")
+                                     .GetDocumentsAsync();
+                                     
+await CrossCloudFirestore.Current
+                         .Instance
+                         .GetCollection("yourcollection")
+                         .GetDocument("yourdocument")
+                         .UpdateDataAsync(new FieldPath("a", "b"), 1);
+```
+
+### FieldValue
+```C#
+var data = new
+{
+    DeletedValue = FieldValue.Delete,
+    Date = FieldValue.ServerTimestamp,
+    UnionArray = FieldValue.ArrayUnion(1, 2),
+    RemovedArray = FieldValue.ArrayRemove(3, 4),
+};
+
+await CrossCloudFirestore.Current
+                         .Instance
+                         .GetCollection("yourcollection")
+                         .GetDocument("yourdocument")
+                         .UpdateDataAsync(data);
+```
+
 ### Use Multiple Projects
 ```C#
 var document = await CrossCloudFirestore.Current
@@ -194,6 +295,14 @@ var document = await CrossCloudFirestore.Current
                                         .GetCollection("yourcollection")
                                         .GetDocument("yourdocument")
                                         .GetDocumentAsync();
+```
+
+### Settings
+```C#
+CrossCloudFirestore.Current.Instance.FirestoreSettings = new FirestoreSettings
+{
+    AreTimestampsInSnapshotsEnabled = true
+};
 ```
 
 ## Data Mapping
@@ -236,6 +345,12 @@ public class YourModel
     
     [Ignored]
     public string Text { get; set; }
+    
+    [ServerTimestamp(CanReplace = false)]
+    public DateTime CreatedAt { get; set; }
+
+    [ServerTimestamp]
+    public DateTime UpdatedAt { get; set; }
 }
 
 ```
@@ -247,3 +362,6 @@ Specified name becomes Firestore field name.
 
 #### IgnoredAttribute
 Specified properties are ignored for mapping.
+
+#### ServerTimestampAttribute
+Specified properties are replaced to a server timestamp. If CanReplace is false, the properties are replaced when they are default or null. The default value for CanReplace is true.
