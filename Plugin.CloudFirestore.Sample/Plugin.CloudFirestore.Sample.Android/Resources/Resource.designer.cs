@@ -26,8 +26,1512 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Reactive.Bindings.Resource.String.ApplicationName = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.ApplicationName;
-			global::Reactive.Bindings.Resource.String.Hello = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.Hello;
+			global::Reactive.Bindings.Resource.Animation.abc_fade_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_in;
+			global::Reactive.Bindings.Resource.Animation.abc_fade_out = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_out;
+			global::Reactive.Bindings.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_popup_enter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_popup_enter;
+			global::Reactive.Bindings.Resource.Animation.abc_popup_exit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_popup_exit;
+			global::Reactive.Bindings.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_in_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_in_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_in_top;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_out_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Reactive.Bindings.Resource.Animation.abc_slide_out_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_out_top;
+			global::Reactive.Bindings.Resource.Attribute.actionBarDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarDivider;
+			global::Reactive.Bindings.Resource.Attribute.actionBarItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Reactive.Bindings.Resource.Attribute.actionBarPopupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Reactive.Bindings.Resource.Attribute.actionBarSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarSize;
+			global::Reactive.Bindings.Resource.Attribute.actionBarSplitStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTabBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTabStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTabTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionBarTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTheme;
+			global::Reactive.Bindings.Resource.Attribute.actionBarWidgetTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Reactive.Bindings.Resource.Attribute.actionButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionDropDownStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionLayout;
+			global::Reactive.Bindings.Resource.Attribute.actionMenuTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.actionMenuTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Reactive.Bindings.Resource.Attribute.actionModeBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeBackground;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCloseButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCloseDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCopyDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeCutDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeFindDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModePasteDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModePopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionModeSelectAllDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeShareDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionModeSplitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Reactive.Bindings.Resource.Attribute.actionModeStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionModeWebSearchDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Reactive.Bindings.Resource.Attribute.actionOverflowButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionOverflowMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Reactive.Bindings.Resource.Attribute.actionProviderClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionProviderClass;
+			global::Reactive.Bindings.Resource.Attribute.actionViewClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionViewClass;
+			global::Reactive.Bindings.Resource.Attribute.activityChooserViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogButtonGroupStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogCenterButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogStyle;
+			global::Reactive.Bindings.Resource.Attribute.alertDialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogTheme;
+			global::Reactive.Bindings.Resource.Attribute.allowStacking = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.allowStacking;
+			global::Reactive.Bindings.Resource.Attribute.alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alpha;
+			global::Reactive.Bindings.Resource.Attribute.alphabeticModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Reactive.Bindings.Resource.Attribute.arrowHeadLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.arrowHeadLength;
+			global::Reactive.Bindings.Resource.Attribute.arrowShaftLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.arrowShaftLength;
+			global::Reactive.Bindings.Resource.Attribute.autoCompleteTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeMaxTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeMinTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Reactive.Bindings.Resource.Attribute.autoSizePresetSizes = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeStepGranularity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Reactive.Bindings.Resource.Attribute.autoSizeTextType = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeTextType;
+			global::Reactive.Bindings.Resource.Attribute.background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.background;
+			global::Reactive.Bindings.Resource.Attribute.backgroundSplit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundSplit;
+			global::Reactive.Bindings.Resource.Attribute.backgroundStacked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundStacked;
+			global::Reactive.Bindings.Resource.Attribute.backgroundTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundTint;
+			global::Reactive.Bindings.Resource.Attribute.backgroundTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundTintMode;
+			global::Reactive.Bindings.Resource.Attribute.barLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.barLength;
+			global::Reactive.Bindings.Resource.Attribute.borderlessButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarNegativeButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarNeutralButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarPositiveButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonGravity;
+			global::Reactive.Bindings.Resource.Attribute.buttonPanelSideLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Reactive.Bindings.Resource.Attribute.buttonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonStyle;
+			global::Reactive.Bindings.Resource.Attribute.buttonStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Reactive.Bindings.Resource.Attribute.buttonTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonTint;
+			global::Reactive.Bindings.Resource.Attribute.buttonTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonTintMode;
+			global::Reactive.Bindings.Resource.Attribute.checkboxStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.checkboxStyle;
+			global::Reactive.Bindings.Resource.Attribute.checkedTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.closeIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.closeIcon;
+			global::Reactive.Bindings.Resource.Attribute.closeItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.closeItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.collapseContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.collapseContentDescription;
+			global::Reactive.Bindings.Resource.Attribute.collapseIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.collapseIcon;
+			global::Reactive.Bindings.Resource.Attribute.color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.color;
+			global::Reactive.Bindings.Resource.Attribute.colorAccent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorAccent;
+			global::Reactive.Bindings.Resource.Attribute.colorBackgroundFloating = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Reactive.Bindings.Resource.Attribute.colorButtonNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorButtonNormal;
+			global::Reactive.Bindings.Resource.Attribute.colorControlActivated = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorControlActivated;
+			global::Reactive.Bindings.Resource.Attribute.colorControlHighlight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorControlHighlight;
+			global::Reactive.Bindings.Resource.Attribute.colorControlNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorControlNormal;
+			global::Reactive.Bindings.Resource.Attribute.colorError = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorError;
+			global::Reactive.Bindings.Resource.Attribute.colorPrimary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorPrimary;
+			global::Reactive.Bindings.Resource.Attribute.colorPrimaryDark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Reactive.Bindings.Resource.Attribute.colorSwitchThumbNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Reactive.Bindings.Resource.Attribute.commitIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.commitIcon;
+			global::Reactive.Bindings.Resource.Attribute.contentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentDescription;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetEnd;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetEndWithActions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetLeft;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetRight;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetStart;
+			global::Reactive.Bindings.Resource.Attribute.contentInsetStartWithNavigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Reactive.Bindings.Resource.Attribute.controlBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.controlBackground;
+			global::Reactive.Bindings.Resource.Attribute.customNavigationLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.customNavigationLayout;
+			global::Reactive.Bindings.Resource.Attribute.defaultQueryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.defaultQueryHint;
+			global::Reactive.Bindings.Resource.Attribute.dialogPreferredPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Reactive.Bindings.Resource.Attribute.dialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dialogTheme;
+			global::Reactive.Bindings.Resource.Attribute.displayOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.displayOptions;
+			global::Reactive.Bindings.Resource.Attribute.divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.divider;
+			global::Reactive.Bindings.Resource.Attribute.dividerHorizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dividerHorizontal;
+			global::Reactive.Bindings.Resource.Attribute.dividerPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dividerPadding;
+			global::Reactive.Bindings.Resource.Attribute.dividerVertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dividerVertical;
+			global::Reactive.Bindings.Resource.Attribute.drawableSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.drawableSize;
+			global::Reactive.Bindings.Resource.Attribute.drawerArrowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Reactive.Bindings.Resource.Attribute.dropdownListPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Attribute.dropDownListViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.editTextBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.editTextBackground;
+			global::Reactive.Bindings.Resource.Attribute.editTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.editTextColor;
+			global::Reactive.Bindings.Resource.Attribute.editTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.editTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.elevation;
+			global::Reactive.Bindings.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Reactive.Bindings.Resource.Attribute.font = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.font;
+			global::Reactive.Bindings.Resource.Attribute.fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontFamily;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderAuthority = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderCerts = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderCerts;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderFetchStrategy = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderFetchTimeout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderPackage = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderPackage;
+			global::Reactive.Bindings.Resource.Attribute.fontProviderQuery = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderQuery;
+			global::Reactive.Bindings.Resource.Attribute.fontStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontStyle;
+			global::Reactive.Bindings.Resource.Attribute.fontWeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontWeight;
+			global::Reactive.Bindings.Resource.Attribute.gapBetweenBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.gapBetweenBars;
+			global::Reactive.Bindings.Resource.Attribute.goIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.goIcon;
+			global::Reactive.Bindings.Resource.Attribute.height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.height;
+			global::Reactive.Bindings.Resource.Attribute.hideOnContentScroll = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Reactive.Bindings.Resource.Attribute.homeAsUpIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Reactive.Bindings.Resource.Attribute.homeLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.homeLayout;
+			global::Reactive.Bindings.Resource.Attribute.icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.icon;
+			global::Reactive.Bindings.Resource.Attribute.iconifiedByDefault = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Reactive.Bindings.Resource.Attribute.iconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.iconTint;
+			global::Reactive.Bindings.Resource.Attribute.iconTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.iconTintMode;
+			global::Reactive.Bindings.Resource.Attribute.imageButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.imageButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.indeterminateProgressStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Reactive.Bindings.Resource.Attribute.initialActivityCount = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.initialActivityCount;
+			global::Reactive.Bindings.Resource.Attribute.isLightTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.isLightTheme;
+			global::Reactive.Bindings.Resource.Attribute.itemPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.itemPadding;
+			global::Reactive.Bindings.Resource.Attribute.layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout;
+			global::Reactive.Bindings.Resource.Attribute.listChoiceBackgroundIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Reactive.Bindings.Resource.Attribute.listDividerAlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Reactive.Bindings.Resource.Attribute.listItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.listLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listLayout;
+			global::Reactive.Bindings.Resource.Attribute.listMenuViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.listPopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemHeightLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemHeightSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemPaddingLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Reactive.Bindings.Resource.Attribute.listPreferredItemPaddingRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Reactive.Bindings.Resource.Attribute.logo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.logo;
+			global::Reactive.Bindings.Resource.Attribute.logoDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.logoDescription;
+			global::Reactive.Bindings.Resource.Attribute.maxButtonHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.maxButtonHeight;
+			global::Reactive.Bindings.Resource.Attribute.measureWithLargestChild = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Reactive.Bindings.Resource.Attribute.multiChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.navigationContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.navigationContentDescription;
+			global::Reactive.Bindings.Resource.Attribute.navigationIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.navigationIcon;
+			global::Reactive.Bindings.Resource.Attribute.navigationMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.navigationMode;
+			global::Reactive.Bindings.Resource.Attribute.numericModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.numericModifiers;
+			global::Reactive.Bindings.Resource.Attribute.overlapAnchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.overlapAnchor;
+			global::Reactive.Bindings.Resource.Attribute.paddingBottomNoButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Reactive.Bindings.Resource.Attribute.paddingEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingEnd;
+			global::Reactive.Bindings.Resource.Attribute.paddingStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingStart;
+			global::Reactive.Bindings.Resource.Attribute.paddingTopNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Reactive.Bindings.Resource.Attribute.panelBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.panelBackground;
+			global::Reactive.Bindings.Resource.Attribute.panelMenuListTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Reactive.Bindings.Resource.Attribute.panelMenuListWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Reactive.Bindings.Resource.Attribute.popupMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.popupMenuStyle;
+			global::Reactive.Bindings.Resource.Attribute.popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.popupTheme;
+			global::Reactive.Bindings.Resource.Attribute.popupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.popupWindowStyle;
+			global::Reactive.Bindings.Resource.Attribute.preserveIconSpacing = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Reactive.Bindings.Resource.Attribute.progressBarPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.progressBarPadding;
+			global::Reactive.Bindings.Resource.Attribute.progressBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.progressBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.queryBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.queryBackground;
+			global::Reactive.Bindings.Resource.Attribute.queryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.queryHint;
+			global::Reactive.Bindings.Resource.Attribute.radioButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.radioButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.ratingBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.ratingBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.ratingBarStyleIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Reactive.Bindings.Resource.Attribute.ratingBarStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Reactive.Bindings.Resource.Attribute.searchHintIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchHintIcon;
+			global::Reactive.Bindings.Resource.Attribute.searchIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchIcon;
+			global::Reactive.Bindings.Resource.Attribute.searchViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchViewStyle;
+			global::Reactive.Bindings.Resource.Attribute.seekBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.seekBarStyle;
+			global::Reactive.Bindings.Resource.Attribute.selectableItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.selectableItemBackground;
+			global::Reactive.Bindings.Resource.Attribute.selectableItemBackgroundBorderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Reactive.Bindings.Resource.Attribute.showAsAction = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showAsAction;
+			global::Reactive.Bindings.Resource.Attribute.showDividers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showDividers;
+			global::Reactive.Bindings.Resource.Attribute.showText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showText;
+			global::Reactive.Bindings.Resource.Attribute.showTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showTitle;
+			global::Reactive.Bindings.Resource.Attribute.singleChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Attribute.spinBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spinBars;
+			global::Reactive.Bindings.Resource.Attribute.spinnerDropDownItemStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Reactive.Bindings.Resource.Attribute.spinnerStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spinnerStyle;
+			global::Reactive.Bindings.Resource.Attribute.splitTrack = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.splitTrack;
+			global::Reactive.Bindings.Resource.Attribute.srcCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.srcCompat;
+			global::Reactive.Bindings.Resource.Attribute.state_above_anchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.state_above_anchor;
+			global::Reactive.Bindings.Resource.Attribute.subMenuArrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subMenuArrow;
+			global::Reactive.Bindings.Resource.Attribute.submitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.submitBackground;
+			global::Reactive.Bindings.Resource.Attribute.subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitle;
+			global::Reactive.Bindings.Resource.Attribute.subtitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.subtitleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitleTextColor;
+			global::Reactive.Bindings.Resource.Attribute.subtitleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.suggestionRowLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Reactive.Bindings.Resource.Attribute.switchMinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchMinWidth;
+			global::Reactive.Bindings.Resource.Attribute.switchPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchPadding;
+			global::Reactive.Bindings.Resource.Attribute.switchStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchStyle;
+			global::Reactive.Bindings.Resource.Attribute.switchTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.textAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAllCaps;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceLargePopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceListItemSecondary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceListItemSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Reactive.Bindings.Resource.Attribute.textAppearancePopupMenuHeader = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceSearchResultTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Reactive.Bindings.Resource.Attribute.textAppearanceSmallPopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Reactive.Bindings.Resource.Attribute.textColorAlertDialogListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Reactive.Bindings.Resource.Attribute.textColorSearchUrl = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Reactive.Bindings.Resource.Attribute.theme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.theme;
+			global::Reactive.Bindings.Resource.Attribute.thickness = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thickness;
+			global::Reactive.Bindings.Resource.Attribute.thumbTextPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thumbTextPadding;
+			global::Reactive.Bindings.Resource.Attribute.thumbTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thumbTint;
+			global::Reactive.Bindings.Resource.Attribute.thumbTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thumbTintMode;
+			global::Reactive.Bindings.Resource.Attribute.tickMark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tickMark;
+			global::Reactive.Bindings.Resource.Attribute.tickMarkTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tickMarkTint;
+			global::Reactive.Bindings.Resource.Attribute.tickMarkTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Reactive.Bindings.Resource.Attribute.tint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tint;
+			global::Reactive.Bindings.Resource.Attribute.tintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tintMode;
+			global::Reactive.Bindings.Resource.Attribute.title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.title;
+			global::Reactive.Bindings.Resource.Attribute.titleMargin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMargin;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginBottom;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginEnd;
+			global::Reactive.Bindings.Resource.Attribute.titleMargins = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMargins;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginStart;
+			global::Reactive.Bindings.Resource.Attribute.titleMarginTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginTop;
+			global::Reactive.Bindings.Resource.Attribute.titleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleTextAppearance;
+			global::Reactive.Bindings.Resource.Attribute.titleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleTextColor;
+			global::Reactive.Bindings.Resource.Attribute.titleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleTextStyle;
+			global::Reactive.Bindings.Resource.Attribute.toolbarNavigationButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Reactive.Bindings.Resource.Attribute.toolbarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.toolbarStyle;
+			global::Reactive.Bindings.Resource.Attribute.tooltipForegroundColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Reactive.Bindings.Resource.Attribute.tooltipFrameBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Reactive.Bindings.Resource.Attribute.tooltipText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tooltipText;
+			global::Reactive.Bindings.Resource.Attribute.track = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.track;
+			global::Reactive.Bindings.Resource.Attribute.trackTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.trackTint;
+			global::Reactive.Bindings.Resource.Attribute.trackTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.trackTintMode;
+			global::Reactive.Bindings.Resource.Attribute.voiceIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.voiceIcon;
+			global::Reactive.Bindings.Resource.Attribute.windowActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowActionBar;
+			global::Reactive.Bindings.Resource.Attribute.windowActionBarOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Reactive.Bindings.Resource.Attribute.windowActionModeOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedHeightMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedHeightMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Reactive.Bindings.Resource.Attribute.windowFixedWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Reactive.Bindings.Resource.Attribute.windowMinWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Reactive.Bindings.Resource.Attribute.windowMinWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Reactive.Bindings.Resource.Attribute.windowNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowNoTitle;
+			global::Reactive.Bindings.Resource.Boolean.abc_action_bar_embed_tabs = global::Plugin.CloudFirestore.Sample.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Reactive.Bindings.Resource.Boolean.abc_allow_stacked_button_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Reactive.Bindings.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Reactive.Bindings.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_background_cache_hint_selector_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_btn_colored_borderless_text_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Reactive.Bindings.Resource.Color.abc_btn_colored_text_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Reactive.Bindings.Resource.Color.abc_color_highlight_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_color_highlight_material;
+			global::Reactive.Bindings.Resource.Color.abc_hint_foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_hint_foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_input_method_navigation_guard = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_disable_only_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_disable_only_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_primary_text_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Reactive.Bindings.Resource.Color.abc_search_url_text_selected = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Reactive.Bindings.Resource.Color.abc_secondary_text_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Reactive.Bindings.Resource.Color.abc_secondary_text_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Reactive.Bindings.Resource.Color.abc_tint_btn_checkable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Reactive.Bindings.Resource.Color.abc_tint_default = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_default;
+			global::Reactive.Bindings.Resource.Color.abc_tint_edittext = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_edittext;
+			global::Reactive.Bindings.Resource.Color.abc_tint_seek_thumb = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Reactive.Bindings.Resource.Color.abc_tint_spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_spinner;
+			global::Reactive.Bindings.Resource.Color.abc_tint_switch_track = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_switch_track;
+			global::Reactive.Bindings.Resource.Color.accent_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.accent_material_dark;
+			global::Reactive.Bindings.Resource.Color.accent_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.accent_material_light;
+			global::Reactive.Bindings.Resource.Color.background_floating_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_floating_material_dark;
+			global::Reactive.Bindings.Resource.Color.background_floating_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_floating_material_light;
+			global::Reactive.Bindings.Resource.Color.background_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_material_dark;
+			global::Reactive.Bindings.Resource.Color.background_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_material_light;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_inverse_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_inverse_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.bright_foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.button_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.button_material_dark;
+			global::Reactive.Bindings.Resource.Color.button_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.button_material_light;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.dim_foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.foreground_material_dark;
+			global::Reactive.Bindings.Resource.Color.foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.foreground_material_light;
+			global::Reactive.Bindings.Resource.Color.highlighted_text_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Reactive.Bindings.Resource.Color.highlighted_text_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.highlighted_text_material_light;
+			global::Reactive.Bindings.Resource.Color.material_blue_grey_800 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_blue_grey_800;
+			global::Reactive.Bindings.Resource.Color.material_blue_grey_900 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_blue_grey_900;
+			global::Reactive.Bindings.Resource.Color.material_blue_grey_950 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_blue_grey_950;
+			global::Reactive.Bindings.Resource.Color.material_deep_teal_200 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_deep_teal_200;
+			global::Reactive.Bindings.Resource.Color.material_deep_teal_500 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_deep_teal_500;
+			global::Reactive.Bindings.Resource.Color.material_grey_100 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_100;
+			global::Reactive.Bindings.Resource.Color.material_grey_300 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_300;
+			global::Reactive.Bindings.Resource.Color.material_grey_50 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_50;
+			global::Reactive.Bindings.Resource.Color.material_grey_600 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_600;
+			global::Reactive.Bindings.Resource.Color.material_grey_800 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_800;
+			global::Reactive.Bindings.Resource.Color.material_grey_850 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_850;
+			global::Reactive.Bindings.Resource.Color.material_grey_900 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_900;
+			global::Reactive.Bindings.Resource.Color.notification_action_color_filter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.notification_action_color_filter;
+			global::Reactive.Bindings.Resource.Color.notification_icon_bg_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.notification_icon_bg_color;
+			global::Reactive.Bindings.Resource.Color.notification_material_background_media_default_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Reactive.Bindings.Resource.Color.primary_dark_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_dark_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_dark_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_dark_material_light;
+			global::Reactive.Bindings.Resource.Color.primary_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_material_light;
+			global::Reactive.Bindings.Resource.Color.primary_text_default_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_text_default_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_default_material_light;
+			global::Reactive.Bindings.Resource.Color.primary_text_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.primary_text_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.ripple_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.ripple_material_dark;
+			global::Reactive.Bindings.Resource.Color.ripple_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.ripple_material_light;
+			global::Reactive.Bindings.Resource.Color.secondary_text_default_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Reactive.Bindings.Resource.Color.secondary_text_default_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Reactive.Bindings.Resource.Color.secondary_text_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.secondary_text_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_material_light;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_normal_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Reactive.Bindings.Resource.Color.switch_thumb_normal_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Reactive.Bindings.Resource.Color.tooltip_background_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.tooltip_background_dark;
+			global::Reactive.Bindings.Resource.Color.tooltip_background_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.tooltip_background_light;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_content_inset_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_default_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_elevation_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_stacked_max_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_button_min_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_button_min_width_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_inset_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_inset_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_padding_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_button_padding_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_config_prefDialogWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Reactive.Bindings.Resource.Dimension.abc_control_corner_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_control_inset_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_control_padding_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_height_major = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_height_minor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_width_major = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_fixed_width_minor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_min_width_major = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_min_width_minor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_padding_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_padding_top_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_dialog_title_divider_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_disabled_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.abc_disabled_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.abc_dropdownitem_icon_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Reactive.Bindings.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Reactive.Bindings.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_edit_text_inset_top_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_floating_window_z = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Reactive.Bindings.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_panel_menu_list_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_progress_bar_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_search_view_preferred_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Reactive.Bindings.Resource.Dimension.abc_search_view_preferred_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Reactive.Bindings.Resource.Dimension.abc_seekbar_track_background_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_select_dialog_padding_start_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_switch_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_switch_padding;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_body_1_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_body_2_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_button_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_caption_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_1_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_2_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_3_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_display_4_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_headline_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_large_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_medium_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_menu_header_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_menu_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_small_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_subhead_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Reactive.Bindings.Resource.Dimension.abc_text_size_title_material_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_inset_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_inset_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_padding_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_button_padding_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Reactive.Bindings.Resource.Dimension.compat_control_corner_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Reactive.Bindings.Resource.Dimension.disabled_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.disabled_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.highlight_alpha_material_colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Reactive.Bindings.Resource.Dimension.highlight_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.highlight_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.hint_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.hint_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.hint_pressed_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Reactive.Bindings.Resource.Dimension.hint_pressed_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Reactive.Bindings.Resource.Dimension.notification_action_icon_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_action_text_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_action_text_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_big_circle_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Reactive.Bindings.Resource.Dimension.notification_content_margin_start = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Reactive.Bindings.Resource.Dimension.notification_large_icon_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Reactive.Bindings.Resource.Dimension.notification_large_icon_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Reactive.Bindings.Resource.Dimension.notification_main_column_padding_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Reactive.Bindings.Resource.Dimension.notification_media_narrow_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Reactive.Bindings.Resource.Dimension.notification_right_icon_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_right_side_padding_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Reactive.Bindings.Resource.Dimension.notification_small_icon_background_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Reactive.Bindings.Resource.Dimension.notification_small_icon_size_as_large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Reactive.Bindings.Resource.Dimension.notification_subtext_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_subtext_size;
+			global::Reactive.Bindings.Resource.Dimension.notification_top_pad = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_top_pad;
+			global::Reactive.Bindings.Resource.Dimension.notification_top_pad_large_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_corner_radius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_horizontal_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_margin;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_precise_anchor_threshold = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_vertical_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_y_offset_non_touch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Reactive.Bindings.Resource.Dimension.tooltip_y_offset_touch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Reactive.Bindings.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_action_bar_item_background_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_borderless_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_check_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_colored_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_default_mtrl_shape = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_radio_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Reactive.Bindings.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Reactive.Bindings.Resource.Drawable.abc_cab_background_internal_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Reactive.Bindings.Resource.Drawable.abc_cab_background_top_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_control_background_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_control_background_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_dialog_material_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Reactive.Bindings.Resource.Drawable.abc_edit_text_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_ab_back_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_clear_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_go_search_api_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_overflow_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_search_api_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_black_16dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_black_36dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_black_48dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_half_black_16dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_half_black_36dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_star_half_black_48dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Reactive.Bindings.Resource.Drawable.abc_ic_voice_search_api_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_item_background_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_item_background_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_focused_holo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_longpressed_holo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_pressed_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_pressed_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_list_selector_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Reactive.Bindings.Resource.Drawable.abc_popup_background_mtrl_mult = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Reactive.Bindings.Resource.Drawable.abc_ratingbar_indicator_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ratingbar_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_ratingbar_small_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_seekbar_thumb_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_seekbar_tick_mark_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_seekbar_track_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_spinner_textfield_background_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_switch_thumb_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_tab_indicator_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Reactive.Bindings.Resource.Drawable.abc_textfield_search_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_cursor_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Reactive.Bindings.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Reactive.Bindings.Resource.Drawable.abc_vector_test = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_vector_test;
+			global::Reactive.Bindings.Resource.Drawable.notification_action_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_action_background;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_low = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_low;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_low_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_low_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_normal;
+			global::Reactive.Bindings.Resource.Drawable.notification_bg_normal_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Reactive.Bindings.Resource.Drawable.notification_icon_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_icon_background;
+			global::Reactive.Bindings.Resource.Drawable.notification_template_icon_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Reactive.Bindings.Resource.Drawable.notification_template_icon_low_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Reactive.Bindings.Resource.Drawable.notification_tile_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_tile_bg;
+			global::Reactive.Bindings.Resource.Drawable.notify_panel_notification_icon_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Reactive.Bindings.Resource.Drawable.tooltip_frame_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Reactive.Bindings.Resource.Drawable.tooltip_frame_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Reactive.Bindings.Resource.Id.action0 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action0;
+			global::Reactive.Bindings.Resource.Id.actions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.actions;
+			global::Reactive.Bindings.Resource.Id.action_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar;
+			global::Reactive.Bindings.Resource.Id.action_bar_activity_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_activity_content;
+			global::Reactive.Bindings.Resource.Id.action_bar_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_container;
+			global::Reactive.Bindings.Resource.Id.action_bar_root = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_root;
+			global::Reactive.Bindings.Resource.Id.action_bar_spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_spinner;
+			global::Reactive.Bindings.Resource.Id.action_bar_subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_subtitle;
+			global::Reactive.Bindings.Resource.Id.action_bar_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_title;
+			global::Reactive.Bindings.Resource.Id.action_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_container;
+			global::Reactive.Bindings.Resource.Id.action_context_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_context_bar;
+			global::Reactive.Bindings.Resource.Id.action_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_divider;
+			global::Reactive.Bindings.Resource.Id.action_image = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_image;
+			global::Reactive.Bindings.Resource.Id.action_menu_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_menu_divider;
+			global::Reactive.Bindings.Resource.Id.action_menu_presenter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_menu_presenter;
+			global::Reactive.Bindings.Resource.Id.action_mode_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_mode_bar;
+			global::Reactive.Bindings.Resource.Id.action_mode_bar_stub = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_mode_bar_stub;
+			global::Reactive.Bindings.Resource.Id.action_mode_close_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_mode_close_button;
+			global::Reactive.Bindings.Resource.Id.action_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_text;
+			global::Reactive.Bindings.Resource.Id.activity_chooser_view_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.activity_chooser_view_content;
+			global::Reactive.Bindings.Resource.Id.add = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.add;
+			global::Reactive.Bindings.Resource.Id.alertTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.alertTitle;
+			global::Reactive.Bindings.Resource.Id.ALT = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.ALT;
+			global::Reactive.Bindings.Resource.Id.always = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.always;
+			global::Reactive.Bindings.Resource.Id.async = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.async;
+			global::Reactive.Bindings.Resource.Id.beginning = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.beginning;
+			global::Reactive.Bindings.Resource.Id.blocking = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.blocking;
+			global::Reactive.Bindings.Resource.Id.bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.bottom;
+			global::Reactive.Bindings.Resource.Id.buttonPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.buttonPanel;
+			global::Reactive.Bindings.Resource.Id.cancel_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.cancel_action;
+			global::Reactive.Bindings.Resource.Id.checkbox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.checkbox;
+			global::Reactive.Bindings.Resource.Id.chronometer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.chronometer;
+			global::Reactive.Bindings.Resource.Id.collapseActionView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.collapseActionView;
+			global::Reactive.Bindings.Resource.Id.contentPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.contentPanel;
+			global::Reactive.Bindings.Resource.Id.CTRL = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.CTRL;
+			global::Reactive.Bindings.Resource.Id.custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.custom;
+			global::Reactive.Bindings.Resource.Id.customPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.customPanel;
+			global::Reactive.Bindings.Resource.Id.decor_content_parent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.decor_content_parent;
+			global::Reactive.Bindings.Resource.Id.default_activity_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.default_activity_button;
+			global::Reactive.Bindings.Resource.Id.disableHome = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.disableHome;
+			global::Reactive.Bindings.Resource.Id.edit_query = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.edit_query;
+			global::Reactive.Bindings.Resource.Id.end = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.end;
+			global::Reactive.Bindings.Resource.Id.end_padder = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.end_padder;
+			global::Reactive.Bindings.Resource.Id.expanded_menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.expanded_menu;
+			global::Reactive.Bindings.Resource.Id.expand_activities_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.expand_activities_button;
+			global::Reactive.Bindings.Resource.Id.forever = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.forever;
+			global::Reactive.Bindings.Resource.Id.FUNCTION = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.FUNCTION;
+			global::Reactive.Bindings.Resource.Id.home = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.home;
+			global::Reactive.Bindings.Resource.Id.homeAsUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.homeAsUp;
+			global::Reactive.Bindings.Resource.Id.icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.icon;
+			global::Reactive.Bindings.Resource.Id.icon_group = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.icon_group;
+			global::Reactive.Bindings.Resource.Id.ifRoom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.ifRoom;
+			global::Reactive.Bindings.Resource.Id.image = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.image;
+			global::Reactive.Bindings.Resource.Id.info = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.info;
+			global::Reactive.Bindings.Resource.Id.italic = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.italic;
+			global::Reactive.Bindings.Resource.Id.line1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.line1;
+			global::Reactive.Bindings.Resource.Id.line3 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.line3;
+			global::Reactive.Bindings.Resource.Id.listMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.listMode;
+			global::Reactive.Bindings.Resource.Id.list_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.list_item;
+			global::Reactive.Bindings.Resource.Id.media_actions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.media_actions;
+			global::Reactive.Bindings.Resource.Id.message = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.message;
+			global::Reactive.Bindings.Resource.Id.META = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.META;
+			global::Reactive.Bindings.Resource.Id.middle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.middle;
+			global::Reactive.Bindings.Resource.Id.multiply = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.multiply;
+			global::Reactive.Bindings.Resource.Id.never = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.never;
+			global::Reactive.Bindings.Resource.Id.none = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.none;
+			global::Reactive.Bindings.Resource.Id.normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.normal;
+			global::Reactive.Bindings.Resource.Id.notification_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.notification_background;
+			global::Reactive.Bindings.Resource.Id.notification_main_column = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.notification_main_column;
+			global::Reactive.Bindings.Resource.Id.notification_main_column_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.notification_main_column_container;
+			global::Reactive.Bindings.Resource.Id.parentPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.parentPanel;
+			global::Reactive.Bindings.Resource.Id.progress_circular = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.progress_circular;
+			global::Reactive.Bindings.Resource.Id.progress_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.progress_horizontal;
+			global::Reactive.Bindings.Resource.Id.radio = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.radio;
+			global::Reactive.Bindings.Resource.Id.right_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.right_icon;
+			global::Reactive.Bindings.Resource.Id.right_side = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.right_side;
+			global::Reactive.Bindings.Resource.Id.screen = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.screen;
+			global::Reactive.Bindings.Resource.Id.scrollIndicatorDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollIndicatorDown;
+			global::Reactive.Bindings.Resource.Id.scrollIndicatorUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollIndicatorUp;
+			global::Reactive.Bindings.Resource.Id.scrollView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollView;
+			global::Reactive.Bindings.Resource.Id.search_badge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_badge;
+			global::Reactive.Bindings.Resource.Id.search_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_bar;
+			global::Reactive.Bindings.Resource.Id.search_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_button;
+			global::Reactive.Bindings.Resource.Id.search_close_btn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_close_btn;
+			global::Reactive.Bindings.Resource.Id.search_edit_frame = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_edit_frame;
+			global::Reactive.Bindings.Resource.Id.search_go_btn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_go_btn;
+			global::Reactive.Bindings.Resource.Id.search_mag_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_mag_icon;
+			global::Reactive.Bindings.Resource.Id.search_plate = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_plate;
+			global::Reactive.Bindings.Resource.Id.search_src_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_src_text;
+			global::Reactive.Bindings.Resource.Id.search_voice_btn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_voice_btn;
+			global::Reactive.Bindings.Resource.Id.select_dialog_listview = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.select_dialog_listview;
+			global::Reactive.Bindings.Resource.Id.SHIFT = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.SHIFT;
+			global::Reactive.Bindings.Resource.Id.shortcut = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.shortcut;
+			global::Reactive.Bindings.Resource.Id.showCustom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.showCustom;
+			global::Reactive.Bindings.Resource.Id.showHome = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.showHome;
+			global::Reactive.Bindings.Resource.Id.showTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.showTitle;
+			global::Reactive.Bindings.Resource.Id.spacer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.spacer;
+			global::Reactive.Bindings.Resource.Id.split_action_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.split_action_bar;
+			global::Reactive.Bindings.Resource.Id.src_atop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.src_atop;
+			global::Reactive.Bindings.Resource.Id.src_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.src_in;
+			global::Reactive.Bindings.Resource.Id.src_over = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.src_over;
+			global::Reactive.Bindings.Resource.Id.status_bar_latest_event_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Reactive.Bindings.Resource.Id.submenuarrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.submenuarrow;
+			global::Reactive.Bindings.Resource.Id.submit_area = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.submit_area;
+			global::Reactive.Bindings.Resource.Id.SYM = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.SYM;
+			global::Reactive.Bindings.Resource.Id.tabMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.tabMode;
+			global::Reactive.Bindings.Resource.Id.tag_transition_group = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.tag_transition_group;
+			global::Reactive.Bindings.Resource.Id.text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.text;
+			global::Reactive.Bindings.Resource.Id.text2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.text2;
+			global::Reactive.Bindings.Resource.Id.textSpacerNoButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.textSpacerNoButtons;
+			global::Reactive.Bindings.Resource.Id.textSpacerNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.textSpacerNoTitle;
+			global::Reactive.Bindings.Resource.Id.time = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.time;
+			global::Reactive.Bindings.Resource.Id.title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.title;
+			global::Reactive.Bindings.Resource.Id.titleDividerNoCustom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.titleDividerNoCustom;
+			global::Reactive.Bindings.Resource.Id.title_template = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.title_template;
+			global::Reactive.Bindings.Resource.Id.top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.top;
+			global::Reactive.Bindings.Resource.Id.topPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.topPanel;
+			global::Reactive.Bindings.Resource.Id.uniform = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.uniform;
+			global::Reactive.Bindings.Resource.Id.up = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.up;
+			global::Reactive.Bindings.Resource.Id.useLogo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.useLogo;
+			global::Reactive.Bindings.Resource.Id.withText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.withText;
+			global::Reactive.Bindings.Resource.Id.wrap_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.wrap_content;
+			global::Reactive.Bindings.Resource.Integer.abc_config_activityDefaultDur = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Reactive.Bindings.Resource.Integer.abc_config_activityShortDur = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Reactive.Bindings.Resource.Integer.cancel_button_image_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Reactive.Bindings.Resource.Integer.config_tooltipAnimTime = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Reactive.Bindings.Resource.Integer.status_bar_notification_info_maxnum = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Reactive.Bindings.Resource.Layout.abc_action_bar_title_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Reactive.Bindings.Resource.Layout.abc_action_bar_up_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Reactive.Bindings.Resource.Layout.abc_action_menu_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_action_menu_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_action_mode_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Reactive.Bindings.Resource.Layout.abc_action_mode_close_item_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Reactive.Bindings.Resource.Layout.abc_activity_chooser_view = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Reactive.Bindings.Resource.Layout.abc_activity_chooser_view_list_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Reactive.Bindings.Resource.Layout.abc_alert_dialog_button_bar_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Reactive.Bindings.Resource.Layout.abc_alert_dialog_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Reactive.Bindings.Resource.Layout.abc_alert_dialog_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Reactive.Bindings.Resource.Layout.abc_dialog_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Reactive.Bindings.Resource.Layout.abc_expanded_menu_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_checkbox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_list_menu_item_radio = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Reactive.Bindings.Resource.Layout.abc_popup_menu_header_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_popup_menu_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_content_include = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_content_include;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_simple = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_simple;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Reactive.Bindings.Resource.Layout.abc_screen_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Reactive.Bindings.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Reactive.Bindings.Resource.Layout.abc_search_view = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_search_view;
+			global::Reactive.Bindings.Resource.Layout.abc_select_dialog_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Reactive.Bindings.Resource.Layout.notification_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_action;
+			global::Reactive.Bindings.Resource.Layout.notification_action_tombstone = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_action_tombstone;
+			global::Reactive.Bindings.Resource.Layout.notification_media_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_media_action;
+			global::Reactive.Bindings.Resource.Layout.notification_media_cancel_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media_custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media_narrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Reactive.Bindings.Resource.Layout.notification_template_big_media_narrow_custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Reactive.Bindings.Resource.Layout.notification_template_custom_big = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_custom_big;
+			global::Reactive.Bindings.Resource.Layout.notification_template_icon_group = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_icon_group;
+			global::Reactive.Bindings.Resource.Layout.notification_template_lines_media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_lines_media;
+			global::Reactive.Bindings.Resource.Layout.notification_template_media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_media;
+			global::Reactive.Bindings.Resource.Layout.notification_template_media_custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_media_custom;
+			global::Reactive.Bindings.Resource.Layout.notification_template_part_chronometer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Reactive.Bindings.Resource.Layout.notification_template_part_time = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_part_time;
+			global::Reactive.Bindings.Resource.Layout.select_dialog_item_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.select_dialog_item_material;
+			global::Reactive.Bindings.Resource.Layout.select_dialog_multichoice_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Reactive.Bindings.Resource.Layout.select_dialog_singlechoice_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Reactive.Bindings.Resource.Layout.support_simple_spinner_dropdown_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Reactive.Bindings.Resource.String.abc_action_bar_home_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_bar_home_description;
+			global::Reactive.Bindings.Resource.String.abc_action_bar_up_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_bar_up_description;
+			global::Reactive.Bindings.Resource.String.abc_action_menu_overflow_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Reactive.Bindings.Resource.String.abc_action_mode_done = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_mode_done;
+			global::Reactive.Bindings.Resource.String.abc_activitychooserview_choose_application = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Reactive.Bindings.Resource.String.abc_activity_chooser_view_see_all = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Reactive.Bindings.Resource.String.abc_capital_off = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_capital_off;
+			global::Reactive.Bindings.Resource.String.abc_capital_on = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_capital_on;
+			global::Reactive.Bindings.Resource.String.abc_font_family_body_1_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_body_2_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_button_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_button_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_caption_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_caption_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_1_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_2_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_3_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_display_4_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_headline_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_headline_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_menu_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_menu_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_subhead_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Reactive.Bindings.Resource.String.abc_font_family_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_font_family_title_material;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_clear = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_clear;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_query = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_query;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_search = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_search;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_submit = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_submit;
+			global::Reactive.Bindings.Resource.String.abc_searchview_description_voice = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_voice;
+			global::Reactive.Bindings.Resource.String.abc_search_hint = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_search_hint;
+			global::Reactive.Bindings.Resource.String.abc_shareactionprovider_share_with = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Reactive.Bindings.Resource.String.abc_shareactionprovider_share_with_application = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Reactive.Bindings.Resource.String.abc_toolbar_collapse_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Reactive.Bindings.Resource.String.app_name = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.app_name;
+			global::Reactive.Bindings.Resource.String.hello = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.hello;
+			global::Reactive.Bindings.Resource.String.search_menu_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.search_menu_title;
+			global::Reactive.Bindings.Resource.String.status_bar_notification_info_overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Reactive.Bindings.Resource.Style.AlertDialog_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Reactive.Bindings.Resource.Style.AlertDialog_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Animation_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Animation_AppCompat_DropDownUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Reactive.Bindings.Resource.Style.Animation_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.Base_AlertDialog_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_Animation_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Reactive.Bindings.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Reactive.Bindings.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V22_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V23_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V26_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Reactive.Bindings.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_EditText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Reactive.Bindings.Resource.Style.Platform_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Reactive.Bindings.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_V21_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_V21_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_V25_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Platform_V25_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Reactive.Bindings.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Reactive.Bindings.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Reactive.Bindings.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Body1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Body2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Caption = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display3 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Display4 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Headline = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Medium = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Subhead = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Info = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Time = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Reactive.Bindings.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.ThemeOverlay_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_CompactMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Reactive.Bindings.Resource.Style.Theme_AppCompat_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActionMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ButtonBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Borderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Button_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_EditText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ImageButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListMenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ListView_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_PopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ProgressBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_RatingBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SeekBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Reactive.Bindings.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Reactive.Bindings.Resource.Style.Widget_Compat_NotificationActionContainer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Reactive.Bindings.Resource.Style.Widget_Compat_NotificationActionText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar;
+			global::Reactive.Bindings.Resource.Styleable.ActionBarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBarLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_background;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_backgroundSplit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_backgroundStacked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_customNavigationLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_displayOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_divider;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_height;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_hideOnContentScroll = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_homeLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_icon;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_itemPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_logo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_logo;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_navigationMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_progressBarPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_progressBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_subtitleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_title;
+			global::Reactive.Bindings.Resource.Styleable.ActionBar_titleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionMenuItemView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Reactive.Bindings.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Reactive.Bindings.Resource.Styleable.ActionMenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMenuView;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_background;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_backgroundSplit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_closeItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_height;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_subtitleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActionMode_titleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActivityChooserView;
+			global::Reactive.Bindings.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Reactive.Bindings.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_android_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_listItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_listLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_showTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Reactive.Bindings.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_android_src = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_srcCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_tint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatImageView_tintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_tickMark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTextView_textAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorAccent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorError = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorPrimary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_controlBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dividerVertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_editTextBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_editTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_editTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_panelBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_switchStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Reactive.Bindings.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Reactive.Bindings.Resource.Styleable.ButtonBarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Reactive.Bindings.Resource.Styleable.ButtonBarLayout_allowStacking = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem_android_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Reactive.Bindings.Resource.Styleable.ColorStateListItem_android_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton_android_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton_buttonTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Reactive.Bindings.Resource.Styleable.CompoundButton_buttonTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_barLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_spinBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Reactive.Bindings.Resource.Styleable.DrawerArrowToggle_thickness = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_android_font = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_font = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_fontStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Reactive.Bindings.Resource.Styleable.FontFamilyFont_fontWeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderAuthority = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderCerts = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderPackage = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Reactive.Bindings.Resource.Styleable.FontFamily_fontProviderQuery = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Reactive.Bindings.Resource.Styleable.LinearLayoutCompat_showDividers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Reactive.Bindings.Resource.Styleable.ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ListPopupWindow;
+			global::Reactive.Bindings.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Reactive.Bindings.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_enabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_id = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_menuCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_orderInCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuGroup_android_visible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_actionLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_actionProviderClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_actionViewClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_alphabeticModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_checkable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_checked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_enabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_id = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_menuCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_numericShortcut = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_onClick = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_orderInCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_titleCondensed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_android_visible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_contentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_iconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_iconTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_numericModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_showAsAction = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Reactive.Bindings.Resource.Styleable.MenuItem_tooltipText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Reactive.Bindings.Resource.Styleable.MenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_headerBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_horizontalDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_itemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_itemTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_verticalDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_preserveIconSpacing = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Reactive.Bindings.Resource.Styleable.MenuView_subMenuArrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindowBackgroundState = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow_android_popupBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Reactive.Bindings.Resource.Styleable.PopupWindow_overlapAnchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Reactive.Bindings.Resource.Styleable.RecycleListView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecycleListView;
+			global::Reactive.Bindings.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Reactive.Bindings.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Reactive.Bindings.Resource.Styleable.SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_focusable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_imeOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_inputType = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_android_maxWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_closeIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_commitIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_defaultQueryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_goIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_iconifiedByDefault = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_layout;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_queryBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_queryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_searchHintIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_searchIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_submitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_suggestionRowLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Reactive.Bindings.Resource.Styleable.SearchView_voiceIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Reactive.Bindings.Resource.Styleable.Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_dropDownWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_entries = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_popupBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_android_prompt = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Reactive.Bindings.Resource.Styleable.Spinner_popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_android_textOff = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_android_textOn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_android_thumb = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_showText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_splitTrack = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_switchMinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_switchPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_thumbTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_thumbTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_track = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_trackTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Reactive.Bindings.Resource.Styleable.SwitchCompat_trackTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowDx = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowDy = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_shadowRadius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textColorHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textColorLink = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_textStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_android_typeface = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Reactive.Bindings.Resource.Styleable.TextAppearance_textAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_android_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_android_minHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_buttonGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_collapseContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_collapseIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_logo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_logo;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_logoDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_maxButtonHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_navigationContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_navigationIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_subtitleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_title;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMargin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMargins = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleMarginTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Reactive.Bindings.Resource.Styleable.Toolbar_titleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Reactive.Bindings.Resource.Styleable.View = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper_android_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Reactive.Bindings.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat_android_id = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Reactive.Bindings.Resource.Styleable.ViewStubCompat_android_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Reactive.Bindings.Resource.Styleable.View_android_focusable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_android_focusable;
+			global::Reactive.Bindings.Resource.Styleable.View_android_theme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_android_theme;
+			global::Reactive.Bindings.Resource.Styleable.View_paddingEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_paddingEnd;
+			global::Reactive.Bindings.Resource.Styleable.View_paddingStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_paddingStart;
+			global::Reactive.Bindings.Resource.Styleable.View_theme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -2717,620 +4221,617 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010076
-			public const int actionBarDivider = 2130772086;
+			// aapt resource value: 0x7f010068
+			public const int actionBarDivider = 2130772072;
 			
-			// aapt resource value: 0x7f010077
-			public const int actionBarItemBackground = 2130772087;
+			// aapt resource value: 0x7f010069
+			public const int actionBarItemBackground = 2130772073;
 			
-			// aapt resource value: 0x7f010070
-			public const int actionBarPopupTheme = 2130772080;
+			// aapt resource value: 0x7f010062
+			public const int actionBarPopupTheme = 2130772066;
 			
-			// aapt resource value: 0x7f010075
-			public const int actionBarSize = 2130772085;
+			// aapt resource value: 0x7f010067
+			public const int actionBarSize = 2130772071;
 			
-			// aapt resource value: 0x7f010072
-			public const int actionBarSplitStyle = 2130772082;
+			// aapt resource value: 0x7f010064
+			public const int actionBarSplitStyle = 2130772068;
 			
-			// aapt resource value: 0x7f010071
-			public const int actionBarStyle = 2130772081;
+			// aapt resource value: 0x7f010063
+			public const int actionBarStyle = 2130772067;
 			
-			// aapt resource value: 0x7f01006c
-			public const int actionBarTabBarStyle = 2130772076;
+			// aapt resource value: 0x7f01005e
+			public const int actionBarTabBarStyle = 2130772062;
 			
-			// aapt resource value: 0x7f01006b
-			public const int actionBarTabStyle = 2130772075;
+			// aapt resource value: 0x7f01005d
+			public const int actionBarTabStyle = 2130772061;
 			
-			// aapt resource value: 0x7f01006d
-			public const int actionBarTabTextStyle = 2130772077;
+			// aapt resource value: 0x7f01005f
+			public const int actionBarTabTextStyle = 2130772063;
 			
-			// aapt resource value: 0x7f010073
-			public const int actionBarTheme = 2130772083;
+			// aapt resource value: 0x7f010065
+			public const int actionBarTheme = 2130772069;
 			
-			// aapt resource value: 0x7f010074
-			public const int actionBarWidgetTheme = 2130772084;
-			
-			// aapt resource value: 0x7f010092
-			public const int actionButtonStyle = 2130772114;
-			
-			// aapt resource value: 0x7f01008e
-			public const int actionDropDownStyle = 2130772110;
-			
-			// aapt resource value: 0x7f0100e9
-			public const int actionLayout = 2130772201;
-			
-			// aapt resource value: 0x7f010078
-			public const int actionMenuTextAppearance = 2130772088;
-			
-			// aapt resource value: 0x7f010079
-			public const int actionMenuTextColor = 2130772089;
-			
-			// aapt resource value: 0x7f01007c
-			public const int actionModeBackground = 2130772092;
-			
-			// aapt resource value: 0x7f01007b
-			public const int actionModeCloseButtonStyle = 2130772091;
-			
-			// aapt resource value: 0x7f01007e
-			public const int actionModeCloseDrawable = 2130772094;
-			
-			// aapt resource value: 0x7f010080
-			public const int actionModeCopyDrawable = 2130772096;
-			
-			// aapt resource value: 0x7f01007f
-			public const int actionModeCutDrawable = 2130772095;
+			// aapt resource value: 0x7f010066
+			public const int actionBarWidgetTheme = 2130772070;
 			
 			// aapt resource value: 0x7f010084
-			public const int actionModeFindDrawable = 2130772100;
+			public const int actionButtonStyle = 2130772100;
 			
-			// aapt resource value: 0x7f010081
-			public const int actionModePasteDrawable = 2130772097;
+			// aapt resource value: 0x7f010080
+			public const int actionDropDownStyle = 2130772096;
 			
-			// aapt resource value: 0x7f010086
-			public const int actionModePopupWindowStyle = 2130772102;
+			// aapt resource value: 0x7f0100db
+			public const int actionLayout = 2130772187;
 			
-			// aapt resource value: 0x7f010082
-			public const int actionModeSelectAllDrawable = 2130772098;
+			// aapt resource value: 0x7f01006a
+			public const int actionMenuTextAppearance = 2130772074;
 			
-			// aapt resource value: 0x7f010083
-			public const int actionModeShareDrawable = 2130772099;
-			
-			// aapt resource value: 0x7f01007d
-			public const int actionModeSplitBackground = 2130772093;
-			
-			// aapt resource value: 0x7f01007a
-			public const int actionModeStyle = 2130772090;
-			
-			// aapt resource value: 0x7f010085
-			public const int actionModeWebSearchDrawable = 2130772101;
+			// aapt resource value: 0x7f01006b
+			public const int actionMenuTextColor = 2130772075;
 			
 			// aapt resource value: 0x7f01006e
-			public const int actionOverflowButtonStyle = 2130772078;
+			public const int actionModeBackground = 2130772078;
+			
+			// aapt resource value: 0x7f01006d
+			public const int actionModeCloseButtonStyle = 2130772077;
+			
+			// aapt resource value: 0x7f010070
+			public const int actionModeCloseDrawable = 2130772080;
+			
+			// aapt resource value: 0x7f010072
+			public const int actionModeCopyDrawable = 2130772082;
+			
+			// aapt resource value: 0x7f010071
+			public const int actionModeCutDrawable = 2130772081;
+			
+			// aapt resource value: 0x7f010076
+			public const int actionModeFindDrawable = 2130772086;
+			
+			// aapt resource value: 0x7f010073
+			public const int actionModePasteDrawable = 2130772083;
+			
+			// aapt resource value: 0x7f010078
+			public const int actionModePopupWindowStyle = 2130772088;
+			
+			// aapt resource value: 0x7f010074
+			public const int actionModeSelectAllDrawable = 2130772084;
+			
+			// aapt resource value: 0x7f010075
+			public const int actionModeShareDrawable = 2130772085;
 			
 			// aapt resource value: 0x7f01006f
-			public const int actionOverflowMenuStyle = 2130772079;
+			public const int actionModeSplitBackground = 2130772079;
 			
-			// aapt resource value: 0x7f0100eb
-			public const int actionProviderClass = 2130772203;
+			// aapt resource value: 0x7f01006c
+			public const int actionModeStyle = 2130772076;
 			
-			// aapt resource value: 0x7f0100ea
-			public const int actionViewClass = 2130772202;
+			// aapt resource value: 0x7f010077
+			public const int actionModeWebSearchDrawable = 2130772087;
 			
-			// aapt resource value: 0x7f01009a
-			public const int activityChooserViewStyle = 2130772122;
+			// aapt resource value: 0x7f010060
+			public const int actionOverflowButtonStyle = 2130772064;
 			
-			// aapt resource value: 0x7f0100bf
-			public const int alertDialogButtonGroupStyle = 2130772159;
+			// aapt resource value: 0x7f010061
+			public const int actionOverflowMenuStyle = 2130772065;
 			
-			// aapt resource value: 0x7f0100c0
-			public const int alertDialogCenterButtons = 2130772160;
+			// aapt resource value: 0x7f0100dd
+			public const int actionProviderClass = 2130772189;
 			
-			// aapt resource value: 0x7f0100be
-			public const int alertDialogStyle = 2130772158;
+			// aapt resource value: 0x7f0100dc
+			public const int actionViewClass = 2130772188;
 			
-			// aapt resource value: 0x7f0100c1
-			public const int alertDialogTheme = 2130772161;
+			// aapt resource value: 0x7f01008c
+			public const int activityChooserViewStyle = 2130772108;
 			
-			// aapt resource value: 0x7f0100d8
-			public const int allowStacking = 2130772184;
+			// aapt resource value: 0x7f0100b1
+			public const int alertDialogButtonGroupStyle = 2130772145;
 			
-			// aapt resource value: 0x7f0101e5
-			public const int alpha = 2130772453;
+			// aapt resource value: 0x7f0100b2
+			public const int alertDialogCenterButtons = 2130772146;
 			
-			// aapt resource value: 0x7f0100e6
-			public const int alphabeticModifiers = 2130772198;
+			// aapt resource value: 0x7f0100b0
+			public const int alertDialogStyle = 2130772144;
 			
-			// aapt resource value: 0x7f0100df
-			public const int arrowHeadLength = 2130772191;
+			// aapt resource value: 0x7f0100b3
+			public const int alertDialogTheme = 2130772147;
 			
-			// aapt resource value: 0x7f0100e0
-			public const int arrowShaftLength = 2130772192;
-			
-			// aapt resource value: 0x7f0100c6
-			public const int autoCompleteTextViewStyle = 2130772166;
-			
-			// aapt resource value: 0x7f01005c
-			public const int autoSizeMaxTextSize = 2130772060;
-			
-			// aapt resource value: 0x7f01005b
-			public const int autoSizeMinTextSize = 2130772059;
-			
-			// aapt resource value: 0x7f01005a
-			public const int autoSizePresetSizes = 2130772058;
-			
-			// aapt resource value: 0x7f010059
-			public const int autoSizeStepGranularity = 2130772057;
-			
-			// aapt resource value: 0x7f010058
-			public const int autoSizeTextType = 2130772056;
-			
-			// aapt resource value: 0x7f010035
-			public const int background = 2130772021;
-			
-			// aapt resource value: 0x7f010037
-			public const int backgroundSplit = 2130772023;
-			
-			// aapt resource value: 0x7f010036
-			public const int backgroundStacked = 2130772022;
-			
-			// aapt resource value: 0x7f010122
-			public const int backgroundTint = 2130772258;
-			
-			// aapt resource value: 0x7f010123
-			public const int backgroundTintMode = 2130772259;
-			
-			// aapt resource value: 0x7f0100e1
-			public const int barLength = 2130772193;
-			
-			// aapt resource value: 0x7f010192
-			public const int behavior_autoHide = 2130772370;
-			
-			// aapt resource value: 0x7f01015a
-			public const int behavior_fitToContents = 2130772314;
-			
-			// aapt resource value: 0x7f010158
-			public const int behavior_hideable = 2130772312;
-			
-			// aapt resource value: 0x7f0101a3
-			public const int behavior_overlapTop = 2130772387;
-			
-			// aapt resource value: 0x7f010157
-			public const int behavior_peekHeight = 2130772311;
-			
-			// aapt resource value: 0x7f010159
-			public const int behavior_skipCollapsed = 2130772313;
-			
-			// aapt resource value: 0x7f01018f
-			public const int borderWidth = 2130772367;
-			
-			// aapt resource value: 0x7f010097
-			public const int borderlessButtonStyle = 2130772119;
-			
-			// aapt resource value: 0x7f010124
-			public const int bottomAppBarStyle = 2130772260;
-			
-			// aapt resource value: 0x7f010125
-			public const int bottomNavigationStyle = 2130772261;
-			
-			// aapt resource value: 0x7f010126
-			public const int bottomSheetDialogTheme = 2130772262;
-			
-			// aapt resource value: 0x7f010127
-			public const int bottomSheetStyle = 2130772263;
-			
-			// aapt resource value: 0x7f0101d8
-			public const int boxBackgroundColor = 2130772440;
-			
-			// aapt resource value: 0x7f0101d1
-			public const int boxBackgroundMode = 2130772433;
-			
-			// aapt resource value: 0x7f0101d2
-			public const int boxCollapsedPaddingTop = 2130772434;
-			
-			// aapt resource value: 0x7f0101d6
-			public const int boxCornerRadiusBottomEnd = 2130772438;
-			
-			// aapt resource value: 0x7f0101d5
-			public const int boxCornerRadiusBottomStart = 2130772437;
-			
-			// aapt resource value: 0x7f0101d4
-			public const int boxCornerRadiusTopEnd = 2130772436;
-			
-			// aapt resource value: 0x7f0101d3
-			public const int boxCornerRadiusTopStart = 2130772435;
+			// aapt resource value: 0x7f0100ca
+			public const int allowStacking = 2130772170;
 			
 			// aapt resource value: 0x7f0101d7
-			public const int boxStrokeColor = 2130772439;
+			public const int alpha = 2130772439;
 			
-			// aapt resource value: 0x7f0101d9
-			public const int boxStrokeWidth = 2130772441;
+			// aapt resource value: 0x7f0100d8
+			public const int alphabeticModifiers = 2130772184;
 			
-			// aapt resource value: 0x7f010094
-			public const int buttonBarButtonStyle = 2130772116;
+			// aapt resource value: 0x7f0100d1
+			public const int arrowHeadLength = 2130772177;
 			
-			// aapt resource value: 0x7f0100c4
-			public const int buttonBarNegativeButtonStyle = 2130772164;
+			// aapt resource value: 0x7f0100d2
+			public const int arrowShaftLength = 2130772178;
 			
-			// aapt resource value: 0x7f0100c5
-			public const int buttonBarNeutralButtonStyle = 2130772165;
+			// aapt resource value: 0x7f0100b8
+			public const int autoCompleteTextViewStyle = 2130772152;
 			
-			// aapt resource value: 0x7f0100c3
-			public const int buttonBarPositiveButtonStyle = 2130772163;
+			// aapt resource value: 0x7f01004e
+			public const int autoSizeMaxTextSize = 2130772046;
 			
-			// aapt resource value: 0x7f010093
-			public const int buttonBarStyle = 2130772115;
+			// aapt resource value: 0x7f01004d
+			public const int autoSizeMinTextSize = 2130772045;
 			
-			// aapt resource value: 0x7f010117
-			public const int buttonGravity = 2130772247;
+			// aapt resource value: 0x7f01004c
+			public const int autoSizePresetSizes = 2130772044;
 			
-			// aapt resource value: 0x7f010050
-			public const int buttonIconDimen = 2130772048;
+			// aapt resource value: 0x7f01004b
+			public const int autoSizeStepGranularity = 2130772043;
 			
 			// aapt resource value: 0x7f01004a
-			public const int buttonPanelSideLayout = 2130772042;
+			public const int autoSizeTextType = 2130772042;
+			
+			// aapt resource value: 0x7f010027
+			public const int background = 2130772007;
+			
+			// aapt resource value: 0x7f010029
+			public const int backgroundSplit = 2130772009;
+			
+			// aapt resource value: 0x7f010028
+			public const int backgroundStacked = 2130772008;
+			
+			// aapt resource value: 0x7f010114
+			public const int backgroundTint = 2130772244;
+			
+			// aapt resource value: 0x7f010115
+			public const int backgroundTintMode = 2130772245;
+			
+			// aapt resource value: 0x7f0100d3
+			public const int barLength = 2130772179;
+			
+			// aapt resource value: 0x7f010184
+			public const int behavior_autoHide = 2130772356;
+			
+			// aapt resource value: 0x7f01014c
+			public const int behavior_fitToContents = 2130772300;
+			
+			// aapt resource value: 0x7f01014a
+			public const int behavior_hideable = 2130772298;
+			
+			// aapt resource value: 0x7f010195
+			public const int behavior_overlapTop = 2130772373;
+			
+			// aapt resource value: 0x7f010149
+			public const int behavior_peekHeight = 2130772297;
+			
+			// aapt resource value: 0x7f01014b
+			public const int behavior_skipCollapsed = 2130772299;
+			
+			// aapt resource value: 0x7f010181
+			public const int borderWidth = 2130772353;
+			
+			// aapt resource value: 0x7f010089
+			public const int borderlessButtonStyle = 2130772105;
+			
+			// aapt resource value: 0x7f010116
+			public const int bottomAppBarStyle = 2130772246;
+			
+			// aapt resource value: 0x7f010117
+			public const int bottomNavigationStyle = 2130772247;
+			
+			// aapt resource value: 0x7f010118
+			public const int bottomSheetDialogTheme = 2130772248;
+			
+			// aapt resource value: 0x7f010119
+			public const int bottomSheetStyle = 2130772249;
+			
+			// aapt resource value: 0x7f0101ca
+			public const int boxBackgroundColor = 2130772426;
+			
+			// aapt resource value: 0x7f0101c3
+			public const int boxBackgroundMode = 2130772419;
+			
+			// aapt resource value: 0x7f0101c4
+			public const int boxCollapsedPaddingTop = 2130772420;
+			
+			// aapt resource value: 0x7f0101c8
+			public const int boxCornerRadiusBottomEnd = 2130772424;
+			
+			// aapt resource value: 0x7f0101c7
+			public const int boxCornerRadiusBottomStart = 2130772423;
+			
+			// aapt resource value: 0x7f0101c6
+			public const int boxCornerRadiusTopEnd = 2130772422;
+			
+			// aapt resource value: 0x7f0101c5
+			public const int boxCornerRadiusTopStart = 2130772421;
+			
+			// aapt resource value: 0x7f0101c9
+			public const int boxStrokeColor = 2130772425;
+			
+			// aapt resource value: 0x7f0101cb
+			public const int boxStrokeWidth = 2130772427;
+			
+			// aapt resource value: 0x7f010086
+			public const int buttonBarButtonStyle = 2130772102;
+			
+			// aapt resource value: 0x7f0100b6
+			public const int buttonBarNegativeButtonStyle = 2130772150;
+			
+			// aapt resource value: 0x7f0100b7
+			public const int buttonBarNeutralButtonStyle = 2130772151;
+			
+			// aapt resource value: 0x7f0100b5
+			public const int buttonBarPositiveButtonStyle = 2130772149;
+			
+			// aapt resource value: 0x7f010085
+			public const int buttonBarStyle = 2130772101;
+			
+			// aapt resource value: 0x7f010109
+			public const int buttonGravity = 2130772233;
+			
+			// aapt resource value: 0x7f010042
+			public const int buttonIconDimen = 2130772034;
+			
+			// aapt resource value: 0x7f01003c
+			public const int buttonPanelSideLayout = 2130772028;
 			
 			// aapt resource value: 0x7f010003
 			public const int buttonSize = 2130771971;
 			
-			// aapt resource value: 0x7f0100c7
-			public const int buttonStyle = 2130772167;
+			// aapt resource value: 0x7f0100b9
+			public const int buttonStyle = 2130772153;
 			
-			// aapt resource value: 0x7f0100c8
-			public const int buttonStyleSmall = 2130772168;
+			// aapt resource value: 0x7f0100ba
+			public const int buttonStyleSmall = 2130772154;
 			
-			// aapt resource value: 0x7f0100d9
-			public const int buttonTint = 2130772185;
+			// aapt resource value: 0x7f0100cb
+			public const int buttonTint = 2130772171;
 			
-			// aapt resource value: 0x7f0100da
-			public const int buttonTintMode = 2130772186;
+			// aapt resource value: 0x7f0100cc
+			public const int buttonTintMode = 2130772172;
 			
-			// aapt resource value: 0x7f01001e
-			public const int cardBackgroundColor = 2130771998;
+			// aapt resource value: 0x7f010010
+			public const int cardBackgroundColor = 2130771984;
 			
-			// aapt resource value: 0x7f01001f
-			public const int cardCornerRadius = 2130771999;
+			// aapt resource value: 0x7f010011
+			public const int cardCornerRadius = 2130771985;
 			
-			// aapt resource value: 0x7f010020
-			public const int cardElevation = 2130772000;
+			// aapt resource value: 0x7f010012
+			public const int cardElevation = 2130771986;
 			
-			// aapt resource value: 0x7f010021
-			public const int cardMaxElevation = 2130772001;
+			// aapt resource value: 0x7f010013
+			public const int cardMaxElevation = 2130771987;
 			
-			// aapt resource value: 0x7f010023
-			public const int cardPreventCornerOverlap = 2130772003;
+			// aapt resource value: 0x7f010015
+			public const int cardPreventCornerOverlap = 2130771989;
 			
-			// aapt resource value: 0x7f010022
-			public const int cardUseCompatPadding = 2130772002;
+			// aapt resource value: 0x7f010014
+			public const int cardUseCompatPadding = 2130771988;
 			
-			// aapt resource value: 0x7f01001d
-			public const int cardViewStyle = 2130771997;
+			// aapt resource value: 0x7f01000f
+			public const int cardViewStyle = 2130771983;
 			
-			// aapt resource value: 0x7f0100c9
-			public const int checkboxStyle = 2130772169;
-			
-			// aapt resource value: 0x7f010179
-			public const int checkedChip = 2130772345;
+			// aapt resource value: 0x7f0100bb
+			public const int checkboxStyle = 2130772155;
 			
 			// aapt resource value: 0x7f01016b
-			public const int checkedIcon = 2130772331;
-			
-			// aapt resource value: 0x7f01016a
-			public const int checkedIconEnabled = 2130772330;
-			
-			// aapt resource value: 0x7f010169
-			public const int checkedIconVisible = 2130772329;
-			
-			// aapt resource value: 0x7f0100ca
-			public const int checkedTextViewStyle = 2130772170;
-			
-			// aapt resource value: 0x7f01015b
-			public const int chipBackgroundColor = 2130772315;
+			public const int checkedChip = 2130772331;
 			
 			// aapt resource value: 0x7f01015d
-			public const int chipCornerRadius = 2130772317;
-			
-			// aapt resource value: 0x7f010173
-			public const int chipEndPadding = 2130772339;
-			
-			// aapt resource value: 0x7f010128
-			public const int chipGroupStyle = 2130772264;
-			
-			// aapt resource value: 0x7f010162
-			public const int chipIcon = 2130772322;
-			
-			// aapt resource value: 0x7f010161
-			public const int chipIconEnabled = 2130772321;
-			
-			// aapt resource value: 0x7f010164
-			public const int chipIconSize = 2130772324;
-			
-			// aapt resource value: 0x7f010163
-			public const int chipIconTint = 2130772323;
-			
-			// aapt resource value: 0x7f010160
-			public const int chipIconVisible = 2130772320;
+			public const int checkedIcon = 2130772317;
 			
 			// aapt resource value: 0x7f01015c
-			public const int chipMinHeight = 2130772316;
+			public const int checkedIconEnabled = 2130772316;
 			
-			// aapt resource value: 0x7f010174
-			public const int chipSpacing = 2130772340;
+			// aapt resource value: 0x7f01015b
+			public const int checkedIconVisible = 2130772315;
 			
-			// aapt resource value: 0x7f010175
-			public const int chipSpacingHorizontal = 2130772341;
+			// aapt resource value: 0x7f0100bc
+			public const int checkedTextViewStyle = 2130772156;
 			
-			// aapt resource value: 0x7f010176
-			public const int chipSpacingVertical = 2130772342;
+			// aapt resource value: 0x7f01014d
+			public const int chipBackgroundColor = 2130772301;
 			
-			// aapt resource value: 0x7f010129
-			public const int chipStandaloneStyle = 2130772265;
+			// aapt resource value: 0x7f01014f
+			public const int chipCornerRadius = 2130772303;
 			
-			// aapt resource value: 0x7f01016c
-			public const int chipStartPadding = 2130772332;
+			// aapt resource value: 0x7f010165
+			public const int chipEndPadding = 2130772325;
+			
+			// aapt resource value: 0x7f01011a
+			public const int chipGroupStyle = 2130772250;
+			
+			// aapt resource value: 0x7f010154
+			public const int chipIcon = 2130772308;
+			
+			// aapt resource value: 0x7f010153
+			public const int chipIconEnabled = 2130772307;
+			
+			// aapt resource value: 0x7f010156
+			public const int chipIconSize = 2130772310;
+			
+			// aapt resource value: 0x7f010155
+			public const int chipIconTint = 2130772309;
+			
+			// aapt resource value: 0x7f010152
+			public const int chipIconVisible = 2130772306;
+			
+			// aapt resource value: 0x7f01014e
+			public const int chipMinHeight = 2130772302;
+			
+			// aapt resource value: 0x7f010166
+			public const int chipSpacing = 2130772326;
+			
+			// aapt resource value: 0x7f010167
+			public const int chipSpacingHorizontal = 2130772327;
+			
+			// aapt resource value: 0x7f010168
+			public const int chipSpacingVertical = 2130772328;
+			
+			// aapt resource value: 0x7f01011b
+			public const int chipStandaloneStyle = 2130772251;
 			
 			// aapt resource value: 0x7f01015e
-			public const int chipStrokeColor = 2130772318;
+			public const int chipStartPadding = 2130772318;
 			
-			// aapt resource value: 0x7f01015f
-			public const int chipStrokeWidth = 2130772319;
+			// aapt resource value: 0x7f010150
+			public const int chipStrokeColor = 2130772304;
 			
-			// aapt resource value: 0x7f01012a
-			public const int chipStyle = 2130772266;
+			// aapt resource value: 0x7f010151
+			public const int chipStrokeWidth = 2130772305;
+			
+			// aapt resource value: 0x7f01011c
+			public const int chipStyle = 2130772252;
 			
 			// aapt resource value: 0x7f010002
 			public const int circleCrop = 2130771970;
 			
-			// aapt resource value: 0x7f0100fa
-			public const int closeIcon = 2130772218;
+			// aapt resource value: 0x7f0100ec
+			public const int closeIcon = 2130772204;
 			
-			// aapt resource value: 0x7f010166
-			public const int closeIconEnabled = 2130772326;
+			// aapt resource value: 0x7f010158
+			public const int closeIconEnabled = 2130772312;
+			
+			// aapt resource value: 0x7f010164
+			public const int closeIconEndPadding = 2130772324;
+			
+			// aapt resource value: 0x7f01015a
+			public const int closeIconSize = 2130772314;
+			
+			// aapt resource value: 0x7f010163
+			public const int closeIconStartPadding = 2130772323;
+			
+			// aapt resource value: 0x7f010159
+			public const int closeIconTint = 2130772313;
+			
+			// aapt resource value: 0x7f010157
+			public const int closeIconVisible = 2130772311;
+			
+			// aapt resource value: 0x7f010039
+			public const int closeItemLayout = 2130772025;
+			
+			// aapt resource value: 0x7f01010b
+			public const int collapseContentDescription = 2130772235;
+			
+			// aapt resource value: 0x7f01010a
+			public const int collapseIcon = 2130772234;
+			
+			// aapt resource value: 0x7f010178
+			public const int collapsedTitleGravity = 2130772344;
 			
 			// aapt resource value: 0x7f010172
-			public const int closeIconEndPadding = 2130772338;
+			public const int collapsedTitleTextAppearance = 2130772338;
 			
-			// aapt resource value: 0x7f010168
-			public const int closeIconSize = 2130772328;
+			// aapt resource value: 0x7f0100cd
+			public const int color = 2130772173;
 			
-			// aapt resource value: 0x7f010171
-			public const int closeIconStartPadding = 2130772337;
+			// aapt resource value: 0x7f0100a8
+			public const int colorAccent = 2130772136;
 			
-			// aapt resource value: 0x7f010167
-			public const int closeIconTint = 2130772327;
+			// aapt resource value: 0x7f0100af
+			public const int colorBackgroundFloating = 2130772143;
 			
-			// aapt resource value: 0x7f010165
-			public const int closeIconVisible = 2130772325;
+			// aapt resource value: 0x7f0100ac
+			public const int colorButtonNormal = 2130772140;
 			
-			// aapt resource value: 0x7f010047
-			public const int closeItemLayout = 2130772039;
+			// aapt resource value: 0x7f0100aa
+			public const int colorControlActivated = 2130772138;
 			
-			// aapt resource value: 0x7f010119
-			public const int collapseContentDescription = 2130772249;
+			// aapt resource value: 0x7f0100ab
+			public const int colorControlHighlight = 2130772139;
 			
-			// aapt resource value: 0x7f010118
-			public const int collapseIcon = 2130772248;
+			// aapt resource value: 0x7f0100a9
+			public const int colorControlNormal = 2130772137;
 			
-			// aapt resource value: 0x7f010186
-			public const int collapsedTitleGravity = 2130772358;
+			// aapt resource value: 0x7f0100c8
+			public const int colorError = 2130772168;
 			
-			// aapt resource value: 0x7f010180
-			public const int collapsedTitleTextAppearance = 2130772352;
+			// aapt resource value: 0x7f0100a6
+			public const int colorPrimary = 2130772134;
 			
-			// aapt resource value: 0x7f0100db
-			public const int color = 2130772187;
-			
-			// aapt resource value: 0x7f0100b6
-			public const int colorAccent = 2130772150;
-			
-			// aapt resource value: 0x7f0100bd
-			public const int colorBackgroundFloating = 2130772157;
-			
-			// aapt resource value: 0x7f0100ba
-			public const int colorButtonNormal = 2130772154;
-			
-			// aapt resource value: 0x7f0100b8
-			public const int colorControlActivated = 2130772152;
-			
-			// aapt resource value: 0x7f0100b9
-			public const int colorControlHighlight = 2130772153;
-			
-			// aapt resource value: 0x7f0100b7
-			public const int colorControlNormal = 2130772151;
-			
-			// aapt resource value: 0x7f0100d6
-			public const int colorError = 2130772182;
-			
-			// aapt resource value: 0x7f0100b4
-			public const int colorPrimary = 2130772148;
-			
-			// aapt resource value: 0x7f0100b5
-			public const int colorPrimaryDark = 2130772149;
+			// aapt resource value: 0x7f0100a7
+			public const int colorPrimaryDark = 2130772135;
 			
 			// aapt resource value: 0x7f010004
 			public const int colorScheme = 2130771972;
 			
-			// aapt resource value: 0x7f01012b
-			public const int colorSecondary = 2130772267;
+			// aapt resource value: 0x7f01011d
+			public const int colorSecondary = 2130772253;
 			
-			// aapt resource value: 0x7f0100bb
-			public const int colorSwitchThumbNormal = 2130772155;
+			// aapt resource value: 0x7f0100ad
+			public const int colorSwitchThumbNormal = 2130772141;
 			
-			// aapt resource value: 0x7f0100ff
-			public const int commitIcon = 2130772223;
+			// aapt resource value: 0x7f0100f1
+			public const int commitIcon = 2130772209;
 			
-			// aapt resource value: 0x7f0100ec
-			public const int contentDescription = 2130772204;
+			// aapt resource value: 0x7f0100de
+			public const int contentDescription = 2130772190;
 			
-			// aapt resource value: 0x7f010040
-			public const int contentInsetEnd = 2130772032;
+			// aapt resource value: 0x7f010032
+			public const int contentInsetEnd = 2130772018;
 			
-			// aapt resource value: 0x7f010044
-			public const int contentInsetEndWithActions = 2130772036;
+			// aapt resource value: 0x7f010036
+			public const int contentInsetEndWithActions = 2130772022;
 			
-			// aapt resource value: 0x7f010041
-			public const int contentInsetLeft = 2130772033;
-			
-			// aapt resource value: 0x7f010042
-			public const int contentInsetRight = 2130772034;
-			
-			// aapt resource value: 0x7f01003f
-			public const int contentInsetStart = 2130772031;
-			
-			// aapt resource value: 0x7f010043
-			public const int contentInsetStartWithNavigation = 2130772035;
-			
-			// aapt resource value: 0x7f010024
-			public const int contentPadding = 2130772004;
-			
-			// aapt resource value: 0x7f010028
-			public const int contentPaddingBottom = 2130772008;
-			
-			// aapt resource value: 0x7f010025
-			public const int contentPaddingLeft = 2130772005;
-			
-			// aapt resource value: 0x7f010026
-			public const int contentPaddingRight = 2130772006;
-			
-			// aapt resource value: 0x7f010027
-			public const int contentPaddingTop = 2130772007;
-			
-			// aapt resource value: 0x7f010181
-			public const int contentScrim = 2130772353;
-			
-			// aapt resource value: 0x7f0100bc
-			public const int controlBackground = 2130772156;
-			
-			// aapt resource value: 0x7f0101dc
-			public const int coordinatorLayoutStyle = 2130772444;
-			
-			// aapt resource value: 0x7f010199
-			public const int cornerRadius = 2130772377;
-			
-			// aapt resource value: 0x7f0101c8
-			public const int counterEnabled = 2130772424;
-			
-			// aapt resource value: 0x7f0101c9
-			public const int counterMaxLength = 2130772425;
-			
-			// aapt resource value: 0x7f0101cb
-			public const int counterOverflowTextAppearance = 2130772427;
-			
-			// aapt resource value: 0x7f0101ca
-			public const int counterTextAppearance = 2130772426;
-			
-			// aapt resource value: 0x7f010038
-			public const int customNavigationLayout = 2130772024;
-			
-			// aapt resource value: 0x7f0100f9
-			public const int defaultQueryHint = 2130772217;
-			
-			// aapt resource value: 0x7f01008d
-			public const int dialogCornerRadius = 2130772109;
-			
-			// aapt resource value: 0x7f01008b
-			public const int dialogPreferredPadding = 2130772107;
-			
-			// aapt resource value: 0x7f01008a
-			public const int dialogTheme = 2130772106;
-			
-			// aapt resource value: 0x7f01002e
-			public const int displayOptions = 2130772014;
+			// aapt resource value: 0x7f010033
+			public const int contentInsetLeft = 2130772019;
 			
 			// aapt resource value: 0x7f010034
-			public const int divider = 2130772020;
+			public const int contentInsetRight = 2130772020;
 			
-			// aapt resource value: 0x7f010099
-			public const int dividerHorizontal = 2130772121;
+			// aapt resource value: 0x7f010031
+			public const int contentInsetStart = 2130772017;
 			
-			// aapt resource value: 0x7f0100e5
-			public const int dividerPadding = 2130772197;
+			// aapt resource value: 0x7f010035
+			public const int contentInsetStartWithNavigation = 2130772021;
 			
-			// aapt resource value: 0x7f010098
-			public const int dividerVertical = 2130772120;
+			// aapt resource value: 0x7f010016
+			public const int contentPadding = 2130771990;
 			
-			// aapt resource value: 0x7f0100dd
-			public const int drawableSize = 2130772189;
+			// aapt resource value: 0x7f01001a
+			public const int contentPaddingBottom = 2130771994;
 			
-			// aapt resource value: 0x7f010029
-			public const int drawerArrowStyle = 2130772009;
+			// aapt resource value: 0x7f010017
+			public const int contentPaddingLeft = 2130771991;
 			
-			// aapt resource value: 0x7f0100ab
-			public const int dropDownListViewStyle = 2130772139;
+			// aapt resource value: 0x7f010018
+			public const int contentPaddingRight = 2130771992;
 			
-			// aapt resource value: 0x7f01008f
-			public const int dropdownListPreferredItemHeight = 2130772111;
+			// aapt resource value: 0x7f010019
+			public const int contentPaddingTop = 2130771993;
 			
-			// aapt resource value: 0x7f0100a0
-			public const int editTextBackground = 2130772128;
+			// aapt resource value: 0x7f010173
+			public const int contentScrim = 2130772339;
 			
-			// aapt resource value: 0x7f01009f
-			public const int editTextColor = 2130772127;
+			// aapt resource value: 0x7f0100ae
+			public const int controlBackground = 2130772142;
 			
-			// aapt resource value: 0x7f0100cb
-			public const int editTextStyle = 2130772171;
-			
-			// aapt resource value: 0x7f010045
-			public const int elevation = 2130772037;
-			
-			// aapt resource value: 0x7f0101da
-			public const int enforceMaterialTheme = 2130772442;
-			
-			// aapt resource value: 0x7f0101db
-			public const int enforceTextAppearance = 2130772443;
-			
-			// aapt resource value: 0x7f0101c6
-			public const int errorEnabled = 2130772422;
-			
-			// aapt resource value: 0x7f0101c7
-			public const int errorTextAppearance = 2130772423;
-			
-			// aapt resource value: 0x7f010049
-			public const int expandActivityOverflowButtonDrawable = 2130772041;
-			
-			// aapt resource value: 0x7f010145
-			public const int expanded = 2130772293;
-			
-			// aapt resource value: 0x7f010187
-			public const int expandedTitleGravity = 2130772359;
-			
-			// aapt resource value: 0x7f01017a
-			public const int expandedTitleMargin = 2130772346;
-			
-			// aapt resource value: 0x7f01017e
-			public const int expandedTitleMarginBottom = 2130772350;
-			
-			// aapt resource value: 0x7f01017d
-			public const int expandedTitleMarginEnd = 2130772349;
-			
-			// aapt resource value: 0x7f01017b
-			public const int expandedTitleMarginStart = 2130772347;
-			
-			// aapt resource value: 0x7f01017c
-			public const int expandedTitleMarginTop = 2130772348;
-			
-			// aapt resource value: 0x7f01017f
-			public const int expandedTitleTextAppearance = 2130772351;
-			
-			// aapt resource value: 0x7f01001b
-			public const int externalRouteEnabledDrawable = 2130771995;
-			
-			// aapt resource value: 0x7f01014d
-			public const int fabAlignmentMode = 2130772301;
-			
-			// aapt resource value: 0x7f01014e
-			public const int fabCradleMargin = 2130772302;
-			
-			// aapt resource value: 0x7f01014f
-			public const int fabCradleRoundedCornerRadius = 2130772303;
-			
-			// aapt resource value: 0x7f010150
-			public const int fabCradleVerticalOffset = 2130772304;
-			
-			// aapt resource value: 0x7f01018c
-			public const int fabCustomSize = 2130772364;
+			// aapt resource value: 0x7f0101ce
+			public const int coordinatorLayoutStyle = 2130772430;
 			
 			// aapt resource value: 0x7f01018b
-			public const int fabSize = 2130772363;
+			public const int cornerRadius = 2130772363;
+			
+			// aapt resource value: 0x7f0101ba
+			public const int counterEnabled = 2130772410;
+			
+			// aapt resource value: 0x7f0101bb
+			public const int counterMaxLength = 2130772411;
+			
+			// aapt resource value: 0x7f0101bd
+			public const int counterOverflowTextAppearance = 2130772413;
+			
+			// aapt resource value: 0x7f0101bc
+			public const int counterTextAppearance = 2130772412;
+			
+			// aapt resource value: 0x7f01002a
+			public const int customNavigationLayout = 2130772010;
+			
+			// aapt resource value: 0x7f0100eb
+			public const int defaultQueryHint = 2130772203;
+			
+			// aapt resource value: 0x7f01007f
+			public const int dialogCornerRadius = 2130772095;
+			
+			// aapt resource value: 0x7f01007d
+			public const int dialogPreferredPadding = 2130772093;
+			
+			// aapt resource value: 0x7f01007c
+			public const int dialogTheme = 2130772092;
+			
+			// aapt resource value: 0x7f010020
+			public const int displayOptions = 2130772000;
+			
+			// aapt resource value: 0x7f010026
+			public const int divider = 2130772006;
+			
+			// aapt resource value: 0x7f01008b
+			public const int dividerHorizontal = 2130772107;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int dividerPadding = 2130772183;
+			
+			// aapt resource value: 0x7f01008a
+			public const int dividerVertical = 2130772106;
+			
+			// aapt resource value: 0x7f0100cf
+			public const int drawableSize = 2130772175;
+			
+			// aapt resource value: 0x7f01001b
+			public const int drawerArrowStyle = 2130771995;
+			
+			// aapt resource value: 0x7f01009d
+			public const int dropDownListViewStyle = 2130772125;
+			
+			// aapt resource value: 0x7f010081
+			public const int dropdownListPreferredItemHeight = 2130772097;
+			
+			// aapt resource value: 0x7f010092
+			public const int editTextBackground = 2130772114;
+			
+			// aapt resource value: 0x7f010091
+			public const int editTextColor = 2130772113;
+			
+			// aapt resource value: 0x7f0100bd
+			public const int editTextStyle = 2130772157;
+			
+			// aapt resource value: 0x7f010037
+			public const int elevation = 2130772023;
+			
+			// aapt resource value: 0x7f0101cc
+			public const int enforceMaterialTheme = 2130772428;
+			
+			// aapt resource value: 0x7f0101cd
+			public const int enforceTextAppearance = 2130772429;
+			
+			// aapt resource value: 0x7f0101b8
+			public const int errorEnabled = 2130772408;
+			
+			// aapt resource value: 0x7f0101b9
+			public const int errorTextAppearance = 2130772409;
+			
+			// aapt resource value: 0x7f01003b
+			public const int expandActivityOverflowButtonDrawable = 2130772027;
+			
+			// aapt resource value: 0x7f010137
+			public const int expanded = 2130772279;
+			
+			// aapt resource value: 0x7f010179
+			public const int expandedTitleGravity = 2130772345;
+			
+			// aapt resource value: 0x7f01016c
+			public const int expandedTitleMargin = 2130772332;
+			
+			// aapt resource value: 0x7f010170
+			public const int expandedTitleMarginBottom = 2130772336;
+			
+			// aapt resource value: 0x7f01016f
+			public const int expandedTitleMarginEnd = 2130772335;
+			
+			// aapt resource value: 0x7f01016d
+			public const int expandedTitleMarginStart = 2130772333;
+			
+			// aapt resource value: 0x7f01016e
+			public const int expandedTitleMarginTop = 2130772334;
+			
+			// aapt resource value: 0x7f010171
+			public const int expandedTitleTextAppearance = 2130772337;
+			
+			// aapt resource value: 0x7f01013f
+			public const int fabAlignmentMode = 2130772287;
+			
+			// aapt resource value: 0x7f010140
+			public const int fabCradleMargin = 2130772288;
+			
+			// aapt resource value: 0x7f010141
+			public const int fabCradleRoundedCornerRadius = 2130772289;
+			
+			// aapt resource value: 0x7f010142
+			public const int fabCradleVerticalOffset = 2130772290;
+			
+			// aapt resource value: 0x7f01017e
+			public const int fabCustomSize = 2130772350;
+			
+			// aapt resource value: 0x7f01017d
+			public const int fabSize = 2130772349;
 			
 			// aapt resource value: 0x7f01000a
 			public const int fastScrollEnabled = 2130771978;
@@ -3347,122 +4848,122 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f01000c
 			public const int fastScrollVerticalTrackDrawable = 2130771980;
 			
-			// aapt resource value: 0x7f01005f
-			public const int firstBaselineToTopHeight = 2130772063;
+			// aapt resource value: 0x7f010051
+			public const int firstBaselineToTopHeight = 2130772049;
 			
-			// aapt resource value: 0x7f01012c
-			public const int floatingActionButtonStyle = 2130772268;
+			// aapt resource value: 0x7f01011e
+			public const int floatingActionButtonStyle = 2130772254;
 			
-			// aapt resource value: 0x7f0101ed
-			public const int font = 2130772461;
+			// aapt resource value: 0x7f0101df
+			public const int font = 2130772447;
 			
-			// aapt resource value: 0x7f01005d
-			public const int fontFamily = 2130772061;
+			// aapt resource value: 0x7f01004f
+			public const int fontFamily = 2130772047;
 			
-			// aapt resource value: 0x7f0101e6
-			public const int fontProviderAuthority = 2130772454;
+			// aapt resource value: 0x7f0101d8
+			public const int fontProviderAuthority = 2130772440;
 			
-			// aapt resource value: 0x7f0101e9
-			public const int fontProviderCerts = 2130772457;
+			// aapt resource value: 0x7f0101db
+			public const int fontProviderCerts = 2130772443;
 			
-			// aapt resource value: 0x7f0101ea
-			public const int fontProviderFetchStrategy = 2130772458;
+			// aapt resource value: 0x7f0101dc
+			public const int fontProviderFetchStrategy = 2130772444;
 			
-			// aapt resource value: 0x7f0101eb
-			public const int fontProviderFetchTimeout = 2130772459;
+			// aapt resource value: 0x7f0101dd
+			public const int fontProviderFetchTimeout = 2130772445;
 			
-			// aapt resource value: 0x7f0101e7
-			public const int fontProviderPackage = 2130772455;
+			// aapt resource value: 0x7f0101d9
+			public const int fontProviderPackage = 2130772441;
 			
-			// aapt resource value: 0x7f0101e8
-			public const int fontProviderQuery = 2130772456;
+			// aapt resource value: 0x7f0101da
+			public const int fontProviderQuery = 2130772442;
 			
-			// aapt resource value: 0x7f0101ec
-			public const int fontStyle = 2130772460;
+			// aapt resource value: 0x7f0101de
+			public const int fontStyle = 2130772446;
 			
-			// aapt resource value: 0x7f0101ef
-			public const int fontVariationSettings = 2130772463;
+			// aapt resource value: 0x7f0101e1
+			public const int fontVariationSettings = 2130772449;
 			
-			// aapt resource value: 0x7f0101ee
-			public const int fontWeight = 2130772462;
+			// aapt resource value: 0x7f0101e0
+			public const int fontWeight = 2130772448;
 			
-			// aapt resource value: 0x7f010195
-			public const int foregroundInsidePadding = 2130772373;
+			// aapt resource value: 0x7f010187
+			public const int foregroundInsidePadding = 2130772359;
 			
-			// aapt resource value: 0x7f0100de
-			public const int gapBetweenBars = 2130772190;
+			// aapt resource value: 0x7f0100d0
+			public const int gapBetweenBars = 2130772176;
 			
-			// aapt resource value: 0x7f0100fb
-			public const int goIcon = 2130772219;
+			// aapt resource value: 0x7f0100ed
+			public const int goIcon = 2130772205;
 			
-			// aapt resource value: 0x7f01019f
-			public const int headerLayout = 2130772383;
+			// aapt resource value: 0x7f010191
+			public const int headerLayout = 2130772369;
 			
-			// aapt resource value: 0x7f01002a
-			public const int height = 2130772010;
+			// aapt resource value: 0x7f01001c
+			public const int height = 2130771996;
 			
-			// aapt resource value: 0x7f0101c3
-			public const int helperText = 2130772419;
+			// aapt resource value: 0x7f0101b5
+			public const int helperText = 2130772405;
 			
-			// aapt resource value: 0x7f0101c4
-			public const int helperTextEnabled = 2130772420;
+			// aapt resource value: 0x7f0101b6
+			public const int helperTextEnabled = 2130772406;
 			
-			// aapt resource value: 0x7f0101c5
-			public const int helperTextTextAppearance = 2130772421;
+			// aapt resource value: 0x7f0101b7
+			public const int helperTextTextAppearance = 2130772407;
 			
-			// aapt resource value: 0x7f01012d
-			public const int hideMotionSpec = 2130772269;
+			// aapt resource value: 0x7f01011f
+			public const int hideMotionSpec = 2130772255;
 			
-			// aapt resource value: 0x7f01003e
-			public const int hideOnContentScroll = 2130772030;
+			// aapt resource value: 0x7f010030
+			public const int hideOnContentScroll = 2130772016;
 			
-			// aapt resource value: 0x7f010151
-			public const int hideOnScroll = 2130772305;
+			// aapt resource value: 0x7f010143
+			public const int hideOnScroll = 2130772291;
 			
-			// aapt resource value: 0x7f0101c1
-			public const int hintAnimationEnabled = 2130772417;
+			// aapt resource value: 0x7f0101b3
+			public const int hintAnimationEnabled = 2130772403;
 			
-			// aapt resource value: 0x7f0101c0
-			public const int hintEnabled = 2130772416;
+			// aapt resource value: 0x7f0101b2
+			public const int hintEnabled = 2130772402;
 			
-			// aapt resource value: 0x7f0101c2
-			public const int hintTextAppearance = 2130772418;
+			// aapt resource value: 0x7f0101b4
+			public const int hintTextAppearance = 2130772404;
 			
-			// aapt resource value: 0x7f010091
-			public const int homeAsUpIndicator = 2130772113;
+			// aapt resource value: 0x7f010083
+			public const int homeAsUpIndicator = 2130772099;
 			
-			// aapt resource value: 0x7f010039
-			public const int homeLayout = 2130772025;
+			// aapt resource value: 0x7f01002b
+			public const int homeLayout = 2130772011;
 			
-			// aapt resource value: 0x7f01018d
-			public const int hoveredFocusedTranslationZ = 2130772365;
+			// aapt resource value: 0x7f01017f
+			public const int hoveredFocusedTranslationZ = 2130772351;
 			
-			// aapt resource value: 0x7f010032
-			public const int icon = 2130772018;
+			// aapt resource value: 0x7f010024
+			public const int icon = 2130772004;
 			
-			// aapt resource value: 0x7f01016e
-			public const int iconEndPadding = 2130772334;
+			// aapt resource value: 0x7f010160
+			public const int iconEndPadding = 2130772320;
 			
-			// aapt resource value: 0x7f010198
-			public const int iconGravity = 2130772376;
+			// aapt resource value: 0x7f01018a
+			public const int iconGravity = 2130772362;
 			
-			// aapt resource value: 0x7f010197
-			public const int iconPadding = 2130772375;
+			// aapt resource value: 0x7f010189
+			public const int iconPadding = 2130772361;
 			
-			// aapt resource value: 0x7f010196
-			public const int iconSize = 2130772374;
+			// aapt resource value: 0x7f010188
+			public const int iconSize = 2130772360;
 			
-			// aapt resource value: 0x7f01016d
-			public const int iconStartPadding = 2130772333;
+			// aapt resource value: 0x7f01015f
+			public const int iconStartPadding = 2130772319;
 			
-			// aapt resource value: 0x7f0100ee
-			public const int iconTint = 2130772206;
+			// aapt resource value: 0x7f0100e0
+			public const int iconTint = 2130772192;
 			
-			// aapt resource value: 0x7f0100ef
-			public const int iconTintMode = 2130772207;
+			// aapt resource value: 0x7f0100e1
+			public const int iconTintMode = 2130772193;
 			
-			// aapt resource value: 0x7f0100f7
-			public const int iconifiedByDefault = 2130772215;
+			// aapt resource value: 0x7f0100e9
+			public const int iconifiedByDefault = 2130772201;
 			
 			// aapt resource value: 0x7f010001
 			public const int imageAspectRatio = 2130771969;
@@ -3470,743 +4971,704 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f010000
 			public const int imageAspectRatioAdjust = 2130771968;
 			
-			// aapt resource value: 0x7f0100a1
-			public const int imageButtonStyle = 2130772129;
+			// aapt resource value: 0x7f010093
+			public const int imageButtonStyle = 2130772115;
 			
-			// aapt resource value: 0x7f01003b
-			public const int indeterminateProgressStyle = 2130772027;
+			// aapt resource value: 0x7f01002d
+			public const int indeterminateProgressStyle = 2130772013;
 			
-			// aapt resource value: 0x7f010048
-			public const int initialActivityCount = 2130772040;
+			// aapt resource value: 0x7f01003a
+			public const int initialActivityCount = 2130772026;
 			
-			// aapt resource value: 0x7f0101a2
-			public const int insetForeground = 2130772386;
+			// aapt resource value: 0x7f010194
+			public const int insetForeground = 2130772372;
 			
-			// aapt resource value: 0x7f01002b
-			public const int isLightTheme = 2130772011;
+			// aapt resource value: 0x7f01001d
+			public const int isLightTheme = 2130771997;
 			
-			// aapt resource value: 0x7f01019d
-			public const int itemBackground = 2130772381;
+			// aapt resource value: 0x7f01018f
+			public const int itemBackground = 2130772367;
 			
-			// aapt resource value: 0x7f0101a0
-			public const int itemHorizontalPadding = 2130772384;
+			// aapt resource value: 0x7f010192
+			public const int itemHorizontalPadding = 2130772370;
 			
-			// aapt resource value: 0x7f010156
-			public const int itemHorizontalTranslationEnabled = 2130772310;
-			
-			// aapt resource value: 0x7f0101a1
-			public const int itemIconPadding = 2130772385;
-			
-			// aapt resource value: 0x7f010153
-			public const int itemIconSize = 2130772307;
-			
-			// aapt resource value: 0x7f01019b
-			public const int itemIconTint = 2130772379;
-			
-			// aapt resource value: 0x7f01003d
-			public const int itemPadding = 2130772029;
+			// aapt resource value: 0x7f010148
+			public const int itemHorizontalTranslationEnabled = 2130772296;
 			
 			// aapt resource value: 0x7f010193
-			public const int itemSpacing = 2130772371;
+			public const int itemIconPadding = 2130772371;
 			
-			// aapt resource value: 0x7f01019e
-			public const int itemTextAppearance = 2130772382;
+			// aapt resource value: 0x7f010145
+			public const int itemIconSize = 2130772293;
 			
-			// aapt resource value: 0x7f010155
-			public const int itemTextAppearanceActive = 2130772309;
+			// aapt resource value: 0x7f01018d
+			public const int itemIconTint = 2130772365;
 			
-			// aapt resource value: 0x7f010154
-			public const int itemTextAppearanceInactive = 2130772308;
+			// aapt resource value: 0x7f01002f
+			public const int itemPadding = 2130772015;
 			
-			// aapt resource value: 0x7f01019c
-			public const int itemTextColor = 2130772380;
+			// aapt resource value: 0x7f010185
+			public const int itemSpacing = 2130772357;
 			
-			// aapt resource value: 0x7f0101dd
-			public const int keylines = 2130772445;
+			// aapt resource value: 0x7f010190
+			public const int itemTextAppearance = 2130772368;
 			
-			// aapt resource value: 0x7f010152
-			public const int labelVisibilityMode = 2130772306;
+			// aapt resource value: 0x7f010147
+			public const int itemTextAppearanceActive = 2130772295;
 			
-			// aapt resource value: 0x7f010060
-			public const int lastBaselineToBottomHeight = 2130772064;
+			// aapt resource value: 0x7f010146
+			public const int itemTextAppearanceInactive = 2130772294;
 			
-			// aapt resource value: 0x7f0100f6
-			public const int layout = 2130772214;
+			// aapt resource value: 0x7f01018e
+			public const int itemTextColor = 2130772366;
+			
+			// aapt resource value: 0x7f0101cf
+			public const int keylines = 2130772431;
+			
+			// aapt resource value: 0x7f010144
+			public const int labelVisibilityMode = 2130772292;
+			
+			// aapt resource value: 0x7f010052
+			public const int lastBaselineToBottomHeight = 2130772050;
+			
+			// aapt resource value: 0x7f0100e8
+			public const int layout = 2130772200;
 			
 			// aapt resource value: 0x7f010006
 			public const int layoutManager = 2130771974;
 			
-			// aapt resource value: 0x7f0101e0
-			public const int layout_anchor = 2130772448;
+			// aapt resource value: 0x7f0101d2
+			public const int layout_anchor = 2130772434;
 			
-			// aapt resource value: 0x7f0101e2
-			public const int layout_anchorGravity = 2130772450;
+			// aapt resource value: 0x7f0101d4
+			public const int layout_anchorGravity = 2130772436;
 			
-			// aapt resource value: 0x7f0101df
-			public const int layout_behavior = 2130772447;
+			// aapt resource value: 0x7f0101d1
+			public const int layout_behavior = 2130772433;
 			
-			// aapt resource value: 0x7f010189
-			public const int layout_collapseMode = 2130772361;
+			// aapt resource value: 0x7f01017b
+			public const int layout_collapseMode = 2130772347;
 			
-			// aapt resource value: 0x7f01018a
-			public const int layout_collapseParallaxMultiplier = 2130772362;
+			// aapt resource value: 0x7f01017c
+			public const int layout_collapseParallaxMultiplier = 2130772348;
 			
-			// aapt resource value: 0x7f0101e4
-			public const int layout_dodgeInsetEdges = 2130772452;
+			// aapt resource value: 0x7f0101d6
+			public const int layout_dodgeInsetEdges = 2130772438;
 			
-			// aapt resource value: 0x7f0101e3
-			public const int layout_insetEdge = 2130772451;
+			// aapt resource value: 0x7f0101d5
+			public const int layout_insetEdge = 2130772437;
 			
-			// aapt resource value: 0x7f0101e1
-			public const int layout_keyline = 2130772449;
+			// aapt resource value: 0x7f0101d3
+			public const int layout_keyline = 2130772435;
 			
-			// aapt resource value: 0x7f01014b
-			public const int layout_scrollFlags = 2130772299;
+			// aapt resource value: 0x7f01013d
+			public const int layout_scrollFlags = 2130772285;
 			
-			// aapt resource value: 0x7f01014c
-			public const int layout_scrollInterpolator = 2130772300;
+			// aapt resource value: 0x7f01013e
+			public const int layout_scrollInterpolator = 2130772286;
 			
-			// aapt resource value: 0x7f010146
-			public const int liftOnScroll = 2130772294;
+			// aapt resource value: 0x7f010138
+			public const int liftOnScroll = 2130772280;
 			
-			// aapt resource value: 0x7f01005e
-			public const int lineHeight = 2130772062;
+			// aapt resource value: 0x7f010050
+			public const int lineHeight = 2130772048;
 			
-			// aapt resource value: 0x7f010194
-			public const int lineSpacing = 2130772372;
+			// aapt resource value: 0x7f010186
+			public const int lineSpacing = 2130772358;
 			
-			// aapt resource value: 0x7f0100b3
-			public const int listChoiceBackgroundIndicator = 2130772147;
+			// aapt resource value: 0x7f0100a5
+			public const int listChoiceBackgroundIndicator = 2130772133;
 			
-			// aapt resource value: 0x7f01008c
-			public const int listDividerAlertDialog = 2130772108;
+			// aapt resource value: 0x7f01007e
+			public const int listDividerAlertDialog = 2130772094;
 			
-			// aapt resource value: 0x7f01004e
-			public const int listItemLayout = 2130772046;
+			// aapt resource value: 0x7f010040
+			public const int listItemLayout = 2130772032;
 			
-			// aapt resource value: 0x7f01004b
-			public const int listLayout = 2130772043;
+			// aapt resource value: 0x7f01003d
+			public const int listLayout = 2130772029;
 			
-			// aapt resource value: 0x7f0100d3
-			public const int listMenuViewStyle = 2130772179;
-			
-			// aapt resource value: 0x7f0100ac
-			public const int listPopupWindowStyle = 2130772140;
-			
-			// aapt resource value: 0x7f0100a6
-			public const int listPreferredItemHeight = 2130772134;
-			
-			// aapt resource value: 0x7f0100a8
-			public const int listPreferredItemHeightLarge = 2130772136;
-			
-			// aapt resource value: 0x7f0100a7
-			public const int listPreferredItemHeightSmall = 2130772135;
-			
-			// aapt resource value: 0x7f0100a9
-			public const int listPreferredItemPaddingLeft = 2130772137;
-			
-			// aapt resource value: 0x7f0100aa
-			public const int listPreferredItemPaddingRight = 2130772138;
-			
-			// aapt resource value: 0x7f010033
-			public const int logo = 2130772019;
-			
-			// aapt resource value: 0x7f01011c
-			public const int logoDescription = 2130772252;
-			
-			// aapt resource value: 0x7f01012e
-			public const int materialButtonStyle = 2130772270;
-			
-			// aapt resource value: 0x7f01012f
-			public const int materialCardViewStyle = 2130772271;
-			
-			// aapt resource value: 0x7f0101a6
-			public const int maxActionInlineWidth = 2130772390;
-			
-			// aapt resource value: 0x7f010116
-			public const int maxButtonHeight = 2130772246;
-			
-			// aapt resource value: 0x7f010191
-			public const int maxImageSize = 2130772369;
-			
-			// aapt resource value: 0x7f0100e3
-			public const int measureWithLargestChild = 2130772195;
-			
-			// aapt resource value: 0x7f01000f
-			public const int mediaRouteAudioTrackDrawable = 2130771983;
-			
-			// aapt resource value: 0x7f010010
-			public const int mediaRouteButtonStyle = 2130771984;
-			
-			// aapt resource value: 0x7f01001c
-			public const int mediaRouteButtonTint = 2130771996;
-			
-			// aapt resource value: 0x7f010011
-			public const int mediaRouteCloseDrawable = 2130771985;
-			
-			// aapt resource value: 0x7f010012
-			public const int mediaRouteControlPanelThemeOverlay = 2130771986;
-			
-			// aapt resource value: 0x7f010013
-			public const int mediaRouteDefaultIconDrawable = 2130771987;
-			
-			// aapt resource value: 0x7f010014
-			public const int mediaRoutePauseDrawable = 2130771988;
-			
-			// aapt resource value: 0x7f010015
-			public const int mediaRoutePlayDrawable = 2130771989;
-			
-			// aapt resource value: 0x7f010016
-			public const int mediaRouteSpeakerGroupIconDrawable = 2130771990;
-			
-			// aapt resource value: 0x7f010017
-			public const int mediaRouteSpeakerIconDrawable = 2130771991;
-			
-			// aapt resource value: 0x7f010018
-			public const int mediaRouteStopDrawable = 2130771992;
-			
-			// aapt resource value: 0x7f010019
-			public const int mediaRouteTheme = 2130771993;
-			
-			// aapt resource value: 0x7f01001a
-			public const int mediaRouteTvIconDrawable = 2130771994;
-			
-			// aapt resource value: 0x7f01019a
-			public const int menu = 2130772378;
-			
-			// aapt resource value: 0x7f01004c
-			public const int multiChoiceItemLayout = 2130772044;
-			
-			// aapt resource value: 0x7f01011b
-			public const int navigationContentDescription = 2130772251;
-			
-			// aapt resource value: 0x7f01011a
-			public const int navigationIcon = 2130772250;
-			
-			// aapt resource value: 0x7f01002d
-			public const int navigationMode = 2130772013;
-			
-			// aapt resource value: 0x7f010130
-			public const int navigationViewStyle = 2130772272;
-			
-			// aapt resource value: 0x7f0100e7
-			public const int numericModifiers = 2130772199;
-			
-			// aapt resource value: 0x7f0100f2
-			public const int overlapAnchor = 2130772210;
-			
-			// aapt resource value: 0x7f0100f4
-			public const int paddingBottomNoButtons = 2130772212;
-			
-			// aapt resource value: 0x7f010120
-			public const int paddingEnd = 2130772256;
-			
-			// aapt resource value: 0x7f01011f
-			public const int paddingStart = 2130772255;
-			
-			// aapt resource value: 0x7f0100f5
-			public const int paddingTopNoTitle = 2130772213;
-			
-			// aapt resource value: 0x7f0100b0
-			public const int panelBackground = 2130772144;
-			
-			// aapt resource value: 0x7f0100b2
-			public const int panelMenuListTheme = 2130772146;
-			
-			// aapt resource value: 0x7f0100b1
-			public const int panelMenuListWidth = 2130772145;
-			
-			// aapt resource value: 0x7f0101ce
-			public const int passwordToggleContentDescription = 2130772430;
-			
-			// aapt resource value: 0x7f0101cd
-			public const int passwordToggleDrawable = 2130772429;
-			
-			// aapt resource value: 0x7f0101cc
-			public const int passwordToggleEnabled = 2130772428;
-			
-			// aapt resource value: 0x7f0101cf
-			public const int passwordToggleTint = 2130772431;
-			
-			// aapt resource value: 0x7f0101d0
-			public const int passwordToggleTintMode = 2130772432;
-			
-			// aapt resource value: 0x7f01009d
-			public const int popupMenuStyle = 2130772125;
-			
-			// aapt resource value: 0x7f010046
-			public const int popupTheme = 2130772038;
+			// aapt resource value: 0x7f0100c5
+			public const int listMenuViewStyle = 2130772165;
 			
 			// aapt resource value: 0x7f01009e
-			public const int popupWindowStyle = 2130772126;
+			public const int listPopupWindowStyle = 2130772126;
 			
-			// aapt resource value: 0x7f0100f0
-			public const int preserveIconSpacing = 2130772208;
+			// aapt resource value: 0x7f010098
+			public const int listPreferredItemHeight = 2130772120;
 			
-			// aapt resource value: 0x7f01018e
-			public const int pressedTranslationZ = 2130772366;
+			// aapt resource value: 0x7f01009a
+			public const int listPreferredItemHeightLarge = 2130772122;
 			
-			// aapt resource value: 0x7f01003c
-			public const int progressBarPadding = 2130772028;
+			// aapt resource value: 0x7f010099
+			public const int listPreferredItemHeightSmall = 2130772121;
 			
-			// aapt resource value: 0x7f01003a
-			public const int progressBarStyle = 2130772026;
+			// aapt resource value: 0x7f01009b
+			public const int listPreferredItemPaddingLeft = 2130772123;
 			
-			// aapt resource value: 0x7f010101
-			public const int queryBackground = 2130772225;
+			// aapt resource value: 0x7f01009c
+			public const int listPreferredItemPaddingRight = 2130772124;
 			
-			// aapt resource value: 0x7f0100f8
-			public const int queryHint = 2130772216;
+			// aapt resource value: 0x7f010025
+			public const int logo = 2130772005;
 			
-			// aapt resource value: 0x7f0100cc
-			public const int radioButtonStyle = 2130772172;
+			// aapt resource value: 0x7f01010e
+			public const int logoDescription = 2130772238;
 			
-			// aapt resource value: 0x7f0100cd
-			public const int ratingBarStyle = 2130772173;
+			// aapt resource value: 0x7f010120
+			public const int materialButtonStyle = 2130772256;
 			
-			// aapt resource value: 0x7f0100ce
-			public const int ratingBarStyleIndicator = 2130772174;
+			// aapt resource value: 0x7f010121
+			public const int materialCardViewStyle = 2130772257;
 			
-			// aapt resource value: 0x7f0100cf
-			public const int ratingBarStyleSmall = 2130772175;
+			// aapt resource value: 0x7f010198
+			public const int maxActionInlineWidth = 2130772376;
+			
+			// aapt resource value: 0x7f010108
+			public const int maxButtonHeight = 2130772232;
+			
+			// aapt resource value: 0x7f010183
+			public const int maxImageSize = 2130772355;
+			
+			// aapt resource value: 0x7f0100d5
+			public const int measureWithLargestChild = 2130772181;
+			
+			// aapt resource value: 0x7f01018c
+			public const int menu = 2130772364;
+			
+			// aapt resource value: 0x7f01003e
+			public const int multiChoiceItemLayout = 2130772030;
+			
+			// aapt resource value: 0x7f01010d
+			public const int navigationContentDescription = 2130772237;
+			
+			// aapt resource value: 0x7f01010c
+			public const int navigationIcon = 2130772236;
+			
+			// aapt resource value: 0x7f01001f
+			public const int navigationMode = 2130771999;
+			
+			// aapt resource value: 0x7f010122
+			public const int navigationViewStyle = 2130772258;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int numericModifiers = 2130772185;
+			
+			// aapt resource value: 0x7f0100e4
+			public const int overlapAnchor = 2130772196;
+			
+			// aapt resource value: 0x7f0100e6
+			public const int paddingBottomNoButtons = 2130772198;
+			
+			// aapt resource value: 0x7f010112
+			public const int paddingEnd = 2130772242;
+			
+			// aapt resource value: 0x7f010111
+			public const int paddingStart = 2130772241;
+			
+			// aapt resource value: 0x7f0100e7
+			public const int paddingTopNoTitle = 2130772199;
+			
+			// aapt resource value: 0x7f0100a2
+			public const int panelBackground = 2130772130;
+			
+			// aapt resource value: 0x7f0100a4
+			public const int panelMenuListTheme = 2130772132;
+			
+			// aapt resource value: 0x7f0100a3
+			public const int panelMenuListWidth = 2130772131;
+			
+			// aapt resource value: 0x7f0101c0
+			public const int passwordToggleContentDescription = 2130772416;
+			
+			// aapt resource value: 0x7f0101bf
+			public const int passwordToggleDrawable = 2130772415;
+			
+			// aapt resource value: 0x7f0101be
+			public const int passwordToggleEnabled = 2130772414;
+			
+			// aapt resource value: 0x7f0101c1
+			public const int passwordToggleTint = 2130772417;
+			
+			// aapt resource value: 0x7f0101c2
+			public const int passwordToggleTintMode = 2130772418;
+			
+			// aapt resource value: 0x7f01008f
+			public const int popupMenuStyle = 2130772111;
+			
+			// aapt resource value: 0x7f010038
+			public const int popupTheme = 2130772024;
+			
+			// aapt resource value: 0x7f010090
+			public const int popupWindowStyle = 2130772112;
+			
+			// aapt resource value: 0x7f0100e2
+			public const int preserveIconSpacing = 2130772194;
+			
+			// aapt resource value: 0x7f010180
+			public const int pressedTranslationZ = 2130772352;
+			
+			// aapt resource value: 0x7f01002e
+			public const int progressBarPadding = 2130772014;
+			
+			// aapt resource value: 0x7f01002c
+			public const int progressBarStyle = 2130772012;
+			
+			// aapt resource value: 0x7f0100f3
+			public const int queryBackground = 2130772211;
+			
+			// aapt resource value: 0x7f0100ea
+			public const int queryHint = 2130772202;
+			
+			// aapt resource value: 0x7f0100be
+			public const int radioButtonStyle = 2130772158;
+			
+			// aapt resource value: 0x7f0100bf
+			public const int ratingBarStyle = 2130772159;
+			
+			// aapt resource value: 0x7f0100c0
+			public const int ratingBarStyleIndicator = 2130772160;
+			
+			// aapt resource value: 0x7f0100c1
+			public const int ratingBarStyleSmall = 2130772161;
 			
 			// aapt resource value: 0x7f010008
 			public const int reverseLayout = 2130771976;
 			
-			// aapt resource value: 0x7f010131
-			public const int rippleColor = 2130772273;
+			// aapt resource value: 0x7f010123
+			public const int rippleColor = 2130772259;
 			
 			// aapt resource value: 0x7f010005
 			public const int scopeUris = 2130771973;
 			
-			// aapt resource value: 0x7f010185
-			public const int scrimAnimationDuration = 2130772357;
-			
-			// aapt resource value: 0x7f010132
-			public const int scrimBackground = 2130772274;
-			
-			// aapt resource value: 0x7f010184
-			public const int scrimVisibleHeightTrigger = 2130772356;
-			
-			// aapt resource value: 0x7f0100fd
-			public const int searchHintIcon = 2130772221;
-			
-			// aapt resource value: 0x7f0100fc
-			public const int searchIcon = 2130772220;
-			
-			// aapt resource value: 0x7f0100a5
-			public const int searchViewStyle = 2130772133;
-			
-			// aapt resource value: 0x7f0100d0
-			public const int seekBarStyle = 2130772176;
-			
-			// aapt resource value: 0x7f010095
-			public const int selectableItemBackground = 2130772117;
-			
-			// aapt resource value: 0x7f010096
-			public const int selectableItemBackgroundBorderless = 2130772118;
-			
-			// aapt resource value: 0x7f0100e8
-			public const int showAsAction = 2130772200;
-			
-			// aapt resource value: 0x7f0100e4
-			public const int showDividers = 2130772196;
-			
-			// aapt resource value: 0x7f010133
-			public const int showMotionSpec = 2130772275;
-			
-			// aapt resource value: 0x7f01010d
-			public const int showText = 2130772237;
-			
-			// aapt resource value: 0x7f01004f
-			public const int showTitle = 2130772047;
-			
-			// aapt resource value: 0x7f01004d
-			public const int singleChoiceItemLayout = 2130772045;
-			
 			// aapt resource value: 0x7f010177
-			public const int singleLine = 2130772343;
+			public const int scrimAnimationDuration = 2130772343;
 			
-			// aapt resource value: 0x7f010178
-			public const int singleSelection = 2130772344;
+			// aapt resource value: 0x7f010124
+			public const int scrimBackground = 2130772260;
 			
-			// aapt resource value: 0x7f0101a5
-			public const int snackbarButtonStyle = 2130772389;
+			// aapt resource value: 0x7f010176
+			public const int scrimVisibleHeightTrigger = 2130772342;
 			
-			// aapt resource value: 0x7f0101a4
-			public const int snackbarStyle = 2130772388;
+			// aapt resource value: 0x7f0100ef
+			public const int searchHintIcon = 2130772207;
+			
+			// aapt resource value: 0x7f0100ee
+			public const int searchIcon = 2130772206;
+			
+			// aapt resource value: 0x7f010097
+			public const int searchViewStyle = 2130772119;
+			
+			// aapt resource value: 0x7f0100c2
+			public const int seekBarStyle = 2130772162;
+			
+			// aapt resource value: 0x7f010087
+			public const int selectableItemBackground = 2130772103;
+			
+			// aapt resource value: 0x7f010088
+			public const int selectableItemBackgroundBorderless = 2130772104;
+			
+			// aapt resource value: 0x7f0100da
+			public const int showAsAction = 2130772186;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int showDividers = 2130772182;
+			
+			// aapt resource value: 0x7f010125
+			public const int showMotionSpec = 2130772261;
+			
+			// aapt resource value: 0x7f0100ff
+			public const int showText = 2130772223;
+			
+			// aapt resource value: 0x7f010041
+			public const int showTitle = 2130772033;
+			
+			// aapt resource value: 0x7f01003f
+			public const int singleChoiceItemLayout = 2130772031;
+			
+			// aapt resource value: 0x7f010169
+			public const int singleLine = 2130772329;
+			
+			// aapt resource value: 0x7f01016a
+			public const int singleSelection = 2130772330;
+			
+			// aapt resource value: 0x7f010197
+			public const int snackbarButtonStyle = 2130772375;
+			
+			// aapt resource value: 0x7f010196
+			public const int snackbarStyle = 2130772374;
 			
 			// aapt resource value: 0x7f010007
 			public const int spanCount = 2130771975;
 			
-			// aapt resource value: 0x7f0100dc
-			public const int spinBars = 2130772188;
+			// aapt resource value: 0x7f0100ce
+			public const int spinBars = 2130772174;
 			
-			// aapt resource value: 0x7f010090
-			public const int spinnerDropDownItemStyle = 2130772112;
+			// aapt resource value: 0x7f010082
+			public const int spinnerDropDownItemStyle = 2130772098;
 			
-			// aapt resource value: 0x7f0100d1
-			public const int spinnerStyle = 2130772177;
+			// aapt resource value: 0x7f0100c3
+			public const int spinnerStyle = 2130772163;
 			
-			// aapt resource value: 0x7f01010c
-			public const int splitTrack = 2130772236;
+			// aapt resource value: 0x7f0100fe
+			public const int splitTrack = 2130772222;
 			
-			// aapt resource value: 0x7f010051
-			public const int srcCompat = 2130772049;
+			// aapt resource value: 0x7f010043
+			public const int srcCompat = 2130772035;
 			
 			// aapt resource value: 0x7f010009
 			public const int stackFromEnd = 2130771977;
 			
-			// aapt resource value: 0x7f0100f3
-			public const int state_above_anchor = 2130772211;
-			
-			// aapt resource value: 0x7f010147
-			public const int state_collapsed = 2130772295;
-			
-			// aapt resource value: 0x7f010148
-			public const int state_collapsible = 2130772296;
-			
-			// aapt resource value: 0x7f01014a
-			public const int state_liftable = 2130772298;
-			
-			// aapt resource value: 0x7f010149
-			public const int state_lifted = 2130772297;
-			
-			// aapt resource value: 0x7f0101de
-			public const int statusBarBackground = 2130772446;
-			
-			// aapt resource value: 0x7f010182
-			public const int statusBarScrim = 2130772354;
-			
-			// aapt resource value: 0x7f010134
-			public const int strokeColor = 2130772276;
-			
-			// aapt resource value: 0x7f010135
-			public const int strokeWidth = 2130772277;
-			
-			// aapt resource value: 0x7f0100f1
-			public const int subMenuArrow = 2130772209;
-			
-			// aapt resource value: 0x7f010102
-			public const int submitBackground = 2130772226;
-			
-			// aapt resource value: 0x7f01002f
-			public const int subtitle = 2130772015;
-			
-			// aapt resource value: 0x7f01010f
-			public const int subtitleTextAppearance = 2130772239;
-			
-			// aapt resource value: 0x7f01011e
-			public const int subtitleTextColor = 2130772254;
-			
-			// aapt resource value: 0x7f010031
-			public const int subtitleTextStyle = 2130772017;
-			
-			// aapt resource value: 0x7f010100
-			public const int suggestionRowLayout = 2130772224;
-			
-			// aapt resource value: 0x7f01010a
-			public const int switchMinWidth = 2130772234;
-			
-			// aapt resource value: 0x7f01010b
-			public const int switchPadding = 2130772235;
-			
-			// aapt resource value: 0x7f0100d2
-			public const int switchStyle = 2130772178;
-			
-			// aapt resource value: 0x7f010109
-			public const int switchTextAppearance = 2130772233;
-			
-			// aapt resource value: 0x7f0101aa
-			public const int tabBackground = 2130772394;
-			
-			// aapt resource value: 0x7f0101a9
-			public const int tabContentStart = 2130772393;
-			
-			// aapt resource value: 0x7f0101b0
-			public const int tabGravity = 2130772400;
-			
-			// aapt resource value: 0x7f0101bc
-			public const int tabIconTint = 2130772412;
-			
-			// aapt resource value: 0x7f0101bd
-			public const int tabIconTintMode = 2130772413;
-			
-			// aapt resource value: 0x7f0101ab
-			public const int tabIndicator = 2130772395;
-			
-			// aapt resource value: 0x7f0101ad
-			public const int tabIndicatorAnimationDuration = 2130772397;
-			
-			// aapt resource value: 0x7f0101a7
-			public const int tabIndicatorColor = 2130772391;
-			
-			// aapt resource value: 0x7f0101ae
-			public const int tabIndicatorFullWidth = 2130772398;
-			
-			// aapt resource value: 0x7f0101ac
-			public const int tabIndicatorGravity = 2130772396;
-			
-			// aapt resource value: 0x7f0101a8
-			public const int tabIndicatorHeight = 2130772392;
-			
-			// aapt resource value: 0x7f0101b1
-			public const int tabInlineLabel = 2130772401;
-			
-			// aapt resource value: 0x7f0101b3
-			public const int tabMaxWidth = 2130772403;
-			
-			// aapt resource value: 0x7f0101b2
-			public const int tabMinWidth = 2130772402;
-			
-			// aapt resource value: 0x7f0101af
-			public const int tabMode = 2130772399;
-			
-			// aapt resource value: 0x7f0101bb
-			public const int tabPadding = 2130772411;
-			
-			// aapt resource value: 0x7f0101ba
-			public const int tabPaddingBottom = 2130772410;
-			
-			// aapt resource value: 0x7f0101b9
-			public const int tabPaddingEnd = 2130772409;
-			
-			// aapt resource value: 0x7f0101b7
-			public const int tabPaddingStart = 2130772407;
-			
-			// aapt resource value: 0x7f0101b8
-			public const int tabPaddingTop = 2130772408;
-			
-			// aapt resource value: 0x7f0101be
-			public const int tabRippleColor = 2130772414;
-			
-			// aapt resource value: 0x7f0101b6
-			public const int tabSelectedTextColor = 2130772406;
-			
-			// aapt resource value: 0x7f010136
-			public const int tabStyle = 2130772278;
-			
-			// aapt resource value: 0x7f0101b4
-			public const int tabTextAppearance = 2130772404;
-			
-			// aapt resource value: 0x7f0101b5
-			public const int tabTextColor = 2130772405;
-			
-			// aapt resource value: 0x7f0101bf
-			public const int tabUnboundedRipple = 2130772415;
-			
-			// aapt resource value: 0x7f010057
-			public const int textAllCaps = 2130772055;
-			
-			// aapt resource value: 0x7f010137
-			public const int textAppearanceBody1 = 2130772279;
-			
-			// aapt resource value: 0x7f010138
-			public const int textAppearanceBody2 = 2130772280;
+			// aapt resource value: 0x7f0100e5
+			public const int state_above_anchor = 2130772197;
 			
 			// aapt resource value: 0x7f010139
-			public const int textAppearanceButton = 2130772281;
+			public const int state_collapsed = 2130772281;
 			
 			// aapt resource value: 0x7f01013a
-			public const int textAppearanceCaption = 2130772282;
-			
-			// aapt resource value: 0x7f01013b
-			public const int textAppearanceHeadline1 = 2130772283;
+			public const int state_collapsible = 2130772282;
 			
 			// aapt resource value: 0x7f01013c
-			public const int textAppearanceHeadline2 = 2130772284;
+			public const int state_liftable = 2130772284;
 			
-			// aapt resource value: 0x7f01013d
-			public const int textAppearanceHeadline3 = 2130772285;
+			// aapt resource value: 0x7f01013b
+			public const int state_lifted = 2130772283;
 			
-			// aapt resource value: 0x7f01013e
-			public const int textAppearanceHeadline4 = 2130772286;
+			// aapt resource value: 0x7f0101d0
+			public const int statusBarBackground = 2130772432;
 			
-			// aapt resource value: 0x7f01013f
-			public const int textAppearanceHeadline5 = 2130772287;
+			// aapt resource value: 0x7f010174
+			public const int statusBarScrim = 2130772340;
 			
-			// aapt resource value: 0x7f010140
-			public const int textAppearanceHeadline6 = 2130772288;
+			// aapt resource value: 0x7f010126
+			public const int strokeColor = 2130772262;
 			
-			// aapt resource value: 0x7f010087
-			public const int textAppearanceLargePopupMenu = 2130772103;
+			// aapt resource value: 0x7f010127
+			public const int strokeWidth = 2130772263;
 			
-			// aapt resource value: 0x7f0100ad
-			public const int textAppearanceListItem = 2130772141;
+			// aapt resource value: 0x7f0100e3
+			public const int subMenuArrow = 2130772195;
 			
-			// aapt resource value: 0x7f0100ae
-			public const int textAppearanceListItemSecondary = 2130772142;
+			// aapt resource value: 0x7f0100f4
+			public const int submitBackground = 2130772212;
 			
-			// aapt resource value: 0x7f0100af
-			public const int textAppearanceListItemSmall = 2130772143;
+			// aapt resource value: 0x7f010021
+			public const int subtitle = 2130772001;
 			
-			// aapt resource value: 0x7f010141
-			public const int textAppearanceOverline = 2130772289;
-			
-			// aapt resource value: 0x7f010089
-			public const int textAppearancePopupMenuHeader = 2130772105;
-			
-			// aapt resource value: 0x7f0100a3
-			public const int textAppearanceSearchResultSubtitle = 2130772131;
-			
-			// aapt resource value: 0x7f0100a2
-			public const int textAppearanceSearchResultTitle = 2130772130;
-			
-			// aapt resource value: 0x7f010088
-			public const int textAppearanceSmallPopupMenu = 2130772104;
-			
-			// aapt resource value: 0x7f010142
-			public const int textAppearanceSubtitle1 = 2130772290;
-			
-			// aapt resource value: 0x7f010143
-			public const int textAppearanceSubtitle2 = 2130772291;
-			
-			// aapt resource value: 0x7f0100c2
-			public const int textColorAlertDialogListItem = 2130772162;
-			
-			// aapt resource value: 0x7f0100a4
-			public const int textColorSearchUrl = 2130772132;
-			
-			// aapt resource value: 0x7f010170
-			public const int textEndPadding = 2130772336;
-			
-			// aapt resource value: 0x7f010144
-			public const int textInputStyle = 2130772292;
-			
-			// aapt resource value: 0x7f01016f
-			public const int textStartPadding = 2130772335;
-			
-			// aapt resource value: 0x7f010121
-			public const int theme = 2130772257;
-			
-			// aapt resource value: 0x7f0100e2
-			public const int thickness = 2130772194;
-			
-			// aapt resource value: 0x7f010108
-			public const int thumbTextPadding = 2130772232;
-			
-			// aapt resource value: 0x7f010103
-			public const int thumbTint = 2130772227;
-			
-			// aapt resource value: 0x7f010104
-			public const int thumbTintMode = 2130772228;
-			
-			// aapt resource value: 0x7f010054
-			public const int tickMark = 2130772052;
-			
-			// aapt resource value: 0x7f010055
-			public const int tickMarkTint = 2130772053;
-			
-			// aapt resource value: 0x7f010056
-			public const int tickMarkTintMode = 2130772054;
-			
-			// aapt resource value: 0x7f010052
-			public const int tint = 2130772050;
-			
-			// aapt resource value: 0x7f010053
-			public const int tintMode = 2130772051;
-			
-			// aapt resource value: 0x7f01002c
-			public const int title = 2130772012;
-			
-			// aapt resource value: 0x7f010188
-			public const int titleEnabled = 2130772360;
+			// aapt resource value: 0x7f010101
+			public const int subtitleTextAppearance = 2130772225;
 			
 			// aapt resource value: 0x7f010110
-			public const int titleMargin = 2130772240;
+			public const int subtitleTextColor = 2130772240;
 			
-			// aapt resource value: 0x7f010114
-			public const int titleMarginBottom = 2130772244;
+			// aapt resource value: 0x7f010023
+			public const int subtitleTextStyle = 2130772003;
 			
-			// aapt resource value: 0x7f010112
-			public const int titleMarginEnd = 2130772242;
+			// aapt resource value: 0x7f0100f2
+			public const int suggestionRowLayout = 2130772210;
 			
-			// aapt resource value: 0x7f010111
-			public const int titleMarginStart = 2130772241;
+			// aapt resource value: 0x7f0100fc
+			public const int switchMinWidth = 2130772220;
+			
+			// aapt resource value: 0x7f0100fd
+			public const int switchPadding = 2130772221;
+			
+			// aapt resource value: 0x7f0100c4
+			public const int switchStyle = 2130772164;
+			
+			// aapt resource value: 0x7f0100fb
+			public const int switchTextAppearance = 2130772219;
+			
+			// aapt resource value: 0x7f01019c
+			public const int tabBackground = 2130772380;
+			
+			// aapt resource value: 0x7f01019b
+			public const int tabContentStart = 2130772379;
+			
+			// aapt resource value: 0x7f0101a2
+			public const int tabGravity = 2130772386;
+			
+			// aapt resource value: 0x7f0101ae
+			public const int tabIconTint = 2130772398;
+			
+			// aapt resource value: 0x7f0101af
+			public const int tabIconTintMode = 2130772399;
+			
+			// aapt resource value: 0x7f01019d
+			public const int tabIndicator = 2130772381;
+			
+			// aapt resource value: 0x7f01019f
+			public const int tabIndicatorAnimationDuration = 2130772383;
+			
+			// aapt resource value: 0x7f010199
+			public const int tabIndicatorColor = 2130772377;
+			
+			// aapt resource value: 0x7f0101a0
+			public const int tabIndicatorFullWidth = 2130772384;
+			
+			// aapt resource value: 0x7f01019e
+			public const int tabIndicatorGravity = 2130772382;
+			
+			// aapt resource value: 0x7f01019a
+			public const int tabIndicatorHeight = 2130772378;
+			
+			// aapt resource value: 0x7f0101a3
+			public const int tabInlineLabel = 2130772387;
+			
+			// aapt resource value: 0x7f0101a5
+			public const int tabMaxWidth = 2130772389;
+			
+			// aapt resource value: 0x7f0101a4
+			public const int tabMinWidth = 2130772388;
+			
+			// aapt resource value: 0x7f0101a1
+			public const int tabMode = 2130772385;
+			
+			// aapt resource value: 0x7f0101ad
+			public const int tabPadding = 2130772397;
+			
+			// aapt resource value: 0x7f0101ac
+			public const int tabPaddingBottom = 2130772396;
+			
+			// aapt resource value: 0x7f0101ab
+			public const int tabPaddingEnd = 2130772395;
+			
+			// aapt resource value: 0x7f0101a9
+			public const int tabPaddingStart = 2130772393;
+			
+			// aapt resource value: 0x7f0101aa
+			public const int tabPaddingTop = 2130772394;
+			
+			// aapt resource value: 0x7f0101b0
+			public const int tabRippleColor = 2130772400;
+			
+			// aapt resource value: 0x7f0101a8
+			public const int tabSelectedTextColor = 2130772392;
+			
+			// aapt resource value: 0x7f010128
+			public const int tabStyle = 2130772264;
+			
+			// aapt resource value: 0x7f0101a6
+			public const int tabTextAppearance = 2130772390;
+			
+			// aapt resource value: 0x7f0101a7
+			public const int tabTextColor = 2130772391;
+			
+			// aapt resource value: 0x7f0101b1
+			public const int tabUnboundedRipple = 2130772401;
+			
+			// aapt resource value: 0x7f010049
+			public const int textAllCaps = 2130772041;
+			
+			// aapt resource value: 0x7f010129
+			public const int textAppearanceBody1 = 2130772265;
+			
+			// aapt resource value: 0x7f01012a
+			public const int textAppearanceBody2 = 2130772266;
+			
+			// aapt resource value: 0x7f01012b
+			public const int textAppearanceButton = 2130772267;
+			
+			// aapt resource value: 0x7f01012c
+			public const int textAppearanceCaption = 2130772268;
+			
+			// aapt resource value: 0x7f01012d
+			public const int textAppearanceHeadline1 = 2130772269;
+			
+			// aapt resource value: 0x7f01012e
+			public const int textAppearanceHeadline2 = 2130772270;
+			
+			// aapt resource value: 0x7f01012f
+			public const int textAppearanceHeadline3 = 2130772271;
+			
+			// aapt resource value: 0x7f010130
+			public const int textAppearanceHeadline4 = 2130772272;
+			
+			// aapt resource value: 0x7f010131
+			public const int textAppearanceHeadline5 = 2130772273;
+			
+			// aapt resource value: 0x7f010132
+			public const int textAppearanceHeadline6 = 2130772274;
+			
+			// aapt resource value: 0x7f010079
+			public const int textAppearanceLargePopupMenu = 2130772089;
+			
+			// aapt resource value: 0x7f01009f
+			public const int textAppearanceListItem = 2130772127;
+			
+			// aapt resource value: 0x7f0100a0
+			public const int textAppearanceListItemSecondary = 2130772128;
+			
+			// aapt resource value: 0x7f0100a1
+			public const int textAppearanceListItemSmall = 2130772129;
+			
+			// aapt resource value: 0x7f010133
+			public const int textAppearanceOverline = 2130772275;
+			
+			// aapt resource value: 0x7f01007b
+			public const int textAppearancePopupMenuHeader = 2130772091;
+			
+			// aapt resource value: 0x7f010095
+			public const int textAppearanceSearchResultSubtitle = 2130772117;
+			
+			// aapt resource value: 0x7f010094
+			public const int textAppearanceSearchResultTitle = 2130772116;
+			
+			// aapt resource value: 0x7f01007a
+			public const int textAppearanceSmallPopupMenu = 2130772090;
+			
+			// aapt resource value: 0x7f010134
+			public const int textAppearanceSubtitle1 = 2130772276;
+			
+			// aapt resource value: 0x7f010135
+			public const int textAppearanceSubtitle2 = 2130772277;
+			
+			// aapt resource value: 0x7f0100b4
+			public const int textColorAlertDialogListItem = 2130772148;
+			
+			// aapt resource value: 0x7f010096
+			public const int textColorSearchUrl = 2130772118;
+			
+			// aapt resource value: 0x7f010162
+			public const int textEndPadding = 2130772322;
+			
+			// aapt resource value: 0x7f010136
+			public const int textInputStyle = 2130772278;
+			
+			// aapt resource value: 0x7f010161
+			public const int textStartPadding = 2130772321;
 			
 			// aapt resource value: 0x7f010113
-			public const int titleMarginTop = 2130772243;
-			
-			// aapt resource value: 0x7f010115
-			public const int titleMargins = 2130772245;
-			
-			// aapt resource value: 0x7f01010e
-			public const int titleTextAppearance = 2130772238;
-			
-			// aapt resource value: 0x7f01011d
-			public const int titleTextColor = 2130772253;
-			
-			// aapt resource value: 0x7f010030
-			public const int titleTextStyle = 2130772016;
-			
-			// aapt resource value: 0x7f010183
-			public const int toolbarId = 2130772355;
-			
-			// aapt resource value: 0x7f01009c
-			public const int toolbarNavigationButtonStyle = 2130772124;
-			
-			// aapt resource value: 0x7f01009b
-			public const int toolbarStyle = 2130772123;
-			
-			// aapt resource value: 0x7f0100d5
-			public const int tooltipForegroundColor = 2130772181;
+			public const int theme = 2130772243;
 			
 			// aapt resource value: 0x7f0100d4
-			public const int tooltipFrameBackground = 2130772180;
+			public const int thickness = 2130772180;
 			
-			// aapt resource value: 0x7f0100ed
-			public const int tooltipText = 2130772205;
+			// aapt resource value: 0x7f0100fa
+			public const int thumbTextPadding = 2130772218;
 			
-			// aapt resource value: 0x7f010105
-			public const int track = 2130772229;
+			// aapt resource value: 0x7f0100f5
+			public const int thumbTint = 2130772213;
+			
+			// aapt resource value: 0x7f0100f6
+			public const int thumbTintMode = 2130772214;
+			
+			// aapt resource value: 0x7f010046
+			public const int tickMark = 2130772038;
+			
+			// aapt resource value: 0x7f010047
+			public const int tickMarkTint = 2130772039;
+			
+			// aapt resource value: 0x7f010048
+			public const int tickMarkTintMode = 2130772040;
+			
+			// aapt resource value: 0x7f010044
+			public const int tint = 2130772036;
+			
+			// aapt resource value: 0x7f010045
+			public const int tintMode = 2130772037;
+			
+			// aapt resource value: 0x7f01001e
+			public const int title = 2130771998;
+			
+			// aapt resource value: 0x7f01017a
+			public const int titleEnabled = 2130772346;
+			
+			// aapt resource value: 0x7f010102
+			public const int titleMargin = 2130772226;
 			
 			// aapt resource value: 0x7f010106
-			public const int trackTint = 2130772230;
+			public const int titleMarginBottom = 2130772230;
+			
+			// aapt resource value: 0x7f010104
+			public const int titleMarginEnd = 2130772228;
+			
+			// aapt resource value: 0x7f010103
+			public const int titleMarginStart = 2130772227;
+			
+			// aapt resource value: 0x7f010105
+			public const int titleMarginTop = 2130772229;
 			
 			// aapt resource value: 0x7f010107
-			public const int trackTintMode = 2130772231;
+			public const int titleMargins = 2130772231;
 			
-			// aapt resource value: 0x7f0101f0
-			public const int ttcIndex = 2130772464;
+			// aapt resource value: 0x7f010100
+			public const int titleTextAppearance = 2130772224;
 			
-			// aapt resource value: 0x7f010190
-			public const int useCompatPadding = 2130772368;
+			// aapt resource value: 0x7f01010f
+			public const int titleTextColor = 2130772239;
 			
-			// aapt resource value: 0x7f0100d7
-			public const int viewInflaterClass = 2130772183;
+			// aapt resource value: 0x7f010022
+			public const int titleTextStyle = 2130772002;
 			
-			// aapt resource value: 0x7f0100fe
-			public const int voiceIcon = 2130772222;
+			// aapt resource value: 0x7f010175
+			public const int toolbarId = 2130772341;
 			
-			// aapt resource value: 0x7f010061
-			public const int windowActionBar = 2130772065;
+			// aapt resource value: 0x7f01008e
+			public const int toolbarNavigationButtonStyle = 2130772110;
 			
-			// aapt resource value: 0x7f010063
-			public const int windowActionBarOverlay = 2130772067;
+			// aapt resource value: 0x7f01008d
+			public const int toolbarStyle = 2130772109;
 			
-			// aapt resource value: 0x7f010064
-			public const int windowActionModeOverlay = 2130772068;
+			// aapt resource value: 0x7f0100c7
+			public const int tooltipForegroundColor = 2130772167;
 			
-			// aapt resource value: 0x7f010068
-			public const int windowFixedHeightMajor = 2130772072;
+			// aapt resource value: 0x7f0100c6
+			public const int tooltipFrameBackground = 2130772166;
 			
-			// aapt resource value: 0x7f010066
-			public const int windowFixedHeightMinor = 2130772070;
+			// aapt resource value: 0x7f0100df
+			public const int tooltipText = 2130772191;
 			
-			// aapt resource value: 0x7f010065
-			public const int windowFixedWidthMajor = 2130772069;
+			// aapt resource value: 0x7f0100f7
+			public const int track = 2130772215;
 			
-			// aapt resource value: 0x7f010067
-			public const int windowFixedWidthMinor = 2130772071;
+			// aapt resource value: 0x7f0100f8
+			public const int trackTint = 2130772216;
 			
-			// aapt resource value: 0x7f010069
-			public const int windowMinWidthMajor = 2130772073;
+			// aapt resource value: 0x7f0100f9
+			public const int trackTintMode = 2130772217;
 			
-			// aapt resource value: 0x7f01006a
-			public const int windowMinWidthMinor = 2130772074;
+			// aapt resource value: 0x7f0101e2
+			public const int ttcIndex = 2130772450;
 			
-			// aapt resource value: 0x7f010062
-			public const int windowNoTitle = 2130772066;
+			// aapt resource value: 0x7f010182
+			public const int useCompatPadding = 2130772354;
+			
+			// aapt resource value: 0x7f0100c9
+			public const int viewInflaterClass = 2130772169;
+			
+			// aapt resource value: 0x7f0100f0
+			public const int voiceIcon = 2130772208;
+			
+			// aapt resource value: 0x7f010053
+			public const int windowActionBar = 2130772051;
+			
+			// aapt resource value: 0x7f010055
+			public const int windowActionBarOverlay = 2130772053;
+			
+			// aapt resource value: 0x7f010056
+			public const int windowActionModeOverlay = 2130772054;
+			
+			// aapt resource value: 0x7f01005a
+			public const int windowFixedHeightMajor = 2130772058;
+			
+			// aapt resource value: 0x7f010058
+			public const int windowFixedHeightMinor = 2130772056;
+			
+			// aapt resource value: 0x7f010057
+			public const int windowFixedWidthMajor = 2130772055;
+			
+			// aapt resource value: 0x7f010059
+			public const int windowFixedWidthMinor = 2130772057;
+			
+			// aapt resource value: 0x7f01005b
+			public const int windowMinWidthMajor = 2130772059;
+			
+			// aapt resource value: 0x7f01005c
+			public const int windowMinWidthMinor = 2130772060;
+			
+			// aapt resource value: 0x7f010054
+			public const int windowNoTitle = 2130772052;
 			
 			static Attribute()
 			{
@@ -4688,404 +6150,404 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f0b001a
-			public const int abc_action_bar_content_inset_material = 2131427354;
-			
-			// aapt resource value: 0x7f0b001b
-			public const int abc_action_bar_content_inset_with_nav = 2131427355;
-			
-			// aapt resource value: 0x7f0b0010
-			public const int abc_action_bar_default_height_material = 2131427344;
-			
-			// aapt resource value: 0x7f0b001c
-			public const int abc_action_bar_default_padding_end_material = 2131427356;
-			
-			// aapt resource value: 0x7f0b001d
-			public const int abc_action_bar_default_padding_start_material = 2131427357;
-			
-			// aapt resource value: 0x7f0b001f
-			public const int abc_action_bar_elevation_material = 2131427359;
-			
-			// aapt resource value: 0x7f0b0020
-			public const int abc_action_bar_icon_vertical_padding_material = 2131427360;
-			
-			// aapt resource value: 0x7f0b0021
-			public const int abc_action_bar_overflow_padding_end_material = 2131427361;
-			
-			// aapt resource value: 0x7f0b0022
-			public const int abc_action_bar_overflow_padding_start_material = 2131427362;
-			
-			// aapt resource value: 0x7f0b0023
-			public const int abc_action_bar_stacked_max_height = 2131427363;
-			
-			// aapt resource value: 0x7f0b0024
-			public const int abc_action_bar_stacked_tab_max_width = 2131427364;
-			
-			// aapt resource value: 0x7f0b0025
-			public const int abc_action_bar_subtitle_bottom_margin_material = 2131427365;
-			
-			// aapt resource value: 0x7f0b0026
-			public const int abc_action_bar_subtitle_top_margin_material = 2131427366;
-			
-			// aapt resource value: 0x7f0b0027
-			public const int abc_action_button_min_height_material = 2131427367;
-			
-			// aapt resource value: 0x7f0b0028
-			public const int abc_action_button_min_width_material = 2131427368;
-			
-			// aapt resource value: 0x7f0b0029
-			public const int abc_action_button_min_width_overflow_material = 2131427369;
-			
-			// aapt resource value: 0x7f0b000f
-			public const int abc_alert_dialog_button_bar_height = 2131427343;
-			
-			// aapt resource value: 0x7f0b002a
-			public const int abc_alert_dialog_button_dimen = 2131427370;
-			
-			// aapt resource value: 0x7f0b002b
-			public const int abc_button_inset_horizontal_material = 2131427371;
-			
-			// aapt resource value: 0x7f0b002c
-			public const int abc_button_inset_vertical_material = 2131427372;
-			
-			// aapt resource value: 0x7f0b002d
-			public const int abc_button_padding_horizontal_material = 2131427373;
-			
-			// aapt resource value: 0x7f0b002e
-			public const int abc_button_padding_vertical_material = 2131427374;
-			
-			// aapt resource value: 0x7f0b002f
-			public const int abc_cascading_menus_min_smallest_width = 2131427375;
-			
-			// aapt resource value: 0x7f0b0013
-			public const int abc_config_prefDialogWidth = 2131427347;
-			
-			// aapt resource value: 0x7f0b0030
-			public const int abc_control_corner_material = 2131427376;
-			
-			// aapt resource value: 0x7f0b0031
-			public const int abc_control_inset_material = 2131427377;
-			
-			// aapt resource value: 0x7f0b0032
-			public const int abc_control_padding_material = 2131427378;
-			
-			// aapt resource value: 0x7f0b0033
-			public const int abc_dialog_corner_radius_material = 2131427379;
-			
 			// aapt resource value: 0x7f0b0014
-			public const int abc_dialog_fixed_height_major = 2131427348;
+			public const int abc_action_bar_content_inset_material = 2131427348;
 			
 			// aapt resource value: 0x7f0b0015
-			public const int abc_dialog_fixed_height_minor = 2131427349;
+			public const int abc_action_bar_content_inset_with_nav = 2131427349;
+			
+			// aapt resource value: 0x7f0b000a
+			public const int abc_action_bar_default_height_material = 2131427338;
 			
 			// aapt resource value: 0x7f0b0016
-			public const int abc_dialog_fixed_width_major = 2131427350;
+			public const int abc_action_bar_default_padding_end_material = 2131427350;
 			
 			// aapt resource value: 0x7f0b0017
-			public const int abc_dialog_fixed_width_minor = 2131427351;
-			
-			// aapt resource value: 0x7f0b0034
-			public const int abc_dialog_list_padding_bottom_no_buttons = 2131427380;
-			
-			// aapt resource value: 0x7f0b0035
-			public const int abc_dialog_list_padding_top_no_title = 2131427381;
-			
-			// aapt resource value: 0x7f0b0018
-			public const int abc_dialog_min_width_major = 2131427352;
+			public const int abc_action_bar_default_padding_start_material = 2131427351;
 			
 			// aapt resource value: 0x7f0b0019
-			public const int abc_dialog_min_width_minor = 2131427353;
+			public const int abc_action_bar_elevation_material = 2131427353;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int abc_dialog_padding_material = 2131427382;
+			// aapt resource value: 0x7f0b001a
+			public const int abc_action_bar_icon_vertical_padding_material = 2131427354;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int abc_dialog_padding_top_material = 2131427383;
+			// aapt resource value: 0x7f0b001b
+			public const int abc_action_bar_overflow_padding_end_material = 2131427355;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int abc_dialog_title_divider_material = 2131427384;
+			// aapt resource value: 0x7f0b001c
+			public const int abc_action_bar_overflow_padding_start_material = 2131427356;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int abc_disabled_alpha_material_dark = 2131427385;
-			
-			// aapt resource value: 0x7f0b003a
-			public const int abc_disabled_alpha_material_light = 2131427386;
-			
-			// aapt resource value: 0x7f0b003b
-			public const int abc_dropdownitem_icon_width = 2131427387;
-			
-			// aapt resource value: 0x7f0b003c
-			public const int abc_dropdownitem_text_padding_left = 2131427388;
-			
-			// aapt resource value: 0x7f0b003d
-			public const int abc_dropdownitem_text_padding_right = 2131427389;
-			
-			// aapt resource value: 0x7f0b003e
-			public const int abc_edit_text_inset_bottom_material = 2131427390;
-			
-			// aapt resource value: 0x7f0b003f
-			public const int abc_edit_text_inset_horizontal_material = 2131427391;
-			
-			// aapt resource value: 0x7f0b0040
-			public const int abc_edit_text_inset_top_material = 2131427392;
-			
-			// aapt resource value: 0x7f0b0041
-			public const int abc_floating_window_z = 2131427393;
-			
-			// aapt resource value: 0x7f0b0042
-			public const int abc_list_item_padding_horizontal_material = 2131427394;
-			
-			// aapt resource value: 0x7f0b0043
-			public const int abc_panel_menu_list_width = 2131427395;
-			
-			// aapt resource value: 0x7f0b0044
-			public const int abc_progress_bar_height_material = 2131427396;
-			
-			// aapt resource value: 0x7f0b0045
-			public const int abc_search_view_preferred_height = 2131427397;
-			
-			// aapt resource value: 0x7f0b0046
-			public const int abc_search_view_preferred_width = 2131427398;
-			
-			// aapt resource value: 0x7f0b0047
-			public const int abc_seekbar_track_background_height_material = 2131427399;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int abc_seekbar_track_progress_height_material = 2131427400;
-			
-			// aapt resource value: 0x7f0b0049
-			public const int abc_select_dialog_padding_start_material = 2131427401;
+			// aapt resource value: 0x7f0b001d
+			public const int abc_action_bar_stacked_max_height = 2131427357;
 			
 			// aapt resource value: 0x7f0b001e
-			public const int abc_switch_padding = 2131427358;
+			public const int abc_action_bar_stacked_tab_max_width = 2131427358;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int abc_text_size_body_1_material = 2131427402;
+			// aapt resource value: 0x7f0b001f
+			public const int abc_action_bar_subtitle_bottom_margin_material = 2131427359;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int abc_text_size_body_2_material = 2131427403;
+			// aapt resource value: 0x7f0b0020
+			public const int abc_action_bar_subtitle_top_margin_material = 2131427360;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int abc_text_size_button_material = 2131427404;
+			// aapt resource value: 0x7f0b0021
+			public const int abc_action_button_min_height_material = 2131427361;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_text_size_caption_material = 2131427405;
+			// aapt resource value: 0x7f0b0022
+			public const int abc_action_button_min_width_material = 2131427362;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_text_size_display_1_material = 2131427406;
+			// aapt resource value: 0x7f0b0023
+			public const int abc_action_button_min_width_overflow_material = 2131427363;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_text_size_display_2_material = 2131427407;
+			// aapt resource value: 0x7f0b0009
+			public const int abc_alert_dialog_button_bar_height = 2131427337;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_text_size_display_3_material = 2131427408;
+			// aapt resource value: 0x7f0b0024
+			public const int abc_alert_dialog_button_dimen = 2131427364;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_text_size_display_4_material = 2131427409;
+			// aapt resource value: 0x7f0b0025
+			public const int abc_button_inset_horizontal_material = 2131427365;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int abc_text_size_headline_material = 2131427410;
+			// aapt resource value: 0x7f0b0026
+			public const int abc_button_inset_vertical_material = 2131427366;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_text_size_large_material = 2131427411;
+			// aapt resource value: 0x7f0b0027
+			public const int abc_button_padding_horizontal_material = 2131427367;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int abc_text_size_medium_material = 2131427412;
+			// aapt resource value: 0x7f0b0028
+			public const int abc_button_padding_vertical_material = 2131427368;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int abc_text_size_menu_header_material = 2131427413;
-			
-			// aapt resource value: 0x7f0b0056
-			public const int abc_text_size_menu_material = 2131427414;
-			
-			// aapt resource value: 0x7f0b0057
-			public const int abc_text_size_small_material = 2131427415;
-			
-			// aapt resource value: 0x7f0b0058
-			public const int abc_text_size_subhead_material = 2131427416;
-			
-			// aapt resource value: 0x7f0b0011
-			public const int abc_text_size_subtitle_material_toolbar = 2131427345;
-			
-			// aapt resource value: 0x7f0b0059
-			public const int abc_text_size_title_material = 2131427417;
-			
-			// aapt resource value: 0x7f0b0012
-			public const int abc_text_size_title_material_toolbar = 2131427346;
-			
-			// aapt resource value: 0x7f0b00cb
-			public const int browser_actions_context_menu_max_width = 2131427531;
-			
-			// aapt resource value: 0x7f0b00cc
-			public const int browser_actions_context_menu_min_padding = 2131427532;
-			
-			// aapt resource value: 0x7f0b000c
-			public const int cardview_compat_inset_shadow = 2131427340;
+			// aapt resource value: 0x7f0b0029
+			public const int abc_cascading_menus_min_smallest_width = 2131427369;
 			
 			// aapt resource value: 0x7f0b000d
-			public const int cardview_default_elevation = 2131427341;
+			public const int abc_config_prefDialogWidth = 2131427341;
+			
+			// aapt resource value: 0x7f0b002a
+			public const int abc_control_corner_material = 2131427370;
+			
+			// aapt resource value: 0x7f0b002b
+			public const int abc_control_inset_material = 2131427371;
+			
+			// aapt resource value: 0x7f0b002c
+			public const int abc_control_padding_material = 2131427372;
+			
+			// aapt resource value: 0x7f0b002d
+			public const int abc_dialog_corner_radius_material = 2131427373;
 			
 			// aapt resource value: 0x7f0b000e
-			public const int cardview_default_radius = 2131427342;
+			public const int abc_dialog_fixed_height_major = 2131427342;
+			
+			// aapt resource value: 0x7f0b000f
+			public const int abc_dialog_fixed_height_minor = 2131427343;
+			
+			// aapt resource value: 0x7f0b0010
+			public const int abc_dialog_fixed_width_major = 2131427344;
+			
+			// aapt resource value: 0x7f0b0011
+			public const int abc_dialog_fixed_width_minor = 2131427345;
+			
+			// aapt resource value: 0x7f0b002e
+			public const int abc_dialog_list_padding_bottom_no_buttons = 2131427374;
+			
+			// aapt resource value: 0x7f0b002f
+			public const int abc_dialog_list_padding_top_no_title = 2131427375;
+			
+			// aapt resource value: 0x7f0b0012
+			public const int abc_dialog_min_width_major = 2131427346;
+			
+			// aapt resource value: 0x7f0b0013
+			public const int abc_dialog_min_width_minor = 2131427347;
+			
+			// aapt resource value: 0x7f0b0030
+			public const int abc_dialog_padding_material = 2131427376;
+			
+			// aapt resource value: 0x7f0b0031
+			public const int abc_dialog_padding_top_material = 2131427377;
+			
+			// aapt resource value: 0x7f0b0032
+			public const int abc_dialog_title_divider_material = 2131427378;
+			
+			// aapt resource value: 0x7f0b0033
+			public const int abc_disabled_alpha_material_dark = 2131427379;
+			
+			// aapt resource value: 0x7f0b0034
+			public const int abc_disabled_alpha_material_light = 2131427380;
+			
+			// aapt resource value: 0x7f0b0035
+			public const int abc_dropdownitem_icon_width = 2131427381;
+			
+			// aapt resource value: 0x7f0b0036
+			public const int abc_dropdownitem_text_padding_left = 2131427382;
+			
+			// aapt resource value: 0x7f0b0037
+			public const int abc_dropdownitem_text_padding_right = 2131427383;
+			
+			// aapt resource value: 0x7f0b0038
+			public const int abc_edit_text_inset_bottom_material = 2131427384;
+			
+			// aapt resource value: 0x7f0b0039
+			public const int abc_edit_text_inset_horizontal_material = 2131427385;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int abc_edit_text_inset_top_material = 2131427386;
+			
+			// aapt resource value: 0x7f0b003b
+			public const int abc_floating_window_z = 2131427387;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int abc_list_item_padding_horizontal_material = 2131427388;
+			
+			// aapt resource value: 0x7f0b003d
+			public const int abc_panel_menu_list_width = 2131427389;
+			
+			// aapt resource value: 0x7f0b003e
+			public const int abc_progress_bar_height_material = 2131427390;
+			
+			// aapt resource value: 0x7f0b003f
+			public const int abc_search_view_preferred_height = 2131427391;
+			
+			// aapt resource value: 0x7f0b0040
+			public const int abc_search_view_preferred_width = 2131427392;
+			
+			// aapt resource value: 0x7f0b0041
+			public const int abc_seekbar_track_background_height_material = 2131427393;
+			
+			// aapt resource value: 0x7f0b0042
+			public const int abc_seekbar_track_progress_height_material = 2131427394;
+			
+			// aapt resource value: 0x7f0b0043
+			public const int abc_select_dialog_padding_start_material = 2131427395;
+			
+			// aapt resource value: 0x7f0b0018
+			public const int abc_switch_padding = 2131427352;
+			
+			// aapt resource value: 0x7f0b0044
+			public const int abc_text_size_body_1_material = 2131427396;
+			
+			// aapt resource value: 0x7f0b0045
+			public const int abc_text_size_body_2_material = 2131427397;
+			
+			// aapt resource value: 0x7f0b0046
+			public const int abc_text_size_button_material = 2131427398;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int abc_text_size_caption_material = 2131427399;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int abc_text_size_display_1_material = 2131427400;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int abc_text_size_display_2_material = 2131427401;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int abc_text_size_display_3_material = 2131427402;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int abc_text_size_display_4_material = 2131427403;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int abc_text_size_headline_material = 2131427404;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int abc_text_size_large_material = 2131427405;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int abc_text_size_medium_material = 2131427406;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int abc_text_size_menu_header_material = 2131427407;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int abc_text_size_menu_material = 2131427408;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int abc_text_size_small_material = 2131427409;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int abc_text_size_subhead_material = 2131427410;
+			
+			// aapt resource value: 0x7f0b000b
+			public const int abc_text_size_subtitle_material_toolbar = 2131427339;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int abc_text_size_title_material = 2131427411;
+			
+			// aapt resource value: 0x7f0b000c
+			public const int abc_text_size_title_material_toolbar = 2131427340;
+			
+			// aapt resource value: 0x7f0b00c5
+			public const int browser_actions_context_menu_max_width = 2131427525;
+			
+			// aapt resource value: 0x7f0b00c6
+			public const int browser_actions_context_menu_min_padding = 2131427526;
+			
+			// aapt resource value: 0x7f0b0006
+			public const int cardview_compat_inset_shadow = 2131427334;
+			
+			// aapt resource value: 0x7f0b0007
+			public const int cardview_default_elevation = 2131427335;
+			
+			// aapt resource value: 0x7f0b0008
+			public const int cardview_default_radius = 2131427336;
+			
+			// aapt resource value: 0x7f0b00cb
+			public const int compat_button_inset_horizontal_material = 2131427531;
+			
+			// aapt resource value: 0x7f0b00cc
+			public const int compat_button_inset_vertical_material = 2131427532;
+			
+			// aapt resource value: 0x7f0b00cd
+			public const int compat_button_padding_horizontal_material = 2131427533;
+			
+			// aapt resource value: 0x7f0b00ce
+			public const int compat_button_padding_vertical_material = 2131427534;
+			
+			// aapt resource value: 0x7f0b00cf
+			public const int compat_control_corner_material = 2131427535;
+			
+			// aapt resource value: 0x7f0b00d0
+			public const int compat_notification_large_icon_max_height = 2131427536;
 			
 			// aapt resource value: 0x7f0b00d1
-			public const int compat_button_inset_horizontal_material = 2131427537;
-			
-			// aapt resource value: 0x7f0b00d2
-			public const int compat_button_inset_vertical_material = 2131427538;
-			
-			// aapt resource value: 0x7f0b00d3
-			public const int compat_button_padding_horizontal_material = 2131427539;
-			
-			// aapt resource value: 0x7f0b00d4
-			public const int compat_button_padding_vertical_material = 2131427540;
-			
-			// aapt resource value: 0x7f0b00d5
-			public const int compat_control_corner_material = 2131427541;
-			
-			// aapt resource value: 0x7f0b00d6
-			public const int compat_notification_large_icon_max_height = 2131427542;
-			
-			// aapt resource value: 0x7f0b00d7
-			public const int compat_notification_large_icon_max_width = 2131427543;
-			
-			// aapt resource value: 0x7f0b0077
-			public const int design_appbar_elevation = 2131427447;
-			
-			// aapt resource value: 0x7f0b0078
-			public const int design_bottom_navigation_active_item_max_width = 2131427448;
-			
-			// aapt resource value: 0x7f0b0079
-			public const int design_bottom_navigation_active_item_min_width = 2131427449;
-			
-			// aapt resource value: 0x7f0b007a
-			public const int design_bottom_navigation_active_text_size = 2131427450;
-			
-			// aapt resource value: 0x7f0b007b
-			public const int design_bottom_navigation_elevation = 2131427451;
-			
-			// aapt resource value: 0x7f0b007c
-			public const int design_bottom_navigation_height = 2131427452;
-			
-			// aapt resource value: 0x7f0b007d
-			public const int design_bottom_navigation_icon_size = 2131427453;
-			
-			// aapt resource value: 0x7f0b007e
-			public const int design_bottom_navigation_item_max_width = 2131427454;
-			
-			// aapt resource value: 0x7f0b007f
-			public const int design_bottom_navigation_item_min_width = 2131427455;
-			
-			// aapt resource value: 0x7f0b0080
-			public const int design_bottom_navigation_margin = 2131427456;
-			
-			// aapt resource value: 0x7f0b0081
-			public const int design_bottom_navigation_shadow_height = 2131427457;
-			
-			// aapt resource value: 0x7f0b0082
-			public const int design_bottom_navigation_text_size = 2131427458;
-			
-			// aapt resource value: 0x7f0b0083
-			public const int design_bottom_sheet_modal_elevation = 2131427459;
-			
-			// aapt resource value: 0x7f0b0084
-			public const int design_bottom_sheet_peek_height_min = 2131427460;
-			
-			// aapt resource value: 0x7f0b0085
-			public const int design_fab_border_width = 2131427461;
-			
-			// aapt resource value: 0x7f0b0086
-			public const int design_fab_elevation = 2131427462;
-			
-			// aapt resource value: 0x7f0b0087
-			public const int design_fab_image_size = 2131427463;
-			
-			// aapt resource value: 0x7f0b0088
-			public const int design_fab_size_mini = 2131427464;
-			
-			// aapt resource value: 0x7f0b0089
-			public const int design_fab_size_normal = 2131427465;
-			
-			// aapt resource value: 0x7f0b008a
-			public const int design_fab_translation_z_hovered_focused = 2131427466;
-			
-			// aapt resource value: 0x7f0b008b
-			public const int design_fab_translation_z_pressed = 2131427467;
-			
-			// aapt resource value: 0x7f0b008c
-			public const int design_navigation_elevation = 2131427468;
-			
-			// aapt resource value: 0x7f0b008d
-			public const int design_navigation_icon_padding = 2131427469;
-			
-			// aapt resource value: 0x7f0b008e
-			public const int design_navigation_icon_size = 2131427470;
-			
-			// aapt resource value: 0x7f0b008f
-			public const int design_navigation_item_horizontal_padding = 2131427471;
-			
-			// aapt resource value: 0x7f0b0090
-			public const int design_navigation_item_icon_padding = 2131427472;
-			
-			// aapt resource value: 0x7f0b006f
-			public const int design_navigation_max_width = 2131427439;
-			
-			// aapt resource value: 0x7f0b0091
-			public const int design_navigation_padding_bottom = 2131427473;
-			
-			// aapt resource value: 0x7f0b0092
-			public const int design_navigation_separator_vertical_padding = 2131427474;
-			
-			// aapt resource value: 0x7f0b0070
-			public const int design_snackbar_action_inline_max_width = 2131427440;
+			public const int compat_notification_large_icon_max_width = 2131427537;
 			
 			// aapt resource value: 0x7f0b0071
-			public const int design_snackbar_background_corner_radius = 2131427441;
-			
-			// aapt resource value: 0x7f0b0093
-			public const int design_snackbar_elevation = 2131427475;
+			public const int design_appbar_elevation = 2131427441;
 			
 			// aapt resource value: 0x7f0b0072
-			public const int design_snackbar_extra_spacing_horizontal = 2131427442;
+			public const int design_bottom_navigation_active_item_max_width = 2131427442;
 			
 			// aapt resource value: 0x7f0b0073
-			public const int design_snackbar_max_width = 2131427443;
+			public const int design_bottom_navigation_active_item_min_width = 2131427443;
 			
 			// aapt resource value: 0x7f0b0074
-			public const int design_snackbar_min_width = 2131427444;
-			
-			// aapt resource value: 0x7f0b0094
-			public const int design_snackbar_padding_horizontal = 2131427476;
-			
-			// aapt resource value: 0x7f0b0095
-			public const int design_snackbar_padding_vertical = 2131427477;
+			public const int design_bottom_navigation_active_text_size = 2131427444;
 			
 			// aapt resource value: 0x7f0b0075
-			public const int design_snackbar_padding_vertical_2lines = 2131427445;
-			
-			// aapt resource value: 0x7f0b0096
-			public const int design_snackbar_text_size = 2131427478;
-			
-			// aapt resource value: 0x7f0b0097
-			public const int design_tab_max_width = 2131427479;
+			public const int design_bottom_navigation_elevation = 2131427445;
 			
 			// aapt resource value: 0x7f0b0076
-			public const int design_tab_scrollable_min_width = 2131427446;
+			public const int design_bottom_navigation_height = 2131427446;
 			
-			// aapt resource value: 0x7f0b0098
-			public const int design_tab_text_size = 2131427480;
+			// aapt resource value: 0x7f0b0077
+			public const int design_bottom_navigation_icon_size = 2131427447;
 			
-			// aapt resource value: 0x7f0b0099
-			public const int design_tab_text_size_2line = 2131427481;
+			// aapt resource value: 0x7f0b0078
+			public const int design_bottom_navigation_item_max_width = 2131427448;
 			
-			// aapt resource value: 0x7f0b009a
-			public const int design_textinput_caption_translate_y = 2131427482;
+			// aapt resource value: 0x7f0b0079
+			public const int design_bottom_navigation_item_min_width = 2131427449;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int disabled_alpha_material_dark = 2131427418;
+			// aapt resource value: 0x7f0b007a
+			public const int design_bottom_navigation_margin = 2131427450;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int disabled_alpha_material_light = 2131427419;
+			// aapt resource value: 0x7f0b007b
+			public const int design_bottom_navigation_shadow_height = 2131427451;
+			
+			// aapt resource value: 0x7f0b007c
+			public const int design_bottom_navigation_text_size = 2131427452;
+			
+			// aapt resource value: 0x7f0b007d
+			public const int design_bottom_sheet_modal_elevation = 2131427453;
+			
+			// aapt resource value: 0x7f0b007e
+			public const int design_bottom_sheet_peek_height_min = 2131427454;
+			
+			// aapt resource value: 0x7f0b007f
+			public const int design_fab_border_width = 2131427455;
+			
+			// aapt resource value: 0x7f0b0080
+			public const int design_fab_elevation = 2131427456;
+			
+			// aapt resource value: 0x7f0b0081
+			public const int design_fab_image_size = 2131427457;
+			
+			// aapt resource value: 0x7f0b0082
+			public const int design_fab_size_mini = 2131427458;
+			
+			// aapt resource value: 0x7f0b0083
+			public const int design_fab_size_normal = 2131427459;
+			
+			// aapt resource value: 0x7f0b0084
+			public const int design_fab_translation_z_hovered_focused = 2131427460;
+			
+			// aapt resource value: 0x7f0b0085
+			public const int design_fab_translation_z_pressed = 2131427461;
+			
+			// aapt resource value: 0x7f0b0086
+			public const int design_navigation_elevation = 2131427462;
+			
+			// aapt resource value: 0x7f0b0087
+			public const int design_navigation_icon_padding = 2131427463;
+			
+			// aapt resource value: 0x7f0b0088
+			public const int design_navigation_icon_size = 2131427464;
+			
+			// aapt resource value: 0x7f0b0089
+			public const int design_navigation_item_horizontal_padding = 2131427465;
+			
+			// aapt resource value: 0x7f0b008a
+			public const int design_navigation_item_icon_padding = 2131427466;
+			
+			// aapt resource value: 0x7f0b0069
+			public const int design_navigation_max_width = 2131427433;
+			
+			// aapt resource value: 0x7f0b008b
+			public const int design_navigation_padding_bottom = 2131427467;
+			
+			// aapt resource value: 0x7f0b008c
+			public const int design_navigation_separator_vertical_padding = 2131427468;
+			
+			// aapt resource value: 0x7f0b006a
+			public const int design_snackbar_action_inline_max_width = 2131427434;
+			
+			// aapt resource value: 0x7f0b006b
+			public const int design_snackbar_background_corner_radius = 2131427435;
+			
+			// aapt resource value: 0x7f0b008d
+			public const int design_snackbar_elevation = 2131427469;
+			
+			// aapt resource value: 0x7f0b006c
+			public const int design_snackbar_extra_spacing_horizontal = 2131427436;
+			
+			// aapt resource value: 0x7f0b006d
+			public const int design_snackbar_max_width = 2131427437;
+			
+			// aapt resource value: 0x7f0b006e
+			public const int design_snackbar_min_width = 2131427438;
+			
+			// aapt resource value: 0x7f0b008e
+			public const int design_snackbar_padding_horizontal = 2131427470;
+			
+			// aapt resource value: 0x7f0b008f
+			public const int design_snackbar_padding_vertical = 2131427471;
+			
+			// aapt resource value: 0x7f0b006f
+			public const int design_snackbar_padding_vertical_2lines = 2131427439;
+			
+			// aapt resource value: 0x7f0b0090
+			public const int design_snackbar_text_size = 2131427472;
+			
+			// aapt resource value: 0x7f0b0091
+			public const int design_tab_max_width = 2131427473;
+			
+			// aapt resource value: 0x7f0b0070
+			public const int design_tab_scrollable_min_width = 2131427440;
+			
+			// aapt resource value: 0x7f0b0092
+			public const int design_tab_text_size = 2131427474;
+			
+			// aapt resource value: 0x7f0b0093
+			public const int design_tab_text_size_2line = 2131427475;
+			
+			// aapt resource value: 0x7f0b0094
+			public const int design_textinput_caption_translate_y = 2131427476;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int disabled_alpha_material_dark = 2131427412;
+			
+			// aapt resource value: 0x7f0b0055
+			public const int disabled_alpha_material_light = 2131427413;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int fastscroll_default_thickness = 2131427328;
@@ -5096,26 +6558,26 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0b0002
 			public const int fastscroll_minimum_range = 2131427330;
 			
+			// aapt resource value: 0x7f0b0056
+			public const int highlight_alpha_material_colored = 2131427414;
+			
+			// aapt resource value: 0x7f0b0057
+			public const int highlight_alpha_material_dark = 2131427415;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int highlight_alpha_material_light = 2131427416;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int hint_alpha_material_dark = 2131427417;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int hint_alpha_material_light = 2131427418;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int hint_pressed_alpha_material_dark = 2131427419;
+			
 			// aapt resource value: 0x7f0b005c
-			public const int highlight_alpha_material_colored = 2131427420;
-			
-			// aapt resource value: 0x7f0b005d
-			public const int highlight_alpha_material_dark = 2131427421;
-			
-			// aapt resource value: 0x7f0b005e
-			public const int highlight_alpha_material_light = 2131427422;
-			
-			// aapt resource value: 0x7f0b005f
-			public const int hint_alpha_material_dark = 2131427423;
-			
-			// aapt resource value: 0x7f0b0060
-			public const int hint_alpha_material_light = 2131427424;
-			
-			// aapt resource value: 0x7f0b0061
-			public const int hint_pressed_alpha_material_dark = 2131427425;
-			
-			// aapt resource value: 0x7f0b0062
-			public const int hint_pressed_alpha_material_light = 2131427426;
+			public const int hint_pressed_alpha_material_light = 2131427420;
 			
 			// aapt resource value: 0x7f0b0003
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2131427331;
@@ -5126,248 +6588,230 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0b0005
 			public const int item_touch_helper_swipe_escape_velocity = 2131427333;
 			
-			// aapt resource value: 0x7f0b0006
-			public const int mr_controller_volume_group_list_item_height = 2131427334;
+			// aapt resource value: 0x7f0b0095
+			public const int mtrl_bottomappbar_fabOffsetEndMode = 2131427477;
 			
-			// aapt resource value: 0x7f0b0007
-			public const int mr_controller_volume_group_list_item_icon_size = 2131427335;
+			// aapt resource value: 0x7f0b0096
+			public const int mtrl_bottomappbar_fab_cradle_margin = 2131427478;
 			
-			// aapt resource value: 0x7f0b0008
-			public const int mr_controller_volume_group_list_max_height = 2131427336;
+			// aapt resource value: 0x7f0b0097
+			public const int mtrl_bottomappbar_fab_cradle_rounded_corner_radius = 2131427479;
 			
-			// aapt resource value: 0x7f0b000b
-			public const int mr_controller_volume_group_list_padding_top = 2131427339;
+			// aapt resource value: 0x7f0b0098
+			public const int mtrl_bottomappbar_fab_cradle_vertical_offset = 2131427480;
 			
-			// aapt resource value: 0x7f0b0009
-			public const int mr_dialog_fixed_width_major = 2131427337;
+			// aapt resource value: 0x7f0b0099
+			public const int mtrl_bottomappbar_height = 2131427481;
 			
-			// aapt resource value: 0x7f0b000a
-			public const int mr_dialog_fixed_width_minor = 2131427338;
+			// aapt resource value: 0x7f0b009a
+			public const int mtrl_btn_corner_radius = 2131427482;
 			
 			// aapt resource value: 0x7f0b009b
-			public const int mtrl_bottomappbar_fabOffsetEndMode = 2131427483;
+			public const int mtrl_btn_dialog_btn_min_width = 2131427483;
 			
 			// aapt resource value: 0x7f0b009c
-			public const int mtrl_bottomappbar_fab_cradle_margin = 2131427484;
+			public const int mtrl_btn_disabled_elevation = 2131427484;
 			
 			// aapt resource value: 0x7f0b009d
-			public const int mtrl_bottomappbar_fab_cradle_rounded_corner_radius = 2131427485;
+			public const int mtrl_btn_disabled_z = 2131427485;
 			
 			// aapt resource value: 0x7f0b009e
-			public const int mtrl_bottomappbar_fab_cradle_vertical_offset = 2131427486;
+			public const int mtrl_btn_elevation = 2131427486;
 			
 			// aapt resource value: 0x7f0b009f
-			public const int mtrl_bottomappbar_height = 2131427487;
+			public const int mtrl_btn_focused_z = 2131427487;
 			
 			// aapt resource value: 0x7f0b00a0
-			public const int mtrl_btn_corner_radius = 2131427488;
+			public const int mtrl_btn_hovered_z = 2131427488;
 			
 			// aapt resource value: 0x7f0b00a1
-			public const int mtrl_btn_dialog_btn_min_width = 2131427489;
+			public const int mtrl_btn_icon_btn_padding_left = 2131427489;
 			
 			// aapt resource value: 0x7f0b00a2
-			public const int mtrl_btn_disabled_elevation = 2131427490;
+			public const int mtrl_btn_icon_padding = 2131427490;
 			
 			// aapt resource value: 0x7f0b00a3
-			public const int mtrl_btn_disabled_z = 2131427491;
+			public const int mtrl_btn_inset = 2131427491;
 			
 			// aapt resource value: 0x7f0b00a4
-			public const int mtrl_btn_elevation = 2131427492;
+			public const int mtrl_btn_letter_spacing = 2131427492;
 			
 			// aapt resource value: 0x7f0b00a5
-			public const int mtrl_btn_focused_z = 2131427493;
+			public const int mtrl_btn_padding_bottom = 2131427493;
 			
 			// aapt resource value: 0x7f0b00a6
-			public const int mtrl_btn_hovered_z = 2131427494;
+			public const int mtrl_btn_padding_left = 2131427494;
 			
 			// aapt resource value: 0x7f0b00a7
-			public const int mtrl_btn_icon_btn_padding_left = 2131427495;
+			public const int mtrl_btn_padding_right = 2131427495;
 			
 			// aapt resource value: 0x7f0b00a8
-			public const int mtrl_btn_icon_padding = 2131427496;
+			public const int mtrl_btn_padding_top = 2131427496;
 			
 			// aapt resource value: 0x7f0b00a9
-			public const int mtrl_btn_inset = 2131427497;
+			public const int mtrl_btn_pressed_z = 2131427497;
 			
 			// aapt resource value: 0x7f0b00aa
-			public const int mtrl_btn_letter_spacing = 2131427498;
+			public const int mtrl_btn_stroke_size = 2131427498;
 			
 			// aapt resource value: 0x7f0b00ab
-			public const int mtrl_btn_padding_bottom = 2131427499;
+			public const int mtrl_btn_text_btn_icon_padding = 2131427499;
 			
 			// aapt resource value: 0x7f0b00ac
-			public const int mtrl_btn_padding_left = 2131427500;
+			public const int mtrl_btn_text_btn_padding_left = 2131427500;
 			
 			// aapt resource value: 0x7f0b00ad
-			public const int mtrl_btn_padding_right = 2131427501;
+			public const int mtrl_btn_text_btn_padding_right = 2131427501;
 			
 			// aapt resource value: 0x7f0b00ae
-			public const int mtrl_btn_padding_top = 2131427502;
+			public const int mtrl_btn_text_size = 2131427502;
 			
 			// aapt resource value: 0x7f0b00af
-			public const int mtrl_btn_pressed_z = 2131427503;
+			public const int mtrl_btn_z = 2131427503;
 			
 			// aapt resource value: 0x7f0b00b0
-			public const int mtrl_btn_stroke_size = 2131427504;
+			public const int mtrl_card_elevation = 2131427504;
 			
 			// aapt resource value: 0x7f0b00b1
-			public const int mtrl_btn_text_btn_icon_padding = 2131427505;
+			public const int mtrl_card_spacing = 2131427505;
 			
 			// aapt resource value: 0x7f0b00b2
-			public const int mtrl_btn_text_btn_padding_left = 2131427506;
+			public const int mtrl_chip_pressed_translation_z = 2131427506;
 			
 			// aapt resource value: 0x7f0b00b3
-			public const int mtrl_btn_text_btn_padding_right = 2131427507;
+			public const int mtrl_chip_text_size = 2131427507;
 			
 			// aapt resource value: 0x7f0b00b4
-			public const int mtrl_btn_text_size = 2131427508;
+			public const int mtrl_fab_elevation = 2131427508;
 			
 			// aapt resource value: 0x7f0b00b5
-			public const int mtrl_btn_z = 2131427509;
+			public const int mtrl_fab_translation_z_hovered_focused = 2131427509;
 			
 			// aapt resource value: 0x7f0b00b6
-			public const int mtrl_card_elevation = 2131427510;
+			public const int mtrl_fab_translation_z_pressed = 2131427510;
 			
 			// aapt resource value: 0x7f0b00b7
-			public const int mtrl_card_spacing = 2131427511;
+			public const int mtrl_navigation_elevation = 2131427511;
 			
 			// aapt resource value: 0x7f0b00b8
-			public const int mtrl_chip_pressed_translation_z = 2131427512;
+			public const int mtrl_navigation_item_horizontal_padding = 2131427512;
 			
 			// aapt resource value: 0x7f0b00b9
-			public const int mtrl_chip_text_size = 2131427513;
+			public const int mtrl_navigation_item_icon_padding = 2131427513;
 			
 			// aapt resource value: 0x7f0b00ba
-			public const int mtrl_fab_elevation = 2131427514;
+			public const int mtrl_snackbar_background_corner_radius = 2131427514;
 			
 			// aapt resource value: 0x7f0b00bb
-			public const int mtrl_fab_translation_z_hovered_focused = 2131427515;
+			public const int mtrl_snackbar_margin = 2131427515;
 			
 			// aapt resource value: 0x7f0b00bc
-			public const int mtrl_fab_translation_z_pressed = 2131427516;
+			public const int mtrl_textinput_box_bottom_offset = 2131427516;
 			
 			// aapt resource value: 0x7f0b00bd
-			public const int mtrl_navigation_elevation = 2131427517;
+			public const int mtrl_textinput_box_corner_radius_medium = 2131427517;
 			
 			// aapt resource value: 0x7f0b00be
-			public const int mtrl_navigation_item_horizontal_padding = 2131427518;
+			public const int mtrl_textinput_box_corner_radius_small = 2131427518;
 			
 			// aapt resource value: 0x7f0b00bf
-			public const int mtrl_navigation_item_icon_padding = 2131427519;
+			public const int mtrl_textinput_box_label_cutout_padding = 2131427519;
 			
 			// aapt resource value: 0x7f0b00c0
-			public const int mtrl_snackbar_background_corner_radius = 2131427520;
+			public const int mtrl_textinput_box_padding_end = 2131427520;
 			
 			// aapt resource value: 0x7f0b00c1
-			public const int mtrl_snackbar_margin = 2131427521;
+			public const int mtrl_textinput_box_stroke_width_default = 2131427521;
 			
 			// aapt resource value: 0x7f0b00c2
-			public const int mtrl_textinput_box_bottom_offset = 2131427522;
+			public const int mtrl_textinput_box_stroke_width_focused = 2131427522;
 			
 			// aapt resource value: 0x7f0b00c3
-			public const int mtrl_textinput_box_corner_radius_medium = 2131427523;
+			public const int mtrl_textinput_outline_box_expanded_padding = 2131427523;
 			
 			// aapt resource value: 0x7f0b00c4
-			public const int mtrl_textinput_box_corner_radius_small = 2131427524;
+			public const int mtrl_toolbar_default_height = 2131427524;
 			
-			// aapt resource value: 0x7f0b00c5
-			public const int mtrl_textinput_box_label_cutout_padding = 2131427525;
+			// aapt resource value: 0x7f0b00d2
+			public const int notification_action_icon_size = 2131427538;
 			
-			// aapt resource value: 0x7f0b00c6
-			public const int mtrl_textinput_box_padding_end = 2131427526;
+			// aapt resource value: 0x7f0b00d3
+			public const int notification_action_text_size = 2131427539;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int mtrl_textinput_box_stroke_width_default = 2131427527;
+			// aapt resource value: 0x7f0b00d4
+			public const int notification_big_circle_margin = 2131427540;
 			
 			// aapt resource value: 0x7f0b00c8
-			public const int mtrl_textinput_box_stroke_width_focused = 2131427528;
+			public const int notification_content_margin_start = 2131427528;
+			
+			// aapt resource value: 0x7f0b00d5
+			public const int notification_large_icon_height = 2131427541;
+			
+			// aapt resource value: 0x7f0b00d6
+			public const int notification_large_icon_width = 2131427542;
 			
 			// aapt resource value: 0x7f0b00c9
-			public const int mtrl_textinput_outline_box_expanded_padding = 2131427529;
+			public const int notification_main_column_padding_top = 2131427529;
 			
 			// aapt resource value: 0x7f0b00ca
-			public const int mtrl_toolbar_default_height = 2131427530;
+			public const int notification_media_narrow_margin = 2131427530;
+			
+			// aapt resource value: 0x7f0b00d7
+			public const int notification_right_icon_size = 2131427543;
+			
+			// aapt resource value: 0x7f0b00c7
+			public const int notification_right_side_padding_top = 2131427527;
 			
 			// aapt resource value: 0x7f0b00d8
-			public const int notification_action_icon_size = 2131427544;
+			public const int notification_small_icon_background_padding = 2131427544;
 			
 			// aapt resource value: 0x7f0b00d9
-			public const int notification_action_text_size = 2131427545;
+			public const int notification_small_icon_size_as_large = 2131427545;
 			
 			// aapt resource value: 0x7f0b00da
-			public const int notification_big_circle_margin = 2131427546;
-			
-			// aapt resource value: 0x7f0b00ce
-			public const int notification_content_margin_start = 2131427534;
+			public const int notification_subtext_size = 2131427546;
 			
 			// aapt resource value: 0x7f0b00db
-			public const int notification_large_icon_height = 2131427547;
+			public const int notification_top_pad = 2131427547;
 			
 			// aapt resource value: 0x7f0b00dc
-			public const int notification_large_icon_width = 2131427548;
-			
-			// aapt resource value: 0x7f0b00cf
-			public const int notification_main_column_padding_top = 2131427535;
-			
-			// aapt resource value: 0x7f0b00d0
-			public const int notification_media_narrow_margin = 2131427536;
-			
-			// aapt resource value: 0x7f0b00dd
-			public const int notification_right_icon_size = 2131427549;
-			
-			// aapt resource value: 0x7f0b00cd
-			public const int notification_right_side_padding_top = 2131427533;
-			
-			// aapt resource value: 0x7f0b00de
-			public const int notification_small_icon_background_padding = 2131427550;
-			
-			// aapt resource value: 0x7f0b00df
-			public const int notification_small_icon_size_as_large = 2131427551;
-			
-			// aapt resource value: 0x7f0b00e0
-			public const int notification_subtext_size = 2131427552;
-			
-			// aapt resource value: 0x7f0b00e1
-			public const int notification_top_pad = 2131427553;
-			
-			// aapt resource value: 0x7f0b00e2
-			public const int notification_top_pad_large_text = 2131427554;
-			
-			// aapt resource value: 0x7f0b006b
-			public const int subtitle_corner_radius = 2131427435;
-			
-			// aapt resource value: 0x7f0b006c
-			public const int subtitle_outline_width = 2131427436;
-			
-			// aapt resource value: 0x7f0b006d
-			public const int subtitle_shadow_offset = 2131427437;
-			
-			// aapt resource value: 0x7f0b006e
-			public const int subtitle_shadow_radius = 2131427438;
-			
-			// aapt resource value: 0x7f0b0063
-			public const int tooltip_corner_radius = 2131427427;
-			
-			// aapt resource value: 0x7f0b0064
-			public const int tooltip_horizontal_padding = 2131427428;
+			public const int notification_top_pad_large_text = 2131427548;
 			
 			// aapt resource value: 0x7f0b0065
-			public const int tooltip_margin = 2131427429;
+			public const int subtitle_corner_radius = 2131427429;
 			
 			// aapt resource value: 0x7f0b0066
-			public const int tooltip_precise_anchor_extra_offset = 2131427430;
+			public const int subtitle_outline_width = 2131427430;
 			
 			// aapt resource value: 0x7f0b0067
-			public const int tooltip_precise_anchor_threshold = 2131427431;
+			public const int subtitle_shadow_offset = 2131427431;
 			
 			// aapt resource value: 0x7f0b0068
-			public const int tooltip_vertical_padding = 2131427432;
+			public const int subtitle_shadow_radius = 2131427432;
 			
-			// aapt resource value: 0x7f0b0069
-			public const int tooltip_y_offset_non_touch = 2131427433;
+			// aapt resource value: 0x7f0b005d
+			public const int tooltip_corner_radius = 2131427421;
 			
-			// aapt resource value: 0x7f0b006a
-			public const int tooltip_y_offset_touch = 2131427434;
+			// aapt resource value: 0x7f0b005e
+			public const int tooltip_horizontal_padding = 2131427422;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int tooltip_margin = 2131427423;
+			
+			// aapt resource value: 0x7f0b0060
+			public const int tooltip_precise_anchor_extra_offset = 2131427424;
+			
+			// aapt resource value: 0x7f0b0061
+			public const int tooltip_precise_anchor_threshold = 2131427425;
+			
+			// aapt resource value: 0x7f0b0062
+			public const int tooltip_vertical_padding = 2131427426;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int tooltip_y_offset_non_touch = 2131427427;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int tooltip_y_offset_touch = 2131427428;
 			
 			static Dimension()
 			{
@@ -5637,26 +7081,26 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f02014a
-			public const int avd_hide_password_1 = 2130837834;
+			// aapt resource value: 0x7f020085
+			public const int avd_hide_password_1 = 2130837637;
 			
-			// aapt resource value: 0x7f02014b
-			public const int avd_hide_password_2 = 2130837835;
+			// aapt resource value: 0x7f020086
+			public const int avd_hide_password_2 = 2130837638;
 			
-			// aapt resource value: 0x7f02014c
-			public const int avd_hide_password_3 = 2130837836;
+			// aapt resource value: 0x7f020087
+			public const int avd_hide_password_3 = 2130837639;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f02014d
-			public const int avd_show_password_1 = 2130837837;
+			// aapt resource value: 0x7f020088
+			public const int avd_show_password_1 = 2130837640;
 			
-			// aapt resource value: 0x7f02014e
-			public const int avd_show_password_2 = 2130837838;
+			// aapt resource value: 0x7f020089
+			public const int avd_show_password_2 = 2130837641;
 			
-			// aapt resource value: 0x7f02014f
-			public const int avd_show_password_3 = 2130837839;
+			// aapt resource value: 0x7f02008a
+			public const int avd_show_password_3 = 2130837642;
 			
 			// aapt resource value: 0x7f020056
 			public const int common_full_open_on_phone = 2130837590;
@@ -5740,655 +7184,64 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int googleg_standard_color_18 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_audiotrack_dark = 2130837617;
+			public const int ic_mtrl_chip_checked_black = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_audiotrack_light = 2130837618;
+			public const int ic_mtrl_chip_checked_circle = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_dialog_close_dark = 2130837619;
+			public const int ic_mtrl_chip_close_circle = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_dialog_close_light = 2130837620;
+			public const int mtrl_snackbar_background = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_00 = 2130837621;
+			public const int mtrl_tabs_default_indicator = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_collapse_01 = 2130837622;
+			public const int navigation_empty_icon = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_collapse_02 = 2130837623;
+			public const int notification_action_background = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_collapse_03 = 2130837624;
+			public const int notification_bg = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_collapse_04 = 2130837625;
+			public const int notification_bg_low = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_collapse_05 = 2130837626;
+			public const int notification_bg_low_normal = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_collapse_06 = 2130837627;
+			public const int notification_bg_low_pressed = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_collapse_07 = 2130837628;
+			public const int notification_bg_normal = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_collapse_08 = 2130837629;
+			public const int notification_bg_normal_pressed = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_collapse_09 = 2130837630;
-			
-			// aapt resource value: 0x7f02007f
-			public const int ic_group_collapse_10 = 2130837631;
-			
-			// aapt resource value: 0x7f020080
-			public const int ic_group_collapse_11 = 2130837632;
-			
-			// aapt resource value: 0x7f020081
-			public const int ic_group_collapse_12 = 2130837633;
-			
-			// aapt resource value: 0x7f020082
-			public const int ic_group_collapse_13 = 2130837634;
+			public const int notification_icon_background = 2130837630;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_collapse_14 = 2130837635;
+			public const int notification_template_icon_bg = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_collapse_15 = 2130837636;
+			public const int notification_template_icon_low_bg = 2130837636;
 			
-			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_00 = 2130837637;
+			// aapt resource value: 0x7f02007f
+			public const int notification_tile_bg = 2130837631;
 			
-			// aapt resource value: 0x7f020086
-			public const int ic_group_expand_01 = 2130837638;
+			// aapt resource value: 0x7f020080
+			public const int notify_panel_notification_icon_bg = 2130837632;
 			
-			// aapt resource value: 0x7f020087
-			public const int ic_group_expand_02 = 2130837639;
+			// aapt resource value: 0x7f020081
+			public const int tooltip_frame_dark = 2130837633;
 			
-			// aapt resource value: 0x7f020088
-			public const int ic_group_expand_03 = 2130837640;
-			
-			// aapt resource value: 0x7f020089
-			public const int ic_group_expand_04 = 2130837641;
-			
-			// aapt resource value: 0x7f02008a
-			public const int ic_group_expand_05 = 2130837642;
-			
-			// aapt resource value: 0x7f02008b
-			public const int ic_group_expand_06 = 2130837643;
-			
-			// aapt resource value: 0x7f02008c
-			public const int ic_group_expand_07 = 2130837644;
-			
-			// aapt resource value: 0x7f02008d
-			public const int ic_group_expand_08 = 2130837645;
-			
-			// aapt resource value: 0x7f02008e
-			public const int ic_group_expand_09 = 2130837646;
-			
-			// aapt resource value: 0x7f02008f
-			public const int ic_group_expand_10 = 2130837647;
-			
-			// aapt resource value: 0x7f020090
-			public const int ic_group_expand_11 = 2130837648;
-			
-			// aapt resource value: 0x7f020091
-			public const int ic_group_expand_12 = 2130837649;
-			
-			// aapt resource value: 0x7f020092
-			public const int ic_group_expand_13 = 2130837650;
-			
-			// aapt resource value: 0x7f020093
-			public const int ic_group_expand_14 = 2130837651;
-			
-			// aapt resource value: 0x7f020094
-			public const int ic_group_expand_15 = 2130837652;
-			
-			// aapt resource value: 0x7f020095
-			public const int ic_media_pause_dark = 2130837653;
-			
-			// aapt resource value: 0x7f020096
-			public const int ic_media_pause_light = 2130837654;
-			
-			// aapt resource value: 0x7f020097
-			public const int ic_media_play_dark = 2130837655;
-			
-			// aapt resource value: 0x7f020098
-			public const int ic_media_play_light = 2130837656;
-			
-			// aapt resource value: 0x7f020099
-			public const int ic_media_stop_dark = 2130837657;
-			
-			// aapt resource value: 0x7f02009a
-			public const int ic_media_stop_light = 2130837658;
-			
-			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_00_dark = 2130837659;
-			
-			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_00_light = 2130837660;
-			
-			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_01_dark = 2130837661;
-			
-			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_01_light = 2130837662;
-			
-			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_02_dark = 2130837663;
-			
-			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_02_light = 2130837664;
-			
-			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_03_dark = 2130837665;
-			
-			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_03_light = 2130837666;
-			
-			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_04_dark = 2130837667;
-			
-			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_04_light = 2130837668;
-			
-			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_05_dark = 2130837669;
-			
-			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_05_light = 2130837670;
-			
-			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_06_dark = 2130837671;
-			
-			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_06_light = 2130837672;
-			
-			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_07_dark = 2130837673;
-			
-			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_07_light = 2130837674;
-			
-			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_08_dark = 2130837675;
-			
-			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_08_light = 2130837676;
-			
-			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_09_dark = 2130837677;
-			
-			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_09_light = 2130837678;
-			
-			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_10_dark = 2130837679;
-			
-			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_10_light = 2130837680;
-			
-			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_11_dark = 2130837681;
-			
-			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_11_light = 2130837682;
-			
-			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_12_dark = 2130837683;
-			
-			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_12_light = 2130837684;
-			
-			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_13_dark = 2130837685;
-			
-			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_13_light = 2130837686;
-			
-			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_14_dark = 2130837687;
-			
-			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_14_light = 2130837688;
-			
-			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_15_dark = 2130837689;
-			
-			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_15_light = 2130837690;
-			
-			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_16_dark = 2130837691;
-			
-			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_16_light = 2130837692;
-			
-			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_17_dark = 2130837693;
-			
-			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_17_light = 2130837694;
-			
-			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_18_dark = 2130837695;
-			
-			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_18_light = 2130837696;
-			
-			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_19_dark = 2130837697;
-			
-			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_19_light = 2130837698;
-			
-			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_20_dark = 2130837699;
-			
-			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_20_light = 2130837700;
-			
-			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connected_21_dark = 2130837701;
-			
-			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connected_21_light = 2130837702;
-			
-			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connected_22_dark = 2130837703;
-			
-			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connected_22_light = 2130837704;
-			
-			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connected_23_dark = 2130837705;
-			
-			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connected_23_light = 2130837706;
-			
-			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connected_24_dark = 2130837707;
-			
-			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connected_24_light = 2130837708;
-			
-			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connected_25_dark = 2130837709;
-			
-			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connected_25_light = 2130837710;
-			
-			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connected_26_dark = 2130837711;
-			
-			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connected_26_light = 2130837712;
-			
-			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connected_27_dark = 2130837713;
-			
-			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connected_27_light = 2130837714;
-			
-			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connected_28_dark = 2130837715;
-			
-			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connected_28_light = 2130837716;
-			
-			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connected_29_dark = 2130837717;
-			
-			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connected_29_light = 2130837718;
-			
-			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connected_30_dark = 2130837719;
-			
-			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connected_30_light = 2130837720;
-			
-			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_00_dark = 2130837721;
-			
-			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_00_light = 2130837722;
-			
-			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_01_dark = 2130837723;
-			
-			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_01_light = 2130837724;
-			
-			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_02_dark = 2130837725;
-			
-			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_02_light = 2130837726;
-			
-			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_03_dark = 2130837727;
-			
-			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_03_light = 2130837728;
-			
-			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_04_dark = 2130837729;
-			
-			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_04_light = 2130837730;
-			
-			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_05_dark = 2130837731;
-			
-			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_05_light = 2130837732;
-			
-			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_06_dark = 2130837733;
-			
-			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_06_light = 2130837734;
-			
-			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_07_dark = 2130837735;
-			
-			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_07_light = 2130837736;
-			
-			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_08_dark = 2130837737;
-			
-			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_08_light = 2130837738;
-			
-			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_09_dark = 2130837739;
-			
-			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_09_light = 2130837740;
-			
-			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_10_dark = 2130837741;
-			
-			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_10_light = 2130837742;
-			
-			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_11_dark = 2130837743;
-			
-			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_11_light = 2130837744;
-			
-			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_12_dark = 2130837745;
-			
-			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_12_light = 2130837746;
-			
-			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_13_dark = 2130837747;
-			
-			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_13_light = 2130837748;
-			
-			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_14_dark = 2130837749;
-			
-			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_14_light = 2130837750;
-			
-			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_15_dark = 2130837751;
-			
-			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_15_light = 2130837752;
-			
-			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_16_dark = 2130837753;
-			
-			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_16_light = 2130837754;
-			
-			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_17_dark = 2130837755;
-			
-			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_17_light = 2130837756;
-			
-			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_18_dark = 2130837757;
-			
-			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_18_light = 2130837758;
-			
-			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_19_dark = 2130837759;
-			
-			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_19_light = 2130837760;
-			
-			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_20_dark = 2130837761;
-			
-			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_20_light = 2130837762;
-			
-			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_connecting_21_dark = 2130837763;
-			
-			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_connecting_21_light = 2130837764;
-			
-			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_connecting_22_dark = 2130837765;
-			
-			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_connecting_22_light = 2130837766;
-			
-			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_connecting_23_dark = 2130837767;
-			
-			// aapt resource value: 0x7f020108
-			public const int ic_mr_button_connecting_23_light = 2130837768;
-			
-			// aapt resource value: 0x7f020109
-			public const int ic_mr_button_connecting_24_dark = 2130837769;
-			
-			// aapt resource value: 0x7f02010a
-			public const int ic_mr_button_connecting_24_light = 2130837770;
-			
-			// aapt resource value: 0x7f02010b
-			public const int ic_mr_button_connecting_25_dark = 2130837771;
-			
-			// aapt resource value: 0x7f02010c
-			public const int ic_mr_button_connecting_25_light = 2130837772;
-			
-			// aapt resource value: 0x7f02010d
-			public const int ic_mr_button_connecting_26_dark = 2130837773;
-			
-			// aapt resource value: 0x7f02010e
-			public const int ic_mr_button_connecting_26_light = 2130837774;
-			
-			// aapt resource value: 0x7f02010f
-			public const int ic_mr_button_connecting_27_dark = 2130837775;
-			
-			// aapt resource value: 0x7f020110
-			public const int ic_mr_button_connecting_27_light = 2130837776;
-			
-			// aapt resource value: 0x7f020111
-			public const int ic_mr_button_connecting_28_dark = 2130837777;
-			
-			// aapt resource value: 0x7f020112
-			public const int ic_mr_button_connecting_28_light = 2130837778;
-			
-			// aapt resource value: 0x7f020113
-			public const int ic_mr_button_connecting_29_dark = 2130837779;
-			
-			// aapt resource value: 0x7f020114
-			public const int ic_mr_button_connecting_29_light = 2130837780;
-			
-			// aapt resource value: 0x7f020115
-			public const int ic_mr_button_connecting_30_dark = 2130837781;
-			
-			// aapt resource value: 0x7f020116
-			public const int ic_mr_button_connecting_30_light = 2130837782;
-			
-			// aapt resource value: 0x7f020117
-			public const int ic_mr_button_disabled_dark = 2130837783;
-			
-			// aapt resource value: 0x7f020118
-			public const int ic_mr_button_disabled_light = 2130837784;
-			
-			// aapt resource value: 0x7f020119
-			public const int ic_mr_button_disconnected_dark = 2130837785;
-			
-			// aapt resource value: 0x7f02011a
-			public const int ic_mr_button_disconnected_light = 2130837786;
-			
-			// aapt resource value: 0x7f02011b
-			public const int ic_mr_button_grey = 2130837787;
-			
-			// aapt resource value: 0x7f02011c
-			public const int ic_mtrl_chip_checked_black = 2130837788;
-			
-			// aapt resource value: 0x7f02011d
-			public const int ic_mtrl_chip_checked_circle = 2130837789;
-			
-			// aapt resource value: 0x7f02011e
-			public const int ic_mtrl_chip_close_circle = 2130837790;
-			
-			// aapt resource value: 0x7f02011f
-			public const int ic_vol_type_speaker_dark = 2130837791;
-			
-			// aapt resource value: 0x7f020120
-			public const int ic_vol_type_speaker_group_dark = 2130837792;
-			
-			// aapt resource value: 0x7f020121
-			public const int ic_vol_type_speaker_group_light = 2130837793;
-			
-			// aapt resource value: 0x7f020122
-			public const int ic_vol_type_speaker_light = 2130837794;
-			
-			// aapt resource value: 0x7f020123
-			public const int ic_vol_type_tv_dark = 2130837795;
-			
-			// aapt resource value: 0x7f020124
-			public const int ic_vol_type_tv_light = 2130837796;
-			
-			// aapt resource value: 0x7f020125
-			public const int mr_button_connected_dark = 2130837797;
-			
-			// aapt resource value: 0x7f020126
-			public const int mr_button_connected_light = 2130837798;
-			
-			// aapt resource value: 0x7f020127
-			public const int mr_button_connecting_dark = 2130837799;
-			
-			// aapt resource value: 0x7f020128
-			public const int mr_button_connecting_light = 2130837800;
-			
-			// aapt resource value: 0x7f020129
-			public const int mr_button_dark = 2130837801;
-			
-			// aapt resource value: 0x7f02012a
-			public const int mr_button_light = 2130837802;
-			
-			// aapt resource value: 0x7f02012b
-			public const int mr_dialog_close_dark = 2130837803;
-			
-			// aapt resource value: 0x7f02012c
-			public const int mr_dialog_close_light = 2130837804;
-			
-			// aapt resource value: 0x7f02012d
-			public const int mr_dialog_material_background_dark = 2130837805;
-			
-			// aapt resource value: 0x7f02012e
-			public const int mr_dialog_material_background_light = 2130837806;
-			
-			// aapt resource value: 0x7f02012f
-			public const int mr_group_collapse = 2130837807;
-			
-			// aapt resource value: 0x7f020130
-			public const int mr_group_expand = 2130837808;
-			
-			// aapt resource value: 0x7f020131
-			public const int mr_media_pause_dark = 2130837809;
-			
-			// aapt resource value: 0x7f020132
-			public const int mr_media_pause_light = 2130837810;
-			
-			// aapt resource value: 0x7f020133
-			public const int mr_media_play_dark = 2130837811;
-			
-			// aapt resource value: 0x7f020134
-			public const int mr_media_play_light = 2130837812;
-			
-			// aapt resource value: 0x7f020135
-			public const int mr_media_stop_dark = 2130837813;
-			
-			// aapt resource value: 0x7f020136
-			public const int mr_media_stop_light = 2130837814;
-			
-			// aapt resource value: 0x7f020137
-			public const int mr_vol_type_audiotrack_dark = 2130837815;
-			
-			// aapt resource value: 0x7f020138
-			public const int mr_vol_type_audiotrack_light = 2130837816;
-			
-			// aapt resource value: 0x7f020139
-			public const int mtrl_snackbar_background = 2130837817;
-			
-			// aapt resource value: 0x7f02013a
-			public const int mtrl_tabs_default_indicator = 2130837818;
-			
-			// aapt resource value: 0x7f02013b
-			public const int navigation_empty_icon = 2130837819;
-			
-			// aapt resource value: 0x7f02013c
-			public const int notification_action_background = 2130837820;
-			
-			// aapt resource value: 0x7f02013d
-			public const int notification_bg = 2130837821;
-			
-			// aapt resource value: 0x7f02013e
-			public const int notification_bg_low = 2130837822;
-			
-			// aapt resource value: 0x7f02013f
-			public const int notification_bg_low_normal = 2130837823;
-			
-			// aapt resource value: 0x7f020140
-			public const int notification_bg_low_pressed = 2130837824;
-			
-			// aapt resource value: 0x7f020141
-			public const int notification_bg_normal = 2130837825;
-			
-			// aapt resource value: 0x7f020142
-			public const int notification_bg_normal_pressed = 2130837826;
-			
-			// aapt resource value: 0x7f020143
-			public const int notification_icon_background = 2130837827;
-			
-			// aapt resource value: 0x7f020148
-			public const int notification_template_icon_bg = 2130837832;
-			
-			// aapt resource value: 0x7f020149
-			public const int notification_template_icon_low_bg = 2130837833;
-			
-			// aapt resource value: 0x7f020144
-			public const int notification_tile_bg = 2130837828;
-			
-			// aapt resource value: 0x7f020145
-			public const int notify_panel_notification_icon_bg = 2130837829;
-			
-			// aapt resource value: 0x7f020146
-			public const int tooltip_frame_dark = 2130837830;
-			
-			// aapt resource value: 0x7f020147
-			public const int tooltip_frame_light = 2130837831;
+			// aapt resource value: 0x7f020082
+			public const int tooltip_frame_light = 2130837634;
 			
 			static Drawable()
 			{
@@ -6421,8 +7274,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0046
 			public const int SYM = 2131492934;
 			
-			// aapt resource value: 0x7f0c00eb
-			public const int action0 = 2131493099;
+			// aapt resource value: 0x7f0c00bc
+			public const int action0 = 2131493052;
 			
 			// aapt resource value: 0x7f0c0094
 			public const int action_bar = 2131493012;
@@ -6445,17 +7298,17 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0070
 			public const int action_bar_title = 2131492976;
 			
-			// aapt resource value: 0x7f0c00e8
-			public const int action_container = 2131493096;
+			// aapt resource value: 0x7f0c00b9
+			public const int action_container = 2131493049;
 			
 			// aapt resource value: 0x7f0c0095
 			public const int action_context_bar = 2131493013;
 			
-			// aapt resource value: 0x7f0c00ef
-			public const int action_divider = 2131493103;
+			// aapt resource value: 0x7f0c00c0
+			public const int action_divider = 2131493056;
 			
-			// aapt resource value: 0x7f0c00e9
-			public const int action_image = 2131493097;
+			// aapt resource value: 0x7f0c00ba
+			public const int action_image = 2131493050;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -6472,11 +7325,11 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0072
 			public const int action_mode_close_button = 2131492978;
 			
-			// aapt resource value: 0x7f0c00ea
-			public const int action_text = 2131493098;
+			// aapt resource value: 0x7f0c00bb
+			public const int action_text = 2131493051;
 			
-			// aapt resource value: 0x7f0c00f8
-			public const int actions = 2131493112;
+			// aapt resource value: 0x7f0c00c9
+			public const int actions = 2131493065;
 			
 			// aapt resource value: 0x7f0c0073
 			public const int activity_chooser_view_content = 2131492979;
@@ -6538,8 +7391,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0079
 			public const int buttonPanel = 2131492985;
 			
-			// aapt resource value: 0x7f0c00ec
-			public const int cancel_action = 2131493100;
+			// aapt resource value: 0x7f0c00bd
+			public const int cancel_action = 2131493053;
 			
 			// aapt resource value: 0x7f0c0054
 			public const int center = 2131492948;
@@ -6553,8 +7406,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c008d
 			public const int checkbox = 2131493005;
 			
-			// aapt resource value: 0x7f0c00f4
-			public const int chronometer = 2131493108;
+			// aapt resource value: 0x7f0c00c5
+			public const int chronometer = 2131493061;
 			
 			// aapt resource value: 0x7f0c0068
 			public const int clip_horizontal = 2131492968;
@@ -6616,8 +7469,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c003f
 			public const int end = 2131492927;
 			
-			// aapt resource value: 0x7f0c00fa
-			public const int end_padder = 2131493114;
+			// aapt resource value: 0x7f0c00cb
+			public const int end_padder = 2131493067;
 			
 			// aapt resource value: 0x7f0c004e
 			public const int enterAlways = 2131492942;
@@ -6673,8 +7526,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0078
 			public const int icon = 2131492984;
 			
-			// aapt resource value: 0x7f0c00f9
-			public const int icon_group = 2131493113;
+			// aapt resource value: 0x7f0c00ca
+			public const int icon_group = 2131493066;
 			
 			// aapt resource value: 0x7f0c0027
 			public const int icon_only = 2131492903;
@@ -6685,8 +7538,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0075
 			public const int image = 2131492981;
 			
-			// aapt resource value: 0x7f0c00f5
-			public const int info = 2131493109;
+			// aapt resource value: 0x7f0c00c6
+			public const int info = 2131493062;
 			
 			// aapt resource value: 0x7f0c006f
 			public const int italic = 2131492975;
@@ -6718,23 +7571,23 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0077
 			public const int list_item = 2131492983;
 			
-			// aapt resource value: 0x7f0c00fb
-			public const int main_appbar = 2131493115;
+			// aapt resource value: 0x7f0c00cc
+			public const int main_appbar = 2131493068;
 			
-			// aapt resource value: 0x7f0c00fe
-			public const int main_scrollview = 2131493118;
+			// aapt resource value: 0x7f0c00cf
+			public const int main_scrollview = 2131493071;
 			
-			// aapt resource value: 0x7f0c00fd
-			public const int main_tablayout = 2131493117;
+			// aapt resource value: 0x7f0c00ce
+			public const int main_tablayout = 2131493070;
 			
-			// aapt resource value: 0x7f0c00fc
-			public const int main_toolbar = 2131493116;
+			// aapt resource value: 0x7f0c00cd
+			public const int main_toolbar = 2131493069;
 			
-			// aapt resource value: 0x7f0c0105
-			public const int masked = 2131493125;
+			// aapt resource value: 0x7f0c00d6
+			public const int masked = 2131493078;
 			
-			// aapt resource value: 0x7f0c00ee
-			public const int media_actions = 2131493102;
+			// aapt resource value: 0x7f0c00bf
+			public const int media_actions = 2131493055;
 			
 			// aapt resource value: 0x7f0c00a3
 			public const int message = 2131493027;
@@ -6744,144 +7597,6 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			// aapt resource value: 0x7f0c0060
 			public const int mini = 2131492960;
-			
-			// aapt resource value: 0x7f0c00d5
-			public const int mr_art = 2131493077;
-			
-			// aapt resource value: 0x7f0c00c6
-			public const int mr_cast_checkbox = 2131493062;
-			
-			// aapt resource value: 0x7f0c00bf
-			public const int mr_cast_close_button = 2131493055;
-			
-			// aapt resource value: 0x7f0c00ba
-			public const int mr_cast_group_icon = 2131493050;
-			
-			// aapt resource value: 0x7f0c00bb
-			public const int mr_cast_group_name = 2131493051;
-			
-			// aapt resource value: 0x7f0c00b9
-			public const int mr_cast_list = 2131493049;
-			
-			// aapt resource value: 0x7f0c00be
-			public const int mr_cast_meta = 2131493054;
-			
-			// aapt resource value: 0x7f0c00c0
-			public const int mr_cast_meta_art = 2131493056;
-			
-			// aapt resource value: 0x7f0c00c2
-			public const int mr_cast_meta_subtitle = 2131493058;
-			
-			// aapt resource value: 0x7f0c00c1
-			public const int mr_cast_meta_title = 2131493057;
-			
-			// aapt resource value: 0x7f0c00c4
-			public const int mr_cast_route_icon = 2131493060;
-			
-			// aapt resource value: 0x7f0c00c5
-			public const int mr_cast_route_name = 2131493061;
-			
-			// aapt resource value: 0x7f0c00c3
-			public const int mr_cast_stop_button = 2131493059;
-			
-			// aapt resource value: 0x7f0c00c7
-			public const int mr_cast_volume_layout = 2131493063;
-			
-			// aapt resource value: 0x7f0c00c8
-			public const int mr_cast_volume_slider = 2131493064;
-			
-			// aapt resource value: 0x7f0c00ca
-			public const int mr_chooser_list = 2131493066;
-			
-			// aapt resource value: 0x7f0c00cd
-			public const int mr_chooser_route_desc = 2131493069;
-			
-			// aapt resource value: 0x7f0c00cb
-			public const int mr_chooser_route_icon = 2131493067;
-			
-			// aapt resource value: 0x7f0c00cc
-			public const int mr_chooser_route_name = 2131493068;
-			
-			// aapt resource value: 0x7f0c00c9
-			public const int mr_chooser_title = 2131493065;
-			
-			// aapt resource value: 0x7f0c00d2
-			public const int mr_close = 2131493074;
-			
-			// aapt resource value: 0x7f0c00d8
-			public const int mr_control_divider = 2131493080;
-			
-			// aapt resource value: 0x7f0c00e3
-			public const int mr_control_playback_ctrl = 2131493091;
-			
-			// aapt resource value: 0x7f0c00e6
-			public const int mr_control_subtitle = 2131493094;
-			
-			// aapt resource value: 0x7f0c00e5
-			public const int mr_control_title = 2131493093;
-			
-			// aapt resource value: 0x7f0c00e4
-			public const int mr_control_title_container = 2131493092;
-			
-			// aapt resource value: 0x7f0c00d3
-			public const int mr_custom_control = 2131493075;
-			
-			// aapt resource value: 0x7f0c00d4
-			public const int mr_default_control = 2131493076;
-			
-			// aapt resource value: 0x7f0c00cf
-			public const int mr_dialog_area = 2131493071;
-			
-			// aapt resource value: 0x7f0c00de
-			public const int mr_dialog_header_name = 2131493086;
-			
-			// aapt resource value: 0x7f0c00ce
-			public const int mr_expandable_area = 2131493070;
-			
-			// aapt resource value: 0x7f0c00e7
-			public const int mr_group_expand_collapse = 2131493095;
-			
-			// aapt resource value: 0x7f0c00bc
-			public const int mr_group_volume_route_name = 2131493052;
-			
-			// aapt resource value: 0x7f0c00bd
-			public const int mr_group_volume_slider = 2131493053;
-			
-			// aapt resource value: 0x7f0c00d6
-			public const int mr_media_main_control = 2131493078;
-			
-			// aapt resource value: 0x7f0c00d1
-			public const int mr_name = 2131493073;
-			
-			// aapt resource value: 0x7f0c00df
-			public const int mr_picker_close_button = 2131493087;
-			
-			// aapt resource value: 0x7f0c00e0
-			public const int mr_picker_list = 2131493088;
-			
-			// aapt resource value: 0x7f0c00e1
-			public const int mr_picker_route_icon = 2131493089;
-			
-			// aapt resource value: 0x7f0c00e2
-			public const int mr_picker_route_name = 2131493090;
-			
-			// aapt resource value: 0x7f0c00d7
-			public const int mr_playback_control = 2131493079;
-			
-			// aapt resource value: 0x7f0c00d0
-			public const int mr_title_bar = 2131493072;
-			
-			// aapt resource value: 0x7f0c00d9
-			public const int mr_volume_control = 2131493081;
-			
-			// aapt resource value: 0x7f0c00da
-			public const int mr_volume_group_list = 2131493082;
-			
-			// aapt resource value: 0x7f0c00dc
-			public const int mr_volume_item_icon = 2131493084;
-			
-			// aapt resource value: 0x7f0c00dd
-			public const int mr_volume_slider = 2131493085;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int mtrl_child_content_container = 2131492884;
@@ -6904,14 +7619,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c002e
 			public const int normal = 2131492910;
 			
-			// aapt resource value: 0x7f0c00f7
-			public const int notification_background = 2131493111;
+			// aapt resource value: 0x7f0c00c8
+			public const int notification_background = 2131493064;
 			
-			// aapt resource value: 0x7f0c00f1
-			public const int notification_main_column = 2131493105;
+			// aapt resource value: 0x7f0c00c2
+			public const int notification_main_column = 2131493058;
 			
-			// aapt resource value: 0x7f0c00f0
-			public const int notification_main_column_container = 2131493104;
+			// aapt resource value: 0x7f0c00c1
+			public const int notification_main_column_container = 2131493057;
 			
 			// aapt resource value: 0x7f0c0067
 			public const int outline = 2131492967;
@@ -6940,11 +7655,11 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c005c
 			public const int right = 2131492956;
 			
-			// aapt resource value: 0x7f0c00f6
-			public const int right_icon = 2131493110;
+			// aapt resource value: 0x7f0c00c7
+			public const int right_icon = 2131493063;
 			
-			// aapt resource value: 0x7f0c00f2
-			public const int right_side = 2131493106;
+			// aapt resource value: 0x7f0c00c3
+			public const int right_side = 2131493059;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int save_image_matrix = 2131492876;
@@ -7009,14 +7724,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0056
 			public const int selected = 2131492950;
 			
-			// aapt resource value: 0x7f0c00ff
-			public const int shellcontent_appbar = 2131493119;
+			// aapt resource value: 0x7f0c00d0
+			public const int shellcontent_appbar = 2131493072;
 			
-			// aapt resource value: 0x7f0c0101
-			public const int shellcontent_scrollview = 2131493121;
+			// aapt resource value: 0x7f0c00d2
+			public const int shellcontent_scrollview = 2131493074;
 			
-			// aapt resource value: 0x7f0c0100
-			public const int shellcontent_toolbar = 2131493120;
+			// aapt resource value: 0x7f0c00d1
+			public const int shellcontent_toolbar = 2131493073;
 			
 			// aapt resource value: 0x7f0c008a
 			public const int shortcut = 2131493002;
@@ -7030,8 +7745,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0034
 			public const int showTitle = 2131492916;
 			
-			// aapt resource value: 0x7f0c0102
-			public const int sliding_tabs = 2131493122;
+			// aapt resource value: 0x7f0c00d3
+			public const int sliding_tabs = 2131493075;
 			
 			// aapt resource value: 0x7f0c00ab
 			public const int smallLabel = 2131493035;
@@ -7069,8 +7784,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c005d
 			public const int start = 2131492957;
 			
-			// aapt resource value: 0x7f0c00ed
-			public const int status_bar_latest_event_content = 2131493101;
+			// aapt resource value: 0x7f0c00be
+			public const int status_bar_latest_event_content = 2131493054;
 			
 			// aapt resource value: 0x7f0c0062
 			public const int stretch = 2131492962;
@@ -7120,8 +7835,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c001a
 			public const int textinput_helper_text = 2131492890;
 			
-			// aapt resource value: 0x7f0c00f3
-			public const int time = 2131493107;
+			// aapt resource value: 0x7f0c00c4
+			public const int time = 2131493060;
 			
 			// aapt resource value: 0x7f0c0023
 			public const int title = 2131492899;
@@ -7132,8 +7847,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c0085
 			public const int title_template = 2131492997;
 			
-			// aapt resource value: 0x7f0c0103
-			public const int toolbar = 2131493123;
+			// aapt resource value: 0x7f0c00d4
+			public const int toolbar = 2131493076;
 			
 			// aapt resource value: 0x7f0c004d
 			public const int top = 2131492941;
@@ -7174,11 +7889,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0x7f0c001b
 			public const int view_offset_helper = 2131492891;
 			
-			// aapt resource value: 0x7f0c0104
-			public const int visible = 2131493124;
-			
-			// aapt resource value: 0x7f0c00db
-			public const int volume_item_container = 2131493083;
+			// aapt resource value: 0x7f0c00d5
+			public const int visible = 2131493077;
 			
 			// aapt resource value: 0x7f0c0029
 			public const int wide = 2131492905;
@@ -7202,65 +7914,53 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f090005
-			public const int abc_config_activityDefaultDur = 2131296261;
+			// aapt resource value: 0x7f080001
+			public const int abc_config_activityDefaultDur = 2131230721;
 			
-			// aapt resource value: 0x7f090006
-			public const int abc_config_activityShortDur = 2131296262;
+			// aapt resource value: 0x7f080002
+			public const int abc_config_activityShortDur = 2131230722;
 			
-			// aapt resource value: 0x7f09000a
-			public const int app_bar_elevation_anim_duration = 2131296266;
+			// aapt resource value: 0x7f080006
+			public const int app_bar_elevation_anim_duration = 2131230726;
 			
-			// aapt resource value: 0x7f09000b
-			public const int bottom_sheet_slide_duration = 2131296267;
+			// aapt resource value: 0x7f080007
+			public const int bottom_sheet_slide_duration = 2131230727;
 			
-			// aapt resource value: 0x7f090007
-			public const int cancel_button_image_alpha = 2131296263;
+			// aapt resource value: 0x7f080003
+			public const int cancel_button_image_alpha = 2131230723;
 			
-			// aapt resource value: 0x7f090008
-			public const int config_tooltipAnimTime = 2131296264;
+			// aapt resource value: 0x7f080004
+			public const int config_tooltipAnimTime = 2131230724;
 			
-			// aapt resource value: 0x7f090009
-			public const int design_snackbar_text_max_lines = 2131296265;
+			// aapt resource value: 0x7f080005
+			public const int design_snackbar_text_max_lines = 2131230725;
 			
-			// aapt resource value: 0x7f09000c
-			public const int design_tab_indicator_anim_duration_ms = 2131296268;
+			// aapt resource value: 0x7f080008
+			public const int design_tab_indicator_anim_duration_ms = 2131230728;
 			
-			// aapt resource value: 0x7f090000
-			public const int google_play_services_version = 2131296256;
+			// aapt resource value: 0x7f080000
+			public const int google_play_services_version = 2131230720;
 			
-			// aapt resource value: 0x7f09000d
-			public const int hide_password_duration = 2131296269;
+			// aapt resource value: 0x7f080009
+			public const int hide_password_duration = 2131230729;
 			
-			// aapt resource value: 0x7f090001
-			public const int mr_controller_volume_group_list_animation_duration_ms = 2131296257;
+			// aapt resource value: 0x7f08000a
+			public const int mtrl_btn_anim_delay_ms = 2131230730;
 			
-			// aapt resource value: 0x7f090002
-			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131296258;
+			// aapt resource value: 0x7f08000b
+			public const int mtrl_btn_anim_duration_ms = 2131230731;
 			
-			// aapt resource value: 0x7f090003
-			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131296259;
+			// aapt resource value: 0x7f08000c
+			public const int mtrl_chip_anim_duration = 2131230732;
 			
-			// aapt resource value: 0x7f090004
-			public const int mr_update_routes_delay_ms = 2131296260;
+			// aapt resource value: 0x7f08000d
+			public const int mtrl_tab_indicator_anim_duration_ms = 2131230733;
 			
-			// aapt resource value: 0x7f09000e
-			public const int mtrl_btn_anim_delay_ms = 2131296270;
+			// aapt resource value: 0x7f08000e
+			public const int show_password_duration = 2131230734;
 			
-			// aapt resource value: 0x7f09000f
-			public const int mtrl_btn_anim_duration_ms = 2131296271;
-			
-			// aapt resource value: 0x7f090010
-			public const int mtrl_chip_anim_duration = 2131296272;
-			
-			// aapt resource value: 0x7f090011
-			public const int mtrl_tab_indicator_anim_duration_ms = 2131296273;
-			
-			// aapt resource value: 0x7f090012
-			public const int show_password_duration = 2131296274;
-			
-			// aapt resource value: 0x7f090013
-			public const int status_bar_notification_info_maxnum = 2131296275;
+			// aapt resource value: 0x7f08000f
+			public const int status_bar_notification_info_maxnum = 2131230735;
 			
 			static Integer()
 			{
@@ -7276,22 +7976,16 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int mr_fast_out_slow_in = 2131165184;
+			public const int mtrl_fast_out_linear_in = 2131165184;
 			
 			// aapt resource value: 0x7f070001
-			public const int mr_linear_out_slow_in = 2131165185;
+			public const int mtrl_fast_out_slow_in = 2131165185;
 			
 			// aapt resource value: 0x7f070002
-			public const int mtrl_fast_out_linear_in = 2131165186;
+			public const int mtrl_linear = 2131165186;
 			
 			// aapt resource value: 0x7f070003
-			public const int mtrl_fast_out_slow_in = 2131165187;
-			
-			// aapt resource value: 0x7f070004
-			public const int mtrl_linear = 2131165188;
-			
-			// aapt resource value: 0x7f070005
-			public const int mtrl_linear_out_slow_in = 2131165189;
+			public const int mtrl_linear_out_slow_in = 2131165187;
 			
 			static Interpolator()
 			{
@@ -7445,121 +8139,79 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int FlyoutContent = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int mr_cast_dialog = 2130968622;
+			public const int mtrl_layout_snackbar = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int mr_cast_group_item = 2130968623;
+			public const int mtrl_layout_snackbar_include = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int mr_cast_group_volume_item = 2130968624;
+			public const int notification_action = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int mr_cast_media_metadata = 2130968625;
+			public const int notification_action_tombstone = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int mr_cast_route_item = 2130968626;
+			public const int notification_media_action = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int mr_chooser_dialog = 2130968627;
+			public const int notification_media_cancel_action = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int mr_chooser_list_item = 2130968628;
+			public const int notification_template_big_media = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int mr_controller_material_dialog_b = 2130968629;
+			public const int notification_template_big_media_custom = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int mr_controller_volume_item = 2130968630;
+			public const int notification_template_big_media_narrow = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int mr_dialog_header_item = 2130968631;
+			public const int notification_template_big_media_narrow_custom = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int mr_picker_dialog = 2130968632;
+			public const int notification_template_custom_big = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int mr_picker_route_item = 2130968633;
+			public const int notification_template_icon_group = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int mr_playback_control = 2130968634;
+			public const int notification_template_lines_media = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int mr_volume_control = 2130968635;
+			public const int notification_template_media = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int mtrl_layout_snackbar = 2130968636;
+			public const int notification_template_media_custom = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int mtrl_layout_snackbar_include = 2130968637;
+			public const int notification_template_part_chronometer = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_action = 2130968638;
+			public const int notification_template_part_time = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_action_tombstone = 2130968639;
+			public const int RootLayout = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int notification_media_action = 2130968640;
+			public const int select_dialog_item_material = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int notification_media_cancel_action = 2130968641;
+			public const int select_dialog_multichoice_material = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_template_big_media = 2130968642;
+			public const int select_dialog_singlechoice_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_template_big_media_custom = 2130968643;
+			public const int ShellContent = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_template_big_media_narrow = 2130968644;
+			public const int support_simple_spinner_dropdown_item = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_template_big_media_narrow_custom = 2130968645;
+			public const int Tabbar = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_custom_big = 2130968646;
-			
-			// aapt resource value: 0x7f040047
-			public const int notification_template_icon_group = 2130968647;
-			
-			// aapt resource value: 0x7f040048
-			public const int notification_template_lines_media = 2130968648;
-			
-			// aapt resource value: 0x7f040049
-			public const int notification_template_media = 2130968649;
-			
-			// aapt resource value: 0x7f04004a
-			public const int notification_template_media_custom = 2130968650;
-			
-			// aapt resource value: 0x7f04004b
-			public const int notification_template_part_chronometer = 2130968651;
-			
-			// aapt resource value: 0x7f04004c
-			public const int notification_template_part_time = 2130968652;
-			
-			// aapt resource value: 0x7f04004d
-			public const int RootLayout = 2130968653;
-			
-			// aapt resource value: 0x7f04004e
-			public const int select_dialog_item_material = 2130968654;
-			
-			// aapt resource value: 0x7f04004f
-			public const int select_dialog_multichoice_material = 2130968655;
-			
-			// aapt resource value: 0x7f040050
-			public const int select_dialog_singlechoice_material = 2130968656;
-			
-			// aapt resource value: 0x7f040051
-			public const int ShellContent = 2130968657;
-			
-			// aapt resource value: 0x7f040052
-			public const int support_simple_spinner_dropdown_item = 2130968658;
-			
-			// aapt resource value: 0x7f040053
-			public const int Tabbar = 2130968659;
-			
-			// aapt resource value: 0x7f040054
-			public const int Toolbar = 2130968660;
+			public const int Toolbar = 2130968646;
 			
 			static Layout()
 			{
@@ -7590,323 +8242,251 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f080069
-			public const int ApplicationName = 2131230825;
+			// aapt resource value: 0x7f090012
+			public const int abc_action_bar_home_description = 2131296274;
 			
-			// aapt resource value: 0x7f080068
-			public const int Hello = 2131230824;
+			// aapt resource value: 0x7f090013
+			public const int abc_action_bar_up_description = 2131296275;
 			
-			// aapt resource value: 0x7f080032
-			public const int abc_action_bar_home_description = 2131230770;
+			// aapt resource value: 0x7f090014
+			public const int abc_action_menu_overflow_description = 2131296276;
 			
-			// aapt resource value: 0x7f080033
-			public const int abc_action_bar_up_description = 2131230771;
+			// aapt resource value: 0x7f090015
+			public const int abc_action_mode_done = 2131296277;
 			
-			// aapt resource value: 0x7f080034
-			public const int abc_action_menu_overflow_description = 2131230772;
+			// aapt resource value: 0x7f090016
+			public const int abc_activity_chooser_view_see_all = 2131296278;
 			
-			// aapt resource value: 0x7f080035
-			public const int abc_action_mode_done = 2131230773;
+			// aapt resource value: 0x7f090017
+			public const int abc_activitychooserview_choose_application = 2131296279;
 			
-			// aapt resource value: 0x7f080036
-			public const int abc_activity_chooser_view_see_all = 2131230774;
+			// aapt resource value: 0x7f090018
+			public const int abc_capital_off = 2131296280;
 			
-			// aapt resource value: 0x7f080037
-			public const int abc_activitychooserview_choose_application = 2131230775;
+			// aapt resource value: 0x7f090019
+			public const int abc_capital_on = 2131296281;
 			
-			// aapt resource value: 0x7f080038
-			public const int abc_capital_off = 2131230776;
+			// aapt resource value: 0x7f09002e
+			public const int abc_font_family_body_1_material = 2131296302;
 			
-			// aapt resource value: 0x7f080039
-			public const int abc_capital_on = 2131230777;
+			// aapt resource value: 0x7f09002f
+			public const int abc_font_family_body_2_material = 2131296303;
 			
-			// aapt resource value: 0x7f08004e
-			public const int abc_font_family_body_1_material = 2131230798;
+			// aapt resource value: 0x7f090030
+			public const int abc_font_family_button_material = 2131296304;
 			
-			// aapt resource value: 0x7f08004f
-			public const int abc_font_family_body_2_material = 2131230799;
+			// aapt resource value: 0x7f090031
+			public const int abc_font_family_caption_material = 2131296305;
 			
-			// aapt resource value: 0x7f080050
-			public const int abc_font_family_button_material = 2131230800;
+			// aapt resource value: 0x7f090032
+			public const int abc_font_family_display_1_material = 2131296306;
 			
-			// aapt resource value: 0x7f080051
-			public const int abc_font_family_caption_material = 2131230801;
+			// aapt resource value: 0x7f090033
+			public const int abc_font_family_display_2_material = 2131296307;
 			
-			// aapt resource value: 0x7f080052
-			public const int abc_font_family_display_1_material = 2131230802;
+			// aapt resource value: 0x7f090034
+			public const int abc_font_family_display_3_material = 2131296308;
 			
-			// aapt resource value: 0x7f080053
-			public const int abc_font_family_display_2_material = 2131230803;
+			// aapt resource value: 0x7f090035
+			public const int abc_font_family_display_4_material = 2131296309;
 			
-			// aapt resource value: 0x7f080054
-			public const int abc_font_family_display_3_material = 2131230804;
+			// aapt resource value: 0x7f090036
+			public const int abc_font_family_headline_material = 2131296310;
 			
-			// aapt resource value: 0x7f080055
-			public const int abc_font_family_display_4_material = 2131230805;
+			// aapt resource value: 0x7f090037
+			public const int abc_font_family_menu_material = 2131296311;
 			
-			// aapt resource value: 0x7f080056
-			public const int abc_font_family_headline_material = 2131230806;
+			// aapt resource value: 0x7f090038
+			public const int abc_font_family_subhead_material = 2131296312;
 			
-			// aapt resource value: 0x7f080057
-			public const int abc_font_family_menu_material = 2131230807;
+			// aapt resource value: 0x7f090039
+			public const int abc_font_family_title_material = 2131296313;
 			
-			// aapt resource value: 0x7f080058
-			public const int abc_font_family_subhead_material = 2131230808;
+			// aapt resource value: 0x7f09001a
+			public const int abc_menu_alt_shortcut_label = 2131296282;
 			
-			// aapt resource value: 0x7f080059
-			public const int abc_font_family_title_material = 2131230809;
+			// aapt resource value: 0x7f09001b
+			public const int abc_menu_ctrl_shortcut_label = 2131296283;
 			
-			// aapt resource value: 0x7f08003a
-			public const int abc_menu_alt_shortcut_label = 2131230778;
+			// aapt resource value: 0x7f09001c
+			public const int abc_menu_delete_shortcut_label = 2131296284;
 			
-			// aapt resource value: 0x7f08003b
-			public const int abc_menu_ctrl_shortcut_label = 2131230779;
+			// aapt resource value: 0x7f09001d
+			public const int abc_menu_enter_shortcut_label = 2131296285;
 			
-			// aapt resource value: 0x7f08003c
-			public const int abc_menu_delete_shortcut_label = 2131230780;
+			// aapt resource value: 0x7f09001e
+			public const int abc_menu_function_shortcut_label = 2131296286;
 			
-			// aapt resource value: 0x7f08003d
-			public const int abc_menu_enter_shortcut_label = 2131230781;
+			// aapt resource value: 0x7f09001f
+			public const int abc_menu_meta_shortcut_label = 2131296287;
 			
-			// aapt resource value: 0x7f08003e
-			public const int abc_menu_function_shortcut_label = 2131230782;
+			// aapt resource value: 0x7f090020
+			public const int abc_menu_shift_shortcut_label = 2131296288;
 			
-			// aapt resource value: 0x7f08003f
-			public const int abc_menu_meta_shortcut_label = 2131230783;
+			// aapt resource value: 0x7f090021
+			public const int abc_menu_space_shortcut_label = 2131296289;
 			
-			// aapt resource value: 0x7f080040
-			public const int abc_menu_shift_shortcut_label = 2131230784;
+			// aapt resource value: 0x7f090022
+			public const int abc_menu_sym_shortcut_label = 2131296290;
 			
-			// aapt resource value: 0x7f080041
-			public const int abc_menu_space_shortcut_label = 2131230785;
+			// aapt resource value: 0x7f090023
+			public const int abc_prepend_shortcut_label = 2131296291;
 			
-			// aapt resource value: 0x7f080042
-			public const int abc_menu_sym_shortcut_label = 2131230786;
+			// aapt resource value: 0x7f090024
+			public const int abc_search_hint = 2131296292;
 			
-			// aapt resource value: 0x7f080043
-			public const int abc_prepend_shortcut_label = 2131230787;
+			// aapt resource value: 0x7f090025
+			public const int abc_searchview_description_clear = 2131296293;
 			
-			// aapt resource value: 0x7f080044
-			public const int abc_search_hint = 2131230788;
+			// aapt resource value: 0x7f090026
+			public const int abc_searchview_description_query = 2131296294;
 			
-			// aapt resource value: 0x7f080045
-			public const int abc_searchview_description_clear = 2131230789;
+			// aapt resource value: 0x7f090027
+			public const int abc_searchview_description_search = 2131296295;
 			
-			// aapt resource value: 0x7f080046
-			public const int abc_searchview_description_query = 2131230790;
+			// aapt resource value: 0x7f090028
+			public const int abc_searchview_description_submit = 2131296296;
 			
-			// aapt resource value: 0x7f080047
-			public const int abc_searchview_description_search = 2131230791;
+			// aapt resource value: 0x7f090029
+			public const int abc_searchview_description_voice = 2131296297;
 			
-			// aapt resource value: 0x7f080048
-			public const int abc_searchview_description_submit = 2131230792;
+			// aapt resource value: 0x7f09002a
+			public const int abc_shareactionprovider_share_with = 2131296298;
 			
-			// aapt resource value: 0x7f080049
-			public const int abc_searchview_description_voice = 2131230793;
+			// aapt resource value: 0x7f09002b
+			public const int abc_shareactionprovider_share_with_application = 2131296299;
 			
-			// aapt resource value: 0x7f08004a
-			public const int abc_shareactionprovider_share_with = 2131230794;
+			// aapt resource value: 0x7f09002c
+			public const int abc_toolbar_collapse_description = 2131296300;
 			
-			// aapt resource value: 0x7f08004b
-			public const int abc_shareactionprovider_share_with_application = 2131230795;
+			// aapt resource value: 0x7f090049
+			public const int app_name = 2131296329;
 			
-			// aapt resource value: 0x7f08004c
-			public const int abc_toolbar_collapse_description = 2131230796;
+			// aapt resource value: 0x7f09003a
+			public const int appbar_scrolling_view_behavior = 2131296314;
 			
-			// aapt resource value: 0x7f08005a
-			public const int appbar_scrolling_view_behavior = 2131230810;
+			// aapt resource value: 0x7f09003b
+			public const int bottom_sheet_behavior = 2131296315;
 			
-			// aapt resource value: 0x7f08005b
-			public const int bottom_sheet_behavior = 2131230811;
+			// aapt resource value: 0x7f09003c
+			public const int character_counter_content_description = 2131296316;
 			
-			// aapt resource value: 0x7f08005c
-			public const int character_counter_content_description = 2131230812;
+			// aapt resource value: 0x7f09003d
+			public const int character_counter_pattern = 2131296317;
 			
-			// aapt resource value: 0x7f08005d
-			public const int character_counter_pattern = 2131230813;
+			// aapt resource value: 0x7f090001
+			public const int common_google_play_services_enable_button = 2131296257;
 			
-			// aapt resource value: 0x7f080009
-			public const int common_google_play_services_enable_button = 2131230729;
+			// aapt resource value: 0x7f090002
+			public const int common_google_play_services_enable_text = 2131296258;
 			
-			// aapt resource value: 0x7f08000a
-			public const int common_google_play_services_enable_text = 2131230730;
+			// aapt resource value: 0x7f090003
+			public const int common_google_play_services_enable_title = 2131296259;
 			
-			// aapt resource value: 0x7f08000b
-			public const int common_google_play_services_enable_title = 2131230731;
+			// aapt resource value: 0x7f090004
+			public const int common_google_play_services_install_button = 2131296260;
 			
-			// aapt resource value: 0x7f08000c
-			public const int common_google_play_services_install_button = 2131230732;
+			// aapt resource value: 0x7f090005
+			public const int common_google_play_services_install_text = 2131296261;
 			
-			// aapt resource value: 0x7f08000d
-			public const int common_google_play_services_install_text = 2131230733;
+			// aapt resource value: 0x7f090006
+			public const int common_google_play_services_install_title = 2131296262;
 			
-			// aapt resource value: 0x7f08000e
-			public const int common_google_play_services_install_title = 2131230734;
+			// aapt resource value: 0x7f090007
+			public const int common_google_play_services_notification_channel_name = 2131296263;
 			
-			// aapt resource value: 0x7f08000f
-			public const int common_google_play_services_notification_channel_name = 2131230735;
+			// aapt resource value: 0x7f090008
+			public const int common_google_play_services_notification_ticker = 2131296264;
 			
-			// aapt resource value: 0x7f080010
-			public const int common_google_play_services_notification_ticker = 2131230736;
+			// aapt resource value: 0x7f090000
+			public const int common_google_play_services_unknown_issue = 2131296256;
 			
-			// aapt resource value: 0x7f080008
-			public const int common_google_play_services_unknown_issue = 2131230728;
+			// aapt resource value: 0x7f090009
+			public const int common_google_play_services_unsupported_text = 2131296265;
 			
-			// aapt resource value: 0x7f080011
-			public const int common_google_play_services_unsupported_text = 2131230737;
+			// aapt resource value: 0x7f09000a
+			public const int common_google_play_services_update_button = 2131296266;
 			
-			// aapt resource value: 0x7f080012
-			public const int common_google_play_services_update_button = 2131230738;
+			// aapt resource value: 0x7f09000b
+			public const int common_google_play_services_update_text = 2131296267;
 			
-			// aapt resource value: 0x7f080013
-			public const int common_google_play_services_update_text = 2131230739;
+			// aapt resource value: 0x7f09000c
+			public const int common_google_play_services_update_title = 2131296268;
 			
-			// aapt resource value: 0x7f080014
-			public const int common_google_play_services_update_title = 2131230740;
+			// aapt resource value: 0x7f09000d
+			public const int common_google_play_services_updating_text = 2131296269;
 			
-			// aapt resource value: 0x7f080015
-			public const int common_google_play_services_updating_text = 2131230741;
+			// aapt resource value: 0x7f09000e
+			public const int common_google_play_services_wear_update_text = 2131296270;
 			
-			// aapt resource value: 0x7f080016
-			public const int common_google_play_services_wear_update_text = 2131230742;
+			// aapt resource value: 0x7f09000f
+			public const int common_open_on_phone = 2131296271;
 			
-			// aapt resource value: 0x7f080017
-			public const int common_open_on_phone = 2131230743;
+			// aapt resource value: 0x7f090010
+			public const int common_signin_button_text = 2131296272;
 			
-			// aapt resource value: 0x7f080018
-			public const int common_signin_button_text = 2131230744;
+			// aapt resource value: 0x7f090011
+			public const int common_signin_button_text_long = 2131296273;
 			
-			// aapt resource value: 0x7f080019
-			public const int common_signin_button_text_long = 2131230745;
+			// aapt resource value: 0x7f09004c
+			public const int default_web_client_id = 2131296332;
 			
-			// aapt resource value: 0x7f080002
-			public const int default_web_client_id = 2131230722;
+			// aapt resource value: 0x7f09003e
+			public const int fab_transformation_scrim_behavior = 2131296318;
 			
-			// aapt resource value: 0x7f08005e
-			public const int fab_transformation_scrim_behavior = 2131230814;
+			// aapt resource value: 0x7f09003f
+			public const int fab_transformation_sheet_behavior = 2131296319;
 			
-			// aapt resource value: 0x7f08005f
-			public const int fab_transformation_sheet_behavior = 2131230815;
+			// aapt resource value: 0x7f09004d
+			public const int firebase_database_url = 2131296333;
 			
-			// aapt resource value: 0x7f080003
-			public const int firebase_database_url = 2131230723;
+			// aapt resource value: 0x7f09004a
+			public const int gcm_defaultSenderId = 2131296330;
 			
-			// aapt resource value: 0x7f080000
-			public const int gcm_defaultSenderId = 2131230720;
+			// aapt resource value: 0x7f09004e
+			public const int google_api_key = 2131296334;
 			
-			// aapt resource value: 0x7f080004
-			public const int google_api_key = 2131230724;
+			// aapt resource value: 0x7f09004b
+			public const int google_app_id = 2131296331;
 			
-			// aapt resource value: 0x7f080001
-			public const int google_app_id = 2131230721;
+			// aapt resource value: 0x7f09004f
+			public const int google_crash_reporting_api_key = 2131296335;
 			
-			// aapt resource value: 0x7f080005
-			public const int google_crash_reporting_api_key = 2131230725;
+			// aapt resource value: 0x7f090050
+			public const int google_storage_bucket = 2131296336;
 			
-			// aapt resource value: 0x7f080006
-			public const int google_storage_bucket = 2131230726;
+			// aapt resource value: 0x7f090048
+			public const int hello = 2131296328;
 			
-			// aapt resource value: 0x7f080060
-			public const int hide_bottom_view_on_scroll_behavior = 2131230816;
+			// aapt resource value: 0x7f090040
+			public const int hide_bottom_view_on_scroll_behavior = 2131296320;
 			
-			// aapt resource value: 0x7f08001a
-			public const int mr_button_content_description = 2131230746;
+			// aapt resource value: 0x7f090041
+			public const int mtrl_chip_close_icon_content_description = 2131296321;
 			
-			// aapt resource value: 0x7f08001b
-			public const int mr_cast_button_connected = 2131230747;
+			// aapt resource value: 0x7f090042
+			public const int password_toggle_content_description = 2131296322;
 			
-			// aapt resource value: 0x7f08001c
-			public const int mr_cast_button_connecting = 2131230748;
+			// aapt resource value: 0x7f090043
+			public const int path_password_eye = 2131296323;
 			
-			// aapt resource value: 0x7f08001d
-			public const int mr_cast_button_disconnected = 2131230749;
+			// aapt resource value: 0x7f090044
+			public const int path_password_eye_mask_strike_through = 2131296324;
 			
-			// aapt resource value: 0x7f08002f
-			public const int mr_cast_dialog_title_view_placeholder = 2131230767;
+			// aapt resource value: 0x7f090045
+			public const int path_password_eye_mask_visible = 2131296325;
 			
-			// aapt resource value: 0x7f08001e
-			public const int mr_chooser_searching = 2131230750;
+			// aapt resource value: 0x7f090046
+			public const int path_password_strike_through = 2131296326;
 			
-			// aapt resource value: 0x7f08001f
-			public const int mr_chooser_title = 2131230751;
+			// aapt resource value: 0x7f090051
+			public const int project_id = 2131296337;
 			
-			// aapt resource value: 0x7f080020
-			public const int mr_controller_album_art = 2131230752;
+			// aapt resource value: 0x7f09002d
+			public const int search_menu_title = 2131296301;
 			
-			// aapt resource value: 0x7f080021
-			public const int mr_controller_casting_screen = 2131230753;
-			
-			// aapt resource value: 0x7f080022
-			public const int mr_controller_close_description = 2131230754;
-			
-			// aapt resource value: 0x7f080023
-			public const int mr_controller_collapse_group = 2131230755;
-			
-			// aapt resource value: 0x7f080024
-			public const int mr_controller_disconnect = 2131230756;
-			
-			// aapt resource value: 0x7f080025
-			public const int mr_controller_expand_group = 2131230757;
-			
-			// aapt resource value: 0x7f080026
-			public const int mr_controller_no_info_available = 2131230758;
-			
-			// aapt resource value: 0x7f080027
-			public const int mr_controller_no_media_selected = 2131230759;
-			
-			// aapt resource value: 0x7f080028
-			public const int mr_controller_pause = 2131230760;
-			
-			// aapt resource value: 0x7f080029
-			public const int mr_controller_play = 2131230761;
-			
-			// aapt resource value: 0x7f08002a
-			public const int mr_controller_stop = 2131230762;
-			
-			// aapt resource value: 0x7f08002b
-			public const int mr_controller_stop_casting = 2131230763;
-			
-			// aapt resource value: 0x7f08002c
-			public const int mr_controller_volume_slider = 2131230764;
-			
-			// aapt resource value: 0x7f080030
-			public const int mr_dialog_device_header = 2131230768;
-			
-			// aapt resource value: 0x7f080031
-			public const int mr_dialog_route_header = 2131230769;
-			
-			// aapt resource value: 0x7f08002d
-			public const int mr_system_route_name = 2131230765;
-			
-			// aapt resource value: 0x7f08002e
-			public const int mr_user_route_category_name = 2131230766;
-			
-			// aapt resource value: 0x7f080061
-			public const int mtrl_chip_close_icon_content_description = 2131230817;
-			
-			// aapt resource value: 0x7f080062
-			public const int password_toggle_content_description = 2131230818;
-			
-			// aapt resource value: 0x7f080063
-			public const int path_password_eye = 2131230819;
-			
-			// aapt resource value: 0x7f080064
-			public const int path_password_eye_mask_strike_through = 2131230820;
-			
-			// aapt resource value: 0x7f080065
-			public const int path_password_eye_mask_visible = 2131230821;
-			
-			// aapt resource value: 0x7f080066
-			public const int path_password_strike_through = 2131230822;
-			
-			// aapt resource value: 0x7f080007
-			public const int project_id = 2131230727;
-			
-			// aapt resource value: 0x7f08004d
-			public const int search_menu_title = 2131230797;
-			
-			// aapt resource value: 0x7f080067
-			public const int status_bar_notification_info_overflow = 2131230823;
+			// aapt resource value: 0x7f090047
+			public const int status_bar_notification_info_overflow = 2131296327;
 			
 			static String()
 			{
@@ -7921,1547 +8501,1514 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f0d0098
-			public const int AlertDialog_AppCompat = 2131558552;
-			
-			// aapt resource value: 0x7f0d0099
-			public const int AlertDialog_AppCompat_Light = 2131558553;
-			
-			// aapt resource value: 0x7f0d009a
-			public const int Animation_AppCompat_Dialog = 2131558554;
-			
-			// aapt resource value: 0x7f0d009b
-			public const int Animation_AppCompat_DropDownUp = 2131558555;
-			
-			// aapt resource value: 0x7f0d009c
-			public const int Animation_AppCompat_Tooltip = 2131558556;
-			
-			// aapt resource value: 0x7f0d016d
-			public const int Animation_Design_BottomSheetDialog = 2131558765;
-			
-			// aapt resource value: 0x7f0d0201
-			public const int AppCompatDialogStyle = 2131558913;
-			
-			// aapt resource value: 0x7f0d009d
-			public const int Base_AlertDialog_AppCompat = 2131558557;
-			
-			// aapt resource value: 0x7f0d009e
-			public const int Base_AlertDialog_AppCompat_Light = 2131558558;
-			
-			// aapt resource value: 0x7f0d009f
-			public const int Base_Animation_AppCompat_Dialog = 2131558559;
-			
-			// aapt resource value: 0x7f0d00a0
-			public const int Base_Animation_AppCompat_DropDownUp = 2131558560;
-			
-			// aapt resource value: 0x7f0d00a1
-			public const int Base_Animation_AppCompat_Tooltip = 2131558561;
-			
-			// aapt resource value: 0x7f0d000c
-			public const int Base_CardView = 2131558412;
-			
-			// aapt resource value: 0x7f0d00a2
-			public const int Base_DialogWindowTitle_AppCompat = 2131558562;
-			
-			// aapt resource value: 0x7f0d00a3
-			public const int Base_DialogWindowTitleBackground_AppCompat = 2131558563;
-			
-			// aapt resource value: 0x7f0d002c
-			public const int Base_TextAppearance_AppCompat = 2131558444;
-			
-			// aapt resource value: 0x7f0d002d
-			public const int Base_TextAppearance_AppCompat_Body1 = 2131558445;
-			
-			// aapt resource value: 0x7f0d002e
-			public const int Base_TextAppearance_AppCompat_Body2 = 2131558446;
-			
-			// aapt resource value: 0x7f0d002f
-			public const int Base_TextAppearance_AppCompat_Button = 2131558447;
-			
-			// aapt resource value: 0x7f0d0030
-			public const int Base_TextAppearance_AppCompat_Caption = 2131558448;
-			
-			// aapt resource value: 0x7f0d0031
-			public const int Base_TextAppearance_AppCompat_Display1 = 2131558449;
-			
-			// aapt resource value: 0x7f0d0032
-			public const int Base_TextAppearance_AppCompat_Display2 = 2131558450;
-			
-			// aapt resource value: 0x7f0d0033
-			public const int Base_TextAppearance_AppCompat_Display3 = 2131558451;
-			
-			// aapt resource value: 0x7f0d0034
-			public const int Base_TextAppearance_AppCompat_Display4 = 2131558452;
-			
-			// aapt resource value: 0x7f0d0035
-			public const int Base_TextAppearance_AppCompat_Headline = 2131558453;
-			
-			// aapt resource value: 0x7f0d0036
-			public const int Base_TextAppearance_AppCompat_Inverse = 2131558454;
-			
-			// aapt resource value: 0x7f0d0037
-			public const int Base_TextAppearance_AppCompat_Large = 2131558455;
-			
-			// aapt resource value: 0x7f0d0038
-			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131558456;
-			
-			// aapt resource value: 0x7f0d0039
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131558457;
-			
-			// aapt resource value: 0x7f0d003a
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131558458;
-			
-			// aapt resource value: 0x7f0d003b
-			public const int Base_TextAppearance_AppCompat_Medium = 2131558459;
-			
-			// aapt resource value: 0x7f0d003c
-			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131558460;
-			
-			// aapt resource value: 0x7f0d003d
-			public const int Base_TextAppearance_AppCompat_Menu = 2131558461;
-			
-			// aapt resource value: 0x7f0d00a4
-			public const int Base_TextAppearance_AppCompat_SearchResult = 2131558564;
-			
-			// aapt resource value: 0x7f0d003e
-			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131558462;
-			
-			// aapt resource value: 0x7f0d003f
-			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131558463;
-			
-			// aapt resource value: 0x7f0d0040
-			public const int Base_TextAppearance_AppCompat_Small = 2131558464;
-			
-			// aapt resource value: 0x7f0d0041
-			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131558465;
-			
-			// aapt resource value: 0x7f0d0042
-			public const int Base_TextAppearance_AppCompat_Subhead = 2131558466;
-			
-			// aapt resource value: 0x7f0d00a5
-			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131558565;
-			
-			// aapt resource value: 0x7f0d0043
-			public const int Base_TextAppearance_AppCompat_Title = 2131558467;
-			
-			// aapt resource value: 0x7f0d00a6
-			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131558566;
-			
-			// aapt resource value: 0x7f0d00a7
-			public const int Base_TextAppearance_AppCompat_Tooltip = 2131558567;
-			
-			// aapt resource value: 0x7f0d0087
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131558535;
-			
-			// aapt resource value: 0x7f0d0044
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131558468;
-			
-			// aapt resource value: 0x7f0d0045
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131558469;
-			
-			// aapt resource value: 0x7f0d0046
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131558470;
-			
-			// aapt resource value: 0x7f0d0047
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131558471;
-			
-			// aapt resource value: 0x7f0d0048
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131558472;
-			
-			// aapt resource value: 0x7f0d0049
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131558473;
-			
-			// aapt resource value: 0x7f0d004a
-			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131558474;
+			// aapt resource value: 0x7f0d008d
+			public const int AlertDialog_AppCompat = 2131558541;
 			
 			// aapt resource value: 0x7f0d008e
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131558542;
+			public const int AlertDialog_AppCompat_Light = 2131558542;
 			
 			// aapt resource value: 0x7f0d008f
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131558543;
-			
-			// aapt resource value: 0x7f0d0088
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131558536;
-			
-			// aapt resource value: 0x7f0d00a8
-			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131558568;
-			
-			// aapt resource value: 0x7f0d004b
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131558475;
-			
-			// aapt resource value: 0x7f0d004c
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131558476;
-			
-			// aapt resource value: 0x7f0d004d
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131558477;
-			
-			// aapt resource value: 0x7f0d004e
-			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131558478;
-			
-			// aapt resource value: 0x7f0d004f
-			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131558479;
-			
-			// aapt resource value: 0x7f0d00a9
-			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131558569;
-			
-			// aapt resource value: 0x7f0d0050
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131558480;
-			
-			// aapt resource value: 0x7f0d0051
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131558481;
-			
-			// aapt resource value: 0x7f0d0052
-			public const int Base_Theme_AppCompat = 2131558482;
-			
-			// aapt resource value: 0x7f0d00aa
-			public const int Base_Theme_AppCompat_CompactMenu = 2131558570;
-			
-			// aapt resource value: 0x7f0d0053
-			public const int Base_Theme_AppCompat_Dialog = 2131558483;
-			
-			// aapt resource value: 0x7f0d00ab
-			public const int Base_Theme_AppCompat_Dialog_Alert = 2131558571;
-			
-			// aapt resource value: 0x7f0d00ac
-			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131558572;
-			
-			// aapt resource value: 0x7f0d00ad
-			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131558573;
-			
-			// aapt resource value: 0x7f0d0010
-			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131558416;
-			
-			// aapt resource value: 0x7f0d0054
-			public const int Base_Theme_AppCompat_Light = 2131558484;
-			
-			// aapt resource value: 0x7f0d00ae
-			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131558574;
-			
-			// aapt resource value: 0x7f0d0055
-			public const int Base_Theme_AppCompat_Light_Dialog = 2131558485;
-			
-			// aapt resource value: 0x7f0d00af
-			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131558575;
-			
-			// aapt resource value: 0x7f0d00b0
-			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131558576;
-			
-			// aapt resource value: 0x7f0d00b1
-			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131558577;
-			
-			// aapt resource value: 0x7f0d0011
-			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131558417;
-			
-			// aapt resource value: 0x7f0d016e
-			public const int Base_Theme_MaterialComponents = 2131558766;
-			
-			// aapt resource value: 0x7f0d016f
-			public const int Base_Theme_MaterialComponents_Bridge = 2131558767;
-			
-			// aapt resource value: 0x7f0d0170
-			public const int Base_Theme_MaterialComponents_CompactMenu = 2131558768;
-			
-			// aapt resource value: 0x7f0d0171
-			public const int Base_Theme_MaterialComponents_Dialog = 2131558769;
-			
-			// aapt resource value: 0x7f0d0172
-			public const int Base_Theme_MaterialComponents_Dialog_Alert = 2131558770;
-			
-			// aapt resource value: 0x7f0d0173
-			public const int Base_Theme_MaterialComponents_Dialog_FixedSize = 2131558771;
-			
-			// aapt resource value: 0x7f0d0174
-			public const int Base_Theme_MaterialComponents_Dialog_MinWidth = 2131558772;
-			
-			// aapt resource value: 0x7f0d0167
-			public const int Base_Theme_MaterialComponents_DialogWhenLarge = 2131558759;
-			
-			// aapt resource value: 0x7f0d0175
-			public const int Base_Theme_MaterialComponents_Light = 2131558773;
-			
-			// aapt resource value: 0x7f0d0176
-			public const int Base_Theme_MaterialComponents_Light_Bridge = 2131558774;
-			
-			// aapt resource value: 0x7f0d0177
-			public const int Base_Theme_MaterialComponents_Light_DarkActionBar = 2131558775;
-			
-			// aapt resource value: 0x7f0d0178
-			public const int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131558776;
-			
-			// aapt resource value: 0x7f0d0179
-			public const int Base_Theme_MaterialComponents_Light_Dialog = 2131558777;
-			
-			// aapt resource value: 0x7f0d017a
-			public const int Base_Theme_MaterialComponents_Light_Dialog_Alert = 2131558778;
-			
-			// aapt resource value: 0x7f0d017b
-			public const int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 2131558779;
-			
-			// aapt resource value: 0x7f0d017c
-			public const int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 2131558780;
-			
-			// aapt resource value: 0x7f0d0168
-			public const int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 2131558760;
-			
-			// aapt resource value: 0x7f0d00b2
-			public const int Base_ThemeOverlay_AppCompat = 2131558578;
-			
-			// aapt resource value: 0x7f0d00b3
-			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131558579;
-			
-			// aapt resource value: 0x7f0d00b4
-			public const int Base_ThemeOverlay_AppCompat_Dark = 2131558580;
-			
-			// aapt resource value: 0x7f0d00b5
-			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131558581;
-			
-			// aapt resource value: 0x7f0d0056
-			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131558486;
-			
-			// aapt resource value: 0x7f0d00b6
-			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131558582;
-			
-			// aapt resource value: 0x7f0d00b7
-			public const int Base_ThemeOverlay_AppCompat_Light = 2131558583;
-			
-			// aapt resource value: 0x7f0d017d
-			public const int Base_ThemeOverlay_MaterialComponents_Dialog = 2131558781;
-			
-			// aapt resource value: 0x7f0d017e
-			public const int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131558782;
-			
-			// aapt resource value: 0x7f0d017f
-			public const int Base_V14_Theme_MaterialComponents = 2131558783;
-			
-			// aapt resource value: 0x7f0d0180
-			public const int Base_V14_Theme_MaterialComponents_Bridge = 2131558784;
-			
-			// aapt resource value: 0x7f0d0181
-			public const int Base_V14_Theme_MaterialComponents_Dialog = 2131558785;
-			
-			// aapt resource value: 0x7f0d0182
-			public const int Base_V14_Theme_MaterialComponents_Light = 2131558786;
-			
-			// aapt resource value: 0x7f0d0183
-			public const int Base_V14_Theme_MaterialComponents_Light_Bridge = 2131558787;
-			
-			// aapt resource value: 0x7f0d0184
-			public const int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131558788;
-			
-			// aapt resource value: 0x7f0d0185
-			public const int Base_V14_Theme_MaterialComponents_Light_Dialog = 2131558789;
-			
-			// aapt resource value: 0x7f0d0186
-			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 2131558790;
-			
-			// aapt resource value: 0x7f0d0187
-			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131558791;
-			
-			// aapt resource value: 0x7f0d0057
-			public const int Base_V21_Theme_AppCompat = 2131558487;
-			
-			// aapt resource value: 0x7f0d0058
-			public const int Base_V21_Theme_AppCompat_Dialog = 2131558488;
-			
-			// aapt resource value: 0x7f0d0059
-			public const int Base_V21_Theme_AppCompat_Light = 2131558489;
-			
-			// aapt resource value: 0x7f0d005a
-			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131558490;
-			
-			// aapt resource value: 0x7f0d005b
-			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131558491;
-			
-			// aapt resource value: 0x7f0d0085
-			public const int Base_V22_Theme_AppCompat = 2131558533;
-			
-			// aapt resource value: 0x7f0d0086
-			public const int Base_V22_Theme_AppCompat_Light = 2131558534;
-			
-			// aapt resource value: 0x7f0d0089
-			public const int Base_V23_Theme_AppCompat = 2131558537;
-			
-			// aapt resource value: 0x7f0d008a
-			public const int Base_V23_Theme_AppCompat_Light = 2131558538;
-			
-			// aapt resource value: 0x7f0d0092
-			public const int Base_V26_Theme_AppCompat = 2131558546;
-			
-			// aapt resource value: 0x7f0d0093
-			public const int Base_V26_Theme_AppCompat_Light = 2131558547;
-			
-			// aapt resource value: 0x7f0d0094
-			public const int Base_V26_Widget_AppCompat_Toolbar = 2131558548;
-			
-			// aapt resource value: 0x7f0d0096
-			public const int Base_V28_Theme_AppCompat = 2131558550;
-			
-			// aapt resource value: 0x7f0d0097
-			public const int Base_V28_Theme_AppCompat_Light = 2131558551;
-			
-			// aapt resource value: 0x7f0d00b8
-			public const int Base_V7_Theme_AppCompat = 2131558584;
-			
-			// aapt resource value: 0x7f0d00b9
-			public const int Base_V7_Theme_AppCompat_Dialog = 2131558585;
-			
-			// aapt resource value: 0x7f0d00ba
-			public const int Base_V7_Theme_AppCompat_Light = 2131558586;
-			
-			// aapt resource value: 0x7f0d00bb
-			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131558587;
-			
-			// aapt resource value: 0x7f0d00bc
-			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131558588;
-			
-			// aapt resource value: 0x7f0d00bd
-			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131558589;
-			
-			// aapt resource value: 0x7f0d00be
-			public const int Base_V7_Widget_AppCompat_EditText = 2131558590;
-			
-			// aapt resource value: 0x7f0d00bf
-			public const int Base_V7_Widget_AppCompat_Toolbar = 2131558591;
-			
-			// aapt resource value: 0x7f0d00c0
-			public const int Base_Widget_AppCompat_ActionBar = 2131558592;
-			
-			// aapt resource value: 0x7f0d00c1
-			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131558593;
-			
-			// aapt resource value: 0x7f0d00c2
-			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131558594;
-			
-			// aapt resource value: 0x7f0d005c
-			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131558492;
-			
-			// aapt resource value: 0x7f0d005d
-			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131558493;
-			
-			// aapt resource value: 0x7f0d005e
-			public const int Base_Widget_AppCompat_ActionButton = 2131558494;
-			
-			// aapt resource value: 0x7f0d005f
-			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131558495;
-			
-			// aapt resource value: 0x7f0d0060
-			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131558496;
-			
-			// aapt resource value: 0x7f0d00c3
-			public const int Base_Widget_AppCompat_ActionMode = 2131558595;
-			
-			// aapt resource value: 0x7f0d00c4
-			public const int Base_Widget_AppCompat_ActivityChooserView = 2131558596;
-			
-			// aapt resource value: 0x7f0d0061
-			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131558497;
-			
-			// aapt resource value: 0x7f0d0062
-			public const int Base_Widget_AppCompat_Button = 2131558498;
-			
-			// aapt resource value: 0x7f0d0063
-			public const int Base_Widget_AppCompat_Button_Borderless = 2131558499;
-			
-			// aapt resource value: 0x7f0d0064
-			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131558500;
-			
-			// aapt resource value: 0x7f0d00c5
-			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131558597;
-			
-			// aapt resource value: 0x7f0d008b
-			public const int Base_Widget_AppCompat_Button_Colored = 2131558539;
-			
-			// aapt resource value: 0x7f0d0065
-			public const int Base_Widget_AppCompat_Button_Small = 2131558501;
-			
-			// aapt resource value: 0x7f0d0066
-			public const int Base_Widget_AppCompat_ButtonBar = 2131558502;
-			
-			// aapt resource value: 0x7f0d00c6
-			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131558598;
-			
-			// aapt resource value: 0x7f0d0067
-			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131558503;
-			
-			// aapt resource value: 0x7f0d0068
-			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131558504;
-			
-			// aapt resource value: 0x7f0d00c7
-			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131558599;
-			
-			// aapt resource value: 0x7f0d000f
-			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131558415;
-			
-			// aapt resource value: 0x7f0d00c8
-			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131558600;
-			
-			// aapt resource value: 0x7f0d0069
-			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131558505;
-			
-			// aapt resource value: 0x7f0d006a
-			public const int Base_Widget_AppCompat_EditText = 2131558506;
-			
-			// aapt resource value: 0x7f0d006b
-			public const int Base_Widget_AppCompat_ImageButton = 2131558507;
-			
-			// aapt resource value: 0x7f0d00c9
-			public const int Base_Widget_AppCompat_Light_ActionBar = 2131558601;
-			
-			// aapt resource value: 0x7f0d00ca
-			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131558602;
-			
-			// aapt resource value: 0x7f0d00cb
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131558603;
-			
-			// aapt resource value: 0x7f0d006c
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131558508;
-			
-			// aapt resource value: 0x7f0d006d
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131558509;
-			
-			// aapt resource value: 0x7f0d006e
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131558510;
-			
-			// aapt resource value: 0x7f0d006f
-			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131558511;
-			
-			// aapt resource value: 0x7f0d0070
-			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131558512;
-			
-			// aapt resource value: 0x7f0d00cc
-			public const int Base_Widget_AppCompat_ListMenuView = 2131558604;
-			
-			// aapt resource value: 0x7f0d0071
-			public const int Base_Widget_AppCompat_ListPopupWindow = 2131558513;
-			
-			// aapt resource value: 0x7f0d0072
-			public const int Base_Widget_AppCompat_ListView = 2131558514;
-			
-			// aapt resource value: 0x7f0d0073
-			public const int Base_Widget_AppCompat_ListView_DropDown = 2131558515;
-			
-			// aapt resource value: 0x7f0d0074
-			public const int Base_Widget_AppCompat_ListView_Menu = 2131558516;
-			
-			// aapt resource value: 0x7f0d0075
-			public const int Base_Widget_AppCompat_PopupMenu = 2131558517;
-			
-			// aapt resource value: 0x7f0d0076
-			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131558518;
-			
-			// aapt resource value: 0x7f0d00cd
-			public const int Base_Widget_AppCompat_PopupWindow = 2131558605;
-			
-			// aapt resource value: 0x7f0d0077
-			public const int Base_Widget_AppCompat_ProgressBar = 2131558519;
-			
-			// aapt resource value: 0x7f0d0078
-			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131558520;
-			
-			// aapt resource value: 0x7f0d0079
-			public const int Base_Widget_AppCompat_RatingBar = 2131558521;
-			
-			// aapt resource value: 0x7f0d008c
-			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131558540;
-			
-			// aapt resource value: 0x7f0d008d
-			public const int Base_Widget_AppCompat_RatingBar_Small = 2131558541;
-			
-			// aapt resource value: 0x7f0d00ce
-			public const int Base_Widget_AppCompat_SearchView = 2131558606;
-			
-			// aapt resource value: 0x7f0d00cf
-			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131558607;
-			
-			// aapt resource value: 0x7f0d007a
-			public const int Base_Widget_AppCompat_SeekBar = 2131558522;
-			
-			// aapt resource value: 0x7f0d00d0
-			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131558608;
-			
-			// aapt resource value: 0x7f0d007b
-			public const int Base_Widget_AppCompat_Spinner = 2131558523;
-			
-			// aapt resource value: 0x7f0d0012
-			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131558418;
-			
-			// aapt resource value: 0x7f0d007c
-			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131558524;
-			
-			// aapt resource value: 0x7f0d0095
-			public const int Base_Widget_AppCompat_Toolbar = 2131558549;
-			
-			// aapt resource value: 0x7f0d007d
-			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131558525;
-			
-			// aapt resource value: 0x7f0d0188
-			public const int Base_Widget_Design_TabLayout = 2131558792;
-			
-			// aapt resource value: 0x7f0d0189
-			public const int Base_Widget_MaterialComponents_Chip = 2131558793;
-			
-			// aapt resource value: 0x7f0d018a
-			public const int Base_Widget_MaterialComponents_TextInputEditText = 2131558794;
-			
-			// aapt resource value: 0x7f0d018b
-			public const int Base_Widget_MaterialComponents_TextInputLayout = 2131558795;
-			
-			// aapt resource value: 0x7f0d000b
-			public const int CardView = 2131558411;
-			
-			// aapt resource value: 0x7f0d000d
-			public const int CardView_Dark = 2131558413;
-			
-			// aapt resource value: 0x7f0d000e
-			public const int CardView_Light = 2131558414;
-			
-			// aapt resource value: 0x7f0d01ff
-			public const int MainTheme = 2131558911;
-			
-			// aapt resource value: 0x7f0d0200
-			public const int MainTheme_Base = 2131558912;
-			
-			// aapt resource value: 0x7f0d007e
-			public const int Platform_AppCompat = 2131558526;
-			
-			// aapt resource value: 0x7f0d007f
-			public const int Platform_AppCompat_Light = 2131558527;
-			
-			// aapt resource value: 0x7f0d018c
-			public const int Platform_MaterialComponents = 2131558796;
-			
-			// aapt resource value: 0x7f0d018d
-			public const int Platform_MaterialComponents_Dialog = 2131558797;
-			
-			// aapt resource value: 0x7f0d018e
-			public const int Platform_MaterialComponents_Light = 2131558798;
-			
-			// aapt resource value: 0x7f0d018f
-			public const int Platform_MaterialComponents_Light_Dialog = 2131558799;
-			
-			// aapt resource value: 0x7f0d0080
-			public const int Platform_ThemeOverlay_AppCompat = 2131558528;
-			
-			// aapt resource value: 0x7f0d0081
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131558529;
-			
-			// aapt resource value: 0x7f0d0082
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131558530;
-			
-			// aapt resource value: 0x7f0d0083
-			public const int Platform_V21_AppCompat = 2131558531;
-			
-			// aapt resource value: 0x7f0d0084
-			public const int Platform_V21_AppCompat_Light = 2131558532;
+			public const int Animation_AppCompat_Dialog = 2131558543;
 			
 			// aapt resource value: 0x7f0d0090
-			public const int Platform_V25_AppCompat = 2131558544;
+			public const int Animation_AppCompat_DropDownUp = 2131558544;
 			
 			// aapt resource value: 0x7f0d0091
-			public const int Platform_V25_AppCompat_Light = 2131558545;
-			
-			// aapt resource value: 0x7f0d00d1
-			public const int Platform_Widget_AppCompat_Spinner = 2131558609;
-			
-			// aapt resource value: 0x7f0d001b
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131558427;
-			
-			// aapt resource value: 0x7f0d001c
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131558428;
-			
-			// aapt resource value: 0x7f0d001d
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131558429;
-			
-			// aapt resource value: 0x7f0d001e
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131558430;
-			
-			// aapt resource value: 0x7f0d001f
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131558431;
-			
-			// aapt resource value: 0x7f0d0020
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131558432;
-			
-			// aapt resource value: 0x7f0d0021
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131558433;
-			
-			// aapt resource value: 0x7f0d0022
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131558434;
-			
-			// aapt resource value: 0x7f0d0023
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131558435;
-			
-			// aapt resource value: 0x7f0d0024
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131558436;
-			
-			// aapt resource value: 0x7f0d0025
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131558437;
-			
-			// aapt resource value: 0x7f0d0026
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131558438;
-			
-			// aapt resource value: 0x7f0d0027
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131558439;
-			
-			// aapt resource value: 0x7f0d0028
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131558440;
-			
-			// aapt resource value: 0x7f0d0029
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131558441;
-			
-			// aapt resource value: 0x7f0d002a
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131558442;
-			
-			// aapt resource value: 0x7f0d002b
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131558443;
-			
-			// aapt resource value: 0x7f0d00d2
-			public const int TextAppearance_AppCompat = 2131558610;
-			
-			// aapt resource value: 0x7f0d00d3
-			public const int TextAppearance_AppCompat_Body1 = 2131558611;
-			
-			// aapt resource value: 0x7f0d00d4
-			public const int TextAppearance_AppCompat_Body2 = 2131558612;
-			
-			// aapt resource value: 0x7f0d00d5
-			public const int TextAppearance_AppCompat_Button = 2131558613;
-			
-			// aapt resource value: 0x7f0d00d6
-			public const int TextAppearance_AppCompat_Caption = 2131558614;
-			
-			// aapt resource value: 0x7f0d00d7
-			public const int TextAppearance_AppCompat_Display1 = 2131558615;
-			
-			// aapt resource value: 0x7f0d00d8
-			public const int TextAppearance_AppCompat_Display2 = 2131558616;
-			
-			// aapt resource value: 0x7f0d00d9
-			public const int TextAppearance_AppCompat_Display3 = 2131558617;
-			
-			// aapt resource value: 0x7f0d00da
-			public const int TextAppearance_AppCompat_Display4 = 2131558618;
-			
-			// aapt resource value: 0x7f0d00db
-			public const int TextAppearance_AppCompat_Headline = 2131558619;
-			
-			// aapt resource value: 0x7f0d00dc
-			public const int TextAppearance_AppCompat_Inverse = 2131558620;
-			
-			// aapt resource value: 0x7f0d00dd
-			public const int TextAppearance_AppCompat_Large = 2131558621;
-			
-			// aapt resource value: 0x7f0d00de
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131558622;
-			
-			// aapt resource value: 0x7f0d00df
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131558623;
-			
-			// aapt resource value: 0x7f0d00e0
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131558624;
-			
-			// aapt resource value: 0x7f0d00e1
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131558625;
-			
-			// aapt resource value: 0x7f0d00e2
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131558626;
-			
-			// aapt resource value: 0x7f0d00e3
-			public const int TextAppearance_AppCompat_Medium = 2131558627;
-			
-			// aapt resource value: 0x7f0d00e4
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131558628;
-			
-			// aapt resource value: 0x7f0d00e5
-			public const int TextAppearance_AppCompat_Menu = 2131558629;
-			
-			// aapt resource value: 0x7f0d00e6
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131558630;
-			
-			// aapt resource value: 0x7f0d00e7
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131558631;
-			
-			// aapt resource value: 0x7f0d00e8
-			public const int TextAppearance_AppCompat_Small = 2131558632;
-			
-			// aapt resource value: 0x7f0d00e9
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131558633;
-			
-			// aapt resource value: 0x7f0d00ea
-			public const int TextAppearance_AppCompat_Subhead = 2131558634;
-			
-			// aapt resource value: 0x7f0d00eb
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131558635;
-			
-			// aapt resource value: 0x7f0d00ec
-			public const int TextAppearance_AppCompat_Title = 2131558636;
-			
-			// aapt resource value: 0x7f0d00ed
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131558637;
-			
-			// aapt resource value: 0x7f0d001a
-			public const int TextAppearance_AppCompat_Tooltip = 2131558426;
-			
-			// aapt resource value: 0x7f0d00ee
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131558638;
-			
-			// aapt resource value: 0x7f0d00ef
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131558639;
-			
-			// aapt resource value: 0x7f0d00f0
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131558640;
-			
-			// aapt resource value: 0x7f0d00f1
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131558641;
-			
-			// aapt resource value: 0x7f0d00f2
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131558642;
-			
-			// aapt resource value: 0x7f0d00f3
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131558643;
-			
-			// aapt resource value: 0x7f0d00f4
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131558644;
-			
-			// aapt resource value: 0x7f0d00f5
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131558645;
-			
-			// aapt resource value: 0x7f0d00f6
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131558646;
-			
-			// aapt resource value: 0x7f0d00f7
-			public const int TextAppearance_AppCompat_Widget_Button = 2131558647;
-			
-			// aapt resource value: 0x7f0d00f8
-			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131558648;
-			
-			// aapt resource value: 0x7f0d00f9
-			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131558649;
-			
-			// aapt resource value: 0x7f0d00fa
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131558650;
-			
-			// aapt resource value: 0x7f0d00fb
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131558651;
-			
-			// aapt resource value: 0x7f0d00fc
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131558652;
-			
-			// aapt resource value: 0x7f0d00fd
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131558653;
-			
-			// aapt resource value: 0x7f0d00fe
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131558654;
-			
-			// aapt resource value: 0x7f0d00ff
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131558655;
-			
-			// aapt resource value: 0x7f0d0100
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131558656;
-			
-			// aapt resource value: 0x7f0d01f8
-			public const int TextAppearance_Compat_Notification = 2131558904;
-			
-			// aapt resource value: 0x7f0d01f9
-			public const int TextAppearance_Compat_Notification_Info = 2131558905;
-			
-			// aapt resource value: 0x7f0d0161
-			public const int TextAppearance_Compat_Notification_Info_Media = 2131558753;
-			
-			// aapt resource value: 0x7f0d01fe
-			public const int TextAppearance_Compat_Notification_Line2 = 2131558910;
-			
-			// aapt resource value: 0x7f0d0165
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2131558757;
+			public const int Animation_AppCompat_Tooltip = 2131558545;
 			
 			// aapt resource value: 0x7f0d0162
-			public const int TextAppearance_Compat_Notification_Media = 2131558754;
-			
-			// aapt resource value: 0x7f0d01fa
-			public const int TextAppearance_Compat_Notification_Time = 2131558906;
-			
-			// aapt resource value: 0x7f0d0163
-			public const int TextAppearance_Compat_Notification_Time_Media = 2131558755;
-			
-			// aapt resource value: 0x7f0d01fb
-			public const int TextAppearance_Compat_Notification_Title = 2131558907;
-			
-			// aapt resource value: 0x7f0d0164
-			public const int TextAppearance_Compat_Notification_Title_Media = 2131558756;
-			
-			// aapt resource value: 0x7f0d0190
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131558800;
-			
-			// aapt resource value: 0x7f0d0191
-			public const int TextAppearance_Design_Counter = 2131558801;
-			
-			// aapt resource value: 0x7f0d0192
-			public const int TextAppearance_Design_Counter_Overflow = 2131558802;
-			
-			// aapt resource value: 0x7f0d0193
-			public const int TextAppearance_Design_Error = 2131558803;
-			
-			// aapt resource value: 0x7f0d0194
-			public const int TextAppearance_Design_HelperText = 2131558804;
-			
-			// aapt resource value: 0x7f0d0195
-			public const int TextAppearance_Design_Hint = 2131558805;
-			
-			// aapt resource value: 0x7f0d0196
-			public const int TextAppearance_Design_Snackbar_Message = 2131558806;
-			
-			// aapt resource value: 0x7f0d0197
-			public const int TextAppearance_Design_Tab = 2131558807;
-			
-			// aapt resource value: 0x7f0d0198
-			public const int TextAppearance_MaterialComponents_Body1 = 2131558808;
-			
-			// aapt resource value: 0x7f0d0199
-			public const int TextAppearance_MaterialComponents_Body2 = 2131558809;
-			
-			// aapt resource value: 0x7f0d0169
-			public const int TextAppearance_MaterialComponents_Button = 2131558761;
-			
-			// aapt resource value: 0x7f0d019a
-			public const int TextAppearance_MaterialComponents_Caption = 2131558810;
-			
-			// aapt resource value: 0x7f0d019b
-			public const int TextAppearance_MaterialComponents_Chip = 2131558811;
-			
-			// aapt resource value: 0x7f0d019c
-			public const int TextAppearance_MaterialComponents_Headline1 = 2131558812;
-			
-			// aapt resource value: 0x7f0d019d
-			public const int TextAppearance_MaterialComponents_Headline2 = 2131558813;
-			
-			// aapt resource value: 0x7f0d019e
-			public const int TextAppearance_MaterialComponents_Headline3 = 2131558814;
-			
-			// aapt resource value: 0x7f0d019f
-			public const int TextAppearance_MaterialComponents_Headline4 = 2131558815;
-			
-			// aapt resource value: 0x7f0d01a0
-			public const int TextAppearance_MaterialComponents_Headline5 = 2131558816;
-			
-			// aapt resource value: 0x7f0d016a
-			public const int TextAppearance_MaterialComponents_Headline6 = 2131558762;
-			
-			// aapt resource value: 0x7f0d016b
-			public const int TextAppearance_MaterialComponents_Overline = 2131558763;
-			
-			// aapt resource value: 0x7f0d01a1
-			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131558817;
-			
-			// aapt resource value: 0x7f0d016c
-			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131558764;
-			
-			// aapt resource value: 0x7f0d01a2
-			public const int TextAppearance_MaterialComponents_Tab = 2131558818;
-			
-			// aapt resource value: 0x7f0d0000
-			public const int TextAppearance_MediaRouter_PrimaryText = 2131558400;
-			
-			// aapt resource value: 0x7f0d0001
-			public const int TextAppearance_MediaRouter_SecondaryText = 2131558401;
-			
-			// aapt resource value: 0x7f0d0002
-			public const int TextAppearance_MediaRouter_Title = 2131558402;
-			
-			// aapt resource value: 0x7f0d0101
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131558657;
-			
-			// aapt resource value: 0x7f0d0102
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131558658;
-			
-			// aapt resource value: 0x7f0d0103
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131558659;
-			
-			// aapt resource value: 0x7f0d0104
-			public const int Theme_AppCompat = 2131558660;
-			
-			// aapt resource value: 0x7f0d0105
-			public const int Theme_AppCompat_CompactMenu = 2131558661;
-			
-			// aapt resource value: 0x7f0d0013
-			public const int Theme_AppCompat_DayNight = 2131558419;
-			
-			// aapt resource value: 0x7f0d0014
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131558420;
-			
-			// aapt resource value: 0x7f0d0015
-			public const int Theme_AppCompat_DayNight_Dialog = 2131558421;
-			
-			// aapt resource value: 0x7f0d0016
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131558422;
-			
-			// aapt resource value: 0x7f0d0017
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131558423;
-			
-			// aapt resource value: 0x7f0d0018
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131558424;
-			
-			// aapt resource value: 0x7f0d0019
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131558425;
-			
-			// aapt resource value: 0x7f0d0106
-			public const int Theme_AppCompat_Dialog = 2131558662;
-			
-			// aapt resource value: 0x7f0d0107
-			public const int Theme_AppCompat_Dialog_Alert = 2131558663;
-			
-			// aapt resource value: 0x7f0d0108
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131558664;
-			
-			// aapt resource value: 0x7f0d0109
-			public const int Theme_AppCompat_DialogWhenLarge = 2131558665;
-			
-			// aapt resource value: 0x7f0d010a
-			public const int Theme_AppCompat_Light = 2131558666;
-			
-			// aapt resource value: 0x7f0d010b
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131558667;
-			
-			// aapt resource value: 0x7f0d010c
-			public const int Theme_AppCompat_Light_Dialog = 2131558668;
-			
-			// aapt resource value: 0x7f0d010d
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131558669;
-			
-			// aapt resource value: 0x7f0d010e
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131558670;
-			
-			// aapt resource value: 0x7f0d010f
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131558671;
-			
-			// aapt resource value: 0x7f0d0110
-			public const int Theme_AppCompat_Light_NoActionBar = 2131558672;
-			
-			// aapt resource value: 0x7f0d0111
-			public const int Theme_AppCompat_NoActionBar = 2131558673;
-			
-			// aapt resource value: 0x7f0d01a3
-			public const int Theme_Design = 2131558819;
-			
-			// aapt resource value: 0x7f0d01a4
-			public const int Theme_Design_BottomSheetDialog = 2131558820;
-			
-			// aapt resource value: 0x7f0d01a5
-			public const int Theme_Design_Light = 2131558821;
-			
-			// aapt resource value: 0x7f0d01a6
-			public const int Theme_Design_Light_BottomSheetDialog = 2131558822;
-			
-			// aapt resource value: 0x7f0d01a7
-			public const int Theme_Design_Light_NoActionBar = 2131558823;
-			
-			// aapt resource value: 0x7f0d01a8
-			public const int Theme_Design_NoActionBar = 2131558824;
-			
-			// aapt resource value: 0x7f0d01a9
-			public const int Theme_MaterialComponents = 2131558825;
-			
-			// aapt resource value: 0x7f0d01aa
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131558826;
-			
-			// aapt resource value: 0x7f0d01ab
-			public const int Theme_MaterialComponents_Bridge = 2131558827;
-			
-			// aapt resource value: 0x7f0d01ac
-			public const int Theme_MaterialComponents_CompactMenu = 2131558828;
-			
-			// aapt resource value: 0x7f0d01ad
-			public const int Theme_MaterialComponents_Dialog = 2131558829;
-			
-			// aapt resource value: 0x7f0d01ae
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131558830;
-			
-			// aapt resource value: 0x7f0d01af
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131558831;
-			
-			// aapt resource value: 0x7f0d01b0
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131558832;
-			
-			// aapt resource value: 0x7f0d01b1
-			public const int Theme_MaterialComponents_Light = 2131558833;
-			
-			// aapt resource value: 0x7f0d01b2
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131558834;
-			
-			// aapt resource value: 0x7f0d01b3
-			public const int Theme_MaterialComponents_Light_Bridge = 2131558835;
-			
-			// aapt resource value: 0x7f0d01b4
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131558836;
-			
-			// aapt resource value: 0x7f0d01b5
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131558837;
-			
-			// aapt resource value: 0x7f0d01b6
-			public const int Theme_MaterialComponents_Light_Dialog = 2131558838;
-			
-			// aapt resource value: 0x7f0d01b7
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131558839;
-			
-			// aapt resource value: 0x7f0d01b8
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131558840;
-			
-			// aapt resource value: 0x7f0d01b9
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131558841;
-			
-			// aapt resource value: 0x7f0d01ba
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131558842;
-			
-			// aapt resource value: 0x7f0d01bb
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131558843;
-			
-			// aapt resource value: 0x7f0d01bc
-			public const int Theme_MaterialComponents_NoActionBar = 2131558844;
-			
-			// aapt resource value: 0x7f0d01bd
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131558845;
-			
-			// aapt resource value: 0x7f0d0003
-			public const int Theme_MediaRouter = 2131558403;
-			
-			// aapt resource value: 0x7f0d0004
-			public const int Theme_MediaRouter_Light = 2131558404;
-			
-			// aapt resource value: 0x7f0d0005
-			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131558405;
-			
-			// aapt resource value: 0x7f0d0006
-			public const int Theme_MediaRouter_LightControlPanel = 2131558406;
-			
-			// aapt resource value: 0x7f0d0112
-			public const int ThemeOverlay_AppCompat = 2131558674;
-			
-			// aapt resource value: 0x7f0d0113
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131558675;
-			
-			// aapt resource value: 0x7f0d0114
-			public const int ThemeOverlay_AppCompat_Dark = 2131558676;
-			
-			// aapt resource value: 0x7f0d0115
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131558677;
-			
-			// aapt resource value: 0x7f0d0116
-			public const int ThemeOverlay_AppCompat_Dialog = 2131558678;
-			
-			// aapt resource value: 0x7f0d0117
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131558679;
-			
-			// aapt resource value: 0x7f0d0118
-			public const int ThemeOverlay_AppCompat_Light = 2131558680;
-			
-			// aapt resource value: 0x7f0d01be
-			public const int ThemeOverlay_MaterialComponents = 2131558846;
-			
-			// aapt resource value: 0x7f0d01bf
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131558847;
-			
-			// aapt resource value: 0x7f0d01c0
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131558848;
-			
-			// aapt resource value: 0x7f0d01c1
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131558849;
-			
-			// aapt resource value: 0x7f0d01c2
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131558850;
-			
-			// aapt resource value: 0x7f0d01c3
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131558851;
-			
-			// aapt resource value: 0x7f0d01c4
-			public const int ThemeOverlay_MaterialComponents_Light = 2131558852;
-			
-			// aapt resource value: 0x7f0d01c5
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131558853;
-			
-			// aapt resource value: 0x7f0d01c6
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131558854;
-			
-			// aapt resource value: 0x7f0d01c7
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131558855;
-			
-			// aapt resource value: 0x7f0d01c8
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131558856;
-			
-			// aapt resource value: 0x7f0d01c9
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131558857;
-			
-			// aapt resource value: 0x7f0d0007
-			public const int ThemeOverlay_MediaRouter_Dark = 2131558407;
-			
-			// aapt resource value: 0x7f0d0008
-			public const int ThemeOverlay_MediaRouter_Light = 2131558408;
-			
-			// aapt resource value: 0x7f0d0119
-			public const int Widget_AppCompat_ActionBar = 2131558681;
-			
-			// aapt resource value: 0x7f0d011a
-			public const int Widget_AppCompat_ActionBar_Solid = 2131558682;
-			
-			// aapt resource value: 0x7f0d011b
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131558683;
-			
-			// aapt resource value: 0x7f0d011c
-			public const int Widget_AppCompat_ActionBar_TabText = 2131558684;
-			
-			// aapt resource value: 0x7f0d011d
-			public const int Widget_AppCompat_ActionBar_TabView = 2131558685;
-			
-			// aapt resource value: 0x7f0d011e
-			public const int Widget_AppCompat_ActionButton = 2131558686;
-			
-			// aapt resource value: 0x7f0d011f
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131558687;
-			
-			// aapt resource value: 0x7f0d0120
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131558688;
-			
-			// aapt resource value: 0x7f0d0121
-			public const int Widget_AppCompat_ActionMode = 2131558689;
-			
-			// aapt resource value: 0x7f0d0122
-			public const int Widget_AppCompat_ActivityChooserView = 2131558690;
-			
-			// aapt resource value: 0x7f0d0123
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131558691;
-			
-			// aapt resource value: 0x7f0d0124
-			public const int Widget_AppCompat_Button = 2131558692;
-			
-			// aapt resource value: 0x7f0d0125
-			public const int Widget_AppCompat_Button_Borderless = 2131558693;
-			
-			// aapt resource value: 0x7f0d0126
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131558694;
-			
-			// aapt resource value: 0x7f0d0127
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131558695;
-			
-			// aapt resource value: 0x7f0d0128
-			public const int Widget_AppCompat_Button_Colored = 2131558696;
-			
-			// aapt resource value: 0x7f0d0129
-			public const int Widget_AppCompat_Button_Small = 2131558697;
-			
-			// aapt resource value: 0x7f0d012a
-			public const int Widget_AppCompat_ButtonBar = 2131558698;
-			
-			// aapt resource value: 0x7f0d012b
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131558699;
-			
-			// aapt resource value: 0x7f0d012c
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131558700;
-			
-			// aapt resource value: 0x7f0d012d
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131558701;
-			
-			// aapt resource value: 0x7f0d012e
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131558702;
-			
-			// aapt resource value: 0x7f0d012f
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131558703;
-			
-			// aapt resource value: 0x7f0d0130
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131558704;
-			
-			// aapt resource value: 0x7f0d0131
-			public const int Widget_AppCompat_EditText = 2131558705;
-			
-			// aapt resource value: 0x7f0d0132
-			public const int Widget_AppCompat_ImageButton = 2131558706;
-			
-			// aapt resource value: 0x7f0d0133
-			public const int Widget_AppCompat_Light_ActionBar = 2131558707;
-			
-			// aapt resource value: 0x7f0d0134
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131558708;
-			
-			// aapt resource value: 0x7f0d0135
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131558709;
-			
-			// aapt resource value: 0x7f0d0136
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131558710;
-			
-			// aapt resource value: 0x7f0d0137
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131558711;
-			
-			// aapt resource value: 0x7f0d0138
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131558712;
-			
-			// aapt resource value: 0x7f0d0139
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131558713;
-			
-			// aapt resource value: 0x7f0d013a
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131558714;
-			
-			// aapt resource value: 0x7f0d013b
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131558715;
-			
-			// aapt resource value: 0x7f0d013c
-			public const int Widget_AppCompat_Light_ActionButton = 2131558716;
-			
-			// aapt resource value: 0x7f0d013d
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131558717;
-			
-			// aapt resource value: 0x7f0d013e
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131558718;
-			
-			// aapt resource value: 0x7f0d013f
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131558719;
-			
-			// aapt resource value: 0x7f0d0140
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131558720;
-			
-			// aapt resource value: 0x7f0d0141
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131558721;
-			
-			// aapt resource value: 0x7f0d0142
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131558722;
-			
-			// aapt resource value: 0x7f0d0143
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131558723;
-			
-			// aapt resource value: 0x7f0d0144
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131558724;
-			
-			// aapt resource value: 0x7f0d0145
-			public const int Widget_AppCompat_Light_PopupMenu = 2131558725;
-			
-			// aapt resource value: 0x7f0d0146
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131558726;
-			
-			// aapt resource value: 0x7f0d0147
-			public const int Widget_AppCompat_Light_SearchView = 2131558727;
-			
-			// aapt resource value: 0x7f0d0148
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131558728;
-			
-			// aapt resource value: 0x7f0d0149
-			public const int Widget_AppCompat_ListMenuView = 2131558729;
-			
-			// aapt resource value: 0x7f0d014a
-			public const int Widget_AppCompat_ListPopupWindow = 2131558730;
-			
-			// aapt resource value: 0x7f0d014b
-			public const int Widget_AppCompat_ListView = 2131558731;
-			
-			// aapt resource value: 0x7f0d014c
-			public const int Widget_AppCompat_ListView_DropDown = 2131558732;
-			
-			// aapt resource value: 0x7f0d014d
-			public const int Widget_AppCompat_ListView_Menu = 2131558733;
-			
-			// aapt resource value: 0x7f0d014e
-			public const int Widget_AppCompat_PopupMenu = 2131558734;
-			
-			// aapt resource value: 0x7f0d014f
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131558735;
-			
-			// aapt resource value: 0x7f0d0150
-			public const int Widget_AppCompat_PopupWindow = 2131558736;
-			
-			// aapt resource value: 0x7f0d0151
-			public const int Widget_AppCompat_ProgressBar = 2131558737;
-			
-			// aapt resource value: 0x7f0d0152
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131558738;
-			
-			// aapt resource value: 0x7f0d0153
-			public const int Widget_AppCompat_RatingBar = 2131558739;
-			
-			// aapt resource value: 0x7f0d0154
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131558740;
-			
-			// aapt resource value: 0x7f0d0155
-			public const int Widget_AppCompat_RatingBar_Small = 2131558741;
-			
-			// aapt resource value: 0x7f0d0156
-			public const int Widget_AppCompat_SearchView = 2131558742;
-			
-			// aapt resource value: 0x7f0d0157
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131558743;
-			
-			// aapt resource value: 0x7f0d0158
-			public const int Widget_AppCompat_SeekBar = 2131558744;
-			
-			// aapt resource value: 0x7f0d0159
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131558745;
-			
-			// aapt resource value: 0x7f0d015a
-			public const int Widget_AppCompat_Spinner = 2131558746;
-			
-			// aapt resource value: 0x7f0d015b
-			public const int Widget_AppCompat_Spinner_DropDown = 2131558747;
-			
-			// aapt resource value: 0x7f0d015c
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131558748;
-			
-			// aapt resource value: 0x7f0d015d
-			public const int Widget_AppCompat_Spinner_Underlined = 2131558749;
-			
-			// aapt resource value: 0x7f0d015e
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131558750;
-			
-			// aapt resource value: 0x7f0d015f
-			public const int Widget_AppCompat_Toolbar = 2131558751;
-			
-			// aapt resource value: 0x7f0d0160
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131558752;
-			
-			// aapt resource value: 0x7f0d01fc
-			public const int Widget_Compat_NotificationActionContainer = 2131558908;
-			
-			// aapt resource value: 0x7f0d01fd
-			public const int Widget_Compat_NotificationActionText = 2131558909;
-			
-			// aapt resource value: 0x7f0d01ca
-			public const int Widget_Design_AppBarLayout = 2131558858;
-			
-			// aapt resource value: 0x7f0d01cb
-			public const int Widget_Design_BottomNavigationView = 2131558859;
-			
-			// aapt resource value: 0x7f0d01cc
-			public const int Widget_Design_BottomSheet_Modal = 2131558860;
-			
-			// aapt resource value: 0x7f0d01cd
-			public const int Widget_Design_CollapsingToolbar = 2131558861;
-			
-			// aapt resource value: 0x7f0d01ce
-			public const int Widget_Design_FloatingActionButton = 2131558862;
-			
-			// aapt resource value: 0x7f0d01cf
-			public const int Widget_Design_NavigationView = 2131558863;
-			
-			// aapt resource value: 0x7f0d01d0
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131558864;
-			
-			// aapt resource value: 0x7f0d01d1
-			public const int Widget_Design_Snackbar = 2131558865;
-			
-			// aapt resource value: 0x7f0d0166
-			public const int Widget_Design_TabLayout = 2131558758;
-			
-			// aapt resource value: 0x7f0d01d2
-			public const int Widget_Design_TextInputLayout = 2131558866;
-			
-			// aapt resource value: 0x7f0d01d3
-			public const int Widget_MaterialComponents_BottomAppBar = 2131558867;
-			
-			// aapt resource value: 0x7f0d01d4
-			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131558868;
-			
-			// aapt resource value: 0x7f0d01d5
-			public const int Widget_MaterialComponents_BottomNavigationView = 2131558869;
-			
-			// aapt resource value: 0x7f0d01d6
-			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131558870;
-			
-			// aapt resource value: 0x7f0d01d7
-			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131558871;
-			
-			// aapt resource value: 0x7f0d01d8
-			public const int Widget_MaterialComponents_Button = 2131558872;
-			
-			// aapt resource value: 0x7f0d01d9
-			public const int Widget_MaterialComponents_Button_Icon = 2131558873;
-			
-			// aapt resource value: 0x7f0d01da
-			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131558874;
-			
-			// aapt resource value: 0x7f0d01db
-			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131558875;
-			
-			// aapt resource value: 0x7f0d01dc
-			public const int Widget_MaterialComponents_Button_TextButton = 2131558876;
-			
-			// aapt resource value: 0x7f0d01dd
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131558877;
-			
-			// aapt resource value: 0x7f0d01de
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131558878;
-			
-			// aapt resource value: 0x7f0d01df
-			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131558879;
-			
-			// aapt resource value: 0x7f0d01e0
-			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131558880;
-			
-			// aapt resource value: 0x7f0d01e1
-			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131558881;
-			
-			// aapt resource value: 0x7f0d01e2
-			public const int Widget_MaterialComponents_CardView = 2131558882;
-			
-			// aapt resource value: 0x7f0d01e3
-			public const int Widget_MaterialComponents_Chip_Action = 2131558883;
-			
-			// aapt resource value: 0x7f0d01e4
-			public const int Widget_MaterialComponents_Chip_Choice = 2131558884;
-			
-			// aapt resource value: 0x7f0d01e5
-			public const int Widget_MaterialComponents_Chip_Entry = 2131558885;
-			
-			// aapt resource value: 0x7f0d01e6
-			public const int Widget_MaterialComponents_Chip_Filter = 2131558886;
-			
-			// aapt resource value: 0x7f0d01e7
-			public const int Widget_MaterialComponents_ChipGroup = 2131558887;
-			
-			// aapt resource value: 0x7f0d01e8
-			public const int Widget_MaterialComponents_FloatingActionButton = 2131558888;
-			
-			// aapt resource value: 0x7f0d01e9
-			public const int Widget_MaterialComponents_NavigationView = 2131558889;
-			
-			// aapt resource value: 0x7f0d01ea
-			public const int Widget_MaterialComponents_Snackbar = 2131558890;
-			
-			// aapt resource value: 0x7f0d01eb
-			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131558891;
-			
-			// aapt resource value: 0x7f0d01ec
-			public const int Widget_MaterialComponents_TabLayout = 2131558892;
-			
-			// aapt resource value: 0x7f0d01ed
-			public const int Widget_MaterialComponents_TabLayout_Colored = 2131558893;
-			
-			// aapt resource value: 0x7f0d01ee
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131558894;
-			
-			// aapt resource value: 0x7f0d01ef
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131558895;
-			
-			// aapt resource value: 0x7f0d01f0
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131558896;
-			
-			// aapt resource value: 0x7f0d01f1
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131558897;
-			
-			// aapt resource value: 0x7f0d01f2
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131558898;
-			
-			// aapt resource value: 0x7f0d01f3
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131558899;
-			
-			// aapt resource value: 0x7f0d01f4
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131558900;
-			
-			// aapt resource value: 0x7f0d01f5
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131558901;
+			public const int Animation_Design_BottomSheetDialog = 2131558754;
 			
 			// aapt resource value: 0x7f0d01f6
-			public const int Widget_MaterialComponents_Toolbar = 2131558902;
+			public const int AppCompatDialogStyle = 2131558902;
+			
+			// aapt resource value: 0x7f0d0092
+			public const int Base_AlertDialog_AppCompat = 2131558546;
+			
+			// aapt resource value: 0x7f0d0093
+			public const int Base_AlertDialog_AppCompat_Light = 2131558547;
+			
+			// aapt resource value: 0x7f0d0094
+			public const int Base_Animation_AppCompat_Dialog = 2131558548;
+			
+			// aapt resource value: 0x7f0d0095
+			public const int Base_Animation_AppCompat_DropDownUp = 2131558549;
+			
+			// aapt resource value: 0x7f0d0096
+			public const int Base_Animation_AppCompat_Tooltip = 2131558550;
+			
+			// aapt resource value: 0x7f0d0001
+			public const int Base_CardView = 2131558401;
+			
+			// aapt resource value: 0x7f0d0097
+			public const int Base_DialogWindowTitle_AppCompat = 2131558551;
+			
+			// aapt resource value: 0x7f0d0098
+			public const int Base_DialogWindowTitleBackground_AppCompat = 2131558552;
+			
+			// aapt resource value: 0x7f0d0021
+			public const int Base_TextAppearance_AppCompat = 2131558433;
+			
+			// aapt resource value: 0x7f0d0022
+			public const int Base_TextAppearance_AppCompat_Body1 = 2131558434;
+			
+			// aapt resource value: 0x7f0d0023
+			public const int Base_TextAppearance_AppCompat_Body2 = 2131558435;
+			
+			// aapt resource value: 0x7f0d0024
+			public const int Base_TextAppearance_AppCompat_Button = 2131558436;
+			
+			// aapt resource value: 0x7f0d0025
+			public const int Base_TextAppearance_AppCompat_Caption = 2131558437;
+			
+			// aapt resource value: 0x7f0d0026
+			public const int Base_TextAppearance_AppCompat_Display1 = 2131558438;
+			
+			// aapt resource value: 0x7f0d0027
+			public const int Base_TextAppearance_AppCompat_Display2 = 2131558439;
+			
+			// aapt resource value: 0x7f0d0028
+			public const int Base_TextAppearance_AppCompat_Display3 = 2131558440;
+			
+			// aapt resource value: 0x7f0d0029
+			public const int Base_TextAppearance_AppCompat_Display4 = 2131558441;
+			
+			// aapt resource value: 0x7f0d002a
+			public const int Base_TextAppearance_AppCompat_Headline = 2131558442;
+			
+			// aapt resource value: 0x7f0d002b
+			public const int Base_TextAppearance_AppCompat_Inverse = 2131558443;
+			
+			// aapt resource value: 0x7f0d002c
+			public const int Base_TextAppearance_AppCompat_Large = 2131558444;
+			
+			// aapt resource value: 0x7f0d002d
+			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131558445;
+			
+			// aapt resource value: 0x7f0d002e
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131558446;
+			
+			// aapt resource value: 0x7f0d002f
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131558447;
+			
+			// aapt resource value: 0x7f0d0030
+			public const int Base_TextAppearance_AppCompat_Medium = 2131558448;
+			
+			// aapt resource value: 0x7f0d0031
+			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131558449;
+			
+			// aapt resource value: 0x7f0d0032
+			public const int Base_TextAppearance_AppCompat_Menu = 2131558450;
+			
+			// aapt resource value: 0x7f0d0099
+			public const int Base_TextAppearance_AppCompat_SearchResult = 2131558553;
+			
+			// aapt resource value: 0x7f0d0033
+			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131558451;
+			
+			// aapt resource value: 0x7f0d0034
+			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131558452;
+			
+			// aapt resource value: 0x7f0d0035
+			public const int Base_TextAppearance_AppCompat_Small = 2131558453;
+			
+			// aapt resource value: 0x7f0d0036
+			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131558454;
+			
+			// aapt resource value: 0x7f0d0037
+			public const int Base_TextAppearance_AppCompat_Subhead = 2131558455;
+			
+			// aapt resource value: 0x7f0d009a
+			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131558554;
+			
+			// aapt resource value: 0x7f0d0038
+			public const int Base_TextAppearance_AppCompat_Title = 2131558456;
+			
+			// aapt resource value: 0x7f0d009b
+			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131558555;
+			
+			// aapt resource value: 0x7f0d009c
+			public const int Base_TextAppearance_AppCompat_Tooltip = 2131558556;
+			
+			// aapt resource value: 0x7f0d007c
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131558524;
+			
+			// aapt resource value: 0x7f0d0039
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131558457;
+			
+			// aapt resource value: 0x7f0d003a
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131558458;
+			
+			// aapt resource value: 0x7f0d003b
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131558459;
+			
+			// aapt resource value: 0x7f0d003c
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131558460;
+			
+			// aapt resource value: 0x7f0d003d
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131558461;
+			
+			// aapt resource value: 0x7f0d003e
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131558462;
+			
+			// aapt resource value: 0x7f0d003f
+			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131558463;
+			
+			// aapt resource value: 0x7f0d0083
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131558531;
+			
+			// aapt resource value: 0x7f0d0084
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131558532;
+			
+			// aapt resource value: 0x7f0d007d
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131558525;
+			
+			// aapt resource value: 0x7f0d009d
+			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131558557;
+			
+			// aapt resource value: 0x7f0d0040
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131558464;
+			
+			// aapt resource value: 0x7f0d0041
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131558465;
+			
+			// aapt resource value: 0x7f0d0042
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131558466;
+			
+			// aapt resource value: 0x7f0d0043
+			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131558467;
+			
+			// aapt resource value: 0x7f0d0044
+			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131558468;
+			
+			// aapt resource value: 0x7f0d009e
+			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131558558;
+			
+			// aapt resource value: 0x7f0d0045
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131558469;
+			
+			// aapt resource value: 0x7f0d0046
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131558470;
+			
+			// aapt resource value: 0x7f0d0047
+			public const int Base_Theme_AppCompat = 2131558471;
+			
+			// aapt resource value: 0x7f0d009f
+			public const int Base_Theme_AppCompat_CompactMenu = 2131558559;
+			
+			// aapt resource value: 0x7f0d0048
+			public const int Base_Theme_AppCompat_Dialog = 2131558472;
+			
+			// aapt resource value: 0x7f0d00a0
+			public const int Base_Theme_AppCompat_Dialog_Alert = 2131558560;
+			
+			// aapt resource value: 0x7f0d00a1
+			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131558561;
+			
+			// aapt resource value: 0x7f0d00a2
+			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131558562;
+			
+			// aapt resource value: 0x7f0d0005
+			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131558405;
+			
+			// aapt resource value: 0x7f0d0049
+			public const int Base_Theme_AppCompat_Light = 2131558473;
+			
+			// aapt resource value: 0x7f0d00a3
+			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131558563;
+			
+			// aapt resource value: 0x7f0d004a
+			public const int Base_Theme_AppCompat_Light_Dialog = 2131558474;
+			
+			// aapt resource value: 0x7f0d00a4
+			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131558564;
+			
+			// aapt resource value: 0x7f0d00a5
+			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131558565;
+			
+			// aapt resource value: 0x7f0d00a6
+			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131558566;
+			
+			// aapt resource value: 0x7f0d0006
+			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131558406;
+			
+			// aapt resource value: 0x7f0d0163
+			public const int Base_Theme_MaterialComponents = 2131558755;
+			
+			// aapt resource value: 0x7f0d0164
+			public const int Base_Theme_MaterialComponents_Bridge = 2131558756;
+			
+			// aapt resource value: 0x7f0d0165
+			public const int Base_Theme_MaterialComponents_CompactMenu = 2131558757;
+			
+			// aapt resource value: 0x7f0d0166
+			public const int Base_Theme_MaterialComponents_Dialog = 2131558758;
+			
+			// aapt resource value: 0x7f0d0167
+			public const int Base_Theme_MaterialComponents_Dialog_Alert = 2131558759;
+			
+			// aapt resource value: 0x7f0d0168
+			public const int Base_Theme_MaterialComponents_Dialog_FixedSize = 2131558760;
+			
+			// aapt resource value: 0x7f0d0169
+			public const int Base_Theme_MaterialComponents_Dialog_MinWidth = 2131558761;
+			
+			// aapt resource value: 0x7f0d015c
+			public const int Base_Theme_MaterialComponents_DialogWhenLarge = 2131558748;
+			
+			// aapt resource value: 0x7f0d016a
+			public const int Base_Theme_MaterialComponents_Light = 2131558762;
+			
+			// aapt resource value: 0x7f0d016b
+			public const int Base_Theme_MaterialComponents_Light_Bridge = 2131558763;
+			
+			// aapt resource value: 0x7f0d016c
+			public const int Base_Theme_MaterialComponents_Light_DarkActionBar = 2131558764;
+			
+			// aapt resource value: 0x7f0d016d
+			public const int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131558765;
+			
+			// aapt resource value: 0x7f0d016e
+			public const int Base_Theme_MaterialComponents_Light_Dialog = 2131558766;
+			
+			// aapt resource value: 0x7f0d016f
+			public const int Base_Theme_MaterialComponents_Light_Dialog_Alert = 2131558767;
+			
+			// aapt resource value: 0x7f0d0170
+			public const int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 2131558768;
+			
+			// aapt resource value: 0x7f0d0171
+			public const int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 2131558769;
+			
+			// aapt resource value: 0x7f0d015d
+			public const int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 2131558749;
+			
+			// aapt resource value: 0x7f0d00a7
+			public const int Base_ThemeOverlay_AppCompat = 2131558567;
+			
+			// aapt resource value: 0x7f0d00a8
+			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131558568;
+			
+			// aapt resource value: 0x7f0d00a9
+			public const int Base_ThemeOverlay_AppCompat_Dark = 2131558569;
+			
+			// aapt resource value: 0x7f0d00aa
+			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131558570;
+			
+			// aapt resource value: 0x7f0d004b
+			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131558475;
+			
+			// aapt resource value: 0x7f0d00ab
+			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131558571;
+			
+			// aapt resource value: 0x7f0d00ac
+			public const int Base_ThemeOverlay_AppCompat_Light = 2131558572;
+			
+			// aapt resource value: 0x7f0d0172
+			public const int Base_ThemeOverlay_MaterialComponents_Dialog = 2131558770;
+			
+			// aapt resource value: 0x7f0d0173
+			public const int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131558771;
+			
+			// aapt resource value: 0x7f0d0174
+			public const int Base_V14_Theme_MaterialComponents = 2131558772;
+			
+			// aapt resource value: 0x7f0d0175
+			public const int Base_V14_Theme_MaterialComponents_Bridge = 2131558773;
+			
+			// aapt resource value: 0x7f0d0176
+			public const int Base_V14_Theme_MaterialComponents_Dialog = 2131558774;
+			
+			// aapt resource value: 0x7f0d0177
+			public const int Base_V14_Theme_MaterialComponents_Light = 2131558775;
+			
+			// aapt resource value: 0x7f0d0178
+			public const int Base_V14_Theme_MaterialComponents_Light_Bridge = 2131558776;
+			
+			// aapt resource value: 0x7f0d0179
+			public const int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131558777;
+			
+			// aapt resource value: 0x7f0d017a
+			public const int Base_V14_Theme_MaterialComponents_Light_Dialog = 2131558778;
+			
+			// aapt resource value: 0x7f0d017b
+			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 2131558779;
+			
+			// aapt resource value: 0x7f0d017c
+			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131558780;
+			
+			// aapt resource value: 0x7f0d004c
+			public const int Base_V21_Theme_AppCompat = 2131558476;
+			
+			// aapt resource value: 0x7f0d004d
+			public const int Base_V21_Theme_AppCompat_Dialog = 2131558477;
+			
+			// aapt resource value: 0x7f0d004e
+			public const int Base_V21_Theme_AppCompat_Light = 2131558478;
+			
+			// aapt resource value: 0x7f0d004f
+			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131558479;
+			
+			// aapt resource value: 0x7f0d0050
+			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131558480;
+			
+			// aapt resource value: 0x7f0d007a
+			public const int Base_V22_Theme_AppCompat = 2131558522;
+			
+			// aapt resource value: 0x7f0d007b
+			public const int Base_V22_Theme_AppCompat_Light = 2131558523;
+			
+			// aapt resource value: 0x7f0d007e
+			public const int Base_V23_Theme_AppCompat = 2131558526;
+			
+			// aapt resource value: 0x7f0d007f
+			public const int Base_V23_Theme_AppCompat_Light = 2131558527;
+			
+			// aapt resource value: 0x7f0d0087
+			public const int Base_V26_Theme_AppCompat = 2131558535;
+			
+			// aapt resource value: 0x7f0d0088
+			public const int Base_V26_Theme_AppCompat_Light = 2131558536;
+			
+			// aapt resource value: 0x7f0d0089
+			public const int Base_V26_Widget_AppCompat_Toolbar = 2131558537;
+			
+			// aapt resource value: 0x7f0d008b
+			public const int Base_V28_Theme_AppCompat = 2131558539;
+			
+			// aapt resource value: 0x7f0d008c
+			public const int Base_V28_Theme_AppCompat_Light = 2131558540;
+			
+			// aapt resource value: 0x7f0d00ad
+			public const int Base_V7_Theme_AppCompat = 2131558573;
+			
+			// aapt resource value: 0x7f0d00ae
+			public const int Base_V7_Theme_AppCompat_Dialog = 2131558574;
+			
+			// aapt resource value: 0x7f0d00af
+			public const int Base_V7_Theme_AppCompat_Light = 2131558575;
+			
+			// aapt resource value: 0x7f0d00b0
+			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131558576;
+			
+			// aapt resource value: 0x7f0d00b1
+			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131558577;
+			
+			// aapt resource value: 0x7f0d00b2
+			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131558578;
+			
+			// aapt resource value: 0x7f0d00b3
+			public const int Base_V7_Widget_AppCompat_EditText = 2131558579;
+			
+			// aapt resource value: 0x7f0d00b4
+			public const int Base_V7_Widget_AppCompat_Toolbar = 2131558580;
+			
+			// aapt resource value: 0x7f0d00b5
+			public const int Base_Widget_AppCompat_ActionBar = 2131558581;
+			
+			// aapt resource value: 0x7f0d00b6
+			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131558582;
+			
+			// aapt resource value: 0x7f0d00b7
+			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131558583;
+			
+			// aapt resource value: 0x7f0d0051
+			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131558481;
+			
+			// aapt resource value: 0x7f0d0052
+			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131558482;
+			
+			// aapt resource value: 0x7f0d0053
+			public const int Base_Widget_AppCompat_ActionButton = 2131558483;
+			
+			// aapt resource value: 0x7f0d0054
+			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131558484;
+			
+			// aapt resource value: 0x7f0d0055
+			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131558485;
+			
+			// aapt resource value: 0x7f0d00b8
+			public const int Base_Widget_AppCompat_ActionMode = 2131558584;
+			
+			// aapt resource value: 0x7f0d00b9
+			public const int Base_Widget_AppCompat_ActivityChooserView = 2131558585;
+			
+			// aapt resource value: 0x7f0d0056
+			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131558486;
+			
+			// aapt resource value: 0x7f0d0057
+			public const int Base_Widget_AppCompat_Button = 2131558487;
+			
+			// aapt resource value: 0x7f0d0058
+			public const int Base_Widget_AppCompat_Button_Borderless = 2131558488;
+			
+			// aapt resource value: 0x7f0d0059
+			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131558489;
+			
+			// aapt resource value: 0x7f0d00ba
+			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131558586;
+			
+			// aapt resource value: 0x7f0d0080
+			public const int Base_Widget_AppCompat_Button_Colored = 2131558528;
+			
+			// aapt resource value: 0x7f0d005a
+			public const int Base_Widget_AppCompat_Button_Small = 2131558490;
+			
+			// aapt resource value: 0x7f0d005b
+			public const int Base_Widget_AppCompat_ButtonBar = 2131558491;
+			
+			// aapt resource value: 0x7f0d00bb
+			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131558587;
+			
+			// aapt resource value: 0x7f0d005c
+			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131558492;
+			
+			// aapt resource value: 0x7f0d005d
+			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131558493;
+			
+			// aapt resource value: 0x7f0d00bc
+			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131558588;
+			
+			// aapt resource value: 0x7f0d0004
+			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131558404;
+			
+			// aapt resource value: 0x7f0d00bd
+			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131558589;
+			
+			// aapt resource value: 0x7f0d005e
+			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131558494;
+			
+			// aapt resource value: 0x7f0d005f
+			public const int Base_Widget_AppCompat_EditText = 2131558495;
+			
+			// aapt resource value: 0x7f0d0060
+			public const int Base_Widget_AppCompat_ImageButton = 2131558496;
+			
+			// aapt resource value: 0x7f0d00be
+			public const int Base_Widget_AppCompat_Light_ActionBar = 2131558590;
+			
+			// aapt resource value: 0x7f0d00bf
+			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131558591;
+			
+			// aapt resource value: 0x7f0d00c0
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131558592;
+			
+			// aapt resource value: 0x7f0d0061
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131558497;
+			
+			// aapt resource value: 0x7f0d0062
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131558498;
+			
+			// aapt resource value: 0x7f0d0063
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131558499;
+			
+			// aapt resource value: 0x7f0d0064
+			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131558500;
+			
+			// aapt resource value: 0x7f0d0065
+			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131558501;
+			
+			// aapt resource value: 0x7f0d00c1
+			public const int Base_Widget_AppCompat_ListMenuView = 2131558593;
+			
+			// aapt resource value: 0x7f0d0066
+			public const int Base_Widget_AppCompat_ListPopupWindow = 2131558502;
+			
+			// aapt resource value: 0x7f0d0067
+			public const int Base_Widget_AppCompat_ListView = 2131558503;
+			
+			// aapt resource value: 0x7f0d0068
+			public const int Base_Widget_AppCompat_ListView_DropDown = 2131558504;
+			
+			// aapt resource value: 0x7f0d0069
+			public const int Base_Widget_AppCompat_ListView_Menu = 2131558505;
+			
+			// aapt resource value: 0x7f0d006a
+			public const int Base_Widget_AppCompat_PopupMenu = 2131558506;
+			
+			// aapt resource value: 0x7f0d006b
+			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131558507;
+			
+			// aapt resource value: 0x7f0d00c2
+			public const int Base_Widget_AppCompat_PopupWindow = 2131558594;
+			
+			// aapt resource value: 0x7f0d006c
+			public const int Base_Widget_AppCompat_ProgressBar = 2131558508;
+			
+			// aapt resource value: 0x7f0d006d
+			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131558509;
+			
+			// aapt resource value: 0x7f0d006e
+			public const int Base_Widget_AppCompat_RatingBar = 2131558510;
+			
+			// aapt resource value: 0x7f0d0081
+			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131558529;
+			
+			// aapt resource value: 0x7f0d0082
+			public const int Base_Widget_AppCompat_RatingBar_Small = 2131558530;
+			
+			// aapt resource value: 0x7f0d00c3
+			public const int Base_Widget_AppCompat_SearchView = 2131558595;
+			
+			// aapt resource value: 0x7f0d00c4
+			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131558596;
+			
+			// aapt resource value: 0x7f0d006f
+			public const int Base_Widget_AppCompat_SeekBar = 2131558511;
+			
+			// aapt resource value: 0x7f0d00c5
+			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131558597;
+			
+			// aapt resource value: 0x7f0d0070
+			public const int Base_Widget_AppCompat_Spinner = 2131558512;
+			
+			// aapt resource value: 0x7f0d0007
+			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131558407;
+			
+			// aapt resource value: 0x7f0d0071
+			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131558513;
+			
+			// aapt resource value: 0x7f0d008a
+			public const int Base_Widget_AppCompat_Toolbar = 2131558538;
+			
+			// aapt resource value: 0x7f0d0072
+			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131558514;
+			
+			// aapt resource value: 0x7f0d017d
+			public const int Base_Widget_Design_TabLayout = 2131558781;
+			
+			// aapt resource value: 0x7f0d017e
+			public const int Base_Widget_MaterialComponents_Chip = 2131558782;
+			
+			// aapt resource value: 0x7f0d017f
+			public const int Base_Widget_MaterialComponents_TextInputEditText = 2131558783;
+			
+			// aapt resource value: 0x7f0d0180
+			public const int Base_Widget_MaterialComponents_TextInputLayout = 2131558784;
+			
+			// aapt resource value: 0x7f0d0000
+			public const int CardView = 2131558400;
+			
+			// aapt resource value: 0x7f0d0002
+			public const int CardView_Dark = 2131558402;
+			
+			// aapt resource value: 0x7f0d0003
+			public const int CardView_Light = 2131558403;
+			
+			// aapt resource value: 0x7f0d01f4
+			public const int MainTheme = 2131558900;
+			
+			// aapt resource value: 0x7f0d01f5
+			public const int MainTheme_Base = 2131558901;
+			
+			// aapt resource value: 0x7f0d0073
+			public const int Platform_AppCompat = 2131558515;
+			
+			// aapt resource value: 0x7f0d0074
+			public const int Platform_AppCompat_Light = 2131558516;
+			
+			// aapt resource value: 0x7f0d0181
+			public const int Platform_MaterialComponents = 2131558785;
+			
+			// aapt resource value: 0x7f0d0182
+			public const int Platform_MaterialComponents_Dialog = 2131558786;
+			
+			// aapt resource value: 0x7f0d0183
+			public const int Platform_MaterialComponents_Light = 2131558787;
+			
+			// aapt resource value: 0x7f0d0184
+			public const int Platform_MaterialComponents_Light_Dialog = 2131558788;
+			
+			// aapt resource value: 0x7f0d0075
+			public const int Platform_ThemeOverlay_AppCompat = 2131558517;
+			
+			// aapt resource value: 0x7f0d0076
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131558518;
+			
+			// aapt resource value: 0x7f0d0077
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131558519;
+			
+			// aapt resource value: 0x7f0d0078
+			public const int Platform_V21_AppCompat = 2131558520;
+			
+			// aapt resource value: 0x7f0d0079
+			public const int Platform_V21_AppCompat_Light = 2131558521;
+			
+			// aapt resource value: 0x7f0d0085
+			public const int Platform_V25_AppCompat = 2131558533;
+			
+			// aapt resource value: 0x7f0d0086
+			public const int Platform_V25_AppCompat_Light = 2131558534;
+			
+			// aapt resource value: 0x7f0d00c6
+			public const int Platform_Widget_AppCompat_Spinner = 2131558598;
+			
+			// aapt resource value: 0x7f0d0010
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131558416;
+			
+			// aapt resource value: 0x7f0d0011
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131558417;
+			
+			// aapt resource value: 0x7f0d0012
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131558418;
+			
+			// aapt resource value: 0x7f0d0013
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131558419;
+			
+			// aapt resource value: 0x7f0d0014
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131558420;
+			
+			// aapt resource value: 0x7f0d0015
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = 2131558421;
+			
+			// aapt resource value: 0x7f0d0016
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = 2131558422;
+			
+			// aapt resource value: 0x7f0d0017
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131558423;
+			
+			// aapt resource value: 0x7f0d0018
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131558424;
+			
+			// aapt resource value: 0x7f0d0019
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131558425;
+			
+			// aapt resource value: 0x7f0d001a
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131558426;
+			
+			// aapt resource value: 0x7f0d001b
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131558427;
+			
+			// aapt resource value: 0x7f0d001c
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131558428;
+			
+			// aapt resource value: 0x7f0d001d
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131558429;
+			
+			// aapt resource value: 0x7f0d001e
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131558430;
+			
+			// aapt resource value: 0x7f0d001f
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131558431;
+			
+			// aapt resource value: 0x7f0d0020
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131558432;
+			
+			// aapt resource value: 0x7f0d00c7
+			public const int TextAppearance_AppCompat = 2131558599;
+			
+			// aapt resource value: 0x7f0d00c8
+			public const int TextAppearance_AppCompat_Body1 = 2131558600;
+			
+			// aapt resource value: 0x7f0d00c9
+			public const int TextAppearance_AppCompat_Body2 = 2131558601;
+			
+			// aapt resource value: 0x7f0d00ca
+			public const int TextAppearance_AppCompat_Button = 2131558602;
+			
+			// aapt resource value: 0x7f0d00cb
+			public const int TextAppearance_AppCompat_Caption = 2131558603;
+			
+			// aapt resource value: 0x7f0d00cc
+			public const int TextAppearance_AppCompat_Display1 = 2131558604;
+			
+			// aapt resource value: 0x7f0d00cd
+			public const int TextAppearance_AppCompat_Display2 = 2131558605;
+			
+			// aapt resource value: 0x7f0d00ce
+			public const int TextAppearance_AppCompat_Display3 = 2131558606;
+			
+			// aapt resource value: 0x7f0d00cf
+			public const int TextAppearance_AppCompat_Display4 = 2131558607;
+			
+			// aapt resource value: 0x7f0d00d0
+			public const int TextAppearance_AppCompat_Headline = 2131558608;
+			
+			// aapt resource value: 0x7f0d00d1
+			public const int TextAppearance_AppCompat_Inverse = 2131558609;
+			
+			// aapt resource value: 0x7f0d00d2
+			public const int TextAppearance_AppCompat_Large = 2131558610;
+			
+			// aapt resource value: 0x7f0d00d3
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131558611;
+			
+			// aapt resource value: 0x7f0d00d4
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131558612;
+			
+			// aapt resource value: 0x7f0d00d5
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131558613;
+			
+			// aapt resource value: 0x7f0d00d6
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131558614;
+			
+			// aapt resource value: 0x7f0d00d7
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131558615;
+			
+			// aapt resource value: 0x7f0d00d8
+			public const int TextAppearance_AppCompat_Medium = 2131558616;
+			
+			// aapt resource value: 0x7f0d00d9
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131558617;
+			
+			// aapt resource value: 0x7f0d00da
+			public const int TextAppearance_AppCompat_Menu = 2131558618;
+			
+			// aapt resource value: 0x7f0d00db
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131558619;
+			
+			// aapt resource value: 0x7f0d00dc
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131558620;
+			
+			// aapt resource value: 0x7f0d00dd
+			public const int TextAppearance_AppCompat_Small = 2131558621;
+			
+			// aapt resource value: 0x7f0d00de
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131558622;
+			
+			// aapt resource value: 0x7f0d00df
+			public const int TextAppearance_AppCompat_Subhead = 2131558623;
+			
+			// aapt resource value: 0x7f0d00e0
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131558624;
+			
+			// aapt resource value: 0x7f0d00e1
+			public const int TextAppearance_AppCompat_Title = 2131558625;
+			
+			// aapt resource value: 0x7f0d00e2
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131558626;
+			
+			// aapt resource value: 0x7f0d000f
+			public const int TextAppearance_AppCompat_Tooltip = 2131558415;
+			
+			// aapt resource value: 0x7f0d00e3
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131558627;
+			
+			// aapt resource value: 0x7f0d00e4
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131558628;
+			
+			// aapt resource value: 0x7f0d00e5
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131558629;
+			
+			// aapt resource value: 0x7f0d00e6
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131558630;
+			
+			// aapt resource value: 0x7f0d00e7
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131558631;
+			
+			// aapt resource value: 0x7f0d00e8
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131558632;
+			
+			// aapt resource value: 0x7f0d00e9
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131558633;
+			
+			// aapt resource value: 0x7f0d00ea
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131558634;
+			
+			// aapt resource value: 0x7f0d00eb
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131558635;
+			
+			// aapt resource value: 0x7f0d00ec
+			public const int TextAppearance_AppCompat_Widget_Button = 2131558636;
+			
+			// aapt resource value: 0x7f0d00ed
+			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131558637;
+			
+			// aapt resource value: 0x7f0d00ee
+			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131558638;
+			
+			// aapt resource value: 0x7f0d00ef
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131558639;
+			
+			// aapt resource value: 0x7f0d00f0
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131558640;
+			
+			// aapt resource value: 0x7f0d00f1
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131558641;
+			
+			// aapt resource value: 0x7f0d00f2
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131558642;
+			
+			// aapt resource value: 0x7f0d00f3
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131558643;
+			
+			// aapt resource value: 0x7f0d00f4
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131558644;
+			
+			// aapt resource value: 0x7f0d00f5
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131558645;
+			
+			// aapt resource value: 0x7f0d01ed
+			public const int TextAppearance_Compat_Notification = 2131558893;
+			
+			// aapt resource value: 0x7f0d01ee
+			public const int TextAppearance_Compat_Notification_Info = 2131558894;
+			
+			// aapt resource value: 0x7f0d0156
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131558742;
+			
+			// aapt resource value: 0x7f0d01f3
+			public const int TextAppearance_Compat_Notification_Line2 = 2131558899;
+			
+			// aapt resource value: 0x7f0d015a
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131558746;
+			
+			// aapt resource value: 0x7f0d0157
+			public const int TextAppearance_Compat_Notification_Media = 2131558743;
+			
+			// aapt resource value: 0x7f0d01ef
+			public const int TextAppearance_Compat_Notification_Time = 2131558895;
+			
+			// aapt resource value: 0x7f0d0158
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131558744;
+			
+			// aapt resource value: 0x7f0d01f0
+			public const int TextAppearance_Compat_Notification_Title = 2131558896;
+			
+			// aapt resource value: 0x7f0d0159
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131558745;
+			
+			// aapt resource value: 0x7f0d0185
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131558789;
+			
+			// aapt resource value: 0x7f0d0186
+			public const int TextAppearance_Design_Counter = 2131558790;
+			
+			// aapt resource value: 0x7f0d0187
+			public const int TextAppearance_Design_Counter_Overflow = 2131558791;
+			
+			// aapt resource value: 0x7f0d0188
+			public const int TextAppearance_Design_Error = 2131558792;
+			
+			// aapt resource value: 0x7f0d0189
+			public const int TextAppearance_Design_HelperText = 2131558793;
+			
+			// aapt resource value: 0x7f0d018a
+			public const int TextAppearance_Design_Hint = 2131558794;
+			
+			// aapt resource value: 0x7f0d018b
+			public const int TextAppearance_Design_Snackbar_Message = 2131558795;
+			
+			// aapt resource value: 0x7f0d018c
+			public const int TextAppearance_Design_Tab = 2131558796;
+			
+			// aapt resource value: 0x7f0d018d
+			public const int TextAppearance_MaterialComponents_Body1 = 2131558797;
+			
+			// aapt resource value: 0x7f0d018e
+			public const int TextAppearance_MaterialComponents_Body2 = 2131558798;
+			
+			// aapt resource value: 0x7f0d015e
+			public const int TextAppearance_MaterialComponents_Button = 2131558750;
+			
+			// aapt resource value: 0x7f0d018f
+			public const int TextAppearance_MaterialComponents_Caption = 2131558799;
+			
+			// aapt resource value: 0x7f0d0190
+			public const int TextAppearance_MaterialComponents_Chip = 2131558800;
+			
+			// aapt resource value: 0x7f0d0191
+			public const int TextAppearance_MaterialComponents_Headline1 = 2131558801;
+			
+			// aapt resource value: 0x7f0d0192
+			public const int TextAppearance_MaterialComponents_Headline2 = 2131558802;
+			
+			// aapt resource value: 0x7f0d0193
+			public const int TextAppearance_MaterialComponents_Headline3 = 2131558803;
+			
+			// aapt resource value: 0x7f0d0194
+			public const int TextAppearance_MaterialComponents_Headline4 = 2131558804;
+			
+			// aapt resource value: 0x7f0d0195
+			public const int TextAppearance_MaterialComponents_Headline5 = 2131558805;
+			
+			// aapt resource value: 0x7f0d015f
+			public const int TextAppearance_MaterialComponents_Headline6 = 2131558751;
+			
+			// aapt resource value: 0x7f0d0160
+			public const int TextAppearance_MaterialComponents_Overline = 2131558752;
+			
+			// aapt resource value: 0x7f0d0196
+			public const int TextAppearance_MaterialComponents_Subtitle1 = 2131558806;
+			
+			// aapt resource value: 0x7f0d0161
+			public const int TextAppearance_MaterialComponents_Subtitle2 = 2131558753;
+			
+			// aapt resource value: 0x7f0d0197
+			public const int TextAppearance_MaterialComponents_Tab = 2131558807;
+			
+			// aapt resource value: 0x7f0d00f6
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131558646;
+			
+			// aapt resource value: 0x7f0d00f7
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131558647;
+			
+			// aapt resource value: 0x7f0d00f8
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131558648;
+			
+			// aapt resource value: 0x7f0d00f9
+			public const int Theme_AppCompat = 2131558649;
+			
+			// aapt resource value: 0x7f0d00fa
+			public const int Theme_AppCompat_CompactMenu = 2131558650;
+			
+			// aapt resource value: 0x7f0d0008
+			public const int Theme_AppCompat_DayNight = 2131558408;
 			
 			// aapt resource value: 0x7f0d0009
-			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131558409;
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131558409;
 			
 			// aapt resource value: 0x7f0d000a
-			public const int Widget_MediaRouter_MediaRouteButton = 2131558410;
+			public const int Theme_AppCompat_DayNight_Dialog = 2131558410;
 			
-			// aapt resource value: 0x7f0d01f7
-			public const int Widget_Support_CoordinatorLayout = 2131558903;
+			// aapt resource value: 0x7f0d000b
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131558411;
+			
+			// aapt resource value: 0x7f0d000c
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131558412;
+			
+			// aapt resource value: 0x7f0d000d
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131558413;
+			
+			// aapt resource value: 0x7f0d000e
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131558414;
+			
+			// aapt resource value: 0x7f0d00fb
+			public const int Theme_AppCompat_Dialog = 2131558651;
+			
+			// aapt resource value: 0x7f0d00fc
+			public const int Theme_AppCompat_Dialog_Alert = 2131558652;
+			
+			// aapt resource value: 0x7f0d00fd
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131558653;
+			
+			// aapt resource value: 0x7f0d00fe
+			public const int Theme_AppCompat_DialogWhenLarge = 2131558654;
+			
+			// aapt resource value: 0x7f0d00ff
+			public const int Theme_AppCompat_Light = 2131558655;
+			
+			// aapt resource value: 0x7f0d0100
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131558656;
+			
+			// aapt resource value: 0x7f0d0101
+			public const int Theme_AppCompat_Light_Dialog = 2131558657;
+			
+			// aapt resource value: 0x7f0d0102
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131558658;
+			
+			// aapt resource value: 0x7f0d0103
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131558659;
+			
+			// aapt resource value: 0x7f0d0104
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131558660;
+			
+			// aapt resource value: 0x7f0d0105
+			public const int Theme_AppCompat_Light_NoActionBar = 2131558661;
+			
+			// aapt resource value: 0x7f0d0106
+			public const int Theme_AppCompat_NoActionBar = 2131558662;
+			
+			// aapt resource value: 0x7f0d0198
+			public const int Theme_Design = 2131558808;
+			
+			// aapt resource value: 0x7f0d0199
+			public const int Theme_Design_BottomSheetDialog = 2131558809;
+			
+			// aapt resource value: 0x7f0d019a
+			public const int Theme_Design_Light = 2131558810;
+			
+			// aapt resource value: 0x7f0d019b
+			public const int Theme_Design_Light_BottomSheetDialog = 2131558811;
+			
+			// aapt resource value: 0x7f0d019c
+			public const int Theme_Design_Light_NoActionBar = 2131558812;
+			
+			// aapt resource value: 0x7f0d019d
+			public const int Theme_Design_NoActionBar = 2131558813;
+			
+			// aapt resource value: 0x7f0d019e
+			public const int Theme_MaterialComponents = 2131558814;
+			
+			// aapt resource value: 0x7f0d019f
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131558815;
+			
+			// aapt resource value: 0x7f0d01a0
+			public const int Theme_MaterialComponents_Bridge = 2131558816;
+			
+			// aapt resource value: 0x7f0d01a1
+			public const int Theme_MaterialComponents_CompactMenu = 2131558817;
+			
+			// aapt resource value: 0x7f0d01a2
+			public const int Theme_MaterialComponents_Dialog = 2131558818;
+			
+			// aapt resource value: 0x7f0d01a3
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131558819;
+			
+			// aapt resource value: 0x7f0d01a4
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131558820;
+			
+			// aapt resource value: 0x7f0d01a5
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131558821;
+			
+			// aapt resource value: 0x7f0d01a6
+			public const int Theme_MaterialComponents_Light = 2131558822;
+			
+			// aapt resource value: 0x7f0d01a7
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131558823;
+			
+			// aapt resource value: 0x7f0d01a8
+			public const int Theme_MaterialComponents_Light_Bridge = 2131558824;
+			
+			// aapt resource value: 0x7f0d01a9
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131558825;
+			
+			// aapt resource value: 0x7f0d01aa
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131558826;
+			
+			// aapt resource value: 0x7f0d01ab
+			public const int Theme_MaterialComponents_Light_Dialog = 2131558827;
+			
+			// aapt resource value: 0x7f0d01ac
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131558828;
+			
+			// aapt resource value: 0x7f0d01ad
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131558829;
+			
+			// aapt resource value: 0x7f0d01ae
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131558830;
+			
+			// aapt resource value: 0x7f0d01af
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131558831;
+			
+			// aapt resource value: 0x7f0d01b0
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131558832;
+			
+			// aapt resource value: 0x7f0d01b1
+			public const int Theme_MaterialComponents_NoActionBar = 2131558833;
+			
+			// aapt resource value: 0x7f0d01b2
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131558834;
+			
+			// aapt resource value: 0x7f0d0107
+			public const int ThemeOverlay_AppCompat = 2131558663;
+			
+			// aapt resource value: 0x7f0d0108
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131558664;
+			
+			// aapt resource value: 0x7f0d0109
+			public const int ThemeOverlay_AppCompat_Dark = 2131558665;
+			
+			// aapt resource value: 0x7f0d010a
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131558666;
+			
+			// aapt resource value: 0x7f0d010b
+			public const int ThemeOverlay_AppCompat_Dialog = 2131558667;
+			
+			// aapt resource value: 0x7f0d010c
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131558668;
+			
+			// aapt resource value: 0x7f0d010d
+			public const int ThemeOverlay_AppCompat_Light = 2131558669;
+			
+			// aapt resource value: 0x7f0d01b3
+			public const int ThemeOverlay_MaterialComponents = 2131558835;
+			
+			// aapt resource value: 0x7f0d01b4
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131558836;
+			
+			// aapt resource value: 0x7f0d01b5
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131558837;
+			
+			// aapt resource value: 0x7f0d01b6
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131558838;
+			
+			// aapt resource value: 0x7f0d01b7
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131558839;
+			
+			// aapt resource value: 0x7f0d01b8
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131558840;
+			
+			// aapt resource value: 0x7f0d01b9
+			public const int ThemeOverlay_MaterialComponents_Light = 2131558841;
+			
+			// aapt resource value: 0x7f0d01ba
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131558842;
+			
+			// aapt resource value: 0x7f0d01bb
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131558843;
+			
+			// aapt resource value: 0x7f0d01bc
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131558844;
+			
+			// aapt resource value: 0x7f0d01bd
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131558845;
+			
+			// aapt resource value: 0x7f0d01be
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131558846;
+			
+			// aapt resource value: 0x7f0d010e
+			public const int Widget_AppCompat_ActionBar = 2131558670;
+			
+			// aapt resource value: 0x7f0d010f
+			public const int Widget_AppCompat_ActionBar_Solid = 2131558671;
+			
+			// aapt resource value: 0x7f0d0110
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131558672;
+			
+			// aapt resource value: 0x7f0d0111
+			public const int Widget_AppCompat_ActionBar_TabText = 2131558673;
+			
+			// aapt resource value: 0x7f0d0112
+			public const int Widget_AppCompat_ActionBar_TabView = 2131558674;
+			
+			// aapt resource value: 0x7f0d0113
+			public const int Widget_AppCompat_ActionButton = 2131558675;
+			
+			// aapt resource value: 0x7f0d0114
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131558676;
+			
+			// aapt resource value: 0x7f0d0115
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131558677;
+			
+			// aapt resource value: 0x7f0d0116
+			public const int Widget_AppCompat_ActionMode = 2131558678;
+			
+			// aapt resource value: 0x7f0d0117
+			public const int Widget_AppCompat_ActivityChooserView = 2131558679;
+			
+			// aapt resource value: 0x7f0d0118
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131558680;
+			
+			// aapt resource value: 0x7f0d0119
+			public const int Widget_AppCompat_Button = 2131558681;
+			
+			// aapt resource value: 0x7f0d011a
+			public const int Widget_AppCompat_Button_Borderless = 2131558682;
+			
+			// aapt resource value: 0x7f0d011b
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131558683;
+			
+			// aapt resource value: 0x7f0d011c
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131558684;
+			
+			// aapt resource value: 0x7f0d011d
+			public const int Widget_AppCompat_Button_Colored = 2131558685;
+			
+			// aapt resource value: 0x7f0d011e
+			public const int Widget_AppCompat_Button_Small = 2131558686;
+			
+			// aapt resource value: 0x7f0d011f
+			public const int Widget_AppCompat_ButtonBar = 2131558687;
+			
+			// aapt resource value: 0x7f0d0120
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131558688;
+			
+			// aapt resource value: 0x7f0d0121
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131558689;
+			
+			// aapt resource value: 0x7f0d0122
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131558690;
+			
+			// aapt resource value: 0x7f0d0123
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131558691;
+			
+			// aapt resource value: 0x7f0d0124
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131558692;
+			
+			// aapt resource value: 0x7f0d0125
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131558693;
+			
+			// aapt resource value: 0x7f0d0126
+			public const int Widget_AppCompat_EditText = 2131558694;
+			
+			// aapt resource value: 0x7f0d0127
+			public const int Widget_AppCompat_ImageButton = 2131558695;
+			
+			// aapt resource value: 0x7f0d0128
+			public const int Widget_AppCompat_Light_ActionBar = 2131558696;
+			
+			// aapt resource value: 0x7f0d0129
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131558697;
+			
+			// aapt resource value: 0x7f0d012a
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131558698;
+			
+			// aapt resource value: 0x7f0d012b
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131558699;
+			
+			// aapt resource value: 0x7f0d012c
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131558700;
+			
+			// aapt resource value: 0x7f0d012d
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131558701;
+			
+			// aapt resource value: 0x7f0d012e
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131558702;
+			
+			// aapt resource value: 0x7f0d012f
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131558703;
+			
+			// aapt resource value: 0x7f0d0130
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131558704;
+			
+			// aapt resource value: 0x7f0d0131
+			public const int Widget_AppCompat_Light_ActionButton = 2131558705;
+			
+			// aapt resource value: 0x7f0d0132
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131558706;
+			
+			// aapt resource value: 0x7f0d0133
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131558707;
+			
+			// aapt resource value: 0x7f0d0134
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131558708;
+			
+			// aapt resource value: 0x7f0d0135
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131558709;
+			
+			// aapt resource value: 0x7f0d0136
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131558710;
+			
+			// aapt resource value: 0x7f0d0137
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131558711;
+			
+			// aapt resource value: 0x7f0d0138
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131558712;
+			
+			// aapt resource value: 0x7f0d0139
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131558713;
+			
+			// aapt resource value: 0x7f0d013a
+			public const int Widget_AppCompat_Light_PopupMenu = 2131558714;
+			
+			// aapt resource value: 0x7f0d013b
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131558715;
+			
+			// aapt resource value: 0x7f0d013c
+			public const int Widget_AppCompat_Light_SearchView = 2131558716;
+			
+			// aapt resource value: 0x7f0d013d
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131558717;
+			
+			// aapt resource value: 0x7f0d013e
+			public const int Widget_AppCompat_ListMenuView = 2131558718;
+			
+			// aapt resource value: 0x7f0d013f
+			public const int Widget_AppCompat_ListPopupWindow = 2131558719;
+			
+			// aapt resource value: 0x7f0d0140
+			public const int Widget_AppCompat_ListView = 2131558720;
+			
+			// aapt resource value: 0x7f0d0141
+			public const int Widget_AppCompat_ListView_DropDown = 2131558721;
+			
+			// aapt resource value: 0x7f0d0142
+			public const int Widget_AppCompat_ListView_Menu = 2131558722;
+			
+			// aapt resource value: 0x7f0d0143
+			public const int Widget_AppCompat_PopupMenu = 2131558723;
+			
+			// aapt resource value: 0x7f0d0144
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131558724;
+			
+			// aapt resource value: 0x7f0d0145
+			public const int Widget_AppCompat_PopupWindow = 2131558725;
+			
+			// aapt resource value: 0x7f0d0146
+			public const int Widget_AppCompat_ProgressBar = 2131558726;
+			
+			// aapt resource value: 0x7f0d0147
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131558727;
+			
+			// aapt resource value: 0x7f0d0148
+			public const int Widget_AppCompat_RatingBar = 2131558728;
+			
+			// aapt resource value: 0x7f0d0149
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131558729;
+			
+			// aapt resource value: 0x7f0d014a
+			public const int Widget_AppCompat_RatingBar_Small = 2131558730;
+			
+			// aapt resource value: 0x7f0d014b
+			public const int Widget_AppCompat_SearchView = 2131558731;
+			
+			// aapt resource value: 0x7f0d014c
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131558732;
+			
+			// aapt resource value: 0x7f0d014d
+			public const int Widget_AppCompat_SeekBar = 2131558733;
+			
+			// aapt resource value: 0x7f0d014e
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131558734;
+			
+			// aapt resource value: 0x7f0d014f
+			public const int Widget_AppCompat_Spinner = 2131558735;
+			
+			// aapt resource value: 0x7f0d0150
+			public const int Widget_AppCompat_Spinner_DropDown = 2131558736;
+			
+			// aapt resource value: 0x7f0d0151
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131558737;
+			
+			// aapt resource value: 0x7f0d0152
+			public const int Widget_AppCompat_Spinner_Underlined = 2131558738;
+			
+			// aapt resource value: 0x7f0d0153
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131558739;
+			
+			// aapt resource value: 0x7f0d0154
+			public const int Widget_AppCompat_Toolbar = 2131558740;
+			
+			// aapt resource value: 0x7f0d0155
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131558741;
+			
+			// aapt resource value: 0x7f0d01f1
+			public const int Widget_Compat_NotificationActionContainer = 2131558897;
+			
+			// aapt resource value: 0x7f0d01f2
+			public const int Widget_Compat_NotificationActionText = 2131558898;
+			
+			// aapt resource value: 0x7f0d01bf
+			public const int Widget_Design_AppBarLayout = 2131558847;
+			
+			// aapt resource value: 0x7f0d01c0
+			public const int Widget_Design_BottomNavigationView = 2131558848;
+			
+			// aapt resource value: 0x7f0d01c1
+			public const int Widget_Design_BottomSheet_Modal = 2131558849;
+			
+			// aapt resource value: 0x7f0d01c2
+			public const int Widget_Design_CollapsingToolbar = 2131558850;
+			
+			// aapt resource value: 0x7f0d01c3
+			public const int Widget_Design_FloatingActionButton = 2131558851;
+			
+			// aapt resource value: 0x7f0d01c4
+			public const int Widget_Design_NavigationView = 2131558852;
+			
+			// aapt resource value: 0x7f0d01c5
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131558853;
+			
+			// aapt resource value: 0x7f0d01c6
+			public const int Widget_Design_Snackbar = 2131558854;
+			
+			// aapt resource value: 0x7f0d015b
+			public const int Widget_Design_TabLayout = 2131558747;
+			
+			// aapt resource value: 0x7f0d01c7
+			public const int Widget_Design_TextInputLayout = 2131558855;
+			
+			// aapt resource value: 0x7f0d01c8
+			public const int Widget_MaterialComponents_BottomAppBar = 2131558856;
+			
+			// aapt resource value: 0x7f0d01c9
+			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131558857;
+			
+			// aapt resource value: 0x7f0d01ca
+			public const int Widget_MaterialComponents_BottomNavigationView = 2131558858;
+			
+			// aapt resource value: 0x7f0d01cb
+			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131558859;
+			
+			// aapt resource value: 0x7f0d01cc
+			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131558860;
+			
+			// aapt resource value: 0x7f0d01cd
+			public const int Widget_MaterialComponents_Button = 2131558861;
+			
+			// aapt resource value: 0x7f0d01ce
+			public const int Widget_MaterialComponents_Button_Icon = 2131558862;
+			
+			// aapt resource value: 0x7f0d01cf
+			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131558863;
+			
+			// aapt resource value: 0x7f0d01d0
+			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131558864;
+			
+			// aapt resource value: 0x7f0d01d1
+			public const int Widget_MaterialComponents_Button_TextButton = 2131558865;
+			
+			// aapt resource value: 0x7f0d01d2
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131558866;
+			
+			// aapt resource value: 0x7f0d01d3
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131558867;
+			
+			// aapt resource value: 0x7f0d01d4
+			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131558868;
+			
+			// aapt resource value: 0x7f0d01d5
+			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131558869;
+			
+			// aapt resource value: 0x7f0d01d6
+			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131558870;
+			
+			// aapt resource value: 0x7f0d01d7
+			public const int Widget_MaterialComponents_CardView = 2131558871;
+			
+			// aapt resource value: 0x7f0d01d8
+			public const int Widget_MaterialComponents_Chip_Action = 2131558872;
+			
+			// aapt resource value: 0x7f0d01d9
+			public const int Widget_MaterialComponents_Chip_Choice = 2131558873;
+			
+			// aapt resource value: 0x7f0d01da
+			public const int Widget_MaterialComponents_Chip_Entry = 2131558874;
+			
+			// aapt resource value: 0x7f0d01db
+			public const int Widget_MaterialComponents_Chip_Filter = 2131558875;
+			
+			// aapt resource value: 0x7f0d01dc
+			public const int Widget_MaterialComponents_ChipGroup = 2131558876;
+			
+			// aapt resource value: 0x7f0d01dd
+			public const int Widget_MaterialComponents_FloatingActionButton = 2131558877;
+			
+			// aapt resource value: 0x7f0d01de
+			public const int Widget_MaterialComponents_NavigationView = 2131558878;
+			
+			// aapt resource value: 0x7f0d01df
+			public const int Widget_MaterialComponents_Snackbar = 2131558879;
+			
+			// aapt resource value: 0x7f0d01e0
+			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131558880;
+			
+			// aapt resource value: 0x7f0d01e1
+			public const int Widget_MaterialComponents_TabLayout = 2131558881;
+			
+			// aapt resource value: 0x7f0d01e2
+			public const int Widget_MaterialComponents_TabLayout_Colored = 2131558882;
+			
+			// aapt resource value: 0x7f0d01e3
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131558883;
+			
+			// aapt resource value: 0x7f0d01e4
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131558884;
+			
+			// aapt resource value: 0x7f0d01e5
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131558885;
+			
+			// aapt resource value: 0x7f0d01e6
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131558886;
+			
+			// aapt resource value: 0x7f0d01e7
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131558887;
+			
+			// aapt resource value: 0x7f0d01e8
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131558888;
+			
+			// aapt resource value: 0x7f0d01e9
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131558889;
+			
+			// aapt resource value: 0x7f0d01ea
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131558890;
+			
+			// aapt resource value: 0x7f0d01eb
+			public const int Widget_MaterialComponents_Toolbar = 2131558891;
+			
+			// aapt resource value: 0x7f0d01ec
+			public const int Widget_Support_CoordinatorLayout = 2131558892;
 			
 			static Style()
 			{
@@ -9477,7 +10024,21 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		{
 			
 			public static int[] ActionBar = new int[] {
+					2130771996,
+					2130771998,
+					2130771999,
+					2130772000,
+					2130772001,
+					2130772002,
+					2130772003,
+					2130772004,
+					2130772005,
+					2130772006,
+					2130772007,
+					2130772008,
+					2130772009,
 					2130772010,
+					2130772011,
 					2130772012,
 					2130772013,
 					2130772014,
@@ -9491,21 +10052,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130772022,
 					2130772023,
 					2130772024,
-					2130772025,
-					2130772026,
-					2130772027,
-					2130772028,
-					2130772029,
-					2130772030,
-					2130772031,
-					2130772032,
-					2130772033,
-					2130772034,
-					2130772035,
-					2130772036,
-					2130772037,
-					2130772038,
-					2130772113};
+					2130772099};
 			
 			// aapt resource value: 10
 			public const int ActionBar_background = 10;
@@ -9609,12 +10156,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] ActionMenuView;
 			
 			public static int[] ActionMode = new int[] {
-					2130772010,
-					2130772016,
-					2130772017,
-					2130772021,
-					2130772023,
-					2130772039};
+					2130771996,
+					2130772002,
+					2130772003,
+					2130772007,
+					2130772009,
+					2130772025};
 			
 			// aapt resource value: 3
 			public const int ActionMode_background = 3;
@@ -9635,8 +10182,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int ActionMode_titleTextStyle = 1;
 			
 			public static int[] ActivityChooserView = new int[] {
-					2130772040,
-					2130772041};
+					2130772026,
+					2130772027};
 			
 			// aapt resource value: 1
 			public const int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
@@ -9646,13 +10193,13 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] AlertDialog = new int[] {
 					16842994,
-					2130772042,
-					2130772043,
-					2130772044,
-					2130772045,
-					2130772046,
-					2130772047,
-					2130772048};
+					2130772028,
+					2130772029,
+					2130772030,
+					2130772031,
+					2130772032,
+					2130772033,
+					2130772034};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -9736,9 +10283,9 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16842964,
 					16843919,
 					16844096,
-					2130772037,
-					2130772293,
-					2130772294};
+					2130772023,
+					2130772279,
+					2130772280};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
@@ -9759,10 +10306,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int AppBarLayout_liftOnScroll = 5;
 			
 			public static int[] AppBarLayoutStates = new int[] {
-					2130772295,
-					2130772296,
-					2130772297,
-					2130772298};
+					2130772281,
+					2130772282,
+					2130772283,
+					2130772284};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -9777,8 +10324,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int AppBarLayoutStates_state_lifted = 2;
 			
 			public static int[] AppBarLayout_Layout = new int[] {
-					2130772299,
-					2130772300};
+					2130772285,
+					2130772286};
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_Layout_layout_scrollFlags = 0;
@@ -9788,9 +10335,9 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130772049,
-					2130772050,
-					2130772051};
+					2130772035,
+					2130772036,
+					2130772037};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -9806,9 +10353,9 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130772052,
-					2130772053,
-					2130772054};
+					2130772038,
+					2130772039,
+					2130772040};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -9854,16 +10401,16 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
-					2130772055,
-					2130772056,
-					2130772057,
-					2130772058,
-					2130772059,
-					2130772060,
-					2130772061,
-					2130772062,
-					2130772063,
-					2130772064};
+					2130772041,
+					2130772042,
+					2130772043,
+					2130772044,
+					2130772045,
+					2130772046,
+					2130772047,
+					2130772048,
+					2130772049,
+					2130772050};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -9901,6 +10448,20 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
+					2130772051,
+					2130772052,
+					2130772053,
+					2130772054,
+					2130772055,
+					2130772056,
+					2130772057,
+					2130772058,
+					2130772059,
+					2130772060,
+					2130772061,
+					2130772062,
+					2130772063,
+					2130772064,
 					2130772065,
 					2130772066,
 					2130772067,
@@ -10005,21 +10566,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130772166,
 					2130772167,
 					2130772168,
-					2130772169,
-					2130772170,
-					2130772171,
-					2130772172,
-					2130772173,
-					2130772174,
-					2130772175,
-					2130772176,
-					2130772177,
-					2130772178,
-					2130772179,
-					2130772180,
-					2130772181,
-					2130772182,
-					2130772183};
+					2130772169};
 			
 			// aapt resource value: 23
 			public const int AppCompatTheme_actionBarDivider = 23;
@@ -10385,12 +10932,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int AppCompatTheme_windowNoTitle = 3;
 			
 			public static int[] BottomAppBar = new int[] {
-					2130772258,
-					2130772301,
-					2130772302,
-					2130772303,
-					2130772304,
-					2130772305};
+					2130772244,
+					2130772287,
+					2130772288,
+					2130772289,
+					2130772290,
+					2130772291};
 			
 			// aapt resource value: 0
 			public const int BottomAppBar_backgroundTint = 0;
@@ -10411,16 +10958,16 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int BottomAppBar_hideOnScroll = 5;
 			
 			public static int[] BottomNavigationView = new int[] {
-					2130772037,
-					2130772306,
-					2130772307,
-					2130772308,
-					2130772309,
-					2130772310,
-					2130772378,
-					2130772379,
-					2130772380,
-					2130772381};
+					2130772023,
+					2130772292,
+					2130772293,
+					2130772294,
+					2130772295,
+					2130772296,
+					2130772364,
+					2130772365,
+					2130772366,
+					2130772367};
 			
 			// aapt resource value: 0
 			public const int BottomNavigationView_elevation = 0;
@@ -10453,10 +11000,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int BottomNavigationView_menu = 6;
 			
 			public static int[] BottomSheetBehavior_Layout = new int[] {
-					2130772311,
-					2130772312,
-					2130772313,
-					2130772314};
+					2130772297,
+					2130772298,
+					2130772299,
+					2130772300};
 			
 			// aapt resource value: 3
 			public const int BottomSheetBehavior_Layout_behavior_fitToContents = 3;
@@ -10471,7 +11018,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
 			
 			public static int[] ButtonBarLayout = new int[] {
-					2130772184};
+					2130772170};
 			
 			// aapt resource value: 0
 			public const int ButtonBarLayout_allowStacking = 0;
@@ -10479,17 +11026,17 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] CardView = new int[] {
 					16843071,
 					16843072,
-					2130771998,
-					2130771999,
-					2130772000,
-					2130772001,
-					2130772002,
-					2130772003,
-					2130772004,
-					2130772005,
-					2130772006,
-					2130772007,
-					2130772008};
+					2130771984,
+					2130771985,
+					2130771986,
+					2130771987,
+					2130771988,
+					2130771989,
+					2130771990,
+					2130771991,
+					2130771992,
+					2130771993,
+					2130771994};
 			
 			// aapt resource value: 1
 			public const int CardView_android_minHeight = 1;
@@ -10536,10 +11083,24 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843039,
 					16843087,
 					16843237,
-					2130772218,
-					2130772269,
-					2130772273,
-					2130772275,
+					2130772204,
+					2130772255,
+					2130772259,
+					2130772261,
+					2130772301,
+					2130772302,
+					2130772303,
+					2130772304,
+					2130772305,
+					2130772306,
+					2130772307,
+					2130772308,
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
 					2130772315,
 					2130772316,
 					2130772317,
@@ -10550,21 +11111,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130772322,
 					2130772323,
 					2130772324,
-					2130772325,
-					2130772326,
-					2130772327,
-					2130772328,
-					2130772329,
-					2130772330,
-					2130772331,
-					2130772332,
-					2130772333,
-					2130772334,
-					2130772335,
-					2130772336,
-					2130772337,
-					2130772338,
-					2130772339};
+					2130772325};
 			
 			// aapt resource value: 4
 			public const int Chip_android_checkable = 4;
@@ -10669,12 +11216,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int Chip_textStartPadding = 29;
 			
 			public static int[] ChipGroup = new int[] {
-					2130772340,
-					2130772341,
-					2130772342,
-					2130772343,
-					2130772344,
-					2130772345};
+					2130772326,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330,
+					2130772331};
 			
 			// aapt resource value: 5
 			public const int ChipGroup_checkedChip = 5;
@@ -10695,22 +11242,22 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int ChipGroup_singleSelection = 4;
 			
 			public static int[] CollapsingToolbarLayout = new int[] {
-					2130772012,
-					2130772346,
-					2130772347,
-					2130772348,
-					2130772349,
-					2130772350,
-					2130772351,
-					2130772352,
-					2130772353,
-					2130772354,
-					2130772355,
-					2130772356,
-					2130772357,
-					2130772358,
-					2130772359,
-					2130772360};
+					2130771998,
+					2130772332,
+					2130772333,
+					2130772334,
+					2130772335,
+					2130772336,
+					2130772337,
+					2130772338,
+					2130772339,
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343,
+					2130772344,
+					2130772345,
+					2130772346};
 			
 			// aapt resource value: 13
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 13;
@@ -10761,8 +11308,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int CollapsingToolbarLayout_toolbarId = 10;
 			
 			public static int[] CollapsingToolbarLayout_Layout = new int[] {
-					2130772361,
-					2130772362};
+					2130772347,
+					2130772348};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
@@ -10773,7 +11320,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] ColorStateListItem = new int[] {
 					16843173,
 					16843551,
-					2130772453};
+					2130772439};
 			
 			// aapt resource value: 2
 			public const int ColorStateListItem_alpha = 2;
@@ -10786,8 +11333,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] CompoundButton = new int[] {
 					16843015,
-					2130772185,
-					2130772186};
+					2130772171,
+					2130772172};
 			
 			// aapt resource value: 0
 			public const int CompoundButton_android_button = 0;
@@ -10799,8 +11346,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int CompoundButton_buttonTintMode = 2;
 			
 			public static int[] CoordinatorLayout = new int[] {
-					2130772445,
-					2130772446};
+					2130772431,
+					2130772432};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -10810,12 +11357,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] CoordinatorLayout_Layout = new int[] {
 					16842931,
-					2130772447,
-					2130772448,
-					2130772449,
-					2130772450,
-					2130772451,
-					2130772452};
+					2130772433,
+					2130772434,
+					2130772435,
+					2130772436,
+					2130772437,
+					2130772438};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_Layout_android_layout_gravity = 0;
@@ -10839,8 +11386,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int CoordinatorLayout_Layout_layout_keyline = 3;
 			
 			public static int[] DesignTheme = new int[] {
-					2130772262,
-					2130772263};
+					2130772248,
+					2130772249};
 			
 			// aapt resource value: 0
 			public const int DesignTheme_bottomSheetDialogTheme = 0;
@@ -10849,14 +11396,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
 			public static int[] DrawerArrowToggle = new int[] {
-					2130772187,
-					2130772188,
-					2130772189,
-					2130772190,
-					2130772191,
-					2130772192,
-					2130772193,
-					2130772194};
+					2130772173,
+					2130772174,
+					2130772175,
+					2130772176,
+					2130772177,
+					2130772178,
+					2130772179,
+					2130772180};
 			
 			// aapt resource value: 4
 			public const int DrawerArrowToggle_arrowHeadLength = 4;
@@ -10883,19 +11430,19 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int DrawerArrowToggle_thickness = 7;
 			
 			public static int[] FloatingActionButton = new int[] {
-					2130772037,
-					2130772258,
+					2130772023,
+					2130772244,
+					2130772245,
+					2130772255,
 					2130772259,
-					2130772269,
-					2130772273,
-					2130772275,
-					2130772363,
-					2130772364,
-					2130772365,
-					2130772366,
-					2130772367,
-					2130772368,
-					2130772369};
+					2130772261,
+					2130772349,
+					2130772350,
+					2130772351,
+					2130772352,
+					2130772353,
+					2130772354,
+					2130772355};
 			
 			// aapt resource value: 1
 			public const int FloatingActionButton_backgroundTint = 1;
@@ -10937,14 +11484,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int FloatingActionButton_useCompatPadding = 11;
 			
 			public static int[] FloatingActionButton_Behavior_Layout = new int[] {
-					2130772370};
+					2130772356};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
 			
 			public static int[] FlowLayout = new int[] {
-					2130772371,
-					2130772372};
+					2130772357,
+					2130772358};
 			
 			// aapt resource value: 0
 			public const int FlowLayout_itemSpacing = 0;
@@ -10953,12 +11500,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int FlowLayout_lineSpacing = 1;
 			
 			public static int[] FontFamily = new int[] {
-					2130772454,
-					2130772455,
-					2130772456,
-					2130772457,
-					2130772458,
-					2130772459};
+					2130772440,
+					2130772441,
+					2130772442,
+					2130772443,
+					2130772444,
+					2130772445};
 			
 			// aapt resource value: 0
 			public const int FontFamily_fontProviderAuthority = 0;
@@ -10984,11 +11531,11 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16844095,
 					16844143,
 					16844144,
-					2130772460,
-					2130772461,
-					2130772462,
-					2130772463,
-					2130772464};
+					2130772446,
+					2130772447,
+					2130772448,
+					2130772449,
+					2130772450};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -11023,7 +11570,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] ForegroundLinearLayout = new int[] {
 					16843017,
 					16843264,
-					2130772373};
+					2130772359};
 			
 			// aapt resource value: 0
 			public const int ForegroundLinearLayout_android_foreground = 0;
@@ -11100,10 +11647,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843046,
 					16843047,
 					16843048,
-					2130772020,
-					2130772195,
-					2130772196,
-					2130772197};
+					2130772006,
+					2130772181,
+					2130772182,
+					2130772183};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -11179,18 +11726,18 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843192,
 					16843193,
 					16843194,
-					2130772018,
-					2130772206,
-					2130772207,
-					2130772258,
+					2130772004,
+					2130772192,
+					2130772193,
+					2130772244,
+					2130772245,
 					2130772259,
-					2130772273,
-					2130772276,
-					2130772277,
-					2130772374,
-					2130772375,
-					2130772376,
-					2130772377};
+					2130772262,
+					2130772263,
+					2130772360,
+					2130772361,
+					2130772362,
+					2130772363};
 			
 			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
@@ -11241,8 +11788,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int MaterialButton_strokeWidth = 11;
 			
 			public static int[] MaterialCardView = new int[] {
-					2130772276,
-					2130772277};
+					2130772262,
+					2130772263};
 			
 			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
@@ -11251,38 +11798,38 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int MaterialCardView_strokeWidth = 1;
 			
 			public static int[] MaterialComponentsTheme = new int[] {
-					2130772148,
-					2130772149,
-					2130772150,
+					2130772134,
+					2130772135,
+					2130772136,
+					2130772143,
 					2130772157,
-					2130772171,
-					2130772262,
-					2130772263,
+					2130772248,
+					2130772249,
+					2130772250,
+					2130772251,
+					2130772252,
+					2130772253,
+					2130772254,
+					2130772256,
+					2130772257,
+					2130772258,
+					2130772260,
 					2130772264,
 					2130772265,
 					2130772266,
 					2130772267,
 					2130772268,
+					2130772269,
 					2130772270,
 					2130772271,
 					2130772272,
+					2130772273,
 					2130772274,
+					2130772275,
+					2130772276,
+					2130772277,
 					2130772278,
-					2130772279,
-					2130772280,
-					2130772281,
-					2130772282,
-					2130772283,
-					2130772284,
-					2130772285,
-					2130772286,
-					2130772287,
-					2130772288,
-					2130772289,
-					2130772290,
-					2130772291,
-					2130772292,
-					2130772389};
+					2130772375};
 			
 			// aapt resource value: 5
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 5;
@@ -11380,24 +11927,6 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 30
 			public const int MaterialComponentsTheme_textInputStyle = 30;
 			
-			public static int[] MediaRouteButton = new int[] {
-					16843071,
-					16843072,
-					2130771995,
-					2130771996};
-			
-			// aapt resource value: 1
-			public const int MediaRouteButton_android_minHeight = 1;
-			
-			// aapt resource value: 0
-			public const int MediaRouteButton_android_minWidth = 0;
-			
-			// aapt resource value: 2
-			public const int MediaRouteButton_externalRouteEnabledDrawable = 2;
-			
-			// aapt resource value: 3
-			public const int MediaRouteButton_mediaRouteButtonTint = 3;
-			
 			public static int[] MenuGroup = new int[] {
 					16842766,
 					16842960,
@@ -11438,16 +11967,16 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843236,
 					16843237,
 					16843375,
-					2130772198,
-					2130772199,
-					2130772200,
-					2130772201,
-					2130772202,
-					2130772203,
-					2130772204,
-					2130772205,
-					2130772206,
-					2130772207};
+					2130772184,
+					2130772185,
+					2130772186,
+					2130772187,
+					2130772188,
+					2130772189,
+					2130772190,
+					2130772191,
+					2130772192,
+					2130772193};
 			
 			// aapt resource value: 16
 			public const int MenuItem_actionLayout = 16;
@@ -11526,8 +12055,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843055,
 					16843056,
 					16843057,
-					2130772208,
-					2130772209};
+					2130772194,
+					2130772195};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -11560,15 +12089,15 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16842964,
 					16842973,
 					16843039,
-					2130772037,
-					2130772378,
-					2130772379,
-					2130772380,
-					2130772381,
-					2130772382,
-					2130772383,
-					2130772384,
-					2130772385};
+					2130772023,
+					2130772364,
+					2130772365,
+					2130772366,
+					2130772367,
+					2130772368,
+					2130772369,
+					2130772370,
+					2130772371};
 			
 			// aapt resource value: 0
 			public const int NavigationView_android_background = 0;
@@ -11609,7 +12138,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] PopupWindow = new int[] {
 					16843126,
 					16843465,
-					2130772210};
+					2130772196};
 			
 			// aapt resource value: 1
 			public const int PopupWindow_android_popupAnimationStyle = 1;
@@ -11621,14 +12150,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int PopupWindow_overlapAnchor = 2;
 			
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130772211};
+					2130772197};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
 			
 			public static int[] RecycleListView = new int[] {
-					2130772212,
-					2130772213};
+					2130772198,
+					2130772199};
 			
 			// aapt resource value: 0
 			public const int RecycleListView_paddingBottomNoButtons = 0;
@@ -11683,13 +12212,13 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int RecyclerView_stackFromEnd = 5;
 			
 			public static int[] ScrimInsetsFrameLayout = new int[] {
-					2130772386};
+					2130772372};
 			
 			// aapt resource value: 0
 			public const int ScrimInsetsFrameLayout_insetForeground = 0;
 			
 			public static int[] ScrollingViewBehavior_Layout = new int[] {
-					2130772387};
+					2130772373};
 			
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
@@ -11699,19 +12228,19 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843039,
 					16843296,
 					16843364,
-					2130772214,
-					2130772215,
-					2130772216,
-					2130772217,
-					2130772218,
-					2130772219,
-					2130772220,
-					2130772221,
-					2130772222,
-					2130772223,
-					2130772224,
-					2130772225,
-					2130772226};
+					2130772200,
+					2130772201,
+					2130772202,
+					2130772203,
+					2130772204,
+					2130772205,
+					2130772206,
+					2130772207,
+					2130772208,
+					2130772209,
+					2130772210,
+					2130772211,
+					2130772212};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -11779,8 +12308,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int SignInButton_scopeUris = 2;
 			
 			public static int[] Snackbar = new int[] {
-					2130772388,
-					2130772389};
+					2130772374,
+					2130772375};
 			
 			// aapt resource value: 1
 			public const int Snackbar_snackbarButtonStyle = 1;
@@ -11790,8 +12319,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
-					2130772037,
-					2130772390};
+					2130772023,
+					2130772376};
 			
 			// aapt resource value: 0
 			public const int SnackbarLayout_android_maxWidth = 0;
@@ -11807,7 +12336,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843126,
 					16843131,
 					16843362,
-					2130772038};
+					2130772024};
 			
 			// aapt resource value: 3
 			public const int Spinner_android_dropDownWidth = 3;
@@ -11860,17 +12389,17 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843044,
 					16843045,
 					16843074,
-					2130772227,
-					2130772228,
-					2130772229,
-					2130772230,
-					2130772231,
-					2130772232,
-					2130772233,
-					2130772234,
-					2130772235,
-					2130772236,
-					2130772237};
+					2130772213,
+					2130772214,
+					2130772215,
+					2130772216,
+					2130772217,
+					2130772218,
+					2130772219,
+					2130772220,
+					2130772221,
+					2130772222,
+					2130772223};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -11929,6 +12458,20 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int TabItem_android_text = 2;
 			
 			public static int[] TabLayout = new int[] {
+					2130772377,
+					2130772378,
+					2130772379,
+					2130772380,
+					2130772381,
+					2130772382,
+					2130772383,
+					2130772384,
+					2130772385,
+					2130772386,
+					2130772387,
+					2130772388,
+					2130772389,
+					2130772390,
 					2130772391,
 					2130772392,
 					2130772393,
@@ -11939,21 +12482,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130772398,
 					2130772399,
 					2130772400,
-					2130772401,
-					2130772402,
-					2130772403,
-					2130772404,
-					2130772405,
-					2130772406,
-					2130772407,
-					2130772408,
-					2130772409,
-					2130772410,
-					2130772411,
-					2130772412,
-					2130772413,
-					2130772414,
-					2130772415};
+					2130772401};
 			
 			// aapt resource value: 3
 			public const int TabLayout_tabBackground = 3;
@@ -12042,8 +12571,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843107,
 					16843108,
 					16843692,
-					2130772055,
-					2130772061};
+					2130772041,
+					2130772047};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -12087,6 +12616,20 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] TextInputLayout = new int[] {
 					16842906,
 					16843088,
+					2130772402,
+					2130772403,
+					2130772404,
+					2130772405,
+					2130772406,
+					2130772407,
+					2130772408,
+					2130772409,
+					2130772410,
+					2130772411,
+					2130772412,
+					2130772413,
+					2130772414,
+					2130772415,
 					2130772416,
 					2130772417,
 					2130772418,
@@ -12098,21 +12641,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130772424,
 					2130772425,
 					2130772426,
-					2130772427,
-					2130772428,
-					2130772429,
-					2130772430,
-					2130772431,
-					2130772432,
-					2130772433,
-					2130772434,
-					2130772435,
-					2130772436,
-					2130772437,
-					2130772438,
-					2130772439,
-					2130772440,
-					2130772441};
+					2130772427};
 			
 			// aapt resource value: 1
 			public const int TextInputLayout_android_hint = 1;
@@ -12200,8 +12729,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] ThemeEnforcement = new int[] {
 					16842804,
-					2130772442,
-					2130772443};
+					2130772428,
+					2130772429};
 			
 			// aapt resource value: 0
 			public const int ThemeEnforcement_android_textAppearance = 0;
@@ -12215,33 +12744,33 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
-					2130772012,
-					2130772015,
+					2130771998,
+					2130772001,
+					2130772005,
+					2130772017,
+					2130772018,
 					2130772019,
-					2130772031,
-					2130772032,
-					2130772033,
-					2130772034,
-					2130772035,
-					2130772036,
-					2130772038,
+					2130772020,
+					2130772021,
+					2130772022,
+					2130772024,
+					2130772224,
+					2130772225,
+					2130772226,
+					2130772227,
+					2130772228,
+					2130772229,
+					2130772230,
+					2130772231,
+					2130772232,
+					2130772233,
+					2130772234,
+					2130772235,
+					2130772236,
+					2130772237,
 					2130772238,
 					2130772239,
-					2130772240,
-					2130772241,
-					2130772242,
-					2130772243,
-					2130772244,
-					2130772245,
-					2130772246,
-					2130772247,
-					2130772248,
-					2130772249,
-					2130772250,
-					2130772251,
-					2130772252,
-					2130772253,
-					2130772254};
+					2130772240};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -12333,9 +12862,9 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
-					2130772255,
-					2130772256,
-					2130772257};
+					2130772241,
+					2130772242,
+					2130772243};
 			
 			// aapt resource value: 1
 			public const int View_android_focusable = 1;
@@ -12354,8 +12883,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			public static int[] ViewBackgroundHelper = new int[] {
 					16842964,
-					2130772258,
-					2130772259};
+					2130772244,
+					2130772245};
 			
 			// aapt resource value: 0
 			public const int ViewBackgroundHelper_android_background = 0;

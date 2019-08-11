@@ -4,9 +4,9 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
-        <PackageReference Include="Prism.DryIoc.Forms" Version="7.1.0.431" />
-        <PackageReference Include="ReactiveProperty" Version="5.2.0" />
+        <PackageReference Include="Xamarin.Forms" Version="4.1.0.673156" />
+        <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1367" />
+        <PackageReference Include="ReactiveProperty" Version="6.0.3" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Models\" />

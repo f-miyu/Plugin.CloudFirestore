@@ -57,13 +57,13 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 todoItem.Notes = Notes.Value;
 
                 CrossCloudFirestore.Current.Instance.GetDocument($"{TodoItem.CollectionPath}/{todoItem.Id}")
-                                   .UpdateData(todoItem, (error) =>
-                                   {
-                                       if (error != null)
-                                       {
-                                           System.Diagnostics.Debug.WriteLine(error);
-                                       }
-                                   });
+                .UpdateData(todoItem, (error) =>
+                {
+                    if (error != null)
+                    {
+                        System.Diagnostics.Debug.WriteLine(error);
+                    }
+                });
 
                 await navigationService.GoBackAsync();
             });
