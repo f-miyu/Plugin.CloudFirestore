@@ -9,7 +9,7 @@ using Firebase.Firestore;
 
 namespace Plugin.CloudFirestore
 {
-    public class QueryWrapper : IQuery
+    public class QueryWrapper : IQuery, IEquatable<QueryWrapper>
     {
         public IFirestore Firestore => _query.Firestore == null ? null : FirestoreProvider.GetFirestore(_query.Firestore);
 
@@ -258,6 +258,26 @@ namespace Plugin.CloudFirestore
            }));
 
             return new ListenerRegistrationWrapper(registration);
+        }
+
+        public bool Equals(QueryWrapper other)
+        {
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
+            return Equals(_query, other._query);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(null, obj)) return false;
+            if (ReferenceEquals(this, obj)) return true;
+            if (obj.GetType() != this.GetType()) return false;
+            return Equals((QueryWrapper) obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return (_query != null ? _query.GetHashCode() : 0);
         }
     }
 }
