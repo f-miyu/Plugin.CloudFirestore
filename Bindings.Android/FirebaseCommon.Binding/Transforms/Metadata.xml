@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <!-- Rename Namespaces -->
+    <attr path="/api/package[@name='com.google.firebase']" name="managedName">Firebase</attr>
+    <attr path="/api/package[@name='com.google.firebase.events']" name="managedName">Firebase.Events</attr>
+    <attr path="/api/package[@name='com.google.firebase.provider']" name="managedName">Firebase.Provider</attr>
+    <attr path="/api/package[@name='com.google.firebase.components']" name="managedName">Firebase.Components</attr>
+    <attr path="/api/package[@name='com.google.firebase.inject']" name="managedName">Firebase.Inject</attr>
+    <attr path="/api/package[@name='com.google.firebase.internal']" name="managedName">Firebase.Internal</attr>
+    <attr path="/api/package[@name='com.google.firebase.annotations']" name="managedName">Firebase.Annotations</attr>
+    <attr path="/api/package[@name='com.google.firebase.platforminfo']" name="managedName">Firebase.PlatformInfo</attr>
+    <remove-node path="/api/package[@name='com.google.firebase.components']/class[@name='ComponentRuntime']/method[@name='get' and count(parameter)=1 and parameter[1][@type='java.lang.Class']]">
+    </remove-node>
+    <remove-node path="/api/package[@name='com.google.firebase.components']/class[@name='AbstractComponentContainer']/method[@name='setOf' and count(parameter)=1 and parameter[1][@type='java.lang.Class&lt;T&gt;']]">
+    </remove-node>
+</metadata>

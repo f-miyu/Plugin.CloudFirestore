@@ -14,9 +14,9 @@ namespace Plugin.CloudFirestore.Sample.Models
         public string Notes { get; set; }
 
         [ServerTimestamp(CanReplace = false)]
-        public DateTime CreatedAt { get; set; }
+        public Timestamp CreatedAt { get; set; }
 
         [ServerTimestamp]
-        public DateTime UpdatedAt { get; set; }
+        public Timestamp UpdatedAt { get; set; }
     }
 }

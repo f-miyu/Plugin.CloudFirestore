@@ -1,16 +1,76 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType></DebugType>
-    <DocumentationFile>bin\Release\netstandard2.0\Plugin.CloudFirestore.xml</DocumentationFile>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
-    <PackageReference Include="System.Reactive" Version="4.0.0" />
-  </ItemGroup>
-  <Import Project="..\Plugin.CloudFirestore.Shared\Plugin.CloudFirestore.Shared.projitems" Label="Shared" Condition="Exists('..\Plugin.CloudFirestore.Shared\Plugin.CloudFirestore.Shared.projitems')" />
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
+        <AssemblyName>Plugin.CloudFirestore</AssemblyName>
+        <RootNamespace>Plugin.CloudFirestore</RootNamespace>
+        <PackageId>Plugin.CloudFirestore</PackageId>
+        <Product>$(AssemblyName) ($(TargetFramework))</Product>
+        <Version>3.0.0</Version>
+        <PackageVersion>3.0.0</PackageVersion>
+        <PackOnBuild>true</PackOnBuild>
+        <NeutralLanguage>en</NeutralLanguage>
+        <LangVersion>default</LangVersion>
+        <DefineConstants>$(DefineConstants);</DefineConstants>
+        <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+        <LangVersion>latest</LangVersion>
+        <DebugType>portable</DebugType>
+        <PackageLicenseUrl>https://github.com/f-miyu/Plugin.CloudFirestore/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageProjectUrl>https://github.com/f-miyu/Plugin.CloudFirestore</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/f-miyu/Plugin.CloudFirestore</RepositoryUrl>
+        <PackageTags>xamarin, ios, android, xamarin.forms, plugin, cloudfirestore, firestore, firebase</PackageTags>
+        <Title>Cloud Firestore Plugin for Xamarin</Title>
+        <Description>Cross platform plugin for Firebase Cloud Firestore</Description>
+        <Owners>f-miyu</Owners>
+        <Authors>f-miyu</Authors>
+        <DisableExtraReferences>true</DisableExtraReferences>
+        <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+        <DebugSymbols>true</DebugSymbols>
+        <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Shared\**\*.cs" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+        <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+        <Compile Include="Android\**\*.cs" />
+        <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="71.1601.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Grpc.OkHttp" Version="1.21.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Grpc.Android" Version="1.21.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Grpc.Protobuf.Lite" Version="1.21.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Grpc.Stub" Version="1.21.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Io.OpenCensus.OpenCensusApi" Version="0.21.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="71.1610.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="71.1620.0" PrivateAssets="none" />
+        <PackageReference Include="Square.OkHttp" Version="2.7.5.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.Database.Collection" Version="71.1601.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.ProtoliteWellKnownTypes" Version="71.1601.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Google.AutoValue.Annotations" Version="1.6.5" PrivateAssets="none" />
+        <ProjectReference Include="..\Bindings.Android\FirebaseFirestore.Binding\FirebaseFirestore.Binding.csproj" IncludeAssets="none" />
+        <ProjectReference Include="..\Bindings.Android\FirebaseCommon.Binding\FirebaseCommon.Binding.csproj" IncludeAssets="none" />
+        <ProjectReference Include="..\Bindings.Android\FirebaseAuthInterop.Binding\FirebaseAuthInterop.Binding.csproj" IncludeAssets="none" />
+    </ItemGroup>
+    <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+        <Compile Include="iOS\**\*.cs" />
+        <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.4.2.2" PrivateAssets="none" />
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="build\Plugin.CloudFirestore.targets" PackagePath="build\monoandroid90" Pack="true" />
+    </ItemGroup>
+    <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+        <ItemGroup>
+            <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+        </ItemGroup>
+    </Target>
 </Project>

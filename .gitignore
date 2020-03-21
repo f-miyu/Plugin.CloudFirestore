@@ -42,3 +42,5 @@ Thumbs.db
 
 google-services.json
 GoogleService-Info.plist
+
+.mfractor/

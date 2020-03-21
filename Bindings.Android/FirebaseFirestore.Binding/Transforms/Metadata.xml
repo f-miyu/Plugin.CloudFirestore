@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <attr path="/api/package[@name='com.google.firebase.firestore']" name="managedName">Firebase.Firestore</attr>
+    <attr path="/api/package[@name='io.grpc.okhttp']" name="managedName">IO.Grpc.OkHttp</attr>
+    <remove-node path="/api/package[@name='com.google.firebase.firestore.model.value']" />
+    <remove-node path="/api/package[@name='com.google.firestore.v1']" />
+    <attr path="/api/package[@name='com.google.firebase.firestore']/class[@name='GeoPoint']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.google.firebase.firestore.GeoPoint']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.google.firebase.firestore']/class[@name='Blob']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.google.firebase.firestore.Blob']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.google.firebase.firestore.model']/class[@name='DatabaseId']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.google.firebase.firestore.model.DatabaseId']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.google.firebase.firestore.model']/class[@name='DocumentKey']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.google.firebase.firestore.model.DocumentKey']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.google.firebase.firestore.model']/class[@name='SnapshotVersion']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.google.firebase.firestore.model.SnapshotVersion']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.google.firebase']/class[@name='Timestamp']/method[@name='compareTo' and count(parameter)=1 and parameter[1][@type='com.google.firebase.Timestamp']]/parameter[1]" name="managedType">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.google.firebase']" name="managedName">Firebase</attr>
+    <attr path="/api/package[@name='com.google.firebase.firestore']/interface[@name='EventListener']/method[@name='onEvent']/parameter[1]" name="managedName">obj</attr>
+    <attr path="/api/package[@name='com.google.firebase.firestore']/interface[@name='EventListener']/method[@name='onEvent']/parameter[2]" name="managedName">error</attr>
+</metadata>
