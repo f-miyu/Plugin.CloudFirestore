@@ -2,7 +2,7 @@
 
 A cross platform plugin for Firebase Cloud Firestore. 
 A wrapper for [Xamarin.Firebase.iOS.CloudFirestore](https://www.nuget.org/packages/Xamarin.Firebase.iOS.CloudFirestore/) 
-and [Xamarin.Firebase.Firestore](Xamarin.Firebase.Firestore).
+and a binding library of firebase-firestore-19.0.2.
 
 ## Setup
 Install Nuget package to each projects.
@@ -44,6 +44,13 @@ var query = await CrossCloudFirestore.Current
                                      .GetDocumentsAsync();
 
 var yourModels = query.ToObjects<YourModel>();
+
+var group = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .GetCollectionGroup("yourcollection")
+                                     .GetDocumentsAsync();
+
+var yourModels = group.ToObjects<YourModel>();
 ```
 
 ### Filters
@@ -279,6 +286,8 @@ var data = new
     Date = FieldValue.ServerTimestamp,
     UnionArray = FieldValue.ArrayUnion(1, 2),
     RemovedArray = FieldValue.ArrayRemove(3, 4),
+    LongValue = FieldValue.Increment(1),
+    DoubleValue = FieldValue.Increment(2.5),
 };
 
 await CrossCloudFirestore.Current
@@ -323,7 +332,7 @@ await CrossCloudFirestore.Current
 | Array | System.Collections.IList |
 | Boolean | bool and bool? |
 | Byte | byte[] and Stream |
-| Date and time | DateTime, DateTimeOffset and these Nullable |
+| Date and time | DateTime, DateTimeOffset, Plugin.CloudFirestore.Timestamp and these Nullable |
 | Floating-point number | float, double, decimal and these Nullable |
 | Geographical point | Plugin.CloudFirestore.GeoPoint |
 | Integer | byte, sbyte, short, ushort, int, uint, long, ulong and these Nullable |
