@@ -23,6 +23,11 @@ Firebase.Core.App.Configure();
 <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
 <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
 ```
+* Initialize CloudFirestore in MainActivity's *onCreate* method:
+```C#
+Plugin.CloudFirestore.CloudFirestore.Init(Application.Context);
+```
+> NOTE: The initialisation lines for both iOS and Android projects needs to happen before the Forms init lines(in AppDelegate respectively MainActivity).
 
 ## Usage
 ### Get
