@@ -7,7 +7,6 @@
         <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
         <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
         <PackageReference Include="ReactiveProperty" Version="6.2.0" />
-        <PackageReference Include="Acr.UserDialogs" Version="7.1.0.440" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Models\" />
