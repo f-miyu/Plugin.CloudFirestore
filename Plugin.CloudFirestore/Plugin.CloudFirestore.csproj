@@ -6,8 +6,8 @@
         <RootNamespace>Plugin.CloudFirestore</RootNamespace>
         <PackageId>Plugin.CloudFirestore</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>3.0.1</Version>
-        <PackageVersion>3.0.1</PackageVersion>
+        <Version>3.1.0</Version>
+        <PackageVersion>3.1.0</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>default</LangVersion>
@@ -16,7 +16,7 @@
         <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
         <LangVersion>latest</LangVersion>
         <DebugType>portable</DebugType>
-        <PackageLicenseUrl>https://github.com/f-miyu/Plugin.CloudFirestore/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageProjectUrl>https://github.com/f-miyu/Plugin.CloudFirestore</PackageProjectUrl>
         <RepositoryUrl>https://github.com/f-miyu/Plugin.CloudFirestore</RepositoryUrl>
         <PackageTags>xamarin, ios, android, xamarin.forms, plugin, cloudfirestore, firestore, firebase</PackageTags>
@@ -24,6 +24,7 @@
         <Description>Cross platform plugin for Firebase Cloud Firestore</Description>
         <Owners>f-miyu</Owners>
         <Authors>f-miyu</Authors>
+        <Copyright>Copyright (c) 2018 f-miyu</Copyright>
         <DisableExtraReferences>true</DisableExtraReferences>
         <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
     </PropertyGroup>
@@ -64,7 +65,7 @@
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
         <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.4.2.2" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.12.0" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup>
         <None Include="build\Plugin.CloudFirestore.targets" PackagePath="build\monoandroid90" Pack="true" />

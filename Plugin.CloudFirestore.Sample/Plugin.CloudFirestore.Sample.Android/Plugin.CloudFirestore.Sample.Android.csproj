@@ -37,6 +37,7 @@
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
         <AndroidLinkMode>None</AndroidLinkMode>
+        <AndroidEnableMultiDex>false</AndroidEnableMultiDex>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
         <DebugSymbols>true</DebugSymbols>
@@ -93,6 +94,10 @@
         <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj">
           <Project>{FABB1665-0C12-46F1-974B-2A570582AD08}</Project>
           <Name>Plugin.CloudFirestore</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\Bindings.Android\FirebaseFirestore.Binding\FirebaseFirestore.Binding.csproj">
+          <Project>{7AB339FD-5DDC-42B8-A412-FDCC40F04122}</Project>
+          <Name>FirebaseFirestore.Binding</Name>
         </ProjectReference>
     </ItemGroup>
     <ItemGroup>
