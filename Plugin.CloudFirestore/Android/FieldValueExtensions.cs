@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Android.Runtime;
+using Android.Support.V4.Util;
 using Firebase;
 using Plugin.CloudFirestore.Attributes;
 
@@ -260,6 +261,49 @@ namespace Plugin.CloudFirestore
                         }
                         return list;
                     }
+				case Java.Util.AbstractList javaList:
+					{
+						IList list;
+						if (type.GetInterfaces().Contains(typeof(IList)))
+						{
+							list = (IList)Activator.CreateInstance(type);
+						}
+						else if (type.IsGenericType)
+						{
+							var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
+							list = (IList)Activator.CreateInstance(listType);
+						}
+						else
+						{
+							list = new List<object>();
+						}
+
+						var genericType = typeof(object);
+						if (type.IsGenericType)
+						{
+							genericType = type.GenericTypeArguments[0];
+						}
+
+                        var iterator = javaList.Iterator();
+                        while (iterator.HasNext)
+						{
+							object value = iterator.Next();
+							if (value is Java.Lang.Object javaObject)
+							{
+								value = javaObject.ToFieldValue(genericType);
+							}
+							else if (value != null && genericType != typeof(object))
+							{
+								if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
+								{
+									genericType = genericType.GenericTypeArguments[0];
+								}
+								value = Convert.ChangeType(value, genericType);
+							}
+							list.Add(value);
+						}
+						return list;
+					}
                 case JavaDictionary dictionary:
                     {
                         object @object;
@@ -326,6 +370,91 @@ namespace Plugin.CloudFirestore
                                 if (property != null && !igonoredProperties.Contains(property))
                                 {
                                     var value = dictionary[key];
+                                    if (value is Java.Lang.Object javaObject)
+                                    {
+                                        value = javaObject.ToFieldValue(property.PropertyType);
+                                    }
+                                    else if (value != null)
+                                    {
+                                        var propertyType = property.PropertyType;
+                                        if (propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(Nullable<>))
+                                        {
+                                            propertyType = propertyType.GenericTypeArguments[0];
+                                        }
+                                        value = Convert.ChangeType(value, propertyType);
+                                    }
+                                    property.SetValue(@object, value);
+                                }
+                            }
+                        }
+                        return @object;
+                    }
+                case Java.Util.AbstractMap map:
+                    {
+                        object @object;
+                        if (type == typeof(object))
+                        {
+                            @object = new Dictionary<string, object>();
+                        }
+                        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
+                        {
+                            var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
+                            @object = Activator.CreateInstance(dictionaryType);
+                        }
+                        else
+                        {
+                            @object = Activator.CreateInstance(type);
+                        }
+
+                        if (@object is IDictionary dict)
+                        {
+                            var genericType = typeof(object);
+                            if (type.IsGenericType)
+                            {
+                                genericType = type.GenericTypeArguments[1];
+                            }
+
+                            foreach (var key in map.KeySet())
+                            {
+                                object value = map.Get(key as Java.Lang.Object);
+                                if (value is Java.Lang.Object javaObject)
+                                {
+                                    value = javaObject.ToFieldValue(genericType);
+                                }
+                                else if (value != null && genericType != typeof(object))
+                                {
+                                    if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
+                                    {
+                                        genericType = genericType.GenericTypeArguments[0];
+                                    }
+                                    value = Convert.ChangeType(value, genericType);
+                                }
+                                dict.Add(key.ToString(), value);
+                            }
+                        }
+                        else
+                        {
+                            var properties = type.GetProperties();
+                            var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
+                                                             .Where(t => t.Attribute != null)
+                                                             .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
+                            var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
+
+                            foreach (var key in map.KeySet())
+                            {
+                                PropertyInfo property;
+                                if (mappedProperties.ContainsKey(key.ToString()))
+                                {
+                                    property = mappedProperties[key.ToString()];
+                                }
+                                else
+                                {
+                                    property = type.GetProperty(key.ToString());
+                                }
+
+                                if (property != null && !igonoredProperties.Contains(property))
+                                {
+                                    object value = map.Get(key as Java.Lang.Object);
                                     if (value is Java.Lang.Object javaObject)
                                     {
                                         value = javaObject.ToFieldValue(property.PropertyType);
