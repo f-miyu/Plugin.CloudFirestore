@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Android.Runtime;
-using Android.Support.V4.Util;
 using Firebase;
 using Plugin.CloudFirestore.Attributes;
 
@@ -416,7 +415,7 @@ namespace Plugin.CloudFirestore
 
                             foreach (var key in map.KeySet())
                             {
-                                object value = map.Get(key as Java.Lang.Object);
+                                object value = map.Get(key.ToString());
                                 if (value is Java.Lang.Object javaObject)
                                 {
                                     value = javaObject.ToFieldValue(genericType);
@@ -454,7 +453,7 @@ namespace Plugin.CloudFirestore
 
                                 if (property != null && !igonoredProperties.Contains(property))
                                 {
-                                    object value = map.Get(key as Java.Lang.Object);
+                                    object value = map.Get(key.ToString());
                                     if (value is Java.Lang.Object javaObject)
                                     {
                                         value = javaObject.ToFieldValue(property.PropertyType);
