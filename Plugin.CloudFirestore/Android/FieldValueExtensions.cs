@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Android.Runtime;
-using Firebase;
 using Plugin.CloudFirestore.Attributes;
 
 namespace Plugin.CloudFirestore
@@ -19,12 +18,14 @@ namespace Plugin.CloudFirestore
 
             switch (fieldValue)
             {
+                case Enum @enum:
+                    return new Java.Lang.String(@enum.ToString());
                 case bool @bool:
                     return new Java.Lang.Boolean(@bool);
                 case byte @byte:
                     return new Java.Lang.Long(@byte);
-                case double @doble:
-                    return new Java.Lang.Double(@doble);
+                case double @double:
+                    return new Java.Lang.Double(@double);
                 case float @float:
                     return new Java.Lang.Double(@float);
                 case int @int:
@@ -141,9 +142,9 @@ namespace Plugin.CloudFirestore
         private static (string Key, Java.Lang.Object Object) GetKeyAndObject(object fieldValue, PropertyInfo property)
         {
             var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-            var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
+            var ignoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
 
-            if (idAttribute == null && igonoredAttribute == null)
+            if (idAttribute == null && ignoredAttribute == null)
             {
                 var value = property.GetValue(fieldValue);
                 var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
@@ -191,6 +192,16 @@ namespace Plugin.CloudFirestore
                     }
                     return Convert.ChangeType((double)@double, type);
                 case Java.Lang.String @string:
+                    if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
+                    {
+                        type = type.GenericTypeArguments[0];
+                    }
+                    
+                    if (typeof(Enum).IsAssignableFrom(type))
+                    {
+                        var stringValue = @string.ToString();
+                        return Enum.Parse(type, stringValue);
+                    }
                     return fieldValue.ToString();
                 case Firebase.Timestamp timestamp:
                     {
@@ -352,7 +363,7 @@ namespace Plugin.CloudFirestore
                             var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
                                                              .Where(t => t.Attribute != null)
                                                              .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                            var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
+                            var ignoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
 
                             foreach (var key in dictionary.Keys)
                             {
@@ -366,7 +377,7 @@ namespace Plugin.CloudFirestore
                                     property = type.GetProperty(key.ToString());
                                 }
 
-                                if (property != null && !igonoredProperties.Contains(property))
+                                if (property != null && !ignoredProperties.Contains(property))
                                 {
                                     var value = dictionary[key];
                                     if (value is Java.Lang.Object javaObject)
@@ -437,7 +448,7 @@ namespace Plugin.CloudFirestore
                             var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
                                                              .Where(t => t.Attribute != null)
                                                              .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                            var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
+                            var ignoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
 
                             foreach (var key in map.KeySet())
                             {
@@ -451,7 +462,7 @@ namespace Plugin.CloudFirestore
                                     property = type.GetProperty(key.ToString());
                                 }
 
-                                if (property != null && !igonoredProperties.Contains(property))
+                                if (property != null && !ignoredProperties.Contains(property))
                                 {
                                     object value = map.Get(key.ToString());
                                     if (value is Java.Lang.Object javaObject)
