@@ -23,8 +23,8 @@ namespace Plugin.CloudFirestore
                     return new NSNumber(@bool);
                 case byte @byte:
                     return new NSNumber(@byte);
-                case double @doble:
-                    return new NSNumber(@doble);
+                case double @double:
+                    return new NSNumber(@double);
                 case float @float:
                     return new NSNumber(@float);
                 case int @int:
@@ -85,6 +85,8 @@ namespace Plugin.CloudFirestore
                     return firestoreFieldValue.ToNative();
                 case FieldPath fieldPath:
                     return fieldPath.ToNative();
+                case Enum @enum:
+                    return new NSString(@enum.ToString());
                 default:
                     {
                         var type = fieldValue.GetType();
@@ -148,10 +150,10 @@ namespace Plugin.CloudFirestore
         private static (string Key, object Object) GetKeyAndObject(object fieldValue, PropertyInfo property)
         {
             var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-            var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
+            var ignoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
 
 
-            if (idAttribute == null && igonoredAttribute == null)
+            if (idAttribute == null && ignoredAttribute == null)
             {
                 var value = property.GetValue(fieldValue);
                 var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
@@ -232,6 +234,17 @@ namespace Plugin.CloudFirestore
                     }
                     return Convert.ChangeType(number.DoubleValue, type);
                 case NSString @string:
+                    if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
+                    {
+                        type = type.GenericTypeArguments[0];
+                    }
+                    
+                    if (typeof(Enum).IsAssignableFrom(type))
+                    {
+                        var stringValue = @string.ToString();
+                        return Enum.Parse(type, stringValue);
+                    }
+
                     return @string.ToString();
                 case Firebase.CloudFirestore.Timestamp timestamp:
                     {
@@ -324,7 +337,7 @@ namespace Plugin.CloudFirestore
                             var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
                                                              .Where(t => t.Attribute != null)
                                                              .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                            var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
+                            var ignoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
 
                             foreach (var (key, value) in dictionary)
                             {
@@ -338,7 +351,7 @@ namespace Plugin.CloudFirestore
                                     property = type.GetProperty(key.ToString());
                                 }
 
-                                if (property != null && !igonoredProperties.Contains(property))
+                                if (property != null && !ignoredProperties.Contains(property))
                                 {
                                     property.SetValue(@object, value.ToFieldValue(property.PropertyType));
                                 }
