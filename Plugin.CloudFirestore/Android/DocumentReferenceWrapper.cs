@@ -32,6 +32,11 @@ namespace Plugin.CloudFirestore
 
         public ICollectionReference GetCollection(string collectionPath)
         {
+            return Collection(collectionPath);
+        }
+
+        public ICollectionReference Collection(string collectionPath)
+        {
             var collectionReference = _documentReference.Collection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
@@ -62,6 +67,11 @@ namespace Plugin.CloudFirestore
 
         public Task<IDocumentSnapshot> GetDocumentAsync()
         {
+            return GetAsync();
+        }
+
+        public Task<IDocumentSnapshot> GetAsync()
+        {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
             _documentReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
@@ -81,6 +91,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task<IDocumentSnapshot> GetDocumentAsync(Source source)
+        {
+            return GetAsync(source);
+        }
+
+        public Task<IDocumentSnapshot> GetAsync(Source source)
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
@@ -109,6 +124,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task SetDataAsync(object documentData)
+        {
+            return SetAsync(documentData);
+        }
+
+        public Task SetAsync(object documentData)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -145,6 +165,11 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
+            return SetAsync(documentData, mergeFields);
+        }
+
+        public Task SetAsync(object documentData, params string[] mergeFields)
+        {
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.Set(documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields)).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
@@ -163,6 +188,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task SetDataAsync(object documentData, params FieldPath[] mergeFields)
+        {
+            return SetAsync(documentData, mergeFields);
+        }
+
+        public Task SetAsync(object documentData, params FieldPath[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -197,6 +227,11 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, bool merge)
         {
+            return SetAsync(documentData, merge);
+        }
+
+        public Task SetAsync(object documentData, bool merge)
+        {
             if (!merge)
             {
                 return SetDataAsync(documentData);
@@ -229,6 +264,11 @@ namespace Plugin.CloudFirestore
 
         public Task UpdateDataAsync(object fields)
         {
+            return UpdateAsync(fields);
+        }
+
+        public Task UpdateAsync(object fields)
+        {
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.Update(fields.ToNativeFieldValues()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
@@ -248,6 +288,11 @@ namespace Plugin.CloudFirestore
 
         public void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
         {
+            if (moreFieldsAndValues == null)
+            {
+                throw new ArgumentNullException(nameof(moreFieldsAndValues));
+            }
+
             _documentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
@@ -256,6 +301,11 @@ namespace Plugin.CloudFirestore
 
         public void UpdateData(FieldPath field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
         {
+            if (moreFieldsAndValues == null)
+            {
+                throw new ArgumentNullException(nameof(moreFieldsAndValues));
+            }
+
             _documentReference.Update(field.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 handler?.Invoke(task.IsSuccessful ? null : ExceptionMapper.Map(task.Exception));
@@ -264,25 +314,45 @@ namespace Plugin.CloudFirestore
 
         public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
         {
+            return UpdateAsync(field, value, moreFieldsAndValues);
+        }
+
+        public Task UpdateAsync(string field, object value, params object[] moreFieldsAndValues)
+        {
+            if (moreFieldsAndValues == null)
+            {
+                throw new ArgumentNullException(nameof(moreFieldsAndValues));
+            }
+
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
-           {
-               if (task.IsSuccessful)
-               {
-                   tcs.SetResult(true);
-               }
-               else
-               {
-                   tcs.SetException(ExceptionMapper.Map(task.Exception));
-               }
-           }));
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
 
             return tcs.Task;
         }
 
         public Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
         {
+            return UpdateAsync(field, value, moreFieldsAndValues);
+        }
+
+        public Task UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
+        {
+            if (moreFieldsAndValues == null)
+            {
+                throw new ArgumentNullException(nameof(moreFieldsAndValues));
+            }
+
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.Update(field.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
@@ -309,6 +379,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task DeleteDocumentAsync()
+        {
+            return DeleteAsync();
+        }
+
+        public Task DeleteAsync()
         {
             var tcs = new TaskCompletionSource<bool>();
 

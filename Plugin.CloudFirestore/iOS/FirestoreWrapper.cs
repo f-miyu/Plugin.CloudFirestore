@@ -28,17 +28,32 @@ namespace Plugin.CloudFirestore
 
         public ICollectionReference GetCollection(string collectionPath)
         {
+            return Collection(collectionPath);
+        }
+
+        public ICollectionReference Collection(string collectionPath)
+        {
             var collectionReference = _firestore.GetCollection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
 
         public IDocumentReference GetDocument(string documentPath)
         {
+            return Document(documentPath);
+        }
+
+        public IDocumentReference Document(string documentPath)
+        {
             var documentReference = _firestore.GetDocument(documentPath);
             return new DocumentReferenceWrapper(documentReference);
         }
 
         public IQuery GetCollectionGroup(string collectionId)
+        {
+            return CollectionGroup(collectionId);
+        }
+
+        public IQuery CollectionGroup(string collectionId)
         {
             var query = _firestore.GetCollectionGroup(collectionId);
             return new QueryWrapper(query);
@@ -208,6 +223,11 @@ namespace Plugin.CloudFirestore
         }
 
         public IWriteBatch CreateBatch()
+        {
+            return Batch();
+        }
+
+        public IWriteBatch Batch()
         {
             var writeBatch = _firestore.CreateBatch();
             return new WriteBatchWrapper(writeBatch);

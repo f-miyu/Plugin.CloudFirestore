@@ -30,7 +30,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 
             var query = CrossCloudFirestore.Current
                                            .Instance
-                                           .GetCollection(TodoItem.CollectionPath)
+                                           .Collection(TodoItem.CollectionPath)
                                            .OrderBy(nameof(TodoItem.CreatedAt), true);
 
             query.ObserveAdded()

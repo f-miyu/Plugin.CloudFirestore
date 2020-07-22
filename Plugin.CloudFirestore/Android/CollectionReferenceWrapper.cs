@@ -185,11 +185,21 @@ namespace Plugin.CloudFirestore
 
         public IDocumentReference CreateDocument()
         {
+            return Document();
+        }
+
+        public IDocumentReference Document()
+        {
             var doccuntReference = _collectionReference.Document();
             return new DocumentReferenceWrapper(doccuntReference);
         }
 
         public IDocumentReference GetDocument(string documentPath)
+        {
+            return Document(documentPath);
+        }
+
+        public IDocumentReference Document(string documentPath)
         {
             var doccuntReference = _collectionReference.Document(documentPath);
             return new DocumentReferenceWrapper(doccuntReference);
@@ -217,6 +227,11 @@ namespace Plugin.CloudFirestore
 
         public Task<IQuerySnapshot> GetDocumentsAsync()
         {
+            return GetAsync();
+        }
+
+        public Task<IQuerySnapshot> GetAsync()
+        {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
             _collectionReference.Get().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
@@ -236,6 +251,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task<IQuerySnapshot> GetDocumentsAsync(Source source)
+        {
+            return GetAsync(source);
+        }
+
+        public Task<IQuerySnapshot> GetAsync(Source source)
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
@@ -265,6 +285,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task AddDocumentAsync(object data)
+        {
+            return AddAsync(data);
+        }
+
+        public Task AddAsync(object data)
         {
             var tcs = new TaskCompletionSource<bool>();
 

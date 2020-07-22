@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,7 +12,7 @@
         <RootNamespace>Plugin.CloudFirestore.Sample.Droid</RootNamespace>
         <AssemblyName>Plugin.CloudFirestore.Sample.Android</AssemblyName>
         <FileAlignment>512</FileAlignment>
-        <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
         <AndroidApplication>True</AndroidApplication>
         <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
         <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
@@ -57,8 +57,11 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
+        <PackageReference Include="Xamarin.Forms" Version="4.7.0.1142" />
         <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
+        <PackageReference Include="Xamarin.Firebase.Firestore">
+          <Version>121.4.3-preview02</Version>
+        </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="MainActivity.cs" />
@@ -94,10 +97,6 @@
         <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj">
           <Project>{FABB1665-0C12-46F1-974B-2A570582AD08}</Project>
           <Name>Plugin.CloudFirestore</Name>
-        </ProjectReference>
-        <ProjectReference Include="..\..\Bindings.Android\FirebaseFirestore.Binding\FirebaseFirestore.Binding.csproj">
-          <Project>{7AB339FD-5DDC-42B8-A412-FDCC40F04122}</Project>
-          <Name>FirebaseFirestore.Binding</Name>
         </ProjectReference>
     </ItemGroup>
     <ItemGroup>

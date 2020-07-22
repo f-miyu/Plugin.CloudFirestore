@@ -8,9 +8,16 @@ namespace Plugin.CloudFirestore
         string Id { get; }
         string Path { get; }
         IDocumentReference Parent { get; }
+        [Obsolete("Please use Document() method instead.")]
         IDocumentReference CreateDocument();
+        IDocumentReference Document();
+        [Obsolete("Please use Document(string documentPath) method instead.")]
         IDocumentReference GetDocument(string documentPath);
+        IDocumentReference Document(string documentPath);
+        [Obsolete("Please use AddAsync(object data) method instead.")]
         void AddDocument(object data, CompletionHandler handler);
+        [Obsolete("Please use AddAsync(object data) method instead.")]
         Task AddDocumentAsync(object data);
+        Task AddAsync(object data);
     }
 }

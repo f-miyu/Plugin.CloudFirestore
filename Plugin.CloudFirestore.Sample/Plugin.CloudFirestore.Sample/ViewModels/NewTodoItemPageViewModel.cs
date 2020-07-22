@@ -6,6 +6,7 @@ using Plugin.CloudFirestore.Sample.Models;
 using Prism.Services;
 using Prism.Navigation;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Plugin.CloudFirestore.Sample.ViewModels
 {
@@ -31,27 +32,25 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
              .ObserveOn(SynchronizationContext.Current)
              .ToAsyncReactiveCommand();
 
-            CreateCommand.Subscribe(async () =>
-            {
-                var item = new TodoItem
-                {
-                    Name = Name.Value,
-                    Notes = Notes.Value,
-                };
+            _ = CreateCommand.Subscribe(async () =>
+              {
+                  var item = new TodoItem
+                  {
+                      Name = Name.Value,
+                      Notes = Notes.Value,
+                  };
 
-                CrossCloudFirestore.Current
-                                   .Instance
-                                   .GetCollection(TodoItem.CollectionPath)
-                                   .AddDocument(item, (error) =>
-                                   {
-                                       if (error != null)
-                                       {
-                                           System.Diagnostics.Debug.WriteLine(error);
-                                       }
-                                   });
+                  _ = CrossCloudFirestore.Current
+                                     .Instance
+                                     .Collection(TodoItem.CollectionPath)
+                                     .AddAsync(item)
+                                     .ContinueWith(t =>
+                                     {
+                                         System.Diagnostics.Debug.WriteLine(t.Exception);
+                                     }, TaskContinuationOptions.OnlyOnFaulted);
 
-                await navigationService.GoBackAsync(useModalNavigation: true);
-            });
+                  await navigationService.GoBackAsync(useModalNavigation: true);
+              });
 
             CancelCommand = new ReactiveCommand();
             CancelCommand.Subscribe(() => NavigationService.GoBackAsync(useModalNavigation: true));

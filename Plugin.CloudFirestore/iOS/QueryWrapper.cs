@@ -193,6 +193,11 @@ namespace Plugin.CloudFirestore
 
         public Task<IQuerySnapshot> GetDocumentsAsync()
         {
+            return GetAsync();
+        }
+
+        public Task<IQuerySnapshot> GetAsync()
+        {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
             _query.GetDocuments((snapshot, error) =>
@@ -211,6 +216,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task<IQuerySnapshot> GetDocumentsAsync(Source source)
+        {
+            return GetAsync(source);
+        }
+
+        public Task<IQuerySnapshot> GetAsync(Source source)
         {
             var tcs = new TaskCompletionSource<IQuerySnapshot>();
 

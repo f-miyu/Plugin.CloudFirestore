@@ -23,8 +23,8 @@ namespace Plugin.CloudFirestore
                     return new NSNumber(@bool);
                 case byte @byte:
                     return new NSNumber(@byte);
-                case double @doble:
-                    return new NSNumber(@doble);
+                case double @double:
+                    return new NSNumber(@double);
                 case float @float:
                     return new NSNumber(@float);
                 case int @int:
@@ -148,10 +148,10 @@ namespace Plugin.CloudFirestore
         private static (string Key, object Object) GetKeyAndObject(object fieldValue, PropertyInfo property)
         {
             var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-            var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
+            var ignoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
 
 
-            if (idAttribute == null && igonoredAttribute == null)
+            if (idAttribute == null && ignoredAttribute == null)
             {
                 var value = property.GetValue(fieldValue);
                 var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));

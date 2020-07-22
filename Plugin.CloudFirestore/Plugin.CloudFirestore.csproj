@@ -6,8 +6,8 @@
         <RootNamespace>Plugin.CloudFirestore</RootNamespace>
         <PackageId>Plugin.CloudFirestore</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>3.1.0</Version>
-        <PackageVersion>3.1.0</PackageVersion>
+        <Version>3.1.0.2</Version>
+        <PackageVersion>3.1.0.2</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>default</LangVersion>
@@ -26,7 +26,6 @@
         <Authors>f-miyu</Authors>
         <Copyright>Copyright (c) 2018 f-miyu</Copyright>
         <DisableExtraReferences>true</DisableExtraReferences>
-        <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
         <DebugSymbols>true</DebugSymbols>
@@ -38,41 +37,20 @@
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="Shared\**\*.cs" />
+        <PackageReference Include="System.Reactive" Version="4.4.1" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
-        <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
         <Compile Include="Android\**\*.cs" />
-        <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.GooglePlayServices.Tasks" Version="71.1601.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Grpc.OkHttp" Version="1.21.1" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Grpc.Android" Version="1.21.1" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Grpc.Protobuf.Lite" Version="1.21.1" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Grpc.Stub" Version="1.21.1" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.Firestore" Version="121.4.3-preview02" PrivateAssets="none" />
         <PackageReference Include="Xamarin.Io.OpenCensus.OpenCensusApi" Version="0.21.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.GooglePlayServices.Base" Version="71.1610.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="71.1620.0" PrivateAssets="none" />
-        <PackageReference Include="Square.OkHttp" Version="2.7.5.1" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Firebase.Database.Collection" Version="71.1601.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Firebase.ProtoliteWellKnownTypes" Version="71.1601.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Firebase.Auth.Interop" Version="71.1601.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Firebase.Common" Version="71.1610.0" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Google.AutoValue.Annotations" Version="1.6.5" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Google.Guava" Version="27.1.0" PrivateAssets="none" />
-        <ProjectReference Include="..\Bindings.Android\FirebaseFirestore.Binding\FirebaseFirestore.Binding.csproj" IncludeAssets="none" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="System.Reactive" Version="4.3.2" PrivateAssets="none" />
         <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.12.0" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup>
         <None Include="build\Plugin.CloudFirestore.targets" PackagePath="build\monoandroid90" Pack="true" />
     </ItemGroup>
-    <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
-        <ItemGroup>
-            <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
-        </ItemGroup>
-    </Target>
 </Project>

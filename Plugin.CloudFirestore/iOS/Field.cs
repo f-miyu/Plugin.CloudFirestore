@@ -7,9 +7,14 @@ namespace Plugin.CloudFirestore
     {
         public static Dictionary<object, object> CreateFields(object field, object value, params object[] moreFieldsAndValues)
         {
+            if (moreFieldsAndValues == null)
+            {
+                throw new ArgumentNullException(nameof(moreFieldsAndValues));
+            }
+
             if (moreFieldsAndValues.Length % 2 != 0)
             {
-                throw new ArgumentException(nameof(moreFieldsAndValues));
+                throw new ArgumentException(nameof(moreFieldsAndValues), "There must be an even number of arguments that alternate between field names and values");
             }
 
             var fields = new Dictionary<object, object>()

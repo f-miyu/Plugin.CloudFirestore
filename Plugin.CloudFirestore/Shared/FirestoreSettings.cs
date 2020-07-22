@@ -8,6 +8,7 @@ namespace Plugin.CloudFirestore
         private static bool _defaultIsPersistenceEnabled;
         private static bool _defaultIsSslEnabled;
 
+        [Obsolete("This setting now defaults to true and will be removed in a future release.")]
         public bool AreTimestampsInSnapshotsEnabled { get; set; }
         public string Host { get; set; }
         public bool IsPersistenceEnabled { get; set; }

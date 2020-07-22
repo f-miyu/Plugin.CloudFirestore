@@ -7,6 +7,7 @@ using Reactive.Bindings;
 using Reactive.Bindings.Extensions;
 using System.Net.Http.Headers;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Plugin.CloudFirestore.Sample.ViewModels
 {
@@ -30,7 +31,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             Title = "Todo Item";
 
             _id.Where(id => id != null)
-               .SelectMany(id => CrossCloudFirestore.Current.Instance.GetDocument($"{TodoItem.CollectionPath}/{id}").GetDocumentAsync())
+               .SelectMany(id => CrossCloudFirestore.Current.Instance.Document($"{TodoItem.CollectionPath}/{id}").GetAsync())
                .Where(document => document != null)
                .Select(document => document.ToObject<TodoItem>())
                .Subscribe(todoItem =>
@@ -56,14 +57,12 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                 todoItem.Name = Name.Value;
                 todoItem.Notes = Notes.Value;
 
-                CrossCloudFirestore.Current.Instance.GetDocument($"{TodoItem.CollectionPath}/{todoItem.Id}")
-                .UpdateData(todoItem, (error) =>
-                {
-                    if (error != null)
+                _ = CrossCloudFirestore.Current.Instance.Document($"{TodoItem.CollectionPath}/{todoItem.Id}")
+                    .UpdateAsync(todoItem)
+                    .ContinueWith(t =>
                     {
-                        System.Diagnostics.Debug.WriteLine(error);
-                    }
-                });
+                        System.Diagnostics.Debug.WriteLine(t.Exception);
+                    }, TaskContinuationOptions.OnlyOnFaulted);
 
                 await navigationService.GoBackAsync();
             });
@@ -80,16 +79,14 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 
                 if (ok)
                 {
-                    CrossCloudFirestore.Current
-                                       .Instance
-                                       .GetDocument($"{TodoItem.CollectionPath}/{_todoItem.Value.Id}")
-                                       .DeleteDocument((error) =>
-                                       {
-                                           if (error != null)
-                                           {
-                                               System.Diagnostics.Debug.WriteLine(error);
-                                           }
-                                       });
+                    _ = CrossCloudFirestore.Current
+                        .Instance
+                        .Document($"{TodoItem.CollectionPath}/{_todoItem.Value.Id}")
+                        .DeleteAsync()
+                        .ContinueWith(t =>
+                        {
+                            System.Diagnostics.Debug.WriteLine(t.Exception);
+                        }, TaskContinuationOptions.OnlyOnFaulted);
 
                     await NavigationService.GoBackAsync();
                 }

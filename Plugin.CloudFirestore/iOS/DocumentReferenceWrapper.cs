@@ -31,6 +31,11 @@ namespace Plugin.CloudFirestore
 
         public ICollectionReference GetCollection(string collectionPath)
         {
+            return Collection(collectionPath);
+        }
+
+        public ICollectionReference Collection(string collectionPath)
+        {
             var collectionReference = _documentReference.GetCollection(collectionPath);
             return new CollectionReferenceWrapper(collectionReference);
         }
@@ -57,6 +62,11 @@ namespace Plugin.CloudFirestore
 
         public Task<IDocumentSnapshot> GetDocumentAsync()
         {
+            return GetAsync();
+        }
+
+        public Task<IDocumentSnapshot> GetAsync()
+        {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
             _documentReference.GetDocument((snapshot, error) =>
@@ -75,6 +85,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task<IDocumentSnapshot> GetDocumentAsync(Source source)
+        {
+            return GetAsync(source);
+        }
+
+        public Task<IDocumentSnapshot> GetAsync(Source source)
         {
             var tcs = new TaskCompletionSource<IDocumentSnapshot>();
 
@@ -102,6 +117,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task SetDataAsync(object documentData)
+        {
+            return SetAsync(documentData);
+        }
+
+        public Task SetAsync(object documentData)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -138,6 +158,11 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
+            return SetAsync(documentData, mergeFields);
+        }
+
+        public Task SetAsync(object documentData, params string[] mergeFields)
+        {
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
@@ -156,6 +181,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task SetDataAsync(object documentData, params FieldPath[] mergeFields)
+        {
+            return SetAsync(documentData, mergeFields);
+        }
+
+        public Task SetAsync(object documentData, params FieldPath[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -184,6 +214,11 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, bool merge)
         {
+            return SetAsync(documentData, merge);
+        }
+
+        public Task SetAsync(object documentData, bool merge)
+        {
             var tcs = new TaskCompletionSource<bool>();
 
             _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
@@ -210,6 +245,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task UpdateDataAsync(object fields)
+        {
+            return UpdateAsync(fields);
+        }
+
+        public Task UpdateAsync(object fields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -250,6 +290,11 @@ namespace Plugin.CloudFirestore
 
         public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
         {
+            return UpdateAsync(field, value, moreFieldsAndValues);
+        }
+
+        public Task UpdateAsync(string field, object value, params object[] moreFieldsAndValues)
+        {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
 
             var tcs = new TaskCompletionSource<bool>();
@@ -270,6 +315,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
+        {
+            return UpdateAsync(field, value, moreFieldsAndValues);
+        }
+
+        public Task UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
 
@@ -299,6 +349,11 @@ namespace Plugin.CloudFirestore
         }
 
         public Task DeleteDocumentAsync()
+        {
+            return DeleteAsync();
+        }
+
+        public Task DeleteAsync()
         {
             var tcs = new TaskCompletionSource<bool>();
 

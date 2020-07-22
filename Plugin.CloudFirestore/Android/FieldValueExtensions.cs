@@ -23,8 +23,8 @@ namespace Plugin.CloudFirestore
                     return new Java.Lang.Boolean(@bool);
                 case byte @byte:
                     return new Java.Lang.Long(@byte);
-                case double @doble:
-                    return new Java.Lang.Double(@doble);
+                case double @double:
+                    return new Java.Lang.Double(@double);
                 case float @float:
                     return new Java.Lang.Double(@float);
                 case int @int:
@@ -141,9 +141,9 @@ namespace Plugin.CloudFirestore
         private static (string Key, Java.Lang.Object Object) GetKeyAndObject(object fieldValue, PropertyInfo property)
         {
             var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-            var igonoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
+            var ignoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
 
-            if (idAttribute == null && igonoredAttribute == null)
+            if (idAttribute == null && ignoredAttribute == null)
             {
                 var value = property.GetValue(fieldValue);
                 var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
@@ -260,49 +260,49 @@ namespace Plugin.CloudFirestore
                         }
                         return list;
                     }
-				case Java.Util.AbstractList javaList:
-					{
-						IList list;
-						if (type.GetInterfaces().Contains(typeof(IList)))
-						{
-							list = (IList)Activator.CreateInstance(type);
-						}
-						else if (type.IsGenericType)
-						{
-							var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
-							list = (IList)Activator.CreateInstance(listType);
-						}
-						else
-						{
-							list = new List<object>();
-						}
+                case Java.Util.AbstractList javaList:
+                    {
+                        IList list;
+                        if (type.GetInterfaces().Contains(typeof(IList)))
+                        {
+                            list = (IList)Activator.CreateInstance(type);
+                        }
+                        else if (type.IsGenericType)
+                        {
+                            var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
+                            list = (IList)Activator.CreateInstance(listType);
+                        }
+                        else
+                        {
+                            list = new List<object>();
+                        }
 
-						var genericType = typeof(object);
-						if (type.IsGenericType)
-						{
-							genericType = type.GenericTypeArguments[0];
-						}
+                        var genericType = typeof(object);
+                        if (type.IsGenericType)
+                        {
+                            genericType = type.GenericTypeArguments[0];
+                        }
 
                         var iterator = javaList.Iterator();
                         while (iterator.HasNext)
-						{
-							object value = iterator.Next();
-							if (value is Java.Lang.Object javaObject)
-							{
-								value = javaObject.ToFieldValue(genericType);
-							}
-							else if (value != null && genericType != typeof(object))
-							{
-								if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
-								{
-									genericType = genericType.GenericTypeArguments[0];
-								}
-								value = Convert.ChangeType(value, genericType);
-							}
-							list.Add(value);
-						}
-						return list;
-					}
+                        {
+                            object value = iterator.Next();
+                            if (value is Java.Lang.Object javaObject)
+                            {
+                                value = javaObject.ToFieldValue(genericType);
+                            }
+                            else if (value != null && genericType != typeof(object))
+                            {
+                                if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
+                                {
+                                    genericType = genericType.GenericTypeArguments[0];
+                                }
+                                value = Convert.ChangeType(value, genericType);
+                            }
+                            list.Add(value);
+                        }
+                        return list;
+                    }
                 case JavaDictionary dictionary:
                     {
                         object @object;

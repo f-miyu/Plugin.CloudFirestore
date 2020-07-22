@@ -33,10 +33,16 @@ namespace Plugin.CloudFirestore
         IQuery EndAt(params object[] fieldValues);
         IQuery EndBefore(IDocumentSnapshot document);
         IQuery EndBefore(params object[] fieldValues);
+        [Obsolete("Please use GetAsync() method instead.")]
         void GetDocuments(QuerySnapshotHandler handler);
+        [Obsolete("Please use GetAsync(Source source) method instead.")]
         void GetDocuments(Source source, QuerySnapshotHandler handler);
+        [Obsolete("Please use GetAsync() method instead.")]
         Task<IQuerySnapshot> GetDocumentsAsync();
+        [Obsolete("Please use GetAsync(Source source) method instead.")]
         Task<IQuerySnapshot> GetDocumentsAsync(Source source);
+        Task<IQuerySnapshot> GetAsync();
+        Task<IQuerySnapshot> GetAsync(Source source);
         IListenerRegistration AddSnapshotListener(QuerySnapshotHandler listener);
         IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, QuerySnapshotHandler listener);
     }
