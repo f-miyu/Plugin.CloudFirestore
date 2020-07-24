@@ -1,10 +1,7 @@
 ﻿using System;
 using Firebase.Firestore;
 using System.Collections.Generic;
-using System.Collections;
 using System.Linq;
-using Plugin.CloudFirestore.Attributes;
-using System.Reflection;
 
 namespace Plugin.CloudFirestore
 {
@@ -42,44 +39,28 @@ namespace Plugin.CloudFirestore
                     data = source.GetData(serverTimestampBehavior.Value.ToNative());
                 }
 
-                var properties = typeof(T).GetProperties();
-                var idProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IdAttribute)) != null);
-                var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
-                                                 .Where(t => t.Attribute != null)
-                                                 .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
+                var instance = (T)CreatorProvider.GetCreator(typeof(T)).Invoke();
 
-                var instance = Activator.CreateInstance<T>();
+                var fieldInfos = DocumentInfoProvider.GetDocumentInfo(typeof(T)).DocumentFieldInfos.Values;
 
-                foreach (var (key, value) in data)
+                foreach (var fieldInfo in fieldInfos)
                 {
                     try
                     {
-                        PropertyInfo property;
-                        if (mappedProperties.ContainsKey(key))
+                        if (fieldInfo.IsId)
                         {
-                            property = mappedProperties[key];
+                            fieldInfo.SetValue(instance, source.Id);
                         }
-                        else
+                        else if (data.TryGetValue(fieldInfo.Name, out var value))
                         {
-                            property = typeof(T).GetProperty(key);
-                        }
-
-                        if (property != null && !igonoredProperties.Contains(property))
-                        {
-                            property.SetValue(instance, value.ToFieldValue(property.PropertyType));
+                            fieldInfo.SetValue(instance, value.ToFieldValue(fieldInfo.FieldType));
                         }
                     }
                     catch (Exception e)
                     {
-                        System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
+                        System.Diagnostics.Debug.WriteLine($"{fieldInfo.Name} is invalid: {e.Message}");
                         throw;
                     }
-                }
-
-                foreach (var idProperty in idProperties)
-                {
-                    idProperty.SetValue(instance, source.Id);
                 }
 
                 return instance;

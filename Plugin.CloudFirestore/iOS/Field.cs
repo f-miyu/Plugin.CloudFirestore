@@ -7,6 +7,11 @@ namespace Plugin.CloudFirestore
     {
         public static Dictionary<object, object> CreateFields(object field, object value, params object[] moreFieldsAndValues)
         {
+            if (field == null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+
             if (moreFieldsAndValues == null)
             {
                 throw new ArgumentNullException(nameof(moreFieldsAndValues));

@@ -46,7 +46,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery OrderBy(FieldPath field)
         {
-            var query = _collectionReference.OrderedBy(field.ToNative());
+            var query = _collectionReference.OrderedBy(field?.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -58,7 +58,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery OrderBy(FieldPath field, bool descending)
         {
-            var query = _collectionReference.OrderedBy(field.ToNative(), descending);
+            var query = _collectionReference.OrderedBy(field?.ToNative(), descending);
             return new QueryWrapper(query);
         }
 
@@ -70,7 +70,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereEqualsTo(FieldPath field, object value)
         {
-            var query = _collectionReference.WhereEqualsTo(field.ToNative(), value.ToNativeFieldValue());
+            var query = _collectionReference.WhereEqualsTo(field?.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
@@ -82,7 +82,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereGreaterThan(FieldPath field, object value)
         {
-            var query = _collectionReference.WhereGreaterThan(field.ToNative(), value.ToNativeFieldValue());
+            var query = _collectionReference.WhereGreaterThan(field?.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
@@ -94,7 +94,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereGreaterThanOrEqualsTo(FieldPath field, object value)
         {
-            var query = _collectionReference.WhereGreaterThanOrEqualsTo(field.ToNative(), value.ToNativeFieldValue());
+            var query = _collectionReference.WhereGreaterThanOrEqualsTo(field?.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
@@ -106,7 +106,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereLessThan(FieldPath field, object value)
         {
-            var query = _collectionReference.WhereLessThan(field.ToNative(), value.ToNativeFieldValue());
+            var query = _collectionReference.WhereLessThan(field?.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
@@ -118,7 +118,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereLessThanOrEqualsTo(FieldPath field, object value)
         {
-            var query = _collectionReference.WhereLessThanOrEqualsTo(field.ToNative(), value.ToNativeFieldValue());
+            var query = _collectionReference.WhereLessThanOrEqualsTo(field?.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
@@ -130,31 +130,31 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereArrayContains(FieldPath field, object value)
         {
-            var query = _collectionReference.WhereArrayContains(field.ToNative(), value.ToNativeFieldValue());
+            var query = _collectionReference.WhereArrayContains(field?.ToNative(), value.ToNativeFieldValue());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereArrayContainsAny(string field, IEnumerable<object> values)
+        public IQuery WhereArrayContainsAny<T>(string field, IEnumerable<T> values)
         {
-            var query = _collectionReference.WhereArrayContainsAny(field, values.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.WhereArrayContainsAny(field, values?.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values)
+        public IQuery WhereArrayContainsAny<T>(FieldPath field, IEnumerable<T> values)
         {
-            var query = _collectionReference.WhereArrayContainsAny(field.ToNative(), values.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.WhereArrayContainsAny(field?.ToNative(), values?.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereIn(string field, IEnumerable<object> values)
+        public IQuery WhereIn<T>(string field, IEnumerable<T> values)
         {
-            var query = _collectionReference.WhereFieldIn(field, values.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.WhereFieldIn(field, values?.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 
-        public IQuery WhereIn(FieldPath field, IEnumerable<object> values)
+        public IQuery WhereIn<T>(FieldPath field, IEnumerable<T> values)
         {
-            var query = _collectionReference.WhereFieldIn(field.ToNative(), values.Select(x => x.ToNativeFieldValue()).ToArray());
+            var query = _collectionReference.WhereFieldIn(field?.ToNative(), values?.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 

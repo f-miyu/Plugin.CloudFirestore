@@ -54,43 +54,28 @@ namespace Plugin.CloudFirestore
                     }
                 }
 
-                var properties = typeof(T).GetProperties();
-                var idProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IdAttribute)) != null);
-                var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
-                                                 .Where(t => t.Attribute != null)
-                                                 .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
+                var instance = (T)CreatorProvider.GetCreator(typeof(T)).Invoke();
 
-                var instance = Activator.CreateInstance<T>();
-                foreach (var (key, value) in data)
+                var fieldInfos = DocumentInfoProvider.GetDocumentInfo(typeof(T)).DocumentFieldInfos.Values;
+
+                foreach (var fieldInfo in fieldInfos)
                 {
                     try
                     {
-                        PropertyInfo property;
-                        if (mappedProperties.ContainsKey(key.ToString()))
+                        if (fieldInfo.IsId)
                         {
-                            property = mappedProperties[key.ToString()];
+                            fieldInfo.SetValue(instance, source.Id);
                         }
-                        else
+                        else if (data.TryGetValue(new NSString(fieldInfo.Name), out var value))
                         {
-                            property = typeof(T).GetProperty(key.ToString());
-                        }
-
-                        if (property != null && !igonoredProperties.Contains(property))
-                        {
-                            property.SetValue(instance, value.ToFieldValue(property.PropertyType));
+                            fieldInfo.SetValue(instance, value.ToFieldValue(fieldInfo.FieldType));
                         }
                     }
                     catch (Exception e)
                     {
-                        System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
+                        System.Diagnostics.Debug.WriteLine($"{fieldInfo.Name} is invalid: {e.Message}");
                         throw;
                     }
-                }
-
-                foreach (var idProperty in idProperties)
-                {
-                    idProperty.SetValue(instance, source.Id);
                 }
 
                 return instance;

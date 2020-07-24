@@ -3,10 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using Android.Runtime;
-using Firebase;
-using Plugin.CloudFirestore.Attributes;
 
 namespace Plugin.CloudFirestore
 {
@@ -93,10 +90,10 @@ namespace Plugin.CloudFirestore
                             throw new NotSupportedException($"{type.FullName} is not supported");
 
                         var javaDictionary = new JavaDictionary();
-                        var properties = type.GetProperties();
-                        foreach (var property in properties)
+                        var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos.Values;
+                        foreach (var fieldInfo in fieldInfos)
                         {
-                            var (key, @object) = GetKeyAndObject(fieldValue, property);
+                            var (key, @object) = GetKeyAndObject(fieldValue, fieldInfo);
                             if (key != null)
                             {
                                 javaDictionary.Add(key, @object);
@@ -123,43 +120,36 @@ namespace Plugin.CloudFirestore
                 return resultDictionary;
             }
 
-            var properties = fieldValues.GetType().GetProperties();
+            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(fieldValues.GetType()).DocumentFieldInfos.Values;
             var values = new JavaDictionary<string, Java.Lang.Object>();
 
-            foreach (var property in properties)
+            foreach (var fieldInfo in fieldInfos)
             {
-                var (key, @object) = GetKeyAndObject(fieldValues, property);
+                var (key, @object) = GetKeyAndObject(fieldValues, fieldInfo);
                 if (key != null)
                 {
                     values.Add(key, @object);
                 }
             }
-
             return values;
         }
 
-        private static (string Key, Java.Lang.Object Object) GetKeyAndObject(object fieldValue, PropertyInfo property)
+        private static (string Key, Java.Lang.Object) GetKeyAndObject(object fieldValue, DocumentFieldInfo fieldInfo)
         {
-            var idAttribute = Attribute.GetCustomAttribute(property, typeof(IdAttribute));
-            var ignoredAttribute = Attribute.GetCustomAttribute(property, typeof(IgnoredAttribute));
-
-            if (idAttribute == null && ignoredAttribute == null)
+            if (!fieldInfo.IsId && !fieldInfo.IsIgnored)
             {
-                var value = property.GetValue(fieldValue);
-                var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(property, typeof(MapToAttribute));
-                var key = mapToAttribute != null ? mapToAttribute.Mapping : property.Name;
+                var value = fieldInfo.GetValue(fieldValue);
 
-                var serverTimestampAttribute = (Attributes.ServerTimestampAttribute)Attribute.GetCustomAttribute(property, typeof(Attributes.ServerTimestampAttribute));
-                if (serverTimestampAttribute != null &&
-                    (serverTimestampAttribute.CanReplace || value == null ||
+                if (fieldInfo.IsServerTimestamp &&
+                    (fieldInfo.CanReplaceServerTimestamp || value == null ||
                     (value is DateTime dateTime && dateTime == default) ||
                     (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default) ||
                     (value is Timestamp timestamp && timestamp == default)))
                 {
-                    return (key, Firebase.Firestore.FieldValue.ServerTimestamp());
+                    return (fieldInfo.Name, Firebase.Firestore.FieldValue.ServerTimestamp());
                 }
 
-                return (key, value.ToNativeFieldValue());
+                return (fieldInfo.Name, value.ToNativeFieldValue());
             }
 
             return (null, null);
@@ -223,12 +213,12 @@ namespace Plugin.CloudFirestore
                         IList list;
                         if (type.GetInterfaces().Contains(typeof(IList)))
                         {
-                            list = (IList)Activator.CreateInstance(type);
+                            list = (IList)CreatorProvider.GetCreator(type).Invoke();
                         }
                         else if (type.IsGenericType)
                         {
                             var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
-                            list = (IList)Activator.CreateInstance(listType);
+                            list = (IList)CreatorProvider.GetCreator(listType).Invoke();
                         }
                         else
                         {
@@ -265,12 +255,12 @@ namespace Plugin.CloudFirestore
                         IList list;
                         if (type.GetInterfaces().Contains(typeof(IList)))
                         {
-                            list = (IList)Activator.CreateInstance(type);
+                            list = (IList)CreatorProvider.GetCreator(type).Invoke();
                         }
                         else if (type.IsGenericType)
                         {
                             var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
-                            list = (IList)Activator.CreateInstance(listType);
+                            list = (IList)CreatorProvider.GetCreator(listType).Invoke();
                         }
                         else
                         {
@@ -313,11 +303,11 @@ namespace Plugin.CloudFirestore
                         else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
                         {
                             var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
-                            @object = Activator.CreateInstance(dictionaryType);
+                            @object = CreatorProvider.GetCreator(dictionaryType).Invoke();
                         }
                         else
                         {
-                            @object = Activator.CreateInstance(type);
+                            @object = CreatorProvider.GetCreator(type).Invoke();
                         }
 
                         if (@object is IDictionary dict)
@@ -348,41 +338,26 @@ namespace Plugin.CloudFirestore
                         }
                         else
                         {
-                            var properties = type.GetProperties();
-                            var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
-                                                             .Where(t => t.Attribute != null)
-                                                             .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                            var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
-
+                            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos;
                             foreach (var key in dictionary.Keys)
                             {
-                                PropertyInfo property;
-                                if (mappedProperties.ContainsKey(key.ToString()))
-                                {
-                                    property = mappedProperties[key.ToString()];
-                                }
-                                else
-                                {
-                                    property = type.GetProperty(key.ToString());
-                                }
-
-                                if (property != null && !igonoredProperties.Contains(property))
+                                if (fieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
                                 {
                                     var value = dictionary[key];
                                     if (value is Java.Lang.Object javaObject)
                                     {
-                                        value = javaObject.ToFieldValue(property.PropertyType);
+                                        value = javaObject.ToFieldValue(fieldInfo.FieldType);
                                     }
                                     else if (value != null)
                                     {
-                                        var propertyType = property.PropertyType;
-                                        if (propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(Nullable<>))
+                                        var fieldType = fieldInfo.FieldType;
+                                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(Nullable<>))
                                         {
-                                            propertyType = propertyType.GenericTypeArguments[0];
+                                            fieldType = fieldType.GenericTypeArguments[0];
                                         }
-                                        value = Convert.ChangeType(value, propertyType);
+                                        value = Convert.ChangeType(value, fieldType);
                                     }
-                                    property.SetValue(@object, value);
+                                    fieldInfo.SetValue(@object, value);
                                 }
                             }
                         }
@@ -398,11 +373,11 @@ namespace Plugin.CloudFirestore
                         else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
                         {
                             var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
-                            @object = Activator.CreateInstance(dictionaryType);
+                            @object = CreatorProvider.GetCreator(dictionaryType).Invoke();
                         }
                         else
                         {
-                            @object = Activator.CreateInstance(type);
+                            @object = CreatorProvider.GetCreator(type).Invoke();
                         }
 
                         if (@object is IDictionary dict)
@@ -433,41 +408,26 @@ namespace Plugin.CloudFirestore
                         }
                         else
                         {
-                            var properties = type.GetProperties();
-                            var mappedProperties = properties.Select(p => (Property: p, Attribute: Attribute.GetCustomAttribute(p, typeof(MapToAttribute)) as MapToAttribute))
-                                                             .Where(t => t.Attribute != null)
-                                                             .ToDictionary(t => t.Attribute.Mapping, t => t.Property);
-                            var igonoredProperties = properties.Where(p => Attribute.GetCustomAttribute(p, typeof(IgnoredAttribute)) != null);
-
+                            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos;
                             foreach (var key in map.KeySet())
                             {
-                                PropertyInfo property;
-                                if (mappedProperties.ContainsKey(key.ToString()))
-                                {
-                                    property = mappedProperties[key.ToString()];
-                                }
-                                else
-                                {
-                                    property = type.GetProperty(key.ToString());
-                                }
-
-                                if (property != null && !igonoredProperties.Contains(property))
+                                if (fieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
                                 {
                                     object value = map.Get(key.ToString());
                                     if (value is Java.Lang.Object javaObject)
                                     {
-                                        value = javaObject.ToFieldValue(property.PropertyType);
+                                        value = javaObject.ToFieldValue(fieldInfo.FieldType);
                                     }
                                     else if (value != null)
                                     {
-                                        var propertyType = property.PropertyType;
-                                        if (propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(Nullable<>))
+                                        var fieldType = fieldInfo.FieldType;
+                                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(Nullable<>))
                                         {
-                                            propertyType = propertyType.GenericTypeArguments[0];
+                                            fieldType = fieldType.GenericTypeArguments[0];
                                         }
-                                        value = Convert.ChangeType(value, propertyType);
+                                        value = Convert.ChangeType(value, fieldType);
                                     }
-                                    property.SetValue(@object, value);
+                                    fieldInfo.SetValue(@object, value);
                                 }
                             }
                         }

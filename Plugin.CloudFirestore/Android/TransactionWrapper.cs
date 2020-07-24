@@ -115,7 +115,7 @@ namespace Plugin.CloudFirestore
                 throw new ArgumentNullException(nameof(moreFieldsAndValues));
             }
             var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.Update((DocumentReference)wrapper, field.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            _transaction.Update((DocumentReference)wrapper, field?.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
         }
 
         public void DeleteDocument(IDocumentReference document)

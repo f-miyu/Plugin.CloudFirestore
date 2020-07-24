@@ -26,10 +26,10 @@ namespace Plugin.CloudFirestore
         IQuery WhereLessThanOrEqualsTo(FieldPath field, object value);
         IQuery WhereArrayContains(string field, object value);
         IQuery WhereArrayContains(FieldPath field, object value);
-        IQuery WhereArrayContainsAny(string field, IEnumerable<object> values);
-        IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values);
-        IQuery WhereIn(string field, IEnumerable<object> values);
-        IQuery WhereIn(FieldPath field, IEnumerable<object> values);
+        IQuery WhereArrayContainsAny<T>(string field, IEnumerable<T> values);
+        IQuery WhereArrayContainsAny<T>(FieldPath field, IEnumerable<T> values);
+        IQuery WhereIn<T>(string field, IEnumerable<T> values);
+        IQuery WhereIn<T>(FieldPath field, IEnumerable<T> values);
         IQuery StartAt(IDocumentSnapshot document);
         IQuery StartAt(params object[] fieldValues);
         IQuery StartAfter(IDocumentSnapshot document);
