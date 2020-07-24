@@ -31,6 +31,12 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery LimitToLast(long limit)
+        {
+            var query = _collectionReference.LimitToLast(limit);
+            return new QueryWrapper(query);
+        }
+
         public IQuery OrderBy(string field)
         {
             var query = _collectionReference.OrderBy(field);
@@ -128,6 +134,30 @@ namespace Plugin.CloudFirestore
         public IQuery WhereArrayContains(FieldPath field, object value)
         {
             var query = _collectionReference.WhereArrayContains(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContainsAny(string field, IEnumerable<object> values)
+        {
+            var query = _collectionReference.WhereArrayContainsAny(field, values.Select(x => x.ToNativeFieldValue()).ToList());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values)
+        {
+            var query = _collectionReference.WhereArrayContainsAny(field.ToNative(), values.Select(x => x.ToNativeFieldValue()).ToList());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereIn(string field, IEnumerable<object> values)
+        {
+            var query = _collectionReference.WhereIn(field, values.Select(x => x.ToNativeFieldValue()).ToList());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereIn(FieldPath field, IEnumerable<object> values)
+        {
+            var query = _collectionReference.WhereIn(field.ToNative(), values.Select(x => x.ToNativeFieldValue()).ToList());
             return new QueryWrapper(query);
         }
 
@@ -323,10 +353,10 @@ namespace Plugin.CloudFirestore
         public IListenerRegistration AddSnapshotListener(bool includeMetadataChanges, QuerySnapshotHandler listener)
         {
             var registration = _collectionReference.AddSnapshotListener(includeMetadataChanges ? MetadataChanges.Include : MetadataChanges.Exclude, new EventHandlerListener<QuerySnapshot>((value, error) =>
-              {
-                  listener?.Invoke(value == null ? null : new QuerySnapshotWrapper(value),
-                                   error == null ? null : ExceptionMapper.Map(error));
-              }));
+            {
+                listener?.Invoke(value == null ? null : new QuerySnapshotWrapper(value),
+                                 error == null ? null : ExceptionMapper.Map(error));
+            }));
 
             return new ListenerRegistrationWrapper(registration);
         }

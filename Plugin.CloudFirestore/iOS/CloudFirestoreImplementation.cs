@@ -14,5 +14,10 @@ namespace Plugin.CloudFirestore
         {
             return FirestoreProvider.GetFirestore(appName);
         }
+
+        public void SetLoggingEnabled(bool loggingEnabled)
+        {
+            Firestore.EnableLogging(loggingEnabled);
+        }
     }
 }

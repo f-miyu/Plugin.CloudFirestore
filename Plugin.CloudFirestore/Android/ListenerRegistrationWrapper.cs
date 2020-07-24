@@ -15,6 +15,11 @@ namespace Plugin.CloudFirestore
             _listenerRegistration.Remove();
         }
 
+        public void Dispose()
+        {
+            Remove();
+        }
+
         public override bool Equals(object obj)
         {
             return Equals(obj as ListenerRegistrationWrapper);

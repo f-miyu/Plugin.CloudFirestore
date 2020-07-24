@@ -8,5 +8,6 @@ namespace Plugin.CloudFirestore
         string Host { get; }
         bool IsPersistenceEnabled { get; }
         bool IsSslEnabled { get; }
+        long CacheSizeBytes { get; }
     }
 }

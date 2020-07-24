@@ -15,7 +15,8 @@ namespace Plugin.CloudFirestore
                 TimestampsInSnapshotsEnabled = value.AreTimestampsInSnapshotsEnabled,
                 Host = value.Host,
                 PersistenceEnabled = value.IsPersistenceEnabled,
-                SslEnabled = value.IsSslEnabled
+                SslEnabled = value.IsSslEnabled,
+                CacheSizeBytes = value.CacheSizeBytes
             };
         }
 
@@ -273,6 +274,69 @@ namespace Plugin.CloudFirestore
             var tcs = new TaskCompletionSource<bool>();
 
             _firestore.DisableNetwork((error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public IListenerRegistration AddSnapshotsInSyncListener(Action listener)
+        {
+            var registration = _firestore.AddSnapshotsInSyncListener(listener);
+            return new ListenerRegistrationWrapper(registration);
+        }
+
+        public Task ClearPersistenceAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.ClearPersistence((error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task TerminateAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.Terminate((error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
+        }
+
+        public Task WaitForPendingWritesAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.WaitForPendingWrites((error) =>
             {
                 if (error != null)
                 {

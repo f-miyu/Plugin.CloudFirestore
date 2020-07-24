@@ -30,5 +30,9 @@ namespace Plugin.CloudFirestore
         [Obsolete("Please use DisableNetworkAsync() method instead.")]
         void DisableNetwork(CompletionHandler handler);
         Task DisableNetworkAsync();
+        IListenerRegistration AddSnapshotsInSyncListener(Action listener);
+        Task ClearPersistenceAsync();
+        Task TerminateAsync();
+        Task WaitForPendingWritesAsync();
     }
 }

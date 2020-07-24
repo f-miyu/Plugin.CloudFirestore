@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reactive.Disposables;
 using System.Reactive.Linq;
 
 namespace Plugin.CloudFirestore.Extensions
@@ -10,7 +9,7 @@ namespace Plugin.CloudFirestore.Extensions
         {
             return Observable.Create<IDocumentSnapshot>(observer =>
             {
-                var registration = document.AddSnapshotListener((snapshot, error) =>
+                return document.AddSnapshotListener((snapshot, error) =>
                 {
                     if (error != null)
                     {
@@ -21,8 +20,6 @@ namespace Plugin.CloudFirestore.Extensions
                         observer.OnNext(snapshot);
                     }
                 });
-
-                return Disposable.Create(registration.Remove);
             });
         }
 
@@ -30,7 +27,7 @@ namespace Plugin.CloudFirestore.Extensions
         {
             return Observable.Create<IDocumentSnapshot>(observer =>
             {
-                var registration = document.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
+                return document.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
                 {
                     if (error != null)
                     {
@@ -41,8 +38,6 @@ namespace Plugin.CloudFirestore.Extensions
                         observer.OnNext(snapshot);
                     }
                 });
-
-                return Disposable.Create(registration.Remove);
             });
         }
     }

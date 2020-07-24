@@ -8,5 +8,6 @@ namespace Plugin.CloudFirestore
     {
         IFirestore Instance { get; }
         IFirestore GetInstance(string appName);
+        void SetLoggingEnabled(bool loggingEnabled);
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Reactive.Linq;
-using System.Reactive.Disposables;
 
 namespace Plugin.CloudFirestore.Extensions
 {
@@ -11,7 +10,7 @@ namespace Plugin.CloudFirestore.Extensions
         {
             return Observable.Create<IQuerySnapshot>(observer =>
             {
-                var registration = query.AddSnapshotListener((snapshot, error) =>
+                return query.AddSnapshotListener((snapshot, error) =>
                 {
                     if (error != null)
                     {
@@ -22,8 +21,6 @@ namespace Plugin.CloudFirestore.Extensions
                         observer.OnNext(snapshot);
                     }
                 });
-
-                return Disposable.Create(registration.Remove);
             });
         }
 
@@ -31,7 +28,7 @@ namespace Plugin.CloudFirestore.Extensions
         {
             return Observable.Create<IQuerySnapshot>(observer =>
             {
-                var registration = query.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
+                return query.AddSnapshotListener(includeMetadataChanges, (snapshot, error) =>
                 {
                     if (error != null)
                     {
@@ -42,8 +39,6 @@ namespace Plugin.CloudFirestore.Extensions
                         observer.OnNext(snapshot);
                     }
                 });
-
-                return Disposable.Create(registration.Remove);
             });
         }
 

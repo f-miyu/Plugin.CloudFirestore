@@ -7,12 +7,16 @@ namespace Plugin.CloudFirestore
         private static string _defaultHost;
         private static bool _defaultIsPersistenceEnabled;
         private static bool _defaultIsSslEnabled;
+        private static long _defaultCacheSizeBytes;
 
         [Obsolete("This setting now defaults to true and will be removed in a future release.")]
         public bool AreTimestampsInSnapshotsEnabled { get; set; }
         public string Host { get; set; }
         public bool IsPersistenceEnabled { get; set; }
         public bool IsSslEnabled { get; set; }
+        public long CacheSizeBytes { get; set; }
+
+        public static long CacheSizeUnlimited { get; private set; }
 
         public FirestoreSettings()
         {
@@ -20,6 +24,7 @@ namespace Plugin.CloudFirestore
             Host = _defaultHost;
             IsPersistenceEnabled = _defaultIsPersistenceEnabled;
             IsSslEnabled = _defaultIsSslEnabled;
+            CacheSizeBytes = _defaultCacheSizeBytes;
         }
 
         public override bool Equals(object obj)
@@ -35,7 +40,8 @@ namespace Plugin.CloudFirestore
             return AreTimestampsInSnapshotsEnabled == other.AreTimestampsInSnapshotsEnabled &&
                 Host == other.Host &&
                 IsPersistenceEnabled == other.IsPersistenceEnabled &&
-                IsSslEnabled == IsSslEnabled;
+                IsSslEnabled == other.IsSslEnabled &&
+                CacheSizeBytes == other.CacheSizeBytes;
         }
 
         public override int GetHashCode()
@@ -43,7 +49,8 @@ namespace Plugin.CloudFirestore
             return AreTimestampsInSnapshotsEnabled.GetHashCode() ^
                 (Host?.GetHashCode() ?? 0) ^
                 IsPersistenceEnabled.GetHashCode() ^
-                IsSslEnabled.GetHashCode();
+                IsSslEnabled.GetHashCode() ^
+                CacheSizeBytes.GetHashCode();
         }
     }
 }

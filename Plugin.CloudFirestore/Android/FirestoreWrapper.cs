@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Firebase.Firestore;
 using Android.Runtime;
 using Firebase;
+using Java.Lang;
 
 namespace Plugin.CloudFirestore
 {
@@ -16,6 +17,7 @@ namespace Plugin.CloudFirestore
                 .SetHost(value.Host)
                 .SetPersistenceEnabled(value.IsPersistenceEnabled)
                 .SetSslEnabled(value.IsSslEnabled)
+                .SetCacheSizeBytes(value.CacheSizeBytes)
                 .Build();
         }
 
@@ -65,7 +67,7 @@ namespace Plugin.CloudFirestore
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
                          T result = default;
-                         Exception exception = null;
+                         System.Exception exception = null;
 
                          if (task.IsSuccessful)
                          {
@@ -115,7 +117,7 @@ namespace Plugin.CloudFirestore
             _firestore.RunTransaction(new UpdateFunction(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
-                         Exception exception = null;
+                         System.Exception exception = null;
 
                          if (!task.IsSuccessful)
                          {
@@ -261,6 +263,69 @@ namespace Plugin.CloudFirestore
             var tcs = new TaskCompletionSource<bool>();
 
             _firestore.DisableNetwork().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public IListenerRegistration AddSnapshotsInSyncListener(Action listener)
+        {
+            var registration = _firestore.AddSnapshotsInSyncListener(new Runnable(listener));
+            return new ListenerRegistrationWrapper(registration);
+        }
+
+        public Task ClearPersistenceAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.ClearPersistence().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public Task TerminateAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.Terminate().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
+            {
+                if (task.IsSuccessful)
+                {
+                    tcs.SetResult(true);
+                }
+                else
+                {
+                    tcs.SetException(ExceptionMapper.Map(task.Exception));
+                }
+            }));
+
+            return tcs.Task;
+        }
+
+        public Task WaitForPendingWritesAsync()
+        {
+            var tcs = new TaskCompletionSource<bool>();
+
+            _firestore.WaitForPendingWrites().AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
                 if (task.IsSuccessful)
                 {

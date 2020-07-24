@@ -25,6 +25,12 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery LimitToLast(long limit)
+        {
+            var query = _query.LimitedToLast((nint)limit);
+            return new QueryWrapper(query);
+        }
+
         public IQuery OrderBy(string field)
         {
             var query = _query.OrderedBy(field);
@@ -118,6 +124,30 @@ namespace Plugin.CloudFirestore
         public IQuery WhereArrayContains(FieldPath field, object value)
         {
             var query = _query.WhereArrayContains(field.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContainsAny(string field, IEnumerable<object> values)
+        {
+            var query = _query.WhereArrayContains(field, values.Select(x => x.ToNativeFieldValue()).ToArray());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values)
+        {
+            var query = _query.WhereArrayContains(field.ToNative(), values.Select(x => x.ToNativeFieldValue()).ToArray());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereIn(string field, IEnumerable<object> values)
+        {
+            var query = _query.WhereFieldIn(field, values.Select(x => x.ToNativeFieldValue()).ToArray());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereIn(FieldPath field, IEnumerable<object> values)
+        {
+            var query = _query.WhereFieldIn(field.ToNative(), values.Select(x => x.ToNativeFieldValue()).ToArray());
             return new QueryWrapper(query);
         }
 

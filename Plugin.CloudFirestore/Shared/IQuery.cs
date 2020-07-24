@@ -9,6 +9,7 @@ namespace Plugin.CloudFirestore
     {
         IFirestore Firestore { get; }
         IQuery LimitTo(long limit);
+        IQuery LimitToLast(long limit);
         IQuery OrderBy(string field);
         IQuery OrderBy(FieldPath field);
         IQuery OrderBy(string field, bool descending);
@@ -25,6 +26,10 @@ namespace Plugin.CloudFirestore
         IQuery WhereLessThanOrEqualsTo(FieldPath field, object value);
         IQuery WhereArrayContains(string field, object value);
         IQuery WhereArrayContains(FieldPath field, object value);
+        IQuery WhereArrayContainsAny(string field, IEnumerable<object> values);
+        IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values);
+        IQuery WhereIn(string field, IEnumerable<object> values);
+        IQuery WhereIn(FieldPath field, IEnumerable<object> values);
         IQuery StartAt(IDocumentSnapshot document);
         IQuery StartAt(params object[] fieldValues);
         IQuery StartAfter(IDocumentSnapshot document);

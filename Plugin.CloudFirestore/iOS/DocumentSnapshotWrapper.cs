@@ -1,6 +1,7 @@
 ﻿using System;
 using Firebase.CloudFirestore;
 using System.Collections.Generic;
+using Foundation;
 
 namespace Plugin.CloudFirestore
 {
@@ -41,6 +42,26 @@ namespace Plugin.CloudFirestore
         public T ToObject<T>(ServerTimestampBehavior serverTimestampBehavior)
         {
             return DocumentMapper.Map<T>(_documentSnapshot, serverTimestampBehavior);
+        }
+
+        public T Get<T>(string field)
+        {
+            return (T)_documentSnapshot.GetValue(new NSString(field)).ToFieldValue(typeof(T));
+        }
+
+        public T Get<T>(string field, ServerTimestampBehavior serverTimestampBehavior)
+        {
+            return (T)_documentSnapshot.GetValue(new NSString(field), serverTimestampBehavior.ToNative()).ToFieldValue(typeof(T));
+        }
+
+        public T Get<T>(FieldPath field)
+        {
+            return (T)_documentSnapshot.GetValue(field.ToNative()).ToFieldValue(typeof(T));
+        }
+
+        public T Get<T>(FieldPath field, ServerTimestampBehavior serverTimestampBehavior)
+        {
+            return (T)_documentSnapshot.GetValue(field.ToNative(), serverTimestampBehavior.ToNative()).ToFieldValue(typeof(T));
         }
 
         public override bool Equals(object obj)
