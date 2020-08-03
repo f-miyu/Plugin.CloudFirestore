@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
 {
     internal static class FieldValueExtensions
     {
-        public static object ToNativeFieldValue(this object fieldValue)
+        public static object ToNativeFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
             if (fieldValue == null)
                 return new NSNull();
@@ -60,24 +60,6 @@ namespace Plugin.CloudFirestore
                         stream.CopyTo(ms);
                         return NSData.FromArray(ms.ToArray());
                     }
-                case IList list:
-                    {
-                        var array = new NSMutableArray();
-                        foreach (var val in list)
-                        {
-                            array.Add((NSObject)val.ToNativeFieldValue());
-                        }
-                        return array;
-                    }
-                case IDictionary dictionary:
-                    {
-                        var ndictionary = new NSMutableDictionary();
-                        foreach (var key in dictionary.Keys)
-                        {
-                            ndictionary.Add(new NSString(key.ToString()), (NSObject)dictionary[key].ToNativeFieldValue());
-                        }
-                        return ndictionary;
-                    }
                 case FieldValue firestoreFieldValue:
                     return firestoreFieldValue.ToNative();
                 case FieldPath fieldPath:
@@ -89,27 +71,19 @@ namespace Plugin.CloudFirestore
                         if (type.IsPrimitive)
                             throw new NotSupportedException($"{type.FullName} is not supported");
 
-                        var ndictionary = new NSMutableDictionary();
-                        var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos.Values;
+                        fieldInfo ??= new DocumentFieldInfo(type);
 
-                        foreach (var fieldInfo in fieldInfos)
-                        {
-                            var (key, @object) = GetKeyAndObject(fieldValue, fieldInfo);
-
-                            if (key != null)
-                            {
-                                var keyString = new NSString(key);
-                                if (ndictionary.ContainsKey(keyString))
-                                {
-                                    throw new ArgumentException($"An item with the same key has already been added. Key: {keyString}");
-                                }
-                                ndictionary.Add(keyString, (NSObject)@object);
-                            }
-                        }
-
-                        return ndictionary;
+                        return fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
                     }
             }
+        }
+
+        public static Dictionary<object, object> ToNativeFieldValues<T>(this T fieldValues)
+        {
+            if (fieldValues == null)
+                return null;
+
+            return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
         }
 
         public static Dictionary<object, object> ToNativeFieldValues(this object fieldValues)
@@ -117,56 +91,15 @@ namespace Plugin.CloudFirestore
             if (fieldValues == null)
                 return null;
 
-            if (fieldValues is IDictionary dictionary)
-            {
-                var resultDictionary = new Dictionary<object, object>();
-                foreach (var key in dictionary.Keys)
-                {
-                    resultDictionary.Add(key.ToString(), dictionary[key].ToNativeFieldValue());
-                }
-                return resultDictionary;
-            }
-
-            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(fieldValues.GetType()).DocumentFieldInfos.Values;
-            var values = new Dictionary<object, object>();
-
-            foreach (var fieldInfo in fieldInfos)
-            {
-                var (key, @object) = GetKeyAndObject(fieldValues, fieldInfo);
-                if (key != null)
-                {
-                    values.Add(key, @object);
-                }
-            }
-
-            return values;
+            return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
         }
 
-        private static (string Key, object Object) GetKeyAndObject(object fieldValue, DocumentFieldInfo fieldInfo)
-        {
-            if (!fieldInfo.IsId && !fieldInfo.IsIgnored)
-            {
-                var value = fieldInfo.GetValue(fieldValue);
-
-                if (fieldInfo.IsServerTimestamp &&
-                    (fieldInfo.CanReplaceServerTimestamp || value == null ||
-                    (value is DateTime dateTime && dateTime == default) ||
-                    (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default) ||
-                    (value is Timestamp timestamp && timestamp == default)))
-                {
-                    return (fieldInfo.Name, Firebase.CloudFirestore.FieldValue.ServerTimestamp);
-                }
-
-                return (fieldInfo.Name, value.ToNativeFieldValue());
-            }
-
-            return (null, null);
-        }
-
-        public static object ToFieldValue(this NSObject fieldValue, Type type)
+        public static object ToFieldValue(this NSObject fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
             if (fieldValue == null)
                 return null;
+
+            var type = fieldInfo?.FieldType ?? typeof(object);
 
             switch (fieldValue)
             {
@@ -251,75 +184,13 @@ namespace Plugin.CloudFirestore
                     }
                 case NSArray array:
                     {
-                        IList list;
-                        if (type.GetInterfaces().Contains(typeof(IList)))
-                        {
-                            list = (IList)CreatorProvider.GetCreator(type).Invoke();
-                        }
-                        else if (type.IsGenericType)
-                        {
-                            var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
-                            list = (IList)CreatorProvider.GetCreator(listType).Invoke();
-                        }
-                        else
-                        {
-                            list = new List<object>();
-                        }
-
-                        var genericType = typeof(object);
-                        if (type.IsGenericType)
-                        {
-                            genericType = type.GenericTypeArguments[0];
-                        }
-
-                        for (nuint i = 0; i < array.Count; i++)
-                        {
-                            list.Add(array.GetItem<NSObject>(i).ToFieldValue(genericType));
-                        }
-                        return list;
+                        fieldInfo ??= new DocumentFieldInfo<List<object>>();
+                        return fieldInfo.DocumentInfo.Create(array);
                     }
                 case NSDictionary dictionary:
                     {
-                        object @object;
-                        if (type == typeof(object))
-                        {
-                            @object = new Dictionary<string, object>();
-                        }
-                        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
-                        {
-                            var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
-                            @object = CreatorProvider.GetCreator(dictionaryType).Invoke();
-                        }
-                        else
-                        {
-                            @object = CreatorProvider.GetCreator(type).Invoke();
-                        }
-
-                        if (@object is IDictionary dict)
-                        {
-                            var genericType = typeof(object);
-                            if (type.IsGenericType)
-                            {
-                                genericType = type.GenericTypeArguments[1];
-                            }
-
-                            foreach (var (key, value) in dictionary)
-                            {
-                                dict.Add(key.ToString(), value.ToFieldValue(genericType));
-                            }
-                        }
-                        else
-                        {
-                            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos;
-                            foreach (var (key, value) in dictionary)
-                            {
-                                if (fieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
-                                {
-                                    fieldInfo.SetValue(@object, value.ToFieldValue(fieldInfo.FieldType));
-                                }
-                            }
-                        }
-                        return @object;
+                        fieldInfo ??= new DocumentFieldInfo<Dictionary<string, object>>();
+                        return fieldInfo.DocumentInfo.Create(dictionary);
                     }
                 case NSData data:
                     if (type == typeof(byte[]))

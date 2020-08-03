@@ -1,24 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
 namespace Plugin.CloudFirestore
 {
-    internal class DocumentInfo
+    internal partial class DocumentInfo<T> : IDocumentInfo
     {
-        public Type DocumentType { get; }
-        public IReadOnlyDictionary<string, DocumentFieldInfo> DocumentFieldInfos { get; private set; }
+        private readonly IDocumentInfo _objectDocumentInfo;
+        private readonly IDocumentInfo _listDocumentInfo;
+        private readonly Type _type = typeof(T);
 
-        public DocumentInfo(Type documentType)
+        public DocumentInfo()
         {
-            DocumentType = documentType ?? throw new ArgumentNullException(nameof(documentType));
+            if (_type.IsDictionaryType())
+            {
+                _objectDocumentInfo = new DictionaryDocumentInfo<T>();
+            }
+            else
+            {
+                _objectDocumentInfo = new ObjectDocumentInfo<T>();
+            }
 
-            DocumentFieldInfos = DocumentType.GetProperties(BindingFlags.Public | BindingFlags.Instance).Cast<MemberInfo>()
-                .Concat(DocumentType.GetFields(BindingFlags.Public | BindingFlags.Instance))
-                .Select(x => new DocumentFieldInfo(x))
-                .Where(x => !x.IsIgnored)
-                .ToDictionary(x => x.Name);
+            if (_type.IsListType())
+            {
+                _listDocumentInfo = new ListDocumentInfo<T>();
+            }
+        }
+
+        public object ConvertToFieldObject(object target)
+        {
+            return _objectDocumentInfo.ConvertToFieldObject(target);
+        }
+
+        public object ConvertToFieldValue(object target)
+        {
+            if (_listDocumentInfo != null)
+            {
+                return _listDocumentInfo.ConvertToFieldValue(target);
+            }
+            return _objectDocumentInfo.ConvertToFieldValue(target);
+        }
+
+        public object Create(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        {
+#if NETSTANDARD
+            throw new NotImplementedException();
+#else
+            return PlatformCreate(value, serverTimestampBehavior);
+#endif
+        }
+
+        public string GetMappingName(string name)
+        {
+            return _objectDocumentInfo.GetMappingName(name);
         }
     }
 }

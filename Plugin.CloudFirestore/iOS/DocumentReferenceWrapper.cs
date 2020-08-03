@@ -118,10 +118,24 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData)
         {
-            return SetAsync(documentData);
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
 
-        public Task SetAsync(object documentData)
+        public Task SetAsync<T>(T documentData)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -158,10 +172,24 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, params string[] mergeFields)
         {
-            return SetAsync(documentData, mergeFields);
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
 
-        public Task SetAsync(object documentData, params string[] mergeFields)
+        public Task SetAsync<T>(T documentData, params string[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -182,10 +210,24 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, params FieldPath[] mergeFields)
         {
-            return SetAsync(documentData, mergeFields);
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
 
-        public Task SetAsync(object documentData, params FieldPath[] mergeFields)
+        public Task SetAsync<T>(T documentData, params FieldPath[] mergeFields)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -214,10 +256,24 @@ namespace Plugin.CloudFirestore
 
         public Task SetDataAsync(object documentData, bool merge)
         {
-            return SetAsync(documentData, merge);
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
 
-        public Task SetAsync(object documentData, bool merge)
+        public Task SetAsync<T>(T documentData, bool merge)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -246,10 +302,24 @@ namespace Plugin.CloudFirestore
 
         public Task UpdateDataAsync(object fields)
         {
-            return UpdateAsync(fields);
+            var tcs = new TaskCompletionSource<bool>();
+
+            _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
 
-        public Task UpdateAsync(object fields)
+        public Task UpdateAsync<T>(T fields)
         {
             var tcs = new TaskCompletionSource<bool>();
 

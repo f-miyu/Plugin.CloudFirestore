@@ -14,10 +14,10 @@ namespace Plugin.CloudFirestore
         [Obsolete("Please use Document(string documentPath) method instead.")]
         IDocumentReference GetDocument(string documentPath);
         IDocumentReference Document(string documentPath);
-        [Obsolete("Please use AddAsync(object data) method instead.")]
+        [Obsolete("Please use AddAsync<T>(T data) method instead.")]
         void AddDocument(object data, CompletionHandler handler);
-        [Obsolete("Please use AddAsync(object data) method instead.")]
+        [Obsolete("Please use AddAsync<T>(T data) method instead.")]
         Task AddDocumentAsync(object data);
-        Task AddAsync(object data);
+        Task AddAsync<T>(T data);
     }
 }

@@ -38,6 +38,7 @@
     <ItemGroup>
         <Compile Include="Shared\**\*.cs" />
         <PackageReference Include="System.Reactive" Version="4.4.1" PrivateAssets="none" />
+        <PackageReference Include="Enums.NET" Version="3.0.3" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
     </ItemGroup>

@@ -2,7 +2,7 @@
 
 namespace Plugin.CloudFirestore
 {
-    public partial class FieldValue
+    public sealed partial class FieldValue
     {
         private enum FieldValueType
         {

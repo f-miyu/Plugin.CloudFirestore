@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+
 namespace Plugin.CloudFirestore
 {
-    public partial class FieldPath
+    public sealed partial class FieldPath
     {
         private string[] _fieldNames;
         private bool _isDocumentId;
@@ -19,6 +22,39 @@ namespace Plugin.CloudFirestore
         public FieldPath(params string[] fieldNames)
         {
             _fieldNames = fieldNames;
+        }
+
+        public static FieldPath CreateFrom<T, TMember>(Expression<Func<T, TMember>> expression)
+        {
+            var names = new List<string>();
+            AddNames(expression.Body, names);
+
+            return new FieldPath(names.ToArray());
+        }
+
+        private static void AddNames(Expression expression, List<string> names)
+        {
+            switch (expression)
+            {
+                case MemberExpression member:
+                    AddNames(member.Expression, names);
+                    names.Add(GetMappingName(member.Expression.Type, member.Member.Name));
+                    break;
+                case ParameterExpression _:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(expression));
+            }
+        }
+
+        public static string GetMappingName<T>(string name)
+        {
+            return ObjectProvider.GetDocumentInfo<T>().GetMappingName(name);
+        }
+
+        public static string GetMappingName(Type type, string name)
+        {
+            return ObjectProvider.GetDocumentInfo(type).GetMappingName(name);
         }
     }
 }

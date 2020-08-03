@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
 {
     internal static class FieldValueExtensions
     {
-        public static Java.Lang.Object ToNativeFieldValue(this object fieldValue)
+        public static Java.Lang.Object ToNativeFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
             if (fieldValue == null)
                 return null;
@@ -60,24 +60,6 @@ namespace Plugin.CloudFirestore
                         stream.CopyTo(ms);
                         return Firebase.Firestore.Blob.FromBytes(ms.ToArray());
                     }
-                case IList list:
-                    {
-                        var javaList = new JavaList();
-                        foreach (var val in list)
-                        {
-                            javaList.Add(val.ToNativeFieldValue());
-                        }
-                        return javaList;
-                    }
-                case IDictionary dictionary:
-                    {
-                        var javaDictionary = new JavaDictionary();
-                        foreach (var key in dictionary.Keys)
-                        {
-                            javaDictionary.Add(key.ToString(), dictionary[key].ToNativeFieldValue());
-                        }
-                        return javaDictionary;
-                    }
                 case FieldValue firestoreFieldValue:
                     return firestoreFieldValue.ToNative();
                 case FieldPath fieldPath:
@@ -89,20 +71,19 @@ namespace Plugin.CloudFirestore
                         if (type.IsPrimitive)
                             throw new NotSupportedException($"{type.FullName} is not supported");
 
-                        var javaDictionary = new JavaDictionary();
-                        var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos.Values;
-                        foreach (var fieldInfo in fieldInfos)
-                        {
-                            var (key, @object) = GetKeyAndObject(fieldValue, fieldInfo);
-                            if (key != null)
-                            {
-                                javaDictionary.Add(key, @object);
-                            }
-                        }
+                        fieldInfo ??= new DocumentFieldInfo(type);
 
-                        return javaDictionary;
+                        return (Java.Lang.Object)fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
                     }
             }
+        }
+
+        public static JavaDictionary<string, Java.Lang.Object> ToNativeFieldValues<T>(this T fieldValues)
+        {
+            if (fieldValues == null)
+                return null;
+
+            return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
         }
 
         public static JavaDictionary<string, Java.Lang.Object> ToNativeFieldValues(this object fieldValues)
@@ -110,55 +91,15 @@ namespace Plugin.CloudFirestore
             if (fieldValues == null)
                 return null;
 
-            if (fieldValues is IDictionary dictionary)
-            {
-                var resultDictionary = new JavaDictionary<string, Java.Lang.Object>();
-                foreach (var key in dictionary.Keys)
-                {
-                    resultDictionary.Add(key.ToString(), dictionary[key].ToNativeFieldValue());
-                }
-                return resultDictionary;
-            }
-
-            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(fieldValues.GetType()).DocumentFieldInfos.Values;
-            var values = new JavaDictionary<string, Java.Lang.Object>();
-
-            foreach (var fieldInfo in fieldInfos)
-            {
-                var (key, @object) = GetKeyAndObject(fieldValues, fieldInfo);
-                if (key != null)
-                {
-                    values.Add(key, @object);
-                }
-            }
-            return values;
+            return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
         }
 
-        private static (string Key, Java.Lang.Object) GetKeyAndObject(object fieldValue, DocumentFieldInfo fieldInfo)
-        {
-            if (!fieldInfo.IsId && !fieldInfo.IsIgnored)
-            {
-                var value = fieldInfo.GetValue(fieldValue);
-
-                if (fieldInfo.IsServerTimestamp &&
-                    (fieldInfo.CanReplaceServerTimestamp || value == null ||
-                    (value is DateTime dateTime && dateTime == default) ||
-                    (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default) ||
-                    (value is Timestamp timestamp && timestamp == default)))
-                {
-                    return (fieldInfo.Name, Firebase.Firestore.FieldValue.ServerTimestamp());
-                }
-
-                return (fieldInfo.Name, value.ToNativeFieldValue());
-            }
-
-            return (null, null);
-        }
-
-        public static object ToFieldValue(this Java.Lang.Object fieldValue, Type type)
+        public static object ToFieldValue(this Java.Lang.Object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
             if (fieldValue == null)
                 return null;
+
+            var type = fieldInfo?.FieldType ?? typeof(object);
 
             switch (fieldValue)
             {
@@ -210,228 +151,23 @@ namespace Plugin.CloudFirestore
                     }
                 case JavaList javaList:
                     {
-                        IList list;
-                        if (type.GetInterfaces().Contains(typeof(IList)))
-                        {
-                            list = (IList)CreatorProvider.GetCreator(type).Invoke();
-                        }
-                        else if (type.IsGenericType)
-                        {
-                            var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
-                            list = (IList)CreatorProvider.GetCreator(listType).Invoke();
-                        }
-                        else
-                        {
-                            list = new List<object>();
-                        }
-
-                        var genericType = typeof(object);
-                        if (type.IsGenericType)
-                        {
-                            genericType = type.GenericTypeArguments[0];
-                        }
-
-                        foreach (var data in javaList)
-                        {
-                            var value = data;
-                            if (value is Java.Lang.Object javaObject)
-                            {
-                                value = javaObject.ToFieldValue(genericType);
-                            }
-                            else if (value != null && genericType != typeof(object))
-                            {
-                                if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
-                                {
-                                    genericType = genericType.GenericTypeArguments[0];
-                                }
-                                value = Convert.ChangeType(value, genericType);
-                            }
-                            list.Add(value);
-                        }
-                        return list;
+                        fieldInfo ??= new DocumentFieldInfo<List<object>>();
+                        return fieldInfo.DocumentInfo.Create(javaList);
                     }
                 case Java.Util.AbstractList javaList:
                     {
-                        IList list;
-                        if (type.GetInterfaces().Contains(typeof(IList)))
-                        {
-                            list = (IList)CreatorProvider.GetCreator(type).Invoke();
-                        }
-                        else if (type.IsGenericType)
-                        {
-                            var listType = typeof(List<>).MakeGenericType(type.GenericTypeArguments[0]);
-                            list = (IList)CreatorProvider.GetCreator(listType).Invoke();
-                        }
-                        else
-                        {
-                            list = new List<object>();
-                        }
-
-                        var genericType = typeof(object);
-                        if (type.IsGenericType)
-                        {
-                            genericType = type.GenericTypeArguments[0];
-                        }
-
-                        var iterator = javaList.Iterator();
-                        while (iterator.HasNext)
-                        {
-                            object value = iterator.Next();
-                            if (value is Java.Lang.Object javaObject)
-                            {
-                                value = javaObject.ToFieldValue(genericType);
-                            }
-                            else if (value != null && genericType != typeof(object))
-                            {
-                                if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
-                                {
-                                    genericType = genericType.GenericTypeArguments[0];
-                                }
-                                value = Convert.ChangeType(value, genericType);
-                            }
-                            list.Add(value);
-                        }
-                        return list;
+                        fieldInfo ??= new DocumentFieldInfo<List<object>>();
+                        return fieldInfo.DocumentInfo.Create(javaList);
                     }
                 case JavaDictionary dictionary:
                     {
-                        object @object;
-                        if (type == typeof(object))
-                        {
-                            @object = new Dictionary<string, object>();
-                        }
-                        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
-                        {
-                            var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
-                            @object = CreatorProvider.GetCreator(dictionaryType).Invoke();
-                        }
-                        else
-                        {
-                            @object = CreatorProvider.GetCreator(type).Invoke();
-                        }
-
-                        if (@object is IDictionary dict)
-                        {
-                            var genericType = typeof(object);
-                            if (type.IsGenericType)
-                            {
-                                genericType = type.GenericTypeArguments[1];
-                            }
-
-                            foreach (var key in dictionary.Keys)
-                            {
-                                var value = dictionary[key];
-                                if (value is Java.Lang.Object javaObject)
-                                {
-                                    value = javaObject.ToFieldValue(genericType);
-                                }
-                                else if (value != null && genericType != typeof(object))
-                                {
-                                    if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
-                                    {
-                                        genericType = genericType.GenericTypeArguments[0];
-                                    }
-                                    value = Convert.ChangeType(value, genericType);
-                                }
-                                dict.Add(key.ToString(), value);
-                            }
-                        }
-                        else
-                        {
-                            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos;
-                            foreach (var key in dictionary.Keys)
-                            {
-                                if (fieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
-                                {
-                                    var value = dictionary[key];
-                                    if (value is Java.Lang.Object javaObject)
-                                    {
-                                        value = javaObject.ToFieldValue(fieldInfo.FieldType);
-                                    }
-                                    else if (value != null)
-                                    {
-                                        var fieldType = fieldInfo.FieldType;
-                                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(Nullable<>))
-                                        {
-                                            fieldType = fieldType.GenericTypeArguments[0];
-                                        }
-                                        value = Convert.ChangeType(value, fieldType);
-                                    }
-                                    fieldInfo.SetValue(@object, value);
-                                }
-                            }
-                        }
-                        return @object;
+                        fieldInfo ??= new DocumentFieldInfo<Dictionary<string, object>>();
+                        return fieldInfo.DocumentInfo.Create(dictionary);
                     }
                 case Java.Util.AbstractMap map:
                     {
-                        object @object;
-                        if (type == typeof(object))
-                        {
-                            @object = new Dictionary<string, object>();
-                        }
-                        else if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(IDictionary<,>))
-                        {
-                            var dictionaryType = typeof(Dictionary<,>).MakeGenericType(type.GenericTypeArguments[0], type.GenericTypeArguments[1]);
-                            @object = CreatorProvider.GetCreator(dictionaryType).Invoke();
-                        }
-                        else
-                        {
-                            @object = CreatorProvider.GetCreator(type).Invoke();
-                        }
-
-                        if (@object is IDictionary dict)
-                        {
-                            var genericType = typeof(object);
-                            if (type.IsGenericType)
-                            {
-                                genericType = type.GenericTypeArguments[1];
-                            }
-
-                            foreach (var key in map.KeySet())
-                            {
-                                object value = map.Get(key.ToString());
-                                if (value is Java.Lang.Object javaObject)
-                                {
-                                    value = javaObject.ToFieldValue(genericType);
-                                }
-                                else if (value != null && genericType != typeof(object))
-                                {
-                                    if (genericType.IsGenericType && genericType.GetGenericTypeDefinition() == typeof(Nullable<>))
-                                    {
-                                        genericType = genericType.GenericTypeArguments[0];
-                                    }
-                                    value = Convert.ChangeType(value, genericType);
-                                }
-                                dict.Add(key.ToString(), value);
-                            }
-                        }
-                        else
-                        {
-                            var fieldInfos = DocumentInfoProvider.GetDocumentInfo(type).DocumentFieldInfos;
-                            foreach (var key in map.KeySet())
-                            {
-                                if (fieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
-                                {
-                                    object value = map.Get(key.ToString());
-                                    if (value is Java.Lang.Object javaObject)
-                                    {
-                                        value = javaObject.ToFieldValue(fieldInfo.FieldType);
-                                    }
-                                    else if (value != null)
-                                    {
-                                        var fieldType = fieldInfo.FieldType;
-                                        if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(Nullable<>))
-                                        {
-                                            fieldType = fieldType.GenericTypeArguments[0];
-                                        }
-                                        value = Convert.ChangeType(value, fieldType);
-                                    }
-                                    fieldInfo.SetValue(@object, value);
-                                }
-                            }
-                        }
-                        return @object;
+                        fieldInfo ??= new DocumentFieldInfo<Dictionary<string, object>>();
+                        return fieldInfo.DocumentInfo.Create(map);
                     }
                 case Firebase.Firestore.Blob blob:
                     if (type == typeof(byte[]))

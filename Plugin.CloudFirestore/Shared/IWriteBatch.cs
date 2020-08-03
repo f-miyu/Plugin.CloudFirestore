@@ -9,21 +9,21 @@ namespace Plugin.CloudFirestore
         [Obsolete("Please use CommitAsync() method instead.")]
         void Commit(CompletionHandler handler);
         Task CommitAsync();
-        [Obsolete("Please use Set(IDocumentReference document, object documentData) method instead.")]
+        [Obsolete("Please use Set<T>(IDocumentReference document, T documentData) method instead.")]
         void SetData(IDocumentReference document, object documentData);
-        void Set(IDocumentReference document, object documentData);
-        [Obsolete("Please use Set(IDocumentReference document, object documentData, params string[] mergeFields) method instead.")]
+        void Set<T>(IDocumentReference document, T documentData);
+        [Obsolete("Please use Set<T>(IDocumentReference document, T documentData, params string[] mergeFields) method instead.")]
         void SetData(IDocumentReference document, object documentData, params string[] mergeFields);
-        void Set(IDocumentReference document, object documentData, params string[] mergeFields);
-        [Obsolete("Please use Set(IDocumentReference document, object documentData, params FieldPath[] mergeFields) method instead.")]
+        void Set<T>(IDocumentReference document, T documentData, params string[] mergeFields);
+        [Obsolete("Please use Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields) method instead.")]
         void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields);
-        void Set(IDocumentReference document, object documentData, params FieldPath[] mergeFields);
-        [Obsolete("Please use Set(IDocumentReference document, object documentData, bool merge) method instead.")]
+        void Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields);
+        [Obsolete("Please use Set<T>(IDocumentReference document, T documentData, bool merge) method instead.")]
         void SetData(IDocumentReference document, object documentData, bool merge);
-        void Set(IDocumentReference document, object documentData, bool merge);
-        [Obsolete("Please use Update(IDocumentReference document, object fields) method instead.")]
+        void Set<T>(IDocumentReference document, T documentData, bool merge);
+        [Obsolete("Please use Update<T>(IDocumentReference document, T fields) method instead.")]
         void UpdateData(IDocumentReference document, object fields);
-        void Update(IDocumentReference document, object fields);
+        void Update<T>(IDocumentReference document, T fields);
         [Obsolete("Please use Update(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues) method instead.")]
         void UpdateData(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues);
         void Update(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues);

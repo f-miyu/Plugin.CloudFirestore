@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reactive.Linq;
 
-namespace Plugin.CloudFirestore.Extensions
+namespace Plugin.CloudFirestore.Reactive
 {
     public static class QueryExtensions
     {

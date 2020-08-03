@@ -14,11 +14,21 @@ namespace Plugin.CloudFirestore
         {
             if (source != null && source.Exists)
             {
+                NSDictionary<NSString, NSObject> data;
+                if (serverTimestampBehavior == null)
+                {
+                    data = source.Data;
+                }
+                else
+                {
+                    data = source.GetData(serverTimestampBehavior.Value.ToNative());
+                }
+
                 var instance = new Dictionary<string, object>();
 
-                foreach (var (key, value) in source.Data)
+                foreach (var (key, value) in data)
                 {
-                    instance[key.ToString()] = value.ToFieldValue(typeof(object));
+                    instance[key.ToString()] = value.ToFieldValue();
                 }
 
                 return instance;
@@ -28,59 +38,7 @@ namespace Plugin.CloudFirestore
 
         public static T Map<T>(DocumentSnapshot source, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
-            if (source != null && source.Exists)
-            {
-                NSDictionary<NSString, NSObject> data;
-                if (source is QueryDocumentSnapshot queryDocumentSnapshot)
-                {
-                    if (serverTimestampBehavior == null)
-                    {
-                        data = queryDocumentSnapshot.Data;
-                    }
-                    else
-                    {
-                        data = queryDocumentSnapshot.GetData(serverTimestampBehavior.Value.ToNative());
-                    }
-                }
-                else
-                {
-                    if (serverTimestampBehavior == null)
-                    {
-                        data = source.Data;
-                    }
-                    else
-                    {
-                        data = source.GetData(serverTimestampBehavior.Value.ToNative());
-                    }
-                }
-
-                var instance = (T)CreatorProvider.GetCreator(typeof(T)).Invoke();
-
-                var fieldInfos = DocumentInfoProvider.GetDocumentInfo(typeof(T)).DocumentFieldInfos.Values;
-
-                foreach (var fieldInfo in fieldInfos)
-                {
-                    try
-                    {
-                        if (fieldInfo.IsId)
-                        {
-                            fieldInfo.SetValue(instance, source.Id);
-                        }
-                        else if (data.TryGetValue(new NSString(fieldInfo.Name), out var value))
-                        {
-                            fieldInfo.SetValue(instance, value.ToFieldValue(fieldInfo.FieldType));
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        System.Diagnostics.Debug.WriteLine($"{fieldInfo.Name} is invalid: {e.Message}");
-                        throw;
-                    }
-                }
-
-                return instance;
-            }
-            return default;
+            return (T)ObjectProvider.GetDocumentInfo<T>().Create(source, serverTimestampBehavior);
         }
     }
 }

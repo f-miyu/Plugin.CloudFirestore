@@ -23,31 +23,31 @@ namespace Plugin.CloudFirestore
         Task<IDocumentSnapshot> GetDocumentAsync(Source source);
         Task<IDocumentSnapshot> GetAsync();
         Task<IDocumentSnapshot> GetAsync(Source source);
-        [Obsolete("Please use SetAsync(object documentData) method instead.")]
+        [Obsolete("Please use SetAsync<T>(T documentData) method instead.")]
         void SetData(object documentData, CompletionHandler handler);
-        [Obsolete("Please use SetAsync(object documentData) method instead.")]
+        [Obsolete("Please use SetAsync<T>(T documentData) method instead.")]
         Task SetDataAsync(object documentData);
-        Task SetAsync(object documentData);
-        [Obsolete("Please use SetAsync(object documentData, params string[] mergeFields) method instead.")]
+        Task SetAsync<T>(T documentData);
+        [Obsolete("Please use SetAsync<T>(T documentData, params string[] mergeFields) method instead.")]
         void SetData(object documentData, CompletionHandler handler, params string[] mergeFields);
-        [Obsolete("Please use SetAsync(object documentData, params FieldPath[] mergeFields) method instead.")]
+        [Obsolete("Please use SetAsync<T>(T documentData, params FieldPath[] mergeFields) method instead.")]
         void SetData(object documentData, CompletionHandler handler, params FieldPath[] mergeFields);
-        [Obsolete("Please use SetAsync(object documentData, params string[] mergeFields) method instead.")]
+        [Obsolete("Please use SetAsync<T>(T documentData, params string[] mergeFields) method instead.")]
         Task SetDataAsync(object documentData, params string[] mergeFields);
-        [Obsolete("Please use SetAsync(object documentData, params FieldPath[] mergeFields) method instead.")]
+        [Obsolete("Please use SetAsync<T>(T documentData, params FieldPath[] mergeFields) method instead.")]
         Task SetDataAsync(object documentData, params FieldPath[] mergeFields);
-        Task SetAsync(object documentData, params string[] mergeFields);
-        Task SetAsync(object documentData, params FieldPath[] mergeFields);
-        [Obsolete("Please use SetAsync(object documentData, bool merge) method instead.")]
+        Task SetAsync<T>(T documentData, params string[] mergeFields);
+        Task SetAsync<T>(T documentData, params FieldPath[] mergeFields);
+        [Obsolete("Please use SetAsync<T>(T documentData, bool merge) method instead.")]
         void SetData(object documentData, bool merge, CompletionHandler handler);
-        [Obsolete("Please use SetAsync(object documentData, bool merge) method instead.")]
+        [Obsolete("Please use SetAsync<T>(T documentData, bool merge) method instead.")]
         Task SetDataAsync(object documentData, bool merge);
-        Task SetAsync(object documentData, bool merge);
-        [Obsolete("Please use UpdateAsync(object fields) method instead.")]
+        Task SetAsync<T>(T documentData, bool merge);
+        [Obsolete("Please use UpdateAsync<T>(T fields) method instead.")]
         void UpdateData(object fields, CompletionHandler handler);
-        [Obsolete("Please use UpdateAsync(object fields) method instead.")]
+        [Obsolete("Please use UpdateAsync<T>(T fields) method instead.")]
         Task UpdateDataAsync(object fields);
-        Task UpdateAsync(object fields);
+        Task UpdateAsync<T>(T fields);
         [Obsolete("Please use UpdateAsync(string field, object value, params object[] moreFieldsAndValues) method instead.")]
         void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues);
         [Obsolete("Please use UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues) method instead.")]

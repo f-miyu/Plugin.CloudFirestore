@@ -45,22 +45,22 @@ namespace Plugin.CloudFirestore
 
         public T Get<T>(string field)
         {
-            return (T)_documentSnapshot.Get(field).ToFieldValue(typeof(T));
+            return (T)_documentSnapshot.Get(field).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
         public T Get<T>(string field, ServerTimestampBehavior serverTimestampBehavior)
         {
-            return (T)_documentSnapshot.Get(field, serverTimestampBehavior.ToNative()).ToFieldValue(typeof(T));
+            return (T)_documentSnapshot.Get(field, serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
         public T Get<T>(FieldPath field)
         {
-            return (T)_documentSnapshot.Get(field?.ToNative()).ToFieldValue(typeof(T));
+            return (T)_documentSnapshot.Get(field?.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
         public T Get<T>(FieldPath field, ServerTimestampBehavior serverTimestampBehavior)
         {
-            return (T)_documentSnapshot.Get(field?.ToNative(), serverTimestampBehavior.ToNative()).ToFieldValue(typeof(T));
+            return (T)_documentSnapshot.Get(field?.ToNative(), serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
         public override bool Equals(object obj)

@@ -1,74 +1,32 @@
 ﻿using System;
 using System.Reflection;
-using Plugin.CloudFirestore.Attributes;
 
 namespace Plugin.CloudFirestore
 {
-    internal class DocumentFieldInfo
+    public class DocumentFieldInfo : IDocumentFieldInfo
     {
-        private readonly MemberInfo _memberInfo;
+        public Type FieldType { get; }
 
-        public bool IsId { get; private set; }
-        public bool IsIgnored { get; private set; }
-        public string Name { get; private set; }
-        public string OriginalName { get; private set; }
-        public bool IsServerTimestamp { get; private set; }
-        public bool CanReplaceServerTimestamp { get; private set; }
+        private IDocumentInfo _documentInfo;
+        public IDocumentInfo DocumentInfo => _documentInfo ??= ObjectProvider.GetDocumentInfo(FieldType);
 
-        public Type FieldType => _memberInfo switch
+        public DocumentFieldInfo(Type fieldType)
         {
-            PropertyInfo propertyInfo => propertyInfo.PropertyType,
-            FieldInfo fieldInfo => fieldInfo.FieldType,
-            _ => throw new InvalidOperationException("Can not get field type.")
-        };
-
-        public DocumentFieldInfo(MemberInfo memberInfo)
-        {
-            _memberInfo = memberInfo ?? throw new ArgumentNullException(nameof(memberInfo));
-
-            if (!(_memberInfo is PropertyInfo) && !(_memberInfo is FieldInfo))
-            {
-                throw new ArgumentException($"{nameof(memberInfo)} must be PropertyInfo or FieldInfo.", nameof(memberInfo));
-            }
-
-            var idAttribute = Attribute.GetCustomAttribute(_memberInfo, typeof(IdAttribute));
-            IsId = idAttribute != null;
-
-            var ignoredAttribute = Attribute.GetCustomAttribute(_memberInfo, typeof(IgnoredAttribute));
-            IsIgnored = ignoredAttribute != null;
-
-            var mapToAttribute = (MapToAttribute)Attribute.GetCustomAttribute(_memberInfo, typeof(MapToAttribute));
-            Name = mapToAttribute?.Mapping ?? _memberInfo.Name;
-            OriginalName = _memberInfo.Name;
-
-            var serverTimestampAttribute = (ServerTimestampAttribute)Attribute.GetCustomAttribute(_memberInfo, typeof(ServerTimestampAttribute));
-            IsServerTimestamp = serverTimestampAttribute != null;
-            CanReplaceServerTimestamp = serverTimestampAttribute?.CanReplace ?? false;
+            FieldType = Nullable.GetUnderlyingType(fieldType) ?? fieldType;
         }
+    }
 
-        public object GetValue(object target)
-        {
-            return _memberInfo switch
-            {
-                PropertyInfo propertyInfo => propertyInfo.GetValue(target),
-                FieldInfo fieldInfo => fieldInfo.GetValue(target),
-                _ => throw new InvalidOperationException("Can not get value.")
-            };
-        }
+    public class DocumentFieldInfo<T> : IDocumentFieldInfo
+    {
+        public Type FieldType { get; }
 
-        public void SetValue(object target, object value)
+        private IDocumentInfo _documentInfo;
+        public IDocumentInfo DocumentInfo => _documentInfo ??= ObjectProvider.GetDocumentInfo(FieldType);
+
+        public DocumentFieldInfo()
         {
-            switch (_memberInfo)
-            {
-                case PropertyInfo propertyInfo:
-                    propertyInfo.SetValue(target, value);
-                    break;
-                case FieldInfo fieldInfo:
-                    fieldInfo.SetValue(target, value);
-                    break;
-                default:
-                    throw new InvalidOperationException("Can not set value.");
-            }
+            var fieldType = typeof(T);
+            FieldType = Nullable.GetUnderlyingType(fieldType) ?? fieldType;
         }
     }
 }

@@ -308,10 +308,24 @@ namespace Plugin.CloudFirestore
 
         public Task AddDocumentAsync(object data)
         {
-            return AddAsync(data);
+            var tcs = new TaskCompletionSource<bool>();
+
+            _collectionReference.AddDocument(data.ToNativeFieldValues(), (error) =>
+            {
+                if (error != null)
+                {
+                    tcs.SetException(ExceptionMapper.Map(error));
+                }
+                else
+                {
+                    tcs.SetResult(true);
+                }
+            });
+
+            return tcs.Task;
         }
 
-        public Task AddAsync(object data)
+        public Task AddAsync<T>(T data)
         {
             var tcs = new TaskCompletionSource<bool>();
 
