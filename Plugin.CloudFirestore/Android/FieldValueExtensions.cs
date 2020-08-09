@@ -11,11 +11,16 @@ namespace Plugin.CloudFirestore
     {
         public static Java.Lang.Object ToNativeFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
-            if (fieldValue == null)
-                return null;
+            if (fieldInfo?.ConvertTo(fieldValue) is (true, var result))
+            {
+                fieldValue = result;
+                fieldInfo = result != null ? new DocumentFieldInfo(result.GetType()) : null;
+            }
 
             switch (fieldValue)
             {
+                case null:
+                    return null;
                 case bool @bool:
                     return new Java.Lang.Boolean(@bool);
                 case byte @byte:
@@ -35,11 +40,17 @@ namespace Plugin.CloudFirestore
                 case uint @uint:
                     return new Java.Lang.Long(@uint);
                 case ulong @ulong:
-                    return new Java.Lang.Double(@ulong);
+                    if (@ulong > long.MaxValue)
+                    {
+                        throw new OverflowException();
+                    }
+                    return new Java.Lang.Long((long)@ulong);
                 case ushort @ushort:
                     return new Java.Lang.Long(@ushort);
                 case decimal @decimal:
                     return new Java.Lang.Double((double)@decimal);
+                case char @char:
+                    return new Java.Lang.String(@char.ToString());
                 case string @string:
                     return new Java.Lang.String(@string);
                 case DateTime dateTime:
@@ -65,22 +76,14 @@ namespace Plugin.CloudFirestore
                 case FieldPath fieldPath:
                     return fieldPath.ToNative();
                 default:
-                    {
-                        var type = fieldValue.GetType();
-
-                        if (type.IsPrimitive)
-                            throw new NotSupportedException($"{type.FullName} is not supported");
-
-                        fieldInfo ??= new DocumentFieldInfo(type);
-
-                        return (Java.Lang.Object)fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
-                    }
+                    fieldInfo ??= new DocumentFieldInfo(fieldValue.GetType());
+                    return (Java.Lang.Object)fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
             }
         }
 
         public static JavaDictionary<string, Java.Lang.Object> ToNativeFieldValues<T>(this T fieldValues)
         {
-            if (fieldValues == null)
+            if (fieldValues is null)
                 return null;
 
             return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
@@ -88,100 +91,36 @@ namespace Plugin.CloudFirestore
 
         public static JavaDictionary<string, Java.Lang.Object> ToNativeFieldValues(this object fieldValues)
         {
-            if (fieldValues == null)
+            if (fieldValues is null)
                 return null;
 
             return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
         }
 
-        public static object ToFieldValue(this Java.Lang.Object fieldValue, IDocumentFieldInfo fieldInfo = null)
+        public static object ToFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
-            if (fieldValue == null)
-                return null;
-
-            var type = fieldInfo?.FieldType ?? typeof(object);
-
-            switch (fieldValue)
+            return (fieldValue switch
             {
-                case Java.Lang.Boolean @bool:
-                    if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
-                    {
-                        type = type.GenericTypeArguments[0];
-                    }
-                    return Convert.ChangeType((bool)@bool, type);
-                case Java.Lang.Long @long:
-                    if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
-                    {
-                        type = type.GenericTypeArguments[0];
-                    }
-                    return Convert.ChangeType((long)@long, type);
-                case Java.Lang.Double @double:
-                    if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
-                    {
-                        type = type.GenericTypeArguments[0];
-                    }
-                    return Convert.ChangeType((double)@double, type);
-                case Java.Lang.String @string:
-                    return fieldValue.ToString();
-                case Firebase.Timestamp timestamp:
-                    {
-                        var time = new Timestamp(timestamp);
-                        if (type == typeof(DateTime) || type == typeof(DateTime?))
-                        {
-                            return time.ToDateTime();
-                        }
-                        if (type == typeof(DateTimeOffset) || type == typeof(DateTimeOffset?))
-                        {
-                            return time.ToDateTimeOffset();
-                        }
-                        return time;
-                    }
-                case Java.Util.Date date:
-                    {
-                        var time = new Timestamp(date);
-                        if (type == typeof(DateTime) || type == typeof(DateTime?))
-                        {
-                            return time.ToDateTime();
-                        }
-                        if (type == typeof(DateTimeOffset) || type == typeof(DateTimeOffset?))
-                        {
-                            return time.ToDateTimeOffset();
-                        }
-                        return time;
-                    }
-                case JavaList javaList:
-                    {
-                        fieldInfo ??= new DocumentFieldInfo<List<object>>();
-                        return fieldInfo.DocumentInfo.Create(javaList);
-                    }
-                case Java.Util.AbstractList javaList:
-                    {
-                        fieldInfo ??= new DocumentFieldInfo<List<object>>();
-                        return fieldInfo.DocumentInfo.Create(javaList);
-                    }
-                case JavaDictionary dictionary:
-                    {
-                        fieldInfo ??= new DocumentFieldInfo<Dictionary<string, object>>();
-                        return fieldInfo.DocumentInfo.Create(dictionary);
-                    }
-                case Java.Util.AbstractMap map:
-                    {
-                        fieldInfo ??= new DocumentFieldInfo<Dictionary<string, object>>();
-                        return fieldInfo.DocumentInfo.Create(map);
-                    }
-                case Firebase.Firestore.Blob blob:
-                    if (type == typeof(byte[]))
-                    {
-                        return blob.ToBytes();
-                    }
-                    return new MemoryStream(blob.ToBytes());
-                case Firebase.Firestore.GeoPoint geoPoint:
-                    return new GeoPoint(geoPoint);
-                case Firebase.Firestore.DocumentReference documentReference:
-                    return new DocumentReferenceWrapper(documentReference);
-                default:
-                    throw new ArgumentOutOfRangeException($"{fieldValue.GetType().FullName} is not supported");
-            }
+                null => new DocumentObject(),
+                Java.Lang.Boolean @bool => new DocumentObject((bool)@bool),
+                bool @bool => new DocumentObject(@bool),
+                Java.Lang.Long @long => new DocumentObject((long)@long),
+                long @long => new DocumentObject(@long),
+                Java.Lang.Double @double => new DocumentObject((double)@double),
+                double @double => new DocumentObject(@double),
+                Java.Lang.String @string => new DocumentObject(@string.ToString()),
+                string @string => new DocumentObject(@string),
+                Firebase.Timestamp timestamp => new DocumentObject(new Timestamp(timestamp)),
+                Java.Util.Date date => new DocumentObject(new Timestamp(date)),
+                JavaList javaList => DocumentObject.CreateAsList(javaList),
+                Java.Util.AbstractList javaList => DocumentObject.CreateAsList(javaList),
+                JavaDictionary dictionary => DocumentObject.CreateAsDictionary(dictionary),
+                Java.Util.AbstractMap map => DocumentObject.CreateAsDictionary(map),
+                Firebase.Firestore.Blob blob => new DocumentObject(blob.ToBytes()),
+                Firebase.Firestore.GeoPoint geoPoint => new DocumentObject(new GeoPoint(geoPoint)),
+                Firebase.Firestore.DocumentReference documentReference => new DocumentObject(new DocumentReferenceWrapper(documentReference)),
+                _ => throw new ArgumentOutOfRangeException($"{fieldValue.GetType().FullName} is not supported")
+            }).GetFieldValue(fieldInfo);
         }
     }
 }

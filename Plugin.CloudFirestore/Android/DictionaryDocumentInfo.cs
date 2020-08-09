@@ -75,8 +75,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
-                    throw;
+                    throw new InvalidOperationException($"'{key}' value cannot be converted.", e);
                 }
             }
 
@@ -93,14 +92,6 @@ namespace Plugin.CloudFirestore
             {
                 var entry = enumerator.Entry;
                 object value = entry.Value;
-                if (value is Java.Lang.Object javaObject)
-                {
-                    value = javaObject.ToFieldValue(_documentFieldInfo);
-                }
-                else if (value != null && _dictionaryValueType != typeof(object))
-                {
-                    value = Convert.ChangeType(value, _dictionaryValueType);
-                }
 
                 object key = entry.Key.ToString();
                 if (_dictionaryKeyType != typeof(string) && _dictionaryKeyType != typeof(object))
@@ -108,7 +99,7 @@ namespace Plugin.CloudFirestore
                     key = Convert.ChangeType(key, _dictionaryKeyType);
                 }
 
-                adapter[key] = value;
+                adapter[key] = value.ToFieldValue(_documentFieldInfo);
             }
 
             return ret;
@@ -123,14 +114,6 @@ namespace Plugin.CloudFirestore
             {
                 var keyStr = key.ToString();
                 object value = map.Get(keyStr);
-                if (value is Java.Lang.Object javaObject)
-                {
-                    value = javaObject.ToFieldValue(_documentFieldInfo);
-                }
-                else if (value != null && _dictionaryValueType != typeof(object))
-                {
-                    value = Convert.ChangeType(value, _dictionaryValueType);
-                }
 
                 object convertedKey = keyStr;
                 if (_dictionaryKeyType != typeof(string) && _dictionaryKeyType != typeof(object))
@@ -138,7 +121,7 @@ namespace Plugin.CloudFirestore
                     convertedKey = Convert.ChangeType(key, _dictionaryKeyType);
                 }
 
-                adapter[convertedKey] = value;
+                adapter[convertedKey] = value.ToFieldValue(_documentFieldInfo);
             }
 
             return ret;

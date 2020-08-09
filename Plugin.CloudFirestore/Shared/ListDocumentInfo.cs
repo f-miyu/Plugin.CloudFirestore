@@ -19,6 +19,7 @@ namespace Plugin.CloudFirestore
             NonGeneric
         };
 
+        private readonly Type _type = typeof(T);
         private readonly Type _listValueType;
         private readonly CreatorType _creatorType;
         private readonly ListAdapterFactoryType _listAdapterFactoryType;
@@ -29,18 +30,21 @@ namespace Plugin.CloudFirestore
 
         public ListDocumentInfo()
         {
-            var type = typeof(T);
-
-            if (type.TryGetImplementingGenericType(out var listType, typeof(IList<>)) ||
-                type.TryGetImplementingGenericType(out listType, typeof(IReadOnlyList<>)))
+            if (_type.TryGetImplementingGenericType(out var listType, typeof(IList<>)) ||
+                _type.TryGetImplementingGenericType(out listType, typeof(IReadOnlyList<>)))
             {
                 _listValueType = listType.GetGenericArguments()[0];
                 _documentFieldInfo = new DocumentFieldInfo(_listValueType);
 
-                if (type == listType)
+                if (_type == listType)
                 {
                     _creatorType = CreatorType.SpecifiedTypeList;
                     _listAdapterFactoryType = ListAdapterFactoryType.NonGeneric;
+                }
+                else if (_type.IsArray)
+                {
+                    _creatorType = CreatorType.SpecifiedTypeList;
+                    _listAdapterFactoryType = ListAdapterFactoryType.Generic;
                 }
                 else
                 {
@@ -48,12 +52,12 @@ namespace Plugin.CloudFirestore
                     _listAdapterFactoryType = ListAdapterFactoryType.Generic;
                 }
             }
-            else if (typeof(IList).IsAssignableFrom(type))
+            else if (typeof(IList).IsAssignableFrom(_type))
             {
                 _listValueType = typeof(object);
                 _documentFieldInfo = new DocumentFieldInfo(_listValueType);
 
-                if (type == typeof(IList))
+                if (_type == typeof(IList) || _type.IsArray)
                 {
                     _creatorType = CreatorType.ObjectList;
                 }

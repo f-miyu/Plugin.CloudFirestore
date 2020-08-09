@@ -2,7 +2,7 @@
 namespace Plugin.CloudFirestore.Attributes
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
-    public class IdAttribute : Attribute
+    public sealed class IdAttribute : Attribute
     {
     }
 }

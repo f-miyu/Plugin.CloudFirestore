@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Plugin.CloudFirestore
 {
-    public sealed partial class FieldPath
+    public partial class FieldPath
     {
         private string[] _fieldNames;
         private bool _isDocumentId;

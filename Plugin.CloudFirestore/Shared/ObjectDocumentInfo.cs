@@ -40,8 +40,8 @@ namespace Plugin.CloudFirestore
 #if NETSTANDARD
             throw new NotImplementedException();
 #else
-            var targetType = target.GetType();
-            if (_type != targetType)
+            var targetType = target?.GetType();
+            if (targetType != null && _type != targetType)
             {
                 return ObjectProvider.GetDocumentInfo(targetType).ConvertToFieldObject(target);
             }
@@ -54,8 +54,8 @@ namespace Plugin.CloudFirestore
 #if NETSTANDARD
             throw new NotImplementedException();
 #else
-            var targetType = target.GetType();
-            if (_type != targetType)
+            var targetType = target?.GetType();
+            if (targetType != null && _type != targetType)
             {
                 return ObjectProvider.GetDocumentInfo(targetType).ConvertToFieldValue(target);
             }

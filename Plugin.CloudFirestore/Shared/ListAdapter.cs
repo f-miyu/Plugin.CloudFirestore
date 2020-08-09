@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Plugin.CloudFirestore
 {
     internal interface IListAdapter : IEnumerable
     {
         void Add(object item);
+        Array ToArray();
     }
 
     internal class ListAdapter<T> : IListAdapter
@@ -41,6 +43,11 @@ namespace Plugin.CloudFirestore
             }
             return _list.GetEnumerator();
         }
+
+        public Array ToArray()
+        {
+            return _list.ToArray();
+        }
     }
 
     internal class ListAdapter : IListAdapter
@@ -60,6 +67,13 @@ namespace Plugin.CloudFirestore
         public IEnumerator GetEnumerator()
         {
             return _list.GetEnumerator();
+        }
+
+        public Array ToArray()
+        {
+            var array = new object[_list.Count];
+            _list.CopyTo(array, 0);
+            return array;
         }
     }
 }

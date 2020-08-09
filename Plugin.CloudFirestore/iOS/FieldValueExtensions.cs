@@ -11,11 +11,16 @@ namespace Plugin.CloudFirestore
     {
         public static object ToNativeFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
-            if (fieldValue == null)
-                return new NSNull();
+            if (fieldInfo?.ConvertTo(fieldValue) is (true, var result))
+            {
+                fieldValue = result;
+                fieldInfo = result != null ? new DocumentFieldInfo(result.GetType()) : null;
+            }
 
             switch (fieldValue)
             {
+                case null:
+                    return new NSNull();
                 case bool @bool:
                     return new NSNumber(@bool);
                 case byte @byte:
@@ -35,11 +40,17 @@ namespace Plugin.CloudFirestore
                 case uint @uint:
                     return new NSNumber(@uint);
                 case ulong @ulong:
+                    if (@ulong > long.MaxValue)
+                    {
+                        throw new OverflowException();
+                    }
                     return new NSNumber(@ulong);
                 case ushort @ushort:
                     return new NSNumber(@ushort);
                 case decimal @decimal:
-                    return new NSNumber((double)@decimal);
+                    return new NSNumber(decimal.ToDouble(@decimal));
+                case char @char:
+                    return new NSString(@char.ToString());
                 case string @string:
                     return new NSString(@string);
                 case DateTime dateTime:
@@ -65,22 +76,14 @@ namespace Plugin.CloudFirestore
                 case FieldPath fieldPath:
                     return fieldPath.ToNative();
                 default:
-                    {
-                        var type = fieldValue.GetType();
-
-                        if (type.IsPrimitive)
-                            throw new NotSupportedException($"{type.FullName} is not supported");
-
-                        fieldInfo ??= new DocumentFieldInfo(type);
-
-                        return fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
-                    }
+                    fieldInfo ??= new DocumentFieldInfo(fieldValue.GetType());
+                    return fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
             }
         }
 
         public static Dictionary<object, object> ToNativeFieldValues<T>(this T fieldValues)
         {
-            if (fieldValues == null)
+            if (fieldValues is null)
                 return null;
 
             return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
@@ -88,126 +91,32 @@ namespace Plugin.CloudFirestore
 
         public static Dictionary<object, object> ToNativeFieldValues(this object fieldValues)
         {
-            if (fieldValues == null)
+            if (fieldValues is null)
                 return null;
 
             return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
         }
 
-        public static object ToFieldValue(this NSObject fieldValue, IDocumentFieldInfo fieldInfo = null)
+        public static object ToFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
         {
-            if (fieldValue == null)
-                return null;
-
-            var type = fieldInfo?.FieldType ?? typeof(object);
-
-            switch (fieldValue)
+            return (fieldValue switch
             {
-                case NSNumber number:
-                    if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
-                    {
-                        type = type.GenericTypeArguments[0];
-                    }
-
-                    if (type == typeof(bool))
-                    {
-                        return number.BoolValue;
-                    }
-                    if (type == typeof(byte))
-                    {
-                        return number.ByteValue;
-                    }
-                    if (type == typeof(double))
-                    {
-                        return number.DoubleValue;
-                    }
-                    if (type == typeof(float))
-                    {
-                        return number.FloatValue;
-                    }
-                    if (type == typeof(int))
-                    {
-                        return number.Int32Value;
-                    }
-                    if (type == typeof(long))
-                    {
-                        return number.Int64Value;
-                    }
-                    if (type == typeof(sbyte))
-                    {
-                        return number.SByteValue;
-                    }
-                    if (type == typeof(short))
-                    {
-                        return number.Int16Value;
-                    }
-                    if (type == typeof(uint))
-                    {
-                        return number.UInt32Value;
-                    }
-                    if (type == typeof(ulong))
-                    {
-                        return number.UInt64Value;
-                    }
-                    if (type == typeof(ushort))
-                    {
-                        return number.UInt16Value;
-                    }
-                    return Convert.ChangeType(number.DoubleValue, type);
-                case NSString @string:
-                    return @string.ToString();
-                case Firebase.CloudFirestore.Timestamp timestamp:
-                    {
-                        var time = new Timestamp(timestamp);
-                        if (type == typeof(DateTime) || type == typeof(DateTime?))
-                        {
-                            return time.ToDateTime();
-                        }
-                        if (type == typeof(DateTimeOffset) || type == typeof(DateTimeOffset?))
-                        {
-                            return time.ToDateTimeOffset();
-                        }
-                        return time;
-                    }
-                case NSDate date:
-                    {
-                        var time = new Timestamp(date);
-                        if (type == typeof(DateTime) || type == typeof(DateTime?))
-                        {
-                            return time.ToDateTime();
-                        }
-                        if (type == typeof(DateTimeOffset) || type == typeof(DateTimeOffset?))
-                        {
-                            return time.ToDateTimeOffset();
-                        }
-                        return time;
-                    }
-                case NSArray array:
-                    {
-                        fieldInfo ??= new DocumentFieldInfo<List<object>>();
-                        return fieldInfo.DocumentInfo.Create(array);
-                    }
-                case NSDictionary dictionary:
-                    {
-                        fieldInfo ??= new DocumentFieldInfo<Dictionary<string, object>>();
-                        return fieldInfo.DocumentInfo.Create(dictionary);
-                    }
-                case NSData data:
-                    if (type == typeof(byte[]))
-                    {
-                        return data.ToArray();
-                    }
-                    return new MemoryStream(data.ToArray());
-                case Firebase.CloudFirestore.GeoPoint geoPoint:
-                    return new GeoPoint(geoPoint);
-                case Firebase.CloudFirestore.DocumentReference documentReference:
-                    return new DocumentReferenceWrapper(documentReference);
-                case NSNull @null:
-                    return null;
-                default:
-                    throw new ArgumentOutOfRangeException($"{fieldValue.GetType().FullName} is not supported");
-            }
+                null => new DocumentObject(),
+                NSNull _ => new DocumentObject(),
+                NSNumber number when number.IsBoolean() => new DocumentObject(number.BoolValue),
+                NSNumber number when number.IsInteger() => new DocumentObject(number.LongValue),
+                NSNumber number => new DocumentObject(number.DoubleValue),
+                NSString @string => new DocumentObject(@string.ToString()),
+                string @string => new DocumentObject(@string),
+                Firebase.CloudFirestore.Timestamp timestamp => new DocumentObject(new Timestamp(timestamp)),
+                NSDate date => new DocumentObject(new Timestamp(date)),
+                NSArray array => DocumentObject.CreateAsList(array),
+                NSDictionary dictionary => DocumentObject.CreateAsDictionary(dictionary),
+                NSData data => new DocumentObject(data.ToArray()),
+                Firebase.CloudFirestore.GeoPoint geoPoint => new DocumentObject(new GeoPoint(geoPoint)),
+                Firebase.CloudFirestore.DocumentReference documentReference => new DocumentObject(new DocumentReferenceWrapper(documentReference)),
+                _ => throw new ArgumentOutOfRangeException($"{fieldValue.GetType().FullName} is not supported")
+            }).GetFieldValue(fieldInfo);
         }
-
     }
 }

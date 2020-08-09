@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Plugin.CloudFirestore
 {
-    public partial struct GeoPoint : IEquatable<GeoPoint>, IComparable<GeoPoint>
+    public readonly partial struct GeoPoint : IEquatable<GeoPoint>, IComparable<GeoPoint>
     {
         public double Latitude { get; }
         public double Longitude { get; }

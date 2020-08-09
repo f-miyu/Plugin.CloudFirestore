@@ -37,20 +37,10 @@ namespace Plugin.CloudFirestore
 
             foreach (var val in list)
             {
-                object value = val;
-                if (value is Java.Lang.Object javaObject)
-                {
-                    value = javaObject.ToFieldValue(_documentFieldInfo);
-                }
-                else if (value != null && _listValueType != typeof(object))
-                {
-                    value = Convert.ChangeType(value, _listValueType);
-                }
-
-                adapter.Add(value);
+                adapter.Add(val.ToFieldValue(_documentFieldInfo));
             }
 
-            return ret;
+            return _type.IsArray ? adapter.ToArray() : ret;
         }
 
         private object PlatformCreate(AbstractList list)
@@ -62,19 +52,10 @@ namespace Plugin.CloudFirestore
             while (iterator.HasNext)
             {
                 object value = iterator.Next();
-                if (value is Java.Lang.Object javaObject)
-                {
-                    value = javaObject.ToFieldValue(_documentFieldInfo);
-                }
-                else if (value != null && _listValueType != typeof(object))
-                {
-                    value = Convert.ChangeType(value, _listValueType);
-                }
-
-                adapter.Add(value);
+                adapter.Add(value.ToFieldValue(_documentFieldInfo));
             }
 
-            return ret;
+            return _type.IsArray ? adapter.ToArray() : ret;
         }
     }
 }

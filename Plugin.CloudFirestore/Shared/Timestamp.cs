@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Plugin.CloudFirestore
 {
-    public partial struct Timestamp : IEquatable<Timestamp>, IComparable<Timestamp>
+    public readonly partial struct Timestamp : IEquatable<Timestamp>, IComparable<Timestamp>
     {
         public long Seconds { get; }
         public int Nanoseconds { get; }

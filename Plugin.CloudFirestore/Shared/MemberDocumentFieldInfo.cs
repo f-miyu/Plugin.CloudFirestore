@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Reflection;
 using Plugin.CloudFirestore.Attributes;
+using Plugin.CloudFirestore.Converters;
 
 namespace Plugin.CloudFirestore
 {
-    internal class MemberDocumentFieldInfo : IDocumentFieldInfo
+    internal class MemberDocumentFieldInfo : DocumentFieldInfo
     {
         private readonly MemberInfo _memberInfo;
+        private readonly DocumentConverterAttribute _documentConverterAttribute;
 
         public bool IsId { get; }
         public bool IsIgnored { get; }
@@ -14,28 +16,38 @@ namespace Plugin.CloudFirestore
         public string OriginalName { get; }
         public bool IsServerTimestamp { get; }
         public bool CanReplaceServerTimestamp { get; }
-        public Type FieldType { get; }
 
-        private IDocumentInfo _documentInfo;
-        public IDocumentInfo DocumentInfo => _documentInfo ??= ObjectProvider.GetDocumentInfo(FieldType);
-
-        public MemberDocumentFieldInfo(MemberInfo memberInfo)
+        private DocumentConverter _documentConverter;
+        public DocumentConverter DocumentConverter
         {
-            _memberInfo = memberInfo ?? throw new ArgumentNullException(nameof(memberInfo));
-
-            if (!(_memberInfo is PropertyInfo) && !(_memberInfo is FieldInfo))
+            get
             {
-                throw new ArgumentException($"{nameof(memberInfo)} must be PropertyInfo or FieldInfo.", nameof(memberInfo));
+                if (_documentConverterAttribute != null && _documentConverter == null)
+                {
+                    try
+                    {
+                        _documentConverter = DocumentConverterCreatorProvider
+                            .GetCreator(_documentConverterAttribute.ConverterType)
+                            .Invoke(Type, _documentConverterAttribute.ConverterParameters);
+                    }
+                    catch (Exception e)
+                    {
+                        throw new InvalidOperationException($"Error creating '{_documentConverterAttribute.ConverterType.FullName}'", e);
+                    }
+                }
+                return _documentConverter;
             }
+        }
 
-            var type = _memberInfo switch
-            {
-                PropertyInfo propertyInfo => propertyInfo.PropertyType,
-                FieldInfo fieldInfo => fieldInfo.FieldType,
-                _ => throw new InvalidOperationException()
-            };
-
-            FieldType = Nullable.GetUnderlyingType(type) ?? type;
+        public MemberDocumentFieldInfo(MemberInfo memberInfo) : base(memberInfo switch
+        {
+            PropertyInfo propertyInfo => propertyInfo.PropertyType,
+            FieldInfo fieldInfo => fieldInfo.FieldType,
+            null => throw new ArgumentNullException(nameof(memberInfo)),
+            _ => throw new ArgumentException($"{nameof(memberInfo)} must be PropertyInfo or FieldInfo.", nameof(memberInfo))
+        })
+        {
+            _memberInfo = memberInfo;
 
             var idAttribute = _memberInfo.GetCustomAttribute<IdAttribute>();
             IsId = idAttribute != null;
@@ -50,16 +62,19 @@ namespace Plugin.CloudFirestore
             var serverTimestampAttribute = _memberInfo.GetCustomAttribute<ServerTimestampAttribute>();
             IsServerTimestamp = serverTimestampAttribute != null;
             CanReplaceServerTimestamp = serverTimestampAttribute?.CanReplace ?? false;
+
+            _documentConverterAttribute = _memberInfo.GetCustomAttribute<DocumentConverterAttribute>();
         }
 
         public object GetValue(object target)
         {
-            return _memberInfo switch
+            var value = _memberInfo switch
             {
                 PropertyInfo propertyInfo => propertyInfo.GetValue(target),
                 FieldInfo fieldInfo => fieldInfo.GetValue(target),
                 _ => throw new InvalidOperationException()
             };
+            return value;
         }
 
         public void SetValue(object target, object value)
@@ -84,6 +99,24 @@ namespace Plugin.CloudFirestore
                 (value is DateTime dateTime && dateTime == default) ||
                 (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default) ||
                 (value is Timestamp timestamp && timestamp == default));
+        }
+
+        public override (bool IsConverted, object Result) ConvertTo(object value)
+        {
+            if (DocumentConverter?.ConvertTo(value) is (true, var result))
+            {
+                return (true, result);
+            }
+            return base.ConvertTo(value);
+        }
+
+        public override (bool IsConverted, object Result) ConvertFrom(DocumentObject value)
+        {
+            if (DocumentConverter?.ConvertFrom(value) is (true, var result))
+            {
+                return (true, result);
+            }
+            return base.ConvertFrom(value);
         }
     }
 }

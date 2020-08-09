@@ -75,7 +75,7 @@ namespace Plugin.CloudFirestore
                 {
                     if (fieldInfo.IsId)
                     {
-                        fieldInfo.SetValue(ret, snapshot.Id);
+                        fieldInfo.SetValue(ret, snapshot.Id.ToFieldValue(fieldInfo));
                     }
                     else if (data.TryGetValue(fieldInfo.Name, out var value))
                     {
@@ -84,8 +84,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Debug.WriteLine($"{fieldInfo.Name} is invalid: {e.Message}");
-                    throw;
+                    throw new InvalidOperationException($"'{fieldInfo.Name}' value cannot be converted.", e);
                 }
             }
 
@@ -103,15 +102,7 @@ namespace Plugin.CloudFirestore
                 if (DocumentFieldInfos.TryGetValue(entry.Key.ToString(), out var fieldInfo))
                 {
                     object value = entry.Value;
-                    if (value is Java.Lang.Object javaObject)
-                    {
-                        value = javaObject.ToFieldValue(fieldInfo);
-                    }
-                    else if (value != null)
-                    {
-                        value = Convert.ChangeType(value, fieldInfo.FieldType);
-                    }
-                    fieldInfo.SetValue(ret, value);
+                    fieldInfo.SetValue(ret, value.ToFieldValue(fieldInfo));
                 }
             }
 
@@ -127,15 +118,7 @@ namespace Plugin.CloudFirestore
                 if (DocumentFieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
                 {
                     object value = map.Get(key.ToString());
-                    if (value is Java.Lang.Object javaObject)
-                    {
-                        value = javaObject.ToFieldValue(fieldInfo);
-                    }
-                    else if (value != null)
-                    {
-                        value = Convert.ChangeType(value, fieldInfo.FieldType);
-                    }
-                    fieldInfo.SetValue(ret, value);
+                    fieldInfo.SetValue(ret, value.ToFieldValue(fieldInfo));
                 }
             }
             return ret;

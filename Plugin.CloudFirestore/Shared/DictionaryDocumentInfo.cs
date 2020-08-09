@@ -19,6 +19,7 @@ namespace Plugin.CloudFirestore
             NonGeneric
         };
 
+        private readonly Type _type = typeof(T);
         private readonly Type _dictionaryKeyType;
         private readonly Type _dictionaryValueType;
         private readonly CreatorType _creatorType;
@@ -30,17 +31,15 @@ namespace Plugin.CloudFirestore
 
         public DictionaryDocumentInfo()
         {
-            var type = typeof(T);
-
-            if (type.TryGetImplementingGenericType(out var dictionaryType, typeof(IDictionary<,>)) ||
-                type.TryGetImplementingGenericType(out dictionaryType, typeof(IReadOnlyDictionary<,>)))
+            if (_type.TryGetImplementingGenericType(out var dictionaryType, typeof(IDictionary<,>)) ||
+                _type.TryGetImplementingGenericType(out dictionaryType, typeof(IReadOnlyDictionary<,>)))
             {
                 var arguments = dictionaryType.GetGenericArguments();
                 _dictionaryKeyType = arguments[0];
                 _dictionaryValueType = arguments[1];
                 _documentFieldInfo = new DocumentFieldInfo(_dictionaryValueType);
 
-                if (type == dictionaryType)
+                if (_type == dictionaryType)
                 {
                     _creatorType = CreatorType.SpecifiedTypeDictionary;
                     _dictionaryAdapterFactoryType = DictionaryAdapterFactoryType.NonGeneric;
@@ -51,13 +50,13 @@ namespace Plugin.CloudFirestore
                     _dictionaryAdapterFactoryType = DictionaryAdapterFactoryType.Generic;
                 }
             }
-            else if (typeof(IDictionary).IsAssignableFrom(type))
+            else if (typeof(IDictionary).IsAssignableFrom(_type))
             {
                 _dictionaryKeyType = typeof(string);
                 _dictionaryValueType = typeof(object);
                 _documentFieldInfo = new DocumentFieldInfo(_dictionaryValueType);
 
-                if (type == typeof(IDictionary))
+                if (_type == typeof(IDictionary))
                 {
                     _creatorType = CreatorType.ObjectDictionary;
                 }

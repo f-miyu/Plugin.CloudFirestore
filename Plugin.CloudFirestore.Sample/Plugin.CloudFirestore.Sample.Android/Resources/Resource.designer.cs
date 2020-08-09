@@ -3606,6 +3606,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.String.fab_transformation_sheet_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.hide_bottom_view_on_scroll_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.Forms.Platform.Android.Resource.String.mtrl_chip_close_icon_content_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.overflow_tab_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.overflow_tab_title;
 			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.password_toggle_content_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye;
 			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -6284,6 +6285,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Resource.String.fab_transformation_sheet_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.fab_transformation_sheet_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.hide_bottom_view_on_scroll_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
 			global::Xamarin.Forms.Platform.Resource.String.mtrl_chip_close_icon_content_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.Platform.Resource.String.overflow_tab_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.overflow_tab_title;
 			global::Xamarin.Forms.Platform.Resource.String.password_toggle_content_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.password_toggle_content_description;
 			global::Xamarin.Forms.Platform.Resource.String.path_password_eye = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye;
 			global::Xamarin.Forms.Platform.Resource.String.path_password_eye_mask_strike_through = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye_mask_strike_through;
@@ -12157,28 +12159,31 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int mtrl_chip_close_icon_content_description = 2131558459;
 			
 			// aapt resource value: 0x7F0D003C
-			public const int password_toggle_content_description = 2131558460;
+			public const int overflow_tab_title = 2131558460;
 			
 			// aapt resource value: 0x7F0D003D
-			public const int path_password_eye = 2131558461;
+			public const int password_toggle_content_description = 2131558461;
 			
 			// aapt resource value: 0x7F0D003E
-			public const int path_password_eye_mask_strike_through = 2131558462;
+			public const int path_password_eye = 2131558462;
 			
 			// aapt resource value: 0x7F0D003F
-			public const int path_password_eye_mask_visible = 2131558463;
+			public const int path_password_eye_mask_strike_through = 2131558463;
 			
 			// aapt resource value: 0x7F0D0040
-			public const int path_password_strike_through = 2131558464;
+			public const int path_password_eye_mask_visible = 2131558464;
 			
 			// aapt resource value: 0x7F0D0041
-			public const int project_id = 2131558465;
+			public const int path_password_strike_through = 2131558465;
 			
 			// aapt resource value: 0x7F0D0042
-			public const int search_menu_title = 2131558466;
+			public const int project_id = 2131558466;
 			
 			// aapt resource value: 0x7F0D0043
-			public const int status_bar_notification_info_overflow = 2131558467;
+			public const int search_menu_title = 2131558467;
+			
+			// aapt resource value: 0x7F0D0044
+			public const int status_bar_notification_info_overflow = 2131558468;
 			
 			static String()
 			{

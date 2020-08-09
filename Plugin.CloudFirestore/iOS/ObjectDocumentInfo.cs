@@ -92,7 +92,7 @@ namespace Plugin.CloudFirestore
                 {
                     if (fieldInfo.IsId)
                     {
-                        fieldInfo.SetValue(ret, snapshot.Id);
+                        fieldInfo.SetValue(ret, snapshot.Id.ToFieldValue(fieldInfo));
                     }
                     else if (data.TryGetValue(new NSString(fieldInfo.Name), out var value))
                     {
@@ -101,8 +101,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Debug.WriteLine($"{fieldInfo.Name} is invalid: {e.Message}");
-                    throw;
+                    throw new InvalidOperationException($"'{fieldInfo.Name}' value cannot be converted.", e);
                 }
             }
 

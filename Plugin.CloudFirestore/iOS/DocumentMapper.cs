@@ -25,10 +25,11 @@ namespace Plugin.CloudFirestore
                 }
 
                 var instance = new Dictionary<string, object>();
+                var fieldInfo = new DocumentFieldInfo<object>();
 
                 foreach (var (key, value) in data)
                 {
-                    instance[key.ToString()] = value.ToFieldValue();
+                    instance[key.ToString()] = value.ToFieldValue(fieldInfo);
                 }
 
                 return instance;

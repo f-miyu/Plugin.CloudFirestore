@@ -38,7 +38,7 @@ namespace Plugin.CloudFirestore
                 adapter.Add(array.GetItem<NSObject>(i).ToFieldValue(_documentFieldInfo));
             }
 
-            return ret;
+            return _type.IsArray ? adapter.ToArray() : ret;
         }
     }
 }

@@ -81,8 +81,7 @@ namespace Plugin.CloudFirestore
                 }
                 catch (Exception e)
                 {
-                    System.Diagnostics.Debug.WriteLine($"{key} is invalid: {e.Message}");
-                    throw;
+                    throw new InvalidOperationException($"'{key}' value cannot be converted.", e);
                 }
             }
 

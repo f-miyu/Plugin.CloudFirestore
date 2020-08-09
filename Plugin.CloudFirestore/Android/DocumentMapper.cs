@@ -20,7 +20,9 @@ namespace Plugin.CloudFirestore
                 {
                     data = source.GetData(serverTimestampBehavior.Value.ToNative());
                 }
-                return data.ToDictionary(pair => pair.Key, pair => pair.Value.ToFieldValue());
+
+                var fieldInfo = new DocumentFieldInfo<object>();
+                return data.ToDictionary(pair => pair.Key, pair => pair.Value.ToFieldValue(fieldInfo));
             }
             return null;
         }

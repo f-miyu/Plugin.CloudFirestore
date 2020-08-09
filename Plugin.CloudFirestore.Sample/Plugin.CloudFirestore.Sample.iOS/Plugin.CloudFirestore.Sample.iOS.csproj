@@ -138,7 +138,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.1179" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
     <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
     <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore">
       <Version>1.12.0</Version>
@@ -150,7 +150,7 @@
       <Name>Plugin.CloudFirestore.Sample</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj">
-      <Project>{FABB1665-0C12-46F1-974B-2A570582AD08}</Project>
+      <Project>{850D7678-3D31-47B5-883C-D8FC4007794F}</Project>
       <Name>Plugin.CloudFirestore</Name>
     </ProjectReference>
   </ItemGroup>

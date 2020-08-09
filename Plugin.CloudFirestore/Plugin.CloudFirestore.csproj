@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras/2.0.54">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0</TargetFrameworks>
         <AssemblyName>Plugin.CloudFirestore</AssemblyName>
         <RootNamespace>Plugin.CloudFirestore</RootNamespace>
         <PackageId>Plugin.CloudFirestore</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>3.1.0.2</Version>
-        <PackageVersion>3.1.0.2</PackageVersion>
+        <Version>4.0.0-pre01</Version>
+        <PackageVersion>4.0.0-pre01</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>default</LangVersion>
@@ -37,21 +37,22 @@
     </PropertyGroup>
     <ItemGroup>
         <Compile Include="Shared\**\*.cs" />
-        <PackageReference Include="System.Reactive" Version="4.4.1" PrivateAssets="none" />
-        <PackageReference Include="Enums.NET" Version="3.0.3" PrivateAssets="none" />
+        <PackageReference Include="System.Reactive" Version="4.4.1" />
+        <PackageReference Include="Enums.NET" Version="3.0.3" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
         <Compile Include="Android\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.Firestore" Version="121.4.3-preview02" PrivateAssets="none" />
-        <PackageReference Include="Xamarin.Io.OpenCensus.OpenCensusApi" Version="0.21.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.Firestore" Version="121.4.3-preview02" PrivateAssets="contentFiles;analyzers" />
+        <PackageReference Include="Xamarin.Io.OpenCensus.OpenCensusApi" Version="0.21.0" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.12.0" PrivateAssets="none" />
+        <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.12.0" />
     </ItemGroup>
     <ItemGroup>
         <None Include="build\Plugin.CloudFirestore.targets" PackagePath="build\monoandroid90" Pack="true" />
+        <None Include="build\Plugin.CloudFirestore.targets" PackagePath="build\monoandroid10.0" Pack="true" />
     </ItemGroup>
 </Project>
