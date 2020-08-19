@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras/2.0.54">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netstandard2.1;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0</TargetFrameworks>
         <AssemblyName>Plugin.CloudFirestore</AssemblyName>
         <RootNamespace>Plugin.CloudFirestore</RootNamespace>
         <PackageId>Plugin.CloudFirestore</PackageId>
@@ -38,7 +38,6 @@
     <ItemGroup>
         <Compile Include="Shared\**\*.cs" />
         <PackageReference Include="System.Reactive" Version="4.4.1" />
-        <PackageReference Include="Enums.NET" Version="3.0.3" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
     </ItemGroup>

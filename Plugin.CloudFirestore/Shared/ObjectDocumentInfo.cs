@@ -10,21 +10,28 @@ namespace Plugin.CloudFirestore
         private readonly Type _type = typeof(T);
         private Func<object> _creator;
 
-        private IReadOnlyDictionary<string, MemberDocumentFieldInfo> _documentFieldInfos;
-        private IReadOnlyDictionary<string, MemberDocumentFieldInfo> DocumentFieldInfos => _documentFieldInfos ??=
-            _type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                .Where(x => x.GetIndexParameters().Length == 0)
-                .Cast<MemberInfo>()
-                .Concat(_type.GetFields(BindingFlags.Public | BindingFlags.Instance))
-                .Select(x => new MemberDocumentFieldInfo(x))
-                .Where(x => !x.IsIgnored)
-                .ToDictionary(x => x.Name);
+        private readonly Lazy<IReadOnlyDictionary<string, MemberDocumentFieldInfo>> _documentFieldInfos;
+        private IReadOnlyDictionary<string, MemberDocumentFieldInfo> DocumentFieldInfos => _documentFieldInfos.Value;
 
-        private IReadOnlyDictionary<string, string> _mappingNames;
-        private IReadOnlyDictionary<string, string> MappingNames => _mappingNames ??=
-            DocumentFieldInfos.Values
-                .Where(x => x.OriginalName != x.Name)
-                .ToDictionary(x => x.OriginalName, x => x.Name);
+        private readonly Lazy<IReadOnlyDictionary<string, string>> _mappingNames;
+        private IReadOnlyDictionary<string, string> MappingNames => _mappingNames.Value;
+
+        public ObjectDocumentInfo()
+        {
+            _documentFieldInfos = new Lazy<IReadOnlyDictionary<string, MemberDocumentFieldInfo>>(() =>
+                _type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
+                    .Where(x => x.GetIndexParameters().Length == 0)
+                    .Cast<MemberInfo>()
+                    .Concat(_type.GetFields(BindingFlags.Public | BindingFlags.Instance))
+                    .Select(x => new MemberDocumentFieldInfo(x))
+                    .Where(x => !x.IsIgnored)
+                    .ToDictionary(x => x.Name));
+
+            _mappingNames = new Lazy<IReadOnlyDictionary<string, string>>(() =>
+                DocumentFieldInfos.Values
+                    .Where(x => x.OriginalName != x.Name)
+                    .ToDictionary(x => x.OriginalName, x => x.Name));
+        }
 
         public string GetMappingName(string name)
         {

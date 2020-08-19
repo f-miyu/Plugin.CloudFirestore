@@ -1,5 +1,4 @@
 ﻿using System;
-using EnumsNET;
 
 namespace Plugin.CloudFirestore.Converters
 {
@@ -17,7 +16,7 @@ namespace Plugin.CloudFirestore.Converters
 
             if (type.IsEnum)
             {
-                return (true, Enums.AsString(type, value));
+                return (true, value.ToString());
             }
             return (false, null);
         }
@@ -29,7 +28,7 @@ namespace Plugin.CloudFirestore.Converters
             {
                 return (false, null);
             }
-            return (true, Enums.Parse(type, value.String));
+            return (true, Enum.Parse(type, value.String));
         }
     }
 }

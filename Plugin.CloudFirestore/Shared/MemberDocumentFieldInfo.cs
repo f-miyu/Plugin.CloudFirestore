@@ -94,11 +94,11 @@ namespace Plugin.CloudFirestore
 
         public bool IsServerTimestampValue(object value)
         {
-            return IsServerTimestamp &&
-                (CanReplaceServerTimestamp || value == null ||
-                (value is DateTime dateTime && dateTime == default) ||
-                (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default) ||
-                (value is Timestamp timestamp && timestamp == default));
+            return IsServerTimestamp
+                && (CanReplaceServerTimestamp || value == null
+                || (value is DateTime dateTime && dateTime == default)
+                || (value is DateTimeOffset dateTimeOffset && dateTimeOffset == default)
+                || (value is Timestamp timestamp && timestamp == default));
         }
 
         public override (bool IsConverted, object Result) ConvertTo(object value)

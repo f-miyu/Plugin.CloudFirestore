@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Reflection;
-using EnumsNET;
 using Plugin.CloudFirestore.Converters;
 
 namespace Plugin.CloudFirestore
@@ -23,7 +22,21 @@ namespace Plugin.CloudFirestore
         {
             if (value is Enum)
             {
-                return (true, Enums.GetUnderlyingValue(value.GetType(), value));
+                var typeCode = Type.GetTypeCode(Enum.GetUnderlyingType(value.GetType()));
+                object underlyingValue = typeCode switch
+                {
+                    TypeCode.Boolean => (bool)value,
+                    TypeCode.Byte => (byte)value,
+                    TypeCode.SByte => (sbyte)value,
+                    TypeCode.Int16 => (short)value,
+                    TypeCode.UInt16 => (ushort)value,
+                    TypeCode.Int32 => (int)value,
+                    TypeCode.UInt32 => (uint)value,
+                    TypeCode.Int64 => (long)value,
+                    TypeCode.UInt64 => (ulong)value,
+                    _ => throw new InvalidOperationException(),
+                };
+                return (true, underlyingValue);
             }
             else if (value is Guid guid)
             {
@@ -40,7 +53,7 @@ namespace Plugin.CloudFirestore
         {
             if (NullableUnderlyingType.IsEnum && value.Type == DocumentObjectType.Long)
             {
-                return (true, Enums.ToObject(NullableUnderlyingType, value.Long));
+                return (true, Enum.ToObject(NullableUnderlyingType, value.Long));
             }
             else if (NullableUnderlyingType == typeof(Guid) && value.Type == DocumentObjectType.String)
             {

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Threading.Tasks;
 
 namespace Plugin.CloudFirestore
@@ -38,12 +39,16 @@ namespace Plugin.CloudFirestore
         IQuery EndAt(params object[] fieldValues);
         IQuery EndBefore(IDocumentSnapshot document);
         IQuery EndBefore(params object[] fieldValues);
+        [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use GetAsync() method instead.")]
         void GetDocuments(QuerySnapshotHandler handler);
+        [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use GetAsync(Source source) method instead.")]
         void GetDocuments(Source source, QuerySnapshotHandler handler);
+        [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use GetAsync() method instead.")]
         Task<IQuerySnapshot> GetDocumentsAsync();
+        [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use GetAsync(Source source) method instead.")]
         Task<IQuerySnapshot> GetDocumentsAsync(Source source);
         Task<IQuerySnapshot> GetAsync();

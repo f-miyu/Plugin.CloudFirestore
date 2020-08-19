@@ -37,20 +37,20 @@ namespace Plugin.CloudFirestore
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;
             if (GetType() != other.GetType()) return false;
-            return AreTimestampsInSnapshotsEnabled == other.AreTimestampsInSnapshotsEnabled &&
-                Host == other.Host &&
-                IsPersistenceEnabled == other.IsPersistenceEnabled &&
-                IsSslEnabled == other.IsSslEnabled &&
-                CacheSizeBytes == other.CacheSizeBytes;
+            return AreTimestampsInSnapshotsEnabled == other.AreTimestampsInSnapshotsEnabled
+                && Host == other.Host
+                && IsPersistenceEnabled == other.IsPersistenceEnabled
+                && IsSslEnabled == other.IsSslEnabled
+                && CacheSizeBytes == other.CacheSizeBytes;
         }
 
         public override int GetHashCode()
         {
-            return AreTimestampsInSnapshotsEnabled.GetHashCode() ^
-                (Host?.GetHashCode() ?? 0) ^
-                IsPersistenceEnabled.GetHashCode() ^
-                IsSslEnabled.GetHashCode() ^
-                CacheSizeBytes.GetHashCode();
+            return AreTimestampsInSnapshotsEnabled.GetHashCode()
+                ^ (Host?.GetHashCode() ?? 0)
+                ^ IsPersistenceEnabled.GetHashCode()
+                ^ IsSslEnabled.GetHashCode()
+                ^ CacheSizeBytes.GetHashCode();
         }
     }
 }

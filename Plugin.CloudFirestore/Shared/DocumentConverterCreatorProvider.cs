@@ -42,9 +42,9 @@ namespace Plugin.CloudFirestore
                             Expression.Convert(Expression.Default(type), typeof(object))))).Compile().Invoke();
 
                     result = (targetType, parameters) => creator(targetType,
-                        argumentTypes.Select((type, i) => parameters == null || i >= parameters.Length ?
-                            defaultValues[i] :
-                            parameters[i] != null ? Convert.ChangeType(parameters[i], Nullable.GetUnderlyingType(type) ?? type) : parameters[i])
+                        argumentTypes.Select((type, i) => parameters == null || i >= parameters.Length
+                            ? defaultValues[i]
+                            : parameters[i] != null ? Convert.ChangeType(parameters[i], Nullable.GetUnderlyingType(type) ?? type) : parameters[i])
                         .ToArray());
                 }
                 return result;
@@ -57,12 +57,12 @@ namespace Plugin.CloudFirestore
                 if (type.IsGenericType)
                 {
                     var definition = type.GetGenericTypeDefinition();
-                    if (definition == typeof(DocumentConverter<>) ||
-                        definition == typeof(DocumentConverter<,>) ||
-                        definition == typeof(DocumentConverter<,,>) ||
-                        definition == typeof(DocumentConverter<,,,>) ||
-                        definition == typeof(DocumentConverter<,,,,>) ||
-                        definition == typeof(DocumentConverter<,,,,,>))
+                    if (definition == typeof(DocumentConverter<>)
+                        || definition == typeof(DocumentConverter<,>)
+                        || definition == typeof(DocumentConverter<,,>)
+                        || definition == typeof(DocumentConverter<,,,>)
+                        || definition == typeof(DocumentConverter<,,,,>)
+                        || definition == typeof(DocumentConverter<,,,,,>))
                     {
                         return type.GetGenericArguments();
                     }
