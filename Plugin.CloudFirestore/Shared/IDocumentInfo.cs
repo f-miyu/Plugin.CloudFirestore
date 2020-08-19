@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Plugin.CloudFirestore
 {
-    public interface IDocumentInfo
+    internal interface IDocumentInfo
     {
         object ConvertToFieldObject(object target);
         object ConvertToFieldValue(object target);
