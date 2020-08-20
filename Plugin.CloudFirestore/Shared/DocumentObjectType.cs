@@ -4,8 +4,8 @@ namespace Plugin.CloudFirestore
     public enum DocumentObjectType
     {
         Null,
-        Bool,
-        Long,
+        Boolean,
+        Int64,
         Double,
         String,
         List,

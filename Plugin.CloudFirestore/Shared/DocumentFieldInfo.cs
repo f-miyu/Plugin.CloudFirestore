@@ -25,7 +25,6 @@ namespace Plugin.CloudFirestore
                 var typeCode = Type.GetTypeCode(Enum.GetUnderlyingType(value.GetType()));
                 object underlyingValue = typeCode switch
                 {
-                    TypeCode.Boolean => (bool)value,
                     TypeCode.Byte => (byte)value,
                     TypeCode.SByte => (sbyte)value,
                     TypeCode.Int16 => (short)value,
@@ -51,9 +50,9 @@ namespace Plugin.CloudFirestore
 
         public virtual (bool IsConverted, object Result) ConvertFrom(DocumentObject value)
         {
-            if (NullableUnderlyingType.IsEnum && value.Type == DocumentObjectType.Long)
+            if (NullableUnderlyingType.IsEnum && value.Type == DocumentObjectType.Int64)
             {
-                return (true, Enum.ToObject(NullableUnderlyingType, value.Long));
+                return (true, Enum.ToObject(NullableUnderlyingType, value.Int64));
             }
             else if (NullableUnderlyingType == typeof(Guid) && value.Type == DocumentObjectType.String)
             {

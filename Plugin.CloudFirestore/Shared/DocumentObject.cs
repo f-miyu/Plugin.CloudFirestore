@@ -10,13 +10,13 @@ namespace Plugin.CloudFirestore
 
         public DocumentObjectType Type { get; }
 
-        private readonly bool _bool;
-        public bool Bool => Type == DocumentObjectType.Bool ? _bool :
-            throw new InvalidOperationException("Type is not Bool.");
+        private readonly bool _boolean;
+        public bool Boolean => Type == DocumentObjectType.Boolean ? _boolean :
+            throw new InvalidOperationException("Type is not Boolean.");
 
-        private readonly long _long;
-        public long Long => Type == DocumentObjectType.Long ? _long :
-            throw new InvalidOperationException("Type is not Long.");
+        private readonly long _int64;
+        public long Int64 => Type == DocumentObjectType.Int64 ? _int64 :
+            throw new InvalidOperationException("Type is not Int64.");
 
         private readonly double _double;
         public double Double => Type == DocumentObjectType.Double ? _double :
@@ -83,8 +83,8 @@ namespace Plugin.CloudFirestore
         public object Value => Type switch
         {
             DocumentObjectType.Null => null,
-            DocumentObjectType.Bool => Bool,
-            DocumentObjectType.Long => Long,
+            DocumentObjectType.Boolean => Boolean,
+            DocumentObjectType.Int64 => Int64,
             DocumentObjectType.Double => Double,
             DocumentObjectType.String => String,
             DocumentObjectType.List => List,
@@ -103,14 +103,14 @@ namespace Plugin.CloudFirestore
 
         public DocumentObject(bool value)
         {
-            _bool = value;
-            Type = DocumentObjectType.Bool;
+            _boolean = value;
+            Type = DocumentObjectType.Boolean;
         }
 
         public DocumentObject(long value)
         {
-            _long = value;
-            Type = DocumentObjectType.Long;
+            _int64 = value;
+            Type = DocumentObjectType.Int64;
         }
 
         public DocumentObject(double value)
@@ -182,10 +182,10 @@ namespace Plugin.CloudFirestore
             return Type switch
             {
                 DocumentObjectType.Null => null,
-                DocumentObjectType.Bool when fieldType == null => Bool,
-                DocumentObjectType.Bool => Convert.ChangeType(Bool, fieldType),
-                DocumentObjectType.Long when fieldType == null => Long,
-                DocumentObjectType.Long => Convert.ChangeType(Long, fieldType),
+                DocumentObjectType.Boolean when fieldType == null => Boolean,
+                DocumentObjectType.Boolean => Convert.ChangeType(Boolean, fieldType),
+                DocumentObjectType.Int64 when fieldType == null => Int64,
+                DocumentObjectType.Int64 => Convert.ChangeType(Int64, fieldType),
                 DocumentObjectType.Double when fieldType == null => Double,
                 DocumentObjectType.Double => Convert.ChangeType(Double, fieldType),
                 DocumentObjectType.String when fieldType == typeof(char) => string.IsNullOrEmpty(String) ? default : Convert.ToChar(String),
