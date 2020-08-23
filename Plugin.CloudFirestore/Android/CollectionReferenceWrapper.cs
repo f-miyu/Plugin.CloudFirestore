@@ -334,16 +334,17 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public Task AddAsync<T>(T data)
+        public Task<IDocumentReference> AddAsync<T>(T data)
         {
-            var tcs = new TaskCompletionSource<bool>();
+            var tcs = new TaskCompletionSource<IDocumentReference>();
 
             _collectionReference.Add(data.ToNativeFieldValues())
                                 .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                                 {
                                     if (task.IsSuccessful)
                                     {
-                                        tcs.SetResult(true);
+                                        var document = task.Result.JavaCast<DocumentReference>();
+                                        tcs.SetResult(new DocumentReferenceWrapper(document));
                                     }
                                     else
                                     {

@@ -12,5 +12,6 @@ namespace Plugin.CloudFirestore
         IQuery Query { get; }
         IEnumerable<T> ToObjects<T>();
         IEnumerable<T> ToObjects<T>(ServerTimestampBehavior serverTimestampBehavior);
+        IEnumerable<IDocumentChange> GetDocumentChanges(bool includeMetadataChanges);
     }
 }

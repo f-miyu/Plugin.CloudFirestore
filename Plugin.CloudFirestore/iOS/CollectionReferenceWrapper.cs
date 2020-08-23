@@ -325,11 +325,12 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public Task AddAsync<T>(T data)
+        public Task<IDocumentReference> AddAsync<T>(T data)
         {
-            var tcs = new TaskCompletionSource<bool>();
+            var tcs = new TaskCompletionSource<IDocumentReference>();
 
-            _collectionReference.AddDocument(data.ToNativeFieldValues(), (error) =>
+            DocumentReference document = null;
+            document = _collectionReference.AddDocument(data.ToNativeFieldValues(), (error) =>
             {
                 if (error != null)
                 {
@@ -337,7 +338,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetResult(true);
+                    tcs.SetResult(new DocumentReferenceWrapper(document));
                 }
             });
 

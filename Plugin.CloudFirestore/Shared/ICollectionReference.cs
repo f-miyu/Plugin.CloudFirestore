@@ -24,6 +24,6 @@ namespace Plugin.CloudFirestore
         [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use AddAsync<T>(T data) method instead.")]
         Task AddDocumentAsync(object data);
-        Task AddAsync<T>(T data);
+        Task<IDocumentReference> AddAsync<T>(T data);
     }
 }

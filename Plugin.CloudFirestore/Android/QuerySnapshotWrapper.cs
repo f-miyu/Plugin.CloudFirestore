@@ -36,6 +36,12 @@ namespace Plugin.CloudFirestore
             return Documents.Select(d => d.ToObject<T>(serverTimestampBehavior));
         }
 
+        public IEnumerable<IDocumentChange> GetDocumentChanges(bool includeMetadataChanges)
+        {
+            return _querySnapshot.GetDocumentChanges(includeMetadataChanges ? MetadataChanges.Include : MetadataChanges.Exclude)
+                .Select(d => new DocumentChangeWrapper(d));
+        }
+
         public override bool Equals(object obj)
         {
             return Equals(obj as QuerySnapshotWrapper);
