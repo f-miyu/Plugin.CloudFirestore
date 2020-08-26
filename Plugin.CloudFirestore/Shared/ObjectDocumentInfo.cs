@@ -8,7 +8,7 @@ namespace Plugin.CloudFirestore
     internal partial class ObjectDocumentInfo<T> : IDocumentInfo
     {
         private readonly Type _type = typeof(T);
-        private Func<object> _creator;
+        private Func<object>? _creator;
 
         private readonly Lazy<IReadOnlyDictionary<string, MemberDocumentFieldInfo>> _documentFieldInfos;
         private IReadOnlyDictionary<string, MemberDocumentFieldInfo> DocumentFieldInfos => _documentFieldInfos.Value;
@@ -47,7 +47,7 @@ namespace Plugin.CloudFirestore
 #if NETSTANDARD
             throw new NotImplementedException();
 #else
-            var targetType = target?.GetType();
+            var targetType = target.GetType();
             if (targetType != null && _type != targetType)
             {
                 return ObjectProvider.GetDocumentInfo(targetType).ConvertToFieldObject(target);
@@ -61,7 +61,7 @@ namespace Plugin.CloudFirestore
 #if NETSTANDARD
             throw new NotImplementedException();
 #else
-            var targetType = target?.GetType();
+            var targetType = target.GetType();
             if (targetType != null && _type != targetType)
             {
                 return ObjectProvider.GetDocumentInfo(targetType).ConvertToFieldValue(target);
@@ -70,7 +70,7 @@ namespace Plugin.CloudFirestore
 #endif
         }
 
-        public object Create(object value, ServerTimestampBehavior? serverTimestampBehavior = null)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
 #if NETSTANDARD
             throw new NotImplementedException();

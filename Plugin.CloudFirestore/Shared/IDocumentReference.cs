@@ -65,19 +65,19 @@ namespace Plugin.CloudFirestore
         Task UpdateDataAsync(object fields);
         Task UpdateAsync<T>(T fields);
         [EditorBrowsable(EditorBrowsableState.Never)]
-        [Obsolete("Please use UpdateAsync(string field, object value, params object[] moreFieldsAndValues) method instead.")]
-        void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues);
+        [Obsolete("Please use UpdateAsync(string field, object? value, params object?[] moreFieldsAndValues) method instead.")]
+        void UpdateData(string field, object? value, CompletionHandler handler, params object?[] moreFieldsAndValues);
         [EditorBrowsable(EditorBrowsableState.Never)]
-        [Obsolete("Please use UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues) method instead.")]
-        void UpdateData(FieldPath field, object value, CompletionHandler handler, params object[] moreFieldsAndValues);
+        [Obsolete("Please use UpdateAsync(FieldPath field, object? value, params object?[] moreFieldsAndValues) method instead.")]
+        void UpdateData(FieldPath field, object? value, CompletionHandler handler, params object?[] moreFieldsAndValues);
         [EditorBrowsable(EditorBrowsableState.Never)]
-        [Obsolete("Please use UpdateAsync(string field, object value, params object[] moreFieldsAndValues) method instead.")]
-        Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues);
+        [Obsolete("Please use UpdateAsync(string field, object? value, params object?[] moreFieldsAndValues) method instead.")]
+        Task UpdateDataAsync(string field, object? value, params object?[] moreFieldsAndValues);
         [EditorBrowsable(EditorBrowsableState.Never)]
-        [Obsolete("Please use UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues) method instead.")]
-        Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues);
-        Task UpdateAsync(string field, object value, params object[] moreFieldsAndValues);
-        Task UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues);
+        [Obsolete("Please use UpdateAsync(FieldPath field, object? value, params object?[] moreFieldsAndValues) method instead.")]
+        Task UpdateDataAsync(FieldPath field, object? value, params object?[] moreFieldsAndValues);
+        Task UpdateAsync(string field, object? value, params object?[] moreFieldsAndValues);
+        Task UpdateAsync(FieldPath field, object? value, params object?[] moreFieldsAndValues);
         [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use DeleteAsync() method instead.")]
         void DeleteDocument(CompletionHandler handler);

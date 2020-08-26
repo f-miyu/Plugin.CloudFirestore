@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
 
         public ListenerRegistrationWrapper(Firebase.Firestore.IListenerRegistration listenerRegistration)
         {
-            _listenerRegistration = listenerRegistration;
+            _listenerRegistration = listenerRegistration ?? throw new ArgumentNullException(nameof(listenerRegistration));
         }
 
         public void Remove()
@@ -20,12 +20,12 @@ namespace Plugin.CloudFirestore
             Remove();
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as ListenerRegistrationWrapper);
         }
 
-        public bool Equals(ListenerRegistrationWrapper other)
+        public bool Equals(ListenerRegistrationWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

@@ -5,7 +5,7 @@ namespace Plugin.CloudFirestore
     internal partial class DocumentInfo<T> : IDocumentInfo
     {
         private readonly IDocumentInfo _objectDocumentInfo;
-        private readonly IDocumentInfo _listDocumentInfo;
+        private readonly IDocumentInfo? _listDocumentInfo;
         private readonly Type _type = typeof(T);
 
         public DocumentInfo()
@@ -39,7 +39,7 @@ namespace Plugin.CloudFirestore
             return _objectDocumentInfo.ConvertToFieldValue(target);
         }
 
-        public object Create(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
 #if NETSTANDARD
             throw new NotImplementedException();

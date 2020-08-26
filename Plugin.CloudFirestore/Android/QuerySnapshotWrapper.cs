@@ -9,31 +9,31 @@ namespace Plugin.CloudFirestore
     {
         public int Count => _querySnapshot.Size();
 
-        public IEnumerable<IDocumentChange> DocumentChanges => _querySnapshot.DocumentChanges?.Select(d => new DocumentChangeWrapper(d));
+        public IEnumerable<IDocumentChange> DocumentChanges => _querySnapshot.DocumentChanges.Select(d => new DocumentChangeWrapper(d));
 
-        public IEnumerable<IDocumentSnapshot> Documents => _querySnapshot.Documents?.Select(d => new DocumentSnapshotWrapper(d));
+        public IEnumerable<IDocumentSnapshot> Documents => _querySnapshot.Documents.Select(d => new DocumentSnapshotWrapper(d));
 
         public bool IsEmpty => _querySnapshot.IsEmpty;
 
-        public ISnapshotMetadata Metadata => _querySnapshot.Metadata == null ? null : new SnapshotMetadataWrapper(_querySnapshot.Metadata);
+        public ISnapshotMetadata Metadata => new SnapshotMetadataWrapper(_querySnapshot.Metadata);
 
-        public IQuery Query => _querySnapshot.Query == null ? null : new QueryWrapper(_querySnapshot.Query);
+        public IQuery Query => new QueryWrapper(_querySnapshot.Query);
 
         private readonly QuerySnapshot _querySnapshot;
 
         public QuerySnapshotWrapper(QuerySnapshot querySnapshot)
         {
-            _querySnapshot = querySnapshot;
+            _querySnapshot = querySnapshot ?? throw new ArgumentNullException(nameof(querySnapshot));
         }
 
         public IEnumerable<T> ToObjects<T>()
         {
-            return Documents.Select(d => d.ToObject<T>());
+            return Documents.Select(d => d.ToObject<T>()!);
         }
 
         public IEnumerable<T> ToObjects<T>(ServerTimestampBehavior serverTimestampBehavior)
         {
-            return Documents.Select(d => d.ToObject<T>(serverTimestampBehavior));
+            return Documents.Select(d => d.ToObject<T>(serverTimestampBehavior)!);
         }
 
         public IEnumerable<IDocumentChange> GetDocumentChanges(bool includeMetadataChanges)
@@ -47,7 +47,7 @@ namespace Plugin.CloudFirestore
             return Equals(obj as QuerySnapshotWrapper);
         }
 
-        public bool Equals(QuerySnapshotWrapper other)
+        public bool Equals(QuerySnapshotWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

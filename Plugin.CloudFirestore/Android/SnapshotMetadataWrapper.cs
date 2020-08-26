@@ -13,15 +13,15 @@ namespace Plugin.CloudFirestore
 
         public SnapshotMetadataWrapper(SnapshotMetadata snapshotMetadata)
         {
-            _snapshotMetadata = snapshotMetadata;
+            _snapshotMetadata = snapshotMetadata ?? throw new ArgumentNullException(nameof(snapshotMetadata));
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as SnapshotMetadataWrapper);
         }
 
-        public bool Equals(SnapshotMetadataWrapper other)
+        public bool Equals(SnapshotMetadataWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

@@ -8,23 +8,16 @@ namespace Plugin.CloudFirestore
     {
         internal Firebase.Firestore.FieldValue ToNative()
         {
-            switch (_fieldValueType)
+            return _fieldValueType switch
             {
-                case FieldValueType.Delete:
-                    return Firebase.Firestore.FieldValue.Delete();
-                case FieldValueType.ServerTimestamp:
-                    return Firebase.Firestore.FieldValue.ServerTimestamp();
-                case FieldValueType.ArrayUnion:
-                    return Firebase.Firestore.FieldValue.ArrayUnion(_elements?.Select(x => x.ToNativeFieldValue()).ToArray());
-                case FieldValueType.ArrayRemove:
-                    return Firebase.Firestore.FieldValue.ArrayRemove(_elements?.Select(x => x.ToNativeFieldValue()).ToArray());
-                case FieldValueType.IncrementLong:
-                    return Firebase.Firestore.FieldValue.Increment(_longValue);
-                case FieldValueType.IncrementDouble:
-                    return Firebase.Firestore.FieldValue.Increment(_doubleValue);
-                default:
-                    throw new InvalidOperationException();
-            }
+                FieldValueType.Delete => Firebase.Firestore.FieldValue.Delete(),
+                FieldValueType.ServerTimestamp => Firebase.Firestore.FieldValue.ServerTimestamp(),
+                FieldValueType.ArrayUnion => Firebase.Firestore.FieldValue.ArrayUnion(_elements?.Select(x => x.ToNativeFieldValue()).ToArray()),
+                FieldValueType.ArrayRemove => Firebase.Firestore.FieldValue.ArrayRemove(_elements?.Select(x => x.ToNativeFieldValue()).ToArray()),
+                FieldValueType.IncrementLong => Firebase.Firestore.FieldValue.Increment(_longValue),
+                FieldValueType.IncrementDouble => Firebase.Firestore.FieldValue.Increment(_doubleValue),
+                _ => throw new InvalidOperationException(),
+            };
         }
     }
 }

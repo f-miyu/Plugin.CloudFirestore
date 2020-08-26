@@ -56,7 +56,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformCreate(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
@@ -67,7 +67,7 @@ namespace Plugin.CloudFirestore
             };
         }
 
-        private object PlatformCreate(DocumentSnapshot snapshot, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(DocumentSnapshot snapshot, ServerTimestampBehavior? serverTimestampBehavior)
         {
             if (!snapshot.Exists)
             {

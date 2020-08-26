@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
     {
         public IFirestoreSettings FirestoreSettings
         {
-            get => _firestore.Settings == null ? null : new FirestoreSettings(_firestore.Settings);
+            get => new FirestoreSettings(_firestore.Settings);
             set => _firestore.Settings = value == null ? null : new Firebase.CloudFirestore.FirestoreSettings
             {
                 TimestampsInSnapshotsEnabled = value.AreTimestampsInSnapshotsEnabled,
@@ -24,7 +24,7 @@ namespace Plugin.CloudFirestore
 
         public FirestoreWrapper(Firestore firestore)
         {
-            _firestore = firestore;
+            _firestore = firestore ?? throw new ArgumentNullException(nameof(firestore));
         }
 
         public ICollectionReference GetCollection(string collectionPath)
@@ -82,7 +82,7 @@ namespace Plugin.CloudFirestore
             (NSObject result, NSError error) =>
             {
                 T resultObject = default;
-                Exception exception = null;
+                Exception? exception = null;
 
                 if (error != null)
                 {
@@ -136,12 +136,12 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    T resultObject = default(T);
+                    T resultObject = default;
                     if (result is ObjectHolder<T> wrapper)
                     {
                         resultObject = wrapper.Object;
                     }
-                    tcs.SetResult(resultObject);
+                    tcs.SetResult(resultObject!);
                 }
             });
 
@@ -169,7 +169,7 @@ namespace Plugin.CloudFirestore
             },
             (NSObject result, NSError error) =>
             {
-                Exception exception = null;
+                Exception? exception = null;
 
                 if (error != null)
                 {
@@ -351,12 +351,12 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as FirestoreWrapper);
         }
 
-        public bool Equals(FirestoreWrapper other)
+        public bool Equals(FirestoreWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

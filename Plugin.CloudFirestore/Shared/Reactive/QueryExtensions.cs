@@ -18,7 +18,7 @@ namespace Plugin.CloudFirestore.Reactive
                     }
                     else
                     {
-                        observer.OnNext(snapshot);
+                        observer.OnNext(snapshot!);
                     }
                 });
             });
@@ -36,7 +36,7 @@ namespace Plugin.CloudFirestore.Reactive
                     }
                     else
                     {
-                        observer.OnNext(snapshot);
+                        observer.OnNext(snapshot!);
                     }
                 });
             });

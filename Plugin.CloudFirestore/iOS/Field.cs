@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Plugin.CloudFirestore
 {
-    public static class Field
+    internal static class Field
     {
-        public static Dictionary<object, object> CreateFields(object field, object value, params object[] moreFieldsAndValues)
+        public static Dictionary<object, object> CreateFields(object field, object? value, params object?[] moreFieldsAndValues)
         {
             if (field == null)
             {

@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
 {
     internal partial class DocumentInfo<T>
     {
-        private object PlatformCreate(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             IDocumentInfo documentInfo = _objectDocumentInfo;
             if (value is JavaList || value is AbstractList)

@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
     {
         private object PlatformConvertToFieldObject(object target)
         {
-            var ret = new JavaDictionary<string, Java.Lang.Object>();
+            var ret = new JavaDictionary<string, Java.Lang.Object?>();
 
             var adapter = GetDictionaryAdapter(target);
             var enumerator = adapter.GetEnumerator();
@@ -29,7 +29,7 @@ namespace Plugin.CloudFirestore
             return PlatformConvertToFieldObject(target);
         }
 
-        private object PlatformCreate(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
@@ -41,7 +41,7 @@ namespace Plugin.CloudFirestore
             };
         }
 
-        private object PlatformCreate(DocumentSnapshot sanpshot, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(DocumentSnapshot sanpshot, ServerTimestampBehavior? serverTimestampBehavior)
         {
             if (!sanpshot.Exists())
             {
@@ -110,10 +110,10 @@ namespace Plugin.CloudFirestore
             var ret = Create();
             var adapter = GetDictionaryAdapter(ret);
 
-            foreach (var key in map.KeySet())
+            foreach (var key in map.KeySet()!)
             {
                 var keyStr = key.ToString();
-                object value = map.Get(keyStr);
+                object? value = map.Get(keyStr);
 
                 object convertedKey = keyStr;
                 if (_dictionaryKeyType != typeof(string) && _dictionaryKeyType != typeof(object))

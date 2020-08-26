@@ -8,7 +8,7 @@ namespace Plugin.CloudFirestore
     internal class MemberDocumentFieldInfo : DocumentFieldInfo
     {
         private readonly MemberInfo _memberInfo;
-        private readonly DocumentConverterAttribute _documentConverterAttribute;
+        private readonly DocumentConverterAttribute? _documentConverterAttribute;
 
         public bool IsId { get; }
         public bool IsIgnored { get; }
@@ -17,8 +17,8 @@ namespace Plugin.CloudFirestore
         public bool IsServerTimestamp { get; }
         public bool CanReplaceServerTimestamp { get; }
 
-        private DocumentConverter _documentConverter;
-        public DocumentConverter DocumentConverter
+        private DocumentConverter? _documentConverter;
+        public DocumentConverter? DocumentConverter
         {
             get
             {
@@ -77,7 +77,7 @@ namespace Plugin.CloudFirestore
             return value;
         }
 
-        public void SetValue(object target, object value)
+        public void SetValue(object target, object? value)
         {
             switch (_memberInfo)
             {
@@ -101,18 +101,18 @@ namespace Plugin.CloudFirestore
                 || (value is Timestamp timestamp && timestamp == default));
         }
 
-        public override (bool IsConverted, object Result) ConvertTo(object value)
+        public override (bool IsConverted, object? Result) ConvertTo(object? value)
         {
-            if (DocumentConverter?.ConvertTo(value) is (true, var result))
+            if (DocumentConverter != null && DocumentConverter.ConvertTo(value, out var result))
             {
                 return (true, result);
             }
             return base.ConvertTo(value);
         }
 
-        public override (bool IsConverted, object Result) ConvertFrom(DocumentObject value)
+        public override (bool IsConverted, object? Result) ConvertFrom(DocumentObject value)
         {
-            if (DocumentConverter?.ConvertFrom(value) is (true, var result))
+            if (DocumentConverter != null && DocumentConverter.ConvertFrom(value, out var result))
             {
                 return (true, result);
             }

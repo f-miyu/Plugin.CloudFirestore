@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
     {
         public IFirestoreSettings FirestoreSettings
         {
-            get => _firestore.FirestoreSettings == null ? null : new FirestoreSettings(_firestore.FirestoreSettings);
+            get => new FirestoreSettings(_firestore.FirestoreSettings);
             set => _firestore.FirestoreSettings = value == null ? null : new FirebaseFirestoreSettings.Builder()
                 .SetTimestampsInSnapshotsEnabled(value.AreTimestampsInSnapshotsEnabled)
                 .SetHost(value.Host)
@@ -25,7 +25,7 @@ namespace Plugin.CloudFirestore
 
         public FirestoreWrapper(FirebaseFirestore firestore)
         {
-            _firestore = firestore;
+            _firestore = firestore ?? throw new ArgumentNullException(nameof(firestore));
         }
 
         public ICollectionReference GetCollection(string collectionPath)
@@ -67,11 +67,11 @@ namespace Plugin.CloudFirestore
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
                          T result = default;
-                         System.Exception exception = null;
+                         System.Exception? exception = null;
 
                          if (task.IsSuccessful)
                          {
-                             result = task.Result.JavaCast<ObjectHolder<T>>().Object;
+                             result = task.Result.JavaCast<ObjectHolder<T>>()!.Object;
                          }
                          else
                          {
@@ -94,7 +94,7 @@ namespace Plugin.CloudFirestore
                          if (task.IsSuccessful)
                          {
                              var result = task.Result.JavaCast<ObjectHolder<T>>();
-                             tcs.SetResult(result.Object);
+                             tcs.SetResult(result!.Object);
                          }
                          else
                          {
@@ -117,7 +117,7 @@ namespace Plugin.CloudFirestore
             _firestore.RunTransaction(new UpdateFunction(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
-                         System.Exception exception = null;
+                         System.Exception? exception = null;
 
                          if (!task.IsSuccessful)
                          {
@@ -193,7 +193,7 @@ namespace Plugin.CloudFirestore
                 _handler = handler;
             }
 
-            public Java.Lang.Object Apply(Transaction transaction)
+            public Java.Lang.Object? Apply(Transaction transaction)
             {
                 try
                 {
@@ -340,12 +340,12 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as FirestoreWrapper);
         }
 
-        public bool Equals(FirestoreWrapper other)
+        public bool Equals(FirestoreWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

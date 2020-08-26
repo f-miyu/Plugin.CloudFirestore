@@ -4,7 +4,7 @@ namespace Plugin.CloudFirestore
     public partial class FirestoreSettings : IFirestoreSettings, IEquatable<FirestoreSettings>
     {
         private static bool _deaultAreTimestampsInSnapshotsEnabled;
-        private static string _defaultHost;
+        private static string? _defaultHost;
         private static bool _defaultIsPersistenceEnabled;
         private static bool _defaultIsSslEnabled;
         private static long _defaultCacheSizeBytes;
@@ -21,18 +21,18 @@ namespace Plugin.CloudFirestore
         public FirestoreSettings()
         {
             AreTimestampsInSnapshotsEnabled = _deaultAreTimestampsInSnapshotsEnabled;
-            Host = _defaultHost;
+            Host = _defaultHost!;
             IsPersistenceEnabled = _defaultIsPersistenceEnabled;
             IsSslEnabled = _defaultIsSslEnabled;
             CacheSizeBytes = _defaultCacheSizeBytes;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as FirestoreSettings);
         }
 
-        public bool Equals(FirestoreSettings other)
+        public bool Equals(FirestoreSettings? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

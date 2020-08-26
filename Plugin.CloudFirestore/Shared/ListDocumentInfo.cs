@@ -25,8 +25,8 @@ namespace Plugin.CloudFirestore
         private readonly ListAdapterFactoryType _listAdapterFactoryType;
         private readonly IDocumentFieldInfo _documentFieldInfo;
 
-        private IListAdapterFactory _listAdapterFactory;
-        private Func<object> _creator;
+        private IListAdapterFactory? _listAdapterFactory;
+        private Func<object>? _creator;
 
         public ListDocumentInfo()
         {
@@ -87,7 +87,7 @@ namespace Plugin.CloudFirestore
 #endif
         }
 
-        public object Create(object value, ServerTimestampBehavior? serverTimestampBehavior = null)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
 #if NETSTANDARD
             throw new NotImplementedException();

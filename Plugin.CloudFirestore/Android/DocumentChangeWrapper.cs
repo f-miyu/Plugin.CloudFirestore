@@ -5,7 +5,7 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentChangeWrapper : IDocumentChange, IEquatable<DocumentChangeWrapper>
     {
-        public IDocumentSnapshot Document => _documentChange.Document == null ? null : new DocumentSnapshotWrapper(_documentChange.Document);
+        public IDocumentSnapshot Document => new DocumentSnapshotWrapper(_documentChange.Document);
 
         public int NewIndex => _documentChange.NewIndex;
 
@@ -37,15 +37,15 @@ namespace Plugin.CloudFirestore
 
         public DocumentChangeWrapper(DocumentChange documentChange)
         {
-            _documentChange = documentChange;
+            _documentChange = documentChange ?? throw new ArgumentNullException(nameof(documentChange));
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as DocumentChangeWrapper);
         }
 
-        public bool Equals(DocumentChangeWrapper other)
+        public bool Equals(DocumentChangeWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

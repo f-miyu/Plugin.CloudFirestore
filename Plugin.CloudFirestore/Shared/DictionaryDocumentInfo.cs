@@ -26,8 +26,8 @@ namespace Plugin.CloudFirestore
         private readonly DictionaryAdapterFactoryType _dictionaryAdapterFactoryType;
         private readonly IDocumentFieldInfo _documentFieldInfo;
 
-        private Func<object> _creator;
-        private IDictionaryAdapterFactory _dictionaryAdapterFactory;
+        private Func<object>? _creator;
+        private IDictionaryAdapterFactory? _dictionaryAdapterFactory;
 
         public DictionaryDocumentInfo()
         {
@@ -90,7 +90,7 @@ namespace Plugin.CloudFirestore
 #endif
         }
 
-        public object Create(object value, ServerTimestampBehavior? serverTimestampBehavior = null)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
 #if NETSTANDARD
             throw new NotImplementedException();

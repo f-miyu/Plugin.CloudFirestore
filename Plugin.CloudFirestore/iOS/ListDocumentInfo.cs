@@ -18,7 +18,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformCreate(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {

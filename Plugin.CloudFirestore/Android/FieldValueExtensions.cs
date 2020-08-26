@@ -9,8 +9,13 @@ namespace Plugin.CloudFirestore
 {
     internal static class FieldValueExtensions
     {
-        public static Java.Lang.Object ToNativeFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
+        public static Java.Lang.Object? ToNativeFieldValue(this object? fieldValue, IDocumentFieldInfo? fieldInfo = null)
         {
+            if (fieldValue is { } && fieldInfo is null)
+            {
+                fieldInfo = new DocumentFieldInfo(fieldValue.GetType());
+            }
+
             if (fieldInfo?.ConvertTo(fieldValue) is (true, var result))
             {
                 fieldValue = result;
@@ -81,7 +86,7 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public static JavaDictionary<string, Java.Lang.Object> ToNativeFieldValues<T>(this T fieldValues)
+        public static JavaDictionary<string, Java.Lang.Object>? ToNativeFieldValues<T>(this T fieldValues)
         {
             if (fieldValues is null)
                 return null;
@@ -89,7 +94,7 @@ namespace Plugin.CloudFirestore
             return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
         }
 
-        public static JavaDictionary<string, Java.Lang.Object> ToNativeFieldValues(this object fieldValues)
+        public static JavaDictionary<string, Java.Lang.Object>? ToNativeFieldValues(this object? fieldValues)
         {
             if (fieldValues is null)
                 return null;
@@ -97,7 +102,7 @@ namespace Plugin.CloudFirestore
             return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
         }
 
-        public static object ToFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
+        public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo? fieldInfo = null)
         {
             return (fieldValue switch
             {

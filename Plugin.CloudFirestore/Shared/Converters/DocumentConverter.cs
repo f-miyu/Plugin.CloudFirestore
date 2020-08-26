@@ -11,8 +11,8 @@ namespace Plugin.CloudFirestore.Converters
             TargetType = targetType ?? throw new ArgumentNullException(nameof(targetType));
         }
 
-        public abstract (bool IsConverted, object Result) ConvertTo(object value);
-        public abstract (bool IsConverted, object Result) ConvertFrom(DocumentObject value);
+        public abstract bool ConvertTo(object? value, out object? result);
+        public abstract bool ConvertFrom(DocumentObject value, out object? result);
     }
 
     public abstract class DocumentConverter<T1> : DocumentConverter

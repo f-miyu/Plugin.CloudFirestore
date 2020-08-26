@@ -43,7 +43,7 @@ namespace Plugin.CloudFirestore
                 case ParameterExpression _:
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(expression));
+                    throw new ArgumentException($"{nameof(expression)} must be MemberExpression or ParameterExpression.", nameof(expression));
             }
         }
 

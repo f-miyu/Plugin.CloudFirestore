@@ -14,15 +14,15 @@ namespace Plugin.CloudFirestore
 
         public string Path => _documentReference.Path;
 
-        public ICollectionReference Parent => _documentReference.Parent == null ? null : new CollectionReferenceWrapper(_documentReference.Parent);
+        public ICollectionReference Parent => new CollectionReferenceWrapper(_documentReference.Parent);
 
-        public IFirestore Firestore => _documentReference.Firestore == null ? null : FirestoreProvider.GetFirestore(_documentReference.Firestore);
+        public IFirestore Firestore => FirestoreProvider.GetFirestore(_documentReference.Firestore);
 
         private readonly DocumentReference _documentReference;
 
         public DocumentReferenceWrapper(DocumentReference documentReference)
         {
-            _documentReference = documentReference;
+            _documentReference = documentReference ?? throw new ArgumentNullException(nameof(documentReference));
         }
 
         public static explicit operator DocumentReference(DocumentReferenceWrapper wrapper)
@@ -79,7 +79,7 @@ namespace Plugin.CloudFirestore
                 if (task.IsSuccessful)
                 {
                     var snapshot = task.Result.JavaCast<DocumentSnapshot>();
-                    tcs.SetResult(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot));
+                    tcs.SetResult(new DocumentSnapshotWrapper(snapshot!));
                 }
                 else
                 {
@@ -104,7 +104,7 @@ namespace Plugin.CloudFirestore
                 if (task.IsSuccessful)
                 {
                     var snapshot = task.Result.JavaCast<DocumentSnapshot>();
-                    tcs.SetResult(snapshot == null ? null : new DocumentSnapshotWrapper(snapshot));
+                    tcs.SetResult(new DocumentSnapshotWrapper(snapshot!));
                 }
                 else
                 {
@@ -295,7 +295,7 @@ namespace Plugin.CloudFirestore
         {
             if (!merge)
             {
-                return SetDataAsync(documentData);
+                return SetAsync(documentData);
             }
 
             var tcs = new TaskCompletionSource<bool>();
@@ -361,7 +361,7 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public void UpdateData(string field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
+        public void UpdateData(string field, object? value, CompletionHandler handler, params object?[] moreFieldsAndValues)
         {
             _documentReference.Update(field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
@@ -369,7 +369,7 @@ namespace Plugin.CloudFirestore
             }));
         }
 
-        public void UpdateData(FieldPath field, object value, CompletionHandler handler, params object[] moreFieldsAndValues)
+        public void UpdateData(FieldPath field, object? value, CompletionHandler handler, params object?[] moreFieldsAndValues)
         {
             _documentReference.Update(field?.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray()).AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
             {
@@ -377,12 +377,12 @@ namespace Plugin.CloudFirestore
             }));
         }
 
-        public Task UpdateDataAsync(string field, object value, params object[] moreFieldsAndValues)
+        public Task UpdateDataAsync(string field, object? value, params object?[] moreFieldsAndValues)
         {
             return UpdateAsync(field, value, moreFieldsAndValues);
         }
 
-        public Task UpdateAsync(string field, object value, params object[] moreFieldsAndValues)
+        public Task UpdateAsync(string field, object? value, params object?[] moreFieldsAndValues)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -401,12 +401,12 @@ namespace Plugin.CloudFirestore
             return tcs.Task;
         }
 
-        public Task UpdateDataAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
+        public Task UpdateDataAsync(FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
             return UpdateAsync(field, value, moreFieldsAndValues);
         }
 
-        public Task UpdateAsync(FieldPath field, object value, params object[] moreFieldsAndValues)
+        public Task UpdateAsync(FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
             var tcs = new TaskCompletionSource<bool>();
 
@@ -479,12 +479,12 @@ namespace Plugin.CloudFirestore
             return new ListenerRegistrationWrapper(registration);
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as DocumentReferenceWrapper);
         }
 
-        public bool Equals(DocumentReferenceWrapper other)
+        public bool Equals(DocumentReferenceWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

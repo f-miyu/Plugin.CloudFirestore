@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
         public Type Type { get; }
         public Type NullableUnderlyingType { get; }
 
-        private IDocumentInfo _documentInfo;
+        private IDocumentInfo? _documentInfo;
         public virtual IDocumentInfo DocumentInfo => _documentInfo ??= ObjectProvider.GetDocumentInfo(NullableUnderlyingType);
 
         public DocumentFieldInfo(Type type)
@@ -18,7 +18,7 @@ namespace Plugin.CloudFirestore
             NullableUnderlyingType = Nullable.GetUnderlyingType(type) ?? type;
         }
 
-        public virtual (bool IsConverted, object Result) ConvertTo(object value)
+        public virtual (bool IsConverted, object? Result) ConvertTo(object? value)
         {
             if (value is Enum)
             {
@@ -48,7 +48,7 @@ namespace Plugin.CloudFirestore
             return (false, null);
         }
 
-        public virtual (bool IsConverted, object Result) ConvertFrom(DocumentObject value)
+        public virtual (bool IsConverted, object? Result) ConvertFrom(DocumentObject value)
         {
             if (NullableUnderlyingType.IsEnum && value.Type == DocumentObjectType.Int64)
             {

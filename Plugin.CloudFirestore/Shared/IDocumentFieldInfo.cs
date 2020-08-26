@@ -8,7 +8,7 @@ namespace Plugin.CloudFirestore
         Type Type { get; }
         Type NullableUnderlyingType { get; }
         IDocumentInfo DocumentInfo { get; }
-        (bool IsConverted, object Result) ConvertTo(object value);
-        (bool IsConverted, object Result) ConvertFrom(DocumentObject value);
+        (bool IsConverted, object? Result) ConvertTo(object? value);
+        (bool IsConverted, object? Result) ConvertFrom(DocumentObject value);
     }
 }

@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
     {
         string Id { get; }
         string Path { get; }
-        IDocumentReference Parent { get; }
+        IDocumentReference? Parent { get; }
         [EditorBrowsable(EditorBrowsableState.Never)]
         [Obsolete("Please use Document() method instead.")]
         IDocumentReference CreateDocument();

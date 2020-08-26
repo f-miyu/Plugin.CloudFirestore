@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
     {
         private object PlatformConvertToFieldObject(object target)
         {
-            var ret = new JavaDictionary<string, Java.Lang.Object>();
+            var ret = new JavaDictionary<string, Java.Lang.Object?>();
 
             foreach (var fieldInfo in DocumentFieldInfos.Values)
             {
@@ -38,7 +38,7 @@ namespace Plugin.CloudFirestore
             return PlatformConvertToFieldObject(target);
         }
 
-        private object PlatformCreate(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
@@ -50,7 +50,7 @@ namespace Plugin.CloudFirestore
             };
         }
 
-        private object PlatformCreate(DocumentSnapshot snapshot, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(DocumentSnapshot snapshot, ServerTimestampBehavior? serverTimestampBehavior)
         {
             if (!snapshot.Exists())
             {
@@ -113,11 +113,11 @@ namespace Plugin.CloudFirestore
         {
             var ret = Create();
 
-            foreach (var key in map.KeySet())
+            foreach (var key in map.KeySet()!)
             {
                 if (DocumentFieldInfos.TryGetValue(key.ToString(), out var fieldInfo))
                 {
-                    object value = map.Get(key.ToString());
+                    object? value = map.Get(key.ToString());
                     fieldInfo.SetValue(ret, value.ToFieldValue(fieldInfo));
                 }
             }

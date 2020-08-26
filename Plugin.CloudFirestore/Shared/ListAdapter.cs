@@ -7,14 +7,14 @@ namespace Plugin.CloudFirestore
 {
     internal interface IListAdapter : IEnumerable
     {
-        void Add(object item);
+        void Add(object? item);
         Array ToArray();
     }
 
     internal class ListAdapter<T> : IListAdapter
     {
-        private readonly IList<T> _list;
-        private readonly IReadOnlyList<T> _readonlyList;
+        private readonly IList<T>? _list;
+        private readonly IReadOnlyList<T>? _readonlyList;
 
         public ListAdapter(IList<T> list)
         {
@@ -26,13 +26,13 @@ namespace Plugin.CloudFirestore
             _readonlyList = readonlyList ?? throw new ArgumentNullException(nameof(readonlyList));
         }
 
-        public void Add(object item)
+        public void Add(object? item)
         {
             if (_readonlyList != null)
             {
                 throw new NotSupportedException();
             }
-            _list.Add((T)item);
+            _list!.Add((T)item!);
         }
 
         public IEnumerator GetEnumerator()
@@ -41,11 +41,15 @@ namespace Plugin.CloudFirestore
             {
                 return _readonlyList.GetEnumerator();
             }
-            return _list.GetEnumerator();
+            return _list!.GetEnumerator();
         }
 
         public Array ToArray()
         {
+            if (_readonlyList != null)
+            {
+                return _readonlyList.ToArray();
+            }
             return _list.ToArray();
         }
     }
@@ -59,7 +63,7 @@ namespace Plugin.CloudFirestore
             _list = list ?? throw new ArgumentNullException(nameof(list));
         }
 
-        public void Add(object item)
+        public void Add(object? item)
         {
             _list.Add(item);
         }

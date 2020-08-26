@@ -9,8 +9,13 @@ namespace Plugin.CloudFirestore
 {
     internal static class FieldValueExtensions
     {
-        public static object ToNativeFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
+        public static object ToNativeFieldValue(this object? fieldValue, IDocumentFieldInfo? fieldInfo = null)
         {
+            if (fieldValue is { } && fieldInfo is null)
+            {
+                fieldInfo = new DocumentFieldInfo(fieldValue.GetType());
+            }
+
             if (fieldInfo?.ConvertTo(fieldValue) is (true, var result))
             {
                 fieldValue = result;
@@ -81,7 +86,7 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public static Dictionary<object, object> ToNativeFieldValues<T>(this T fieldValues)
+        public static Dictionary<object, object>? ToNativeFieldValues<T>(this T fieldValues)
         {
             if (fieldValues is null)
                 return null;
@@ -89,7 +94,7 @@ namespace Plugin.CloudFirestore
             return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
         }
 
-        public static Dictionary<object, object> ToNativeFieldValues(this object fieldValues)
+        public static Dictionary<object, object>? ToNativeFieldValues(this object? fieldValues)
         {
             if (fieldValues is null)
                 return null;
@@ -97,7 +102,7 @@ namespace Plugin.CloudFirestore
             return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
         }
 
-        public static object ToFieldValue(this object fieldValue, IDocumentFieldInfo fieldInfo = null)
+        public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo? fieldInfo = null)
         {
             return (fieldValue switch
             {

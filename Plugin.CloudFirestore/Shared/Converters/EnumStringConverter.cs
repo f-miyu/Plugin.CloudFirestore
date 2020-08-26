@@ -8,27 +8,28 @@ namespace Plugin.CloudFirestore.Converters
         {
         }
 
-        public override (bool IsConverted, object Result) ConvertTo(object value)
+        public override bool ConvertTo(object? value, out object? result)
         {
-            if (value is null) return (false, null);
-
-            var type = value.GetType();
-
-            if (type.IsEnum)
+            if (value is Enum)
             {
-                return (true, value.ToString());
+                result = value.ToString();
+                return true;
             }
-            return (false, null);
+
+            result = null;
+            return false;
         }
 
-        public override (bool IsConverted, object Result) ConvertFrom(DocumentObject value)
+        public override bool ConvertFrom(DocumentObject value, out object? result)
         {
             var type = Nullable.GetUnderlyingType(TargetType) ?? TargetType;
             if (!type.IsEnum || value.Type != DocumentObjectType.String)
             {
-                return (false, null);
+                result = null;
+                return false;
             }
-            return (true, Enum.Parse(type, value.String));
+            result = Enum.Parse(type, value.String);
+            return true;
         }
     }
 }

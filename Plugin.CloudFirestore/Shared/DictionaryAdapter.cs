@@ -6,14 +6,14 @@ namespace Plugin.CloudFirestore
 {
     internal interface IDictionaryAdapter : IEnumerable
     {
-        object this[object key] { get; set; }
+        object? this[object key] { get; set; }
         new IDictionaryEnumerator GetEnumerator();
     }
 
     internal class DictionaryAdapter<TKey, TValue> : IDictionaryAdapter
     {
-        private readonly IDictionary<TKey, TValue> _dictionary;
-        private readonly IReadOnlyDictionary<TKey, TValue> _readonlyDictionary;
+        private readonly IDictionary<TKey, TValue>? _dictionary;
+        private readonly IReadOnlyDictionary<TKey, TValue>? _readonlyDictionary;
 
         public DictionaryAdapter(IDictionary<TKey, TValue> dictionary)
         {
@@ -25,7 +25,7 @@ namespace Plugin.CloudFirestore
             _readonlyDictionary = readonlyDictionary ?? throw new ArgumentNullException(nameof(readonlyDictionary));
         }
 
-        public object this[object key]
+        public object? this[object key]
         {
             get
             {
@@ -33,7 +33,7 @@ namespace Plugin.CloudFirestore
                 {
                     return _readonlyDictionary[(TKey)key];
                 }
-                return _dictionary[(TKey)key];
+                return _dictionary![(TKey)key];
             }
             set
             {
@@ -41,7 +41,7 @@ namespace Plugin.CloudFirestore
                 {
                     throw new NotSupportedException();
                 }
-                _dictionary[(TKey)key] = (TValue)value;
+                _dictionary![(TKey)key] = (TValue)value!;
             }
         }
 
@@ -51,7 +51,7 @@ namespace Plugin.CloudFirestore
             {
                 return new DictionaryEnumerator(_readonlyDictionary.GetEnumerator());
             }
-            return new DictionaryEnumerator(_dictionary.GetEnumerator());
+            return new DictionaryEnumerator(_dictionary!.GetEnumerator());
         }
 
         IEnumerator IEnumerable.GetEnumerator()
@@ -60,7 +60,7 @@ namespace Plugin.CloudFirestore
             {
                 return ((IEnumerable)_readonlyDictionary).GetEnumerator();
             }
-            return ((IEnumerable)_dictionary).GetEnumerator();
+            return ((IEnumerable)_dictionary!).GetEnumerator();
         }
 
         private class DictionaryEnumerator : IDictionaryEnumerator
@@ -96,7 +96,7 @@ namespace Plugin.CloudFirestore
     {
         private readonly IDictionary _dictionary;
 
-        public object this[object key]
+        public object? this[object key]
         {
             get => _dictionary[key];
             set => _dictionary[key] = value;

@@ -6,7 +6,7 @@ namespace Plugin.CloudFirestore
 {
     public sealed class DocumentObject
     {
-        private readonly object _value;
+        private readonly object? _value;
 
         public DocumentObjectType Type { get; }
 
@@ -22,11 +22,11 @@ namespace Plugin.CloudFirestore
         public double Double => Type == DocumentObjectType.Double ? _double :
             throw new InvalidOperationException("Type is not Double.");
 
-        private readonly string _string;
-        public string String => Type == DocumentObjectType.String ? _string :
+        private readonly string? _string;
+        public string String => Type == DocumentObjectType.String ? _string! :
             throw new InvalidOperationException("Type is not String.");
 
-        private IList<DocumentObject> _list;
+        private IList<DocumentObject>? _list;
         public IList<DocumentObject> List
         {
             get
@@ -39,13 +39,13 @@ namespace Plugin.CloudFirestore
                 if (_list == null)
                 {
                     var fieldInfo = new DocumentFieldInfo<List<DocumentObject>>();
-                    _list = (List<DocumentObject>)fieldInfo.DocumentInfo.Create(_value);
+                    _list = (List<DocumentObject>)fieldInfo.DocumentInfo.Create(_value)!;
                 }
                 return _list;
             }
         }
 
-        private IDictionary<string, DocumentObject> _dictionary;
+        private IDictionary<string, DocumentObject>? _dictionary;
         public IDictionary<string, DocumentObject> Dictionary
         {
             get
@@ -58,7 +58,7 @@ namespace Plugin.CloudFirestore
                 if (_dictionary == null)
                 {
                     var fieldInfo = new DocumentFieldInfo<Dictionary<string, DocumentObject>>();
-                    _dictionary = (Dictionary<string, DocumentObject>)fieldInfo.DocumentInfo.Create(_value);
+                    _dictionary = (Dictionary<string, DocumentObject>)fieldInfo.DocumentInfo.Create(_value)!;
                 }
                 return _dictionary;
             }
@@ -68,19 +68,19 @@ namespace Plugin.CloudFirestore
         public Timestamp Timestamp => Type == DocumentObjectType.Timestapm ? _timestamp :
             throw new InvalidOperationException("Type is not Timestapm.");
 
-        private readonly byte[] _bytes;
-        public byte[] Bytes => Type == DocumentObjectType.Bytes ? _bytes :
+        private readonly byte[]? _bytes;
+        public byte[] Bytes => Type == DocumentObjectType.Bytes ? _bytes! :
              throw new InvalidOperationException("Type is not Bytes.");
 
         private readonly GeoPoint _geoPoint;
         public GeoPoint GeoPoint => Type == DocumentObjectType.GeoPoint ? _geoPoint :
             throw new InvalidOperationException("Type is not GeoPoint.");
 
-        private readonly IDocumentReference _documentReference;
-        public IDocumentReference DocumentReference => Type == DocumentObjectType.DocumentReference ? _documentReference :
+        private readonly IDocumentReference? _documentReference;
+        public IDocumentReference DocumentReference => Type == DocumentObjectType.DocumentReference ? _documentReference! :
             throw new InvalidOperationException("Type is not DocumentReference.");
 
-        public object Value => Type switch
+        public object? Value => Type switch
         {
             DocumentObjectType.Null => null,
             DocumentObjectType.Boolean => Boolean,
@@ -170,7 +170,7 @@ namespace Plugin.CloudFirestore
         internal static DocumentObject CreateAsList(object value) => new DocumentObject(value, DocumentObjectType.List);
         internal static DocumentObject CreateAsDictionary(object value) => new DocumentObject(value, DocumentObjectType.Dictionary);
 
-        internal object GetFieldValue(IDocumentFieldInfo fieldInfo)
+        internal object? GetFieldValue(IDocumentFieldInfo? fieldInfo)
         {
             if (fieldInfo?.ConvertFrom(this) is (true, var result))
             {
@@ -191,9 +191,9 @@ namespace Plugin.CloudFirestore
                 DocumentObjectType.String when fieldType == typeof(char) => string.IsNullOrEmpty(String) ? default : Convert.ToChar(String),
                 DocumentObjectType.String => String,
                 DocumentObjectType.List when fieldType == null => List,
-                DocumentObjectType.List => fieldInfo.DocumentInfo.Create(_value),
+                DocumentObjectType.List => fieldInfo!.DocumentInfo.Create(_value),
                 DocumentObjectType.Dictionary when fieldType == null => Dictionary,
-                DocumentObjectType.Dictionary => fieldInfo.DocumentInfo.Create(_value),
+                DocumentObjectType.Dictionary => fieldInfo!.DocumentInfo.Create(_value),
                 DocumentObjectType.Timestapm when fieldType == typeof(DateTime) => Timestamp.ToDateTime(),
                 DocumentObjectType.Timestapm when fieldType == typeof(DateTimeOffset) => Timestamp.ToDateTimeOffset(),
                 DocumentObjectType.Timestapm => Timestamp,

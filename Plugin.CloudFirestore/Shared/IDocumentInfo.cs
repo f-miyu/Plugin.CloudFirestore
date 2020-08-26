@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
     {
         object ConvertToFieldObject(object target);
         object ConvertToFieldValue(object target);
-        object Create(object value, ServerTimestampBehavior? serverTimestampBehavior = null);
+        object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null);
         string GetMappingName(string name);
     }
 }

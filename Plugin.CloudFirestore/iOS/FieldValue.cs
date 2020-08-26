@@ -8,23 +8,16 @@ namespace Plugin.CloudFirestore
     {
         internal Firebase.CloudFirestore.FieldValue ToNative()
         {
-            switch (_fieldValueType)
+            return _fieldValueType switch
             {
-                case FieldValueType.Delete:
-                    return Firebase.CloudFirestore.FieldValue.Delete;
-                case FieldValueType.ServerTimestamp:
-                    return Firebase.CloudFirestore.FieldValue.ServerTimestamp;
-                case FieldValueType.ArrayUnion:
-                    return Firebase.CloudFirestore.FieldValue.FromArrayUnion(_elements?.Select(x => x.ToNativeFieldValue() as NSObject).ToArray());
-                case FieldValueType.ArrayRemove:
-                    return Firebase.CloudFirestore.FieldValue.FromArrayRemove(_elements?.Select(x => x.ToNativeFieldValue() as NSObject).ToArray());
-                case FieldValueType.IncrementLong:
-                    return Firebase.CloudFirestore.FieldValue.FromIntegerIncrement(_longValue);
-                case FieldValueType.IncrementDouble:
-                    return Firebase.CloudFirestore.FieldValue.FromDoubleIncrement(_doubleValue);
-                default:
-                    throw new InvalidOperationException();
-            }
+                FieldValueType.Delete => Firebase.CloudFirestore.FieldValue.Delete,
+                FieldValueType.ServerTimestamp => Firebase.CloudFirestore.FieldValue.ServerTimestamp,
+                FieldValueType.ArrayUnion => Firebase.CloudFirestore.FieldValue.FromArrayUnion(_elements?.Select(x => x.ToNativeFieldValue() as NSObject).ToArray()),
+                FieldValueType.ArrayRemove => Firebase.CloudFirestore.FieldValue.FromArrayRemove(_elements?.Select(x => x.ToNativeFieldValue() as NSObject).ToArray()),
+                FieldValueType.IncrementLong => Firebase.CloudFirestore.FieldValue.FromIntegerIncrement(_longValue),
+                FieldValueType.IncrementDouble => Firebase.CloudFirestore.FieldValue.FromDoubleIncrement(_doubleValue),
+                _ => throw new InvalidOperationException(),
+            };
         }
     }
 }

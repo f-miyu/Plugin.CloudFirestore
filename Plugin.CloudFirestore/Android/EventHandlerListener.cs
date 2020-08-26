@@ -1,12 +1,13 @@
 ﻿using System;
 using Firebase.Firestore;
 using Android.Runtime;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Plugin.CloudFirestore
 {
-    public delegate void EventHandler<T>(T value, FirebaseFirestoreException error);
+    internal delegate void EventHandler<T>([AllowNull] T value, FirebaseFirestoreException? error);
 
-    public class EventHandlerListener<T> : Java.Lang.Object, IEventListener where T : Java.Lang.Object
+    internal class EventHandlerListener<T> : Java.Lang.Object, IEventListener where T : Java.Lang.Object
     {
         private readonly EventHandler<T> _handler;
 

@@ -15,7 +15,7 @@ namespace Plugin.CloudFirestore
         }
 
         private FieldValueType _fieldValueType;
-        private object[] _elements;
+        private object[]? _elements;
         private long _longValue;
         private double _doubleValue;
 

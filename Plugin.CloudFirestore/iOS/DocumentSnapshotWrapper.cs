@@ -2,12 +2,13 @@
 using Firebase.CloudFirestore;
 using System.Collections.Generic;
 using Foundation;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Plugin.CloudFirestore
 {
     public class DocumentSnapshotWrapper : IDocumentSnapshot, IEquatable<DocumentSnapshotWrapper>
     {
-        public IDictionary<string, object> Data => Exists ? DocumentMapper.Map(_documentSnapshot) : null;
+        public IDictionary<string, object?>? Data => Exists ? DocumentMapper.Map(_documentSnapshot) : null;
 
         public string Id => _documentSnapshot.Id;
 
@@ -21,7 +22,7 @@ namespace Plugin.CloudFirestore
 
         public DocumentSnapshotWrapper(DocumentSnapshot documentSnapshot)
         {
-            _documentSnapshot = documentSnapshot;
+            _documentSnapshot = documentSnapshot ?? throw new ArgumentNullException(nameof(documentSnapshot));
         }
 
         public static explicit operator DocumentSnapshot(DocumentSnapshotWrapper wrapper)
@@ -29,47 +30,53 @@ namespace Plugin.CloudFirestore
             return wrapper._documentSnapshot;
         }
 
-        public IDictionary<string, object> GetData(ServerTimestampBehavior serverTimestampBehavior)
+        public IDictionary<string, object?>? GetData(ServerTimestampBehavior serverTimestampBehavior)
         {
             return Exists ? DocumentMapper.Map(_documentSnapshot, serverTimestampBehavior) : null;
         }
 
+        [return: MaybeNull]
         public T ToObject<T>()
         {
             return DocumentMapper.Map<T>(_documentSnapshot);
         }
 
+        [return: MaybeNull]
         public T ToObject<T>(ServerTimestampBehavior serverTimestampBehavior)
         {
             return DocumentMapper.Map<T>(_documentSnapshot, serverTimestampBehavior);
         }
 
+        [return: MaybeNull]
         public T Get<T>(string field)
         {
             return (T)_documentSnapshot.GetValue(new NSString(field)).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
+        [return: MaybeNull]
         public T Get<T>(string field, ServerTimestampBehavior serverTimestampBehavior)
         {
             return (T)_documentSnapshot.GetValue(new NSString(field), serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
+        [return: MaybeNull]
         public T Get<T>(FieldPath field)
         {
             return (T)_documentSnapshot.GetValue(field?.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
+        [return: MaybeNull]
         public T Get<T>(FieldPath field, ServerTimestampBehavior serverTimestampBehavior)
         {
             return (T)_documentSnapshot.GetValue(field?.ToNative(), serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as DocumentSnapshotWrapper);
         }
 
-        public bool Equals(DocumentSnapshotWrapper other)
+        public bool Equals(DocumentSnapshotWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

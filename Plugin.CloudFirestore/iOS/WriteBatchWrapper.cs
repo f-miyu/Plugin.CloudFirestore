@@ -11,7 +11,7 @@ namespace Plugin.CloudFirestore
 
         public WriteBatchWrapper(WriteBatch writeBatch)
         {
-            _writeBatch = writeBatch;
+            _writeBatch = writeBatch ?? throw new ArgumentNullException(nameof(writeBatch));
         }
 
         public void Commit(CompletionHandler handler)
@@ -47,10 +47,11 @@ namespace Plugin.CloudFirestore
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
-        public void Set<T>(IDocumentReference document, T documentData)
+        public IWriteBatch Set<T>(IDocumentReference document, T documentData)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
+            return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
@@ -59,10 +60,11 @@ namespace Plugin.CloudFirestore
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
         }
 
-        public void Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
+        public IWriteBatch Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
+            return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
@@ -71,10 +73,11 @@ namespace Plugin.CloudFirestore
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
         }
 
-        public void Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
+        public IWriteBatch Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
+            return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)
@@ -83,10 +86,11 @@ namespace Plugin.CloudFirestore
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
         }
 
-        public void Set<T>(IDocumentReference document, T documentData, bool merge)
+        public IWriteBatch Set<T>(IDocumentReference document, T documentData, bool merge)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
+            return this;
         }
 
         public void UpdateData(IDocumentReference document, object fields)
@@ -95,34 +99,37 @@ namespace Plugin.CloudFirestore
             _writeBatch.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
         }
 
-        public void Update<T>(IDocumentReference document, T fields)
+        public IWriteBatch Update<T>(IDocumentReference document, T fields)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
+            return this;
         }
 
-        public void UpdateData(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues)
+        public void UpdateData(IDocumentReference document, string field, object? value, params object?[] moreFieldsAndValues)
         {
             Update(document, field, value, moreFieldsAndValues);
         }
 
-        public void Update(IDocumentReference document, string field, object value, params object[] moreFieldsAndValues)
+        public IWriteBatch Update(IDocumentReference document, string field, object? value, params object?[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.UpdateData(fields, (DocumentReference)wrapper);
+            return this;
         }
 
-        public void UpdateData(IDocumentReference document, FieldPath field, object value, params object[] moreFieldsAndValues)
+        public void UpdateData(IDocumentReference document, FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
             Update(document, field, value, moreFieldsAndValues);
         }
 
-        public void Update(IDocumentReference document, FieldPath field, object value, params object[] moreFieldsAndValues)
+        public IWriteBatch Update(IDocumentReference document, FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.UpdateData(fields, (DocumentReference)wrapper);
+            return this;
         }
 
         public void DeleteDocument(IDocumentReference document)
@@ -130,18 +137,19 @@ namespace Plugin.CloudFirestore
             Delete(document);
         }
 
-        public void Delete(IDocumentReference document)
+        public IWriteBatch Delete(IDocumentReference document)
         {
             var wrapper = (DocumentReferenceWrapper)document;
             _writeBatch.DeleteDocument((DocumentReference)wrapper);
+            return this;
         }
 
-        public override bool Equals(object obj)
+        public override bool Equals(object? obj)
         {
             return Equals(obj as WriteBatchWrapper);
         }
 
-        public bool Equals(WriteBatchWrapper other)
+        public bool Equals(WriteBatchWrapper? other)
         {
             if (ReferenceEquals(other, null)) return false;
             if (ReferenceEquals(this, other)) return true;

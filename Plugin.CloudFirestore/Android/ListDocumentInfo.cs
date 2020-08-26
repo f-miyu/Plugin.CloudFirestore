@@ -8,7 +8,7 @@ namespace Plugin.CloudFirestore
     {
         private object PlatformConvertToFieldValue(object target)
         {
-            var ret = new JavaList<Java.Lang.Object>();
+            var ret = new JavaList<Java.Lang.Object?>();
 
             var adapter = GetListAdapter(target);
             foreach (var value in adapter)
@@ -19,7 +19,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformCreate(object value, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
@@ -48,10 +48,10 @@ namespace Plugin.CloudFirestore
             var ret = Create();
             var adapter = GetListAdapter(ret);
 
-            var iterator = list.Iterator();
+            var iterator = list.Iterator()!;
             while (iterator.HasNext)
             {
-                object value = iterator.Next();
+                object? value = iterator.Next();
                 adapter.Add(value.ToFieldValue(_documentFieldInfo));
             }
 

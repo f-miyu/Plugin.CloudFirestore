@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
     /// </summary>
     public static class CrossCloudFirestore
     {
-        static Lazy<ICloudFirestore> implementation = new Lazy<ICloudFirestore>(() => CreateCloudFirestore(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
+        static Lazy<ICloudFirestore?> implementation = new Lazy<ICloudFirestore?>(() => CreateCloudFirestore(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
 
         /// <summary>
         /// Gets if the plugin is supported on the current platform.
@@ -21,7 +21,7 @@ namespace Plugin.CloudFirestore
         {
             get
             {
-                ICloudFirestore ret = implementation.Value;
+                ICloudFirestore? ret = implementation.Value;
                 if (ret == null)
                 {
                     throw NotImplementedInReferenceAssembly();
@@ -30,7 +30,7 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        static ICloudFirestore CreateCloudFirestore()
+        static ICloudFirestore? CreateCloudFirestore()
         {
 #if NETSTANDARD
             return null;
