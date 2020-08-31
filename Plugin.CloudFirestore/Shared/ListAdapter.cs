@@ -13,69 +13,92 @@ namespace Plugin.CloudFirestore
 
     internal class ListAdapter<T> : IListAdapter
     {
-        private readonly IList<T>? _list;
-        private readonly IReadOnlyList<T>? _readonlyList;
+        private readonly ICollection<T>? _collection;
+        private readonly IEnumerable<T>? _enumerable;
 
-        public ListAdapter(IList<T> list)
+        public ListAdapter(ICollection<T> collection)
         {
-            _list = list ?? throw new ArgumentNullException(nameof(list));
+            _collection = collection ?? throw new ArgumentNullException(nameof(collection));
         }
 
-        public ListAdapter(IReadOnlyList<T> readonlyList)
+        public ListAdapter(IEnumerable<T> enumerable)
         {
-            _readonlyList = readonlyList ?? throw new ArgumentNullException(nameof(readonlyList));
+            _enumerable = enumerable ?? throw new ArgumentNullException(nameof(enumerable));
         }
 
         public void Add(object? item)
         {
-            if (_readonlyList != null)
+            if (_enumerable != null)
             {
                 throw new NotSupportedException();
             }
-            _list!.Add((T)item!);
+            _collection!.Add((T)item!);
         }
 
         public IEnumerator GetEnumerator()
         {
-            if (_readonlyList != null)
+            if (_enumerable != null)
             {
-                return _readonlyList.GetEnumerator();
+                return _enumerable.GetEnumerator();
             }
-            return _list!.GetEnumerator();
+            return _collection!.GetEnumerator();
         }
 
         public Array ToArray()
         {
-            if (_readonlyList != null)
+            if (_enumerable != null)
             {
-                return _readonlyList.ToArray();
+                return _enumerable.ToArray();
             }
-            return _list.ToArray();
+            return _collection.ToArray();
         }
     }
 
     internal class ListAdapter : IListAdapter
     {
-        private readonly IList _list;
+        private readonly IList? _list;
+        private readonly IEnumerable? _enumerable;
 
         public ListAdapter(IList list)
         {
             _list = list ?? throw new ArgumentNullException(nameof(list));
         }
 
+        public ListAdapter(IEnumerable enumerable)
+        {
+            _enumerable = enumerable ?? throw new ArgumentNullException(nameof(enumerable));
+        }
+
         public void Add(object? item)
         {
-            _list.Add(item);
+            if (_enumerable != null)
+            {
+                throw new NotSupportedException();
+            }
+            _list!.Add(item);
         }
 
         public IEnumerator GetEnumerator()
         {
-            return _list.GetEnumerator();
+            if (_enumerable != null)
+            {
+                return _enumerable.GetEnumerator();
+            }
+            return _list!.GetEnumerator();
         }
 
         public Array ToArray()
         {
-            var array = new object[_list.Count];
+            if (_enumerable != null)
+            {
+                var list = new List<object>();
+                foreach (var value in _enumerable)
+                {
+                    list.Add(value);
+                }
+                return list.ToArray();
+            }
+            var array = new object[_list!.Count];
             _list.CopyTo(array, 0);
             return array;
         }

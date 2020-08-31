@@ -9,7 +9,7 @@ namespace Plugin.CloudFirestore
 {
     internal partial class DictionaryDocumentInfo<T>
     {
-        private object PlatformConvertToFieldObject(object target)
+        public JavaDictionary<string, Java.Lang.Object?> ConvertToFieldObject(object target)
         {
             var ret = new JavaDictionary<string, Java.Lang.Object?>();
 
@@ -24,24 +24,24 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformConvertToFieldValue(object target)
+        public object ConvertToFieldValue(object target)
         {
-            return PlatformConvertToFieldObject(target);
+            return ConvertToFieldObject(target);
         }
 
-        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
-                DocumentSnapshot snapshot => PlatformCreate(snapshot, serverTimestampBehavior),
-                JavaDictionary dictionary => PlatformCreate(dictionary),
-                AbstractMap map => PlatformCreate(map),
+                DocumentSnapshot snapshot => Create(snapshot, serverTimestampBehavior),
+                JavaDictionary dictionary => Create(dictionary),
+                AbstractMap map => Create(map),
                 null => default,
                 _ => throw new ArgumentOutOfRangeException(nameof(value))
             };
         }
 
-        private object? PlatformCreate(DocumentSnapshot sanpshot, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? Create(DocumentSnapshot sanpshot, ServerTimestampBehavior? serverTimestampBehavior)
         {
             if (!sanpshot.Exists())
             {
@@ -82,7 +82,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformCreate(JavaDictionary dictionary)
+        private object Create(JavaDictionary dictionary)
         {
             var ret = Create();
             var adapter = GetDictionaryAdapter(ret);
@@ -105,7 +105,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformCreate(AbstractMap map)
+        private object Create(AbstractMap map)
         {
             var ret = Create();
             var adapter = GetDictionaryAdapter(ret);

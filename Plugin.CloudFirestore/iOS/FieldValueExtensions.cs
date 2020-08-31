@@ -91,7 +91,7 @@ namespace Plugin.CloudFirestore
             if (fieldValues is null)
                 return null;
 
-            return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
+            return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
         }
 
         public static Dictionary<object, object>? ToNativeFieldValues(this object? fieldValues)
@@ -99,10 +99,10 @@ namespace Plugin.CloudFirestore
             if (fieldValues is null)
                 return null;
 
-            return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues) as Dictionary<object, object>;
+            return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
         }
 
-        public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo? fieldInfo = null)
+        public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo fieldInfo)
         {
             return (fieldValue switch
             {
@@ -115,12 +115,12 @@ namespace Plugin.CloudFirestore
                 string @string => new DocumentObject(@string),
                 Firebase.CloudFirestore.Timestamp timestamp => new DocumentObject(new Timestamp(timestamp)),
                 NSDate date => new DocumentObject(new Timestamp(date)),
-                NSArray array => DocumentObject.CreateAsList(array),
-                NSDictionary dictionary => DocumentObject.CreateAsDictionary(dictionary),
+                NSArray array => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(array)),
+                NSDictionary dictionary => DocumentObject.CreateAsDictionary((fieldInfo) => fieldInfo.DocumentInfo.Create(dictionary)),
                 NSData data => new DocumentObject(data.ToArray()),
                 Firebase.CloudFirestore.GeoPoint geoPoint => new DocumentObject(new GeoPoint(geoPoint)),
                 Firebase.CloudFirestore.DocumentReference documentReference => new DocumentObject(new DocumentReferenceWrapper(documentReference)),
-                _ => throw new ArgumentOutOfRangeException($"{fieldValue.GetType().FullName} is not supported")
+                _ => throw new ArgumentOutOfRangeException(nameof(fieldValue), $"{fieldValue.GetType().FullName} is not supported")
             }).GetFieldValue(fieldInfo);
         }
     }

@@ -29,74 +29,27 @@ namespace Plugin.CloudFirestore
         private Func<object>? _creator;
         private IDictionaryAdapterFactory? _dictionaryAdapterFactory;
 
-        public DictionaryDocumentInfo()
+        public DictionaryDocumentInfo(Type implementingType)
         {
-            if (_type.TryGetImplementingGenericType(out var dictionaryType, typeof(IDictionary<,>)) ||
-                _type.TryGetImplementingGenericType(out dictionaryType, typeof(IReadOnlyDictionary<,>)))
+            if (implementingType.IsGenericType)
             {
-                var arguments = dictionaryType.GetGenericArguments();
+                var arguments = implementingType.GetGenericArguments();
                 _dictionaryKeyType = arguments[0];
                 _dictionaryValueType = arguments[1];
                 _documentFieldInfo = new DocumentFieldInfo(_dictionaryValueType);
-
-                if (_type == dictionaryType)
-                {
-                    _creatorType = CreatorType.SpecifiedTypeDictionary;
-                    _dictionaryAdapterFactoryType = DictionaryAdapterFactoryType.NonGeneric;
-                }
-                else
-                {
-                    _creatorType = CreatorType.SpecifiedType;
-                    _dictionaryAdapterFactoryType = DictionaryAdapterFactoryType.Generic;
-                }
+                _dictionaryAdapterFactoryType = DictionaryAdapterFactoryType.Generic;
+                _creatorType = _type.IsInterface
+                    ? CreatorType.SpecifiedTypeDictionary : CreatorType.SpecifiedType;
             }
-            else if (typeof(IDictionary).IsAssignableFrom(_type))
+            else
             {
                 _dictionaryKeyType = typeof(string);
                 _dictionaryValueType = typeof(object);
                 _documentFieldInfo = new DocumentFieldInfo(_dictionaryValueType);
-
-                if (_type == typeof(IDictionary))
-                {
-                    _creatorType = CreatorType.ObjectDictionary;
-                }
-                else
-                {
-                    _creatorType = CreatorType.SpecifiedType;
-                }
                 _dictionaryAdapterFactoryType = DictionaryAdapterFactoryType.NonGeneric;
+                _creatorType = _type.IsInterface
+                    ? CreatorType.ObjectDictionary : CreatorType.SpecifiedType;
             }
-            else
-            {
-                throw new InvalidOperationException();
-            }
-        }
-
-        public object ConvertToFieldObject(object target)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            return PlatformConvertToFieldObject(target);
-#endif
-        }
-
-        public object ConvertToFieldValue(object target)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            return PlatformConvertToFieldValue(target);
-#endif
-        }
-
-        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            return PlatformCreate(value, serverTimestampBehavior);
-#endif
         }
 
         public string GetMappingName(string name)

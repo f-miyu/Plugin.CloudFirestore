@@ -7,7 +7,7 @@ namespace Plugin.CloudFirestore
 {
     internal partial class DictionaryDocumentInfo<T>
     {
-        private object PlatformConvertToFieldObject(object target)
+        public Dictionary<object, object> ConvertToFieldObject(object target)
         {
             var ret = new Dictionary<object, object>();
 
@@ -22,7 +22,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformConvertToFieldValue(object target)
+        public object ConvertToFieldValue(object target)
         {
             var ret = new NSMutableDictionary();
 
@@ -37,18 +37,18 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
-                DocumentSnapshot snapshot => PlatformCreate(snapshot, serverTimestampBehavior),
-                NSDictionary dictionary => PlatformCreate(dictionary),
+                DocumentSnapshot snapshot => Create(snapshot, serverTimestampBehavior),
+                NSDictionary dictionary => Create(dictionary),
                 null => default,
                 _ => throw new ArgumentOutOfRangeException(nameof(value))
             };
         }
 
-        private object? PlatformCreate(DocumentSnapshot snapshot, ServerTimestampBehavior? serverTimestampBehavior)
+        private object? Create(DocumentSnapshot snapshot, ServerTimestampBehavior? serverTimestampBehavior)
         {
             if (!snapshot.Exists)
             {
@@ -88,7 +88,7 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object PlatformCreate(NSDictionary dictionary)
+        private object Create(NSDictionary dictionary)
         {
             var ret = Create();
             var adapter = GetDictionaryAdapter(ret);

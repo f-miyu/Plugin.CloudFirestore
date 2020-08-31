@@ -15,8 +15,8 @@ namespace Plugin.CloudFirestore
         {
             return target switch
             {
-                IList<T> list => new ListAdapter<T>(list),
-                IReadOnlyList<T> list => new ListAdapter<T>(list),
+                ICollection<T> collection => new ListAdapter<T>(collection),
+                IEnumerable<T> enumerable => new ListAdapter<T>(enumerable),
                 _ => throw new ArgumentOutOfRangeException(nameof(target))
             };
         }
@@ -29,6 +29,7 @@ namespace Plugin.CloudFirestore
             return target switch
             {
                 IList list => new ListAdapter(list),
+                IEnumerable enumerable => new ListAdapter(enumerable),
                 _ => throw new ArgumentOutOfRangeException(nameof(target))
             };
         }

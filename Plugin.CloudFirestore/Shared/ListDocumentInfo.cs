@@ -28,72 +28,24 @@ namespace Plugin.CloudFirestore
         private IListAdapterFactory? _listAdapterFactory;
         private Func<object>? _creator;
 
-        public ListDocumentInfo()
+        public ListDocumentInfo(Type implementingType)
         {
-            if (_type.TryGetImplementingGenericType(out var listType, typeof(IList<>)) ||
-                _type.TryGetImplementingGenericType(out listType, typeof(IReadOnlyList<>)))
+            if (implementingType.IsGenericType)
             {
-                _listValueType = listType.GetGenericArguments()[0];
+                _listValueType = implementingType.GetGenericArguments()[0];
                 _documentFieldInfo = new DocumentFieldInfo(_listValueType);
-
-                if (_type == listType)
-                {
-                    _creatorType = CreatorType.SpecifiedTypeList;
-                    _listAdapterFactoryType = ListAdapterFactoryType.NonGeneric;
-                }
-                else if (_type.IsArray)
-                {
-                    _creatorType = CreatorType.SpecifiedTypeList;
-                    _listAdapterFactoryType = ListAdapterFactoryType.Generic;
-                }
-                else
-                {
-                    _creatorType = CreatorType.SpecifiedType;
-                    _listAdapterFactoryType = ListAdapterFactoryType.Generic;
-                }
-            }
-            else if (typeof(IList).IsAssignableFrom(_type))
-            {
-                _listValueType = typeof(object);
-                _documentFieldInfo = new DocumentFieldInfo(_listValueType);
-
-                if (_type == typeof(IList) || _type.IsArray)
-                {
-                    _creatorType = CreatorType.ObjectList;
-                }
-                else
-                {
-                    _creatorType = CreatorType.SpecifiedType;
-                }
-                _listAdapterFactoryType = ListAdapterFactoryType.NonGeneric;
+                _listAdapterFactoryType = ListAdapterFactoryType.Generic;
+                _creatorType = _type.IsInterface || _type.IsArray
+                    ? CreatorType.SpecifiedTypeList : CreatorType.SpecifiedType;
             }
             else
             {
-                throw new InvalidOperationException();
+                _listValueType = typeof(object);
+                _documentFieldInfo = new DocumentFieldInfo(_listValueType);
+                _listAdapterFactoryType = ListAdapterFactoryType.NonGeneric;
+                _creatorType = _type.IsInterface || _type.IsArray
+                    ? CreatorType.ObjectList : CreatorType.SpecifiedType;
             }
-        }
-
-        public object ConvertToFieldObject(object target)
-        {
-            throw new NotSupportedException();
-        }
-
-        public object ConvertToFieldValue(object target)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            return PlatformConvertToFieldValue(target);
-#endif
-        }
-
-        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            return PlatformCreate(value, serverTimestampBehavior);
-#endif
         }
 
         public string GetMappingName(string name)

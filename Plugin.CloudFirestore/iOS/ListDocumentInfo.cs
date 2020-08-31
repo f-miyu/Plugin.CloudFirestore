@@ -1,11 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using Foundation;
 
 namespace Plugin.CloudFirestore
 {
     internal partial class ListDocumentInfo<T>
     {
-        private object PlatformConvertToFieldValue(object target)
+        public Dictionary<object, object> ConvertToFieldObject(object target)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object ConvertToFieldValue(object target)
         {
             var ret = new NSMutableArray();
 
@@ -18,17 +24,17 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
-                NSArray array => PlatformCreate(array),
+                NSArray array => Create(array),
                 null => default,
                 _ => throw new ArgumentOutOfRangeException(nameof(value))
             };
         }
 
-        private object PlatformCreate(NSArray array)
+        private object Create(NSArray array)
         {
             var ret = Create();
             var adapter = GetListAdapter(ret);

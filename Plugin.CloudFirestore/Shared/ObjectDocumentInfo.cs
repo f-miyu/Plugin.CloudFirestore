@@ -25,12 +25,12 @@ namespace Plugin.CloudFirestore
                     .Concat(_type.GetFields(BindingFlags.Public | BindingFlags.Instance))
                     .Select(x => new MemberDocumentFieldInfo(x))
                     .Where(x => !x.IsIgnored)
-                    .ToDictionary(x => x.Name));
+                    .ToDictionary(x => x.Name), System.Threading.LazyThreadSafetyMode.PublicationOnly);
 
             _mappingNames = new Lazy<IReadOnlyDictionary<string, string>>(() =>
                 DocumentFieldInfos.Values
                     .Where(x => x.OriginalName != x.Name)
-                    .ToDictionary(x => x.OriginalName, x => x.Name));
+                    .ToDictionary(x => x.OriginalName, x => x.Name), System.Threading.LazyThreadSafetyMode.PublicationOnly);
         }
 
         public string GetMappingName(string name)
@@ -40,43 +40,6 @@ namespace Plugin.CloudFirestore
                 return mappingNames;
             }
             return name;
-        }
-
-        public object ConvertToFieldObject(object target)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            var targetType = target.GetType();
-            if (targetType != null && _type != targetType)
-            {
-                return ObjectProvider.GetDocumentInfo(targetType).ConvertToFieldObject(target);
-            }
-            return PlatformConvertToFieldObject(target);
-#endif
-        }
-
-        public object ConvertToFieldValue(object target)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            var targetType = target.GetType();
-            if (targetType != null && _type != targetType)
-            {
-                return ObjectProvider.GetDocumentInfo(targetType).ConvertToFieldValue(target);
-            }
-            return PlatformConvertToFieldValue(target);
-#endif
-        }
-
-        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior = null)
-        {
-#if NETSTANDARD
-            throw new NotImplementedException();
-#else
-            return PlatformCreate(value, serverTimestampBehavior);
-#endif
         }
 
         private object Create()

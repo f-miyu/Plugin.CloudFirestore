@@ -6,7 +6,12 @@ namespace Plugin.CloudFirestore
 {
     internal partial class ListDocumentInfo<T>
     {
-        private object PlatformConvertToFieldValue(object target)
+        public JavaDictionary<string, Java.Lang.Object?> ConvertToFieldObject(object target)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object ConvertToFieldValue(object target)
         {
             var ret = new JavaList<Java.Lang.Object?>();
 
@@ -19,18 +24,18 @@ namespace Plugin.CloudFirestore
             return ret;
         }
 
-        private object? PlatformCreate(object? value, ServerTimestampBehavior? serverTimestampBehavior)
+        public object? Create(object? value, ServerTimestampBehavior? serverTimestampBehavior)
         {
             return value switch
             {
-                JavaList list => PlatformCreate(list),
-                AbstractList list => PlatformCreate(list),
+                JavaList list => Create(list),
+                AbstractList list => Create(list),
                 null => default,
                 _ => throw new ArgumentOutOfRangeException(nameof(value))
             };
         }
 
-        private object PlatformCreate(JavaList list)
+        private object Create(JavaList list)
         {
             var ret = Create();
             var adapter = GetListAdapter(ret);
@@ -43,7 +48,7 @@ namespace Plugin.CloudFirestore
             return _type.IsArray ? adapter.ToArray() : ret;
         }
 
-        private object PlatformCreate(AbstractList list)
+        private object Create(AbstractList list)
         {
             var ret = Create();
             var adapter = GetListAdapter(ret);

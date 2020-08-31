@@ -86,23 +86,23 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public static JavaDictionary<string, Java.Lang.Object>? ToNativeFieldValues<T>(this T fieldValues)
+        public static JavaDictionary<string, Java.Lang.Object?>? ToNativeFieldValues<T>(this T fieldValues)
         {
             if (fieldValues is null)
                 return null;
 
-            return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
+            return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
         }
 
-        public static JavaDictionary<string, Java.Lang.Object>? ToNativeFieldValues(this object? fieldValues)
+        public static JavaDictionary<string, Java.Lang.Object?>? ToNativeFieldValues(this object? fieldValues)
         {
             if (fieldValues is null)
                 return null;
 
-            return (JavaDictionary<string, Java.Lang.Object>)ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
+            return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
         }
 
-        public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo? fieldInfo = null)
+        public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo fieldInfo)
         {
             return (fieldValue switch
             {
@@ -117,14 +117,14 @@ namespace Plugin.CloudFirestore
                 string @string => new DocumentObject(@string),
                 Firebase.Timestamp timestamp => new DocumentObject(new Timestamp(timestamp)),
                 Java.Util.Date date => new DocumentObject(new Timestamp(date)),
-                JavaList javaList => DocumentObject.CreateAsList(javaList),
-                Java.Util.AbstractList javaList => DocumentObject.CreateAsList(javaList),
-                JavaDictionary dictionary => DocumentObject.CreateAsDictionary(dictionary),
-                Java.Util.AbstractMap map => DocumentObject.CreateAsDictionary(map),
+                JavaList javaList => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(javaList)),
+                Java.Util.AbstractList javaList => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(javaList)),
+                JavaDictionary dictionary => DocumentObject.CreateAsDictionary((fieldInfo) => fieldInfo.DocumentInfo.Create(dictionary)),
+                Java.Util.AbstractMap map => DocumentObject.CreateAsDictionary((fieldInfo) => fieldInfo.DocumentInfo.Create(map)),
                 Firebase.Firestore.Blob blob => new DocumentObject(blob.ToBytes()),
                 Firebase.Firestore.GeoPoint geoPoint => new DocumentObject(new GeoPoint(geoPoint)),
                 Firebase.Firestore.DocumentReference documentReference => new DocumentObject(new DocumentReferenceWrapper(documentReference)),
-                _ => throw new ArgumentOutOfRangeException($"{fieldValue.GetType().FullName} is not supported")
+                _ => throw new ArgumentOutOfRangeException(nameof(fieldValue), $"{fieldValue.GetType().FullName} is not supported")
             }).GetFieldValue(fieldInfo);
         }
     }
