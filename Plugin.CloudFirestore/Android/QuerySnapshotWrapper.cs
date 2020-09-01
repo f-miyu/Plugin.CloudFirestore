@@ -7,6 +7,13 @@ namespace Plugin.CloudFirestore
 {
     public class QuerySnapshotWrapper : IQuerySnapshot, IEquatable<QuerySnapshotWrapper>
     {
+        private readonly QuerySnapshot _querySnapshot;
+
+        public QuerySnapshotWrapper(QuerySnapshot querySnapshot)
+        {
+            _querySnapshot = querySnapshot ?? throw new ArgumentNullException(nameof(querySnapshot));
+        }
+
         public int Count => _querySnapshot.Size();
 
         public IEnumerable<IDocumentChange> DocumentChanges => _querySnapshot.DocumentChanges.Select(d => new DocumentChangeWrapper(d));
@@ -18,13 +25,6 @@ namespace Plugin.CloudFirestore
         public ISnapshotMetadata Metadata => new SnapshotMetadataWrapper(_querySnapshot.Metadata);
 
         public IQuery Query => new QueryWrapper(_querySnapshot.Query);
-
-        private readonly QuerySnapshot _querySnapshot;
-
-        public QuerySnapshotWrapper(QuerySnapshot querySnapshot)
-        {
-            _querySnapshot = querySnapshot ?? throw new ArgumentNullException(nameof(querySnapshot));
-        }
 
         public IEnumerable<T> ToObjects<T>()
         {

@@ -10,14 +10,6 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentReferenceWrapper : IDocumentReference, IEquatable<DocumentReferenceWrapper>
     {
-        public string Id => _documentReference.Id;
-
-        public string Path => _documentReference.Path;
-
-        public ICollectionReference Parent => new CollectionReferenceWrapper(_documentReference.Parent);
-
-        public IFirestore Firestore => FirestoreProvider.GetFirestore(_documentReference.Firestore);
-
         private readonly DocumentReference _documentReference;
 
         public DocumentReferenceWrapper(DocumentReference documentReference)
@@ -25,10 +17,13 @@ namespace Plugin.CloudFirestore
             _documentReference = documentReference ?? throw new ArgumentNullException(nameof(documentReference));
         }
 
-        public static explicit operator DocumentReference(DocumentReferenceWrapper wrapper)
-        {
-            return wrapper._documentReference;
-        }
+        public string Id => _documentReference.Id;
+
+        public string Path => _documentReference.Path;
+
+        public ICollectionReference Parent => new CollectionReferenceWrapper(_documentReference.Parent);
+
+        public IFirestore Firestore => FirestoreProvider.GetFirestore(_documentReference.Firestore);
 
         public ICollectionReference GetCollection(string collectionPath)
         {
@@ -496,6 +491,11 @@ namespace Plugin.CloudFirestore
         public override int GetHashCode()
         {
             return _documentReference?.GetHashCode() ?? 0;
+        }
+
+        DocumentReference IDocumentReference.ToNative()
+        {
+            return _documentReference;
         }
     }
 }

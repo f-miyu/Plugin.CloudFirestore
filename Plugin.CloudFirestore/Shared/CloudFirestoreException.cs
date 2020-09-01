@@ -3,8 +3,6 @@ namespace Plugin.CloudFirestore
 {
     public class CloudFirestoreException : Exception
     {
-        public ErrorType ErrorType { get; }
-
         public CloudFirestoreException(string message, ErrorType errorType) : base(message)
         {
             ErrorType = errorType;
@@ -14,5 +12,7 @@ namespace Plugin.CloudFirestore
         {
             ErrorType = errorType;
         }
+
+        public ErrorType ErrorType { get; }
     }
 }

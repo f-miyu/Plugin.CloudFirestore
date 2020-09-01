@@ -7,65 +7,7 @@ namespace Plugin.CloudFirestore
 {
     public sealed partial class DocumentObject
     {
-        public DocumentObjectType Type { get; }
-
-        private readonly bool _boolean;
-        public bool Boolean => Type == DocumentObjectType.Boolean
-            ? _boolean : throw new InvalidOperationException("Type is not Boolean.");
-
-        private readonly long _int64;
-        public long Int64 => Type == DocumentObjectType.Int64
-            ? _int64 : throw new InvalidOperationException("Type is not Int64.");
-
-        private readonly double _double;
-        public double Double => Type == DocumentObjectType.Double
-            ? _double : throw new InvalidOperationException("Type is not Double.");
-
-        private readonly string? _string;
-        public string String => Type == DocumentObjectType.String
-            ? _string! : throw new InvalidOperationException("Type is not String.");
-
-        private Lazy<IList<DocumentObject>>? _list;
-        public IList<DocumentObject> List => Type == DocumentObjectType.List
-            ? _list!.Value : throw new InvalidOperationException("Type is not List.");
-
-        private Lazy<IDictionary<string, DocumentObject>>? _dictionary;
-        public IDictionary<string, DocumentObject> Dictionary => Type == DocumentObjectType.Dictionary
-            ? _dictionary!.Value : throw new InvalidOperationException("Type is not Dictionary.");
-
-        private readonly Timestamp _timestamp;
-        public Timestamp Timestamp => Type == DocumentObjectType.Timestapm
-            ? _timestamp : throw new InvalidOperationException("Type is not Timestapm.");
-
-        private readonly byte[]? _bytes;
-        public byte[] Bytes => Type == DocumentObjectType.Bytes
-            ? _bytes! : throw new InvalidOperationException("Type is not Bytes.");
-
-        private readonly GeoPoint _geoPoint;
-        public GeoPoint GeoPoint => Type == DocumentObjectType.GeoPoint
-            ? _geoPoint : throw new InvalidOperationException("Type is not GeoPoint.");
-
-        private readonly IDocumentReference? _documentReference;
-        public IDocumentReference DocumentReference => Type == DocumentObjectType.DocumentReference
-            ? _documentReference! : throw new InvalidOperationException("Type is not DocumentReference.");
-
         private readonly Func<IDocumentFieldInfo, object?>? _creator;
-
-        public object? Value => Type switch
-        {
-            DocumentObjectType.Null => null,
-            DocumentObjectType.Boolean => Boolean,
-            DocumentObjectType.Int64 => Int64,
-            DocumentObjectType.Double => Double,
-            DocumentObjectType.String => String,
-            DocumentObjectType.List => List,
-            DocumentObjectType.Dictionary => Dictionary,
-            DocumentObjectType.Timestapm => Timestamp,
-            DocumentObjectType.Bytes => Bytes,
-            DocumentObjectType.GeoPoint => GeoPoint,
-            DocumentObjectType.DocumentReference => DocumentReference,
-            _ => throw new InvalidOperationException()
-        };
 
         public DocumentObject()
         {
@@ -131,6 +73,64 @@ namespace Plugin.CloudFirestore
             _documentReference = value;
             Type = DocumentObjectType.DocumentReference;
         }
+
+        public DocumentObjectType Type { get; }
+
+        private readonly bool _boolean;
+        public bool Boolean => Type == DocumentObjectType.Boolean
+            ? _boolean : throw new InvalidOperationException("Type is not Boolean.");
+
+        private readonly long _int64;
+        public long Int64 => Type == DocumentObjectType.Int64
+            ? _int64 : throw new InvalidOperationException("Type is not Int64.");
+
+        private readonly double _double;
+        public double Double => Type == DocumentObjectType.Double
+            ? _double : throw new InvalidOperationException("Type is not Double.");
+
+        private readonly string? _string;
+        public string String => Type == DocumentObjectType.String
+            ? _string! : throw new InvalidOperationException("Type is not String.");
+
+        private Lazy<IList<DocumentObject>>? _list;
+        public IList<DocumentObject> List => Type == DocumentObjectType.List
+            ? _list!.Value : throw new InvalidOperationException("Type is not List.");
+
+        private Lazy<IDictionary<string, DocumentObject>>? _dictionary;
+        public IDictionary<string, DocumentObject> Dictionary => Type == DocumentObjectType.Dictionary
+            ? _dictionary!.Value : throw new InvalidOperationException("Type is not Dictionary.");
+
+        private readonly Timestamp _timestamp;
+        public Timestamp Timestamp => Type == DocumentObjectType.Timestapm
+            ? _timestamp : throw new InvalidOperationException("Type is not Timestapm.");
+
+        private readonly byte[]? _bytes;
+        public byte[] Bytes => Type == DocumentObjectType.Bytes
+            ? _bytes! : throw new InvalidOperationException("Type is not Bytes.");
+
+        private readonly GeoPoint _geoPoint;
+        public GeoPoint GeoPoint => Type == DocumentObjectType.GeoPoint
+            ? _geoPoint : throw new InvalidOperationException("Type is not GeoPoint.");
+
+        private readonly IDocumentReference? _documentReference;
+        public IDocumentReference DocumentReference => Type == DocumentObjectType.DocumentReference
+            ? _documentReference! : throw new InvalidOperationException("Type is not DocumentReference.");
+
+        public object? Value => Type switch
+        {
+            DocumentObjectType.Null => null,
+            DocumentObjectType.Boolean => Boolean,
+            DocumentObjectType.Int64 => Int64,
+            DocumentObjectType.Double => Double,
+            DocumentObjectType.String => String,
+            DocumentObjectType.List => List,
+            DocumentObjectType.Dictionary => Dictionary,
+            DocumentObjectType.Timestapm => Timestamp,
+            DocumentObjectType.Bytes => Bytes,
+            DocumentObjectType.GeoPoint => GeoPoint,
+            DocumentObjectType.DocumentReference => DocumentReference,
+            _ => throw new InvalidOperationException()
+        };
 
         internal static DocumentObject CreateAsList(Func<IDocumentFieldInfo, object?> creator)
         {

@@ -44,40 +44,34 @@ namespace Plugin.CloudFirestore
 
         public void SetData(IDocumentReference document, object documentData)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues());
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues());
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues());
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues(), SetOptions.MergeFields(mergeFields));
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative()))));
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative()))));
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative()))));
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues(), SetOptions.MergeFieldPaths(new JavaList<Firebase.Firestore.FieldPath>(mergeFields.Select(x => x.ToNative()))));
             return this;
         }
 
@@ -89,8 +83,7 @@ namespace Plugin.CloudFirestore
                 return;
             }
 
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.Merge());
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues(), SetOptions.Merge());
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, bool merge)
@@ -100,21 +93,18 @@ namespace Plugin.CloudFirestore
                 return Set(document, documentData);
             }
 
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Set((DocumentReference)wrapper, documentData.ToNativeFieldValues(), SetOptions.Merge());
+            _writeBatch.Set(document.ToNative(), documentData.ToNativeFieldValues(), SetOptions.Merge());
             return this;
         }
 
         public void UpdateData(IDocumentReference document, object fields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Update((DocumentReference)wrapper, fields.ToNativeFieldValues());
+            _writeBatch.Update(document.ToNative(), fields.ToNativeFieldValues());
         }
 
         public IWriteBatch Update<T>(IDocumentReference document, T fields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Update((DocumentReference)wrapper, fields.ToNativeFieldValues());
+            _writeBatch.Update(document.ToNative(), fields.ToNativeFieldValues());
             return this;
         }
 
@@ -125,8 +115,7 @@ namespace Plugin.CloudFirestore
 
         public IWriteBatch Update(IDocumentReference document, string field, object? value, params object?[] moreFieldsAndValues)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Update((DocumentReference)wrapper, field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            _writeBatch.Update(document.ToNative(), field, value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return this;
         }
 
@@ -137,8 +126,7 @@ namespace Plugin.CloudFirestore
 
         public IWriteBatch Update(IDocumentReference document, FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Update((DocumentReference)wrapper, field?.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
+            _writeBatch.Update(document.ToNative(), field?.ToNative(), value.ToNativeFieldValue(), moreFieldsAndValues.Select(x => x.ToNativeFieldValue()).ToArray());
             return this;
         }
 
@@ -149,8 +137,7 @@ namespace Plugin.CloudFirestore
 
         public IWriteBatch Delete(IDocumentReference document)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.Delete((DocumentReference)wrapper);
+            _writeBatch.Delete(document.ToNative());
             return this;
         }
 

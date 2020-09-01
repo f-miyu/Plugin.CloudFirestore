@@ -5,6 +5,13 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentChangeWrapper : IDocumentChange, IEquatable<DocumentChangeWrapper>
     {
+        private readonly DocumentChange _documentChange;
+
+        public DocumentChangeWrapper(DocumentChange documentChange)
+        {
+            _documentChange = documentChange ?? throw new ArgumentNullException(nameof(documentChange));
+        }
+
         public IDocumentSnapshot Document => new DocumentSnapshotWrapper(_documentChange.Document);
 
         public int NewIndex => _documentChange.NewIndex;
@@ -31,13 +38,6 @@ namespace Plugin.CloudFirestore
 
                 throw new InvalidOperationException();
             }
-        }
-
-        private readonly DocumentChange _documentChange;
-
-        public DocumentChangeWrapper(DocumentChange documentChange)
-        {
-            _documentChange = documentChange ?? throw new ArgumentNullException(nameof(documentChange));
         }
 
         public override bool Equals(object? obj)

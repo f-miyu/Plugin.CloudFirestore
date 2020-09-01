@@ -43,66 +43,56 @@ namespace Plugin.CloudFirestore
 
         public void SetData(IDocumentReference document, object documentData)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative());
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields);
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields);
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative(), merge);
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, bool merge)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
+            _writeBatch.SetData(documentData.ToNativeFieldValues(), document.ToNative(), merge);
             return this;
         }
 
         public void UpdateData(IDocumentReference document, object fields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _writeBatch.UpdateData(fields.ToNativeFieldValues(), document.ToNative());
         }
 
         public IWriteBatch Update<T>(IDocumentReference document, T fields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _writeBatch.UpdateData(fields.ToNativeFieldValues(), document.ToNative());
             return this;
         }
 
@@ -114,8 +104,7 @@ namespace Plugin.CloudFirestore
         public IWriteBatch Update(IDocumentReference document, string field, object? value, params object?[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.UpdateData(fields, (DocumentReference)wrapper);
+            _writeBatch.UpdateData(fields, document.ToNative());
             return this;
         }
 
@@ -127,8 +116,7 @@ namespace Plugin.CloudFirestore
         public IWriteBatch Update(IDocumentReference document, FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.UpdateData(fields, (DocumentReference)wrapper);
+            _writeBatch.UpdateData(fields, document.ToNative());
             return this;
         }
 
@@ -139,8 +127,7 @@ namespace Plugin.CloudFirestore
 
         public IWriteBatch Delete(IDocumentReference document)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _writeBatch.DeleteDocument((DocumentReference)wrapper);
+            _writeBatch.DeleteDocument(document.ToNative());
             return this;
         }
 

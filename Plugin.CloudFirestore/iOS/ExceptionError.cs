@@ -4,11 +4,11 @@ namespace Plugin.CloudFirestore
 {
     internal class ExceptionError : NSError
     {
-        public Exception Exception { get; }
-
         public ExceptionError(Exception exception)
         {
             Exception = exception;
         }
+
+        public Exception Exception { get; }
     }
 }

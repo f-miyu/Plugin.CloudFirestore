@@ -3,9 +3,6 @@ namespace Plugin.CloudFirestore
 {
     public readonly partial struct Timestamp : IEquatable<Timestamp>, IComparable<Timestamp>
     {
-        public long Seconds { get; }
-        public int Nanoseconds { get; }
-
         public Timestamp(long seconds, int nanoseconds)
         {
             Seconds = seconds;
@@ -26,6 +23,9 @@ namespace Plugin.CloudFirestore
             Nanoseconds = (int)(ms % 1000 * 1000000);
         }
 
+        public long Seconds { get; }
+        public int Nanoseconds { get; }
+
         public DateTime ToDateTime()
         {
             return new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero).AddMilliseconds(Seconds * 1000 + Nanoseconds / 1000000.0).UtcDateTime;
@@ -38,7 +38,7 @@ namespace Plugin.CloudFirestore
 
         public override bool Equals(object obj)
         {
-            return obj is Timestamp timestamp ? Equals(timestamp) : false;
+            return obj is Timestamp timestamp && Equals(timestamp);
         }
 
         public bool Equals(Timestamp other)

@@ -4,12 +4,12 @@ namespace Plugin.CloudFirestore.Converters
 {
     public abstract class DocumentConverter
     {
-        public Type TargetType { get; }
-
         public DocumentConverter(Type targetType)
         {
             TargetType = targetType ?? throw new ArgumentNullException(nameof(targetType));
         }
+
+        public Type TargetType { get; }
 
         public abstract bool ConvertTo(object? value, out object? result);
         public abstract bool ConvertFrom(DocumentObject value, out object? result);

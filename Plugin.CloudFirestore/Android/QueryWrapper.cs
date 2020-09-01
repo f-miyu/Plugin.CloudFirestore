@@ -11,14 +11,14 @@ namespace Plugin.CloudFirestore
 {
     public class QueryWrapper : IQuery, IEquatable<QueryWrapper>
     {
-        public IFirestore Firestore => FirestoreProvider.GetFirestore(_query.Firestore);
-
         private readonly Query _query;
 
         public QueryWrapper(Query query)
         {
             _query = query ?? throw new ArgumentNullException(nameof(query));
         }
+
+        public IFirestore Firestore => FirestoreProvider.GetFirestore(_query.Firestore);
 
         public IQuery LimitTo(long limit)
         {
@@ -158,8 +158,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery StartAt(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.StartAt((DocumentSnapshot)wrapper);
+            var query = _query.StartAt(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -171,8 +170,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery StartAfter(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.StartAfter((DocumentSnapshot)wrapper);
+            var query = _query.StartAfter(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -184,8 +182,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery EndAt(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.EndAt((DocumentSnapshot)wrapper);
+            var query = _query.EndAt(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -197,8 +194,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery EndBefore(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.EndBefore((DocumentSnapshot)wrapper);
+            var query = _query.EndBefore(document.ToNative());
             return new QueryWrapper(query);
         }
 

@@ -10,12 +10,6 @@ namespace Plugin.CloudFirestore
         private readonly Type _type = typeof(T);
         private Func<object>? _creator;
 
-        private readonly Lazy<IReadOnlyDictionary<string, MemberDocumentFieldInfo>> _documentFieldInfos;
-        private IReadOnlyDictionary<string, MemberDocumentFieldInfo> DocumentFieldInfos => _documentFieldInfos.Value;
-
-        private readonly Lazy<IReadOnlyDictionary<string, string>> _mappingNames;
-        private IReadOnlyDictionary<string, string> MappingNames => _mappingNames.Value;
-
         public ObjectDocumentInfo()
         {
             _documentFieldInfos = new Lazy<IReadOnlyDictionary<string, MemberDocumentFieldInfo>>(() =>
@@ -32,6 +26,12 @@ namespace Plugin.CloudFirestore
                     .Where(x => x.OriginalName != x.Name)
                     .ToDictionary(x => x.OriginalName, x => x.Name), System.Threading.LazyThreadSafetyMode.PublicationOnly);
         }
+
+        private readonly Lazy<IReadOnlyDictionary<string, MemberDocumentFieldInfo>> _documentFieldInfos;
+        private IReadOnlyDictionary<string, MemberDocumentFieldInfo> DocumentFieldInfos => _documentFieldInfos.Value;
+
+        private readonly Lazy<IReadOnlyDictionary<string, string>> _mappingNames;
+        private IReadOnlyDictionary<string, string> MappingNames => _mappingNames.Value;
 
         public string GetMappingName(string name)
         {

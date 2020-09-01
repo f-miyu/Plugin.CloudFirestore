@@ -9,6 +9,11 @@ namespace Plugin.CloudFirestore
         private string[] _fieldNames;
         private bool _isDocumentId;
 
+        public FieldPath(params string[] fieldNames)
+        {
+            _fieldNames = fieldNames;
+        }
+
         public static FieldPath DocumentId
         {
             get
@@ -17,11 +22,6 @@ namespace Plugin.CloudFirestore
                 fieldPath._isDocumentId = true;
                 return fieldPath;
             }
-        }
-
-        public FieldPath(params string[] fieldNames)
-        {
-            _fieldNames = fieldNames;
         }
 
         public static FieldPath CreateFrom<T, TMember>(Expression<Func<T, TMember>> expression)

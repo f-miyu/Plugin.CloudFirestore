@@ -9,6 +9,13 @@ namespace Plugin.CloudFirestore
 {
     public class FirestoreWrapper : IFirestore, IEquatable<FirestoreWrapper>
     {
+        private readonly FirebaseFirestore _firestore;
+
+        public FirestoreWrapper(FirebaseFirestore firestore)
+        {
+            _firestore = firestore ?? throw new ArgumentNullException(nameof(firestore));
+        }
+
         public IFirestoreSettings FirestoreSettings
         {
             get => new FirestoreSettings(_firestore.FirestoreSettings);
@@ -19,13 +26,6 @@ namespace Plugin.CloudFirestore
                 .SetSslEnabled(value.IsSslEnabled)
                 .SetCacheSizeBytes(value.CacheSizeBytes)
                 .Build();
-        }
-
-        private readonly FirebaseFirestore _firestore;
-
-        public FirestoreWrapper(FirebaseFirestore firestore)
-        {
-            _firestore = firestore ?? throw new ArgumentNullException(nameof(firestore));
         }
 
         public ICollectionReference GetCollection(string collectionPath)

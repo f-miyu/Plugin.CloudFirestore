@@ -4,9 +4,6 @@ namespace Plugin.CloudFirestore.Attributes
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     public sealed class DocumentConverterAttribute : Attribute
     {
-        public Type ConverterType { get; }
-        public object?[]? ConverterParameters { get; }
-
         public DocumentConverterAttribute(Type converterType)
         {
             ConverterType = converterType ?? throw new ArgumentNullException(nameof(converterType));
@@ -16,5 +13,8 @@ namespace Plugin.CloudFirestore.Attributes
         {
             ConverterParameters = converterParameters;
         }
+
+        public Type ConverterType { get; }
+        public object?[]? ConverterParameters { get; }
     }
 }

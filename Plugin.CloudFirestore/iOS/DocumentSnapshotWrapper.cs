@@ -8,6 +8,13 @@ namespace Plugin.CloudFirestore
 {
     public class DocumentSnapshotWrapper : IDocumentSnapshot, IEquatable<DocumentSnapshotWrapper>
     {
+        private readonly DocumentSnapshot _documentSnapshot;
+
+        public DocumentSnapshotWrapper(DocumentSnapshot documentSnapshot)
+        {
+            _documentSnapshot = documentSnapshot ?? throw new ArgumentNullException(nameof(documentSnapshot));
+        }
+
         public IDictionary<string, object?>? Data => Exists ? DocumentMapper.Map(_documentSnapshot) : null;
 
         public string Id => _documentSnapshot.Id;
@@ -17,18 +24,6 @@ namespace Plugin.CloudFirestore
         public ISnapshotMetadata Metadata => new SnapshotMetadataWrapper(_documentSnapshot.Metadata);
 
         public IDocumentReference Reference => new DocumentReferenceWrapper(_documentSnapshot.Reference);
-
-        private readonly DocumentSnapshot _documentSnapshot;
-
-        public DocumentSnapshotWrapper(DocumentSnapshot documentSnapshot)
-        {
-            _documentSnapshot = documentSnapshot ?? throw new ArgumentNullException(nameof(documentSnapshot));
-        }
-
-        public static explicit operator DocumentSnapshot(DocumentSnapshotWrapper wrapper)
-        {
-            return wrapper._documentSnapshot;
-        }
 
         public IDictionary<string, object?>? GetData(ServerTimestampBehavior serverTimestampBehavior)
         {
@@ -88,6 +83,11 @@ namespace Plugin.CloudFirestore
         public override int GetHashCode()
         {
             return _documentSnapshot?.GetHashCode() ?? 0;
+        }
+
+        DocumentSnapshot IDocumentSnapshot.ToNative()
+        {
+            return _documentSnapshot;
         }
     }
 }

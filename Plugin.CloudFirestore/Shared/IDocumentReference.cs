@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Plugin.CloudFirestore
 {
-    public interface IDocumentReference
+    public partial interface IDocumentReference
     {
         string Id { get; }
         string Path { get; }

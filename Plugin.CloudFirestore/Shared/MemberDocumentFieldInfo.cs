@@ -10,6 +10,33 @@ namespace Plugin.CloudFirestore
         private readonly MemberInfo _memberInfo;
         private readonly DocumentConverterAttribute? _documentConverterAttribute;
 
+        public MemberDocumentFieldInfo(MemberInfo memberInfo) : base(memberInfo switch
+        {
+            PropertyInfo propertyInfo => propertyInfo.PropertyType,
+            FieldInfo fieldInfo => fieldInfo.FieldType,
+            null => throw new ArgumentNullException(nameof(memberInfo)),
+            _ => throw new ArgumentException($"{nameof(memberInfo)} must be PropertyInfo or FieldInfo.", nameof(memberInfo))
+        })
+        {
+            _memberInfo = memberInfo;
+
+            var idAttribute = _memberInfo.GetCustomAttribute<IdAttribute>();
+            IsId = idAttribute != null;
+
+            var ignoredAttribute = _memberInfo.GetCustomAttribute<IgnoredAttribute>();
+            IsIgnored = ignoredAttribute != null;
+
+            var mapToAttribute = _memberInfo.GetCustomAttribute<MapToAttribute>();
+            Name = mapToAttribute?.Mapping ?? _memberInfo.Name;
+            OriginalName = _memberInfo.Name;
+
+            var serverTimestampAttribute = _memberInfo.GetCustomAttribute<ServerTimestampAttribute>();
+            IsServerTimestamp = serverTimestampAttribute != null;
+            CanReplaceServerTimestamp = serverTimestampAttribute?.CanReplace ?? false;
+
+            _documentConverterAttribute = _memberInfo.GetCustomAttribute<DocumentConverterAttribute>();
+        }
+
         public bool IsId { get; }
         public bool IsIgnored { get; }
         public string Name { get; }
@@ -37,33 +64,6 @@ namespace Plugin.CloudFirestore
                 }
                 return _documentConverter;
             }
-        }
-
-        public MemberDocumentFieldInfo(MemberInfo memberInfo) : base(memberInfo switch
-        {
-            PropertyInfo propertyInfo => propertyInfo.PropertyType,
-            FieldInfo fieldInfo => fieldInfo.FieldType,
-            null => throw new ArgumentNullException(nameof(memberInfo)),
-            _ => throw new ArgumentException($"{nameof(memberInfo)} must be PropertyInfo or FieldInfo.", nameof(memberInfo))
-        })
-        {
-            _memberInfo = memberInfo;
-
-            var idAttribute = _memberInfo.GetCustomAttribute<IdAttribute>();
-            IsId = idAttribute != null;
-
-            var ignoredAttribute = _memberInfo.GetCustomAttribute<IgnoredAttribute>();
-            IsIgnored = ignoredAttribute != null;
-
-            var mapToAttribute = _memberInfo.GetCustomAttribute<MapToAttribute>();
-            Name = mapToAttribute?.Mapping ?? _memberInfo.Name;
-            OriginalName = _memberInfo.Name;
-
-            var serverTimestampAttribute = _memberInfo.GetCustomAttribute<ServerTimestampAttribute>();
-            IsServerTimestamp = serverTimestampAttribute != null;
-            CanReplaceServerTimestamp = serverTimestampAttribute?.CanReplace ?? false;
-
-            _documentConverterAttribute = _memberInfo.GetCustomAttribute<DocumentConverterAttribute>();
         }
 
         public object GetValue(object target)

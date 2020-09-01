@@ -5,18 +5,18 @@ namespace Plugin.CloudFirestore
 {
     public readonly partial struct GeoPoint : IEquatable<GeoPoint>, IComparable<GeoPoint>
     {
-        public double Latitude { get; }
-        public double Longitude { get; }
-
         public GeoPoint(double latitude, double longitude)
         {
             Latitude = latitude;
             Longitude = longitude;
         }
 
+        public double Latitude { get; }
+        public double Longitude { get; }
+
         public override bool Equals(object obj)
         {
-            return obj is GeoPoint geoPoint ? Equals(geoPoint) : false;
+            return obj is GeoPoint geoPoint && Equals(geoPoint);
         }
 
         public bool Equals(GeoPoint other)

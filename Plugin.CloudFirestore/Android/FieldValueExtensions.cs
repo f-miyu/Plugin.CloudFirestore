@@ -66,8 +66,8 @@ namespace Plugin.CloudFirestore
                     return timestamp.ToNative();
                 case GeoPoint geoPoint:
                     return geoPoint.ToNative();
-                case DocumentReferenceWrapper documentReference:
-                    return (Firebase.Firestore.DocumentReference)documentReference;
+                case IDocumentReference documentReference:
+                    return documentReference.ToNative();
                 case byte[] @byte:
                     return Firebase.Firestore.Blob.FromBytes(@byte);
                 case Stream stream:

@@ -10,6 +10,13 @@ namespace Plugin.CloudFirestore
 {
     public class CollectionReferenceWrapper : ICollectionReference, IEquatable<CollectionReferenceWrapper>
     {
+        private readonly CollectionReference _collectionReference;
+
+        public CollectionReferenceWrapper(CollectionReference collectionReference)
+        {
+            _collectionReference = collectionReference ?? throw new ArgumentNullException(nameof(collectionReference));
+        }
+
         public string Id => _collectionReference.Id;
 
         public string Path => _collectionReference.Path;
@@ -17,13 +24,6 @@ namespace Plugin.CloudFirestore
         public IDocumentReference? Parent => _collectionReference.Parent == null ? null : new DocumentReferenceWrapper(_collectionReference.Parent);
 
         public IFirestore Firestore => FirestoreProvider.GetFirestore(_collectionReference.Firestore);
-
-        private readonly CollectionReference _collectionReference;
-
-        public CollectionReferenceWrapper(CollectionReference collectionReference)
-        {
-            _collectionReference = collectionReference ?? throw new ArgumentNullException(nameof(collectionReference));
-        }
 
         public IQuery LimitTo(long limit)
         {
@@ -163,8 +163,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery StartAt(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _collectionReference.StartAt((DocumentSnapshot)wrapper);
+            var query = _collectionReference.StartAt(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -176,8 +175,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery StartAfter(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _collectionReference.StartAfter((DocumentSnapshot)wrapper);
+            var query = _collectionReference.StartAfter(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -189,8 +187,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery EndAt(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _collectionReference.EndAt((DocumentSnapshot)wrapper);
+            var query = _collectionReference.EndAt(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -202,8 +199,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery EndBefore(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _collectionReference.EndBefore((DocumentSnapshot)wrapper);
+            var query = _collectionReference.EndBefore(document.ToNative());
             return new QueryWrapper(query);
         }
 

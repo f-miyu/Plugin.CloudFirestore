@@ -10,14 +10,14 @@ namespace Plugin.CloudFirestore
 {
     public class QueryWrapper : IQuery, IEquatable<QueryWrapper>
     {
-        public IFirestore Firestore => FirestoreProvider.GetFirestore(_query.Firestore);
-
         private readonly Query _query;
 
         public QueryWrapper(Query query)
         {
             _query = query ?? throw new ArgumentNullException(nameof(query));
         }
+
+        public IFirestore Firestore => FirestoreProvider.GetFirestore(_query.Firestore);
 
         public IQuery LimitTo(long limit)
         {
@@ -153,8 +153,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery StartAt(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.StartingAt((DocumentSnapshot)wrapper);
+            var query = _query.StartingAt(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -166,8 +165,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery StartAfter(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.StartingAfter((DocumentSnapshot)wrapper);
+            var query = _query.StartingAfter(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -179,8 +177,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery EndAt(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.EndingAt((DocumentSnapshot)wrapper);
+            var query = _query.EndingAt(document.ToNative());
             return new QueryWrapper(query);
         }
 
@@ -192,8 +189,7 @@ namespace Plugin.CloudFirestore
 
         public IQuery EndBefore(IDocumentSnapshot document)
         {
-            var wrapper = (DocumentSnapshotWrapper)document;
-            var query = _query.EndingBefore((DocumentSnapshot)wrapper);
+            var query = _query.EndingBefore(document.ToNative());
             return new QueryWrapper(query);
         }
 

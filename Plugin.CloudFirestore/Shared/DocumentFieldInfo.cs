@@ -6,17 +6,17 @@ namespace Plugin.CloudFirestore
 {
     internal class DocumentFieldInfo : IDocumentFieldInfo
     {
-        public Type Type { get; }
-        public Type NullableUnderlyingType { get; }
-
-        private IDocumentInfo? _documentInfo;
-        public virtual IDocumentInfo DocumentInfo => _documentInfo ??= ObjectProvider.GetDocumentInfo(NullableUnderlyingType);
-
         public DocumentFieldInfo(Type type)
         {
             Type = type ?? throw new ArgumentNullException(nameof(type));
             NullableUnderlyingType = Nullable.GetUnderlyingType(type) ?? type;
         }
+
+        public Type Type { get; }
+        public Type NullableUnderlyingType { get; }
+
+        private IDocumentInfo? _documentInfo;
+        public virtual IDocumentInfo DocumentInfo => _documentInfo ??= ObjectProvider.GetDocumentInfo(NullableUnderlyingType);
 
         public virtual (bool IsConverted, object? Result) ConvertTo(object? value)
         {

@@ -5,16 +5,16 @@ namespace Plugin.CloudFirestore
 {
     public class SnapshotMetadataWrapper : ISnapshotMetadata, IEquatable<SnapshotMetadataWrapper>
     {
-        public bool HasPendingWrites => _snapshotMetadata.HasPendingWrites;
-
-        public bool IsFromCache => _snapshotMetadata.IsFromCache;
-
         private readonly SnapshotMetadata _snapshotMetadata;
 
         public SnapshotMetadataWrapper(SnapshotMetadata snapshotMetadata)
         {
             _snapshotMetadata = snapshotMetadata ?? throw new ArgumentNullException(nameof(snapshotMetadata));
         }
+
+        public bool HasPendingWrites => _snapshotMetadata.HasPendingWrites;
+
+        public bool IsFromCache => _snapshotMetadata.IsFromCache;
 
         public override bool Equals(object? obj)
         {

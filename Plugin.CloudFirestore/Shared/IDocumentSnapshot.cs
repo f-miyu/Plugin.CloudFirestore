@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Plugin.CloudFirestore
 {
-    public interface IDocumentSnapshot
+    public partial interface IDocumentSnapshot
     {
         IDictionary<string, object?>? Data { get; }
         string Id { get; }

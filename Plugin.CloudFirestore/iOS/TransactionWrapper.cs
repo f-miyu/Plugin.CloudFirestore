@@ -21,8 +21,7 @@ namespace Plugin.CloudFirestore
 
         public IDocumentSnapshot Get(IDocumentReference document)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            var snapshot = _transaction.GetDocument((DocumentReference)wrapper, out var error);
+            var snapshot = _transaction.GetDocument(document.ToNative(), out var error);
 
             if (error != null)
             {
@@ -34,66 +33,56 @@ namespace Plugin.CloudFirestore
 
         public void SetData(IDocumentReference document, object documentData)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative());
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields);
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields);
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields);
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, mergeFields.Select(x => x.ToNative()).ToArray());
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), merge);
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData, bool merge)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.SetData(documentData.ToNativeFieldValues(), (DocumentReference)wrapper, merge);
+            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), merge);
             return this;
         }
 
         public void UpdateData(IDocumentReference document, object fields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _transaction.UpdateData(fields.ToNativeFieldValues(), document.ToNative());
         }
 
         public ITransaction Update<T>(IDocumentReference document, T fields)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.UpdateData(fields.ToNativeFieldValues(), (DocumentReference)wrapper);
+            _transaction.UpdateData(fields.ToNativeFieldValues(), document.ToNative());
             return this;
         }
 
@@ -105,8 +94,7 @@ namespace Plugin.CloudFirestore
         public ITransaction Update(IDocumentReference document, string field, object? value, params object?[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.UpdateData(fields, (DocumentReference)wrapper);
+            _transaction.UpdateData(fields, document.ToNative());
             return this;
         }
 
@@ -118,8 +106,7 @@ namespace Plugin.CloudFirestore
         public ITransaction Update(IDocumentReference document, FieldPath field, object? value, params object?[] moreFieldsAndValues)
         {
             var fields = Field.CreateFields(field, value, moreFieldsAndValues);
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.UpdateData(fields, (DocumentReference)wrapper);
+            _transaction.UpdateData(fields, document.ToNative());
             return this;
         }
 
@@ -130,8 +117,7 @@ namespace Plugin.CloudFirestore
 
         public ITransaction Delete(IDocumentReference document)
         {
-            var wrapper = (DocumentReferenceWrapper)document;
-            _transaction.DeleteDocument((DocumentReference)wrapper);
+            _transaction.DeleteDocument(document.ToNative());
             return this;
         }
 
