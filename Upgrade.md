@@ -1,4 +1,4 @@
-# Upgrade From Version 3 to 4
+# Upgrade from Version 3 to 4
 
 ## Method Name Changes
 Some method names have changed. Old methods have become obsolete.
