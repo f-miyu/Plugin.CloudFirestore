@@ -20,7 +20,7 @@ Firebase.Core.App.Configure();
 * Add google-services.json to Android project. Select GoogleServicesJson as build action. (If you can't select GoogleServicesJson, reload this android project.)
 * Target Framework must be Android 10.0. 
 
-## Upgrade From Version 3 to 4
+## Upgrade from Version 3 to 4
 Refer to [Upgrade](Upgrade.md)
 
 ## Usage
