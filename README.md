@@ -20,6 +20,9 @@ Firebase.Core.App.Configure();
 * Add google-services.json to Android project. Select GoogleServicesJson as build action. (If you can't select GoogleServicesJson, reload this android project.)
 * Target Framework must be Android 10.0. 
 
+## Upgrade From Version 3 to 4
+Refer to [Upgrade](Upgrade.md)
+
 ## Usage
 ### Get
 ```C#
@@ -418,7 +421,7 @@ public class CustomConverter : DocumentConverter<int>
         _parameter = arg1;
     }
 
-    public override bool ConvertFrom(DocumentObject value, out object result)
+    public override bool ConvertFrom(DocumentObject value, out object? result)
     {
         if (value.Type == DocumentObjectType.String)
         {
@@ -428,7 +431,7 @@ public class CustomConverter : DocumentConverter<int>
         return false;
     }
 
-    public override bool ConvertTo(object value, out object result)
+    public override bool ConvertTo(object? value, out object? result)
     {
         if (value is YourModel yourModel)
         {
