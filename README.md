@@ -18,32 +18,33 @@ Firebase.Core.App.Configure();
 
 ### Android
 * Add google-services.json to Android project. Select GoogleServicesJson as build action. (If you can't select GoogleServicesJson, reload this android project.)
+* Target Framework must be Android 10.0. 
 
 ## Usage
 ### Get
 ```C#
 var document = await CrossCloudFirestore.Current
                                         .Instance
-                                        .GetCollection("yourcollection")
-                                        .GetDocument("yourdocument")
-                                        .GetDocumentAsync();
+                                        .Collection("yourcollection")
+                                        .Document("yourdocument")
+                                        .GetAsync();
 
 var yourModel = document.ToObject<YourModel>();
 
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereGreaterThan("Value", 100)
                                      .OrderBy("Value", false)
                                      .LimitTo(3)
-                                     .GetDocumentsAsync();
+                                     .GetAsync();
 
 var yourModels = query.ToObjects<YourModel>();
 
 var group = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollectionGroup("yourcollection")
-                                     .GetDocumentsAsync();
+                                     .CollectionGroup("yourcollection")
+                                     .GetAsync();
 
 var yourModels = group.ToObjects<YourModel>();
 ```
@@ -53,137 +54,161 @@ var yourModels = group.ToObjects<YourModel>();
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereEqualsTo("Value", 100)
-                                     .GetDocumentsAsync();                                
+                                     .GetAsync();                                
 ```
 #### WhereGreaterThan
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereGreaterThan("Value", 100)
-                                     .GetDocumentsAsync();                                
+                                     .GetAsync();                                
 ```
 #### WhereGreaterThanOrEqualsTo
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereGreaterThanOrEqualsTo("Value", 100)
-                                     .GetDocumentsAsync();                                
+                                     .GetAsync();                                
 ```
 
 #### WhereLessThan
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereLessThan("Value", 100)
-                                     .GetDocumentsAsync();                                
+                                     .GetAsync();                                
 ```
 
 #### WhereLessThanOrEqualsTo
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereLessThanOrEqualsTo("Value", 100)
-                                     .GetDocumentsAsync();                                
+                                     .GetAsync();                                
 ```
 
 #### WhereArrayContains
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereArrayContains("Values", 100)
-                                     .GetDocumentsAsync();                                
+                                     .GetAsync();                                
+```
+
+#### WhereArrayContainsAny
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .Collection("yourcollection")
+                                     .WhereArrayContainsAny("Values", new object[] { 100, 200 })
+                                     .GetAsync();                                
+```
+
+#### WhereIn
+```C#
+var query = await CrossCloudFirestore.Current
+                                     .Instance
+                                     .Collection("yourcollection")
+                                     .WhereIn("Value", new object[] { 100, 200 })
+                                     .GetAsync();                                
 ```
 
 ### Add
 ```C#
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .AddDocumentAsync(new YourModel());
+                         .Collection("yourcollection")
+                         .AddAsync(new YourModel());
 ```
 ### Update
 ```C#
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .GetDocument("yourdocument")
-                         .UpdateDataAsync(new { Value = 10 });
+                         .Collection("yourcollection")
+                         .Document("yourdocument")
+                         .UpdateAsync(new { Value = 10 });
 ```
 
 ### Set
 ```C#
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .GetDocument("yourdocument")
-                         .SetDataAsync(new { Value = 1 });
+                         .Collection("yourcollection")
+                         .Document("yourdocument")
+                         .SetAsync(new { Value = 1 });
 
 // Create a document with auto-generated ID
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .CreateDocument()
-                         .SetDataAsync(new { Value = 2 });
+                         .Collection("yourcollection")
+                         .Document()
+                         .SetAsync(new { Value = 2 });
 ```
 
 ### Delete
 ```C#
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .GetDocument("yourdocument")
-                         .DeleteDocumentAsync();
+                         .Collection("yourcollection")
+                         .Document("yourdocument")
+                         .DeleteAsync();
 ```
 
 ### Transaction
 ```C#
 var reference = CrossCloudFirestore.Current
                                    .Instance
-                                   .GetCollection("yourcollection")
-                                   .GetDocument("yourdocument");
+                                   .Collection("yourcollection")
+                                   .Document("yourdocument");
 
 await CrossCloudFirestore.Current.Instance.RunTransactionAsync((transaction) =>
 {
-    var document = transaction.GetDocument(reference);
+    var document = transaction.Get(reference);
     var yourModel = document.ToObject<YourModel>();
     
     yourModel.Value++;
     
-    transaction.UpdateData(reference, yourModel);
+    transaction.Update(reference, yourModel);
 });
 ```
 
 ### Batch
 ```C#
-var batch = CrossCloudFirestore.Current.Instance.CreateBatch();
+var reference1 = CrossCloudFirestore.Current
+                                    .Instance
+                                    .Collection("yourcollection")
+                                    .Document("yourdocument1");
 
-var reference = CrossCloudFirestore.Current
-                                   .Instance
-                                   .GetCollection("yourcollection")
-                                   .GetDocument("yourdocument");
+var reference2 = CrossCloudFirestore.Current
+                                    .Instance
+                                    .Collection("yourcollection")
+                                    .Document("yourdocument2");
+                                    
+var reference3 = CrossCloudFirestore.Current
+                                    .Instance
+                                    .Collection("yourcollection")
+                                    .Document("yourdocument3");
 
-var yourModel = new YourModel();
-
-batch.SetData(reference, yourModel);
-
-yourModel.Value++;
-
-batch.UpdateData(reference, yourModel);
-
-await batch.CommitAsync();
+await CrossCloudFirestore.Current
+                         .Instance
+                         .Batch()
+                         .Set(reference1, new YourModel())
+                         .Update(reference2, "Value", 100)
+                         .Delete(reference3)
+                         .CommitAsync();
 ```
 
 ### Realtime Update
 ```C#
-CrossCloudFirestore.Current.Instance.GetCollection("yourcollection")
-                           .GetDocument("yourdocument")
+CrossCloudFirestore.Current.Instance.Collection("yourcollection")
+                           .Document("yourdocument")
                            .AddSnapshotListener((snapshot, error) =>
                            {
                                ...
@@ -191,7 +216,7 @@ CrossCloudFirestore.Current.Instance.GetCollection("yourcollection")
 
 CrossCloudFirestore.Current
                    .Instance
-                   .GetCollection("yourcollection")
+                   .Collection("yourcollection")
                    .AddSnapshotListener((snapshot, error) =>
                    {
                        if(snapshot != null) 
@@ -217,8 +242,8 @@ CrossCloudFirestore.Current
 Use of Reactive Extensions
 ```C#
 CrossCloudFirestore.Current.Instance
-                           .GetCollection("yourcollection")
-                           .GetDocument("yourdocument")
+                           .Collection("yourcollection")
+                           .Document("yourdocument")
                            .AsObservable()
                            .Subscribe(document =>
                            {
@@ -227,7 +252,7 @@ CrossCloudFirestore.Current.Instance
 // Added                        
 CrossCloudFirestore.Current
                    .Instance
-                   .GetCollection("yourcollection")
+                   .Collection("yourcollection")
                    .ObserveAdded()
                    .Subscribe(documentChange =>
                    {
@@ -238,7 +263,7 @@ CrossCloudFirestore.Current
 // Modified  
 CrossCloudFirestore.Current
                    .Instance
-                   .GetCollection("yourcollection")
+                   .Collection("yourcollection")
                    .ObserveModified()
                    .Subscribe(documentChange =>
                    {
@@ -249,7 +274,7 @@ CrossCloudFirestore.Current
 // Removed 
 CrossCloudFirestore.Current
                    .Instance
-                   .GetCollection("yourcollection")
+                   .Collection("yourcollection")
                    .ObserveRemoved()
                    .Subscribe(documentChange =>
                    {
@@ -262,15 +287,18 @@ CrossCloudFirestore.Current
 ```C#
 var query = await CrossCloudFirestore.Current
                                      .Instance
-                                     .GetCollection("yourcollection")
+                                     .Collection("yourcollection")
                                      .WhereEqualsTo(FieldPath.DocumentId, "yourdocument")
                                      .GetDocumentsAsync();
                                      
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .GetDocument("yourdocument")
-                         .UpdateDataAsync(new FieldPath("a", "b"), 1);
+                         .Collection("yourcollection")
+                         .Document("yourdocument")
+                         .UpdateAsync(new FieldPath("a", "b"), 1);
+                         
+// Create From Class Properties
+var fieldPath = FieldPath.CreateFrom((YourModel model) => model.A.B);
 ```
 
 ### FieldValue
@@ -287,8 +315,8 @@ var data = new
 
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .GetDocument("yourdocument")
+                         .Collection("yourcollection")
+                         .Document("yourdocument")
                          .UpdateDataAsync(data);
 ```
 
@@ -296,9 +324,9 @@ await CrossCloudFirestore.Current
 ```C#
 var document = await CrossCloudFirestore.Current
                                         .GetInstance("SecondAppName")
-                                        .GetCollection("yourcollection")
-                                        .GetDocument("yourdocument")
-                                        .GetDocumentAsync();
+                                        .Collection("yourcollection")
+                                        .Document("yourdocument")
+                                        .GetAsync();
 ```
 
 ### Settings
@@ -318,26 +346,26 @@ var yourModel = document.ToObject<YourModel>();
 // .NET to native
 await CrossCloudFirestore.Current
                          .Instance
-                         .GetCollection("yourcollection")
-                         .AddDocumentAsync(new YourModel());
+                         .Collection("yourcollection")
+                         .DocumentAsync(new YourModel());
 ```
 ### Support Data Type
 | Firestore Type | .NET Type |
 |---|---|
-| Array | System.Collections.IList |
+| Array | System.Collections.IEnumerable |
 | Boolean | bool and bool? |
 | Byte | byte[] and Stream |
 | Date and time | DateTime, DateTimeOffset, Plugin.CloudFirestore.Timestamp and these Nullable |
 | Floating-point number | float, double, decimal and these Nullable |
 | Geographical point | Plugin.CloudFirestore.GeoPoint |
-| Integer | byte, sbyte, short, ushort, int, uint, long, ulong and these Nullable |
+| Integer | byte, sbyte, short, ushort, int, uint, long, ulong, enum and these Nullable |
 | Map | System.Collections.IDictionary and Any Class　|
 | Null | null |
 | Reference | Plugin.CloudFirestore.IDocumentReference |
-| Text string | string |
+| Text string | string, char, char?, Guid and Guid? |
 
 ### Attribute
-You can specify attributes to data class properties.
+You can specify attributes to data class properties and fields.
 ```C#
 public class YourModel 
 {
@@ -355,6 +383,12 @@ public class YourModel
 
     [ServerTimestamp]
     public Timestamp UpdatedAt { get; set; }
+    
+    [DocumentConverter(typeof(EnumStringConverter))]
+    public MyEnum Enum { get; set; }
+    
+    [DocumentConverter(typeof(CustomConverter), 1)]
+    public YourModel Model { get; set; }
 }
 
 ```
@@ -369,3 +403,42 @@ Specified properties are ignored for mapping.
 
 #### ServerTimestampAttribute
 Specified properties are replaced to a server timestamp. If CanReplace is false, the properties are replaced when they are default or null. The default value for CanReplace is true.
+
+#### DocumentConverterAttribute
+Value is converted by specified converter. You can cpecify your custom converter. Your custom converter must inherit from `DocumentConverter`. 
+
+For example:
+```C#
+public class CustomConverter : DocumentConverter<int>
+{
+    private readonly int _parameter;
+
+    public CustomConverter(Type targetType, int arg1) : base(targetType, arg1)
+    {
+        _parameter = arg1;
+    }
+
+    public override bool ConvertFrom(DocumentObject value, out object result)
+    {
+        if (value.Type == DocumentObjectType.String)
+        {
+            result = new YourModel(value.String, _parameter);
+            return true;
+        }
+        return false;
+    }
+
+    public override bool ConvertTo(object value, out object result)
+    {
+        if (value is YourModel yourModel)
+        {
+            result = yourModel.ToString(_parameter);
+            return true;
+        }
+        return false;
+    }
+}
+```
+
+This libray has the following converters.
+* `EnumStringConverter` - cnverts enum to string
