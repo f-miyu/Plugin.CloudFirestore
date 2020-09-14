@@ -336,7 +336,7 @@ var document = await CrossCloudFirestore.Current
 ```C#
 CrossCloudFirestore.Current.Instance.FirestoreSettings = new FirestoreSettings
 {
-    AreTimestampsInSnapshotsEnabled = true
+    CacheSizeBytes = FirestoreSettings.CacheSizeUnlimited
 };
 ```
 
