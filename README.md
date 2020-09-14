@@ -2,7 +2,7 @@
 
 A cross platform plugin for Firebase Cloud Firestore. 
 A wrapper for [Xamarin.Firebase.iOS.CloudFirestore](https://www.nuget.org/packages/Xamarin.Firebase.iOS.CloudFirestore/) 
-and a binding library of firebase-firestore-19.0.2.
+and [Xamarin.Firebase.Firestore](https://www.nuget.org/packages/Xamarin.Firebase.Firestore/).
 
 ## Setup
 Install Nuget package to each projects.
