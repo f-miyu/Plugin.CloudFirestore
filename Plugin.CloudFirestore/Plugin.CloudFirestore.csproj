@@ -6,8 +6,8 @@
         <RootNamespace>Plugin.CloudFirestore</RootNamespace>
         <PackageId>Plugin.CloudFirestore</PackageId>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>4.0.0-pre01</Version>
-        <PackageVersion>4.0.0-pre01</PackageVersion>
+        <Version>4.0.0-pre02</Version>
+        <PackageVersion>4.0.0-pre02</PackageVersion>
         <PackOnBuild>true</PackOnBuild>
         <NeutralLanguage>en</NeutralLanguage>
         <LangVersion>default</LangVersion>
@@ -39,7 +39,7 @@
     <ItemGroup>
         <Compile Include="Shared\**\*.cs" />
         <PackageReference Include="System.Reactive" Version="4.4.1" />
-        <PackageReference Include="Nullable" Version="1.2.1">
+        <PackageReference Include="Nullable" Version="1.3.0">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
@@ -50,6 +50,7 @@
         <Compile Include="Android\**\*.cs" />
         <PackageReference Include="Xamarin.Firebase.Firestore" Version="121.4.3-preview02" PrivateAssets="contentFiles;analyzers" />
         <PackageReference Include="Xamarin.Io.OpenCensus.OpenCensusApi" Version="0.21.0" />
+        <PackageReference Include="Xamarin.Google.Guava" Version="27.1.0.1" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />

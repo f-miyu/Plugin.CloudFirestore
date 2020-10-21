@@ -166,21 +166,22 @@ namespace Plugin.CloudFirestore
                 _handler = handler;
             }
 
-            public Java.Lang.Object Apply(Transaction transaction)
+            public Java.Lang.Object? Apply(Transaction transaction)
             {
                 try
                 {
                     var wrapper = new TransactionWrapper(transaction);
                     return new ObjectHolder<T>(_handler(wrapper));
                 }
-                catch (FirebaseFirestoreException)
+                catch (FirebaseFirestoreException e)
                 {
-                    throw;
+                    AndroidEnvironment.RaiseThrowable(e);
                 }
                 catch (System.Exception e)
                 {
-                    throw new JavaException(e);
+                    AndroidEnvironment.RaiseThrowable(new JavaException(e));
                 }
+                return null;
             }
         }
 
@@ -199,16 +200,16 @@ namespace Plugin.CloudFirestore
                 {
                     var wrapper = new TransactionWrapper(transaction);
                     _handler(wrapper);
-                    return null;
                 }
-                catch (FirebaseFirestoreException)
+                catch (FirebaseFirestoreException e)
                 {
-                    throw;
+                    AndroidEnvironment.RaiseThrowable(e);
                 }
                 catch (System.Exception e)
                 {
-                    throw new JavaException(e);
+                    AndroidEnvironment.RaiseThrowable(new JavaException(e));
                 }
+                return null;
             }
         }
 
