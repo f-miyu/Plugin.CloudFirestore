@@ -270,1953 +270,6 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Plugin.CloudFirestore.Resource.Styleable.SignInButton_buttonSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SignInButton_buttonSize;
 			global::Plugin.CloudFirestore.Resource.Styleable.SignInButton_colorScheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SignInButton_colorScheme;
 			global::Plugin.CloudFirestore.Resource.Styleable.SignInButton_scopeUris = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SignInButton_scopeUris;
-			global::Prism.Resource.Animation.abc_fade_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_in;
-			global::Prism.Resource.Animation.abc_fade_out = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_out;
-			global::Prism.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
-			global::Prism.Resource.Animation.abc_popup_enter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_popup_enter;
-			global::Prism.Resource.Animation.abc_popup_exit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_popup_exit;
-			global::Prism.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
-			global::Prism.Resource.Animation.abc_slide_in_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_in_bottom;
-			global::Prism.Resource.Animation.abc_slide_in_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_in_top;
-			global::Prism.Resource.Animation.abc_slide_out_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_out_bottom;
-			global::Prism.Resource.Animation.abc_slide_out_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_slide_out_top;
-			global::Prism.Resource.Animation.design_bottom_sheet_slide_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.design_bottom_sheet_slide_in;
-			global::Prism.Resource.Animation.design_bottom_sheet_slide_out = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.design_bottom_sheet_slide_out;
-			global::Prism.Resource.Animation.design_snackbar_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.design_snackbar_in;
-			global::Prism.Resource.Animation.design_snackbar_out = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.design_snackbar_out;
-			global::Prism.Resource.Animation.EnterFromLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.EnterFromLeft;
-			global::Prism.Resource.Animation.EnterFromRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.EnterFromRight;
-			global::Prism.Resource.Animation.ExitToLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.ExitToLeft;
-			global::Prism.Resource.Animation.ExitToRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.ExitToRight;
-			global::Prism.Resource.Animator.design_appbar_state_list_animator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animator.design_appbar_state_list_animator;
-			global::Prism.Resource.Attribute.actionBarDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarDivider;
-			global::Prism.Resource.Attribute.actionBarItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarItemBackground;
-			global::Prism.Resource.Attribute.actionBarPopupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarPopupTheme;
-			global::Prism.Resource.Attribute.actionBarSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarSize;
-			global::Prism.Resource.Attribute.actionBarSplitStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarSplitStyle;
-			global::Prism.Resource.Attribute.actionBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarStyle;
-			global::Prism.Resource.Attribute.actionBarTabBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTabBarStyle;
-			global::Prism.Resource.Attribute.actionBarTabStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTabStyle;
-			global::Prism.Resource.Attribute.actionBarTabTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTabTextStyle;
-			global::Prism.Resource.Attribute.actionBarTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarTheme;
-			global::Prism.Resource.Attribute.actionBarWidgetTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionBarWidgetTheme;
-			global::Prism.Resource.Attribute.actionButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionButtonStyle;
-			global::Prism.Resource.Attribute.actionDropDownStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionDropDownStyle;
-			global::Prism.Resource.Attribute.actionLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionLayout;
-			global::Prism.Resource.Attribute.actionMenuTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionMenuTextAppearance;
-			global::Prism.Resource.Attribute.actionMenuTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionMenuTextColor;
-			global::Prism.Resource.Attribute.actionModeBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeBackground;
-			global::Prism.Resource.Attribute.actionModeCloseButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCloseButtonStyle;
-			global::Prism.Resource.Attribute.actionModeCloseDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCloseDrawable;
-			global::Prism.Resource.Attribute.actionModeCopyDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCopyDrawable;
-			global::Prism.Resource.Attribute.actionModeCutDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeCutDrawable;
-			global::Prism.Resource.Attribute.actionModeFindDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeFindDrawable;
-			global::Prism.Resource.Attribute.actionModePasteDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModePasteDrawable;
-			global::Prism.Resource.Attribute.actionModePopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModePopupWindowStyle;
-			global::Prism.Resource.Attribute.actionModeSelectAllDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeSelectAllDrawable;
-			global::Prism.Resource.Attribute.actionModeShareDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeShareDrawable;
-			global::Prism.Resource.Attribute.actionModeSplitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeSplitBackground;
-			global::Prism.Resource.Attribute.actionModeStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeStyle;
-			global::Prism.Resource.Attribute.actionModeWebSearchDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionModeWebSearchDrawable;
-			global::Prism.Resource.Attribute.actionOverflowButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionOverflowButtonStyle;
-			global::Prism.Resource.Attribute.actionOverflowMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionOverflowMenuStyle;
-			global::Prism.Resource.Attribute.actionProviderClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionProviderClass;
-			global::Prism.Resource.Attribute.actionViewClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.actionViewClass;
-			global::Prism.Resource.Attribute.activityChooserViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.activityChooserViewStyle;
-			global::Prism.Resource.Attribute.alertDialogButtonGroupStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
-			global::Prism.Resource.Attribute.alertDialogCenterButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogCenterButtons;
-			global::Prism.Resource.Attribute.alertDialogStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogStyle;
-			global::Prism.Resource.Attribute.alertDialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alertDialogTheme;
-			global::Prism.Resource.Attribute.allowStacking = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.allowStacking;
-			global::Prism.Resource.Attribute.alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alpha;
-			global::Prism.Resource.Attribute.alphabeticModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.alphabeticModifiers;
-			global::Prism.Resource.Attribute.arrowHeadLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.arrowHeadLength;
-			global::Prism.Resource.Attribute.arrowShaftLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.arrowShaftLength;
-			global::Prism.Resource.Attribute.autoCompleteTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoCompleteTextViewStyle;
-			global::Prism.Resource.Attribute.autoSizeMaxTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeMaxTextSize;
-			global::Prism.Resource.Attribute.autoSizeMinTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeMinTextSize;
-			global::Prism.Resource.Attribute.autoSizePresetSizes = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizePresetSizes;
-			global::Prism.Resource.Attribute.autoSizeStepGranularity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeStepGranularity;
-			global::Prism.Resource.Attribute.autoSizeTextType = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.autoSizeTextType;
-			global::Prism.Resource.Attribute.background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.background;
-			global::Prism.Resource.Attribute.backgroundSplit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundSplit;
-			global::Prism.Resource.Attribute.backgroundStacked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundStacked;
-			global::Prism.Resource.Attribute.backgroundTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundTint;
-			global::Prism.Resource.Attribute.backgroundTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.backgroundTintMode;
-			global::Prism.Resource.Attribute.barLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.barLength;
-			global::Prism.Resource.Attribute.behavior_autoHide = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.behavior_autoHide;
-			global::Prism.Resource.Attribute.behavior_hideable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.behavior_hideable;
-			global::Prism.Resource.Attribute.behavior_overlapTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.behavior_overlapTop;
-			global::Prism.Resource.Attribute.behavior_peekHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.behavior_peekHeight;
-			global::Prism.Resource.Attribute.behavior_skipCollapsed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Prism.Resource.Attribute.borderlessButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.borderlessButtonStyle;
-			global::Prism.Resource.Attribute.borderWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.borderWidth;
-			global::Prism.Resource.Attribute.bottomSheetDialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.bottomSheetDialogTheme;
-			global::Prism.Resource.Attribute.bottomSheetStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.bottomSheetStyle;
-			global::Prism.Resource.Attribute.buttonBarButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarButtonStyle;
-			global::Prism.Resource.Attribute.buttonBarNegativeButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
-			global::Prism.Resource.Attribute.buttonBarNeutralButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
-			global::Prism.Resource.Attribute.buttonBarPositiveButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
-			global::Prism.Resource.Attribute.buttonBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonBarStyle;
-			global::Prism.Resource.Attribute.buttonGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonGravity;
-			global::Prism.Resource.Attribute.buttonPanelSideLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonPanelSideLayout;
-			global::Prism.Resource.Attribute.buttonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonStyle;
-			global::Prism.Resource.Attribute.buttonStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonStyleSmall;
-			global::Prism.Resource.Attribute.buttonTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonTint;
-			global::Prism.Resource.Attribute.buttonTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.buttonTintMode;
-			global::Prism.Resource.Attribute.cardBackgroundColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.cardBackgroundColor;
-			global::Prism.Resource.Attribute.cardCornerRadius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.cardCornerRadius;
-			global::Prism.Resource.Attribute.cardElevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.cardElevation;
-			global::Prism.Resource.Attribute.cardMaxElevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.cardMaxElevation;
-			global::Prism.Resource.Attribute.cardPreventCornerOverlap = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.cardPreventCornerOverlap;
-			global::Prism.Resource.Attribute.cardUseCompatPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.cardUseCompatPadding;
-			global::Prism.Resource.Attribute.checkboxStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.checkboxStyle;
-			global::Prism.Resource.Attribute.checkedTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.checkedTextViewStyle;
-			global::Prism.Resource.Attribute.closeIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.closeIcon;
-			global::Prism.Resource.Attribute.closeItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.closeItemLayout;
-			global::Prism.Resource.Attribute.collapseContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.collapseContentDescription;
-			global::Prism.Resource.Attribute.collapsedTitleGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.collapsedTitleGravity;
-			global::Prism.Resource.Attribute.collapsedTitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.collapsedTitleTextAppearance;
-			global::Prism.Resource.Attribute.collapseIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.collapseIcon;
-			global::Prism.Resource.Attribute.color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.color;
-			global::Prism.Resource.Attribute.colorAccent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorAccent;
-			global::Prism.Resource.Attribute.colorBackgroundFloating = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorBackgroundFloating;
-			global::Prism.Resource.Attribute.colorButtonNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorButtonNormal;
-			global::Prism.Resource.Attribute.colorControlActivated = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorControlActivated;
-			global::Prism.Resource.Attribute.colorControlHighlight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorControlHighlight;
-			global::Prism.Resource.Attribute.colorControlNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorControlNormal;
-			global::Prism.Resource.Attribute.colorError = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorError;
-			global::Prism.Resource.Attribute.colorPrimary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorPrimary;
-			global::Prism.Resource.Attribute.colorPrimaryDark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorPrimaryDark;
-			global::Prism.Resource.Attribute.colorSwitchThumbNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.colorSwitchThumbNormal;
-			global::Prism.Resource.Attribute.commitIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.commitIcon;
-			global::Prism.Resource.Attribute.contentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentDescription;
-			global::Prism.Resource.Attribute.contentInsetEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetEnd;
-			global::Prism.Resource.Attribute.contentInsetEndWithActions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetEndWithActions;
-			global::Prism.Resource.Attribute.contentInsetLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetLeft;
-			global::Prism.Resource.Attribute.contentInsetRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetRight;
-			global::Prism.Resource.Attribute.contentInsetStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetStart;
-			global::Prism.Resource.Attribute.contentInsetStartWithNavigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentInsetStartWithNavigation;
-			global::Prism.Resource.Attribute.contentPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentPadding;
-			global::Prism.Resource.Attribute.contentPaddingBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentPaddingBottom;
-			global::Prism.Resource.Attribute.contentPaddingLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentPaddingLeft;
-			global::Prism.Resource.Attribute.contentPaddingRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentPaddingRight;
-			global::Prism.Resource.Attribute.contentPaddingTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentPaddingTop;
-			global::Prism.Resource.Attribute.contentScrim = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.contentScrim;
-			global::Prism.Resource.Attribute.controlBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.controlBackground;
-			global::Prism.Resource.Attribute.counterEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.counterEnabled;
-			global::Prism.Resource.Attribute.counterMaxLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.counterMaxLength;
-			global::Prism.Resource.Attribute.counterOverflowTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.counterOverflowTextAppearance;
-			global::Prism.Resource.Attribute.counterTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.counterTextAppearance;
-			global::Prism.Resource.Attribute.customNavigationLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.customNavigationLayout;
-			global::Prism.Resource.Attribute.defaultQueryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.defaultQueryHint;
-			global::Prism.Resource.Attribute.dialogPreferredPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dialogPreferredPadding;
-			global::Prism.Resource.Attribute.dialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dialogTheme;
-			global::Prism.Resource.Attribute.displayOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.displayOptions;
-			global::Prism.Resource.Attribute.divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.divider;
-			global::Prism.Resource.Attribute.dividerHorizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dividerHorizontal;
-			global::Prism.Resource.Attribute.dividerPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dividerPadding;
-			global::Prism.Resource.Attribute.dividerVertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dividerVertical;
-			global::Prism.Resource.Attribute.drawableSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.drawableSize;
-			global::Prism.Resource.Attribute.drawerArrowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Prism.Resource.Attribute.dropdownListPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
-			global::Prism.Resource.Attribute.dropDownListViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.dropDownListViewStyle;
-			global::Prism.Resource.Attribute.editTextBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.editTextBackground;
-			global::Prism.Resource.Attribute.editTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.editTextColor;
-			global::Prism.Resource.Attribute.editTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.editTextStyle;
-			global::Prism.Resource.Attribute.elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.elevation;
-			global::Prism.Resource.Attribute.errorEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.errorEnabled;
-			global::Prism.Resource.Attribute.errorTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.errorTextAppearance;
-			global::Prism.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
-			global::Prism.Resource.Attribute.expanded = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expanded;
-			global::Prism.Resource.Attribute.expandedTitleGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleGravity;
-			global::Prism.Resource.Attribute.expandedTitleMargin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleMargin;
-			global::Prism.Resource.Attribute.expandedTitleMarginBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleMarginBottom;
-			global::Prism.Resource.Attribute.expandedTitleMarginEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleMarginEnd;
-			global::Prism.Resource.Attribute.expandedTitleMarginStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleMarginStart;
-			global::Prism.Resource.Attribute.expandedTitleMarginTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleMarginTop;
-			global::Prism.Resource.Attribute.expandedTitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.expandedTitleTextAppearance;
-			global::Prism.Resource.Attribute.fabSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fabSize;
-			global::Prism.Resource.Attribute.fastScrollEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fastScrollEnabled;
-			global::Prism.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
-			global::Prism.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
-			global::Prism.Resource.Attribute.fastScrollVerticalThumbDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
-			global::Prism.Resource.Attribute.fastScrollVerticalTrackDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
-			global::Prism.Resource.Attribute.font = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.font;
-			global::Prism.Resource.Attribute.fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontFamily;
-			global::Prism.Resource.Attribute.fontProviderAuthority = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderAuthority;
-			global::Prism.Resource.Attribute.fontProviderCerts = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderCerts;
-			global::Prism.Resource.Attribute.fontProviderFetchStrategy = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderFetchStrategy;
-			global::Prism.Resource.Attribute.fontProviderFetchTimeout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderFetchTimeout;
-			global::Prism.Resource.Attribute.fontProviderPackage = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderPackage;
-			global::Prism.Resource.Attribute.fontProviderQuery = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontProviderQuery;
-			global::Prism.Resource.Attribute.fontStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontStyle;
-			global::Prism.Resource.Attribute.fontWeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.fontWeight;
-			global::Prism.Resource.Attribute.foregroundInsidePadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.foregroundInsidePadding;
-			global::Prism.Resource.Attribute.gapBetweenBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.gapBetweenBars;
-			global::Prism.Resource.Attribute.goIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.goIcon;
-			global::Prism.Resource.Attribute.headerLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.headerLayout;
-			global::Prism.Resource.Attribute.height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.height;
-			global::Prism.Resource.Attribute.hideOnContentScroll = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.hideOnContentScroll;
-			global::Prism.Resource.Attribute.hintAnimationEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.hintAnimationEnabled;
-			global::Prism.Resource.Attribute.hintEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.hintEnabled;
-			global::Prism.Resource.Attribute.hintTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.hintTextAppearance;
-			global::Prism.Resource.Attribute.homeAsUpIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.homeAsUpIndicator;
-			global::Prism.Resource.Attribute.homeLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.homeLayout;
-			global::Prism.Resource.Attribute.icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.icon;
-			global::Prism.Resource.Attribute.iconifiedByDefault = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.iconifiedByDefault;
-			global::Prism.Resource.Attribute.iconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.iconTint;
-			global::Prism.Resource.Attribute.iconTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.iconTintMode;
-			global::Prism.Resource.Attribute.imageButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.imageButtonStyle;
-			global::Prism.Resource.Attribute.indeterminateProgressStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.indeterminateProgressStyle;
-			global::Prism.Resource.Attribute.initialActivityCount = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.initialActivityCount;
-			global::Prism.Resource.Attribute.insetForeground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.insetForeground;
-			global::Prism.Resource.Attribute.isLightTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.isLightTheme;
-			global::Prism.Resource.Attribute.itemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.itemBackground;
-			global::Prism.Resource.Attribute.itemIconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.itemIconTint;
-			global::Prism.Resource.Attribute.itemPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.itemPadding;
-			global::Prism.Resource.Attribute.itemTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.itemTextAppearance;
-			global::Prism.Resource.Attribute.itemTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.itemTextColor;
-			global::Prism.Resource.Attribute.keylines = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.keylines;
-			global::Prism.Resource.Attribute.layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout;
-			global::Prism.Resource.Attribute.layoutManager = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layoutManager;
-			global::Prism.Resource.Attribute.layout_anchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_anchor;
-			global::Prism.Resource.Attribute.layout_anchorGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_anchorGravity;
-			global::Prism.Resource.Attribute.layout_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_behavior;
-			global::Prism.Resource.Attribute.layout_collapseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_collapseMode;
-			global::Prism.Resource.Attribute.layout_collapseParallaxMultiplier = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
-			global::Prism.Resource.Attribute.layout_dodgeInsetEdges = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_dodgeInsetEdges;
-			global::Prism.Resource.Attribute.layout_insetEdge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_insetEdge;
-			global::Prism.Resource.Attribute.layout_keyline = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_keyline;
-			global::Prism.Resource.Attribute.layout_scrollFlags = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_scrollFlags;
-			global::Prism.Resource.Attribute.layout_scrollInterpolator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.layout_scrollInterpolator;
-			global::Prism.Resource.Attribute.listChoiceBackgroundIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
-			global::Prism.Resource.Attribute.listDividerAlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listDividerAlertDialog;
-			global::Prism.Resource.Attribute.listItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listItemLayout;
-			global::Prism.Resource.Attribute.listLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listLayout;
-			global::Prism.Resource.Attribute.listMenuViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listMenuViewStyle;
-			global::Prism.Resource.Attribute.listPopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPopupWindowStyle;
-			global::Prism.Resource.Attribute.listPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemHeight;
-			global::Prism.Resource.Attribute.listPreferredItemHeightLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemHeightLarge;
-			global::Prism.Resource.Attribute.listPreferredItemHeightSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemHeightSmall;
-			global::Prism.Resource.Attribute.listPreferredItemPaddingLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
-			global::Prism.Resource.Attribute.listPreferredItemPaddingRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.listPreferredItemPaddingRight;
-			global::Prism.Resource.Attribute.logo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.logo;
-			global::Prism.Resource.Attribute.logoDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.logoDescription;
-			global::Prism.Resource.Attribute.maxActionInlineWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.maxActionInlineWidth;
-			global::Prism.Resource.Attribute.maxButtonHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.maxButtonHeight;
-			global::Prism.Resource.Attribute.measureWithLargestChild = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.measureWithLargestChild;
-			global::Prism.Resource.Attribute.menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.menu;
-			global::Prism.Resource.Attribute.multiChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.multiChoiceItemLayout;
-			global::Prism.Resource.Attribute.navigationContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.navigationContentDescription;
-			global::Prism.Resource.Attribute.navigationIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.navigationIcon;
-			global::Prism.Resource.Attribute.navigationMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.navigationMode;
-			global::Prism.Resource.Attribute.numericModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.numericModifiers;
-			global::Prism.Resource.Attribute.overlapAnchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.overlapAnchor;
-			global::Prism.Resource.Attribute.paddingBottomNoButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingBottomNoButtons;
-			global::Prism.Resource.Attribute.paddingEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingEnd;
-			global::Prism.Resource.Attribute.paddingStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingStart;
-			global::Prism.Resource.Attribute.paddingTopNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.paddingTopNoTitle;
-			global::Prism.Resource.Attribute.panelBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.panelBackground;
-			global::Prism.Resource.Attribute.panelMenuListTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.panelMenuListTheme;
-			global::Prism.Resource.Attribute.panelMenuListWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.panelMenuListWidth;
-			global::Prism.Resource.Attribute.passwordToggleContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.passwordToggleContentDescription;
-			global::Prism.Resource.Attribute.passwordToggleDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.passwordToggleDrawable;
-			global::Prism.Resource.Attribute.passwordToggleEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.passwordToggleEnabled;
-			global::Prism.Resource.Attribute.passwordToggleTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.passwordToggleTint;
-			global::Prism.Resource.Attribute.passwordToggleTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.passwordToggleTintMode;
-			global::Prism.Resource.Attribute.popupMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.popupMenuStyle;
-			global::Prism.Resource.Attribute.popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.popupTheme;
-			global::Prism.Resource.Attribute.popupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.popupWindowStyle;
-			global::Prism.Resource.Attribute.preserveIconSpacing = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.preserveIconSpacing;
-			global::Prism.Resource.Attribute.pressedTranslationZ = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.pressedTranslationZ;
-			global::Prism.Resource.Attribute.progressBarPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.progressBarPadding;
-			global::Prism.Resource.Attribute.progressBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.progressBarStyle;
-			global::Prism.Resource.Attribute.queryBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.queryBackground;
-			global::Prism.Resource.Attribute.queryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.queryHint;
-			global::Prism.Resource.Attribute.radioButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.radioButtonStyle;
-			global::Prism.Resource.Attribute.ratingBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.ratingBarStyle;
-			global::Prism.Resource.Attribute.ratingBarStyleIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.ratingBarStyleIndicator;
-			global::Prism.Resource.Attribute.ratingBarStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.ratingBarStyleSmall;
-			global::Prism.Resource.Attribute.reverseLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.reverseLayout;
-			global::Prism.Resource.Attribute.rippleColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.rippleColor;
-			global::Prism.Resource.Attribute.scrimAnimationDuration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimAnimationDuration;
-			global::Prism.Resource.Attribute.scrimVisibleHeightTrigger = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
-			global::Prism.Resource.Attribute.searchHintIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchHintIcon;
-			global::Prism.Resource.Attribute.searchIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchIcon;
-			global::Prism.Resource.Attribute.searchViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchViewStyle;
-			global::Prism.Resource.Attribute.seekBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.seekBarStyle;
-			global::Prism.Resource.Attribute.selectableItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.selectableItemBackground;
-			global::Prism.Resource.Attribute.selectableItemBackgroundBorderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
-			global::Prism.Resource.Attribute.showAsAction = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showAsAction;
-			global::Prism.Resource.Attribute.showDividers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showDividers;
-			global::Prism.Resource.Attribute.showText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showText;
-			global::Prism.Resource.Attribute.showTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.showTitle;
-			global::Prism.Resource.Attribute.singleChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.singleChoiceItemLayout;
-			global::Prism.Resource.Attribute.spanCount = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spanCount;
-			global::Prism.Resource.Attribute.spinBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spinBars;
-			global::Prism.Resource.Attribute.spinnerDropDownItemStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spinnerDropDownItemStyle;
-			global::Prism.Resource.Attribute.spinnerStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.spinnerStyle;
-			global::Prism.Resource.Attribute.splitTrack = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.splitTrack;
-			global::Prism.Resource.Attribute.srcCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.srcCompat;
-			global::Prism.Resource.Attribute.stackFromEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.stackFromEnd;
-			global::Prism.Resource.Attribute.state_above_anchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.state_above_anchor;
-			global::Prism.Resource.Attribute.state_collapsed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.state_collapsed;
-			global::Prism.Resource.Attribute.state_collapsible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.state_collapsible;
-			global::Prism.Resource.Attribute.statusBarBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.statusBarBackground;
-			global::Prism.Resource.Attribute.statusBarScrim = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.statusBarScrim;
-			global::Prism.Resource.Attribute.subMenuArrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subMenuArrow;
-			global::Prism.Resource.Attribute.submitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.submitBackground;
-			global::Prism.Resource.Attribute.subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitle;
-			global::Prism.Resource.Attribute.subtitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitleTextAppearance;
-			global::Prism.Resource.Attribute.subtitleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitleTextColor;
-			global::Prism.Resource.Attribute.subtitleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.subtitleTextStyle;
-			global::Prism.Resource.Attribute.suggestionRowLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.suggestionRowLayout;
-			global::Prism.Resource.Attribute.switchMinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchMinWidth;
-			global::Prism.Resource.Attribute.switchPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchPadding;
-			global::Prism.Resource.Attribute.switchStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchStyle;
-			global::Prism.Resource.Attribute.switchTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.switchTextAppearance;
-			global::Prism.Resource.Attribute.tabBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabBackground;
-			global::Prism.Resource.Attribute.tabContentStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabContentStart;
-			global::Prism.Resource.Attribute.tabGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabGravity;
-			global::Prism.Resource.Attribute.tabIndicatorColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabIndicatorColor;
-			global::Prism.Resource.Attribute.tabIndicatorHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabIndicatorHeight;
-			global::Prism.Resource.Attribute.tabMaxWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabMaxWidth;
-			global::Prism.Resource.Attribute.tabMinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabMinWidth;
-			global::Prism.Resource.Attribute.tabMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabMode;
-			global::Prism.Resource.Attribute.tabPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabPadding;
-			global::Prism.Resource.Attribute.tabPaddingBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabPaddingBottom;
-			global::Prism.Resource.Attribute.tabPaddingEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabPaddingEnd;
-			global::Prism.Resource.Attribute.tabPaddingStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabPaddingStart;
-			global::Prism.Resource.Attribute.tabPaddingTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabPaddingTop;
-			global::Prism.Resource.Attribute.tabSelectedTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabSelectedTextColor;
-			global::Prism.Resource.Attribute.tabTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabTextAppearance;
-			global::Prism.Resource.Attribute.tabTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tabTextColor;
-			global::Prism.Resource.Attribute.textAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAllCaps;
-			global::Prism.Resource.Attribute.textAppearanceLargePopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
-			global::Prism.Resource.Attribute.textAppearanceListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceListItem;
-			global::Prism.Resource.Attribute.textAppearanceListItemSecondary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceListItemSecondary;
-			global::Prism.Resource.Attribute.textAppearanceListItemSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceListItemSmall;
-			global::Prism.Resource.Attribute.textAppearancePopupMenuHeader = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
-			global::Prism.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
-			global::Prism.Resource.Attribute.textAppearanceSearchResultTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
-			global::Prism.Resource.Attribute.textAppearanceSmallPopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
-			global::Prism.Resource.Attribute.textColorAlertDialogListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textColorAlertDialogListItem;
-			global::Prism.Resource.Attribute.textColorSearchUrl = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.textColorSearchUrl;
-			global::Prism.Resource.Attribute.theme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.theme;
-			global::Prism.Resource.Attribute.thickness = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thickness;
-			global::Prism.Resource.Attribute.thumbTextPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thumbTextPadding;
-			global::Prism.Resource.Attribute.thumbTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thumbTint;
-			global::Prism.Resource.Attribute.thumbTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.thumbTintMode;
-			global::Prism.Resource.Attribute.tickMark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tickMark;
-			global::Prism.Resource.Attribute.tickMarkTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tickMarkTint;
-			global::Prism.Resource.Attribute.tickMarkTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tickMarkTintMode;
-			global::Prism.Resource.Attribute.tint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tint;
-			global::Prism.Resource.Attribute.tintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tintMode;
-			global::Prism.Resource.Attribute.title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.title;
-			global::Prism.Resource.Attribute.titleEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleEnabled;
-			global::Prism.Resource.Attribute.titleMargin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMargin;
-			global::Prism.Resource.Attribute.titleMarginBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginBottom;
-			global::Prism.Resource.Attribute.titleMarginEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginEnd;
-			global::Prism.Resource.Attribute.titleMargins = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMargins;
-			global::Prism.Resource.Attribute.titleMarginStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginStart;
-			global::Prism.Resource.Attribute.titleMarginTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleMarginTop;
-			global::Prism.Resource.Attribute.titleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleTextAppearance;
-			global::Prism.Resource.Attribute.titleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleTextColor;
-			global::Prism.Resource.Attribute.titleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.titleTextStyle;
-			global::Prism.Resource.Attribute.toolbarId = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.toolbarId;
-			global::Prism.Resource.Attribute.toolbarNavigationButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
-			global::Prism.Resource.Attribute.toolbarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.toolbarStyle;
-			global::Prism.Resource.Attribute.tooltipForegroundColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tooltipForegroundColor;
-			global::Prism.Resource.Attribute.tooltipFrameBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tooltipFrameBackground;
-			global::Prism.Resource.Attribute.tooltipText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.tooltipText;
-			global::Prism.Resource.Attribute.track = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.track;
-			global::Prism.Resource.Attribute.trackTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.trackTint;
-			global::Prism.Resource.Attribute.trackTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.trackTintMode;
-			global::Prism.Resource.Attribute.useCompatPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.useCompatPadding;
-			global::Prism.Resource.Attribute.voiceIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.voiceIcon;
-			global::Prism.Resource.Attribute.windowActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowActionBar;
-			global::Prism.Resource.Attribute.windowActionBarOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowActionBarOverlay;
-			global::Prism.Resource.Attribute.windowActionModeOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowActionModeOverlay;
-			global::Prism.Resource.Attribute.windowFixedHeightMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedHeightMajor;
-			global::Prism.Resource.Attribute.windowFixedHeightMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedHeightMinor;
-			global::Prism.Resource.Attribute.windowFixedWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedWidthMajor;
-			global::Prism.Resource.Attribute.windowFixedWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowFixedWidthMinor;
-			global::Prism.Resource.Attribute.windowMinWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowMinWidthMajor;
-			global::Prism.Resource.Attribute.windowMinWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowMinWidthMinor;
-			global::Prism.Resource.Attribute.windowNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.windowNoTitle;
-			global::Prism.Resource.Boolean.abc_action_bar_embed_tabs = global::Plugin.CloudFirestore.Sample.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Prism.Resource.Boolean.abc_allow_stacked_button_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
-			global::Prism.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
-			global::Prism.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
-			global::Prism.Resource.Color.abc_background_cache_hint_selector_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
-			global::Prism.Resource.Color.abc_btn_colored_borderless_text_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
-			global::Prism.Resource.Color.abc_btn_colored_text_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_btn_colored_text_material;
-			global::Prism.Resource.Color.abc_color_highlight_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_color_highlight_material;
-			global::Prism.Resource.Color.abc_hint_foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_hint_foreground_material_dark;
-			global::Prism.Resource.Color.abc_hint_foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Prism.Resource.Color.abc_input_method_navigation_guard = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_input_method_navigation_guard;
-			global::Prism.Resource.Color.abc_primary_text_disable_only_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
-			global::Prism.Resource.Color.abc_primary_text_disable_only_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
-			global::Prism.Resource.Color.abc_primary_text_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_material_dark;
-			global::Prism.Resource.Color.abc_primary_text_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_primary_text_material_light;
-			global::Prism.Resource.Color.abc_search_url_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text;
-			global::Prism.Resource.Color.abc_search_url_text_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text_normal;
-			global::Prism.Resource.Color.abc_search_url_text_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text_pressed;
-			global::Prism.Resource.Color.abc_search_url_text_selected = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_search_url_text_selected;
-			global::Prism.Resource.Color.abc_secondary_text_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_secondary_text_material_dark;
-			global::Prism.Resource.Color.abc_secondary_text_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_secondary_text_material_light;
-			global::Prism.Resource.Color.abc_tint_btn_checkable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_btn_checkable;
-			global::Prism.Resource.Color.abc_tint_default = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_default;
-			global::Prism.Resource.Color.abc_tint_edittext = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_edittext;
-			global::Prism.Resource.Color.abc_tint_seek_thumb = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_seek_thumb;
-			global::Prism.Resource.Color.abc_tint_spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_spinner;
-			global::Prism.Resource.Color.abc_tint_switch_track = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.abc_tint_switch_track;
-			global::Prism.Resource.Color.accent_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.accent_material_dark;
-			global::Prism.Resource.Color.accent_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.accent_material_light;
-			global::Prism.Resource.Color.background_floating_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_floating_material_dark;
-			global::Prism.Resource.Color.background_floating_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_floating_material_light;
-			global::Prism.Resource.Color.background_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_material_dark;
-			global::Prism.Resource.Color.background_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.background_material_light;
-			global::Prism.Resource.Color.bright_foreground_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_disabled_material_dark;
-			global::Prism.Resource.Color.bright_foreground_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_disabled_material_light;
-			global::Prism.Resource.Color.bright_foreground_inverse_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_inverse_material_dark;
-			global::Prism.Resource.Color.bright_foreground_inverse_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_inverse_material_light;
-			global::Prism.Resource.Color.bright_foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_material_dark;
-			global::Prism.Resource.Color.bright_foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.bright_foreground_material_light;
-			global::Prism.Resource.Color.button_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.button_material_dark;
-			global::Prism.Resource.Color.button_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.button_material_light;
-			global::Prism.Resource.Color.cardview_dark_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.cardview_dark_background;
-			global::Prism.Resource.Color.cardview_light_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.cardview_light_background;
-			global::Prism.Resource.Color.cardview_shadow_end_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.cardview_shadow_end_color;
-			global::Prism.Resource.Color.cardview_shadow_start_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.cardview_shadow_start_color;
-			global::Prism.Resource.Color.design_bottom_navigation_shadow_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_bottom_navigation_shadow_color;
-			global::Prism.Resource.Color.design_error = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_error;
-			global::Prism.Resource.Color.design_fab_shadow_end_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_shadow_end_color;
-			global::Prism.Resource.Color.design_fab_shadow_mid_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_shadow_mid_color;
-			global::Prism.Resource.Color.design_fab_shadow_start_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_shadow_start_color;
-			global::Prism.Resource.Color.design_fab_stroke_end_inner_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_stroke_end_inner_color;
-			global::Prism.Resource.Color.design_fab_stroke_end_outer_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_stroke_end_outer_color;
-			global::Prism.Resource.Color.design_fab_stroke_top_inner_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_stroke_top_inner_color;
-			global::Prism.Resource.Color.design_fab_stroke_top_outer_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_fab_stroke_top_outer_color;
-			global::Prism.Resource.Color.design_snackbar_background_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_snackbar_background_color;
-			global::Prism.Resource.Color.design_tint_password_toggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.design_tint_password_toggle;
-			global::Prism.Resource.Color.dim_foreground_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_disabled_material_dark;
-			global::Prism.Resource.Color.dim_foreground_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_disabled_material_light;
-			global::Prism.Resource.Color.dim_foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_material_dark;
-			global::Prism.Resource.Color.dim_foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.dim_foreground_material_light;
-			global::Prism.Resource.Color.foreground_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.foreground_material_dark;
-			global::Prism.Resource.Color.foreground_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.foreground_material_light;
-			global::Prism.Resource.Color.highlighted_text_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.highlighted_text_material_dark;
-			global::Prism.Resource.Color.highlighted_text_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.highlighted_text_material_light;
-			global::Prism.Resource.Color.material_blue_grey_800 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_blue_grey_800;
-			global::Prism.Resource.Color.material_blue_grey_900 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_blue_grey_900;
-			global::Prism.Resource.Color.material_blue_grey_950 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_blue_grey_950;
-			global::Prism.Resource.Color.material_deep_teal_200 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_deep_teal_200;
-			global::Prism.Resource.Color.material_deep_teal_500 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_deep_teal_500;
-			global::Prism.Resource.Color.material_grey_100 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_100;
-			global::Prism.Resource.Color.material_grey_300 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_300;
-			global::Prism.Resource.Color.material_grey_50 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_50;
-			global::Prism.Resource.Color.material_grey_600 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_600;
-			global::Prism.Resource.Color.material_grey_800 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_800;
-			global::Prism.Resource.Color.material_grey_850 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_850;
-			global::Prism.Resource.Color.material_grey_900 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.material_grey_900;
-			global::Prism.Resource.Color.notification_action_color_filter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.notification_action_color_filter;
-			global::Prism.Resource.Color.notification_icon_bg_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.notification_icon_bg_color;
-			global::Prism.Resource.Color.notification_material_background_media_default_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Prism.Resource.Color.primary_dark_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_dark_material_dark;
-			global::Prism.Resource.Color.primary_dark_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_dark_material_light;
-			global::Prism.Resource.Color.primary_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_material_dark;
-			global::Prism.Resource.Color.primary_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_material_light;
-			global::Prism.Resource.Color.primary_text_default_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Prism.Resource.Color.primary_text_default_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_default_material_light;
-			global::Prism.Resource.Color.primary_text_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_disabled_material_dark;
-			global::Prism.Resource.Color.primary_text_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.primary_text_disabled_material_light;
-			global::Prism.Resource.Color.ripple_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.ripple_material_dark;
-			global::Prism.Resource.Color.ripple_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.ripple_material_light;
-			global::Prism.Resource.Color.secondary_text_default_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Prism.Resource.Color.secondary_text_default_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Prism.Resource.Color.secondary_text_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_disabled_material_dark;
-			global::Prism.Resource.Color.secondary_text_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.secondary_text_disabled_material_light;
-			global::Prism.Resource.Color.switch_thumb_disabled_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_disabled_material_dark;
-			global::Prism.Resource.Color.switch_thumb_disabled_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_disabled_material_light;
-			global::Prism.Resource.Color.switch_thumb_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_material_dark;
-			global::Prism.Resource.Color.switch_thumb_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_material_light;
-			global::Prism.Resource.Color.switch_thumb_normal_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_normal_material_dark;
-			global::Prism.Resource.Color.switch_thumb_normal_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.switch_thumb_normal_material_light;
-			global::Prism.Resource.Color.tooltip_background_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.tooltip_background_dark;
-			global::Prism.Resource.Color.tooltip_background_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Color.tooltip_background_light;
-			global::Prism.Resource.Dimension.abc_action_bar_content_inset_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
-			global::Prism.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
-			global::Prism.Resource.Dimension.abc_action_bar_default_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_default_height_material;
-			global::Prism.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
-			global::Prism.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
-			global::Prism.Resource.Dimension.abc_action_bar_elevation_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_elevation_material;
-			global::Prism.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
-			global::Prism.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
-			global::Prism.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
-			global::Prism.Resource.Dimension.abc_action_bar_stacked_max_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
-			global::Prism.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
-			global::Prism.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
-			global::Prism.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
-			global::Prism.Resource.Dimension.abc_action_button_min_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_button_min_height_material;
-			global::Prism.Resource.Dimension.abc_action_button_min_width_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_button_min_width_material;
-			global::Prism.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
-			global::Prism.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
-			global::Prism.Resource.Dimension.abc_button_inset_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
-			global::Prism.Resource.Dimension.abc_button_inset_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_inset_vertical_material;
-			global::Prism.Resource.Dimension.abc_button_padding_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
-			global::Prism.Resource.Dimension.abc_button_padding_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_button_padding_vertical_material;
-			global::Prism.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
-			global::Prism.Resource.Dimension.abc_config_prefDialogWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_config_prefDialogWidth;
-			global::Prism.Resource.Dimension.abc_control_corner_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_control_corner_material;
-			global::Prism.Resource.Dimension.abc_control_inset_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_control_inset_material;
-			global::Prism.Resource.Dimension.abc_control_padding_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_control_padding_material;
-			global::Prism.Resource.Dimension.abc_dialog_fixed_height_major = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
-			global::Prism.Resource.Dimension.abc_dialog_fixed_height_minor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
-			global::Prism.Resource.Dimension.abc_dialog_fixed_width_major = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
-			global::Prism.Resource.Dimension.abc_dialog_fixed_width_minor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
-			global::Prism.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
-			global::Prism.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
-			global::Prism.Resource.Dimension.abc_dialog_min_width_major = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_min_width_major;
-			global::Prism.Resource.Dimension.abc_dialog_min_width_minor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_min_width_minor;
-			global::Prism.Resource.Dimension.abc_dialog_padding_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_padding_material;
-			global::Prism.Resource.Dimension.abc_dialog_padding_top_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_padding_top_material;
-			global::Prism.Resource.Dimension.abc_dialog_title_divider_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dialog_title_divider_material;
-			global::Prism.Resource.Dimension.abc_disabled_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
-			global::Prism.Resource.Dimension.abc_disabled_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
-			global::Prism.Resource.Dimension.abc_dropdownitem_icon_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
-			global::Prism.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
-			global::Prism.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
-			global::Prism.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
-			global::Prism.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
-			global::Prism.Resource.Dimension.abc_edit_text_inset_top_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
-			global::Prism.Resource.Dimension.abc_floating_window_z = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_floating_window_z;
-			global::Prism.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
-			global::Prism.Resource.Dimension.abc_panel_menu_list_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_panel_menu_list_width;
-			global::Prism.Resource.Dimension.abc_progress_bar_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_progress_bar_height_material;
-			global::Prism.Resource.Dimension.abc_search_view_preferred_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_search_view_preferred_height;
-			global::Prism.Resource.Dimension.abc_search_view_preferred_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_search_view_preferred_width;
-			global::Prism.Resource.Dimension.abc_seekbar_track_background_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
-			global::Prism.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
-			global::Prism.Resource.Dimension.abc_select_dialog_padding_start_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
-			global::Prism.Resource.Dimension.abc_switch_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_switch_padding;
-			global::Prism.Resource.Dimension.abc_text_size_body_1_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_body_1_material;
-			global::Prism.Resource.Dimension.abc_text_size_body_2_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_body_2_material;
-			global::Prism.Resource.Dimension.abc_text_size_button_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_button_material;
-			global::Prism.Resource.Dimension.abc_text_size_caption_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_caption_material;
-			global::Prism.Resource.Dimension.abc_text_size_display_1_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_1_material;
-			global::Prism.Resource.Dimension.abc_text_size_display_2_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_2_material;
-			global::Prism.Resource.Dimension.abc_text_size_display_3_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_3_material;
-			global::Prism.Resource.Dimension.abc_text_size_display_4_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_display_4_material;
-			global::Prism.Resource.Dimension.abc_text_size_headline_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_headline_material;
-			global::Prism.Resource.Dimension.abc_text_size_large_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_large_material;
-			global::Prism.Resource.Dimension.abc_text_size_medium_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_medium_material;
-			global::Prism.Resource.Dimension.abc_text_size_menu_header_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_menu_header_material;
-			global::Prism.Resource.Dimension.abc_text_size_menu_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_menu_material;
-			global::Prism.Resource.Dimension.abc_text_size_small_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_small_material;
-			global::Prism.Resource.Dimension.abc_text_size_subhead_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_subhead_material;
-			global::Prism.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
-			global::Prism.Resource.Dimension.abc_text_size_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_title_material;
-			global::Prism.Resource.Dimension.abc_text_size_title_material_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
-			global::Prism.Resource.Dimension.cardview_compat_inset_shadow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.cardview_compat_inset_shadow;
-			global::Prism.Resource.Dimension.cardview_default_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.cardview_default_elevation;
-			global::Prism.Resource.Dimension.cardview_default_radius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.cardview_default_radius;
-			global::Prism.Resource.Dimension.compat_button_inset_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
-			global::Prism.Resource.Dimension.compat_button_inset_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_inset_vertical_material;
-			global::Prism.Resource.Dimension.compat_button_padding_horizontal_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
-			global::Prism.Resource.Dimension.compat_button_padding_vertical_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_button_padding_vertical_material;
-			global::Prism.Resource.Dimension.compat_control_corner_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.compat_control_corner_material;
-			global::Prism.Resource.Dimension.design_appbar_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_appbar_elevation;
-			global::Prism.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
-			global::Prism.Resource.Dimension.design_bottom_navigation_active_text_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
-			global::Prism.Resource.Dimension.design_bottom_navigation_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_elevation;
-			global::Prism.Resource.Dimension.design_bottom_navigation_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_height;
-			global::Prism.Resource.Dimension.design_bottom_navigation_item_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
-			global::Prism.Resource.Dimension.design_bottom_navigation_item_min_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
-			global::Prism.Resource.Dimension.design_bottom_navigation_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_margin;
-			global::Prism.Resource.Dimension.design_bottom_navigation_shadow_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
-			global::Prism.Resource.Dimension.design_bottom_navigation_text_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_navigation_text_size;
-			global::Prism.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
-			global::Prism.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
-			global::Prism.Resource.Dimension.design_fab_border_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_fab_border_width;
-			global::Prism.Resource.Dimension.design_fab_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_fab_elevation;
-			global::Prism.Resource.Dimension.design_fab_image_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_fab_image_size;
-			global::Prism.Resource.Dimension.design_fab_size_mini = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_fab_size_mini;
-			global::Prism.Resource.Dimension.design_fab_size_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_fab_size_normal;
-			global::Prism.Resource.Dimension.design_fab_translation_z_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_fab_translation_z_pressed;
-			global::Prism.Resource.Dimension.design_navigation_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_navigation_elevation;
-			global::Prism.Resource.Dimension.design_navigation_icon_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_navigation_icon_padding;
-			global::Prism.Resource.Dimension.design_navigation_icon_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_navigation_icon_size;
-			global::Prism.Resource.Dimension.design_navigation_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_navigation_max_width;
-			global::Prism.Resource.Dimension.design_navigation_padding_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_navigation_padding_bottom;
-			global::Prism.Resource.Dimension.design_navigation_separator_vertical_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
-			global::Prism.Resource.Dimension.design_snackbar_action_inline_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
-			global::Prism.Resource.Dimension.design_snackbar_background_corner_radius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
-			global::Prism.Resource.Dimension.design_snackbar_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_elevation;
-			global::Prism.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
-			global::Prism.Resource.Dimension.design_snackbar_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_max_width;
-			global::Prism.Resource.Dimension.design_snackbar_min_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_min_width;
-			global::Prism.Resource.Dimension.design_snackbar_padding_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
-			global::Prism.Resource.Dimension.design_snackbar_padding_vertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_padding_vertical;
-			global::Prism.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
-			global::Prism.Resource.Dimension.design_snackbar_text_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_snackbar_text_size;
-			global::Prism.Resource.Dimension.design_tab_max_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_tab_max_width;
-			global::Prism.Resource.Dimension.design_tab_scrollable_min_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_tab_scrollable_min_width;
-			global::Prism.Resource.Dimension.design_tab_text_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_tab_text_size;
-			global::Prism.Resource.Dimension.design_tab_text_size_2line = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.design_tab_text_size_2line;
-			global::Prism.Resource.Dimension.disabled_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.disabled_alpha_material_dark;
-			global::Prism.Resource.Dimension.disabled_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.disabled_alpha_material_light;
-			global::Prism.Resource.Dimension.fastscroll_default_thickness = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.fastscroll_default_thickness;
-			global::Prism.Resource.Dimension.fastscroll_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.fastscroll_margin;
-			global::Prism.Resource.Dimension.fastscroll_minimum_range = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.fastscroll_minimum_range;
-			global::Prism.Resource.Dimension.highlight_alpha_material_colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.highlight_alpha_material_colored;
-			global::Prism.Resource.Dimension.highlight_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.highlight_alpha_material_dark;
-			global::Prism.Resource.Dimension.highlight_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.highlight_alpha_material_light;
-			global::Prism.Resource.Dimension.hint_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_alpha_material_dark;
-			global::Prism.Resource.Dimension.hint_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_alpha_material_light;
-			global::Prism.Resource.Dimension.hint_pressed_alpha_material_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
-			global::Prism.Resource.Dimension.hint_pressed_alpha_material_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
-			global::Prism.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
-			global::Prism.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
-			global::Prism.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
-			global::Prism.Resource.Dimension.notification_action_icon_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_action_icon_size;
-			global::Prism.Resource.Dimension.notification_action_text_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_action_text_size;
-			global::Prism.Resource.Dimension.notification_big_circle_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_big_circle_margin;
-			global::Prism.Resource.Dimension.notification_content_margin_start = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_content_margin_start;
-			global::Prism.Resource.Dimension.notification_large_icon_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Prism.Resource.Dimension.notification_large_icon_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Prism.Resource.Dimension.notification_main_column_padding_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_main_column_padding_top;
-			global::Prism.Resource.Dimension.notification_media_narrow_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_media_narrow_margin;
-			global::Prism.Resource.Dimension.notification_right_icon_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_right_icon_size;
-			global::Prism.Resource.Dimension.notification_right_side_padding_top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_right_side_padding_top;
-			global::Prism.Resource.Dimension.notification_small_icon_background_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Prism.Resource.Dimension.notification_small_icon_size_as_large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Prism.Resource.Dimension.notification_subtext_size = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_subtext_size;
-			global::Prism.Resource.Dimension.notification_top_pad = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_top_pad;
-			global::Prism.Resource.Dimension.notification_top_pad_large_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Prism.Resource.Dimension.tooltip_corner_radius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_corner_radius;
-			global::Prism.Resource.Dimension.tooltip_horizontal_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_horizontal_padding;
-			global::Prism.Resource.Dimension.tooltip_margin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_margin;
-			global::Prism.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
-			global::Prism.Resource.Dimension.tooltip_precise_anchor_threshold = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
-			global::Prism.Resource.Dimension.tooltip_vertical_padding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_vertical_padding;
-			global::Prism.Resource.Dimension.tooltip_y_offset_non_touch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
-			global::Prism.Resource.Dimension.tooltip_y_offset_touch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Dimension.tooltip_y_offset_touch;
-			global::Prism.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_action_bar_item_background_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_action_bar_item_background_material;
-			global::Prism.Resource.Drawable.abc_btn_borderless_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_borderless_material;
-			global::Prism.Resource.Drawable.abc_btn_check_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_check_material;
-			global::Prism.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
-			global::Prism.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
-			global::Prism.Resource.Drawable.abc_btn_colored_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_colored_material;
-			global::Prism.Resource.Drawable.abc_btn_default_mtrl_shape = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
-			global::Prism.Resource.Drawable.abc_btn_radio_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_radio_material;
-			global::Prism.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
-			global::Prism.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
-			global::Prism.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
-			global::Prism.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
-			global::Prism.Resource.Drawable.abc_cab_background_internal_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_cab_background_internal_bg;
-			global::Prism.Resource.Drawable.abc_cab_background_top_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_cab_background_top_material;
-			global::Prism.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_control_background_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_control_background_material;
-			global::Prism.Resource.Drawable.abc_dialog_material_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_dialog_material_background;
-			global::Prism.Resource.Drawable.abc_edit_text_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_edit_text_material;
-			global::Prism.Resource.Drawable.abc_ic_ab_back_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_ab_back_material;
-			global::Prism.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
-			global::Prism.Resource.Drawable.abc_ic_clear_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_clear_material;
-			global::Prism.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_ic_go_search_api_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_go_search_api_material;
-			global::Prism.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
-			global::Prism.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_ic_menu_overflow_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
-			global::Prism.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
-			global::Prism.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_ic_search_api_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_search_api_material;
-			global::Prism.Resource.Drawable.abc_ic_star_black_16dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_black_16dp;
-			global::Prism.Resource.Drawable.abc_ic_star_black_36dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_black_36dp;
-			global::Prism.Resource.Drawable.abc_ic_star_black_48dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_black_48dp;
-			global::Prism.Resource.Drawable.abc_ic_star_half_black_16dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
-			global::Prism.Resource.Drawable.abc_ic_star_half_black_36dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
-			global::Prism.Resource.Drawable.abc_ic_star_half_black_48dp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
-			global::Prism.Resource.Drawable.abc_ic_voice_search_api_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
-			global::Prism.Resource.Drawable.abc_item_background_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_item_background_holo_dark;
-			global::Prism.Resource.Drawable.abc_item_background_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_item_background_holo_light;
-			global::Prism.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_list_focused_holo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_focused_holo;
-			global::Prism.Resource.Drawable.abc_list_longpressed_holo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_longpressed_holo;
-			global::Prism.Resource.Drawable.abc_list_pressed_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
-			global::Prism.Resource.Drawable.abc_list_pressed_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_pressed_holo_light;
-			global::Prism.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
-			global::Prism.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
-			global::Prism.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
-			global::Prism.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
-			global::Prism.Resource.Drawable.abc_list_selector_holo_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_holo_dark;
-			global::Prism.Resource.Drawable.abc_list_selector_holo_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_list_selector_holo_light;
-			global::Prism.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
-			global::Prism.Resource.Drawable.abc_popup_background_mtrl_mult = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
-			global::Prism.Resource.Drawable.abc_ratingbar_indicator_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
-			global::Prism.Resource.Drawable.abc_ratingbar_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ratingbar_material;
-			global::Prism.Resource.Drawable.abc_ratingbar_small_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_ratingbar_small_material;
-			global::Prism.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
-			global::Prism.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
-			global::Prism.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_seekbar_thumb_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_seekbar_thumb_material;
-			global::Prism.Resource.Drawable.abc_seekbar_tick_mark_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
-			global::Prism.Resource.Drawable.abc_seekbar_track_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_seekbar_track_material;
-			global::Prism.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
-			global::Prism.Resource.Drawable.abc_spinner_textfield_background_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
-			global::Prism.Resource.Drawable.abc_switch_thumb_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_switch_thumb_material;
-			global::Prism.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_tab_indicator_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_tab_indicator_material;
-			global::Prism.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Prism.Resource.Drawable.abc_textfield_search_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_textfield_search_material;
-			global::Prism.Resource.Drawable.abc_text_cursor_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_cursor_material;
-			global::Prism.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
-			global::Prism.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
-			global::Prism.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
-			global::Prism.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
-			global::Prism.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
-			global::Prism.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Prism.Resource.Drawable.abc_vector_test = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.abc_vector_test;
-			global::Prism.Resource.Drawable.avd_hide_password = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.avd_hide_password;
-			global::Prism.Resource.Drawable.avd_show_password = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.avd_show_password;
-			global::Prism.Resource.Drawable.design_bottom_navigation_item_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.design_bottom_navigation_item_background;
-			global::Prism.Resource.Drawable.design_fab_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.design_fab_background;
-			global::Prism.Resource.Drawable.design_ic_visibility = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.design_ic_visibility;
-			global::Prism.Resource.Drawable.design_ic_visibility_off = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.design_ic_visibility_off;
-			global::Prism.Resource.Drawable.design_password_eye = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.design_password_eye;
-			global::Prism.Resource.Drawable.design_snackbar_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.design_snackbar_background;
-			global::Prism.Resource.Drawable.navigation_empty_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.navigation_empty_icon;
-			global::Prism.Resource.Drawable.notification_action_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_action_background;
-			global::Prism.Resource.Drawable.notification_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg;
-			global::Prism.Resource.Drawable.notification_bg_low = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_low;
-			global::Prism.Resource.Drawable.notification_bg_low_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_low_normal;
-			global::Prism.Resource.Drawable.notification_bg_low_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_low_pressed;
-			global::Prism.Resource.Drawable.notification_bg_normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_normal;
-			global::Prism.Resource.Drawable.notification_bg_normal_pressed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Prism.Resource.Drawable.notification_icon_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_icon_background;
-			global::Prism.Resource.Drawable.notification_template_icon_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Prism.Resource.Drawable.notification_template_icon_low_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Prism.Resource.Drawable.notification_tile_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notification_tile_bg;
-			global::Prism.Resource.Drawable.notify_panel_notification_icon_bg = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Prism.Resource.Drawable.tooltip_frame_dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.tooltip_frame_dark;
-			global::Prism.Resource.Drawable.tooltip_frame_light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Prism.Resource.Id.action0 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action0;
-			global::Prism.Resource.Id.actions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.actions;
-			global::Prism.Resource.Id.action_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar;
-			global::Prism.Resource.Id.action_bar_activity_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_activity_content;
-			global::Prism.Resource.Id.action_bar_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_container;
-			global::Prism.Resource.Id.action_bar_root = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_root;
-			global::Prism.Resource.Id.action_bar_spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_spinner;
-			global::Prism.Resource.Id.action_bar_subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_subtitle;
-			global::Prism.Resource.Id.action_bar_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_bar_title;
-			global::Prism.Resource.Id.action_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_container;
-			global::Prism.Resource.Id.action_context_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_context_bar;
-			global::Prism.Resource.Id.action_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_divider;
-			global::Prism.Resource.Id.action_image = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_image;
-			global::Prism.Resource.Id.action_menu_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_menu_divider;
-			global::Prism.Resource.Id.action_menu_presenter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_menu_presenter;
-			global::Prism.Resource.Id.action_mode_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_mode_bar;
-			global::Prism.Resource.Id.action_mode_bar_stub = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_mode_bar_stub;
-			global::Prism.Resource.Id.action_mode_close_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_mode_close_button;
-			global::Prism.Resource.Id.action_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.action_text;
-			global::Prism.Resource.Id.activity_chooser_view_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.activity_chooser_view_content;
-			global::Prism.Resource.Id.add = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.add;
-			global::Prism.Resource.Id.alertTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.alertTitle;
-			global::Prism.Resource.Id.all = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.all;
-			global::Prism.Resource.Id.ALT = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.ALT;
-			global::Prism.Resource.Id.always = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.always;
-			global::Prism.Resource.Id.async = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.async;
-			global::Prism.Resource.Id.auto = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.auto;
-			global::Prism.Resource.Id.beginning = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.beginning;
-			global::Prism.Resource.Id.blocking = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.blocking;
-			global::Prism.Resource.Id.bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.bottom;
-			global::Prism.Resource.Id.bottomtab_navarea = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.bottomtab_navarea;
-			global::Prism.Resource.Id.bottomtab_tabbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.bottomtab_tabbar;
-			global::Prism.Resource.Id.buttonPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.buttonPanel;
-			global::Prism.Resource.Id.cancel_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.cancel_action;
-			global::Prism.Resource.Id.center = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.center;
-			global::Prism.Resource.Id.center_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.center_horizontal;
-			global::Prism.Resource.Id.center_vertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.center_vertical;
-			global::Prism.Resource.Id.checkbox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.checkbox;
-			global::Prism.Resource.Id.chronometer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.chronometer;
-			global::Prism.Resource.Id.clip_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.clip_horizontal;
-			global::Prism.Resource.Id.clip_vertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.clip_vertical;
-			global::Prism.Resource.Id.collapseActionView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.collapseActionView;
-			global::Prism.Resource.Id.container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.container;
-			global::Prism.Resource.Id.contentPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.contentPanel;
-			global::Prism.Resource.Id.coordinator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.coordinator;
-			global::Prism.Resource.Id.CTRL = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.CTRL;
-			global::Prism.Resource.Id.custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.custom;
-			global::Prism.Resource.Id.customPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.customPanel;
-			global::Prism.Resource.Id.decor_content_parent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.decor_content_parent;
-			global::Prism.Resource.Id.default_activity_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.default_activity_button;
-			global::Prism.Resource.Id.design_bottom_sheet = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.design_bottom_sheet;
-			global::Prism.Resource.Id.design_menu_item_action_area = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.design_menu_item_action_area;
-			global::Prism.Resource.Id.design_menu_item_action_area_stub = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.design_menu_item_action_area_stub;
-			global::Prism.Resource.Id.design_menu_item_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.design_menu_item_text;
-			global::Prism.Resource.Id.design_navigation_view = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.design_navigation_view;
-			global::Prism.Resource.Id.disableHome = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.disableHome;
-			global::Prism.Resource.Id.edit_query = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.edit_query;
-			global::Prism.Resource.Id.end = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.end;
-			global::Prism.Resource.Id.end_padder = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.end_padder;
-			global::Prism.Resource.Id.enterAlways = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.enterAlways;
-			global::Prism.Resource.Id.enterAlwaysCollapsed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.enterAlwaysCollapsed;
-			global::Prism.Resource.Id.exitUntilCollapsed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.exitUntilCollapsed;
-			global::Prism.Resource.Id.expanded_menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.expanded_menu;
-			global::Prism.Resource.Id.expand_activities_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.expand_activities_button;
-			global::Prism.Resource.Id.fill = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.fill;
-			global::Prism.Resource.Id.fill_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.fill_horizontal;
-			global::Prism.Resource.Id.fill_vertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.fill_vertical;
-			global::Prism.Resource.Id.@fixed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.@fixed;
-			global::Prism.Resource.Id.flyoutcontent_appbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.flyoutcontent_appbar;
-			global::Prism.Resource.Id.flyoutcontent_recycler = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.flyoutcontent_recycler;
-			global::Prism.Resource.Id.forever = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.forever;
-			global::Prism.Resource.Id.FUNCTION = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.FUNCTION;
-			global::Prism.Resource.Id.ghost_view = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.ghost_view;
-			global::Prism.Resource.Id.home = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.home;
-			global::Prism.Resource.Id.homeAsUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.homeAsUp;
-			global::Prism.Resource.Id.icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.icon;
-			global::Prism.Resource.Id.icon_group = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.icon_group;
-			global::Prism.Resource.Id.ifRoom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.ifRoom;
-			global::Prism.Resource.Id.image = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.image;
-			global::Prism.Resource.Id.info = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.info;
-			global::Prism.Resource.Id.italic = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.italic;
-			global::Prism.Resource.Id.item_touch_helper_previous_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.item_touch_helper_previous_elevation;
-			global::Prism.Resource.Id.largeLabel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.largeLabel;
-			global::Prism.Resource.Id.left = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.left;
-			global::Prism.Resource.Id.line1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.line1;
-			global::Prism.Resource.Id.line3 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.line3;
-			global::Prism.Resource.Id.listMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.listMode;
-			global::Prism.Resource.Id.list_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.list_item;
-			global::Prism.Resource.Id.main_appbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.main_appbar;
-			global::Prism.Resource.Id.main_tablayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.main_tablayout;
-			global::Prism.Resource.Id.main_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.main_toolbar;
-			global::Prism.Resource.Id.masked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.masked;
-			global::Prism.Resource.Id.media_actions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.media_actions;
-			global::Prism.Resource.Id.message = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.message;
-			global::Prism.Resource.Id.META = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.META;
-			global::Prism.Resource.Id.middle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.middle;
-			global::Prism.Resource.Id.mini = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.mini;
-			global::Prism.Resource.Id.multiply = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.multiply;
-			global::Prism.Resource.Id.navigation_header_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.navigation_header_container;
-			global::Prism.Resource.Id.never = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.never;
-			global::Prism.Resource.Id.none = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.none;
-			global::Prism.Resource.Id.normal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.normal;
-			global::Prism.Resource.Id.notification_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.notification_background;
-			global::Prism.Resource.Id.notification_main_column = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.notification_main_column;
-			global::Prism.Resource.Id.notification_main_column_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.notification_main_column_container;
-			global::Prism.Resource.Id.parallax = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.parallax;
-			global::Prism.Resource.Id.parentPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.parentPanel;
-			global::Prism.Resource.Id.parent_matrix = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.parent_matrix;
-			global::Prism.Resource.Id.pin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.pin;
-			global::Prism.Resource.Id.progress_circular = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.progress_circular;
-			global::Prism.Resource.Id.progress_horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.progress_horizontal;
-			global::Prism.Resource.Id.radio = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.radio;
-			global::Prism.Resource.Id.right = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.right;
-			global::Prism.Resource.Id.right_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.right_icon;
-			global::Prism.Resource.Id.right_side = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.right_side;
-			global::Prism.Resource.Id.save_non_transition_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.save_non_transition_alpha;
-			global::Prism.Resource.Id.screen = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.screen;
-			global::Prism.Resource.Id.scroll = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scroll;
-			global::Prism.Resource.Id.scrollable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollable;
-			global::Prism.Resource.Id.scrollIndicatorDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollIndicatorDown;
-			global::Prism.Resource.Id.scrollIndicatorUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollIndicatorUp;
-			global::Prism.Resource.Id.scrollView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.scrollView;
-			global::Prism.Resource.Id.search_badge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_badge;
-			global::Prism.Resource.Id.search_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_bar;
-			global::Prism.Resource.Id.search_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_button;
-			global::Prism.Resource.Id.search_close_btn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_close_btn;
-			global::Prism.Resource.Id.search_edit_frame = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_edit_frame;
-			global::Prism.Resource.Id.search_go_btn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_go_btn;
-			global::Prism.Resource.Id.search_mag_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_mag_icon;
-			global::Prism.Resource.Id.search_plate = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_plate;
-			global::Prism.Resource.Id.search_src_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_src_text;
-			global::Prism.Resource.Id.search_voice_btn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.search_voice_btn;
-			global::Prism.Resource.Id.select_dialog_listview = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.select_dialog_listview;
-			global::Prism.Resource.Id.shellcontent_appbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.shellcontent_appbar;
-			global::Prism.Resource.Id.shellcontent_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.shellcontent_toolbar;
-			global::Prism.Resource.Id.SHIFT = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.SHIFT;
-			global::Prism.Resource.Id.shortcut = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.shortcut;
-			global::Prism.Resource.Id.showCustom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.showCustom;
-			global::Prism.Resource.Id.showHome = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.showHome;
-			global::Prism.Resource.Id.showTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.showTitle;
-			global::Prism.Resource.Id.smallLabel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.smallLabel;
-			global::Prism.Resource.Id.snackbar_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.snackbar_action;
-			global::Prism.Resource.Id.snackbar_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.snackbar_text;
-			global::Prism.Resource.Id.snap = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.snap;
-			global::Prism.Resource.Id.spacer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.spacer;
-			global::Prism.Resource.Id.split_action_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.split_action_bar;
-			global::Prism.Resource.Id.src_atop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.src_atop;
-			global::Prism.Resource.Id.src_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.src_in;
-			global::Prism.Resource.Id.src_over = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.src_over;
-			global::Prism.Resource.Id.start = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.start;
-			global::Prism.Resource.Id.status_bar_latest_event_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Prism.Resource.Id.submenuarrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.submenuarrow;
-			global::Prism.Resource.Id.submit_area = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.submit_area;
-			global::Prism.Resource.Id.SYM = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.SYM;
-			global::Prism.Resource.Id.tabMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.tabMode;
-			global::Prism.Resource.Id.tag_transition_group = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.tag_transition_group;
-			global::Prism.Resource.Id.text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.text;
-			global::Prism.Resource.Id.text2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.text2;
-			global::Prism.Resource.Id.textinput_counter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.textinput_counter;
-			global::Prism.Resource.Id.textinput_error = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.textinput_error;
-			global::Prism.Resource.Id.textSpacerNoButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.textSpacerNoButtons;
-			global::Prism.Resource.Id.textSpacerNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.textSpacerNoTitle;
-			global::Prism.Resource.Id.text_input_password_toggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.text_input_password_toggle;
-			global::Prism.Resource.Id.time = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.time;
-			global::Prism.Resource.Id.title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.title;
-			global::Prism.Resource.Id.titleDividerNoCustom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.titleDividerNoCustom;
-			global::Prism.Resource.Id.title_template = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.title_template;
-			global::Prism.Resource.Id.top = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.top;
-			global::Prism.Resource.Id.topPanel = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.topPanel;
-			global::Prism.Resource.Id.touch_outside = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.touch_outside;
-			global::Prism.Resource.Id.transition_current_scene = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.transition_current_scene;
-			global::Prism.Resource.Id.transition_layout_save = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.transition_layout_save;
-			global::Prism.Resource.Id.transition_position = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.transition_position;
-			global::Prism.Resource.Id.transition_scene_layoutid_cache = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.transition_scene_layoutid_cache;
-			global::Prism.Resource.Id.transition_transform = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.transition_transform;
-			global::Prism.Resource.Id.uniform = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.uniform;
-			global::Prism.Resource.Id.up = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.up;
-			global::Prism.Resource.Id.useLogo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.useLogo;
-			global::Prism.Resource.Id.view_offset_helper = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.view_offset_helper;
-			global::Prism.Resource.Id.visible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.visible;
-			global::Prism.Resource.Id.withText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.withText;
-			global::Prism.Resource.Id.wrap_content = global::Plugin.CloudFirestore.Sample.Droid.Resource.Id.wrap_content;
-			global::Prism.Resource.Integer.abc_config_activityDefaultDur = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.abc_config_activityDefaultDur;
-			global::Prism.Resource.Integer.abc_config_activityShortDur = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.abc_config_activityShortDur;
-			global::Prism.Resource.Integer.app_bar_elevation_anim_duration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.app_bar_elevation_anim_duration;
-			global::Prism.Resource.Integer.bottom_sheet_slide_duration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.bottom_sheet_slide_duration;
-			global::Prism.Resource.Integer.cancel_button_image_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Prism.Resource.Integer.config_tooltipAnimTime = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.config_tooltipAnimTime;
-			global::Prism.Resource.Integer.design_snackbar_text_max_lines = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.design_snackbar_text_max_lines;
-			global::Prism.Resource.Integer.hide_password_duration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.hide_password_duration;
-			global::Prism.Resource.Integer.show_password_duration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.show_password_duration;
-			global::Prism.Resource.Integer.status_bar_notification_info_maxnum = global::Plugin.CloudFirestore.Sample.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Prism.Resource.Layout.abc_action_bar_title_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_bar_title_item;
-			global::Prism.Resource.Layout.abc_action_bar_up_container = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_bar_up_container;
-			global::Prism.Resource.Layout.abc_action_menu_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_menu_item_layout;
-			global::Prism.Resource.Layout.abc_action_menu_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_menu_layout;
-			global::Prism.Resource.Layout.abc_action_mode_bar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_mode_bar;
-			global::Prism.Resource.Layout.abc_action_mode_close_item_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_action_mode_close_item_material;
-			global::Prism.Resource.Layout.abc_activity_chooser_view = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_activity_chooser_view;
-			global::Prism.Resource.Layout.abc_activity_chooser_view_list_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
-			global::Prism.Resource.Layout.abc_alert_dialog_button_bar_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
-			global::Prism.Resource.Layout.abc_alert_dialog_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_alert_dialog_material;
-			global::Prism.Resource.Layout.abc_alert_dialog_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_alert_dialog_title_material;
-			global::Prism.Resource.Layout.abc_dialog_title_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_dialog_title_material;
-			global::Prism.Resource.Layout.abc_expanded_menu_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_expanded_menu_layout;
-			global::Prism.Resource.Layout.abc_list_menu_item_checkbox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_checkbox;
-			global::Prism.Resource.Layout.abc_list_menu_item_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_icon;
-			global::Prism.Resource.Layout.abc_list_menu_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_layout;
-			global::Prism.Resource.Layout.abc_list_menu_item_radio = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_list_menu_item_radio;
-			global::Prism.Resource.Layout.abc_popup_menu_header_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
-			global::Prism.Resource.Layout.abc_popup_menu_item_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_popup_menu_item_layout;
-			global::Prism.Resource.Layout.abc_screen_content_include = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_content_include;
-			global::Prism.Resource.Layout.abc_screen_simple = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_simple;
-			global::Prism.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
-			global::Prism.Resource.Layout.abc_screen_toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_screen_toolbar;
-			global::Prism.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
-			global::Prism.Resource.Layout.abc_search_view = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_search_view;
-			global::Prism.Resource.Layout.abc_select_dialog_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.abc_select_dialog_material;
-			global::Prism.Resource.Layout.BottomTabLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.BottomTabLayout;
-			global::Prism.Resource.Layout.design_bottom_navigation_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_bottom_navigation_item;
-			global::Prism.Resource.Layout.design_bottom_sheet_dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_bottom_sheet_dialog;
-			global::Prism.Resource.Layout.design_layout_snackbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_layout_snackbar;
-			global::Prism.Resource.Layout.design_layout_snackbar_include = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_layout_snackbar_include;
-			global::Prism.Resource.Layout.design_layout_tab_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_layout_tab_icon;
-			global::Prism.Resource.Layout.design_layout_tab_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_layout_tab_text;
-			global::Prism.Resource.Layout.design_menu_item_action_area = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_menu_item_action_area;
-			global::Prism.Resource.Layout.design_navigation_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_navigation_item;
-			global::Prism.Resource.Layout.design_navigation_item_header = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_navigation_item_header;
-			global::Prism.Resource.Layout.design_navigation_item_separator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_navigation_item_separator;
-			global::Prism.Resource.Layout.design_navigation_item_subheader = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_navigation_item_subheader;
-			global::Prism.Resource.Layout.design_navigation_menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_navigation_menu;
-			global::Prism.Resource.Layout.design_navigation_menu_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_navigation_menu_item;
-			global::Prism.Resource.Layout.design_text_input_password_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.design_text_input_password_icon;
-			global::Prism.Resource.Layout.FlyoutContent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.FlyoutContent;
-			global::Prism.Resource.Layout.notification_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_action;
-			global::Prism.Resource.Layout.notification_action_tombstone = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_action_tombstone;
-			global::Prism.Resource.Layout.notification_media_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_media_action;
-			global::Prism.Resource.Layout.notification_media_cancel_action = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Prism.Resource.Layout.notification_template_big_media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media;
-			global::Prism.Resource.Layout.notification_template_big_media_custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media_custom;
-			global::Prism.Resource.Layout.notification_template_big_media_narrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Prism.Resource.Layout.notification_template_big_media_narrow_custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Prism.Resource.Layout.notification_template_custom_big = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_custom_big;
-			global::Prism.Resource.Layout.notification_template_icon_group = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_icon_group;
-			global::Prism.Resource.Layout.notification_template_lines_media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_lines_media;
-			global::Prism.Resource.Layout.notification_template_media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_media;
-			global::Prism.Resource.Layout.notification_template_media_custom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_media_custom;
-			global::Prism.Resource.Layout.notification_template_part_chronometer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Prism.Resource.Layout.notification_template_part_time = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.notification_template_part_time;
-			global::Prism.Resource.Layout.RootLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.RootLayout;
-			global::Prism.Resource.Layout.select_dialog_item_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.select_dialog_item_material;
-			global::Prism.Resource.Layout.select_dialog_multichoice_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.select_dialog_multichoice_material;
-			global::Prism.Resource.Layout.select_dialog_singlechoice_material = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.select_dialog_singlechoice_material;
-			global::Prism.Resource.Layout.ShellContent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.ShellContent;
-			global::Prism.Resource.Layout.support_simple_spinner_dropdown_item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
-			global::Prism.Resource.String.abc_action_bar_home_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_bar_home_description;
-			global::Prism.Resource.String.abc_action_bar_up_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_bar_up_description;
-			global::Prism.Resource.String.abc_action_menu_overflow_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_menu_overflow_description;
-			global::Prism.Resource.String.abc_action_mode_done = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_action_mode_done;
-			global::Prism.Resource.String.abc_activitychooserview_choose_application = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_activitychooserview_choose_application;
-			global::Prism.Resource.String.abc_activity_chooser_view_see_all = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_activity_chooser_view_see_all;
-			global::Prism.Resource.String.abc_capital_off = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_capital_off;
-			global::Prism.Resource.String.abc_capital_on = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_capital_on;
-			global::Prism.Resource.String.abc_searchview_description_clear = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_clear;
-			global::Prism.Resource.String.abc_searchview_description_query = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_query;
-			global::Prism.Resource.String.abc_searchview_description_search = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_search;
-			global::Prism.Resource.String.abc_searchview_description_submit = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_submit;
-			global::Prism.Resource.String.abc_searchview_description_voice = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_searchview_description_voice;
-			global::Prism.Resource.String.abc_search_hint = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_search_hint;
-			global::Prism.Resource.String.abc_shareactionprovider_share_with = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_shareactionprovider_share_with;
-			global::Prism.Resource.String.abc_shareactionprovider_share_with_application = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_shareactionprovider_share_with_application;
-			global::Prism.Resource.String.abc_toolbar_collapse_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.abc_toolbar_collapse_description;
-			global::Prism.Resource.String.appbar_scrolling_view_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.appbar_scrolling_view_behavior;
-			global::Prism.Resource.String.bottom_sheet_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.bottom_sheet_behavior;
-			global::Prism.Resource.String.character_counter_pattern = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.character_counter_pattern;
-			global::Prism.Resource.String.password_toggle_content_description = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.password_toggle_content_description;
-			global::Prism.Resource.String.path_password_eye = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye;
-			global::Prism.Resource.String.path_password_eye_mask_strike_through = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye_mask_strike_through;
-			global::Prism.Resource.String.path_password_eye_mask_visible = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_eye_mask_visible;
-			global::Prism.Resource.String.path_password_strike_through = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.path_password_strike_through;
-			global::Prism.Resource.String.search_menu_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.search_menu_title;
-			global::Prism.Resource.String.status_bar_notification_info_overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Prism.Resource.Style.AlertDialog_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.AlertDialog_AppCompat;
-			global::Prism.Resource.Style.AlertDialog_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.AlertDialog_AppCompat_Light;
-			global::Prism.Resource.Style.Animation_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_AppCompat_Dialog;
-			global::Prism.Resource.Style.Animation_AppCompat_DropDownUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
-			global::Prism.Resource.Style.Animation_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_AppCompat_Tooltip;
-			global::Prism.Resource.Style.Animation_Design_BottomSheetDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
-			global::Prism.Resource.Style.Base_AlertDialog_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_AlertDialog_AppCompat;
-			global::Prism.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
-			global::Prism.Resource.Style.Base_Animation_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
-			global::Prism.Resource.Style.Base_Animation_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
-			global::Prism.Resource.Style.Base_CardView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_CardView;
-			global::Prism.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
-			global::Prism.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
-			global::Prism.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Prism.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Prism.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Prism.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Prism.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
-			global::Prism.Resource.Style.Base_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Prism.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Prism.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_V21_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat;
-			global::Prism.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Prism.Resource.Style.Base_V22_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V22_Theme_AppCompat;
-			global::Prism.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Base_V23_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V23_Theme_AppCompat;
-			global::Prism.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Base_V26_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V26_Theme_AppCompat;
-			global::Prism.Resource.Style.Base_V26_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
-			global::Prism.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_V7_Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat;
-			global::Prism.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
-			global::Prism.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Prism.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
-			global::Prism.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
-			global::Prism.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_EditText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ListView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
-			global::Prism.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Prism.Resource.Style.Base_Widget_Design_TabLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Base_Widget_Design_TabLayout;
-			global::Prism.Resource.Style.CardView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView;
-			global::Prism.Resource.Style.CardView_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView_Dark;
-			global::Prism.Resource.Style.CardView_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView_Light;
-			global::Prism.Resource.Style.Platform_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_AppCompat;
-			global::Prism.Resource.Style.Platform_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_AppCompat_Light;
-			global::Prism.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
-			global::Prism.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
-			global::Prism.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
-			global::Prism.Resource.Style.Platform_V21_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V21_AppCompat;
-			global::Prism.Resource.Style.Platform_V21_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V21_AppCompat_Light;
-			global::Prism.Resource.Style.Platform_V25_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V25_AppCompat;
-			global::Prism.Resource.Style.Platform_V25_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_V25_AppCompat_Light;
-			global::Prism.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
-			global::Prism.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
-			global::Prism.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Prism.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
-			global::Prism.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
-			global::Prism.Resource.Style.TextAppearance_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Body1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Body2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Button;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Caption = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Display1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Display2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Display3 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Display4 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Headline = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Large;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Medium = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Small;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Subhead = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Title;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Tooltip = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
-			global::Prism.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Info = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Time = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
-			global::Prism.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
-			global::Prism.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
-			global::Prism.Resource.Style.TextAppearance_Design_Counter = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_Counter;
-			global::Prism.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
-			global::Prism.Resource.Style.TextAppearance_Design_Error = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_Error;
-			global::Prism.Resource.Style.TextAppearance_Design_Hint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_Hint;
-			global::Prism.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
-			global::Prism.Resource.Style.TextAppearance_Design_Tab = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Design_Tab;
-			global::Prism.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
-			global::Prism.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
-			global::Prism.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
-			global::Prism.Resource.Style.ThemeOverlay_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
-			global::Prism.Resource.Style.Theme_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat;
-			global::Prism.Resource.Style.Theme_AppCompat_CompactMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Prism.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Prism.Resource.Style.Theme_AppCompat_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Prism.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Prism.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Prism.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Prism.Resource.Style.Theme_AppCompat_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Prism.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Prism.Resource.Style.Theme_AppCompat_Light_Dialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Prism.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Prism.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Prism.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Prism.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Prism.Resource.Style.Theme_AppCompat_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Prism.Resource.Style.Theme_Design = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_Design;
-			global::Prism.Resource.Style.Theme_Design_BottomSheetDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Prism.Resource.Style.Theme_Design_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_Design_Light;
-			global::Prism.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Prism.Resource.Style.Theme_Design_Light_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Prism.Resource.Style.Theme_Design_NoActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
-			global::Prism.Resource.Style.Widget_AppCompat_ActionMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActionMode;
-			global::Prism.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
-			global::Prism.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
-			global::Prism.Resource.Style.Widget_AppCompat_Button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button;
-			global::Prism.Resource.Style.Widget_AppCompat_ButtonBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Prism.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
-			global::Prism.Resource.Style.Widget_AppCompat_Button_Borderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
-			global::Prism.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
-			global::Prism.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
-			global::Prism.Resource.Style.Widget_AppCompat_Button_Colored = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
-			global::Prism.Resource.Style.Widget_AppCompat_Button_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Prism.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
-			global::Prism.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
-			global::Prism.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
-			global::Prism.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
-			global::Prism.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
-			global::Prism.Resource.Style.Widget_AppCompat_EditText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_EditText;
-			global::Prism.Resource.Style.Widget_AppCompat_ImageButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ImageButton;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
-			global::Prism.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
-			global::Prism.Resource.Style.Widget_AppCompat_ListMenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
-			global::Prism.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
-			global::Prism.Resource.Style.Widget_AppCompat_ListView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListView;
-			global::Prism.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
-			global::Prism.Resource.Style.Widget_AppCompat_ListView_Menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
-			global::Prism.Resource.Style.Widget_AppCompat_PopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
-			global::Prism.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
-			global::Prism.Resource.Style.Widget_AppCompat_PopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
-			global::Prism.Resource.Style.Widget_AppCompat_ProgressBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
-			global::Prism.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
-			global::Prism.Resource.Style.Widget_AppCompat_RatingBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar;
-			global::Prism.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
-			global::Prism.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
-			global::Prism.Resource.Style.Widget_AppCompat_SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SearchView;
-			global::Prism.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
-			global::Prism.Resource.Style.Widget_AppCompat_SeekBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SeekBar;
-			global::Prism.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
-			global::Prism.Resource.Style.Widget_AppCompat_Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner;
-			global::Prism.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
-			global::Prism.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
-			global::Prism.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
-			global::Prism.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
-			global::Prism.Resource.Style.Widget_AppCompat_Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Toolbar;
-			global::Prism.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
-			global::Prism.Resource.Style.Widget_Compat_NotificationActionContainer = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
-			global::Prism.Resource.Style.Widget_Compat_NotificationActionText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionText;
-			global::Prism.Resource.Style.Widget_Design_AppBarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_AppBarLayout;
-			global::Prism.Resource.Style.Widget_Design_BottomNavigationView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_BottomNavigationView;
-			global::Prism.Resource.Style.Widget_Design_BottomSheet_Modal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
-			global::Prism.Resource.Style.Widget_Design_CollapsingToolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
-			global::Prism.Resource.Style.Widget_Design_FloatingActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_FloatingActionButton;
-			global::Prism.Resource.Style.Widget_Design_NavigationView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_NavigationView;
-			global::Prism.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
-			global::Prism.Resource.Style.Widget_Design_Snackbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_Snackbar;
-			global::Prism.Resource.Style.Widget_Design_TabLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_TabLayout;
-			global::Prism.Resource.Style.Widget_Design_TextInputLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.Widget_Design_TextInputLayout;
-			global::Prism.Resource.Styleable.ActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar;
-			global::Prism.Resource.Styleable.ActionBarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBarLayout;
-			global::Prism.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
-			global::Prism.Resource.Styleable.ActionBar_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_background;
-			global::Prism.Resource.Styleable.ActionBar_backgroundSplit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_backgroundSplit;
-			global::Prism.Resource.Styleable.ActionBar_backgroundStacked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_backgroundStacked;
-			global::Prism.Resource.Styleable.ActionBar_contentInsetEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
-			global::Prism.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
-			global::Prism.Resource.Styleable.ActionBar_contentInsetLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
-			global::Prism.Resource.Styleable.ActionBar_contentInsetRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetRight;
-			global::Prism.Resource.Styleable.ActionBar_contentInsetStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetStart;
-			global::Prism.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
-			global::Prism.Resource.Styleable.ActionBar_customNavigationLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
-			global::Prism.Resource.Styleable.ActionBar_displayOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_displayOptions;
-			global::Prism.Resource.Styleable.ActionBar_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_divider;
-			global::Prism.Resource.Styleable.ActionBar_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_elevation;
-			global::Prism.Resource.Styleable.ActionBar_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_height;
-			global::Prism.Resource.Styleable.ActionBar_hideOnContentScroll = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
-			global::Prism.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
-			global::Prism.Resource.Styleable.ActionBar_homeLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_homeLayout;
-			global::Prism.Resource.Styleable.ActionBar_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_icon;
-			global::Prism.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
-			global::Prism.Resource.Styleable.ActionBar_itemPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_itemPadding;
-			global::Prism.Resource.Styleable.ActionBar_logo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_logo;
-			global::Prism.Resource.Styleable.ActionBar_navigationMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_navigationMode;
-			global::Prism.Resource.Styleable.ActionBar_popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_popupTheme;
-			global::Prism.Resource.Styleable.ActionBar_progressBarPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_progressBarPadding;
-			global::Prism.Resource.Styleable.ActionBar_progressBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_progressBarStyle;
-			global::Prism.Resource.Styleable.ActionBar_subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_subtitle;
-			global::Prism.Resource.Styleable.ActionBar_subtitleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
-			global::Prism.Resource.Styleable.ActionBar_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_title;
-			global::Prism.Resource.Styleable.ActionBar_titleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Prism.Resource.Styleable.ActionMenuItemView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMenuItemView;
-			global::Prism.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
-			global::Prism.Resource.Styleable.ActionMenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMenuView;
-			global::Prism.Resource.Styleable.ActionMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode;
-			global::Prism.Resource.Styleable.ActionMode_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_background;
-			global::Prism.Resource.Styleable.ActionMode_backgroundSplit = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_backgroundSplit;
-			global::Prism.Resource.Styleable.ActionMode_closeItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_closeItemLayout;
-			global::Prism.Resource.Styleable.ActionMode_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_height;
-			global::Prism.Resource.Styleable.ActionMode_subtitleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
-			global::Prism.Resource.Styleable.ActionMode_titleTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActionMode_titleTextStyle;
-			global::Prism.Resource.Styleable.ActivityChooserView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActivityChooserView;
-			global::Prism.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
-			global::Prism.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
-			global::Prism.Resource.Styleable.AlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog;
-			global::Prism.Resource.Styleable.AlertDialog_android_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_android_layout;
-			global::Prism.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
-			global::Prism.Resource.Styleable.AlertDialog_listItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_listItemLayout;
-			global::Prism.Resource.Styleable.AlertDialog_listLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_listLayout;
-			global::Prism.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
-			global::Prism.Resource.Styleable.AlertDialog_showTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_showTitle;
-			global::Prism.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
-			global::Prism.Resource.Styleable.AppBarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout;
-			global::Prism.Resource.Styleable.AppBarLayoutStates = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayoutStates;
-			global::Prism.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
-			global::Prism.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
-			global::Prism.Resource.Styleable.AppBarLayout_android_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Prism.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::Prism.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::Prism.Resource.Styleable.AppBarLayout_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Prism.Resource.Styleable.AppBarLayout_expanded = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Prism.Resource.Styleable.AppBarLayout_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_Layout;
-			global::Prism.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
-			global::Prism.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
-			global::Prism.Resource.Styleable.AppCompatImageView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView;
-			global::Prism.Resource.Styleable.AppCompatImageView_android_src = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_android_src;
-			global::Prism.Resource.Styleable.AppCompatImageView_srcCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
-			global::Prism.Resource.Styleable.AppCompatImageView_tint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_tint;
-			global::Prism.Resource.Styleable.AppCompatImageView_tintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatImageView_tintMode;
-			global::Prism.Resource.Styleable.AppCompatSeekBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar;
-			global::Prism.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
-			global::Prism.Resource.Styleable.AppCompatSeekBar_tickMark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
-			global::Prism.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
-			global::Prism.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
-			global::Prism.Resource.Styleable.AppCompatTextHelper = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
-			global::Prism.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
-			global::Prism.Resource.Styleable.AppCompatTextView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView;
-			global::Prism.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
-			global::Prism.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
-			global::Prism.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
-			global::Prism.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
-			global::Prism.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
-			global::Prism.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
-			global::Prism.Resource.Styleable.AppCompatTextView_fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
-			global::Prism.Resource.Styleable.AppCompatTextView_textAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
-			global::Prism.Resource.Styleable.AppCompatTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
-			global::Prism.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
-			global::Prism.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
-			global::Prism.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorAccent = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorError = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorError;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorPrimary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
-			global::Prism.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
-			global::Prism.Resource.Styleable.AppCompatTheme_controlBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
-			global::Prism.Resource.Styleable.AppCompatTheme_dialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
-			global::Prism.Resource.Styleable.AppCompatTheme_dividerVertical = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Prism.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
-			global::Prism.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_editTextBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_editTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
-			global::Prism.Resource.Styleable.AppCompatTheme_editTextStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
-			global::Prism.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
-			global::Prism.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
-			global::Prism.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
-			global::Prism.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
-			global::Prism.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
-			global::Prism.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
-			global::Prism.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
-			global::Prism.Resource.Styleable.AppCompatTheme_panelBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
-			global::Prism.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
-			global::Prism.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
-			global::Prism.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
-			global::Prism.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
-			global::Prism.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_switchStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
-			global::Prism.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
-			global::Prism.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
-			global::Prism.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
-			global::Prism.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
-			global::Prism.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
-			global::Prism.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowActionBar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
-			global::Prism.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
-			global::Prism.Resource.Styleable.BottomNavigationView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomNavigationView;
-			global::Prism.Resource.Styleable.BottomNavigationView_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomNavigationView_elevation;
-			global::Prism.Resource.Styleable.BottomNavigationView_itemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
-			global::Prism.Resource.Styleable.BottomNavigationView_itemIconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
-			global::Prism.Resource.Styleable.BottomNavigationView_itemTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
-			global::Prism.Resource.Styleable.BottomNavigationView_menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomNavigationView_menu;
-			global::Prism.Resource.Styleable.BottomSheetBehavior_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
-			global::Prism.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
-			global::Prism.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
-			global::Prism.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
-			global::Prism.Resource.Styleable.ButtonBarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ButtonBarLayout;
-			global::Prism.Resource.Styleable.ButtonBarLayout_allowStacking = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
-			global::Prism.Resource.Styleable.CardView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView;
-			global::Prism.Resource.Styleable.CardView_android_minHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_android_minHeight;
-			global::Prism.Resource.Styleable.CardView_android_minWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_android_minWidth;
-			global::Prism.Resource.Styleable.CardView_cardBackgroundColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_cardBackgroundColor;
-			global::Prism.Resource.Styleable.CardView_cardCornerRadius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_cardCornerRadius;
-			global::Prism.Resource.Styleable.CardView_cardElevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_cardElevation;
-			global::Prism.Resource.Styleable.CardView_cardMaxElevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_cardMaxElevation;
-			global::Prism.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
-			global::Prism.Resource.Styleable.CardView_cardUseCompatPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
-			global::Prism.Resource.Styleable.CardView_contentPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_contentPadding;
-			global::Prism.Resource.Styleable.CardView_contentPaddingBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_contentPaddingBottom;
-			global::Prism.Resource.Styleable.CardView_contentPaddingLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_contentPaddingLeft;
-			global::Prism.Resource.Styleable.CardView_contentPaddingRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_contentPaddingRight;
-			global::Prism.Resource.Styleable.CardView_contentPaddingTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CardView_contentPaddingTop;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
-			global::Prism.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Prism.Resource.Styleable.ColorStateListItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem;
-			global::Prism.Resource.Styleable.ColorStateListItem_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem_alpha;
-			global::Prism.Resource.Styleable.ColorStateListItem_android_alpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
-			global::Prism.Resource.Styleable.ColorStateListItem_android_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ColorStateListItem_android_color;
-			global::Prism.Resource.Styleable.CompoundButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton;
-			global::Prism.Resource.Styleable.CompoundButton_android_button = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton_android_button;
-			global::Prism.Resource.Styleable.CompoundButton_buttonTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton_buttonTint;
-			global::Prism.Resource.Styleable.CompoundButton_buttonTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
-			global::Prism.Resource.Styleable.CoordinatorLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout;
-			global::Prism.Resource.Styleable.CoordinatorLayout_keylines = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
-			global::Prism.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
-			global::Prism.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
-			global::Prism.Resource.Styleable.DesignTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DesignTheme;
-			global::Prism.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
-			global::Prism.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
-			global::Prism.Resource.Styleable.DrawerArrowToggle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_barLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_color = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_color;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_spinBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
-			global::Prism.Resource.Styleable.DrawerArrowToggle_thickness = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
-			global::Prism.Resource.Styleable.FloatingActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton;
-			global::Prism.Resource.Styleable.FloatingActionButton_backgroundTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
-			global::Prism.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
-			global::Prism.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Prism.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
-			global::Prism.Resource.Styleable.FloatingActionButton_borderWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
-			global::Prism.Resource.Styleable.FloatingActionButton_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_elevation;
-			global::Prism.Resource.Styleable.FloatingActionButton_fabSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_fabSize;
-			global::Prism.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
-			global::Prism.Resource.Styleable.FloatingActionButton_rippleColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
-			global::Prism.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Prism.Resource.Styleable.FontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily;
-			global::Prism.Resource.Styleable.FontFamilyFont = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont;
-			global::Prism.Resource.Styleable.FontFamilyFont_android_font = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_android_font;
-			global::Prism.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
-			global::Prism.Resource.Styleable.FontFamilyFont_android_fontWeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
-			global::Prism.Resource.Styleable.FontFamilyFont_font = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_font;
-			global::Prism.Resource.Styleable.FontFamilyFont_fontStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
-			global::Prism.Resource.Styleable.FontFamilyFont_fontWeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
-			global::Prism.Resource.Styleable.FontFamily_fontProviderAuthority = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Prism.Resource.Styleable.FontFamily_fontProviderCerts = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Prism.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Prism.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Prism.Resource.Styleable.FontFamily_fontProviderPackage = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Prism.Resource.Styleable.FontFamily_fontProviderQuery = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
-			global::Prism.Resource.Styleable.ForegroundLinearLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ForegroundLinearLayout;
-			global::Prism.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
-			global::Prism.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
-			global::Prism.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
-			global::Prism.Resource.Styleable.LinearLayoutCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_divider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_divider;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Prism.Resource.Styleable.LinearLayoutCompat_showDividers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
-			global::Prism.Resource.Styleable.ListPopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ListPopupWindow;
-			global::Prism.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
-			global::Prism.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
-			global::Prism.Resource.Styleable.MenuGroup = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup;
-			global::Prism.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
-			global::Prism.Resource.Styleable.MenuGroup_android_enabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_enabled;
-			global::Prism.Resource.Styleable.MenuGroup_android_id = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_id;
-			global::Prism.Resource.Styleable.MenuGroup_android_menuCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
-			global::Prism.Resource.Styleable.MenuGroup_android_orderInCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
-			global::Prism.Resource.Styleable.MenuGroup_android_visible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuGroup_android_visible;
-			global::Prism.Resource.Styleable.MenuItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem;
-			global::Prism.Resource.Styleable.MenuItem_actionLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_actionLayout;
-			global::Prism.Resource.Styleable.MenuItem_actionProviderClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_actionProviderClass;
-			global::Prism.Resource.Styleable.MenuItem_actionViewClass = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_actionViewClass;
-			global::Prism.Resource.Styleable.MenuItem_alphabeticModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
-			global::Prism.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
-			global::Prism.Resource.Styleable.MenuItem_android_checkable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_checkable;
-			global::Prism.Resource.Styleable.MenuItem_android_checked = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_checked;
-			global::Prism.Resource.Styleable.MenuItem_android_enabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_enabled;
-			global::Prism.Resource.Styleable.MenuItem_android_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_icon;
-			global::Prism.Resource.Styleable.MenuItem_android_id = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_id;
-			global::Prism.Resource.Styleable.MenuItem_android_menuCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_menuCategory;
-			global::Prism.Resource.Styleable.MenuItem_android_numericShortcut = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
-			global::Prism.Resource.Styleable.MenuItem_android_onClick = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_onClick;
-			global::Prism.Resource.Styleable.MenuItem_android_orderInCategory = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
-			global::Prism.Resource.Styleable.MenuItem_android_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_title;
-			global::Prism.Resource.Styleable.MenuItem_android_titleCondensed = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
-			global::Prism.Resource.Styleable.MenuItem_android_visible = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_android_visible;
-			global::Prism.Resource.Styleable.MenuItem_contentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_contentDescription;
-			global::Prism.Resource.Styleable.MenuItem_iconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_iconTint;
-			global::Prism.Resource.Styleable.MenuItem_iconTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_iconTintMode;
-			global::Prism.Resource.Styleable.MenuItem_numericModifiers = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_numericModifiers;
-			global::Prism.Resource.Styleable.MenuItem_showAsAction = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_showAsAction;
-			global::Prism.Resource.Styleable.MenuItem_tooltipText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuItem_tooltipText;
-			global::Prism.Resource.Styleable.MenuView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView;
-			global::Prism.Resource.Styleable.MenuView_android_headerBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_headerBackground;
-			global::Prism.Resource.Styleable.MenuView_android_horizontalDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
-			global::Prism.Resource.Styleable.MenuView_android_itemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_itemBackground;
-			global::Prism.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
-			global::Prism.Resource.Styleable.MenuView_android_itemTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
-			global::Prism.Resource.Styleable.MenuView_android_verticalDivider = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_verticalDivider;
-			global::Prism.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
-			global::Prism.Resource.Styleable.MenuView_preserveIconSpacing = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
-			global::Prism.Resource.Styleable.MenuView_subMenuArrow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.MenuView_subMenuArrow;
-			global::Prism.Resource.Styleable.NavigationView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView;
-			global::Prism.Resource.Styleable.NavigationView_android_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_android_background;
-			global::Prism.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
-			global::Prism.Resource.Styleable.NavigationView_android_maxWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_android_maxWidth;
-			global::Prism.Resource.Styleable.NavigationView_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_elevation;
-			global::Prism.Resource.Styleable.NavigationView_headerLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_headerLayout;
-			global::Prism.Resource.Styleable.NavigationView_itemBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_itemBackground;
-			global::Prism.Resource.Styleable.NavigationView_itemIconTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_itemIconTint;
-			global::Prism.Resource.Styleable.NavigationView_itemTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
-			global::Prism.Resource.Styleable.NavigationView_itemTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_itemTextColor;
-			global::Prism.Resource.Styleable.NavigationView_menu = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.NavigationView_menu;
-			global::Prism.Resource.Styleable.PopupWindow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow;
-			global::Prism.Resource.Styleable.PopupWindowBackgroundState = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Prism.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
-			global::Prism.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
-			global::Prism.Resource.Styleable.PopupWindow_android_popupBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
-			global::Prism.Resource.Styleable.PopupWindow_overlapAnchor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Prism.Resource.Styleable.RecycleListView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecycleListView;
-			global::Prism.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
-			global::Prism.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
-			global::Prism.Resource.Styleable.RecyclerView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView;
-			global::Prism.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
-			global::Prism.Resource.Styleable.RecyclerView_android_orientation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_android_orientation;
-			global::Prism.Resource.Styleable.RecyclerView_fastScrollEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
-			global::Prism.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
-			global::Prism.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
-			global::Prism.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
-			global::Prism.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
-			global::Prism.Resource.Styleable.RecyclerView_layoutManager = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_layoutManager;
-			global::Prism.Resource.Styleable.RecyclerView_reverseLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_reverseLayout;
-			global::Prism.Resource.Styleable.RecyclerView_spanCount = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_spanCount;
-			global::Prism.Resource.Styleable.RecyclerView_stackFromEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
-			global::Prism.Resource.Styleable.ScrimInsetsFrameLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
-			global::Prism.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
-			global::Prism.Resource.Styleable.ScrollingViewBehavior_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
-			global::Prism.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
-			global::Prism.Resource.Styleable.SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView;
-			global::Prism.Resource.Styleable.SearchView_android_focusable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_focusable;
-			global::Prism.Resource.Styleable.SearchView_android_imeOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_imeOptions;
-			global::Prism.Resource.Styleable.SearchView_android_inputType = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_inputType;
-			global::Prism.Resource.Styleable.SearchView_android_maxWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_maxWidth;
-			global::Prism.Resource.Styleable.SearchView_closeIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_closeIcon;
-			global::Prism.Resource.Styleable.SearchView_commitIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_commitIcon;
-			global::Prism.Resource.Styleable.SearchView_defaultQueryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_defaultQueryHint;
-			global::Prism.Resource.Styleable.SearchView_goIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_goIcon;
-			global::Prism.Resource.Styleable.SearchView_iconifiedByDefault = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
-			global::Prism.Resource.Styleable.SearchView_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_layout;
-			global::Prism.Resource.Styleable.SearchView_queryBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_queryBackground;
-			global::Prism.Resource.Styleable.SearchView_queryHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_queryHint;
-			global::Prism.Resource.Styleable.SearchView_searchHintIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_searchHintIcon;
-			global::Prism.Resource.Styleable.SearchView_searchIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_searchIcon;
-			global::Prism.Resource.Styleable.SearchView_submitBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_submitBackground;
-			global::Prism.Resource.Styleable.SearchView_suggestionRowLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
-			global::Prism.Resource.Styleable.SearchView_voiceIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_voiceIcon;
-			global::Prism.Resource.Styleable.SnackbarLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SnackbarLayout;
-			global::Prism.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
-			global::Prism.Resource.Styleable.SnackbarLayout_elevation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SnackbarLayout_elevation;
-			global::Prism.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
-			global::Prism.Resource.Styleable.Spinner = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner;
-			global::Prism.Resource.Styleable.Spinner_android_dropDownWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
-			global::Prism.Resource.Styleable.Spinner_android_entries = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_entries;
-			global::Prism.Resource.Styleable.Spinner_android_popupBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_popupBackground;
-			global::Prism.Resource.Styleable.Spinner_android_prompt = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_android_prompt;
-			global::Prism.Resource.Styleable.Spinner_popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Spinner_popupTheme;
-			global::Prism.Resource.Styleable.SwitchCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat;
-			global::Prism.Resource.Styleable.SwitchCompat_android_textOff = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_android_textOff;
-			global::Prism.Resource.Styleable.SwitchCompat_android_textOn = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_android_textOn;
-			global::Prism.Resource.Styleable.SwitchCompat_android_thumb = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_android_thumb;
-			global::Prism.Resource.Styleable.SwitchCompat_showText = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_showText;
-			global::Prism.Resource.Styleable.SwitchCompat_splitTrack = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_splitTrack;
-			global::Prism.Resource.Styleable.SwitchCompat_switchMinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
-			global::Prism.Resource.Styleable.SwitchCompat_switchPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_switchPadding;
-			global::Prism.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
-			global::Prism.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
-			global::Prism.Resource.Styleable.SwitchCompat_thumbTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTint;
-			global::Prism.Resource.Styleable.SwitchCompat_thumbTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
-			global::Prism.Resource.Styleable.SwitchCompat_track = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_track;
-			global::Prism.Resource.Styleable.SwitchCompat_trackTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_trackTint;
-			global::Prism.Resource.Styleable.SwitchCompat_trackTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
-			global::Prism.Resource.Styleable.TabItem = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabItem;
-			global::Prism.Resource.Styleable.TabItem_android_icon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabItem_android_icon;
-			global::Prism.Resource.Styleable.TabItem_android_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabItem_android_layout;
-			global::Prism.Resource.Styleable.TabItem_android_text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabItem_android_text;
-			global::Prism.Resource.Styleable.TabLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout;
-			global::Prism.Resource.Styleable.TabLayout_tabBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabBackground;
-			global::Prism.Resource.Styleable.TabLayout_tabContentStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabContentStart;
-			global::Prism.Resource.Styleable.TabLayout_tabGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabGravity;
-			global::Prism.Resource.Styleable.TabLayout_tabIndicatorColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
-			global::Prism.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
-			global::Prism.Resource.Styleable.TabLayout_tabMaxWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
-			global::Prism.Resource.Styleable.TabLayout_tabMinWidth = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabMinWidth;
-			global::Prism.Resource.Styleable.TabLayout_tabMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabMode;
-			global::Prism.Resource.Styleable.TabLayout_tabPadding = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabPadding;
-			global::Prism.Resource.Styleable.TabLayout_tabPaddingBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
-			global::Prism.Resource.Styleable.TabLayout_tabPaddingEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
-			global::Prism.Resource.Styleable.TabLayout_tabPaddingStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
-			global::Prism.Resource.Styleable.TabLayout_tabPaddingTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
-			global::Prism.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
-			global::Prism.Resource.Styleable.TabLayout_tabTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
-			global::Prism.Resource.Styleable.TabLayout_tabTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TabLayout_tabTextColor;
-			global::Prism.Resource.Styleable.TextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance;
-			global::Prism.Resource.Styleable.TextAppearance_android_fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
-			global::Prism.Resource.Styleable.TextAppearance_android_shadowColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
-			global::Prism.Resource.Styleable.TextAppearance_android_shadowDx = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
-			global::Prism.Resource.Styleable.TextAppearance_android_shadowDy = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
-			global::Prism.Resource.Styleable.TextAppearance_android_shadowRadius = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
-			global::Prism.Resource.Styleable.TextAppearance_android_textColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textColor;
-			global::Prism.Resource.Styleable.TextAppearance_android_textColorHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
-			global::Prism.Resource.Styleable.TextAppearance_android_textColorLink = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
-			global::Prism.Resource.Styleable.TextAppearance_android_textSize = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textSize;
-			global::Prism.Resource.Styleable.TextAppearance_android_textStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_textStyle;
-			global::Prism.Resource.Styleable.TextAppearance_android_typeface = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_android_typeface;
-			global::Prism.Resource.Styleable.TextAppearance_fontFamily = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_fontFamily;
-			global::Prism.Resource.Styleable.TextAppearance_textAllCaps = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextAppearance_textAllCaps;
-			global::Prism.Resource.Styleable.TextInputLayout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout;
-			global::Prism.Resource.Styleable.TextInputLayout_android_hint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_android_hint;
-			global::Prism.Resource.Styleable.TextInputLayout_android_textColorHint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
-			global::Prism.Resource.Styleable.TextInputLayout_counterEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
-			global::Prism.Resource.Styleable.TextInputLayout_counterMaxLength = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
-			global::Prism.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
-			global::Prism.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
-			global::Prism.Resource.Styleable.TextInputLayout_errorEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
-			global::Prism.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
-			global::Prism.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
-			global::Prism.Resource.Styleable.TextInputLayout_hintEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
-			global::Prism.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
-			global::Prism.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
-			global::Prism.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
-			global::Prism.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
-			global::Prism.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
-			global::Prism.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
-			global::Prism.Resource.Styleable.Toolbar = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar;
-			global::Prism.Resource.Styleable.Toolbar_android_gravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_android_gravity;
-			global::Prism.Resource.Styleable.Toolbar_android_minHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_android_minHeight;
-			global::Prism.Resource.Styleable.Toolbar_buttonGravity = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_buttonGravity;
-			global::Prism.Resource.Styleable.Toolbar_collapseContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
-			global::Prism.Resource.Styleable.Toolbar_collapseIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_collapseIcon;
-			global::Prism.Resource.Styleable.Toolbar_contentInsetEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
-			global::Prism.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
-			global::Prism.Resource.Styleable.Toolbar_contentInsetLeft = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
-			global::Prism.Resource.Styleable.Toolbar_contentInsetRight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetRight;
-			global::Prism.Resource.Styleable.Toolbar_contentInsetStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetStart;
-			global::Prism.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
-			global::Prism.Resource.Styleable.Toolbar_logo = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_logo;
-			global::Prism.Resource.Styleable.Toolbar_logoDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_logoDescription;
-			global::Prism.Resource.Styleable.Toolbar_maxButtonHeight = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
-			global::Prism.Resource.Styleable.Toolbar_navigationContentDescription = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
-			global::Prism.Resource.Styleable.Toolbar_navigationIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_navigationIcon;
-			global::Prism.Resource.Styleable.Toolbar_popupTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_popupTheme;
-			global::Prism.Resource.Styleable.Toolbar_subtitle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_subtitle;
-			global::Prism.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
-			global::Prism.Resource.Styleable.Toolbar_subtitleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
-			global::Prism.Resource.Styleable.Toolbar_title = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_title;
-			global::Prism.Resource.Styleable.Toolbar_titleMargin = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMargin;
-			global::Prism.Resource.Styleable.Toolbar_titleMarginBottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
-			global::Prism.Resource.Styleable.Toolbar_titleMarginEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
-			global::Prism.Resource.Styleable.Toolbar_titleMargins = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMargins;
-			global::Prism.Resource.Styleable.Toolbar_titleMarginStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginStart;
-			global::Prism.Resource.Styleable.Toolbar_titleMarginTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Prism.Resource.Styleable.Toolbar_titleTextAppearance = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
-			global::Prism.Resource.Styleable.Toolbar_titleTextColor = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.Toolbar_titleTextColor;
-			global::Prism.Resource.Styleable.View = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View;
-			global::Prism.Resource.Styleable.ViewBackgroundHelper = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper;
-			global::Prism.Resource.Styleable.ViewBackgroundHelper_android_background = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
-			global::Prism.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
-			global::Prism.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
-			global::Prism.Resource.Styleable.ViewStubCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat;
-			global::Prism.Resource.Styleable.ViewStubCompat_android_id = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat_android_id;
-			global::Prism.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
-			global::Prism.Resource.Styleable.ViewStubCompat_android_layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ViewStubCompat_android_layout;
-			global::Prism.Resource.Styleable.View_android_focusable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_android_focusable;
-			global::Prism.Resource.Styleable.View_android_theme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_android_theme;
-			global::Prism.Resource.Styleable.View_paddingEnd = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_paddingEnd;
-			global::Prism.Resource.Styleable.View_paddingStart = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_paddingStart;
-			global::Prism.Resource.Styleable.View_theme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.CloudFirestore.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -2611,6 +664,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimAnimationDuration;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrollViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrollViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchHintIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchViewStyle;
@@ -3813,7 +1867,6 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewScrollBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.collectionViewScrollBars;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.MainTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.MainTheme_Base = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.MainTheme_Base;
@@ -3848,6 +1901,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.scrollViewScrollBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.scrollViewScrollBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.scrollViewTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.scrollViewTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
@@ -4716,6 +2771,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollViewRendererTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollViewRendererTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_focusable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_focusable;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_imeOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_imeOptions;
@@ -5290,6 +3347,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimAnimationDuration = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimAnimationDuration;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimBackground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimBackground;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimVisibleHeightTrigger = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Resource.Attribute.scrollViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.scrollViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchHintIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchHintIcon;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchIcon = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchIcon;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Attribute.searchViewStyle;
@@ -6492,7 +4550,6 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.CardView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Resource.Style.CardView_Dark = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Resource.Style.CardView_Light = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.collectionViewScrollBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.collectionViewScrollBars;
 			global::Xamarin.Forms.Platform.Resource.Style.collectionViewTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.MainTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.MainTheme_Base = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.MainTheme_Base;
@@ -6527,6 +4584,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
 			global::Xamarin.Forms.Platform.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Xamarin.Forms.Platform.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Resource.Style.scrollViewScrollBars = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.scrollViewScrollBars;
+			global::Xamarin.Forms.Platform.Resource.Style.scrollViewTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.scrollViewTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Body1 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Body2 = global::Plugin.CloudFirestore.Sample.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
@@ -7395,6 +5454,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollingViewBehavior_Layout = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollViewRendererTheme = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollViewRendererTheme;
+			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView;
 			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_focusable = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_focusable;
 			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_imeOptions = global::Plugin.CloudFirestore.Sample.Droid.Resource.Styleable.SearchView_android_imeOptions;
@@ -8807,427 +6868,430 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int scrimVisibleHeightTrigger = 2130903397;
 			
 			// aapt resource value: 0x7F030166
-			public const int searchHintIcon = 2130903398;
+			public const int scrollViewStyle = 2130903398;
 			
 			// aapt resource value: 0x7F030167
-			public const int searchIcon = 2130903399;
+			public const int searchHintIcon = 2130903399;
 			
 			// aapt resource value: 0x7F030168
-			public const int searchViewStyle = 2130903400;
+			public const int searchIcon = 2130903400;
 			
 			// aapt resource value: 0x7F030169
-			public const int seekBarStyle = 2130903401;
+			public const int searchViewStyle = 2130903401;
 			
 			// aapt resource value: 0x7F03016A
-			public const int selectableItemBackground = 2130903402;
+			public const int seekBarStyle = 2130903402;
 			
 			// aapt resource value: 0x7F03016B
-			public const int selectableItemBackgroundBorderless = 2130903403;
+			public const int selectableItemBackground = 2130903403;
 			
 			// aapt resource value: 0x7F03016C
-			public const int showAsAction = 2130903404;
+			public const int selectableItemBackgroundBorderless = 2130903404;
 			
 			// aapt resource value: 0x7F03016D
-			public const int showDividers = 2130903405;
+			public const int showAsAction = 2130903405;
 			
 			// aapt resource value: 0x7F03016E
-			public const int showMotionSpec = 2130903406;
+			public const int showDividers = 2130903406;
 			
 			// aapt resource value: 0x7F03016F
-			public const int showText = 2130903407;
+			public const int showMotionSpec = 2130903407;
 			
 			// aapt resource value: 0x7F030170
-			public const int showTitle = 2130903408;
+			public const int showText = 2130903408;
 			
 			// aapt resource value: 0x7F030171
-			public const int singleChoiceItemLayout = 2130903409;
+			public const int showTitle = 2130903409;
 			
 			// aapt resource value: 0x7F030172
-			public const int singleLine = 2130903410;
+			public const int singleChoiceItemLayout = 2130903410;
 			
 			// aapt resource value: 0x7F030173
-			public const int singleSelection = 2130903411;
+			public const int singleLine = 2130903411;
 			
 			// aapt resource value: 0x7F030174
-			public const int snackbarButtonStyle = 2130903412;
+			public const int singleSelection = 2130903412;
 			
 			// aapt resource value: 0x7F030175
-			public const int snackbarStyle = 2130903413;
+			public const int snackbarButtonStyle = 2130903413;
 			
 			// aapt resource value: 0x7F030176
-			public const int spanCount = 2130903414;
+			public const int snackbarStyle = 2130903414;
 			
 			// aapt resource value: 0x7F030177
-			public const int spinBars = 2130903415;
+			public const int spanCount = 2130903415;
 			
 			// aapt resource value: 0x7F030178
-			public const int spinnerDropDownItemStyle = 2130903416;
+			public const int spinBars = 2130903416;
 			
 			// aapt resource value: 0x7F030179
-			public const int spinnerStyle = 2130903417;
+			public const int spinnerDropDownItemStyle = 2130903417;
 			
 			// aapt resource value: 0x7F03017A
-			public const int splitTrack = 2130903418;
+			public const int spinnerStyle = 2130903418;
 			
 			// aapt resource value: 0x7F03017B
-			public const int srcCompat = 2130903419;
+			public const int splitTrack = 2130903419;
 			
 			// aapt resource value: 0x7F03017C
-			public const int stackFromEnd = 2130903420;
+			public const int srcCompat = 2130903420;
 			
 			// aapt resource value: 0x7F03017D
-			public const int state_above_anchor = 2130903421;
+			public const int stackFromEnd = 2130903421;
 			
 			// aapt resource value: 0x7F03017E
-			public const int state_collapsed = 2130903422;
+			public const int state_above_anchor = 2130903422;
 			
 			// aapt resource value: 0x7F03017F
-			public const int state_collapsible = 2130903423;
+			public const int state_collapsed = 2130903423;
 			
 			// aapt resource value: 0x7F030180
-			public const int state_liftable = 2130903424;
+			public const int state_collapsible = 2130903424;
 			
 			// aapt resource value: 0x7F030181
-			public const int state_lifted = 2130903425;
+			public const int state_liftable = 2130903425;
 			
 			// aapt resource value: 0x7F030182
-			public const int statusBarBackground = 2130903426;
+			public const int state_lifted = 2130903426;
 			
 			// aapt resource value: 0x7F030183
-			public const int statusBarScrim = 2130903427;
+			public const int statusBarBackground = 2130903427;
 			
 			// aapt resource value: 0x7F030184
-			public const int strokeColor = 2130903428;
+			public const int statusBarScrim = 2130903428;
 			
 			// aapt resource value: 0x7F030185
-			public const int strokeWidth = 2130903429;
+			public const int strokeColor = 2130903429;
 			
 			// aapt resource value: 0x7F030186
-			public const int subMenuArrow = 2130903430;
+			public const int strokeWidth = 2130903430;
 			
 			// aapt resource value: 0x7F030187
-			public const int submitBackground = 2130903431;
+			public const int subMenuArrow = 2130903431;
 			
 			// aapt resource value: 0x7F030188
-			public const int subtitle = 2130903432;
+			public const int submitBackground = 2130903432;
 			
 			// aapt resource value: 0x7F030189
-			public const int subtitleTextAppearance = 2130903433;
+			public const int subtitle = 2130903433;
 			
 			// aapt resource value: 0x7F03018A
-			public const int subtitleTextColor = 2130903434;
+			public const int subtitleTextAppearance = 2130903434;
 			
 			// aapt resource value: 0x7F03018B
-			public const int subtitleTextStyle = 2130903435;
+			public const int subtitleTextColor = 2130903435;
 			
 			// aapt resource value: 0x7F03018C
-			public const int suggestionRowLayout = 2130903436;
+			public const int subtitleTextStyle = 2130903436;
 			
 			// aapt resource value: 0x7F03018D
-			public const int switchMinWidth = 2130903437;
+			public const int suggestionRowLayout = 2130903437;
 			
 			// aapt resource value: 0x7F03018E
-			public const int switchPadding = 2130903438;
+			public const int switchMinWidth = 2130903438;
 			
 			// aapt resource value: 0x7F03018F
-			public const int switchStyle = 2130903439;
+			public const int switchPadding = 2130903439;
 			
 			// aapt resource value: 0x7F030190
-			public const int switchTextAppearance = 2130903440;
+			public const int switchStyle = 2130903440;
 			
 			// aapt resource value: 0x7F030191
-			public const int tabBackground = 2130903441;
+			public const int switchTextAppearance = 2130903441;
 			
 			// aapt resource value: 0x7F030192
-			public const int tabContentStart = 2130903442;
+			public const int tabBackground = 2130903442;
 			
 			// aapt resource value: 0x7F030193
-			public const int tabGravity = 2130903443;
+			public const int tabContentStart = 2130903443;
 			
 			// aapt resource value: 0x7F030194
-			public const int tabIconTint = 2130903444;
+			public const int tabGravity = 2130903444;
 			
 			// aapt resource value: 0x7F030195
-			public const int tabIconTintMode = 2130903445;
+			public const int tabIconTint = 2130903445;
 			
 			// aapt resource value: 0x7F030196
-			public const int tabIndicator = 2130903446;
+			public const int tabIconTintMode = 2130903446;
 			
 			// aapt resource value: 0x7F030197
-			public const int tabIndicatorAnimationDuration = 2130903447;
+			public const int tabIndicator = 2130903447;
 			
 			// aapt resource value: 0x7F030198
-			public const int tabIndicatorColor = 2130903448;
+			public const int tabIndicatorAnimationDuration = 2130903448;
 			
 			// aapt resource value: 0x7F030199
-			public const int tabIndicatorFullWidth = 2130903449;
+			public const int tabIndicatorColor = 2130903449;
 			
 			// aapt resource value: 0x7F03019A
-			public const int tabIndicatorGravity = 2130903450;
+			public const int tabIndicatorFullWidth = 2130903450;
 			
 			// aapt resource value: 0x7F03019B
-			public const int tabIndicatorHeight = 2130903451;
+			public const int tabIndicatorGravity = 2130903451;
 			
 			// aapt resource value: 0x7F03019C
-			public const int tabInlineLabel = 2130903452;
+			public const int tabIndicatorHeight = 2130903452;
 			
 			// aapt resource value: 0x7F03019D
-			public const int tabMaxWidth = 2130903453;
+			public const int tabInlineLabel = 2130903453;
 			
 			// aapt resource value: 0x7F03019E
-			public const int tabMinWidth = 2130903454;
+			public const int tabMaxWidth = 2130903454;
 			
 			// aapt resource value: 0x7F03019F
-			public const int tabMode = 2130903455;
+			public const int tabMinWidth = 2130903455;
 			
 			// aapt resource value: 0x7F0301A0
-			public const int tabPadding = 2130903456;
+			public const int tabMode = 2130903456;
 			
 			// aapt resource value: 0x7F0301A1
-			public const int tabPaddingBottom = 2130903457;
+			public const int tabPadding = 2130903457;
 			
 			// aapt resource value: 0x7F0301A2
-			public const int tabPaddingEnd = 2130903458;
+			public const int tabPaddingBottom = 2130903458;
 			
 			// aapt resource value: 0x7F0301A3
-			public const int tabPaddingStart = 2130903459;
+			public const int tabPaddingEnd = 2130903459;
 			
 			// aapt resource value: 0x7F0301A4
-			public const int tabPaddingTop = 2130903460;
+			public const int tabPaddingStart = 2130903460;
 			
 			// aapt resource value: 0x7F0301A5
-			public const int tabRippleColor = 2130903461;
+			public const int tabPaddingTop = 2130903461;
 			
 			// aapt resource value: 0x7F0301A6
-			public const int tabSelectedTextColor = 2130903462;
+			public const int tabRippleColor = 2130903462;
 			
 			// aapt resource value: 0x7F0301A7
-			public const int tabStyle = 2130903463;
+			public const int tabSelectedTextColor = 2130903463;
 			
 			// aapt resource value: 0x7F0301A8
-			public const int tabTextAppearance = 2130903464;
+			public const int tabStyle = 2130903464;
 			
 			// aapt resource value: 0x7F0301A9
-			public const int tabTextColor = 2130903465;
+			public const int tabTextAppearance = 2130903465;
 			
 			// aapt resource value: 0x7F0301AA
-			public const int tabUnboundedRipple = 2130903466;
+			public const int tabTextColor = 2130903466;
 			
 			// aapt resource value: 0x7F0301AB
-			public const int textAllCaps = 2130903467;
+			public const int tabUnboundedRipple = 2130903467;
 			
 			// aapt resource value: 0x7F0301AC
-			public const int textAppearanceBody1 = 2130903468;
+			public const int textAllCaps = 2130903468;
 			
 			// aapt resource value: 0x7F0301AD
-			public const int textAppearanceBody2 = 2130903469;
+			public const int textAppearanceBody1 = 2130903469;
 			
 			// aapt resource value: 0x7F0301AE
-			public const int textAppearanceButton = 2130903470;
+			public const int textAppearanceBody2 = 2130903470;
 			
 			// aapt resource value: 0x7F0301AF
-			public const int textAppearanceCaption = 2130903471;
+			public const int textAppearanceButton = 2130903471;
 			
 			// aapt resource value: 0x7F0301B0
-			public const int textAppearanceHeadline1 = 2130903472;
+			public const int textAppearanceCaption = 2130903472;
 			
 			// aapt resource value: 0x7F0301B1
-			public const int textAppearanceHeadline2 = 2130903473;
+			public const int textAppearanceHeadline1 = 2130903473;
 			
 			// aapt resource value: 0x7F0301B2
-			public const int textAppearanceHeadline3 = 2130903474;
+			public const int textAppearanceHeadline2 = 2130903474;
 			
 			// aapt resource value: 0x7F0301B3
-			public const int textAppearanceHeadline4 = 2130903475;
+			public const int textAppearanceHeadline3 = 2130903475;
 			
 			// aapt resource value: 0x7F0301B4
-			public const int textAppearanceHeadline5 = 2130903476;
+			public const int textAppearanceHeadline4 = 2130903476;
 			
 			// aapt resource value: 0x7F0301B5
-			public const int textAppearanceHeadline6 = 2130903477;
+			public const int textAppearanceHeadline5 = 2130903477;
 			
 			// aapt resource value: 0x7F0301B6
-			public const int textAppearanceLargePopupMenu = 2130903478;
+			public const int textAppearanceHeadline6 = 2130903478;
 			
 			// aapt resource value: 0x7F0301B7
-			public const int textAppearanceListItem = 2130903479;
+			public const int textAppearanceLargePopupMenu = 2130903479;
 			
 			// aapt resource value: 0x7F0301B8
-			public const int textAppearanceListItemSecondary = 2130903480;
+			public const int textAppearanceListItem = 2130903480;
 			
 			// aapt resource value: 0x7F0301B9
-			public const int textAppearanceListItemSmall = 2130903481;
+			public const int textAppearanceListItemSecondary = 2130903481;
 			
 			// aapt resource value: 0x7F0301BA
-			public const int textAppearanceOverline = 2130903482;
+			public const int textAppearanceListItemSmall = 2130903482;
 			
 			// aapt resource value: 0x7F0301BB
-			public const int textAppearancePopupMenuHeader = 2130903483;
+			public const int textAppearanceOverline = 2130903483;
 			
 			// aapt resource value: 0x7F0301BC
-			public const int textAppearanceSearchResultSubtitle = 2130903484;
+			public const int textAppearancePopupMenuHeader = 2130903484;
 			
 			// aapt resource value: 0x7F0301BD
-			public const int textAppearanceSearchResultTitle = 2130903485;
+			public const int textAppearanceSearchResultSubtitle = 2130903485;
 			
 			// aapt resource value: 0x7F0301BE
-			public const int textAppearanceSmallPopupMenu = 2130903486;
+			public const int textAppearanceSearchResultTitle = 2130903486;
 			
 			// aapt resource value: 0x7F0301BF
-			public const int textAppearanceSubtitle1 = 2130903487;
+			public const int textAppearanceSmallPopupMenu = 2130903487;
 			
 			// aapt resource value: 0x7F0301C0
-			public const int textAppearanceSubtitle2 = 2130903488;
+			public const int textAppearanceSubtitle1 = 2130903488;
 			
 			// aapt resource value: 0x7F0301C1
-			public const int textColorAlertDialogListItem = 2130903489;
+			public const int textAppearanceSubtitle2 = 2130903489;
 			
 			// aapt resource value: 0x7F0301C2
-			public const int textColorSearchUrl = 2130903490;
+			public const int textColorAlertDialogListItem = 2130903490;
 			
 			// aapt resource value: 0x7F0301C3
-			public const int textEndPadding = 2130903491;
+			public const int textColorSearchUrl = 2130903491;
 			
 			// aapt resource value: 0x7F0301C4
-			public const int textInputStyle = 2130903492;
+			public const int textEndPadding = 2130903492;
 			
 			// aapt resource value: 0x7F0301C5
-			public const int textLocale = 2130903493;
+			public const int textInputStyle = 2130903493;
 			
 			// aapt resource value: 0x7F0301C6
-			public const int textStartPadding = 2130903494;
+			public const int textLocale = 2130903494;
 			
 			// aapt resource value: 0x7F0301C7
-			public const int theme = 2130903495;
+			public const int textStartPadding = 2130903495;
 			
 			// aapt resource value: 0x7F0301C8
-			public const int thickness = 2130903496;
+			public const int theme = 2130903496;
 			
 			// aapt resource value: 0x7F0301C9
-			public const int thumbTextPadding = 2130903497;
+			public const int thickness = 2130903497;
 			
 			// aapt resource value: 0x7F0301CA
-			public const int thumbTint = 2130903498;
+			public const int thumbTextPadding = 2130903498;
 			
 			// aapt resource value: 0x7F0301CB
-			public const int thumbTintMode = 2130903499;
+			public const int thumbTint = 2130903499;
 			
 			// aapt resource value: 0x7F0301CC
-			public const int tickMark = 2130903500;
+			public const int thumbTintMode = 2130903500;
 			
 			// aapt resource value: 0x7F0301CD
-			public const int tickMarkTint = 2130903501;
+			public const int tickMark = 2130903501;
 			
 			// aapt resource value: 0x7F0301CE
-			public const int tickMarkTintMode = 2130903502;
+			public const int tickMarkTint = 2130903502;
 			
 			// aapt resource value: 0x7F0301CF
-			public const int tint = 2130903503;
+			public const int tickMarkTintMode = 2130903503;
 			
 			// aapt resource value: 0x7F0301D0
-			public const int tintMode = 2130903504;
+			public const int tint = 2130903504;
 			
 			// aapt resource value: 0x7F0301D1
-			public const int title = 2130903505;
+			public const int tintMode = 2130903505;
 			
 			// aapt resource value: 0x7F0301D2
-			public const int titleEnabled = 2130903506;
+			public const int title = 2130903506;
 			
 			// aapt resource value: 0x7F0301D3
-			public const int titleMargin = 2130903507;
+			public const int titleEnabled = 2130903507;
 			
 			// aapt resource value: 0x7F0301D4
-			public const int titleMarginBottom = 2130903508;
+			public const int titleMargin = 2130903508;
 			
 			// aapt resource value: 0x7F0301D5
-			public const int titleMarginEnd = 2130903509;
-			
-			// aapt resource value: 0x7F0301D8
-			public const int titleMargins = 2130903512;
+			public const int titleMarginBottom = 2130903509;
 			
 			// aapt resource value: 0x7F0301D6
-			public const int titleMarginStart = 2130903510;
-			
-			// aapt resource value: 0x7F0301D7
-			public const int titleMarginTop = 2130903511;
+			public const int titleMarginEnd = 2130903510;
 			
 			// aapt resource value: 0x7F0301D9
-			public const int titleTextAppearance = 2130903513;
+			public const int titleMargins = 2130903513;
+			
+			// aapt resource value: 0x7F0301D7
+			public const int titleMarginStart = 2130903511;
+			
+			// aapt resource value: 0x7F0301D8
+			public const int titleMarginTop = 2130903512;
 			
 			// aapt resource value: 0x7F0301DA
-			public const int titleTextColor = 2130903514;
+			public const int titleTextAppearance = 2130903514;
 			
 			// aapt resource value: 0x7F0301DB
-			public const int titleTextStyle = 2130903515;
+			public const int titleTextColor = 2130903515;
 			
 			// aapt resource value: 0x7F0301DC
-			public const int toolbarId = 2130903516;
+			public const int titleTextStyle = 2130903516;
 			
 			// aapt resource value: 0x7F0301DD
-			public const int toolbarNavigationButtonStyle = 2130903517;
+			public const int toolbarId = 2130903517;
 			
 			// aapt resource value: 0x7F0301DE
-			public const int toolbarStyle = 2130903518;
+			public const int toolbarNavigationButtonStyle = 2130903518;
 			
 			// aapt resource value: 0x7F0301DF
-			public const int tooltipForegroundColor = 2130903519;
+			public const int toolbarStyle = 2130903519;
 			
 			// aapt resource value: 0x7F0301E0
-			public const int tooltipFrameBackground = 2130903520;
+			public const int tooltipForegroundColor = 2130903520;
 			
 			// aapt resource value: 0x7F0301E1
-			public const int tooltipText = 2130903521;
+			public const int tooltipFrameBackground = 2130903521;
 			
 			// aapt resource value: 0x7F0301E2
-			public const int track = 2130903522;
+			public const int tooltipText = 2130903522;
 			
 			// aapt resource value: 0x7F0301E3
-			public const int trackTint = 2130903523;
+			public const int track = 2130903523;
 			
 			// aapt resource value: 0x7F0301E4
-			public const int trackTintMode = 2130903524;
+			public const int trackTint = 2130903524;
 			
 			// aapt resource value: 0x7F0301E5
-			public const int ttcIndex = 2130903525;
+			public const int trackTintMode = 2130903525;
 			
 			// aapt resource value: 0x7F0301E6
-			public const int useCompatPadding = 2130903526;
+			public const int ttcIndex = 2130903526;
 			
 			// aapt resource value: 0x7F0301E7
-			public const int viewInflaterClass = 2130903527;
+			public const int useCompatPadding = 2130903527;
 			
 			// aapt resource value: 0x7F0301E8
-			public const int voiceIcon = 2130903528;
+			public const int viewInflaterClass = 2130903528;
 			
 			// aapt resource value: 0x7F0301E9
-			public const int windowActionBar = 2130903529;
+			public const int voiceIcon = 2130903529;
 			
 			// aapt resource value: 0x7F0301EA
-			public const int windowActionBarOverlay = 2130903530;
+			public const int windowActionBar = 2130903530;
 			
 			// aapt resource value: 0x7F0301EB
-			public const int windowActionModeOverlay = 2130903531;
+			public const int windowActionBarOverlay = 2130903531;
 			
 			// aapt resource value: 0x7F0301EC
-			public const int windowFixedHeightMajor = 2130903532;
+			public const int windowActionModeOverlay = 2130903532;
 			
 			// aapt resource value: 0x7F0301ED
-			public const int windowFixedHeightMinor = 2130903533;
+			public const int windowFixedHeightMajor = 2130903533;
 			
 			// aapt resource value: 0x7F0301EE
-			public const int windowFixedWidthMajor = 2130903534;
+			public const int windowFixedHeightMinor = 2130903534;
 			
 			// aapt resource value: 0x7F0301EF
-			public const int windowFixedWidthMinor = 2130903535;
+			public const int windowFixedWidthMajor = 2130903535;
 			
 			// aapt resource value: 0x7F0301F0
-			public const int windowMinWidthMajor = 2130903536;
+			public const int windowFixedWidthMinor = 2130903536;
 			
 			// aapt resource value: 0x7F0301F1
-			public const int windowMinWidthMinor = 2130903537;
+			public const int windowMinWidthMajor = 2130903537;
 			
 			// aapt resource value: 0x7F0301F2
-			public const int windowNoTitle = 2130903538;
+			public const int windowMinWidthMinor = 2130903538;
+			
+			// aapt resource value: 0x7F0301F3
+			public const int windowNoTitle = 2130903539;
 			
 			static Attribute()
 			{
@@ -12796,10 +10860,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public const int CardView_Light = 2131624134;
 			
 			// aapt resource value: 0x7F0E01FB
-			public const int collectionViewScrollBars = 2131624443;
-			
-			// aapt resource value: 0x7F0E01FC
-			public const int collectionViewTheme = 2131624444;
+			public const int collectionViewTheme = 2131624443;
 			
 			// aapt resource value: 0x7F0E00C7
 			public const int MainTheme = 2131624135;
@@ -12899,6 +10960,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			
 			// aapt resource value: 0x7F0E00E7
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131624167;
+			
+			// aapt resource value: 0x7F0E01FC
+			public const int scrollViewScrollBars = 2131624444;
+			
+			// aapt resource value: 0x7F0E01FD
+			public const int scrollViewTheme = 2131624445;
 			
 			// aapt resource value: 0x7F0E00E8
 			public const int TextAppearance_AppCompat = 2131624168;
@@ -13738,7 +11805,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030033,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F0300A9,0x7F0300AE,0x7F0300AF,0x7F0300C2,0x7F0300EC,0x7F0300F1,0x7F0300F6,0x7F0300F7,0x7F0300F9,0x7F030105,0x7F03010F,0x7F030136,0x7F030142,0x7F030153,0x7F030157,0x7F030158,0x7F030188,0x7F03018B,0x7F0301D1,0x7F0301DB }
+			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030033,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F0300A9,0x7F0300AE,0x7F0300AF,0x7F0300C2,0x7F0300EC,0x7F0300F1,0x7F0300F6,0x7F0300F7,0x7F0300F9,0x7F030105,0x7F03010F,0x7F030136,0x7F030142,0x7F030153,0x7F030157,0x7F030158,0x7F030189,0x7F03018C,0x7F0301D2,0x7F0301DC }
 			public static int[] ActionBar = new int[] {
 					2130903089,
 					2130903090,
@@ -13765,10 +11832,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903379,
 					2130903383,
 					2130903384,
-					2130903432,
-					2130903435,
-					2130903505,
-					2130903515};
+					2130903433,
+					2130903436,
+					2130903506,
+					2130903516};
 			
 			// aapt resource value: { 0x10100B3 }
 			public static int[] ActionBarLayout = new int[] {
@@ -13875,14 +11942,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			public static int[] ActionMenuView = new int[] {
 					-1};
 			
-			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030081,0x7F0300EC,0x7F03018B,0x7F0301DB }
+			// aapt resource value: { 0x7F030031,0x7F030032,0x7F030081,0x7F0300EC,0x7F03018C,0x7F0301DC }
 			public static int[] ActionMode = new int[] {
 					2130903089,
 					2130903090,
 					2130903169,
 					2130903276,
-					2130903435,
-					2130903515};
+					2130903436,
+					2130903516};
 			
 			// aapt resource value: 0
 			public const int ActionMode_background = 0;
@@ -13913,7 +11980,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 1
 			public const int ActivityChooserView_initialActivityCount = 1;
 			
-			// aapt resource value: { 0x10100F2,0x7F030053,0x7F030054,0x7F03012B,0x7F03012C,0x7F03013F,0x7F030170,0x7F030171 }
+			// aapt resource value: { 0x10100F2,0x7F030053,0x7F030054,0x7F03012B,0x7F03012C,0x7F03013F,0x7F030171,0x7F030172 }
 			public static int[] AlertDialog = new int[] {
 					16842994,
 					2130903123,
@@ -13921,8 +11988,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903339,
 					2130903340,
 					2130903359,
-					2130903408,
-					2130903409};
+					2130903409,
+					2130903410};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -14014,12 +12081,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903240,
 					2130903332};
 			
-			// aapt resource value: { 0x7F03017E,0x7F03017F,0x7F030180,0x7F030181 }
+			// aapt resource value: { 0x7F03017F,0x7F030180,0x7F030181,0x7F030182 }
 			public static int[] AppBarLayoutStates = new int[] {
-					2130903422,
 					2130903423,
 					2130903424,
-					2130903425};
+					2130903425,
+					2130903426};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -14062,12 +12129,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 5
 			public const int AppBarLayout_liftOnScroll = 5;
 			
-			// aapt resource value: { 0x1010119,0x7F03017B,0x7F0301CF,0x7F0301D0 }
+			// aapt resource value: { 0x1010119,0x7F03017C,0x7F0301D0,0x7F0301D1 }
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130903419,
-					2130903503,
-					2130903504};
+					2130903420,
+					2130903504,
+					2130903505};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -14081,12 +12148,12 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 3
 			public const int AppCompatImageView_tintMode = 3;
 			
-			// aapt resource value: { 0x1010142,0x7F0301CC,0x7F0301CD,0x7F0301CE }
+			// aapt resource value: { 0x1010142,0x7F0301CD,0x7F0301CE,0x7F0301CF }
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130903500,
 					2130903501,
-					2130903502};
+					2130903502,
+					2130903503};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -14131,7 +12198,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
-			// aapt resource value: { 0x1010034,0x7F03002C,0x7F03002D,0x7F03002E,0x7F03002F,0x7F030030,0x7F0300B3,0x7F0300B4,0x7F0300B5,0x7F0300B6,0x7F0300B8,0x7F0300B9,0x7F0300BA,0x7F0300BB,0x7F0300DB,0x7F0300DE,0x7F0300E6,0x7F030117,0x7F030125,0x7F0301AB,0x7F0301C5 }
+			// aapt resource value: { 0x1010034,0x7F03002C,0x7F03002D,0x7F03002E,0x7F03002F,0x7F030030,0x7F0300B3,0x7F0300B4,0x7F0300B5,0x7F0300B6,0x7F0300B8,0x7F0300B9,0x7F0300BA,0x7F0300BB,0x7F0300DB,0x7F0300DE,0x7F0300E6,0x7F030117,0x7F030125,0x7F0301AC,0x7F0301C6 }
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
 					2130903084,
@@ -14152,8 +12219,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903270,
 					2130903319,
 					2130903333,
-					2130903467,
-					2130903493};
+					2130903468,
+					2130903494};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -14218,7 +12285,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 20
 			public const int AppCompatTextView_textLocale = 20;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F03002B,0x7F03003E,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F030050,0x7F030056,0x7F030057,0x7F030061,0x7F030066,0x7F030088,0x7F030089,0x7F03008A,0x7F03008B,0x7F03008C,0x7F03008D,0x7F03008E,0x7F03008F,0x7F030090,0x7F030093,0x7F0300A2,0x7F0300AB,0x7F0300AC,0x7F0300AD,0x7F0300B0,0x7F0300B2,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C0,0x7F0300C1,0x7F0300F6,0x7F030104,0x7F030127,0x7F030128,0x7F030129,0x7F03012A,0x7F03012D,0x7F03012E,0x7F03012F,0x7F030130,0x7F030131,0x7F030132,0x7F030133,0x7F030134,0x7F030135,0x7F03014A,0x7F03014B,0x7F03014C,0x7F030152,0x7F030154,0x7F03015B,0x7F03015C,0x7F03015D,0x7F03015E,0x7F030168,0x7F030169,0x7F03016A,0x7F03016B,0x7F030178,0x7F030179,0x7F03018F,0x7F0301B6,0x7F0301B7,0x7F0301B8,0x7F0301B9,0x7F0301BB,0x7F0301BC,0x7F0301BD,0x7F0301BE,0x7F0301C1,0x7F0301C2,0x7F0301DD,0x7F0301DE,0x7F0301DF,0x7F0301E0,0x7F0301E7,0x7F0301E9,0x7F0301EA,0x7F0301EB,0x7F0301EC,0x7F0301ED,0x7F0301EE,0x7F0301EF,0x7F0301F0,0x7F0301F1,0x7F0301F2 }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F030022,0x7F030023,0x7F030024,0x7F030025,0x7F03002B,0x7F03003E,0x7F03004C,0x7F03004D,0x7F03004E,0x7F03004F,0x7F030050,0x7F030056,0x7F030057,0x7F030061,0x7F030066,0x7F030088,0x7F030089,0x7F03008A,0x7F03008B,0x7F03008C,0x7F03008D,0x7F03008E,0x7F03008F,0x7F030090,0x7F030093,0x7F0300A2,0x7F0300AB,0x7F0300AC,0x7F0300AD,0x7F0300B0,0x7F0300B2,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C0,0x7F0300C1,0x7F0300F6,0x7F030104,0x7F030127,0x7F030128,0x7F030129,0x7F03012A,0x7F03012D,0x7F03012E,0x7F03012F,0x7F030130,0x7F030131,0x7F030132,0x7F030133,0x7F030134,0x7F030135,0x7F03014A,0x7F03014B,0x7F03014C,0x7F030152,0x7F030154,0x7F03015B,0x7F03015C,0x7F03015D,0x7F03015E,0x7F030169,0x7F03016A,0x7F03016B,0x7F03016C,0x7F030179,0x7F03017A,0x7F030190,0x7F0301B7,0x7F0301B8,0x7F0301B9,0x7F0301BA,0x7F0301BC,0x7F0301BD,0x7F0301BE,0x7F0301BF,0x7F0301C2,0x7F0301C3,0x7F0301DE,0x7F0301DF,0x7F0301E0,0x7F0301E1,0x7F0301E8,0x7F0301EA,0x7F0301EB,0x7F0301EC,0x7F0301ED,0x7F0301EE,0x7F0301EF,0x7F0301F0,0x7F0301F1,0x7F0301F2,0x7F0301F3 }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -14313,29 +12380,28 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903388,
 					2130903389,
 					2130903390,
-					2130903400,
 					2130903401,
 					2130903402,
 					2130903403,
-					2130903416,
+					2130903404,
 					2130903417,
-					2130903439,
-					2130903478,
+					2130903418,
+					2130903440,
 					2130903479,
 					2130903480,
 					2130903481,
-					2130903483,
+					2130903482,
 					2130903484,
 					2130903485,
 					2130903486,
-					2130903489,
+					2130903487,
 					2130903490,
-					2130903517,
+					2130903491,
 					2130903518,
 					2130903519,
 					2130903520,
-					2130903527,
-					2130903529,
+					2130903521,
+					2130903528,
 					2130903530,
 					2130903531,
 					2130903532,
@@ -14344,7 +12410,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903535,
 					2130903536,
 					2130903537,
-					2130903538};
+					2130903538,
+					2130903539};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -14872,7 +12939,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 12
 			public const int CardView_contentPaddingTop = 12;
 			
-			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F030063,0x7F030064,0x7F030065,0x7F030067,0x7F030068,0x7F030069,0x7F03006B,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070,0x7F030075,0x7F030076,0x7F030077,0x7F03007A,0x7F03007B,0x7F03007C,0x7F03007D,0x7F03007E,0x7F03007F,0x7F030080,0x7F0300F0,0x7F0300FA,0x7F0300FE,0x7F030161,0x7F03016E,0x7F0301C3,0x7F0301C6 }
+			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F030063,0x7F030064,0x7F030065,0x7F030067,0x7F030068,0x7F030069,0x7F03006B,0x7F03006C,0x7F03006D,0x7F03006E,0x7F03006F,0x7F030070,0x7F030075,0x7F030076,0x7F030077,0x7F03007A,0x7F03007B,0x7F03007C,0x7F03007D,0x7F03007E,0x7F03007F,0x7F030080,0x7F0300F0,0x7F0300FA,0x7F0300FE,0x7F030161,0x7F03016F,0x7F0301C4,0x7F0301C7 }
 			public static int[] Chip = new int[] {
 					16842804,
 					16842923,
@@ -14905,18 +12972,18 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903290,
 					2130903294,
 					2130903393,
-					2130903406,
-					2130903491,
-					2130903494};
+					2130903407,
+					2130903492,
+					2130903495};
 			
-			// aapt resource value: { 0x7F030062,0x7F030071,0x7F030072,0x7F030073,0x7F030172,0x7F030173 }
+			// aapt resource value: { 0x7F030062,0x7F030071,0x7F030072,0x7F030073,0x7F030173,0x7F030174 }
 			public static int[] ChipGroup = new int[] {
 					2130903138,
 					2130903153,
 					2130903154,
 					2130903155,
-					2130903410,
-					2130903411};
+					2130903411,
+					2130903412};
 			
 			// aapt resource value: 0
 			public const int ChipGroup_checkedChip = 0;
@@ -15038,7 +13105,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 33
 			public const int Chip_textStartPadding = 33;
 			
-			// aapt resource value: { 0x7F030084,0x7F030085,0x7F0300A1,0x7F0300C9,0x7F0300CA,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F0300CF,0x7F030163,0x7F030165,0x7F030183,0x7F0301D1,0x7F0301D2,0x7F0301DC }
+			// aapt resource value: { 0x7F030084,0x7F030085,0x7F0300A1,0x7F0300C9,0x7F0300CA,0x7F0300CB,0x7F0300CC,0x7F0300CD,0x7F0300CE,0x7F0300CF,0x7F030163,0x7F030165,0x7F030184,0x7F0301D2,0x7F0301D3,0x7F0301DD }
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130903172,
 					2130903173,
@@ -15052,10 +13119,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903247,
 					2130903395,
 					2130903397,
-					2130903427,
-					2130903505,
+					2130903428,
 					2130903506,
-					2130903516};
+					2130903507,
+					2130903517};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 0;
@@ -15150,10 +13217,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 3
 			public const int CompoundButton_buttonTintMode = 3;
 			
-			// aapt resource value: { 0x7F030115,0x7F030182 }
+			// aapt resource value: { 0x7F030115,0x7F030183 }
 			public static int[] CoordinatorLayout = new int[] {
 					2130903317,
-					2130903426};
+					2130903427};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -15203,7 +13270,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 1
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
-			// aapt resource value: { 0x7F030029,0x7F03002A,0x7F030036,0x7F030087,0x7F0300B7,0x7F0300E9,0x7F030177,0x7F0301C8 }
+			// aapt resource value: { 0x7F030029,0x7F03002A,0x7F030036,0x7F030087,0x7F0300B7,0x7F0300E9,0x7F030178,0x7F0301C9 }
 			public static int[] DrawerArrowToggle = new int[] {
 					2130903081,
 					2130903082,
@@ -15211,8 +13278,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903175,
 					2130903223,
 					2130903273,
-					2130903415,
-					2130903496};
+					2130903416,
+					2130903497};
 			
 			// aapt resource value: 0
 			public const int DrawerArrowToggle_arrowHeadLength = 0;
@@ -15238,7 +13305,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
-			// aapt resource value: { 0x7F030034,0x7F030035,0x7F03003D,0x7F0300C2,0x7F0300D4,0x7F0300D5,0x7F0300F0,0x7F0300F8,0x7F03013C,0x7F030156,0x7F030161,0x7F03016E,0x7F0301E6 }
+			// aapt resource value: { 0x7F030034,0x7F030035,0x7F03003D,0x7F0300C2,0x7F0300D4,0x7F0300D5,0x7F0300F0,0x7F0300F8,0x7F03013C,0x7F030156,0x7F030161,0x7F03016F,0x7F0301E7 }
 			public static int[] FloatingActionButton = new int[] {
 					2130903092,
 					2130903093,
@@ -15251,8 +13318,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903356,
 					2130903382,
 					2130903393,
-					2130903406,
-					2130903526};
+					2130903407,
+					2130903527};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
@@ -15320,7 +13387,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903267,
 					2130903268};
 			
-			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300DD,0x7F0300E5,0x7F0300E6,0x7F0300E7,0x7F0301E5 }
+			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300DD,0x7F0300E5,0x7F0300E6,0x7F0300E7,0x7F0301E6 }
 			public static int[] FontFamilyFont = new int[] {
 					16844082,
 					16844083,
@@ -15331,7 +13398,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903269,
 					2130903270,
 					2130903271,
-					2130903525};
+					2130903526};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -15465,7 +13532,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0
 			public const int ItemsViewRendererTheme_collectionViewStyle = 0;
 			
-			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300AF,0x7F0300B1,0x7F03013D,0x7F03016D }
+			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300AF,0x7F0300B1,0x7F03013D,0x7F03016E }
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
 					16842948,
@@ -15475,7 +13542,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903215,
 					2130903217,
 					2130903357,
-					2130903405};
+					2130903406};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -15549,7 +13616,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 2
 			public const int LoadingImageView_imageAspectRatioAdjust = 2;
 			
-			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030034,0x7F030035,0x7F0300A4,0x7F0300F9,0x7F0300FB,0x7F0300FC,0x7F0300FD,0x7F0300FF,0x7F030100,0x7F030161,0x7F030184,0x7F030185 }
+			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030034,0x7F030035,0x7F0300A4,0x7F0300F9,0x7F0300FB,0x7F0300FC,0x7F0300FD,0x7F0300FF,0x7F030100,0x7F030161,0x7F030185,0x7F030186 }
 			public static int[] MaterialButton = new int[] {
 					16843191,
 					16843192,
@@ -15565,8 +13632,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903295,
 					2130903296,
 					2130903393,
-					2130903428,
-					2130903429};
+					2130903429,
+					2130903430};
 			
 			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
@@ -15616,10 +13683,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 15
 			public const int MaterialButton_strokeWidth = 15;
 			
-			// aapt resource value: { 0x7F030184,0x7F030185 }
+			// aapt resource value: { 0x7F030185,0x7F030186 }
 			public static int[] MaterialCardView = new int[] {
-					2130903428,
-					2130903429};
+					2130903429,
+					2130903430};
 			
 			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
@@ -15627,7 +13694,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 1
 			public const int MaterialCardView_strokeWidth = 1;
 			
-			// aapt resource value: { 0x7F030041,0x7F030042,0x7F03006A,0x7F030074,0x7F030078,0x7F030088,0x7F030089,0x7F03008F,0x7F030090,0x7F030092,0x7F0300C1,0x7F0300DC,0x7F030138,0x7F030139,0x7F030143,0x7F030164,0x7F030174,0x7F0301A7,0x7F0301AC,0x7F0301AD,0x7F0301AE,0x7F0301AF,0x7F0301B0,0x7F0301B1,0x7F0301B2,0x7F0301B3,0x7F0301B4,0x7F0301B5,0x7F0301BA,0x7F0301BF,0x7F0301C0,0x7F0301C4 }
+			// aapt resource value: { 0x7F030041,0x7F030042,0x7F03006A,0x7F030074,0x7F030078,0x7F030088,0x7F030089,0x7F03008F,0x7F030090,0x7F030092,0x7F0300C1,0x7F0300DC,0x7F030138,0x7F030139,0x7F030143,0x7F030164,0x7F030175,0x7F0301A8,0x7F0301AD,0x7F0301AE,0x7F0301AF,0x7F0301B0,0x7F0301B1,0x7F0301B2,0x7F0301B3,0x7F0301B4,0x7F0301B5,0x7F0301B6,0x7F0301BB,0x7F0301C0,0x7F0301C1,0x7F0301C5 }
 			public static int[] MaterialComponentsTheme = new int[] {
 					2130903105,
 					2130903106,
@@ -15645,9 +13712,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903353,
 					2130903363,
 					2130903396,
-					2130903412,
-					2130903463,
-					2130903468,
+					2130903413,
+					2130903464,
 					2130903469,
 					2130903470,
 					2130903471,
@@ -15657,10 +13723,11 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903475,
 					2130903476,
 					2130903477,
-					2130903482,
-					2130903487,
+					2130903478,
+					2130903483,
 					2130903488,
-					2130903492};
+					2130903489,
+					2130903493};
 			
 			// aapt resource value: 0
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 0;
@@ -15785,7 +13852,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
-			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030028,0x7F030095,0x7F0300FF,0x7F030100,0x7F030144,0x7F03016C,0x7F0301E1 }
+			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030028,0x7F030095,0x7F0300FF,0x7F030100,0x7F030144,0x7F03016D,0x7F0301E2 }
 			public static int[] MenuItem = new int[] {
 					16842754,
 					16842766,
@@ -15808,8 +13875,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903295,
 					2130903296,
 					2130903364,
-					2130903404,
-					2130903521};
+					2130903405,
+					2130903522};
 			
 			// aapt resource value: 13
 			public const int MenuItem_actionLayout = 13;
@@ -15880,7 +13947,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 22
 			public const int MenuItem_tooltipText = 22;
 			
-			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030155,0x7F030186 }
+			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F030155,0x7F030187 }
 			public static int[] MenuView = new int[] {
 					16842926,
 					16843052,
@@ -15890,7 +13957,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843056,
 					16843057,
 					2130903381,
-					2130903430};
+					2130903431};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -15976,9 +14043,9 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16843465,
 					2130903365};
 			
-			// aapt resource value: { 0x7F03017D }
+			// aapt resource value: { 0x7F03017E }
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130903421};
+					2130903422};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
@@ -16003,7 +14070,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
-			// aapt resource value: { 0x10100C4,0x10100EB,0x10100F1,0x7F0300D6,0x7F0300D7,0x7F0300D8,0x7F0300D9,0x7F0300DA,0x7F030119,0x7F030160,0x7F030176,0x7F03017C }
+			// aapt resource value: { 0x10100C4,0x10100EB,0x10100F1,0x7F0300D6,0x7F0300D7,0x7F0300D8,0x7F0300D9,0x7F0300DA,0x7F030119,0x7F030160,0x7F030177,0x7F03017D }
 			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842987,
@@ -16015,8 +14082,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903258,
 					2130903321,
 					2130903392,
-					2130903414,
-					2130903420};
+					2130903415,
+					2130903421};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_clipToPadding = 1;
@@ -16068,7 +14135,14 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F03007A,0x7F030094,0x7F0300AA,0x7F0300EA,0x7F030101,0x7F030118,0x7F030159,0x7F03015A,0x7F030166,0x7F030167,0x7F030187,0x7F03018C,0x7F0301E8 }
+			// aapt resource value: { 0x7F030166 }
+			public static int[] ScrollViewRendererTheme = new int[] {
+					2130903398};
+			
+			// aapt resource value: 0
+			public const int ScrollViewRendererTheme_scrollViewStyle = 0;
+			
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F03007A,0x7F030094,0x7F0300AA,0x7F0300EA,0x7F030101,0x7F030118,0x7F030159,0x7F03015A,0x7F030167,0x7F030168,0x7F030188,0x7F03018D,0x7F0301E9 }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
@@ -16082,11 +14156,11 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903320,
 					2130903385,
 					2130903386,
-					2130903398,
 					2130903399,
-					2130903431,
-					2130903436,
-					2130903528};
+					2130903400,
+					2130903432,
+					2130903437,
+					2130903529};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -16154,10 +14228,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 2
 			public const int SignInButton_scopeUris = 2;
 			
-			// aapt resource value: { 0x7F030174,0x7F030175 }
+			// aapt resource value: { 0x7F030175,0x7F030176 }
 			public static int[] Snackbar = new int[] {
-					2130903412,
-					2130903413};
+					2130903413,
+					2130903414};
 			
 			// aapt resource value: { 0x101011F,0x7F0300C2,0x7F03013A }
 			public static int[] SnackbarLayout = new int[] {
@@ -16237,22 +14311,22 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 1
 			public const int StateListDrawable_android_visible = 1;
 			
-			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F03016F,0x7F03017A,0x7F03018D,0x7F03018E,0x7F030190,0x7F0301C9,0x7F0301CA,0x7F0301CB,0x7F0301E2,0x7F0301E3,0x7F0301E4 }
+			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F030170,0x7F03017B,0x7F03018E,0x7F03018F,0x7F030191,0x7F0301CA,0x7F0301CB,0x7F0301CC,0x7F0301E3,0x7F0301E4,0x7F0301E5 }
 			public static int[] SwitchCompat = new int[] {
 					16843044,
 					16843045,
 					16843074,
-					2130903407,
-					2130903418,
-					2130903437,
+					2130903408,
+					2130903419,
 					2130903438,
-					2130903440,
-					2130903497,
+					2130903439,
+					2130903441,
 					2130903498,
 					2130903499,
-					2130903522,
+					2130903500,
 					2130903523,
-					2130903524};
+					2130903524,
+					2130903525};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -16311,9 +14385,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
-			// aapt resource value: { 0x7F030191,0x7F030192,0x7F030193,0x7F030194,0x7F030195,0x7F030196,0x7F030197,0x7F030198,0x7F030199,0x7F03019A,0x7F03019B,0x7F03019C,0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A8,0x7F0301A9,0x7F0301AA }
+			// aapt resource value: { 0x7F030192,0x7F030193,0x7F030194,0x7F030195,0x7F030196,0x7F030197,0x7F030198,0x7F030199,0x7F03019A,0x7F03019B,0x7F03019C,0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A9,0x7F0301AA,0x7F0301AB }
 			public static int[] TabLayout = new int[] {
-					2130903441,
 					2130903442,
 					2130903443,
 					2130903444,
@@ -16335,9 +14408,10 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903460,
 					2130903461,
 					2130903462,
-					2130903464,
+					2130903463,
 					2130903465,
-					2130903466};
+					2130903466,
+					2130903467};
 			
 			// aapt resource value: 0
 			public const int TabLayout_tabBackground = 0;
@@ -16414,7 +14488,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 24
 			public const int TabLayout_tabUnboundedRipple = 24;
 			
-			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x1010585,0x7F0300DE,0x7F0300E6,0x7F0301AB,0x7F0301C5 }
+			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x1010585,0x7F0300DE,0x7F0300E6,0x7F0301AC,0x7F0301C6 }
 			public static int[] TextAppearance = new int[] {
 					16842901,
 					16842902,
@@ -16430,8 +14504,8 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					16844165,
 					2130903262,
 					2130903270,
-					2130903467,
-					2130903493};
+					2130903468,
+					2130903494};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -16611,7 +14685,7 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 2
 			public const int ThemeEnforcement_enforceTextAppearance = 2;
 			
-			// aapt resource value: { 0x10100AF,0x1010140,0x7F030052,0x7F030082,0x7F030083,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F030136,0x7F030137,0x7F03013B,0x7F03013E,0x7F030140,0x7F030141,0x7F030153,0x7F030188,0x7F030189,0x7F03018A,0x7F0301D1,0x7F0301D3,0x7F0301D4,0x7F0301D5,0x7F0301D6,0x7F0301D7,0x7F0301D8,0x7F0301D9,0x7F0301DA }
+			// aapt resource value: { 0x10100AF,0x1010140,0x7F030052,0x7F030082,0x7F030083,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009B,0x7F030136,0x7F030137,0x7F03013B,0x7F03013E,0x7F030140,0x7F030141,0x7F030153,0x7F030189,0x7F03018A,0x7F03018B,0x7F0301D2,0x7F0301D4,0x7F0301D5,0x7F0301D6,0x7F0301D7,0x7F0301D8,0x7F0301D9,0x7F0301DA,0x7F0301DB }
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
@@ -16631,18 +14705,18 @@ namespace Plugin.CloudFirestore.Sample.Droid
 					2130903360,
 					2130903361,
 					2130903379,
-					2130903432,
 					2130903433,
 					2130903434,
-					2130903505,
-					2130903507,
+					2130903435,
+					2130903506,
 					2130903508,
 					2130903509,
 					2130903510,
 					2130903511,
 					2130903512,
 					2130903513,
-					2130903514};
+					2130903514,
+					2130903515};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -16734,13 +14808,13 @@ namespace Plugin.CloudFirestore.Sample.Droid
 			// aapt resource value: 29
 			public const int Toolbar_titleTextColor = 29;
 			
-			// aapt resource value: { 0x1010000,0x10100DA,0x7F030147,0x7F030148,0x7F0301C7 }
+			// aapt resource value: { 0x1010000,0x10100DA,0x7F030147,0x7F030148,0x7F0301C8 }
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
 					2130903367,
 					2130903368,
-					2130903495};
+					2130903496};
 			
 			// aapt resource value: { 0x10100D4,0x7F030034,0x7F030035 }
 			public static int[] ViewBackgroundHelper = new int[] {

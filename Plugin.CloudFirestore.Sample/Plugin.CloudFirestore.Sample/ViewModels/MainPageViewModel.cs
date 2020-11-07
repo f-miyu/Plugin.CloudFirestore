@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using Reactive.Bindings;
 using Plugin.CloudFirestore.Sample.Models;
-using Plugin.CloudFirestore.Extensions;
+using Plugin.CloudFirestore.Reactive;
 using Reactive.Bindings.Extensions;
 using System.Reactive.Disposables;
 using Plugin.CloudFirestore.Sample.Extensions;

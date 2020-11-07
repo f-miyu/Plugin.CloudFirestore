@@ -57,10 +57,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.8.0.1364" />
-        <PackageReference Include="Prism.DryIoc.Forms" Version="7.2.0.1422" />
+        <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+        <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
         <PackageReference Include="Xamarin.Firebase.Firestore">
-          <Version>121.4.3-preview02</Version>
+          <Version>121.4.3</Version>
         </PackageReference>
     </ItemGroup>
     <ItemGroup>

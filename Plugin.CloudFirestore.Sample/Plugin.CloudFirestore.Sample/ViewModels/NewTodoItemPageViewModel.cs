@@ -49,11 +49,11 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                                          System.Diagnostics.Debug.WriteLine(t.Exception);
                                      }, TaskContinuationOptions.OnlyOnFaulted);
 
-                  await navigationService.GoBackAsync(useModalNavigation: true);
+                  await navigationService.GoBackAsync();
               });
 
             CancelCommand = new ReactiveCommand();
-            CancelCommand.Subscribe(() => NavigationService.GoBackAsync(useModalNavigation: true));
+            CancelCommand.Subscribe(() => NavigationService.GoBackAsync());
         }
     }
 }
