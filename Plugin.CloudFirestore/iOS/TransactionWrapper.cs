@@ -28,61 +28,61 @@ namespace Plugin.CloudFirestore
                 throw ExceptionMapper.Map(error);
             }
 
-            return new DocumentSnapshotWrapper(snapshot);
+            return new DocumentSnapshotWrapper(snapshot!);
         }
 
         public void SetData(IDocumentReference document, object documentData)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative());
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative());
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative());
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields);
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields);
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields);
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields);
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), merge);
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), merge);
         }
 
         public ITransaction Set<T>(IDocumentReference document, T documentData, bool merge)
         {
-            _transaction.SetData(documentData.ToNativeFieldValues(), document.ToNative(), merge);
+            _transaction.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), merge);
             return this;
         }
 
         public void UpdateData(IDocumentReference document, object fields)
         {
-            _transaction.UpdateData(fields.ToNativeFieldValues(), document.ToNative());
+            _transaction.UpdateData(fields.ToNativeFieldValues()!, document.ToNative());
         }
 
         public ITransaction Update<T>(IDocumentReference document, T fields)
         {
-            _transaction.UpdateData(fields.ToNativeFieldValues(), document.ToNative());
+            _transaction.UpdateData(fields.ToNativeFieldValues()!, document.ToNative());
             return this;
         }
 

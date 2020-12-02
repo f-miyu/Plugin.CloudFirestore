@@ -19,7 +19,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    data = source.GetData(serverTimestampBehavior.Value.ToNative());
+                    data = source.GetData(serverTimestampBehavior.Value.ToNative())!;
                 }
 
                 var instance = new Dictionary<string, object?>();

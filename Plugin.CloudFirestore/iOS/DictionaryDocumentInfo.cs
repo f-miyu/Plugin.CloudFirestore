@@ -62,7 +62,7 @@ namespace Plugin.CloudFirestore
             }
             else
             {
-                data = snapshot.GetData(serverTimestampBehavior.Value.ToNative());
+                data = snapshot.GetData(serverTimestampBehavior.Value.ToNative())!;
             }
 
             var ret = Create();

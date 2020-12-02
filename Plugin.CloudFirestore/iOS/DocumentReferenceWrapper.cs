@@ -72,7 +72,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetResult(new DocumentSnapshotWrapper(snapshot));
+                    tcs.SetResult(new DocumentSnapshotWrapper(snapshot!));
                 }
             });
 
@@ -96,7 +96,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    tcs.SetResult(new DocumentSnapshotWrapper(snapshot));
+                    tcs.SetResult(new DocumentSnapshotWrapper(snapshot!));
                 }
             });
 
@@ -105,7 +105,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData(object documentData, CompletionHandler handler)
         {
-            _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -115,7 +115,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, (error) =>
             {
                 if (error != null)
                 {
@@ -134,7 +134,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, (error) =>
             {
                 if (error != null)
                 {
@@ -151,7 +151,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData(object documentData, CompletionHandler handler, params string[] mergeFields)
         {
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, mergeFields, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -159,7 +159,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData(object documentData, CompletionHandler handler, params FieldPath[] mergeFields)
         {
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -169,7 +169,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, mergeFields, (error) =>
             {
                 if (error != null)
                 {
@@ -188,7 +188,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, mergeFields, (error) =>
             {
                 if (error != null)
                 {
@@ -207,7 +207,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
             {
                 if (error != null)
                 {
@@ -226,7 +226,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, mergeFields.Select(x => x.ToNative()).ToArray(), (error) =>
             {
                 if (error != null)
                 {
@@ -243,7 +243,7 @@ namespace Plugin.CloudFirestore
 
         public void SetData(object documentData, bool merge, CompletionHandler handler)
         {
-            _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, merge, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -253,7 +253,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, merge, (error) =>
             {
                 if (error != null)
                 {
@@ -272,7 +272,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.SetData(documentData.ToNativeFieldValues(), merge, (error) =>
+            _documentReference.SetData(documentData.ToNativeFieldValues()!, merge, (error) =>
             {
                 if (error != null)
                 {
@@ -289,7 +289,7 @@ namespace Plugin.CloudFirestore
 
         public void UpdateData(object fields, CompletionHandler handler)
         {
-            _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
+            _documentReference.UpdateData(fields.ToNativeFieldValues()!, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -299,7 +299,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
+            _documentReference.UpdateData(fields.ToNativeFieldValues()!, (error) =>
             {
                 if (error != null)
                 {
@@ -318,7 +318,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _documentReference.UpdateData(fields.ToNativeFieldValues(), (error) =>
+            _documentReference.UpdateData(fields.ToNativeFieldValues()!, (error) =>
             {
                 if (error != null)
                 {

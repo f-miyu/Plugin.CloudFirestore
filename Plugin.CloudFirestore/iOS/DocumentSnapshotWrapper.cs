@@ -57,13 +57,13 @@ namespace Plugin.CloudFirestore
         [return: MaybeNull]
         public T Get<T>(FieldPath field)
         {
-            return (T)_documentSnapshot.GetValue(field?.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
+            return (T)_documentSnapshot.GetValue(field?.ToNative()!).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
         [return: MaybeNull]
         public T Get<T>(FieldPath field, ServerTimestampBehavior serverTimestampBehavior)
         {
-            return (T)_documentSnapshot.GetValue(field?.ToNative(), serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
+            return (T)_documentSnapshot.GetValue(field?.ToNative()!, serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
         }
 
         public override bool Equals(object? obj)
