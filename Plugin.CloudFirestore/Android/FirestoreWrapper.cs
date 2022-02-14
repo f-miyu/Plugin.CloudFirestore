@@ -20,7 +20,6 @@ namespace Plugin.CloudFirestore
         {
             get => new FirestoreSettings(_firestore.FirestoreSettings);
             set => _firestore.FirestoreSettings = value == null ? null : new FirebaseFirestoreSettings.Builder()
-                .SetTimestampsInSnapshotsEnabled(value.AreTimestampsInSnapshotsEnabled)
                 .SetHost(value.Host)
                 .SetPersistenceEnabled(value.IsPersistenceEnabled)
                 .SetSslEnabled(value.IsSslEnabled)

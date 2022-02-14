@@ -6,7 +6,6 @@ namespace Plugin.CloudFirestore
         static FirestoreSettings()
         {
             var settings = new Firebase.CloudFirestore.FirestoreSettings();
-            _deaultAreTimestampsInSnapshotsEnabled = settings.TimestampsInSnapshotsEnabled;
             _defaultHost = settings.Host;
             _defaultIsPersistenceEnabled = settings.PersistenceEnabled;
             _defaultIsSslEnabled = settings.SslEnabled;
@@ -16,7 +15,6 @@ namespace Plugin.CloudFirestore
 
         internal FirestoreSettings(Firebase.CloudFirestore.FirestoreSettings settings)
         {
-            AreTimestampsInSnapshotsEnabled = settings.TimestampsInSnapshotsEnabled;
             Host = settings.Host;
             IsPersistenceEnabled = settings.PersistenceEnabled;
             IsSslEnabled = settings.SslEnabled;
