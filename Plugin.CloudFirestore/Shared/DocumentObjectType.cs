@@ -10,9 +10,11 @@ namespace Plugin.CloudFirestore
         String,
         List,
         Dictionary,
+        [Obsolete("Use Timestamp instead")]
         Timestapm,
         Bytes,
         GeoPoint,
-        DocumentReference
+        DocumentReference,
+        Timestamp = Timestapm
     }
 }
