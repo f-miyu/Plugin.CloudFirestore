@@ -1,58 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="MSBuild.Sdk.Extras/2.1.2">
-    <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0</TargetFrameworks>
-        <AssemblyName>Plugin.CloudFirestore</AssemblyName>
-        <RootNamespace>Plugin.CloudFirestore</RootNamespace>
-        <PackageId>Plugin.CloudFirestore</PackageId>
-        <Product>$(AssemblyName) ($(TargetFramework))</Product>
-        <Version>4.1.0</Version>
-        <PackageVersion>4.1.0</PackageVersion>
-        <PackOnBuild>true</PackOnBuild>
-        <NeutralLanguage>en</NeutralLanguage>
-        <DefineConstants>$(DefineConstants);</DefineConstants>
-        <UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
-        <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-        <LangVersion>latest</LangVersion>
-        <DebugType>portable</DebugType>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/f-miyu/Plugin.CloudFirestore</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/f-miyu/Plugin.CloudFirestore</RepositoryUrl>
-        <PackageTags>xamarin, ios, android, xamarin.forms, plugin, cloudfirestore, firestore, firebase</PackageTags>
-        <Title>Cloud Firestore Plugin for Xamarin</Title>
-        <Description>Cross platform plugin for Firebase Cloud Firestore</Description>
-        <Owners>f-miyu</Owners>
-        <Authors>f-miyu</Authors>
-        <Copyright>Copyright (c) 2018 f-miyu</Copyright>
-        <DisableExtraReferences>true</DisableExtraReferences>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
-        <DebugSymbols>true</DebugSymbols>
-        <GenerateDocumentationFile>false</GenerateDocumentationFile>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)'=='Release' ">
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    </PropertyGroup>
-    <ItemGroup>
-        <Compile Include="Shared\**\*.cs" />
-        <PackageReference Include="System.Reactive" Version="5.0.0" />
-        <PackageReference Include="Nullable" Version="1.3.0">
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-            <PrivateAssets>all</PrivateAssets>
-        </PackageReference>
-    </ItemGroup>
-    <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
-    </ItemGroup>
-    <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
-        <Compile Include="Android\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.Firestore" Version="121.4.3" PrivateAssets="contentFiles;analyzers" />
-        <PackageReference Include="Xamarin.Io.OpenCensus.OpenCensusApi" Version="0.21.0" />
-        <PackageReference Include="Xamarin.Google.Guava" Version="27.1.0.1" />
-    </ItemGroup>
-    <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
-        <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="1.19.0" />
-    </ItemGroup>
+<Project Sdk="MSBuild.Sdk.Extras/3.0.22">
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid12.0</TargetFrameworks>
+		<AssemblyName>Plugin.CloudFirestore</AssemblyName>
+		<RootNamespace>Plugin.CloudFirestore</RootNamespace>
+		<PackageId>Plugin.CloudFirestore</PackageId>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Version>4.1.0</Version>
+		<PackageVersion>4.1.0</PackageVersion>
+		<PackOnBuild>true</PackOnBuild>
+		<NeutralLanguage>en</NeutralLanguage>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<UseFullSemVerForNuGet>false</UseFullSemVerForNuGet>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<LangVersion>latest</LangVersion>
+		<DebugType>portable</DebugType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/f-miyu/Plugin.CloudFirestore</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/f-miyu/Plugin.CloudFirestore</RepositoryUrl>
+		<PackageTags>xamarin, ios, android, xamarin.forms, plugin, cloudfirestore, firestore, firebase</PackageTags>
+		<Title>Cloud Firestore Plugin for Xamarin</Title>
+		<Description>Cross platform plugin for Firebase Cloud Firestore</Description>
+		<Owners>f-miyu</Owners>
+		<Authors>f-miyu</Authors>
+		<Copyright>Copyright (c) 2018 f-miyu</Copyright>
+		<DisableExtraReferences>true</DisableExtraReferences>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+		<DebugSymbols>true</DebugSymbols>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="Shared\**\*.cs" />
+		<PackageReference Include="System.Reactive" Version="5.0.0" />
+		<PackageReference Include="Nullable" Version="1.3.0">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+	</ItemGroup>
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+		<Compile Include="Android\**\*.cs" />
+		<PackageReference Include="Xamarin.Firebase.Firestore" Version="123.0.3.5" PrivateAssets="contentFiles;analyzers" />
+	</ItemGroup>
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+		<Compile Include="iOS\**\*.cs" />
+		<PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="8.10.0" />
+	</ItemGroup>
 </Project>

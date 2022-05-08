@@ -8,7 +8,6 @@ namespace Plugin.CloudFirestore
         private static bool _defaultIsSslEnabled;
         private static long _defaultCacheSizeBytes;
 
-        [Obsolete("This setting now defaults to true and will be removed in a future release.")]
         public string Host { get; set; }
         public bool IsPersistenceEnabled { get; set; }
         public bool IsSslEnabled { get; set; }

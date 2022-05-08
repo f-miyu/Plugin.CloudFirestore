@@ -35,13 +35,13 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 
             query.ObserveAdded()
                  .Select(change => (Object: change.Document.ToObject<TodoItem>(ServerTimestampBehavior.Estimate), Index: change.NewIndex))
-                 .Select(t => (ViewModel: new TodoItemViewModel(t.Object), Index: t.Index))
+                 .Select(t => (ViewModel: new TodoItemViewModel(t.Object!), Index: t.Index))
                  .Subscribe(t => TodoItems.InsertOnScheduler(t.Index, t.ViewModel))
                  .AddTo(_disposables);
 
             query.ObserveModified()
                  .Select(change => change.Document.ToObject<TodoItem>(ServerTimestampBehavior.Estimate))
-                 .Select(todoItem => (TodoItem: todoItem, ViewModel: TodoItems.FirstOrDefault(x => x.Id == todoItem.Id)))
+                 .Select(todoItem => (TodoItem: todoItem!, ViewModel: TodoItems.FirstOrDefault(x => x.Id == todoItem!.Id)))
                  .Where(t => t.ViewModel != null)
                  .Subscribe(t => t.ViewModel.Update(t.TodoItem.Name, t.TodoItem.Notes))
                  .AddTo(_disposables);
@@ -61,7 +61,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             SelectItemCommand = new ReactiveCommand<TodoItemViewModel>();
             SelectItemCommand.Subscribe(item =>
             {
-                navigationService.NavigateAsync<TodoItemDetailPageViewModel, string>(item.Id);
+                navigationService.NavigateAsync<TodoItemDetailPageViewModel, string?>(item.Id);
             });
         }
 

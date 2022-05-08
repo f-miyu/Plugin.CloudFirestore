@@ -12,8 +12,8 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 {
     public class NewTodoItemPageViewModel : ViewModelBase
     {
-        public ReactivePropertySlim<string> Name { get; set; } = new ReactivePropertySlim<string>();
-        public ReactivePropertySlim<string> Notes { get; set; } = new ReactivePropertySlim<string>();
+        public ReactivePropertySlim<string?> Name { get; set; } = new ReactivePropertySlim<string?>();
+        public ReactivePropertySlim<string?> Notes { get; set; } = new ReactivePropertySlim<string?>();
 
         public AsyncReactiveCommand CreateCommand { get; }
         public ReactiveCommand CancelCommand { get; }

@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 using Firebase.CloudFirestore;
 using System.Collections.Generic;
 using System.Linq;
+using ObjCRuntime;
+using Foundation;
+using System.Reflection;
+using CoreFoundation;
 
 namespace Plugin.CloudFirestore
 {
@@ -149,6 +153,83 @@ namespace Plugin.CloudFirestore
         {
             var query = _query.WhereFieldIn(field?.ToNative()!, values?.Select(x => x.ToNativeFieldValue()).ToArray()!);
             return new QueryWrapper(query);
+        }
+
+
+        public IQuery WhereNotEqualTo(string field, object value)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (value is null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            var fieldHandle = CFString.CreateNative(field);
+            var valueHandle = NSObject.FromObject(value.ToNativeFieldValue()).GetNonNullHandle(nameof(value));
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_query.Handle, Selector.GetHandle("queryWhereField:isNotEqualTo:"), fieldHandle, valueHandle));
+            CFString.ReleaseNative(fieldHandle);
+            return new QueryWrapper(query!);
+        }
+
+        public IQuery WhereNotEqualTo(FieldPath field, object value)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (value is null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            var fieldHandle = field.ToNative().GetNonNullHandle(nameof(field));
+            var valueHandle = NSObject.FromObject(value.ToNativeFieldValue()).GetNonNullHandle(nameof(value));
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_query.Handle, Selector.GetHandle("queryWhereFieldPath:isNotEqualTo:"), fieldHandle, valueHandle));
+            return new QueryWrapper(query!);
+        }
+
+        public IQuery WhereNotIn(string field, IEnumerable<object> values)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (values is null)
+            {
+                throw new ArgumentNullException(nameof(values));
+            }
+
+            var fieldHandle = CFString.CreateNative(field);
+            var nsArray = NSArray.FromNSObjects(values.Select(x => NSObject.FromObject(x.ToNativeFieldValue())).ToArray());
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_query.Handle, Selector.GetHandle("queryWhereField:notIn:"), fieldHandle, nsArray.Handle));
+            CFString.ReleaseNative(fieldHandle);
+            nsArray.Dispose();
+            return new QueryWrapper(query!);
+        }
+
+        public IQuery WhereNotIn(FieldPath field, IEnumerable<object> values)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (values is null)
+            {
+                throw new ArgumentNullException(nameof(values));
+            }
+
+            var fieldHandle = field.ToNative().GetNonNullHandle(nameof(field));
+            var nsArray = NSArray.FromNSObjects(values.Select(x => NSObject.FromObject(x.ToNativeFieldValue())).ToArray());
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_query.Handle, Selector.GetHandle("queryWhereFieldPath:notIn:"), fieldHandle, nsArray.Handle));
+            nsArray.Dispose();
+            return new QueryWrapper(query!);
         }
 
         public IQuery StartAt(IDocumentSnapshot document)

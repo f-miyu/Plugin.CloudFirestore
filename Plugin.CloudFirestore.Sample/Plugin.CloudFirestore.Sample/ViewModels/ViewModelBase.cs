@@ -15,8 +15,8 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 
         protected INavigationService NavigationService { get; private set; }
 
-        private string _title;
-        public string Title
+        private string? _title;
+        public string? Title
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }

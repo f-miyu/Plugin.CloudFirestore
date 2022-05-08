@@ -19,7 +19,7 @@ namespace Plugin.CloudFirestore.Sample
          */
         public App() : this(null) { }
 
-        public App(IPlatformInitializer initializer) : base(initializer) { }
+        public App(IPlatformInitializer? initializer) : base(initializer) { }
 
         protected override async void OnInitialized()
         {

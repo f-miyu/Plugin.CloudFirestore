@@ -86,20 +86,30 @@ namespace Plugin.CloudFirestore
             }
         }
 
-        public static Dictionary<object, object>? ToNativeFieldValues<T>(this T fieldValues)
+        public static NSDictionary<TKey, NSObject>? ToNativeFieldValues<T, TKey>(this T fieldValues) where TKey : NSObject
         {
             if (fieldValues is null)
                 return null;
 
-            return ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
+            var dic = ObjectProvider.GetDocumentInfo<T>().ConvertToFieldObject(fieldValues);
+            if (dic.Count == 0)
+            {
+                return new NSDictionary<TKey, NSObject>();
+            }
+            return NSDictionary<TKey, NSObject>.FromObjectsAndKeys(dic.Values.ToArray(), dic.Keys.ToArray(), dic.Count);
         }
 
-        public static Dictionary<object, object>? ToNativeFieldValues(this object? fieldValues)
+        public static NSDictionary<TKey, NSObject>? ToNativeFieldValues<TKey>(this object? fieldValues) where TKey : NSObject
         {
             if (fieldValues is null)
                 return null;
 
-            return ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
+            var dic = ObjectProvider.GetDocumentInfo(fieldValues.GetType()).ConvertToFieldObject(fieldValues);
+            if (dic.Count == 0)
+            {
+                return new NSDictionary<TKey, NSObject>();
+            }
+            return NSDictionary<TKey, NSObject>.FromObjectsAndKeys(dic.Values.ToArray(), dic.Keys.ToArray(), dic.Count);
         }
 
         public static object? ToFieldValue(this object? fieldValue, IDocumentFieldInfo fieldInfo)

@@ -53,7 +53,7 @@ namespace Plugin.CloudFirestore
         public DocumentObject(Timestamp value)
         {
             _timestamp = value;
-            Type = DocumentObjectType.Timestapm;
+            Type = DocumentObjectType.Timestamp;
         }
 
         public DocumentObject(byte[] value)
@@ -101,7 +101,7 @@ namespace Plugin.CloudFirestore
             ? _dictionary!.Value : throw new InvalidOperationException("Type is not Dictionary.");
 
         private readonly Timestamp _timestamp;
-        public Timestamp Timestamp => Type == DocumentObjectType.Timestapm
+        public Timestamp Timestamp => Type == DocumentObjectType.Timestamp
             ? _timestamp : throw new InvalidOperationException("Type is not Timestapm.");
 
         private readonly byte[]? _bytes;
@@ -125,7 +125,7 @@ namespace Plugin.CloudFirestore
             DocumentObjectType.String => String,
             DocumentObjectType.List => List,
             DocumentObjectType.Dictionary => Dictionary,
-            DocumentObjectType.Timestapm => Timestamp,
+            DocumentObjectType.Timestamp => Timestamp,
             DocumentObjectType.Bytes => Bytes,
             DocumentObjectType.GeoPoint => GeoPoint,
             DocumentObjectType.DocumentReference => DocumentReference,
@@ -179,9 +179,9 @@ namespace Plugin.CloudFirestore
                 DocumentObjectType.List => _creator(fieldInfo),
                 DocumentObjectType.Dictionary when _creator == null => Dictionary,
                 DocumentObjectType.Dictionary => _creator(fieldInfo),
-                DocumentObjectType.Timestapm when fieldType == typeof(DateTime) => Timestamp.ToDateTime(),
-                DocumentObjectType.Timestapm when fieldType == typeof(DateTimeOffset) => Timestamp.ToDateTimeOffset(),
-                DocumentObjectType.Timestapm => Timestamp,
+                DocumentObjectType.Timestamp when fieldType == typeof(DateTime) => Timestamp.ToDateTime(),
+                DocumentObjectType.Timestamp when fieldType == typeof(DateTimeOffset) => Timestamp.ToDateTimeOffset(),
+                DocumentObjectType.Timestamp => Timestamp,
                 DocumentObjectType.Bytes when fieldType == typeof(byte[]) => Bytes,
                 DocumentObjectType.Bytes => new MemoryStream(Bytes),
                 DocumentObjectType.GeoPoint => GeoPoint,

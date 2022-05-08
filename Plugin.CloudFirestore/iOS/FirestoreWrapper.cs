@@ -17,13 +17,13 @@ namespace Plugin.CloudFirestore
         public IFirestoreSettings FirestoreSettings
         {
             get => new FirestoreSettings(_firestore.Settings);
-            set => _firestore.Settings = value == null ? null : new Firebase.CloudFirestore.FirestoreSettings
+            set => _firestore.Settings = value is not null ? new Firebase.CloudFirestore.FirestoreSettings
             {
                 Host = value.Host,
                 PersistenceEnabled = value.IsPersistenceEnabled,
                 SslEnabled = value.IsSslEnabled,
                 CacheSizeBytes = value.CacheSizeBytes
-            };
+            } : throw new ArgumentNullException();
         }
 
         public ICollectionReference GetCollection(string collectionPath)
@@ -78,9 +78,9 @@ namespace Plugin.CloudFirestore
                 }
                 return null;
             },
-            (NSObject result, NSError error) =>
+            (NSObject? result, NSError? error) =>
             {
-                T resultObject = default;
+                T resultObject = default!;
                 Exception? exception = null;
 
                 if (error != null)
@@ -120,7 +120,7 @@ namespace Plugin.CloudFirestore
                 }
                 return null;
             },
-            (NSObject result, NSError error) =>
+            (NSObject? result, NSError? error) =>
             {
                 if (error != null)
                 {
@@ -135,7 +135,7 @@ namespace Plugin.CloudFirestore
                 }
                 else
                 {
-                    T resultObject = default;
+                    T resultObject = default!;
                     if (result is ObjectHolder<T> wrapper)
                     {
                         resultObject = wrapper.Object;
@@ -166,7 +166,7 @@ namespace Plugin.CloudFirestore
                 }
                 return null;
             },
-            (NSObject result, NSError error) =>
+            (NSObject? result, NSError? error) =>
             {
                 Exception? exception = null;
 
@@ -200,7 +200,7 @@ namespace Plugin.CloudFirestore
                 }
                 return null;
             },
-            (NSObject result, NSError error) =>
+            (NSObject? result, NSError? error) =>
             {
                 if (error != null)
                 {

@@ -6,6 +6,8 @@ using Foundation;
 using Firebase.CloudFirestore;
 using Plugin.CloudFirestore;
 using System.Reactive.Linq;
+using CoreFoundation;
+using ObjCRuntime;
 
 namespace Plugin.CloudFirestore
 {
@@ -158,6 +160,82 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereNotEqualTo(string field, object value)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (value is null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            var fieldHandle = CFString.CreateNative(field);
+            var valueHandle = NSObject.FromObject(value.ToNativeFieldValue()).GetNonNullHandle(nameof(value));
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_collectionReference.Handle, Selector.GetHandle("queryWhereField:isNotEqualTo:"), fieldHandle, valueHandle));
+            CFString.ReleaseNative(fieldHandle);
+            return new QueryWrapper(query!);
+        }
+
+        public IQuery WhereNotEqualTo(FieldPath field, object value)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (value is null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            var fieldHandle = field.ToNative().GetNonNullHandle(nameof(field));
+            var valueHandle = NSObject.FromObject(value.ToNativeFieldValue()).GetNonNullHandle(nameof(value));
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_collectionReference.Handle, Selector.GetHandle("queryWhereFieldPath:isNotEqualTo:"), fieldHandle, valueHandle));
+            return new QueryWrapper(query!);
+        }
+
+        public IQuery WhereNotIn(string field, IEnumerable<object> values)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (values is null)
+            {
+                throw new ArgumentNullException(nameof(values));
+            }
+
+            var fieldHandle = CFString.CreateNative(field);
+            var nsArray = NSArray.FromNSObjects(values.Select(x => NSObject.FromObject(x.ToNativeFieldValue())).ToArray());
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_collectionReference.Handle, Selector.GetHandle("queryWhereField:notIn:"), fieldHandle, nsArray.Handle));
+            CFString.ReleaseNative(fieldHandle);
+            nsArray.Dispose();
+            return new QueryWrapper(query!);
+        }
+
+        public IQuery WhereNotIn(FieldPath field, IEnumerable<object> values)
+        {
+            if (field is null)
+            {
+                throw new ArgumentNullException(nameof(field));
+            }
+            if (values is null)
+            {
+                throw new ArgumentNullException(nameof(values));
+            }
+
+            var fieldHandle = field.ToNative().GetNonNullHandle(nameof(field));
+            var nsArray = NSArray.FromNSObjects(values.Select(x => NSObject.FromObject(x.ToNativeFieldValue())).ToArray());
+
+            var query = Runtime.GetNSObject<Query>(Messaging.IntPtr_objc_msgSend_IntPtr_IntPtr(_collectionReference.Handle, Selector.GetHandle("queryWhereFieldPath:notIn:"), fieldHandle, nsArray.Handle));
+            nsArray.Dispose();
+            return new QueryWrapper(query!);
+        }
+
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var query = _collectionReference.StartingAt(document.ToNative());
@@ -296,7 +374,7 @@ namespace Plugin.CloudFirestore
 
         public void AddDocument(object data, CompletionHandler handler)
         {
-            _collectionReference.AddDocument(data.ToNativeFieldValues()!, (error) =>
+            _collectionReference.AddDocument(data.ToNativeFieldValues<object, NSString>()!, (error) =>
             {
                 handler?.Invoke(error == null ? null : ExceptionMapper.Map(error));
             });
@@ -306,7 +384,7 @@ namespace Plugin.CloudFirestore
         {
             var tcs = new TaskCompletionSource<bool>();
 
-            _collectionReference.AddDocument(data.ToNativeFieldValues()!, (error) =>
+            _collectionReference.AddDocument(data.ToNativeFieldValues<object, NSString>()!, (error) =>
             {
                 if (error != null)
                 {
@@ -326,7 +404,7 @@ namespace Plugin.CloudFirestore
             var tcs = new TaskCompletionSource<IDocumentReference>();
 
             DocumentReference? document = null;
-            document = _collectionReference.AddDocument(data.ToNativeFieldValues()!, (error) =>
+            document = _collectionReference.AddDocument(data.ToNativeFieldValues<T, NSString>()!, (error) =>
             {
                 if (error != null)
                 {

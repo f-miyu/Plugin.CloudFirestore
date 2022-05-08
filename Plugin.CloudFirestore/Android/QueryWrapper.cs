@@ -156,6 +156,30 @@ namespace Plugin.CloudFirestore
             return new QueryWrapper(query);
         }
 
+        public IQuery WhereNotEqualTo(string field, object value)
+        {
+            var query = _query.WhereNotEqualTo(field, value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereNotEqualTo(FieldPath field, object value)
+        {
+            var query = _query.WhereNotEqualTo(field?.ToNative(), value.ToNativeFieldValue());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereNotIn(string field, IEnumerable<object> values)
+        {
+            var query = _query.WhereNotIn(field, values?.Select(x => x.ToNativeFieldValue()).ToList());
+            return new QueryWrapper(query);
+        }
+
+        public IQuery WhereNotIn(FieldPath field, IEnumerable<object> values)
+        {
+            var query = _query.WhereNotIn(field?.ToNative(), values?.Select(x => x.ToNativeFieldValue()).ToList());
+            return new QueryWrapper(query);
+        }
+
         public IQuery StartAt(IDocumentSnapshot document)
         {
             var query = _query.StartAt(document.ToNative());

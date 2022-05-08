@@ -45,25 +45,29 @@ namespace Plugin.CloudFirestore
         [return: MaybeNull]
         public T Get<T>(string field)
         {
-            return (T)_documentSnapshot.GetValue(new NSString(field)).ToFieldValue(new DocumentFieldInfo<T>());
+            var value = _documentSnapshot.GetValue(new NSString(field)).ToFieldValue(new DocumentFieldInfo<T>());
+            return value is not null ? (T)value : default;
         }
 
         [return: MaybeNull]
         public T Get<T>(string field, ServerTimestampBehavior serverTimestampBehavior)
         {
-            return (T)_documentSnapshot.GetValue(new NSString(field), serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
+            var value = _documentSnapshot.GetValue(new NSString(field), serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
+            return value is not null ? (T)value : default;
         }
 
         [return: MaybeNull]
         public T Get<T>(FieldPath field)
         {
-            return (T)_documentSnapshot.GetValue(field?.ToNative()!).ToFieldValue(new DocumentFieldInfo<T>());
+            var value = _documentSnapshot.GetValue(field?.ToNative()!).ToFieldValue(new DocumentFieldInfo<T>());
+            return value is not null ? (T)value : default;
         }
 
         [return: MaybeNull]
         public T Get<T>(FieldPath field, ServerTimestampBehavior serverTimestampBehavior)
         {
-            return (T)_documentSnapshot.GetValue(field?.ToNative()!, serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
+            var value = _documentSnapshot.GetValue(field?.ToNative()!, serverTimestampBehavior.ToNative()).ToFieldValue(new DocumentFieldInfo<T>());
+            return value is not null ? (T)value : default;
         }
 
         public override bool Equals(object? obj)

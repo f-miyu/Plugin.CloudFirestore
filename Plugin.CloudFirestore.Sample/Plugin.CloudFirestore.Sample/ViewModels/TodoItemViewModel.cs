@@ -7,10 +7,10 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
 {
     public class TodoItemViewModel : BindableBase
     {
-        public string Id { get; }
+        public string? Id { get; }
 
-        public ReactivePropertySlim<string> Name { get; set; } = new ReactivePropertySlim<string>();
-        public ReactivePropertySlim<string> Notes { get; set; } = new ReactivePropertySlim<string>();
+        public ReactivePropertySlim<string?> Name { get; set; } = new ReactivePropertySlim<string?>();
+        public ReactivePropertySlim<string?> Notes { get; set; } = new ReactivePropertySlim<string?>();
 
         public TodoItemViewModel(TodoItem item)
         {
@@ -19,7 +19,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             Notes.Value = item.Notes;
         }
 
-        public void Update(string name, string notes)
+        public void Update(string? name, string? notes)
         {
             Name.Value = name;
             Notes.Value = notes;

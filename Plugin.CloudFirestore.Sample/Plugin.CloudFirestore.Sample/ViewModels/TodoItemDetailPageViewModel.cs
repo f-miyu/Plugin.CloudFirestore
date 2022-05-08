@@ -11,13 +11,13 @@ using System.Threading.Tasks;
 
 namespace Plugin.CloudFirestore.Sample.ViewModels
 {
-    public class TodoItemDetailPageViewModel : ViewModelBase<string>
+    public class TodoItemDetailPageViewModel : ViewModelBase<string?>
     {
-        private ReactivePropertySlim<string> _id = new ReactivePropertySlim<string>(mode: ReactivePropertyMode.DistinctUntilChanged);
+        private ReactivePropertySlim<string?> _id = new ReactivePropertySlim<string?>(mode: ReactivePropertyMode.DistinctUntilChanged);
         private ReactivePropertySlim<TodoItem> _todoItem = new ReactivePropertySlim<TodoItem>(mode: ReactivePropertyMode.DistinctUntilChanged);
 
-        public ReactivePropertySlim<string> Name { get; set; } = new ReactivePropertySlim<string>();
-        public ReactivePropertySlim<string> Notes { get; set; } = new ReactivePropertySlim<string>();
+        public ReactivePropertySlim<string?> Name { get; set; } = new ReactivePropertySlim<string?>();
+        public ReactivePropertySlim<string?> Notes { get; set; } = new ReactivePropertySlim<string?>();
 
         public AsyncReactiveCommand UpdateCommand { get; }
         public AsyncReactiveCommand DeleteCommand { get; }
@@ -38,9 +38,9 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
                {
                    if (_todoItem != null)
                    {
-                       _todoItem.Value = todoItem;
-                       Name.Value = todoItem.Name;
-                       Notes.Value = todoItem.Notes;
+                       _todoItem.Value = todoItem!;
+                       Name.Value = todoItem!.Name;
+                       Notes.Value = todoItem!.Notes;
                    }
                }, ex => System.Diagnostics.Debug.WriteLine(ex));
 
@@ -93,7 +93,7 @@ namespace Plugin.CloudFirestore.Sample.ViewModels
             });
         }
 
-        public override void Prepare(string parameer)
+        public override void Prepare(string? parameer)
         {
             _id.Value = parameer;
         }

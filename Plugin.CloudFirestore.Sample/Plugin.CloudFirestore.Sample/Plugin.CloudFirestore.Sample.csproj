@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-    <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
-    </PropertyGroup>
-    <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />
-        <PackageReference Include="Prism.DryIoc.Forms" Version="8.0.0.1909" />
-        <PackageReference Include="ReactiveProperty" Version="7.5.1" />
-    </ItemGroup>
-    <ItemGroup>
-        <Folder Include="Models\" />
-        <Folder Include="Extensions\" />
-    </ItemGroup>
-    <ItemGroup>
-        <ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj" />
-    </ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+		<PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
+		<PackageReference Include="ReactiveProperty" Version="8.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="Models\" />
+		<Folder Include="Extensions\" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\Plugin.CloudFirestore\Plugin.CloudFirestore.csproj" />
+	</ItemGroup>
 </Project>

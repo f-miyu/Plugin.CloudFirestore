@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Firebase.CloudFirestore;
 using System.Linq;
+using Foundation;
 
 namespace Plugin.CloudFirestore
 {
@@ -43,56 +44,56 @@ namespace Plugin.CloudFirestore
 
         public void SetData(IDocumentReference document, object documentData)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative());
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative());
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative());
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params string[] mergeFields)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields);
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative(), mergeFields);
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, params string[] mergeFields)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields);
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative(), mergeFields);
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, params FieldPath[] mergeFields)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, params FieldPath[] mergeFields)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative(), mergeFields.Select(x => x.ToNative()).ToArray());
             return this;
         }
 
         public void SetData(IDocumentReference document, object documentData, bool merge)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), merge);
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative(), merge);
         }
 
         public IWriteBatch Set<T>(IDocumentReference document, T documentData, bool merge)
         {
-            _writeBatch.SetData(documentData.ToNativeFieldValues()!, document.ToNative(), merge);
+            _writeBatch.SetData(documentData.ToNativeFieldValues<NSString>()!, document.ToNative(), merge);
             return this;
         }
 
         public void UpdateData(IDocumentReference document, object fields)
         {
-            _writeBatch.UpdateData(fields.ToNativeFieldValues()!, document.ToNative());
+            _writeBatch.UpdateData(fields.ToNativeFieldValues<NSObject>()!, document.ToNative());
         }
 
         public IWriteBatch Update<T>(IDocumentReference document, T fields)
         {
-            _writeBatch.UpdateData(fields.ToNativeFieldValues()!, document.ToNative());
+            _writeBatch.UpdateData(fields.ToNativeFieldValues<NSObject>()!, document.ToNative());
             return this;
         }
 

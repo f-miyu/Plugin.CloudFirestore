@@ -19,12 +19,12 @@ namespace Plugin.CloudFirestore
         public IFirestoreSettings FirestoreSettings
         {
             get => new FirestoreSettings(_firestore.FirestoreSettings);
-            set => _firestore.FirestoreSettings = value == null ? null : new FirebaseFirestoreSettings.Builder()
+            set => _firestore.FirestoreSettings = value is not null ? new FirebaseFirestoreSettings.Builder()
                 .SetHost(value.Host)
                 .SetPersistenceEnabled(value.IsPersistenceEnabled)
                 .SetSslEnabled(value.IsSslEnabled)
                 .SetCacheSizeBytes(value.CacheSizeBytes)
-                .Build();
+                .Build() : throw new ArgumentNullException();
         }
 
         public ICollectionReference GetCollection(string collectionPath)
@@ -65,7 +65,7 @@ namespace Plugin.CloudFirestore
             _firestore.RunTransaction(new UpdateFunction<T>(handler))
                      .AddOnCompleteListener(new OnCompleteHandlerListener((task) =>
                      {
-                         T result = default;
+                         T result = default!;
                          System.Exception? exception = null;
 
                          if (task.IsSuccessful)

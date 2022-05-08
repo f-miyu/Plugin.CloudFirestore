@@ -31,6 +31,10 @@ namespace Plugin.CloudFirestore
         IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values);
         IQuery WhereIn(string field, IEnumerable<object> values);
         IQuery WhereIn(FieldPath field, IEnumerable<object> values);
+        IQuery WhereNotEqualTo(string field, object value);
+        IQuery WhereNotEqualTo(FieldPath field, object value);
+        IQuery WhereNotIn(string field, IEnumerable<object> values);
+        IQuery WhereNotIn(FieldPath field, IEnumerable<object> values);
         IQuery StartAt(IDocumentSnapshot document);
         IQuery StartAt(params object?[] fieldValues);
         IQuery StartAfter(IDocumentSnapshot document);

@@ -31,7 +31,8 @@ namespace Plugin.CloudFirestore
         [return: MaybeNull]
         public static T Map<T>(DocumentSnapshot source, ServerTimestampBehavior? serverTimestampBehavior = null)
         {
-            return (T)ObjectProvider.GetDocumentInfo<T>().Create(source, serverTimestampBehavior);
+            var value = ObjectProvider.GetDocumentInfo<T>().Create(source, serverTimestampBehavior);
+            return value is not null ? (T)value : default;
         }
     }
 }
