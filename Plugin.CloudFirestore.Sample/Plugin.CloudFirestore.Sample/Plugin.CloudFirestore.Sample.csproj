@@ -5,9 +5,9 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
 		<PackageReference Include="Prism.DryIoc.Forms" Version="8.1.97" />
-		<PackageReference Include="ReactiveProperty" Version="8.1.0" />
+		<PackageReference Include="ReactiveProperty" Version="8.2.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<Folder Include="Models\" />
