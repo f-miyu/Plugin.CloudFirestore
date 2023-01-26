@@ -1,4 +1,4 @@
-﻿using Firebase.Firestore;
+﻿using System;
 
 namespace Plugin.CloudFirestore
 {
@@ -6,6 +6,10 @@ namespace Plugin.CloudFirestore
     {
         public IFirestore Instance => FirestoreProvider.Firestore;
 
+        public CloudFirestoreImplementation()
+        {
+
+        }
         public IFirestore GetInstance(string appName)
         {
             return FirestoreProvider.GetFirestore(appName);
@@ -13,7 +17,7 @@ namespace Plugin.CloudFirestore
 
         public void SetLoggingEnabled(bool loggingEnabled)
         {
-            FirebaseFirestore.SetLoggingEnabled(loggingEnabled);
+            throw new NotImplementedException();
         }
     }
 }

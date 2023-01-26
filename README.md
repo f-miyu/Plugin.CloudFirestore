@@ -23,6 +23,17 @@ Firebase.Core.App.Configure();
 ## Upgrade from Version 3 to 4
 Refer to [Upgrade](Upgrade.md)
 
+### Desktop
+* Add your service account key json file as embedded resource.
+* Set your credentials at App.cs as following:
+```C#
+protected override void OnStartup(StartupEventArgs e)
+{
+  Plugin.CloudFirestore.Setup.Init("myapp-xxx-firebase-adminsdk-xx-xxxxx.json");
+  base.OnStartup(e);
+ }
+```
+
 ## Usage
 ### Get
 ```C#

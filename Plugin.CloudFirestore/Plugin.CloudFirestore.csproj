@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras/3.0.22">
 	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid12.0</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;Xamarin.iOS10;MonoAndroid12.0;net6;net48</TargetFrameworks>
 		<AssemblyName>Plugin.CloudFirestore</AssemblyName>
 		<RootNamespace>Plugin.CloudFirestore</RootNamespace>
 		<PackageId>Plugin.CloudFirestore</PackageId>
@@ -37,20 +37,29 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<Compile Include="Shared\**\*.cs" />
+		<PackageReference Include="AsyncAwaitBestPractices" Version="6.0.6" />
 		<PackageReference Include="System.Reactive" Version="5.0.0" />
-		<PackageReference Include="Nullable" Version="1.3.0">
+		<PackageReference Include="Nullable" Version="1.3.1">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 	</ItemGroup>
-	<ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+	<ItemGroup Condition="$(TargetFramework.Equals('netstandard2.0'))">
+	</ItemGroup>
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('net6')) Or $(TargetFramework.StartsWith('net48')) Or $(TargetFramework.Equals('netstandard2.1'))">
+		<Compile Include="Desktop\**\*.cs" />
+		<PackageReference Include="Google.Cloud.Firestore.V1" Version="3.0.0" />
+		<PackageReference Include="Google.Cloud.Firestore" Version="3.0.0" />
 	</ItemGroup>
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
 		<Compile Include="Android\**\*.cs" />
-		<PackageReference Include="Xamarin.Firebase.Firestore" Version="123.0.3.5" PrivateAssets="contentFiles;analyzers" />
+		<PackageReference Include="Xamarin.Firebase.Firestore" Version="124.4.1" PrivateAssets="contentFiles;analyzers" />
 	</ItemGroup>
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
 		<Compile Include="iOS\**\*.cs" />
-		<PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="8.10.0" />
+		<PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore" Version="8.10.0.3" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Desktop\CredentialsMap.cs" />
 	</ItemGroup>
 </Project>
