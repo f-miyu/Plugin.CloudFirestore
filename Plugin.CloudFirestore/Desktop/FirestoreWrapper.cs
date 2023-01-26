@@ -21,7 +21,7 @@ namespace Plugin.CloudFirestore
             }
             set
             {
-                throw new NotImplementedException();
+                //throw new NotImplementedException();
                 //return _firestore.Settings = value is not null ? new Google.Cloud.Firestore.V1.FirestoreSettings
                 //{
                 //    Host = value.Host,

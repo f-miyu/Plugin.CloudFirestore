@@ -4,8 +4,9 @@
     {
         internal Timestamp(Google.Cloud.Firestore.Timestamp timestamp)
         {
-            Seconds = timestamp.ToDateTimeOffset().Second;
-            Nanoseconds = timestamp.ToDateTimeOffset().Millisecond;
+            var offset = timestamp.ToProto();
+            Seconds = offset.Seconds;
+            Nanoseconds = offset.Nanos;
         }
 
         //internal Timestamp(DateTime date) : this(Google.Cloud.Firestore.Timestamp.FromDateTime(date))

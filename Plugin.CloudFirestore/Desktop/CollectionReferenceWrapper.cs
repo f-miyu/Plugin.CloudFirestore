@@ -350,22 +350,7 @@ namespace Plugin.CloudFirestore
 
         public Task<IQuerySnapshot> GetAsync(Source source)
         {
-            throw new NotImplementedException();
-            //var tcs = new TaskCompletionSource<IQuerySnapshot>();
-
-            //_collectionReference.GetSnapshotAsync(source.ToNative()).ContinueWith(t =>
-            //{
-            //    if (t.IsFaulted)
-            //    {
-            //        tcs.SetException(t.Exception);
-            //    }
-            //    else
-            //    {
-            //        tcs.SetResult(t.Result is null ? null : new QuerySnapshotWrapper(t.Result));
-            //    }
-            //});
-
-            //return tcs.Task;
+            return GetAsync();
         }
 
         public void AddDocument(object data, CompletionHandler handler)

@@ -28,7 +28,7 @@ namespace Plugin.CloudFirestore
                     }
                     else
                     {
-                        ret[fieldInfo.Name] = value.ToNativeFieldValue(fieldInfo);
+                        ret[fieldInfo.Name] = value; //.ToNativeFieldValue(fieldInfo);
                     }
                 }
             }
@@ -73,6 +73,7 @@ namespace Plugin.CloudFirestore
             {
                 DocumentSnapshot snapshot => Create(snapshot, serverTimestampBehavior),
                 Dictionary<string, object> dictionary => Create(dictionary),
+                DocumentFieldInfo info => Create(info.ToNativeFieldValues()),
                 null => default,
                 _ => throw new ArgumentOutOfRangeException(nameof(value))
             };

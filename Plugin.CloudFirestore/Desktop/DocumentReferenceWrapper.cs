@@ -85,22 +85,7 @@ namespace Plugin.CloudFirestore
 
         public Task<IDocumentSnapshot> GetAsync(Source source)
         {
-            throw new NotImplementedException();
-            //var tcs = new TaskCompletionSource<IDocumentSnapshot>();
-
-            //_documentReference.GetDocument(source.ToNative(), (snapshot, error) =>
-            //{
-            //    if (error != null)
-            //    {
-            //        tcs.SetException(ExceptionMapper.Map(error));
-            //    }
-            //    else
-            //    {
-            //        tcs.SetResult(new DocumentSnapshotWrapper(snapshot!));
-            //    }
-            //});
-
-            //return tcs.Task;
+            return GetAsync();
         }
 
         public void SetData(object documentData, CompletionHandler handler)

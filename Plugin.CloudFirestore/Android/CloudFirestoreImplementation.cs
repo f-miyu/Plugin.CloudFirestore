@@ -1,7 +1,4 @@
-﻿using System;
-using Firebase.Firestore;
-using Firebase;
-using System.Collections.Concurrent;
+﻿using Firebase.Firestore;
 
 namespace Plugin.CloudFirestore
 {

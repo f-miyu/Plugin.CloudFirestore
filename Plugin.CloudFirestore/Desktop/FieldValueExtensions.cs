@@ -21,6 +21,17 @@ namespace Plugin.CloudFirestore
 
             switch (fieldValue)
             {
+                case null:
+                    return null;
+                case char:
+                    return fieldValue.ToString();
+                case bool:
+                case int:
+                case string:
+                case float:
+                case double:
+                case decimal:
+                    return fieldValue;
                 case ulong @ulong:
                     if (@ulong > long.MaxValue)
                     {
@@ -28,19 +39,17 @@ namespace Plugin.CloudFirestore
                     }
                     return @ulong;
                 case DateTime dateTime:
-                    return Google.Cloud.Firestore.Timestamp.FromDateTime(dateTime);
+                    return Google.Cloud.Firestore.Timestamp.FromDateTime(dateTime.ToUniversalTime());
                 case DateTimeOffset dateTimeOffset:
                     return Google.Cloud.Firestore.Timestamp.FromDateTimeOffset(dateTimeOffset);
                 case Timestamp timestamp:
-                    return Google.Cloud.Firestore.Timestamp.FromDateTime(timestamp.ToDateTime());
+                    return Google.Cloud.Firestore.Timestamp.FromDateTime(timestamp.ToDateTime().ToUniversalTime());
                 case GeoPoint geoPoint:
                     return geoPoint.ToNative();
                 case IDocumentReference documentReference:
                     return documentReference.ToNative();
                 case FieldValue firestoreFieldValue:
                     return firestoreFieldValue.ToNative();
-                case FieldPath fieldPath:
-                    return fieldPath.ToNative();
                 default:
                     fieldInfo ??= new DocumentFieldInfo(fieldValue.GetType());
                     return fieldInfo.DocumentInfo.ConvertToFieldValue(fieldValue);
@@ -78,17 +87,21 @@ namespace Plugin.CloudFirestore
         {
             return (fieldValue switch
             {
+                char c => new DocumentObject(c),
                 null => new DocumentObject(),
                 bool number => new DocumentObject(number),
                 long number => new DocumentObject(number),
                 int number => new DocumentObject(number),
                 double number => new DocumentObject(number),
                 string @string => new DocumentObject(@string),
+                Google.Cloud.Firestore.Timestamp timestamp => new DocumentObject(new Plugin.CloudFirestore.Timestamp(timestamp)),
                 Timestamp timestamp => new DocumentObject(timestamp),
                 DateTime date => new DocumentObject(new Timestamp(date)),
-                object[] array => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(array)),
                 byte[] array => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(array)),
+                string[] array => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(array)),
+                object[] array => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(array)),
                 Dictionary<string, object> dictionary => DocumentObject.CreateAsDictionary((fieldInfo) => fieldInfo.DocumentInfo.Create(dictionary)),
+                IEnumerable<dynamic> i => DocumentObject.CreateAsList((fieldInfo) => fieldInfo.DocumentInfo.Create(i.ToArray())),
                 Google.Cloud.Firestore.GeoPoint geoPoint => new DocumentObject(new GeoPoint(geoPoint)),
                 Google.Cloud.Firestore.DocumentReference documentReference => new DocumentObject(new DocumentReferenceWrapper(documentReference)),
                 IDocumentReference doc => new DocumentObject(doc),

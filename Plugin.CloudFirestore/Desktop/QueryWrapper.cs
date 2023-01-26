@@ -308,24 +308,10 @@ namespace Plugin.CloudFirestore
             return GetAsync();
         }
 
-        public Task<IQuerySnapshot> GetAsync()
+        public async Task<IQuerySnapshot> GetAsync()
         {
-            throw new NotImplementedException();
-            //var tcs = new TaskCompletionSource<IQuerySnapshot>();
-
-            //_query.GetDocuments((snapshot, error) =>
-            //{
-            //    if (error != null)
-            //    {
-            //        tcs.SetException(ExceptionMapper.Map(error));
-            //    }
-            //    else
-            //    {
-            //        tcs.SetResult(new QuerySnapshotWrapper(snapshot!));
-            //    }
-            //});
-
-            //return tcs.Task;
+            var snap = await _query.GetSnapshotAsync();
+            return new QuerySnapshotWrapper(snap);
         }
 
         public Task<IQuerySnapshot> GetDocumentsAsync(Source source)
@@ -335,7 +321,7 @@ namespace Plugin.CloudFirestore
 
         public Task<IQuerySnapshot> GetAsync(Source source)
         {
-            throw new NotImplementedException();
+            return GetAsync();
             //var tcs = new TaskCompletionSource<IQuerySnapshot>();
 
             //_query.GetDocuments(source.ToNative(), (snapshot, error) =>
