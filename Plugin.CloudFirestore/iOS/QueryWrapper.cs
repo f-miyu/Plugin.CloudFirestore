@@ -133,13 +133,13 @@ namespace Plugin.CloudFirestore
 
         public IQuery WhereArrayContainsAny(string field, IEnumerable<object> values)
         {
-            var query = _query.WhereArrayContains(field, values?.Select(x => x.ToNativeFieldValue()).ToArray()!);
+            var query = _query.WhereArrayContainsAny(field, values?.Select(x => x.ToNativeFieldValue()).ToArray()!);
             return new QueryWrapper(query);
         }
 
         public IQuery WhereArrayContainsAny(FieldPath field, IEnumerable<object> values)
         {
-            var query = _query.WhereArrayContains(field?.ToNative()!, values?.Select(x => x.ToNativeFieldValue()).ToArray()!);
+            var query = _query.WhereArrayContainsAny(field?.ToNative()!, values?.Select(x => x.ToNativeFieldValue()).ToArray()!);
             return new QueryWrapper(query);
         }
 
